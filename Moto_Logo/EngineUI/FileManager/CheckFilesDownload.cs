@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFilesDownload.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 17-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -32,7 +32,7 @@ namespace Moto_Logo
         public string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
         public FilesMng oConfigMng = new FilesMng();
 
-        public string xmlUrl = "https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates_files.xml";
+        public string xmlUrl = "https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates_files.xml";
         public string filever = "";
         public string url = "";
         public string filename = "";

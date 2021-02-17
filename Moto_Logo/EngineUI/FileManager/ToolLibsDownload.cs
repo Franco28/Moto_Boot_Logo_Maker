@@ -2,7 +2,7 @@
 #####################################################################
 #    File: ToolLibsDownload.cs                                      #
 #    Author: Franco28                                               # 
-#    Date: 08-01-2021                                               #
+#    Date: 17-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -31,7 +31,7 @@ namespace Moto_Logo
         public Stopwatch sw = new Stopwatch();
         public FilesMng oConfigMng = new FilesMng();
 
-        public string xmlUrl = "https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates_files.xml";
+        public string xmlUrl = "https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates_files.xml";
         public string fileverDLL = "";
         public string urlDLL = "";
         public string filenameDLL = "";
