@@ -135,7 +135,7 @@ namespace Moto_Logo
         {
             if (InternetCheck.ConnectToInternet() == true)
             {
-                if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates.xml") == true)
+                if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml") == true)
                 {
                     cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutDownloadUpdateServerDown", cul));
                     return;
@@ -162,7 +162,7 @@ namespace Moto_Logo
         {
             if (InternetCheck.ConnectToInternet() == true)
             {
-                AutoUpdater.Start("https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates.xml");
+                AutoUpdater.Start("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml");
             }
             else
             {
@@ -305,7 +305,7 @@ namespace Moto_Logo
             switch (answer)
             {
                 case DialogResult.Yes:
-                    InternetCheck.CheckInternetProcessStart("https://www.androidfilehost.com/?w=files&flid=320649");
+                    InternetCheck.CheckInternetProcessStart("https://androidfilehost.com/?w=files&flid=323184");
                     MessageBoxManager.Unregister();
                     this.Close();
                     break;

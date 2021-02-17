@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DownloadS.cs                                             #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 17-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -75,7 +75,7 @@ namespace Moto_Logo
         public void LoadAFH()
         {
             cAppend(" Android File Host ");
-            var html = @"https://androidfilehost.com/?w=files&flid=320649";
+            var html = @"https://www.androidfilehost.com/?w=files&flid=323184";
             HtmlWeb web = new HtmlWeb();
             var htmlDoc = web.Load(html);
 
@@ -116,7 +116,7 @@ namespace Moto_Logo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InternetCheck.CheckInternetProcessStart("https://www.androidfilehost.com/?w=files&flid=320649");
+            InternetCheck.CheckInternetProcessStart("https://www.androidfilehost.com/?w=files&flid=323184");
             this.Close();
         }
 
