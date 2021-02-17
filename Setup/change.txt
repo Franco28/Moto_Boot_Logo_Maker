@@ -2,7 +2,9 @@ Moto_Boot_Logo_Maker v4.4.3.0 Enhancements & bug-fixes:
 
 NOTE: Some translations are missing, i will be working on this, for now still in english
 
-1. 
+1. REMOVED License system
+2. REMOVED Unnecessary code
+
 
 External & Internal Libs:
 

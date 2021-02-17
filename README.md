@@ -37,12 +37,12 @@
 
 ## Downloads SF
 
-#### Download Moto_Boot_Logo_Maker v4.4.3.0 (xx-02-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.2.9_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.0 (17-02-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.0_Setup.exe) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker v4.4.3.0 (xx-02-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=17248734326145725870) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.0 (17-02-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=17248734326145725870) 
 
-### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Setup/OTAS/changelog.txt) 
+### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Setup/changelog.txt) 
 
 ####
 
@@ -52,7 +52,7 @@
 
 
 ### Main Tool
-![Main Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/ToolLicense.png "Main Tool")
+![Main Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/tool.png "Main Tool")
 
 ### Settigs Tool
 ![Settigs Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/settings.png "Settigs Tool")
