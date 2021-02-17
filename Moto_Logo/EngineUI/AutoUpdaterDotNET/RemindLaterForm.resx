@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxIcon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBoxIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        uCD8H8ubmcPLdP6YAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBoxIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="pictureBoxIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 90</value>
+  </data>
+  <data name="pictureBoxIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="pictureBoxIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxIcon.Name" xml:space="preserve">
+    <value>pictureBoxIcon</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxIcon.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonNo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="radioButtonNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="radioButtonNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 138</value>
+  </data>
+  <data name="radioButtonNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="radioButtonNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 19</value>
+  </data>
+  <data name="radioButtonNo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radioButtonNo.Text" xml:space="preserve">
+    <value>No, download updates now (recommended)</value>
+  </data>
+  <data name="&gt;&gt;radioButtonNo.Name" xml:space="preserve">
+    <value>radioButtonNo</value>
+  </data>
+  <data name="&gt;&gt;radioButtonNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonNo.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButtonNo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBoxRemindLater.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="comboBoxRemindLater.Items" xml:space="preserve">
+    <value>After 30 minutes</value>
+  </data>
+  <data name="comboBoxRemindLater.Items1" xml:space="preserve">
+    <value>After 12 hours</value>
+  </data>
+  <data name="comboBoxRemindLater.Items2" xml:space="preserve">
+    <value>After 1 day</value>
+  </data>
+  <data name="comboBoxRemindLater.Items3" xml:space="preserve">
+    <value>After 2 days</value>
+  </data>
+  <data name="comboBoxRemindLater.Items4" xml:space="preserve">
+    <value>After 4 days</value>
+  </data>
+  <data name="comboBoxRemindLater.Items5" xml:space="preserve">
+    <value>After 8 days</value>
+  </data>
+  <data name="comboBoxRemindLater.Items6" xml:space="preserve">
+    <value>After 10 days</value>
+  </data>
+  <data name="comboBoxRemindLater.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 104</value>
+  </data>
+  <data name="comboBoxRemindLater.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 10, 3</value>
+  </data>
+  <data name="comboBoxRemindLater.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="comboBoxRemindLater.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRemindLater.Name" xml:space="preserve">
+    <value>comboBoxRemindLater</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRemindLater.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRemindLater.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRemindLater.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="radioButtonYes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonYes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="radioButtonYes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="radioButtonYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 106</value>
+  </data>
+  <data name="radioButtonYes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="radioButtonYes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 19</value>
+  </data>
+  <data name="radioButtonYes.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioButtonYes.Text" xml:space="preserve">
+    <value>Yes, please remind me later : </value>
+  </data>
+  <data name="&gt;&gt;radioButtonYes.Name" xml:space="preserve">
+    <value>radioButtonYes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYes.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelDescription.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDescription.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelDescription.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="labelDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 51</value>
+  </data>
+  <data name="labelDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 45</value>
+  </data>
+  <data name="labelDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelDescription.Text" xml:space="preserve">
+    <value>You should download updates now. This only takes few minutes depending on your internet connection and ensures you have latest version of the application.
+</value>
+  </data>
+  <data name="&gt;&gt;labelDescription.Name" xml:space="preserve">
+    <value>labelDescription</value>
+  </data>
+  <data name="&gt;&gt;labelDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDescription.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;labelDescription.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonOK.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonOK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADLElEQVQ4T5WTX0yTVxjG30sv
+        vd3VMi+82s3YZmJsIoKVUgSpKwNawLmEbcaNZc4sKwX5JxphYVF01ek2KCTD2Q6wINLSTeMoRUpBqyND
+        F2TMzrnppPwRRfntnM54v5P88n7ve57nyZfznU/mz+fKwoClSPF4+UIODBtP2239Ulg4IHa7/7+qej3X
+        +1qn9do3328RHVD0MGSDWQdQzrdN9RS82U2u5RyW7b3Jqns91/tap/XalwxIdGc/fjrxLssT71G6sxPH
+        3hg/h5d49AfP0b2e632t03rtS/i2qTfoNMGghVL7GZo/u8nk6AptLQvsP5BQzFOnqvubBSYjT2luvJnU
+        ab32zX6fJTJzyuB3O/bx0e4oIz8s0nBolshgFBa7aKgv5UnCS+jHEQ6qoJHgktKN43ZUoX1zpzNErzV5
+        5h68rbdxHb3H6PBVrPk2xsLtKuQijx4EWZkLEh4c5mTzCl2tCfLNAbSP7k0iFlNQtht78XXcpq7unjqo
+        nxiPfIfFWqLCvKw8jLD44BJ21yocHcL7rizyUiO8kTYultSYiH1rr+RndNN2/AY1tXc5dbJahVzj2pVe
+        cnLtjIZ7iP3awmvVwvRfh3F6hKyyzWQeFclSSLHZJ4XGLpoPxaiuUUfOdcUkGZlWxqN96vkWE9MdvF4l
+        /BLfz5WZT6nsFLY0Snv25yrAnuGTgvSupfIPQ1RV3iA6OqVMmt8UM4o4k/FO1qmAWNyJ65JweXoXNWeF
+        zEbxyDZDQNJTThwrMvsp2xWiwjnF2Jg2/4nH+6Wqs/iHelhfK0Tje3ANCSeGhfDvVkwNgjCQJrGvU94u
+        29pKvqmfncUX+HhPjMqKW4ppqpx32P1JBxsPCpG773B8TOibMlCtbnf6PgnK3BmTLHo2L3PnAB+YWyjY
+        dI6SvPPssPUr/LxVcBHbjiOkNarf4e8ivpoQKgLCRqf06U8p991b5B+3kbn21CdnK9buTX/Z9YVtg3ep
+        2OCheIOXkvU+CrPrMTYJQwkr5UHhyOEX9T14KUcf4v225G16VZGiWK14QfHKs9lz0uokUBsSDE4J6N7c
+        JJIM+B9rjUKH6fpsifwLcGFSSiBQpc8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 163</value>
+  </data>
+  <data name="buttonOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 10, 3</value>
+  </data>
+  <data name="buttonOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 32</value>
+  </data>
+  <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="buttonOK.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="buttonOK.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Name" xml:space="preserve">
+    <value>buttonOK</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 198</value>
+  </data>
+  <data name="tableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel.Name" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pictureBoxIcon" Row="0" RowSpan="2" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelTitle" Row="0" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="radioButtonNo" Row="3" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="comboBoxRemindLater" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="radioButtonYes" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="buttonOK" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,85,Absolute,280,Absolute,135" /&gt;&lt;Rows Styles="Absolute,32,Absolute,64,Absolute,32,Absolute,32,Absolute,16" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="labelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.5pt, style=Bold</value>
+  </data>
+  <data name="labelTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="labelTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 19</value>
+  </data>
+  <data name="labelTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTitle.Text" xml:space="preserve">
+    <value>Do you want to download updates later?</value>
+  </data>
+  <data name="&gt;&gt;labelTitle.Name" xml:space="preserve">
+    <value>labelTitle</value>
+  </data>
+  <data name="&gt;&gt;labelTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTitle.Parent" xml:space="preserve">
+    <value>tableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;labelTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>499, 198</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Remind me later for update</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RemindLaterForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

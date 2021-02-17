@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Resource.Embedder.2.1.1\build\Resource.Embedder.props" Condition="Exists('..\packages\Resource.Embedder.2.1.1\build\Resource.Embedder.props')" />
+  <Target Name="MsBuildAL1073WarningWorkaround" BeforeTargets="BeforeBuild">
+    <PropertyGroup Condition="'$(Platform)' == 'x64'">
+      <TargetFrameworkSDKToolsDirectory>$(TargetFrameworkSDKToolsDirectory)$(Platform)\</TargetFrameworkSDKToolsDirectory>
+    </PropertyGroup>
+  </Target>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Any CPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F84B6626-4F4C-41B6-8ADC-17EA68A81042}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Moto_Logo</RootNamespace>
+    <AssemblyName>Moto_Boot_Logo_Maker</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <MapFileExtensions>true</MapFileExtensions>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Moto_Logo.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AndroidLib, Version=1.5.3.0, Culture=neutral, PublicKeyToken=a80a6e5735e30a18, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Setup\AndroidLib.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.30.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.30\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\AutoUpdater.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\BasicAuthentication.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\CustomAuthentication.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.Designer.cs">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\IAuthentication.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\IPersistenceProvider.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\JsonFilePersistenceProvider.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\MyWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\NetworkAuthentication.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\ParseUpdateInfoEventArgs.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.Designer.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\RegistryPersistenceProvider.cs" />
+    <Compile Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.Designer.cs">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\AutoUpdaterDotNET\UpdateInfoEventArgs.cs" />
+    <Compile Include="EngineUI\FileManager\CheckFiles.cs" />
+    <Compile Include="EngineUI\FileManager\CheckDLL.cs" />
+    <Compile Include="EngineUI\FileManager\CheckFilesDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\FileManager\CheckFilesDownload.Designer.cs">
+      <DependentUpon>CheckFilesDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\FileManager\SettingsFiles.cs" />
+    <Compile Include="EngineUI\FileManager\FilesMng.cs" />
+    <Compile Include="EngineUI\FileManager\ToolLibsDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\FileManager\ToolLibsDownload.Designer.cs">
+      <DependentUpon>ToolLibsDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\Ionic\CommonSrc\CRC32.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ComHelper.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\Events.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\Exceptions.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\FileSelector.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\OffsetStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\Shared.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipConstants.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipCrypto.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipDirEntry.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Extract.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Read.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Write.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipEntrySource.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipErrorAction.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.AddUpdate.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Check.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Events.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Extract.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Read.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Save.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Selector.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipFile.x-IEnumerable.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipInputStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipOutputStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zip\ZipSegmentedStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\Deflate.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\DeflateStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\GZipStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\Inflate.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\InfTree.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\Tree.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\Zlib.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\ZlibCodec.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\ZlibConstants.cs" />
+    <Compile Include="EngineUI\Ionic\Zlib\ZlibStream.cs" />
+    <Compile Include="EngineUI\MainUI\Help\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Help\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Help\Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Help\Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\MoveForm\MoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\OpenFormsBlur\OpenForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\OTA\DownloadS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\OTA\DownloadS.Designer.cs">
+      <DependentUpon>DownloadS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.Designer.cs">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\SearchDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Settings\SendLogs.cs" />
+    <Compile Include="EngineUI\MainUI\Telegram\BootLogoChannels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Telegram\BootLogoChannels.Designer.cs">
+      <DependentUpon>BootLogoChannels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\LogoFlash\LogoTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\LogoFlash\LogoTest.Designer.cs">
+      <DependentUpon>LogoTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Image\ImageEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Theme\ThemeEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Tool\ToolEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Profile\ProfilesEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\OTA\UpdateEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Translation\Translations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Logo\LogoTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Help\ReadChangelog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Help\ReadChangelog.Designer.cs">
+      <DependentUpon>ReadChangelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Settings\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Telegram\TelegramChannels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\IntefaceClasses\AutoClosingMessageBox.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\CheckNetFamework.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\GifImage.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\MessageBoxManager.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OSArchitecture.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OSVersionInfoClass.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\MainForm\Logo\OpenLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EngineUI\MainUI\MainForm\Logo\BuildLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\IntefaceClasses\CheckInternet.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Logs.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Utils.cs" />
+    <Compile Include="Properties\Profiles.Designer.cs">
+      <DependentUpon>Profiles.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.ar.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.cs.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.da.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.de.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.es.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.fr.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.it.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.ja-JP.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.ko.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.nl.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.pl.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.pt-BR.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.pt.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.ru.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.sk.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.sv.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.th.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.tr.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.zh-tw.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\DownloadUpdateDialog.zh.resx">
+      <DependentUpon>DownloadUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.ar.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.cs.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.da.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.de.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.es.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.fr.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.it.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.ja-JP.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.ko.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.nl.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.pl.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.pt-BR.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.ru.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.sk.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.sv.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.th.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.zh-tw.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.zh.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ar.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.cs.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.da.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.de.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.es.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.fr.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.it.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ja-JP.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ko.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.nl.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pl.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pt-BR.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pt.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ru.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.sk.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.sv.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.th.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.tr.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.zh-tw.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.zh.resx">
+      <DependentUpon>RemindLaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.ar.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.cs.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.da.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.de.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.es.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.fr.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.it.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.ja-JP.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.ko.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.nl.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.pl.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.pt-BR.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.pt.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.ru.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.sk.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.sv.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.th.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.tr.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.zh-tw.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.zh.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\FileManager\CheckFilesDownload.resx">
+      <DependentUpon>CheckFilesDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\FileManager\ToolLibsDownload.resx">
+      <DependentUpon>ToolLibsDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Help\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Help\Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\MainForm\OTA\DownloadS.resx">
+      <DependentUpon>DownloadS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.resx">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Telegram\BootLogoChannels.resx">
+      <DependentUpon>BootLogoChannels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\LogoFlash\LogoTest.resx">
+      <DependentUpon>LogoTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Help\ReadChangelog.resx">
+      <DependentUpon>ReadChangelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Settings\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.de.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.es.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.fr.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ga.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.it.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.pl.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.pt.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ru.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.tr.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ja.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CN.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-Hans.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-Hant.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="EngineUI\AutoUpdaterDotNET\Resources\ZipExtractor.exe.config" />
+    <None Include="EngineUI\AutoUpdaterDotNET\LICENSE" />
+    <None Include="EngineUI\Ionic\Zip\Migrated rules for Zip DLL.ruleset" />
+    <None Include="packages.config" />
+    <None Include="Properties\Profiles.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Profiles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\bin\540x540.bin" />
+    <None Include="app.config" />
+    <None Include="Resources\bin\motorun.bin" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QR Code.png" />
+    <None Include="Resources\logo\_null.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\clock_go.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\clock_go1.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\clock_go_32.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\clock_play.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\download.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\download1.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\download_32.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\hand_point.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\update.png" />
+    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\ZipExtractor.exe" />
+    <Content Include="EngineUI\Ionic\Zlib\LICENSE.jzlib.txt" />
+    <Content Include="EngineUI\Ionic\Zlib\License.zlib.txt" />
+    <None Include="Resources\ToolUI\fireworks.gif" />
+    <None Include="Resources\ToolUI\motosnow.gif" />
+    <None Include="Resources\ToolUI\Fullscreen2.png" />
+    <None Include="Resources\ToolUI\Minizime.png" />
+    <None Include="Resources\ToolUI\Exit.png" />
+    <None Include="Resources\ToolUI\Fullscreen.png" />
+    <None Include="Resources\welcome_gif.gif" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Resources\devices\moto-g-2014-1.jpg" />
+    <Content Include="Resources\devices\moto-x-2014-2.jpg" />
+    <Content Include="Resources\devices\moto-x-play-1.jpg" />
+    <Content Include="Resources\devices\moto-x-style-1.jpg" />
+    <Content Include="Resources\devices\motorola-droid-maxx-2.jpg" />
+    <Content Include="Resources\devices\motorola-droid-maxx1.jpg" />
+    <Content Include="Resources\devices\motorola-droid-mini2.jpg" />
+    <Content Include="Resources\devices\motorola-droid-turbo-2-5.jpg" />
+    <Content Include="Resources\devices\motorola-droid-turbo-2.jpg" />
+    <Content Include="Resources\devices\motorola-droid-ultra-2.jpg" />
+    <Content Include="Resources\devices\motorola-edge-midnight-magenta-1.jpg" />
+    <Content Include="Resources\devices\motorola-edge-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-edge-solar-black-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e-2015-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e-2020-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e-3.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e4-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e4-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e5-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e5-cruise.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e5-play-.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e5-play-android-go-edition-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e5-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e6-xt2005-navy-blue1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-e7-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-3rd-gen-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-5g-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-5g-plus-03.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-power-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-stylus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-turbo-edition-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g4-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g4-play-4.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g4-plus-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g5-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g5-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g5s-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g5s-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g6-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g6-play-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g6-plus-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g7-0.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g7-play-0.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g7-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g7-power-0.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g8-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g8-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g8-power-r1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g9-play-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g9-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g9-power-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-p30-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-x-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-x-force4.jpg" />
+    <Content Include="Resources\devices\motorola-moto-x4-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z-force-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z-play-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z2-force-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z2-play-0.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z3-play-5.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z3v-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-z4-r.jpg" />
+    <Content Include="Resources\devices\motorola-nexus-6-1.jpg" />
+    <Content Include="Resources\devices\motorola-one-02.jpg" />
+    <Content Include="Resources\devices\motorola-one-action-denim-gray.jpg" />
+    <Content Include="Resources\devices\motorola-one-fusion-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-one-hyper-1.jpg" />
+    <Content Include="Resources\devices\motorola-one-power-1.jpg" />
+    <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
+    <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
+    <Content Include="Resources\devices\one-fusion-1.jpg" />
+    <None Include="Resources\motoHallowen2.gif" />
+    <None Include="Resources\motoHallowen.gif" />
+    <Content Include="Resources\ToolUI\Build.png" />
+    <Content Include="Resources\ToolUI\Cancel.png" />
+    <Content Include="unins.ico" />
+    <None Include="Resources\telegramico.ico" />
+    <Content Include="Resources\logo\logo_battery.png" />
+    <None Include="Resources\logo\logo_charge.png" />
+    <None Include="Resources\logo\logo_boot.png" />
+    <Content Include="Resources\logo\logo_lowpower.png" />
+    <Content Include="Resources\logo\logo_orange.png" />
+    <Content Include="Resources\logo\logo_red.png" />
+    <Content Include="Resources\logo\logo_unplug.png" />
+    <Content Include="Resources\logo\logo_yellow.png" />
+    <Content Include="main_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('..\packages\Resource.Embedder.2.1.1\build\Resource.Embedder.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Resource.Embedder.2.1.1\build\Resource.Embedder.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

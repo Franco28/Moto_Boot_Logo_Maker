@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_540x540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bin\540x540.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="motorun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bin\motorun.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="telegramico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegramico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QR_Code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QR Code.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_battery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_battery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_boot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_boot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_charge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_charge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_lowpower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_lowpower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_unplug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_unplug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\logo_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logo\_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\fireworks.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fullscreen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\fullscreen2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minizime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\minizime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motosnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\motosnow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="welcome_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\welcome_gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_maxx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-maxx1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_maxx_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-maxx-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_mini2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-mini2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_turbo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-turbo-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_turbo_2_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-turbo-2-5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_droid_ultra_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-droid-ultra-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_edge_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-edge-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_edge_solar_black_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-edge-solar-black-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e4_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e4-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e4_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e4-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e5_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e5-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e5_cruise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e5-cruise.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e5_play_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e5-play-.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e5_play_android_go_edition_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e5-play-android-go-edition-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e5_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e5-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e6_xt2005_navy_blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e6-xt2005-navy-blue1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e_2015_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e-2015-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e_2020_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e-2020-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g4_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g4-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g4_play_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g4-play-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g4_plus_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g4-plus-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g5s_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g5s-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g5s_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g5s-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g5_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g5-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g5_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g5-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g6_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g6-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g6_play_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g6-play-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g6_plus_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g6-plus-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g7_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g7-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g7_play_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g7-play-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g7_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g7-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g7_power_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g7-power-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g8_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g8-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g8_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g8-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g8_power_r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g8-power-r1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g9_play_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g9-play-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g9_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g9-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_3rd_gen_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-3rd-gen-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_5g_plus_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-5g-plus-03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_power_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-power-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_stylus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-stylus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_turbo_edition_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-turbo-edition-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_p30_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-p30-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_x4_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-x4-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_x_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-x-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_x_force4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-x-force4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z2_force_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z2-force-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z2_play_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z2-play-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z3v_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z3v-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z3_play_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z3-play-5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z4_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z4-r.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z_force_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z-force-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_z_play_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-z-play-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_nexus_6_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-nexus-6-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_action_denim_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-action-denim-gray.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_fusion_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-fusion-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_hyper_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-hyper-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_power_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-power-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_vision_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-vision-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_one_zoom_r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-one-zoom-r1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moto_g_2014_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\moto-g-2014-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moto_x_2014_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\moto-x-2014-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moto_x_play_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\moto-x-play-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moto_x_style_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\moto-x-style-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="one_fusion_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\one-fusion-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_edge_midnight_magenta_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-edge-midnight-magenta-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_e7_plus_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-e7-plus-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g9_power_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g9-power-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_5g_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-5g-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Build" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\build.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motoHallowen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motoHallowen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motoHallowen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motoHallowen2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,15 @@
+----------------------------------------------
+Moto_Boot_Logo_Maker: Credits - Contributors
+----------------------------------------------
+
+Translators Contributors:
+- @LuisFernando - Portuguese translator
+- @nift4 - German translator
+
+Image Design Credits:
+- @GarfieldArbuckle - Logos and main Tool icon
+
+Tool Credits:
+- @ravibpatel (Updater lib)
+- @CaitSith2 (Main Creator)
+- @Dan Wager (Android lib)

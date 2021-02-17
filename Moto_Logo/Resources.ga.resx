@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutBoxAppTrusted" xml:space="preserve">
+    <value>App Iontaofa:</value>
+  </data>
+  <data name="AboutBoxBW" xml:space="preserve">
+    <value>Tógtha Le:</value>
+  </data>
+  <data name="AboutBoxImageRunTime" xml:space="preserve">
+    <value>Íomhá Runtime:</value>
+  </data>
+  <data name="AboutBoxOS" xml:space="preserve">
+    <value>OS:</value>
+  </data>
+  <data name="AboutBoxToolCul" xml:space="preserve">
+    <value>Príomhchultúr Windows:</value>
+  </data>
+  <data name="AboutBoxToolName" xml:space="preserve">
+    <value>Ainm Uirlis:</value>
+  </data>
+  <data name="AboutBoxToolPath" xml:space="preserve">
+    <value>Conair Uirlisí:</value>
+  </data>
+  <data name="AboutBoxToolVer" xml:space="preserve">
+    <value>Leagan Uirlis:</value>
+  </data>
+  <data name="AboutBTNContributors" xml:space="preserve">
+    <value>Féach Rannpháirtithe / Creidmheasanna</value>
+  </data>
+  <data name="AboutBTNDownloadUpdate" xml:space="preserve">
+    <value>Íoslódáil Nuashonrú</value>
+  </data>
+  <data name="AboutCheckinf4Updates" xml:space="preserve">
+    <value>ag seiceáil le haghaidh nuashonruithe ...</value>
+  </data>
+  <data name="AboutCopy" xml:space="preserve">
+    <value>Uirlis foinse oscailte chun Lógó Tosaithe a dhéanamh do ghléasanna Motorola - Ar lean Le @ Franco28, déanta ag CaitSith2</value>
+  </data>
+  <data name="AboutDonationMSG" xml:space="preserve">
+    <value>Más mian leat beoir nó pizza a cheannach dom, scanadh QR nó cliceáil é!</value>
+  </data>
+  <data name="AboutDownloadUpdateNetLost" xml:space="preserve">
+    <value>CAILLTEANAS LÍONRA: Seiceáil le do nasc idirlín ...</value>
+  </data>
+  <data name="AboutDownloadUpdateServer" xml:space="preserve">
+    <value>Roghnaigh do fhreastalaí le híoslódáil:</value>
+  </data>
+  <data name="AboutDownloadUpdateServerDown" xml:space="preserve">
+    <value>tá an freastalaí síos: /</value>
+  </data>
+  <data name="AboutDownloadUpdateServerTitle" xml:space="preserve">
+    <value>Íoslódáil Nuashonrú</value>
+  </data>
+  <data name="AboutMainteiners" xml:space="preserve">
+    <value>Cothaitheoirí</value>
+  </data>
+  <data name="AboutNoInternet" xml:space="preserve">
+    <value>gan aon nasc idirlín ...</value>
+  </data>
+  <data name="AboutNoUpdatePortable" xml:space="preserve">
+    <value>gan aon nuashonruithe in eagrán PORTABLE.</value>
+  </data>
+  <data name="AboutThanksTo" xml:space="preserve">
+    <value>A bhuíochas sin do</value>
+  </data>
+  <data name="aboutToolStripMenuItem1" xml:space="preserve">
+    <value>Faoi</value>
+  </data>
+  <data name="AboutUpdates" xml:space="preserve">
+    <value>Nuashonruithe:</value>
+  </data>
+  <data name="AboutUpdates2" xml:space="preserve">
+    <value>Níl aon nuashonrú ar fáil.</value>
+  </data>
+  <data name="AllImageFailed" xml:space="preserve">
+    <value>Níor éirigh le gach íomhá amháin a roghnaíodh a luchtú - Próiseáil Giorraithe :(</value>
+  </data>
+  <data name="Append" xml:space="preserve">
+    <value>Aguisín</value>
+  </data>
+  <data name="BootLogosChannel" xml:space="preserve">
+    <value>Boot Logos Channel</value>
+  </data>
+  <data name="btnBuild" xml:space="preserve">
+    <value>Tiomsú</value>
+  </data>
+  <data name="btnChangeTheme" xml:space="preserve">
+    <value>Téama Athraigh</value>
+  </data>
+  <data name="btnOpenLogoFile" xml:space="preserve">
+    <value>Cosán comhaid a oscailt</value>
+  </data>
+  <data name="btnStop" xml:space="preserve">
+    <value>Cealaigh</value>
+  </data>
+  <data name="button1" xml:space="preserve">
+    <value>Aguisín</value>
+  </data>
+  <data name="button2" xml:space="preserve">
+    <value>Scrios</value>
+  </data>
+  <data name="button3" xml:space="preserve">
+    <value>Sliocht</value>
+  </data>
+  <data name="CantSaveEmptyFiles" xml:space="preserve">
+    <value>Déan lógó ar dtús le do thoil! ansin beidh tú in ann é a shábháil!</value>
+  </data>
+  <data name="ChangeThemeInfo" xml:space="preserve">
+    <value>Téama ag Athrú, fan le do thoil ...</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
+    <value>Seiceáil do nuashrónaithe</value>
+  </data>
+  <data name="CLbtnSend" xml:space="preserve">
+    <value>Seol Ceadúnas Iarraidh</value>
+  </data>
+  <data name="CLlabelCLTitle" xml:space="preserve">
+    <value>Iarratas ar Cheadúnas</value>
+  </data>
+  <data name="CLlabelContactTO" xml:space="preserve">
+    <value>Déan teagmháil le:</value>
+  </data>
+  <data name="CLlabelEmailTitle" xml:space="preserve">
+    <value>Ríomhphost</value>
+  </data>
+  <data name="CLlabelNOTE" xml:space="preserve">
+    <value>NÓTA: D’fhéadfadh sé go dtógfadh d’iarratas lá amháin chun é a fháil!</value>
+  </data>
+  <data name="CLlabelYourEmailInfo" xml:space="preserve">
+    <value>Do r-phost:</value>
+  </data>
+  <data name="CompilePathISWrong" xml:space="preserve">
+    <value>Caithfidh an cosán &lt;pathbuild&gt; deireadh a chur le \</value>
+  </data>
+  <data name="CompileRadioBTNEmpty" xml:space="preserve">
+    <value>Roghnaigh síneadh le do thoil sula dtiomsófar ...</value>
+  </data>
+  <data name="ComplieLNandPNEmpty" xml:space="preserve">
+    <value>Ní féidir bosca ainm an lógó agus bosca cosán an lógó a bheith folamh. mar sin cuir isteach ainm lógó agus cosán le tiomsú.</value>
+  </data>
+  <data name="ContinueWithBlankImge" xml:space="preserve">
+    <value>An bhfuil tú cinnte gur mian leat dul ar aghaidh le híomhá bán?</value>
+  </data>
+  <data name="darktoolStripMenuItem" xml:space="preserve">
+    <value>Dorcha</value>
+  </data>
+  <data name="DevicesCustom" xml:space="preserve">
+    <value>Saincheaptha</value>
+  </data>
+  <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
+    <value>Íoslódálacha</value>
+  </data>
+  <data name="ErrorLoadImage" xml:space="preserve">
+    <value>Earráid luchtaithe earráide - Próiseáil Giorraithe :(</value>
+  </data>
+  <data name="ErrorLogoFitImage" xml:space="preserve">
+    <value>Earráid: Ní bheidh na híomhánna / na roghanna a roghnófar oiriúnach i logo.bin, Theip ar</value>
+  </data>
+  <data name="ErrorLogoFitImage2" xml:space="preserve">
+    <value>Tá an comhad léirithe</value>
+  </data>
+  <data name="ErrorLogoFitImage3" xml:space="preserve">
+    <value>Bearta Ró-Mhóra</value>
+  </data>
+  <data name="ExitLogoWasntSave1" xml:space="preserve">
+    <value>Tá tionscadal reatha oscailte:</value>
+  </data>
+  <data name="ExitLogoWasntSave2" xml:space="preserve">
+    <value>agus níor shábháil tú an lógó! an bhfuil tú cinnte gur mhaith leat imeacht?</value>
+  </data>
+  <data name="ExtractLogoError" xml:space="preserve">
+    <value>Ní féidir an íomhá a bhaint as bootlogo</value>
+  </data>
+  <data name="FileLoadOk" xml:space="preserve">
+    <value>Luchtaigh Comhad Comhlánaithe :)</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>Earráid Comhad oscailte: &lt;FN&gt;</value>
+  </data>
+  <data name="FileSaveError" xml:space="preserve">
+    <value>Eisceacht le linn na próiseála:</value>
+  </data>
+  <data name="fileToolStripMenuItem" xml:space="preserve">
+    <value>Comhad</value>
+  </data>
+  <data name="groupBox1" xml:space="preserve">
+    <value>Rogha Lógó</value>
+  </data>
+  <data name="groupBox2" xml:space="preserve">
+    <value>formáid logo.bin</value>
+  </data>
+  <data name="groupBox3" xml:space="preserve">
+    <value>Rún</value>
+  </data>
+  <data name="groupBox4" xml:space="preserve">
+    <value>Roghanna Líon Íomhá</value>
+  </data>
+  <data name="groupBox5" xml:space="preserve">
+    <value>Roghanna Treoshuímh Íomhá</value>
+  </data>
+  <data name="groupBox6" xml:space="preserve">
+    <value>Roghnaigh cuimhne do lógó</value>
+  </data>
+  <data name="groupBox7" xml:space="preserve">
+    <value>Roghnaigh do shíneadh</value>
+  </data>
+  <data name="HELPME" xml:space="preserve">
+    <value>* HEY MÁ TÁ SÉ AG TEACHT LEIS AN TEACHTAIREACHT SEO, IS FÉIDIR LEAT GO BHFUIL SÉ SPEISIALTA, AGUS NÍ MÓR DUIT DO CHÚNAMH!</value>
+  </data>
+  <data name="helpToolStripMenuItem" xml:space="preserve">
+    <value>Cabhrú</value>
+  </data>
+  <data name="HowToUseItLinkLabel" xml:space="preserve">
+    <value>Tuilleadh eolais</value>
+  </data>
+  <data name="HowToUseItMainLoadText" xml:space="preserve">
+    <value>Roghnaigh do chuid amhras ar an bpainéal ar chlé!</value>
+  </data>
+  <data name="HowToUseItMainText" xml:space="preserve">
+    <value>Anseo beidh tú in ann léamh conas an Uirlis seo a úsáid!</value>
+  </data>
+  <data name="HowToUseItMainTitle" xml:space="preserve">
+    <value>Priomh</value>
+  </data>
+  <data name="HowToUseItNode1Text" xml:space="preserve">
+    <value>Liosta de dheighiltí na bhfeistí lena rúin scáileáin faoi seach, a chaithfear a chur ansin agus an lógó seachtrach á luchtú. Liosta:</value>
+  </data>
+  <data name="HowToUseItNode1Title" xml:space="preserve">
+    <value>Méid Cuimhne Lógó</value>
+  </data>
+  <data name="HowToUseItNode2Text" xml:space="preserve">
+    <value>Ar dtús ní mór duit logo.bin do ghléis a luchtú. Ansin nuair a bhíonn gach rud luchtaithe, déan cliceáil faoi dhó ar amharc crainn ar an bpainéal ar chlé áit a ndéantar ainmneacha lógó a leithdháileadh agus íomhá nua a luchtú! Cuimhnigh meas a bheith agat ar mhéid cuimhne do lógó, mura féidir é sin ní chuirfear an lógó le chéile!</value>
+  </data>
+  <data name="HowToUseItNode2Title" xml:space="preserve">
+    <value>Conas íomhánna lógó a athrú?</value>
+  </data>
+  <data name="HowToUseItResUnknown" xml:space="preserve">
+    <value>** Má tá ceann de na gairis marcáilte agat, déan teagmháil linn, níl a fhios againn go cinnte méid dheighilt lógó na bhfeistí seo.</value>
+  </data>
+  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
+    <value>Conas é a úsáid?</value>
+  </data>
+  <data name="ImageLoadFail" xml:space="preserve">
+    <value>Níor éirigh le híomhá amháin ar a laghad a luchtú, an bhfuil tú cinnte gur mian leat dul ar aghaidh?</value>
+  </data>
+  <data name="ImageSaveOk" xml:space="preserve">
+    <value>Íomhá sábháilte mar</value>
+  </data>
+  <data name="ImageSaveOk2" xml:space="preserve">
+    <value>Go rathúil</value>
+  </data>
+  <data name="InternetCheck" xml:space="preserve">
+    <value>Seiceáil do nasc idirlín agus bain triail eile as!</value>
+  </data>
+  <data name="joinTelegramBootLogosToolStripMenuItem" xml:space="preserve">
+    <value>Bí ar Lógónna Tosaithe Telegram</value>
+  </data>
+  <data name="JPGimgIsToBig" xml:space="preserve">
+    <value>Le do thoil an íomhá jpg seo, tá sé ró-fhada! laghdaigh an méid is ísle ná 2.5MB</value>
+  </data>
+  <data name="labelBuildPath" xml:space="preserve">
+    <value>Conair lógó</value>
+  </data>
+  <data name="labelImageStatusLocked" xml:space="preserve">
+    <value>* Stádas Íomhá: Faoi Ghlas</value>
+  </data>
+  <data name="labelImageStatusUnlocked" xml:space="preserve">
+    <value>* Stádas Íomhá: Díghlasáilte</value>
+  </data>
+  <data name="labelReloadTool" xml:space="preserve">
+    <value>Athlódáil</value>
+  </data>
+  <data name="labelSearchDevice" xml:space="preserve">
+    <value>Gléas Cuardaigh</value>
+  </data>
+  <data name="languageToolStripMenuItem" xml:space="preserve">
+    <value>Teanga</value>
+  </data>
+  <data name="lblUIDTip" xml:space="preserve">
+    <value>Cuir an UID thíos ar fáil agus an ceadúnas á cheannach agat</value>
+  </data>
+  <data name="LicActivateTitle" xml:space="preserve">
+    <value>Ceadúnas a Ghníomhachtú</value>
+  </data>
+  <data name="LicActivateWhatIsUID" xml:space="preserve">
+    <value>Cad é UID?</value>
+  </data>
+  <data name="LicenseAccepte" xml:space="preserve">
+    <value>Glactar le ceadúnas</value>
+  </data>
+  <data name="LicenseAcceptedInfo" xml:space="preserve">
+    <value>Glactar le ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
+  </data>
+  <data name="LicenseAlreadyActivated" xml:space="preserve">
+    <value>Ceadúnas curtha i ngníomh cheana féin</value>
+  </data>
+  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
+    <value>Tá Moto_Boot_Logo_Maker curtha i ngníomh cheana féin, ní gá duit gníomhachtú arís!</value>
+  </data>
+  <data name="LicenseBuyInfo" xml:space="preserve">
+    <value>Nuair a cheannaíonn tú an ceadúnas, seol R-phost chugam le faisnéis faoi dheonú agus: TÁBHACHTACH do UID le go bhféadfainn an ceadúnas a sholáthar duit!</value>
+  </data>
+  <data name="LicenseDenied" xml:space="preserve">
+    <value>Diúltaíodh ceadúnas</value>
+  </data>
+  <data name="LicenseDeniedInfo" xml:space="preserve">
+    <value>Diúltaíodh an ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
+  </data>
+  <data name="LicenseEnd" xml:space="preserve">
+    <value>Níl do chóip de Moto_Boot_Logo_Maker curtha i ngníomh ... Cuir i ngníomh é le do thoil!</value>
+  </data>
+  <data name="LicenseFreeInfo" xml:space="preserve">
+    <value>Go dtí seo beidh Ceadúnas UID saor in aisce</value>
+  </data>
+  <data name="LicenseGetAsk" xml:space="preserve">
+    <value>Téigh i dteagmháil leis an bhForbróir chun Ceadúnas a iarraidh!</value>
+  </data>
+  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
+    <value>NÍL an ceadúnas don chóip seo!</value>
+  </data>
+  <data name="LicenseNotActivated" xml:space="preserve">
+    <value>Ní chuirtear an ceadúnas i ngníomh</value>
+  </data>
+  <data name="LicenseRemoved" xml:space="preserve">
+    <value>Ceadúnas bainte</value>
+  </data>
+  <data name="LicenseRemovedHard" xml:space="preserve">
+    <value>Bainfear an ceadúnas, mar gheall air seo, triailfear Moto_Boot_Logo_Maker anois ar feadh 10 nóiméad ... Oscail arís Moto_Boot_Logo_Maker</value>
+  </data>
+  <data name="LicenseRemovedInfo" xml:space="preserve">
+    <value>Baintear an ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
+  </data>
+  <data name="LicenseUIDInfo" xml:space="preserve">
+    <value>Cad é UID? Aitheantas uathúil don ríomhaire reatha. Ciallaíonn sé seo go bhfuil sé bunaithe ar: Ainm an Iarratais, Aitheantas an Phróiseálaí, Sraithuimhir Motherboard agus Sraithuimhir Imleabhar Diosca Céide C</value>
+  </data>
+  <data name="LicImportantClosebtn" xml:space="preserve">
+    <value>Dún</value>
+  </data>
+  <data name="LicImportantDSTAbtn" xml:space="preserve">
+    <value>Ná taispeáin é seo arís</value>
+  </data>
+  <data name="LicImportantGetLicbtn" xml:space="preserve">
+    <value>FAIGH CEADÚNAS</value>
+  </data>
+  <data name="LicImportantMoreInfobtn" xml:space="preserve">
+    <value>Tuilleadh eolais</value>
+  </data>
+  <data name="LicImportantTitle" xml:space="preserve">
+    <value>Fáilte go Moto_Boot_Logo_Maker!
+Athruithe Tábhachtacha! - LÉAMH</value>
+  </data>
+  <data name="LicReadException" xml:space="preserve">
+    <value>Ní chuirtear an táirge i ngníomh, mar sin níor aimsíodh ceadúnas ...</value>
+  </data>
+  <data name="LicReadExportbtn" xml:space="preserve">
+    <value>Easpórtáil</value>
+  </data>
+  <data name="LicReadTitle" xml:space="preserve">
+    <value>Eochair an Cheadúnais</value>
+  </data>
+  <data name="LicStatActivatebtn" xml:space="preserve">
+    <value>Gníomhachtaigh</value>
+  </data>
+  <data name="LicStatCode" xml:space="preserve">
+    <value>Cód Ceadúnais:</value>
+  </data>
+  <data name="LicStatCTCbtn" xml:space="preserve">
+    <value>Cóipeáil chuig an gearrthaisce</value>
+  </data>
+  <data name="LicStatCurrentUID" xml:space="preserve">
+    <value>UID Reatha:</value>
+  </data>
+  <data name="LicStatExpirationDate" xml:space="preserve">
+    <value>Dáta Éaga: Neamhbhainteach - Ceadúnas UID</value>
+  </data>
+  <data name="LicStatInstallbtn" xml:space="preserve">
+    <value>Suiteáil</value>
+  </data>
+  <data name="LicStatStatus" xml:space="preserve">
+    <value>Stádas Ceadúnais:</value>
+  </data>
+  <data name="LicStatTitle" xml:space="preserve">
+    <value>Eolas faoi Cheadúnas</value>
+  </data>
+  <data name="LicStatViewbtn" xml:space="preserve">
+    <value>Amharc</value>
+  </data>
+  <data name="lighttoolStripMenuItem" xml:space="preserve">
+    <value>Solas</value>
+  </data>
+  <data name="LoadPreviousLogo" xml:space="preserve">
+    <value>Bhí lógó luchtaithe roimhe seo, ar mhaith leat é a luchtú arís? NÓTA: Tógfaidh sé seo tamall ...</value>
+  </data>
+  <data name="LogoBinInvalid" xml:space="preserve">
+    <value>Comhad neamhbhailí logo.bin luchtaithe</value>
+  </data>
+  <data name="LogoBinProccesing" xml:space="preserve">
+    <value>Próiseáil</value>
+  </data>
+  <data name="LogoBinProcessAborted" xml:space="preserve">
+    <value>Próiseáil Giorraithe</value>
+  </data>
+  <data name="LogoBinProcessOk" xml:space="preserve">
+    <value>Próiseáil Críochnaithe :)</value>
+  </data>
+  <data name="LogoBinStatus" xml:space="preserve">
+    <value>Stádas:</value>
+  </data>
+  <data name="LogoBuildCancel" xml:space="preserve">
+    <value>Tógáil Lógó: Cuireadh an próiseas ar ceal!</value>
+  </data>
+  <data name="LogoBuildError" xml:space="preserve">
+    <value>Tógáil Lógó: Tharla earráid agus an próiseas á rith. Giorraíodh an snáithe</value>
+  </data>
+  <data name="LogoBuildFolderError" xml:space="preserve">
+    <value>Ní féidir cosán fillteáin nach bhfuil ann a oscailt!</value>
+  </data>
+  <data name="LogoBuildOK" xml:space="preserve">
+    <value>Tógáil Lógó: Críochnaíodh an próiseas!</value>
+  </data>
+  <data name="LogoBuildZipFileM" xml:space="preserve">
+    <value>Tá File Zip ar iarraidh, mar sin ní bheidh an lógó inadhainte!</value>
+  </data>
+  <data name="LogoBuildZipFileMTitle" xml:space="preserve">
+    <value>Comhaid Script ar Iarraidh</value>
+  </data>
+  <data name="LogoName" xml:space="preserve">
+    <value>Ainm an lógó</value>
+  </data>
+  <data name="LogoTestADBstart" xml:space="preserve">
+    <value>Ag tosú adb ... Fan le do thoil!</value>
+  </data>
+  <data name="LogoTestDeviceConnected" xml:space="preserve">
+    <value>Gléas ceangailte:</value>
+  </data>
+  <data name="LogoTestDeviceError" xml:space="preserve">
+    <value>Ceangail do ghléas i mód fastboot le do thoil!</value>
+  </data>
+  <data name="LogoTestLogoB" xml:space="preserve">
+    <value>Anois roghnaigh do logo_b le do thoil!</value>
+  </data>
+  <data name="LogoTestMoveThis" xml:space="preserve">
+    <value>Bog do logo.bin isteach san fhillteán seo le do thoil!</value>
+  </data>
+  <data name="LogoTestRO" xml:space="preserve">
+    <value>Atosaigh rogha</value>
+  </data>
+  <data name="LogoTestSaveLogsBTN" xml:space="preserve">
+    <value>Sábháil logaí consól</value>
+  </data>
+  <data name="LogoTestSelectedA" xml:space="preserve">
+    <value>Deighilt roghnaithe A</value>
+  </data>
+  <data name="LogoTestSelectedAB" xml:space="preserve">
+    <value>Deighilt roghnaithe A/B</value>
+  </data>
+  <data name="LogoTestSelectedRBL" xml:space="preserve">
+    <value>Bootloader atosaigh roghnaithe</value>
+  </data>
+  <data name="LogoTestSelectUDP" xml:space="preserve">
+    <value>Roghnaigh deighilt do ghléis</value>
+  </data>
+  <data name="LogoTestSelectYourDP" xml:space="preserve">
+    <value>Roghnaigh deighilt do ghléis le do thoil sula leanfaidh tú ar aghaidh!</value>
+  </data>
+  <data name="LogoTestTitle" xml:space="preserve">
+    <value>Tástáil do bhosca bruscair!</value>
+  </data>
+  <data name="logo_battery_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a urscaoiltear ceallraí do ghutháin go hiomlán, agus tusa</value>
+  </data>
+  <data name="logo_battery_ToolTipText2" xml:space="preserve">
+    <value>breiseán do ghuthán i gceannas</value>
+  </data>
+  <data name="logo_boot_ToolTipText" xml:space="preserve">
+    <value>Infheicthe ach le fón faoi ghlas tosaithe-luchtaithe. Moltar duit a bhaint</value>
+  </data>
+  <data name="logo_boot_ToolTipText2" xml:space="preserve">
+    <value>an pictiúr atá san iontráil seo, chun bearta a shábháil i do logo.bin</value>
+  </data>
+  <data name="logo_charge_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a bhíonn do ghuthán plugáilte isteach agus é lánchumhachta, agus bíonn níos mó ag an bhfón</value>
+  </data>
+  <data name="logo_charge_ToolTipText2" xml:space="preserve">
+    <value>ná muirear 3%. taispeántar logo_battery ina ionad má tá muirear 0-3% air.</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a bhíonn níos mó ná 3% de chumhacht ag an bhfón agus é lánchumhachta. Níl i bhfad níos mó ar eolas.</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText2" xml:space="preserve">
+    <value>Níl an ghné seo i láthair ach ar an Moto E.</value>
+  </data>
+  <data name="logo_orange_ToolTipText" xml:space="preserve">
+    <value>Infheicthe ar fhóin dhíghlasáilte nua Moto bootloader. Is dóigh go bhféachfaidh an rud a chuireann tú anseo</value>
+  </data>
+  <data name="logo_orange_ToolTipText2" xml:space="preserve">
+    <value>i bhfad níos fearr ná an rabhadh feiste díghlasáilte. :)</value>
+  </data>
+  <data name="logo_red_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a theip ar do ghuthán fíorú OS</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText" xml:space="preserve">
+    <value>Infheicthe ar fhóin dhíghlasáilte tosaithe luchtaithe. Is dóigh go bhféachfaidh an rud a chuireann tú anseo</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText2" xml:space="preserve">
+    <value>i bhfad níos fearr ná an rabhadh feiste díghlasáilte. :)</value>
+  </data>
+  <data name="logo_unplug_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a bhíonn an fón luchtaithe go hiomlán agus é plugáilte isteach agus lánchumhachta.</value>
+  </data>
+  <data name="logo_unplug_ToolTipText2" xml:space="preserve">
+    <value>Níl an ghné seo i láthair ach ar an Moto E.</value>
+  </data>
+  <data name="logo_yellow_ToolTipText" xml:space="preserve">
+    <value>Infheicthe nuair a luchtaíonn do ghuthán OS difriúil</value>
+  </data>
+  <data name="LogsErrorOpenFolder" xml:space="preserve">
+    <value>Ar mhaith leat fillteán Logaí a oscailt?</value>
+  </data>
+  <data name="LogsErrorSend" xml:space="preserve">
+    <value>Ar mhaith leat Logaí a sheoladh anois?</value>
+  </data>
+  <data name="LogTestWrongBin" xml:space="preserve">
+    <value>Roghnaigh comhad ceart logo.bin le do thoil! is comhad mícheart é seo:</value>
+  </data>
+  <data name="MailMsgInternetError" xml:space="preserve">
+    <value>Ní féidir Iarratas ar Cheadúnas a sheoladh! Seiceáil do nasc idirlín le do thoil!</value>
+  </data>
+  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
+    <value>Nasc idirlín caillte</value>
+  </data>
+  <data name="MailMsgIsEmpty" xml:space="preserve">
+    <value>Ní féidir leis na boscaí a bheith folamh!</value>
+  </data>
+  <data name="MailMsgMailNotValid" xml:space="preserve">
+    <value>Ionchur ríomhphost bailí!</value>
+  </data>
+  <data name="MailMsgSent" xml:space="preserve">
+    <value>Cuireadh teachtaireacht!</value>
+  </data>
+  <data name="MailMsgSentTitle" xml:space="preserve">
+    <value>Seol Ríomhphost</value>
+  </data>
+  <data name="materialButtonResetAllProfiles" xml:space="preserve">
+    <value>Athshocraigh Gach Próifíl</value>
+  </data>
+  <data name="materialButtonResetToolSettings" xml:space="preserve">
+    <value>Athshocraigh Socruithe Uirlisí</value>
+  </data>
+  <data name="materialLabel10" xml:space="preserve">
+    <value>* Cliceáil ar íomhá agus beidh sí faoi ghlas</value>
+  </data>
+  <data name="materialLabel11" xml:space="preserve">
+    <value>* Cliceáil faoi dhó agus díghlasálfar é</value>
+  </data>
+  <data name="MaxLogoBinSize" xml:space="preserve">
+    <value>Max Logo.bin méid</value>
+  </data>
+  <data name="newToolStripMenuItem" xml:space="preserve">
+    <value>Nua</value>
+  </data>
+  <data name="NoImageLoad" xml:space="preserve">
+    <value>Níor luchtaíodh aon íomhánna, an bhfuil tú cinnte gur mian leat dul ar aghaidh le híomhánna bána?</value>
+  </data>
+  <data name="openToolStripMenuItem" xml:space="preserve">
+    <value>Oscail</value>
+  </data>
+  <data name="othersToolStripMenuItem" xml:space="preserve">
+    <value>Daoine eile</value>
+  </data>
+  <data name="ProductActivatedTitle" xml:space="preserve">
+    <value>Táirge Gníomhachtaithe</value>
+  </data>
+  <data name="ProductNotActivated" xml:space="preserve">
+    <value>Ní chuirtear an táirge i ngníomh</value>
+  </data>
+  <data name="ProductNotActivatedTitle" xml:space="preserve">
+    <value>Níl an táirge curtha i ngníomh, AMA LEFT:</value>
+  </data>
+  <data name="ProgramCheckAssembliesError" xml:space="preserve">
+    <value>Ní féidir le Moto_Boot_Logo_Maker a mheaitseáil le tionóil bhunaidh:</value>
+  </data>
+  <data name="ProgramCheckAssembliesErrorVer" xml:space="preserve">
+    <value>Leagan:</value>
+  </data>
+  <data name="ProgramCheckBackRun" xml:space="preserve">
+    <value>Is cosúil go bhfuil sampla eile den Uirlis ag rith. Cinntigh le do thoil nach bhfuil sé ag rith sa chúlra.</value>
+  </data>
+  <data name="ProgramCheckBackRun2" xml:space="preserve">
+    <value>Tá sampla Uirlis eile ar siúl</value>
+  </data>
+  <data name="ProgramCheckFolderWrong" xml:space="preserve">
+    <value>Tá an fillteán mícheart, déan seiceáil air, ba cheart go mbeadh sé mar seo:</value>
+  </data>
+  <data name="ProgramCheckPrivileges" xml:space="preserve">
+    <value>Caithfidh an uirlis rith mar riarthóir</value>
+  </data>
+  <data name="ProgramCheckPrivileges2" xml:space="preserve">
+    <value>Tá pribhléidí de dhíth ar an uirlis</value>
+  </data>
+  <data name="ProgramCheckWindows" xml:space="preserve">
+    <value>Tá an uirlis seo comhoiriúnach le Windows 7, Windows 8, Windows 8.1 agus Windows 10, tá:</value>
+  </data>
+  <data name="ProgramCheckWindows2" xml:space="preserve">
+    <value>Ní féidir Uirlis a thosú, earráid: comhoiriúnacht Windows</value>
+  </data>
+  <data name="rdoAndroid43" xml:space="preserve">
+    <value>Beart 540x540</value>
+  </data>
+  <data name="rdoAndroid44" xml:space="preserve">
+    <value>Réamhshocrú</value>
+  </data>
+  <data name="rdoImageCenter" xml:space="preserve">
+    <value>Ionad</value>
+  </data>
+  <data name="rdoImageFill" xml:space="preserve">
+    <value>Líon</value>
+  </data>
+  <data name="rdoImageStretchAspect" xml:space="preserve">
+    <value>Sín go comhréireach</value>
+  </data>
+  <data name="rdoLayoutLandscape" xml:space="preserve">
+    <value>Tírdhreach</value>
+  </data>
+  <data name="rdoLayoutPortrait" xml:space="preserve">
+    <value>Portráid</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Lonadaigh</value>
+  </data>
+  <data name="saveAsToolStripMenuItem" xml:space="preserve">
+    <value>Sábháil mar</value>
+  </data>
+  <data name="savefiledialog1Title" xml:space="preserve">
+    <value>Roghnaigh do ghléas le do thoil</value>
+  </data>
+  <data name="saveToolStripMenuItem" xml:space="preserve">
+    <value>Sábháil</value>
+  </data>
+  <data name="SelectLogoSizeWarn" xml:space="preserve">
+    <value>Roghnaigh méid cuimhne do lógó le do thoil sula n-osclaítear comhad!</value>
+  </data>
+  <data name="SettingCLoading" xml:space="preserve">
+    <value>Socruithe Uirlisí a Luchtú ...</value>
+  </data>
+  <data name="SettingGS" xml:space="preserve">
+    <value>Socruithe Ginearálta</value>
+  </data>
+  <data name="SettingRT" xml:space="preserve">
+    <value>Uirlis Athshocraigh</value>
+  </data>
+  <data name="SettingsGroupBox1" xml:space="preserve">
+    <value>Cumasaigh próifílí sábhála uathoibríoch</value>
+  </data>
+  <data name="SettingsGroupBox2" xml:space="preserve">
+    <value>Cumasaigh lógó uathoibríoch shábháil i gcuimhne</value>
+  </data>
+  <data name="SettingsGroupBox3" xml:space="preserve">
+    <value>Cumasaigh seiceáil uathoibríoch le haghaidh nuashonruithe</value>
+  </data>
+  <data name="SettingsNo" xml:space="preserve">
+    <value>NÍL</value>
+  </data>
+  <data name="SettingsThemeNote" xml:space="preserve">
+    <value>* NÓTA: Go dtí seo ní shábhálfar é seo, mar sin nuair a scoirfidh tú Uirlis athshocrófar é seo</value>
+  </data>
+  <data name="settingsToolStripMenuItem" xml:space="preserve">
+    <value>Socruithe</value>
+  </data>
+  <data name="SettingsYes" xml:space="preserve">
+    <value>TÁ</value>
+  </data>
+  <data name="SignYourLogo" xml:space="preserve">
+    <value>Sínigh do lógó nua</value>
+  </data>
+  <data name="sourceToolStripMenuItem" xml:space="preserve">
+    <value>Foinse</value>
+  </data>
+  <data name="testToolStripMenuItem" xml:space="preserve">
+    <value>Scrúdú</value>
+  </data>
+  <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
+    <value>Tástáil do lógó nua</value>
+  </data>
+  <data name="themetoolStripMenuItem" xml:space="preserve">
+    <value>Téama</value>
+  </data>
+  <data name="ToolErrorShow" xml:space="preserve">
+    <value>Tharla earráid, téigh chuig fillteán le do thoil agus seol logaí chugam!</value>
+  </data>
+  <data name="ToolErrorShowBTN" xml:space="preserve">
+    <value>Téigh go comhad</value>
+  </data>
+  <data name="ToolErrorUpdate" xml:space="preserve">
+    <value>Tá fadhb ann freastalaí nuashonraithe a bhaint amach, seiceáil do nasc idirlín le do thoil agus bain triail eile as níos déanaí.</value>
+  </data>
+  <data name="ToolErrorUpdateTitle" xml:space="preserve">
+    <value>Theip ar an seiceáil nuashonraithe</value>
+  </data>
+  <data name="ToolInternetErrorUpdate" xml:space="preserve">
+    <value>Ní féidir nuashonruithe Uirlisí a sheiceáil, seiceáil do nasc idirlín!</value>
+  </data>
+  <data name="ToolNewUpdateText" xml:space="preserve">
+    <value>Tá leagan nua ann</value>
+  </data>
+  <data name="ToolNewUpdateText2" xml:space="preserve">
+    <value>ar fáil. Tá leagan á úsáid agat</value>
+  </data>
+  <data name="ToolNewUpdateText3" xml:space="preserve">
+    <value>Is gá é seo a nuashonrú. Brúigh Ok chun an t-iarratas a nuashonrú.</value>
+  </data>
+  <data name="ToolNewUpdateTitle" xml:space="preserve">
+    <value>Nuashonrú ar Fáil</value>
+  </data>
+  <data name="ToolNoUpdate" xml:space="preserve">
+    <value>Níl aon nuashonrú ar fáil bain triail eile as níos déanaí.</value>
+  </data>
+  <data name="ToolNoUpdateTitle" xml:space="preserve">
+    <value>Níl aon nuashonrú ar fáil</value>
+  </data>
+  <data name="ToolTipRGBCOLOUR" xml:space="preserve">
+    <value>Dath RGB</value>
+  </data>
+  <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
+    <value>cóipeáladh chuig gearrthaisce!</value>
+  </data>
+  <data name="ToolUpdating" xml:space="preserve">
+    <value>Iarratas deiridh le nuashonrú ...</value>
+  </data>
+  <data name="UpdateStatus" xml:space="preserve">
+    <value>Stádas:</value>
+  </data>
+  <data name="UpdateStatusOffline" xml:space="preserve">
+    <value>As líne</value>
+  </data>
+  <data name="UpdateStatusOnline" xml:space="preserve">
+    <value>Ar líne</value>
+  </data>
+  <data name="Zipfile_logo_bin_error" xml:space="preserve">
+    <value>Earráid: Comhad zip &lt;ZFN&gt; Níl logo.bin ann</value>
+  </data>
+</root>

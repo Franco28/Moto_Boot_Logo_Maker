@@ -1,0 +1,512 @@
+ui_print("                                               ");
+ui_print("***********************************************");
+ui_print("*            _   _                            *");
+ui_print("*           | \ | | _____      __             *");
+ui_print("*           |  \| |/ _ \ \ /\ / /             *");
+ui_print("*           | |\  |  __/\ V  V /              *");
+ui_print("*           |_| \_|\___| \_/\_/               *");
+ui_print("*  ____              _   _                    *");
+ui_print("* | __ )  ___   ___ | |_| | ___   __ _  ___   *");
+ui_print("* |  _ \ / _ \ / _ \| __| |/ _ \ / _` |/ _ \  *");
+ui_print("* | |_) | (_) | (_) | |_| | (_) | (_| | (_) | *");
+ui_print("* |____/ \___/ \___/ \__|_|\___/ \__, |\___/  *");
+ui_print("*                                |___/        *");
+ui_print("*                                             *");
+ui_print("***********************************************");
+ui_print("*                                             *");
+ui_print("*              By Nemesis Team                *");
+ui_print("*                                             *");
+ui_print("***********************************************");
+ui_print("*   Bootlogo Made With Moto Bootlogo Maker    *");
+ui_print("***********************************************");
+ui_print("*     Maintainers: Francom28 & Deivid_21      *");
+ui_print("***********************************************");
+ui_print("*    Designers: Fraaxius & GarfieldФернанд    *");
+ui_print("***********************************************");
+ui_print("*                                             *");
+show_progress(1.000000, 0);
+
+ui_print("*              Checking device...             *");
+ui_print("*                                             *");
+ui_print("***********************************************");
+ui_print("*                                             *");
+
+if getprop("ro.build.product") != "obake" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: obake                 *");
+endif;
+
+if getprop("ro.build.product") != "quark" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: quark                 *");
+endif;
+
+if getprop("ro.build.product") != "ghost" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: ghost                 *");
+endif;
+
+if getprop("ro.build.product") != "victara" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: victara                *");
+endif;
+
+if getprop("ro.build.product") != "clark" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: clark                 *");
+endif;
+
+if getprop("ro.build.product") != "lux" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*                Device: lux                  *");
+endif;
+
+if getprop("ro.build.product") != "kinzie" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: kinzie                 *");
+endif;
+
+if getprop("ro.build.product") != "payton" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: payton                 *");
+endif;
+
+if getprop("ro.build.product") != "falcon" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: falcon                 *");
+endif;
+
+if getprop("ro.build.product") != "peregrine" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: peregrine               *");
+endif;
+
+if getprop("ro.build.product") != "titan" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: titan                 *");
+endif;
+
+if getprop("ro.build.product") != "thea" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: thea                  *");
+endif;
+
+if getprop("ro.build.product") != "osprey" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: osprey                 *");
+endif;
+
+if getprop("ro.build.product") != "merlin" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: merlin                 *");
+endif;
+
+if getprop("ro.build.product") != "athene" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: athene                 *");
+endif;
+
+if getprop("ro.build.product") != "harpia" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: harpia                 *");
+endif;
+
+if getprop("ro.build.product") != "cedirc" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: cedirc                 *");
+endif;
+
+if getprop("ro.build.product") != "potter" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: potter                 *");
+endif;
+
+if getprop("ro.build.product") != "montana" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: montana                 *");
+endif;
+
+if getprop("ro.build.product") != "sanders" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: sanders                 *");
+endif;
+
+if getprop("ro.build.product") != "ali" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*                Device: ali                  *");
+endif;
+
+if getprop("ro.build.product") != "evert" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: evert                 *");
+endif;
+
+if getprop("ro.build.product") != "jeter" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: jeter                 *");
+endif;
+
+if getprop("ro.build.product") != "aljeter" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: aljeter                *");
+endif;
+
+if getprop("ro.build.product") != "river" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: river                 *");
+endif;
+
+if getprop("ro.build.product") != "lake" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: lake                  *");
+endif;
+
+if getprop("ro.build.product") != "channel" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: channel                *");
+endif;
+
+if getprop("ro.build.product") != "ocean" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: ocean                 *");
+endif;
+
+if getprop("ro.build.product") != "doha" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: doha                  *");
+endif;
+
+if getprop("ro.product.device") != "sofiar" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: sofiar                 *");
+endif;
+
+if getprop("ro.product.device") != "sofia" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: sofia                 *");
+endif;
+
+if getprop("ro.product.device") != "rav" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*                Device: rav                  *");
+endif;
+
+if getprop("ro.product.device") != "sofiap" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: sofiap                 *");
+endif;
+
+if getprop("ro.product.device") != "sofiap_ao" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: sofiap_ao               *");
+endif;
+
+if getprop("ro.product.device") != "nairo" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: nairo                 *");
+endif;
+
+if getprop("ro.product.device") != "guamp" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: guamp                 *");
+endif;
+
+if getprop("ro.product.device") != "odessa" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: odessa                 *");
+endif;
+
+if getprop("ro.product.device") != "cebu" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: cebu                 *");
+endif;
+
+if getprop("ro.product.device") != "kiev" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: kiev                 *");
+endif;
+
+if getprop("ro.build.product") != "condor" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: condor                 *");
+endif;
+
+if getprop("ro.build.product") != "otus" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: otus                  *");
+endif;
+
+if getprop("ro.build.product") != "surnia" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: surnia                 *");
+endif;
+
+if getprop("ro.build.product") != "perry" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: perry                 *");
+endif;
+
+if getprop("ro.build.product") != "owens" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: owens                 *");
+endif;
+
+if getprop("ro.build.product") != "nora" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: nora                  *");
+endif;
+
+if getprop("ro.build.product") != "hannah" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: hannah                 *");
+endif;
+
+if getprop("ro.build.product") != "rhannah" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: rhannah                *");
+endif;
+
+if getprop("ro.build.product") != "ahannah" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: ahannah                *");
+endif;
+
+if getprop("ro.build.product") != "james" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: james                 *");
+endif;
+
+if getprop("ro.build.product") != "rjames" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: rjames                 *");
+endif;
+
+if getprop("ro.build.product") != "rjames_go" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: rjames_go               *");
+endif;
+
+if getprop("ro.build.product") != "pettyl" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: pettyl                 *");
+endif;
+
+if getprop("ro.build.product") != "surfna" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: surfna                 *");
+endif;
+
+if getprop("ro.product.device") != "ginna" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: ginna                 *");
+endif;
+
+if getprop("ro.product.device") != "guam" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: guam                  *");
+endif;
+
+if getprop("ro.build.product") != "griffin" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: griffin                 *");
+endif;
+
+if getprop("ro.build.product") != "addison" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*             Device: addison                 *");
+endif;
+
+if getprop("ro.build.product") != "albus" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: albus                 *");
+endif;
+
+if getprop("ro.build.product") != "nash" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: nash                  *");
+endif;
+
+if getprop("ro.build.product") != "beckham" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: beckham                *");
+endif;
+
+if getprop("ro.build.product") != "messi" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: messi                 *");
+endif;
+
+if getprop("ro.build.product") != "foles" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: foles                 *");
+endif;
+
+if getprop("ro.build.product") != "deen" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: deen                  *");
+endif;
+
+if getprop("ro.build.product") != "chef" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: chef                  *");
+endif;
+
+if getprop("ro.build.product") != "kane" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: kane                  *");
+endif;
+
+if getprop("ro.build.product") != "troika" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: troika                 *");
+endif;
+
+if getprop("ro.build.product") != "parker" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: parker                 *");
+endif;
+
+if getprop("ro.product.device") != "def" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*                Device: def                  *");
+endif;
+
+if getprop("ro.product.device") != "liber" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: liber                 *");
+endif;
+
+if getprop("ro.product.device") != "astro" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: astro                 *");
+endif;
+
+if getprop("ro.product.device") != "racer" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: racer                 *");
+endif;
+
+if getprop("ro.product.device") != "burton" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: burton                 *");
+endif;
+
+if getprop("ro.build.system_root_image") != "true" then
+  if getprop("ro.boot.dynamic_partitions") != "true" then
+    ui_print("*           Partition Type: A-Only            *");
+    ui_print("*                                             *");
+    ui_print("***********************************************");
+    ui_print("*                                             *");
+    ui_print("*       Installing your new Bootlogo...       *");
+    ui_print("*                                             *");
+    package_extract_file("logo.bin", "/dev/block/bootdevice/by-name/logo");
+  else
+    ui_print("*          Partition Type: Dynamic            *");
+    ui_print("*                                             *");
+    ui_print("***********************************************");
+    ui_print("*                                             *");
+    ui_print("*       Installing your new Bootlogo...       *");
+    ui_print("*                                             *");
+    package_extract_file("logo.bin", "/dev/block/bootdevice/by-name/logo_a");
+    package_extract_file("logo.bin", "/dev/block/bootdevice/by-name/logo_b");
+  endif;
+else
+  ui_print("*             Partition Type: A/B             *");
+  ui_print("*                                             *");
+  ui_print("***********************************************");
+  ui_print("*                                             *");
+  ui_print("*       Installing your new Bootlogo...       *");
+  ui_print("*                                             *");
+  package_extract_file("logo.bin", "/dev/block/bootdevice/by-name/logo_a");
+  package_extract_file("logo.bin", "/dev/block/bootdevice/by-name/logo_b");
+endif;
+set_progress(0.525000);
+
+ui_print("***********************************************");
+ui_print("*                                             *");
+ui_print("*         Installation successful...          *");
+ui_print("*                                             *");
+ui_print("*                   Enjoy!                    *");
+ui_print("*                                             *");
+ui_print("***********************************************");
+ui_print("*                                             *");
+ui_print("*   Join on Telegram: @NemesisTeamCommunity   *");
+ui_print("*              @NemesisTeamNews               *");
+ui_print("*                                             *");
+ui_print("*        Copyright © 2020 Nemesis Team        *");
+ui_print("*                                             *");
+ui_print("***********************************************");
+ui_print("                                               ");
+set_progress(1.000000);

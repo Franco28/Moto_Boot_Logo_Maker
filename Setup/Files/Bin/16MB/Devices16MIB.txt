@@ -1,0 +1,68 @@
+Compatible Devices:
+
+
+- Moto E4 (s/perry) > 720 x 1280
+
+- Moto E4 Plus (owens) > 720 x 1280
+
+- Moto E5 Play/E5 Cruise (r/james) > 720 x 1280
+
+- Moto E5 Go (rjames_go) > 720 x 1280
+
+- Moto E5 (nora) > 720 x 1440
+
+- Moto E5 Plus/E5 Supra (a/r/hannah) > 720 x 1440
+
+- Moto E5 Play Go (pettyl) > 480 x 960
+
+- Moto E6 (surfna) > 720 x 1440
+
+- Moto E (ginna) > 720 x 1520
+
+- Moto E7 Plus (guam) > 720 x 1600
+
+- Moto G4/G4 Plus (athene) > 1080 x 1920
+
+- Moto G5 (cedric) > 1080 x 1920
+
+- Moto G5 Plus (potter) > 1080 x 1920
+
+- Moto G5s (montana) > 1080 x 1920
+
+- Moto G5s Plus (sanders) > 1080 x 1920
+
+- Moto G6 (ali) > 1080 x 2160
+
+- Moto G6 Play/G6 Forge (al/jeter) > 720 x 1440
+
+- Moto G7 (river) > 1080 x 2270
+
+- Moto G7 Play/G7 Optimo (channel) > 720 x 1520
+
+- Moto G7 Power/G7 Supra/G7 Optimo Maxx (ocean) > 720 x 1520
+
+- Moto G9 (guamp) > 720 x 1600
+
+- Moto G9 Play (guamp) > 720 x 1600
+
+- Moto G 5G Plus (nairo) > 1080 x 2520
+
+- Moto G9 Power (cebu) > 720 x 1600
+
+- Moto Z/Z Droid (griffin) > 1440 x 2560
+
+- Moto Z Force Droid (sheridan) > 1440 x 2560
+
+- Moto Z Play/Z Play Droid (addison) > 1080 x 1920
+
+- Moto Z2 Play (albus) > 1080 x 1920
+
+- Motorola E5 Plus (ahannah) > 720 x 1440
+
+- Motorola Edge (racer) > 1080 x 2340
+
+- Motorola Edge Plus (burton) > 1080 x 2340
+
+- Motorola One (deen) > 720 x 1520
+
+- Motorola One 5G (nairo) > 1080 x 2520

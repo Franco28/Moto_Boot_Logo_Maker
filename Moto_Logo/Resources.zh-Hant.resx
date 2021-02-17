@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutBoxAppTrusted" xml:space="preserve">
+    <value>應用受信任：</value>
+  </data>
+  <data name="AboutBoxBW" xml:space="preserve">
+    <value>內置：</value>
+  </data>
+  <data name="AboutBoxImageRunTime" xml:space="preserve">
+    <value>圖像運行時：</value>
+  </data>
+  <data name="AboutBoxOS" xml:space="preserve">
+    <value>作業系統：</value>
+  </data>
+  <data name="AboutBoxToolCul" xml:space="preserve">
+    <value>Windows主要文化：</value>
+  </data>
+  <data name="AboutBoxToolName" xml:space="preserve">
+    <value>工具名稱：</value>
+  </data>
+  <data name="AboutBoxToolPath" xml:space="preserve">
+    <value>工具路徑：</value>
+  </data>
+  <data name="AboutBoxToolVer" xml:space="preserve">
+    <value>工具版本：</value>
+  </data>
+  <data name="AboutBTNContributors" xml:space="preserve">
+    <value>查看貢獻者/積分</value>
+  </data>
+  <data name="AboutBTNDownloadUpdate" xml:space="preserve">
+    <value>下載更新</value>
+  </data>
+  <data name="AboutCheckinf4Updates" xml:space="preserve">
+    <value>查詢更新...</value>
+  </data>
+  <data name="AboutCopy" xml:space="preserve">
+    <value>製作摩托羅拉設備啟動徽標的開源工具-續由@ CainSith2製作的@ Franco28</value>
+  </data>
+  <data name="AboutDonationMSG" xml:space="preserve">
+    <value>如果您想給我買啤酒或比薩餅，請掃描QR或單擊它！</value>
+  </data>
+  <data name="AboutDownloadUpdateNetLost" xml:space="preserve">
+    <value>網絡丟失：請檢查您的互聯網連接...</value>
+  </data>
+  <data name="AboutDownloadUpdateServer" xml:space="preserve">
+    <value>請選擇您的服務器下載：</value>
+  </data>
+  <data name="AboutDownloadUpdateServerDown" xml:space="preserve">
+    <value>服務器掛了 ：/</value>
+  </data>
+  <data name="AboutDownloadUpdateServerTitle" xml:space="preserve">
+    <value>下載更新</value>
+  </data>
+  <data name="AboutMainteiners" xml:space="preserve">
+    <value>維護者</value>
+  </data>
+  <data name="AboutNoInternet" xml:space="preserve">
+    <value>沒有網絡連接...</value>
+  </data>
+  <data name="AboutNoUpdatePortable" xml:space="preserve">
+    <value>便攜式版本中沒有更新。</value>
+  </data>
+  <data name="AboutThanksTo" xml:space="preserve">
+    <value>謝謝</value>
+  </data>
+  <data name="aboutToolStripMenuItem1" xml:space="preserve">
+    <value>關於</value>
+  </data>
+  <data name="AboutUpdates" xml:space="preserve">
+    <value>更新：</value>
+  </data>
+  <data name="AboutUpdates2" xml:space="preserve">
+    <value>沒有可用的更新。</value>
+  </data>
+  <data name="AllImageFailed" xml:space="preserve">
+    <value>選擇的每個單個圖像均無法加載-處理異常終止:(</value>
+  </data>
+  <data name="Append" xml:space="preserve">
+    <value>附加</value>
+  </data>
+  <data name="BootLogosChannel" xml:space="preserve">
+    <value>開機徽標頻道</value>
+  </data>
+  <data name="btnBuild" xml:space="preserve">
+    <value>建立</value>
+  </data>
+  <data name="btnChangeTheme" xml:space="preserve">
+    <value>更改主題</value>
+  </data>
+  <data name="btnOpenLogoFile" xml:space="preserve">
+    <value>打開文件路徑</value>
+  </data>
+  <data name="btnStop" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="button1" xml:space="preserve">
+    <value>附加</value>
+  </data>
+  <data name="button2" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="button3" xml:space="preserve">
+    <value>提取</value>
+  </data>
+  <data name="CantSaveEmptyFiles" xml:space="preserve">
+    <value>請先製作徽標！ 那麼您就可以保存它！</value>
+  </data>
+  <data name="ChangeThemeInfo" xml:space="preserve">
+    <value>正在更改主題，請稍候...</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
+    <value>檢查更新</value>
+  </data>
+  <data name="CLbtnSend" xml:space="preserve">
+    <value>發送請求許可證</value>
+  </data>
+  <data name="CLlabelCLTitle" xml:space="preserve">
+    <value>許可證申請</value>
+  </data>
+  <data name="CLlabelContactTO" xml:space="preserve">
+    <value>聯絡人：</value>
+  </data>
+  <data name="CLlabelEmailTitle" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="CLlabelNOTE" xml:space="preserve">
+    <value>注意：您的請求可能需要一天的時間才能收到！</value>
+  </data>
+  <data name="CLlabelYourEmailInfo" xml:space="preserve">
+    <value>你的郵件：</value>
+  </data>
+  <data name="CompilePathISWrong" xml:space="preserve">
+    <value>路徑&lt;pathbuild&gt;必須以\結尾</value>
+  </data>
+  <data name="CompileRadioBTNEmpty" xml:space="preserve">
+    <value>在構建之前選擇一個擴展...</value>
+  </data>
+  <data name="ComplieLNandPNEmpty" xml:space="preserve">
+    <value>徽標名稱框和徽標路徑框不能為空！ 因此，請輸入徽標名稱和編譯路徑！</value>
+  </data>
+  <data name="ContinueWithBlankImge" xml:space="preserve">
+    <value>您確定要空白圖像嗎？</value>
+  </data>
+  <data name="darktoolStripMenuItem" xml:space="preserve">
+    <value>黑暗</value>
+  </data>
+  <data name="DevicesCustom" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
+    <value>資料下載</value>
+  </data>
+  <data name="ErrorLoadImage" xml:space="preserve">
+    <value>加載圖片時出錯-處理異常終止:(</value>
+  </data>
+  <data name="ErrorLogoFitImage" xml:space="preserve">
+    <value>錯誤：所選的圖像/選項不適合logo.bin，在以下位置失敗</value>
+  </data>
+  <data name="ErrorLogoFitImage2" xml:space="preserve">
+    <value>產生的檔案為</value>
+  </data>
+  <data name="ErrorLogoFitImage3" xml:space="preserve">
+    <value>字節太大</value>
+  </data>
+  <data name="ExitLogoWasntSave1" xml:space="preserve">
+    <value>當前打開了一個項目：</value>
+  </data>
+  <data name="ExitLogoWasntSave2" xml:space="preserve">
+    <value>而且您沒有保存徽標！ 您確定要退出嗎？</value>
+  </data>
+  <data name="ExtractLogoError" xml:space="preserve">
+    <value>無法從bootlogo提取圖像</value>
+  </data>
+  <data name="FileLoadOk" xml:space="preserve">
+    <value>文件加載完成:)</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>錯誤打開文件：&lt;FN&gt;</value>
+  </data>
+  <data name="FileSaveError" xml:space="preserve">
+    <value>處理期間的異常：</value>
+  </data>
+  <data name="fileToolStripMenuItem" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="groupBox1" xml:space="preserve">
+    <value>徽標選項</value>
+  </data>
+  <data name="groupBox2" xml:space="preserve">
+    <value>logo.bin格式</value>
+  </data>
+  <data name="groupBox3" xml:space="preserve">
+    <value>解析度</value>
+  </data>
+  <data name="groupBox4" xml:space="preserve">
+    <value>圖像填充選項</value>
+  </data>
+  <data name="groupBox5" xml:space="preserve">
+    <value>圖像方向選項</value>
+  </data>
+  <data name="groupBox6" xml:space="preserve">
+    <value>選擇您的徽標記憶</value>
+  </data>
+  <data name="groupBox7" xml:space="preserve">
+    <value>選擇您的分機</value>
+  </data>
+  <data name="HELPME" xml:space="preserve">
+    <value>*嘿，如果您正在查看此消息，那是因為您很特別，我需要您的幫助！</value>
+  </data>
+  <data name="helpToolStripMenuItem" xml:space="preserve">
+    <value>幫幫我</value>
+  </data>
+  <data name="HowToUseItLinkLabel" xml:space="preserve">
+    <value>更多信息</value>
+  </data>
+  <data name="HowToUseItMainLoadText" xml:space="preserve">
+    <value>請在左側面板上選擇您的疑問！</value>
+  </data>
+  <data name="HowToUseItMainText" xml:space="preserve">
+    <value>在這裡您將能夠閱讀如何使用此工具！</value>
+  </data>
+  <data name="HowToUseItMainTitle" xml:space="preserve">
+    <value>主要</value>
+  </data>
+  <data name="HowToUseItNode1Text" xml:space="preserve">
+    <value>設備分區的列表及其各自的屏幕分辨率，然後在加載外部徽標時必須放置這些分區。 清單：</value>
+  </data>
+  <data name="HowToUseItNode1Title" xml:space="preserve">
+    <value>徽標記憶體大小</value>
+  </data>
+  <data name="HowToUseItNode2Text" xml:space="preserve">
+    <value>首先，您必須加載設備logo.bin。 然後，當所有內容加載完畢後，雙擊分配了徽標名稱的左側面板上的樹狀視圖並加載新圖像！ 記住要尊重徽標的內存大小，如果不可能的話，徽標將無法編譯！</value>
+  </data>
+  <data name="HowToUseItNode2Title" xml:space="preserve">
+    <value>如何更改徽標圖像？</value>
+  </data>
+  <data name="HowToUseItResUnknown" xml:space="preserve">
+    <value>**如果您具有標記的設備之一，請與我們聯繫，我們不確定這些設備的徽標分區的大小。</value>
+  </data>
+  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
+    <value>如何使用它？</value>
+  </data>
+  <data name="ImageLoadFail" xml:space="preserve">
+    <value>至少有一張圖片無法加載，確定要繼續嗎？</value>
+  </data>
+  <data name="ImageSaveOk" xml:space="preserve">
+    <value>圖片另存為</value>
+  </data>
+  <data name="ImageSaveOk2" xml:space="preserve">
+    <value>成功地</value>
+  </data>
+  <data name="InternetCheck" xml:space="preserve">
+    <value>請檢查您的互聯網連接，然後重試！</value>
+  </data>
+  <data name="joinTelegramBootLogosToolStripMenuItem" xml:space="preserve">
+    <value>加入電報啟動徽標</value>
+  </data>
+  <data name="JPGimgIsToBig" xml:space="preserve">
+    <value>請這張jpg圖片，太長了！ 將大小減小到2.5MB以下</value>
+  </data>
+  <data name="labelBuildPath" xml:space="preserve">
+    <value>徽標構建路徑</value>
+  </data>
+  <data name="labelImageStatusLocked" xml:space="preserve">
+    <value>*圖片狀態：鎖定</value>
+  </data>
+  <data name="labelImageStatusUnlocked" xml:space="preserve">
+    <value>*圖片狀態：已解鎖</value>
+  </data>
+  <data name="labelReloadTool" xml:space="preserve">
+    <value>重裝</value>
+  </data>
+  <data name="labelSearchDevice" xml:space="preserve">
+    <value>搜索設備</value>
+  </data>
+  <data name="languageToolStripMenuItem" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="lblUIDTip" xml:space="preserve">
+    <value>購買許可證時提供以下UID</value>
+  </data>
+  <data name="LicActivateTitle" xml:space="preserve">
+    <value>激活許可證</value>
+  </data>
+  <data name="LicActivateWhatIsUID" xml:space="preserve">
+    <value>什麼是UID？</value>
+  </data>
+  <data name="LicenseAccepte" xml:space="preserve">
+    <value>接受許可</value>
+  </data>
+  <data name="LicenseAcceptedInfo" xml:space="preserve">
+    <value>許可證已接受，Moto_Boot_Logo_Maker將重新啟動</value>
+  </data>
+  <data name="LicenseAlreadyActivated" xml:space="preserve">
+    <value>許可證已激活</value>
+  </data>
+  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
+    <value>Moto_Boot_Logo_Maker已被激活，不需要再次激活！</value>
+  </data>
+  <data name="LicenseBuyInfo" xml:space="preserve">
+    <value>當您購買許可證時，請給我發送電子郵件，其中包含有關捐贈的信息，以及：重要的UID，以便我為您提供許可證！</value>
+  </data>
+  <data name="LicenseDenied" xml:space="preserve">
+    <value>許可證被拒絕</value>
+  </data>
+  <data name="LicenseDeniedInfo" xml:space="preserve">
+    <value>許可證被拒絕，Moto_Boot_Logo_Maker將重新啟動</value>
+  </data>
+  <data name="LicenseEnd" xml:space="preserve">
+    <value>您的Moto_Boot_Logo_Maker副本未激活...請激活它！</value>
+  </data>
+  <data name="LicenseFreeInfo" xml:space="preserve">
+    <value>目前，UID許可證是免費的</value>
+  </data>
+  <data name="LicenseGetAsk" xml:space="preserve">
+    <value>請與開發人員聯繫以請求許可！</value>
+  </data>
+  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
+    <value>該許可證不適用於該副本！</value>
+  </data>
+  <data name="LicenseNotActivated" xml:space="preserve">
+    <value>許可證未激活</value>
+  </data>
+  <data name="LicenseRemoved" xml:space="preserve">
+    <value>許可證已刪除</value>
+  </data>
+  <data name="LicenseRemovedHard" xml:space="preserve">
+    <value>許可證已刪除，因此，Moto_Boot_Logo_Maker現在將試用10分鐘...再次打開Moto_Boot_Logo_Maker</value>
+  </data>
+  <data name="LicenseRemovedInfo" xml:space="preserve">
+    <value>許可證已刪除，Moto_Boot_Logo_Maker將重新啟動</value>
+  </data>
+  <data name="LicenseUIDInfo" xml:space="preserve">
+    <value>什麼是UID？ 當前PC的唯一ID。 這表示基於：驅動器C的應用程序名稱，處理器ID，主板序列號和磁盤捲序列號</value>
+  </data>
+  <data name="LicImportantClosebtn" xml:space="preserve">
+    <value>關</value>
+  </data>
+  <data name="LicImportantDSTAbtn" xml:space="preserve">
+    <value>不再顯示</value>
+  </data>
+  <data name="LicImportantGetLicbtn" xml:space="preserve">
+    <value>獲得許可</value>
+  </data>
+  <data name="LicImportantMoreInfobtn" xml:space="preserve">
+    <value>更多信息</value>
+  </data>
+  <data name="LicImportantTitle" xml:space="preserve">
+    <value>歡迎使用Moto_Boot_Logo_Maker！
+重要變化！ -自述文件</value>
+  </data>
+  <data name="LicReadException" xml:space="preserve">
+    <value>產品未激活，因此未找到許可證...</value>
+  </data>
+  <data name="LicReadExportbtn" xml:space="preserve">
+    <value>出口</value>
+  </data>
+  <data name="LicReadTitle" xml:space="preserve">
+    <value>註冊碼</value>
+  </data>
+  <data name="LicStatActivatebtn" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="LicStatCode" xml:space="preserve">
+    <value>許可證代碼：</value>
+  </data>
+  <data name="LicStatCTCbtn" xml:space="preserve">
+    <value>複製到剪貼板</value>
+  </data>
+  <data name="LicStatCurrentUID" xml:space="preserve">
+    <value>當前的UID：</value>
+  </data>
+  <data name="LicStatExpirationDate" xml:space="preserve">
+    <value>到期日期：N/A-UID許可證</value>
+  </data>
+  <data name="LicStatInstallbtn" xml:space="preserve">
+    <value>安裝</value>
+  </data>
+  <data name="LicStatStatus" xml:space="preserve">
+    <value>許可證狀態：</value>
+  </data>
+  <data name="LicStatTitle" xml:space="preserve">
+    <value>許可證信息</value>
+  </data>
+  <data name="LicStatViewbtn" xml:space="preserve">
+    <value>視圖</value>
+  </data>
+  <data name="lighttoolStripMenuItem" xml:space="preserve">
+    <value>光</value>
+  </data>
+  <data name="LoadPreviousLogo" xml:space="preserve">
+    <value>以前有一個已加載的徽標，您要重新加載嗎？ 注意：這將花費一些時間...</value>
+  </data>
+  <data name="LogoBinInvalid" xml:space="preserve">
+    <value>加載了無效的logo.bin文件</value>
+  </data>
+  <data name="LogoBinProccesing" xml:space="preserve">
+    <value>處理中</value>
+  </data>
+  <data name="LogoBinProcessAborted" xml:space="preserve">
+    <value>處理中止</value>
+  </data>
+  <data name="LogoBinProcessOk" xml:space="preserve">
+    <value>處理完成：）</value>
+  </data>
+  <data name="LogoBinStatus" xml:space="preserve">
+    <value>狀態：</value>
+  </data>
+  <data name="LogoBuildCancel" xml:space="preserve">
+    <value>徽標構建：流程已取消！</value>
+  </data>
+  <data name="LogoBuildError" xml:space="preserve">
+    <value>徽標構建：運行該過程時出錯。 線程中止</value>
+  </data>
+  <data name="LogoBuildFolderError" xml:space="preserve">
+    <value>無法打開不存在的文件夾路徑！</value>
+  </data>
+  <data name="LogoBuildOK" xml:space="preserve">
+    <value>徽標製作：流程已完成！</value>
+  </data>
+  <data name="LogoBuildZipFileM" xml:space="preserve">
+    <value>文件Zip丟失，因此徽標將不會閃爍！</value>
+  </data>
+  <data name="LogoBuildZipFileMTitle" xml:space="preserve">
+    <value>缺少腳本文件</value>
+  </data>
+  <data name="LogoName" xml:space="preserve">
+    <value>徽標名稱</value>
+  </data>
+  <data name="LogoTestADBstart" xml:space="preserve">
+    <value>正在啟動adb ...請稍候！</value>
+  </data>
+  <data name="LogoTestDeviceConnected" xml:space="preserve">
+    <value>連接的設備：</value>
+  </data>
+  <data name="LogoTestDeviceError" xml:space="preserve">
+    <value>請以快速啟動模式連接設備！</value>
+  </data>
+  <data name="LogoTestLogoB" xml:space="preserve">
+    <value>現在請選擇您的logo_b！</value>
+  </data>
+  <data name="LogoTestMoveThis" xml:space="preserve">
+    <value>請將您的logo.bin移到該文件夾中！</value>
+  </data>
+  <data name="LogoTestRO" xml:space="preserve">
+    <value>重新啟動選項</value>
+  </data>
+  <data name="LogoTestSaveLogsBTN" xml:space="preserve">
+    <value>保存控制台日誌</value>
+  </data>
+  <data name="LogoTestSelectedA" xml:space="preserve">
+    <value>選擇分區</value>
+  </data>
+  <data name="LogoTestSelectedAB" xml:space="preserve">
+    <value>選定的A/B分區</value>
+  </data>
+  <data name="LogoTestSelectedRBL" xml:space="preserve">
+    <value>選擇重啟引導程序</value>
+  </data>
+  <data name="LogoTestSelectUDP" xml:space="preserve">
+    <value>選擇您的設備分區</value>
+  </data>
+  <data name="LogoTestSelectYourDP" xml:space="preserve">
+    <value>請選擇您的設備分區，然後再繼續！</value>
+  </data>
+  <data name="LogoTestTitle" xml:space="preserve">
+    <value>測試徽標箱！</value>
+  </data>
+  <data name="logo_battery_ToolTipText" xml:space="preserve">
+    <value>當手機的電池電量完全耗盡時可見</value>
+  </data>
+  <data name="logo_battery_ToolTipText2" xml:space="preserve">
+    <value>將手機插入電源</value>
+  </data>
+  <data name="logo_boot_ToolTipText" xml:space="preserve">
+    <value>僅在Bootloader鎖定的手機上可見。 建議您刪除</value>
+  </data>
+  <data name="logo_boot_ToolTipText2" xml:space="preserve">
+    <value>此項中的圖片，用於將字節保存在logo.bin中</value>
+  </data>
+  <data name="logo_charge_ToolTipText" xml:space="preserve">
+    <value>在完全關閉電源的情況下插入手機時可見，並且手機還有更多功能</value>
+  </data>
+  <data name="logo_charge_ToolTipText2" xml:space="preserve">
+    <value>超過3％的費用。 如果充電0-3％，則會顯示logo_battery。</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText" xml:space="preserve">
+    <value>在手機完全關閉電源時，如果手機的電量超過3％，則顯示此內容。 所知不多。</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText2" xml:space="preserve">
+    <value>此功能僅在Moto E上存在</value>
+  </data>
+  <data name="logo_orange_ToolTipText" xml:space="preserve">
+    <value>在新的Moto引導加載程序未鎖定的手機上可見。 你在這裡放的東西可能看起來</value>
+  </data>
+  <data name="logo_orange_ToolTipText2" xml:space="preserve">
+    <value>比未鎖定的設備警告好得多。 :)</value>
+  </data>
+  <data name="logo_red_ToolTipText" xml:space="preserve">
+    <value>當手機的OS驗證失敗時顯示</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText" xml:space="preserve">
+    <value>在引導加載程序未鎖定的手機上可見。 你在這裡放的東西可能看起來</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText2" xml:space="preserve">
+    <value>比未鎖定的設備警告好得多。 :)</value>
+  </data>
+  <data name="logo_unplug_ToolTipText" xml:space="preserve">
+    <value>當手機在插入電源並完全關閉電源時充滿電時可見。</value>
+  </data>
+  <data name="logo_unplug_ToolTipText2" xml:space="preserve">
+    <value>此功能僅在Moto E上存在</value>
+  </data>
+  <data name="logo_yellow_ToolTipText" xml:space="preserve">
+    <value>當您的手機加載其他操作系統時可見</value>
+  </data>
+  <data name="LogsErrorOpenFolder" xml:space="preserve">
+    <value>您要打開日誌文件夾嗎？</value>
+  </data>
+  <data name="LogsErrorSend" xml:space="preserve">
+    <value>您要立即發送日誌嗎？</value>
+  </data>
+  <data name="LogTestWrongBin" xml:space="preserve">
+    <value>請選擇正確的logo.bin文件！ 這是一個錯誤的文件：</value>
+  </data>
+  <data name="MailMsgInternetError" xml:space="preserve">
+    <value>無法發送許可證請求！ 請檢查您的互聯網連接！</value>
+  </data>
+  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
+    <value>網路連線中斷</value>
+  </data>
+  <data name="MailMsgIsEmpty" xml:space="preserve">
+    <value>盒子不能為空！</value>
+  </data>
+  <data name="MailMsgMailNotValid" xml:space="preserve">
+    <value>輸入有效的電子郵件！</value>
+  </data>
+  <data name="MailMsgSent" xml:space="preserve">
+    <value>消息已發送！</value>
+  </data>
+  <data name="MailMsgSentTitle" xml:space="preserve">
+    <value>郵件已發送</value>
+  </data>
+  <data name="materialButtonResetAllProfiles" xml:space="preserve">
+    <value>重置所有配置文件</value>
+  </data>
+  <data name="materialButtonResetToolSettings" xml:space="preserve">
+    <value>重置工具設置</value>
+  </data>
+  <data name="materialLabel10" xml:space="preserve">
+    <value>*單擊圖像將被鎖定</value>
+  </data>
+  <data name="materialLabel11" xml:space="preserve">
+    <value>*雙擊將被解鎖</value>
+  </data>
+  <data name="MaxLogoBinSize" xml:space="preserve">
+    <value>Logo.bin的最大大小</value>
+  </data>
+  <data name="newToolStripMenuItem" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="NoImageLoad" xml:space="preserve">
+    <value>沒有加載圖像，確定要繼續處理空白圖像嗎？</value>
+  </data>
+  <data name="openToolStripMenuItem" xml:space="preserve">
+    <value>打開</value>
+  </data>
+  <data name="othersToolStripMenuItem" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="ProductActivatedTitle" xml:space="preserve">
+    <value>產品激活</value>
+  </data>
+  <data name="ProductNotActivated" xml:space="preserve">
+    <value>產品未激活</value>
+  </data>
+  <data name="ProductNotActivatedTitle" xml:space="preserve">
+    <value>產品未激活，剩餘時間：</value>
+  </data>
+  <data name="ProgramCheckAssembliesError" xml:space="preserve">
+    <value>Moto_Boot_Logo_Maker無法與原始程序集匹配：</value>
+  </data>
+  <data name="ProgramCheckAssembliesErrorVer" xml:space="preserve">
+    <value>版：</value>
+  </data>
+  <data name="ProgramCheckBackRun" xml:space="preserve">
+    <value>似乎還有另一個正在運行的工具實例。 請確保它不在後台運行。</value>
+  </data>
+  <data name="ProgramCheckBackRun2" xml:space="preserve">
+    <value>另一個工具實例正在運行</value>
+  </data>
+  <data name="ProgramCheckFolderWrong" xml:space="preserve">
+    <value>文件夾有誤，請檢查一下，應該是這樣的：</value>
+  </data>
+  <data name="ProgramCheckPrivileges" xml:space="preserve">
+    <value>工具必須以管理員身份運行</value>
+  </data>
+  <data name="ProgramCheckPrivileges2" xml:space="preserve">
+    <value>工具需要特權</value>
+  </data>
+  <data name="ProgramCheckWindows" xml:space="preserve">
+    <value>該工具與Windows 7，Windows 8，Windows 8.1和Windows 10兼容，您具有：</value>
+  </data>
+  <data name="ProgramCheckWindows2" xml:space="preserve">
+    <value>無法啟動工具，錯誤：Windows兼容性</value>
+  </data>
+  <data name="rdoAndroid43" xml:space="preserve">
+    <value>540x540捆綁</value>
+  </data>
+  <data name="rdoAndroid44" xml:space="preserve">
+    <value>默認</value>
+  </data>
+  <data name="rdoImageCenter" xml:space="preserve">
+    <value>中央</value>
+  </data>
+  <data name="rdoImageFill" xml:space="preserve">
+    <value>填</value>
+  </data>
+  <data name="rdoImageStretchAspect" xml:space="preserve">
+    <value>按比例拉伸</value>
+  </data>
+  <data name="rdoLayoutLandscape" xml:space="preserve">
+    <value>景觀</value>
+  </data>
+  <data name="rdoLayoutPortrait" xml:space="preserve">
+    <value>肖像</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>更換</value>
+  </data>
+  <data name="saveAsToolStripMenuItem" xml:space="preserve">
+    <value>另存為</value>
+  </data>
+  <data name="savefiledialog1Title" xml:space="preserve">
+    <value>請選擇您的設備</value>
+  </data>
+  <data name="saveToolStripMenuItem" xml:space="preserve">
+    <value>救</value>
+  </data>
+  <data name="SelectLogoSizeWarn" xml:space="preserve">
+    <value>打開文件前，請選擇徽標存儲器的大小！</value>
+  </data>
+  <data name="SettingCLoading" xml:space="preserve">
+    <value>正在加載工具設置...</value>
+  </data>
+  <data name="SettingGS" xml:space="preserve">
+    <value>常規設置</value>
+  </data>
+  <data name="SettingRT" xml:space="preserve">
+    <value>重置工具</value>
+  </data>
+  <data name="SettingsGroupBox1" xml:space="preserve">
+    <value>啟用自動保存配置文件</value>
+  </data>
+  <data name="SettingsGroupBox2" xml:space="preserve">
+    <value>在內存中啟用自動保存徽標</value>
+  </data>
+  <data name="SettingsGroupBox3" xml:space="preserve">
+    <value>啟用自動檢查更新</value>
+  </data>
+  <data name="SettingsNo" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="settingsToolStripMenuItem" xml:space="preserve">
+    <value>設定值</value>
+  </data>
+  <data name="SettingsYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="SignYourLogo" xml:space="preserve">
+    <value>簽署新徽標</value>
+  </data>
+  <data name="sourceToolStripMenuItem" xml:space="preserve">
+    <value>資源</value>
+  </data>
+  <data name="testToolStripMenuItem" xml:space="preserve">
+    <value>測試</value>
+  </data>
+  <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
+    <value>測試您的新徽標</value>
+  </data>
+  <data name="themetoolStripMenuItem" xml:space="preserve">
+    <value>主題</value>
+  </data>
+  <data name="ToolErrorShow" xml:space="preserve">
+    <value>發生錯誤，請轉到文件夾並向我發送日誌！</value>
+  </data>
+  <data name="ToolErrorShowBTN" xml:space="preserve">
+    <value>轉到文件</value>
+  </data>
+  <data name="ToolErrorUpdate" xml:space="preserve">
+    <value>到達更新服務器時出現問題，請檢查您的互聯網連接，然後重試。</value>
+  </data>
+  <data name="ToolErrorUpdateTitle" xml:space="preserve">
+    <value>更新檢查失敗</value>
+  </data>
+  <data name="ToolInternetErrorUpdate" xml:space="preserve">
+    <value>無法檢查工具更新，請檢查您的互聯網連接！</value>
+  </data>
+  <data name="ToolNewUpdateText" xml:space="preserve">
+    <value>有新版本</value>
+  </data>
+  <data name="ToolNewUpdateText2" xml:space="preserve">
+    <value>可用。 您正在使用版本</value>
+  </data>
+  <data name="ToolNewUpdateText3" xml:space="preserve">
+    <value>這是必需的更新。 按確定開始更新應用程序。</value>
+  </data>
+  <data name="ToolNewUpdateTitle" xml:space="preserve">
+    <value>有可用更新</value>
+  </data>
+  <data name="ToolNoUpdate" xml:space="preserve">
+    <value>沒有可用的更新，請稍後再試。</value>
+  </data>
+  <data name="ToolNoUpdateTitle" xml:space="preserve">
+    <value>無可用更新</value>
+  </data>
+  <data name="ToolTipRGBCOLOUR" xml:space="preserve">
+    <value>RGB顏色</value>
+  </data>
+  <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
+    <value>複製到剪貼板！</value>
+  </data>
+  <data name="ToolUpdating" xml:space="preserve">
+    <value>正在關閉應用程序以進行更新...</value>
+  </data>
+  <data name="UpdateStatus" xml:space="preserve">
+    <value>狀態：</value>
+  </data>
+  <data name="UpdateStatusOffline" xml:space="preserve">
+    <value>離線</value>
+  </data>
+  <data name="UpdateStatusOnline" xml:space="preserve">
+    <value>線上</value>
+  </data>
+  <data name="Zipfile_logo_bin_error" xml:space="preserve">
+    <value>錯誤：Zip文件&lt;ZFN&gt;不包含logo.bin</value>
+  </data>
+</root>

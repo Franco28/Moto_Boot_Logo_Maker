@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutBoxAppTrusted" xml:space="preserve">
+    <value>Приложение доверено:</value>
+  </data>
+  <data name="AboutBoxBW" xml:space="preserve">
+    <value>Построен с:</value>
+  </data>
+  <data name="AboutBoxImageRunTime" xml:space="preserve">
+    <value>Время выполнения изображения:</value>
+  </data>
+  <data name="AboutBoxOS" xml:space="preserve">
+    <value>ОПЕРАЦИОННЫЕ СИСТЕМЫ:</value>
+  </data>
+  <data name="AboutBoxToolCul" xml:space="preserve">
+    <value>Основная культура Windows:</value>
+  </data>
+  <data name="AboutBoxToolName" xml:space="preserve">
+    <value>Название инструмента:</value>
+  </data>
+  <data name="AboutBoxToolPath" xml:space="preserve">
+    <value>Путь к инструменту:</value>
+  </data>
+  <data name="AboutBoxToolVer" xml:space="preserve">
+    <value>Версия инструмента:</value>
+  </data>
+  <data name="AboutBTNContributors" xml:space="preserve">
+    <value>См. Авторы / Авторы</value>
+  </data>
+  <data name="AboutBTNDownloadUpdate" xml:space="preserve">
+    <value>Скачать обновление</value>
+  </data>
+  <data name="AboutCheckinf4Updates" xml:space="preserve">
+    <value>проверка обновлений...</value>
+  </data>
+  <data name="AboutCopy" xml:space="preserve">
+    <value>Инструмент с открытым исходным кодом для создания загрузочного логотипа для устройств Motorola - продолжение @Franco28, сделано CaitSith2</value>
+  </data>
+  <data name="AboutDonationMSG" xml:space="preserve">
+    <value>Если вы хотите купить мне пиво или пиццу, отсканируйте QR-код или щелкните его!</value>
+  </data>
+  <data name="AboutDownloadUpdateNetLost" xml:space="preserve">
+    <value>ПОТЕРЯ СЕТИ. Проверьте подключение к Интернету ...</value>
+  </data>
+  <data name="AboutDownloadUpdateServer" xml:space="preserve">
+    <value>Пожалуйста, выберите свой сервер для загрузки:</value>
+  </data>
+  <data name="AboutDownloadUpdateServerDown" xml:space="preserve">
+    <value>сервер упал :/</value>
+  </data>
+  <data name="AboutDownloadUpdateServerTitle" xml:space="preserve">
+    <value>Скачать обновление</value>
+  </data>
+  <data name="AboutMainteiners" xml:space="preserve">
+    <value>Сопровождающие</value>
+  </data>
+  <data name="AboutNoInternet" xml:space="preserve">
+    <value>нет соединения с интернетом...</value>
+  </data>
+  <data name="AboutNoUpdatePortable" xml:space="preserve">
+    <value>нет обновлений в ПОРТАТИВНОЙ редакции.</value>
+  </data>
+  <data name="AboutThanksTo" xml:space="preserve">
+    <value>Благодаря</value>
+  </data>
+  <data name="aboutToolStripMenuItem1" xml:space="preserve">
+    <value>Около</value>
+  </data>
+  <data name="AboutUpdates" xml:space="preserve">
+    <value>Обновления:</value>
+  </data>
+  <data name="AboutUpdates2" xml:space="preserve">
+    <value>Нет доступных обновлений.</value>
+  </data>
+  <data name="AllImageFailed" xml:space="preserve">
+    <value>Не удалось загрузить каждое выбранное изображение - обработка прервана :(</value>
+  </data>
+  <data name="Append" xml:space="preserve">
+    <value>добавлять</value>
+  </data>
+  <data name="BootLogosChannel" xml:space="preserve">
+    <value>Boot Logos Channel</value>
+  </data>
+  <data name="btnBuild" xml:space="preserve">
+    <value>Компилировать</value>
+  </data>
+  <data name="btnChangeTheme" xml:space="preserve">
+    <value>Смени тему</value>
+  </data>
+  <data name="btnOpenLogoFile" xml:space="preserve">
+    <value>Путь к открытому файлу</value>
+  </data>
+  <data name="btnStop" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="button1" xml:space="preserve">
+    <value>добавлять</value>
+  </data>
+  <data name="button2" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="button3" xml:space="preserve">
+    <value>экстракт</value>
+  </data>
+  <data name="CantSaveEmptyFiles" xml:space="preserve">
+    <value>Пожалуйста, сделайте логотип первым! тогда вы сможете сохранить его!</value>
+  </data>
+  <data name="ChangeThemeInfo" xml:space="preserve">
+    <value>Смена темы, пожалуйста, подождите ...</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
+    <value>Проверьте наличие обновлений</value>
+  </data>
+  <data name="CLbtnSend" xml:space="preserve">
+    <value>Отправить запрос на лицензию</value>
+  </data>
+  <data name="CLlabelCLTitle" xml:space="preserve">
+    <value>Запрос на лицензию</value>
+  </data>
+  <data name="CLlabelContactTO" xml:space="preserve">
+    <value>Свяжитесь с:</value>
+  </data>
+  <data name="CLlabelEmailTitle" xml:space="preserve">
+    <value>Эл. адрес</value>
+  </data>
+  <data name="CLlabelNOTE" xml:space="preserve">
+    <value>ПРИМЕЧАНИЕ. На получение вашего запроса может потребоваться один день!</value>
+  </data>
+  <data name="CLlabelYourEmailInfo" xml:space="preserve">
+    <value>Твое письмо:</value>
+  </data>
+  <data name="CompilePathISWrong" xml:space="preserve">
+    <value>Путь &lt;pathbuild&gt; должен заканчиваться \</value>
+  </data>
+  <data name="CompileRadioBTNEmpty" xml:space="preserve">
+    <value>Пожалуйста, выберите расширение перед компиляцией ...</value>
+  </data>
+  <data name="ComplieLNandPNEmpty" xml:space="preserve">
+    <value>Поле имени логотипа и поле пути к логотипу не могут быть пустыми. поэтому введите имя логотипа и путь для компиляции.</value>
+  </data>
+  <data name="ContinueWithBlankImge" xml:space="preserve">
+    <value>Вы уверены, что хотите перейти к пустому изображению?</value>
+  </data>
+  <data name="darktoolStripMenuItem" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="DevicesCustom" xml:space="preserve">
+    <value>изготовленный на заказ</value>
+  </data>
+  <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
+    <value>Загрузки</value>
+  </data>
+  <data name="ErrorLoadImage" xml:space="preserve">
+    <value>Ошибка при загрузке изображения - обработка прервана :(</value>
+  </data>
+  <data name="ErrorLogoFitImage" xml:space="preserve">
+    <value>Ошибка: выбранные изображения / параметры не будут помещаться в logo.bin, Failed at</value>
+  </data>
+  <data name="ErrorLogoFitImage2" xml:space="preserve">
+    <value>Произведенный файл</value>
+  </data>
+  <data name="ErrorLogoFitImage3" xml:space="preserve">
+    <value>Слишком большие байты</value>
+  </data>
+  <data name="ExitLogoWasntSave1" xml:space="preserve">
+    <value>Текущий проект открыт:</value>
+  </data>
+  <data name="ExitLogoWasntSave2" xml:space="preserve">
+    <value>и вы не сохранили логотип! Вы уверены, что хотите выйти?</value>
+  </data>
+  <data name="ExtractLogoError" xml:space="preserve">
+    <value>Невозможно извлечь образ из bootlogo</value>
+  </data>
+  <data name="FileLoadOk" xml:space="preserve">
+    <value>Загрузка файла завершена :)</value>
+  </data>
+  <data name="FileOpenError" xml:space="preserve">
+    <value>Ошибка открытия файла: &lt;FN&gt;</value>
+  </data>
+  <data name="FileSaveError" xml:space="preserve">
+    <value>Исключение при обработке:</value>
+  </data>
+  <data name="fileToolStripMenuItem" xml:space="preserve">
+    <value>файл</value>
+  </data>
+  <data name="groupBox1" xml:space="preserve">
+    <value>Вариант логотипа</value>
+  </data>
+  <data name="groupBox2" xml:space="preserve">
+    <value>формат logo.bin</value>
+  </data>
+  <data name="groupBox3" xml:space="preserve">
+    <value>разрешение</value>
+  </data>
+  <data name="groupBox4" xml:space="preserve">
+    <value>Параметры заливки изображения</value>
+  </data>
+  <data name="groupBox5" xml:space="preserve">
+    <value>Параметры ориентации изображения</value>
+  </data>
+  <data name="groupBox6" xml:space="preserve">
+    <value>Выберите ваш логотип памяти</value>
+  </data>
+  <data name="groupBox7" xml:space="preserve">
+    <value>Выберите ваше расширение</value>
+  </data>
+  <data name="HELPME" xml:space="preserve">
+    <value>* ЭТО, ЕСЛИ ВЫ ПРОСМОТРЕЛИ ЭТО СООБЩЕНИЕ, ПОТОМУ ЧТО ВЫ ОСОБЕННЫЙ, И МНЕ НУЖНА ВАША ПОМОЩЬ!</value>
+  </data>
+  <data name="helpToolStripMenuItem" xml:space="preserve">
+    <value>Помогите</value>
+  </data>
+  <data name="HowToUseItLinkLabel" xml:space="preserve">
+    <value>Больше информации</value>
+  </data>
+  <data name="HowToUseItMainLoadText" xml:space="preserve">
+    <value>Пожалуйста, выберите ваши сомнения на левой панели!</value>
+  </data>
+  <data name="HowToUseItMainText" xml:space="preserve">
+    <value>Здесь вы сможете прочитать, как использовать этот инструмент!</value>
+  </data>
+  <data name="HowToUseItMainTitle" xml:space="preserve">
+    <value>Основной</value>
+  </data>
+  <data name="HowToUseItNode1Text" xml:space="preserve">
+    <value>Список разделов устройств с соответствующими разрешениями экрана, которые затем необходимо будет разместить при загрузке внешнего логотипа. Список:</value>
+  </data>
+  <data name="HowToUseItNode1Title" xml:space="preserve">
+    <value>Размер памяти логотипа</value>
+  </data>
+  <data name="HowToUseItNode2Text" xml:space="preserve">
+    <value>Сначала вы должны загрузить свое устройство logo.bin. Затем, когда все будет загружено, сделайте двойной щелчок на древовидном представлении на левой панели, где расположены имена логотипов, и загрузите новое изображение! Не забудьте соблюдать размер памяти вашего логотипа, если это невозможно, логотип не будет скомпилирован!</value>
+  </data>
+  <data name="HowToUseItNode2Title" xml:space="preserve">
+    <value>Как изменить логотип изображения?</value>
+  </data>
+  <data name="HowToUseItResUnknown" xml:space="preserve">
+    <value>** Если у вас есть одно из отмеченных устройств, пожалуйста, свяжитесь с нами, мы не знаем точно размер раздела логотипа этих устройств.</value>
+  </data>
+  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
+    <value>Как это использовать?</value>
+  </data>
+  <data name="ImageLoadFail" xml:space="preserve">
+    <value>Не удалось загрузить хотя бы одно изображение. Вы уверены, что хотите продолжить?</value>
+  </data>
+  <data name="ImageSaveOk" xml:space="preserve">
+    <value>Изображение сохранено как</value>
+  </data>
+  <data name="ImageSaveOk2" xml:space="preserve">
+    <value>Успешно</value>
+  </data>
+  <data name="InternetCheck" xml:space="preserve">
+    <value>Пожалуйста, проверьте ваше интернет-соединение и попробуйте снова!</value>
+  </data>
+  <data name="joinTelegramBootLogosToolStripMenuItem" xml:space="preserve">
+    <value>Присоединяйтесь к Telegram Boot Logos</value>
+  </data>
+  <data name="JPGimgIsToBig" xml:space="preserve">
+    <value>Пожалуйста, это изображение JPG, это слишком долго! уменьшить размер ниже 2,5 МБ</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Комментарии:</value>
+  </data>
+  <data name="labelBuildPath" xml:space="preserve">
+    <value>Путь к логотипу</value>
+  </data>
+  <data name="labelImageStatusLocked" xml:space="preserve">
+    <value>* Статус изображения: заблокировано</value>
+  </data>
+  <data name="labelImageStatusUnlocked" xml:space="preserve">
+    <value>* Статус изображения: разблокировано</value>
+  </data>
+  <data name="labelReloadTool" xml:space="preserve">
+    <value>Перезагрузить</value>
+  </data>
+  <data name="labelSearchDevice" xml:space="preserve">
+    <value>Поиск на устройстве</value>
+  </data>
+  <data name="languageToolStripMenuItem" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="lblUIDTip" xml:space="preserve">
+    <value>При покупке лицензии укажите указанный ниже UID.</value>
+  </data>
+  <data name="LicActivateTitle" xml:space="preserve">
+    <value>Активировать лицензию</value>
+  </data>
+  <data name="LicActivateWhatIsUID" xml:space="preserve">
+    <value>Что такое UID?</value>
+  </data>
+  <data name="LicenseAccepte" xml:space="preserve">
+    <value>Лицензия принята</value>
+  </data>
+  <data name="LicenseAcceptedInfo" xml:space="preserve">
+    <value>Лицензия принята, Moto_Boot_Logo_Maker перезапускается</value>
+  </data>
+  <data name="LicenseAlreadyActivated" xml:space="preserve">
+    <value>Лицензия уже активирована</value>
+  </data>
+  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
+    <value>Moto_Boot_Logo_Maker уже активирован, не нужно активировать повторно!</value>
+  </data>
+  <data name="LicenseBuyInfo" xml:space="preserve">
+    <value>Когда вы покупаете лицензию, пришлите мне электронное письмо с информацией о пожертвовании и: ВАЖНО ваш UID, чтобы я мог предоставить вам лицензию!</value>
+  </data>
+  <data name="LicenseDenied" xml:space="preserve">
+    <value>В лицензии отказано</value>
+  </data>
+  <data name="LicenseDeniedInfo" xml:space="preserve">
+    <value>В лицензии отказано, Moto_Boot_Logo_Maker перезапускается</value>
+  </data>
+  <data name="LicenseEnd" xml:space="preserve">
+    <value>Ваша копия Moto_Boot_Logo_Maker не активирована ... Пожалуйста, активируйте ее!</value>
+  </data>
+  <data name="LicenseFreeInfo" xml:space="preserve">
+    <value>На данный момент лицензия UID будет бесплатной.</value>
+  </data>
+  <data name="LicenseGetAsk" xml:space="preserve">
+    <value>Пожалуйста, свяжитесь с Разработчиком, чтобы запросить лицензию!</value>
+  </data>
+  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
+    <value>Лицензия НЕ на эту копию!</value>
+  </data>
+  <data name="LicenseNotActivated" xml:space="preserve">
+    <value>Лицензия не активирована</value>
+  </data>
+  <data name="LicenseRemoved" xml:space="preserve">
+    <value>Лицензия удалена</value>
+  </data>
+  <data name="LicenseRemovedHard" xml:space="preserve">
+    <value>Лицензия удалена, из-за этого Moto_Boot_Logo_Maker теперь будет пробным на 10 минут ... Открыть снова Moto_Boot_Logo_Maker</value>
+  </data>
+  <data name="LicenseRemovedInfo" xml:space="preserve">
+    <value>Лицензия удалена, Moto_Boot_Logo_Maker перезапускается</value>
+  </data>
+  <data name="LicenseUIDInfo" xml:space="preserve">
+    <value>Что такое UID? Уникальный идентификатор текущего ПК. Это означает, что это основано на: имени приложения, идентификаторе процессора, серийном номере материнской платы и серийном номере тома диска C.</value>
+  </data>
+  <data name="LicImportantClosebtn" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="LicImportantDSTAbtn" xml:space="preserve">
+    <value>Больше не показывать</value>
+  </data>
+  <data name="LicImportantGetLicbtn" xml:space="preserve">
+    <value>ПОЛУЧИТЬ ЛИЦЕНЗИЮ</value>
+  </data>
+  <data name="LicImportantMoreInfobtn" xml:space="preserve">
+    <value>Больше информации</value>
+  </data>
+  <data name="LicImportantTitle" xml:space="preserve">
+    <value>Добро пожаловать в Moto_Boot_Logo_Maker!
+Важные изменения! - ПРОЧТИ МЕНЯ</value>
+  </data>
+  <data name="LicReadException" xml:space="preserve">
+    <value>Продукт не активирован, значит, лицензия не найдена ...</value>
+  </data>
+  <data name="LicReadExportbtn" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="LicReadTitle" xml:space="preserve">
+    <value>Лицензионный ключ</value>
+  </data>
+  <data name="LicStatActivatebtn" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="LicStatCode" xml:space="preserve">
+    <value>Код лицензии:</value>
+  </data>
+  <data name="LicStatCTCbtn" xml:space="preserve">
+    <value>Скопировать в буфер обмена</value>
+  </data>
+  <data name="LicStatCurrentUID" xml:space="preserve">
+    <value>Текущий UID:</value>
+  </data>
+  <data name="LicStatExpirationDate" xml:space="preserve">
+    <value>Дата истечения срока действия: N/A - Лицензия UID</value>
+  </data>
+  <data name="LicStatInstallbtn" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="LicStatStatus" xml:space="preserve">
+    <value>Статус лицензии:</value>
+  </data>
+  <data name="LicStatTitle" xml:space="preserve">
+    <value>Информация о лицензии</value>
+  </data>
+  <data name="LicStatViewbtn" xml:space="preserve">
+    <value>Посмотреть</value>
+  </data>
+  <data name="lighttoolStripMenuItem" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LoadPreviousLogo" xml:space="preserve">
+    <value>Был загружен предыдущий логотип, вы хотите загрузить его снова? ПРИМЕЧАНИЕ: Это займет время ...</value>
+  </data>
+  <data name="LogoBinInvalid" xml:space="preserve">
+    <value>Загружен неверный файл logo.bin</value>
+  </data>
+  <data name="LogoBinProccesing" xml:space="preserve">
+    <value>обработка</value>
+  </data>
+  <data name="LogoBinProcessAborted" xml:space="preserve">
+    <value>Обработка прервана</value>
+  </data>
+  <data name="LogoBinProcessOk" xml:space="preserve">
+    <value>Обработка завершена :)</value>
+  </data>
+  <data name="LogoBinStatus" xml:space="preserve">
+    <value>Положение дел:</value>
+  </data>
+  <data name="LogoBuildCancel" xml:space="preserve">
+    <value>Создание логотипа: процесс был отменен!</value>
+  </data>
+  <data name="LogoBuildError" xml:space="preserve">
+    <value>Сборка логотипа: при запуске процесса произошла ошибка. Поток прерван</value>
+  </data>
+  <data name="LogoBuildFolderError" xml:space="preserve">
+    <value>Не удается открыть путь к несуществующей папке!</value>
+  </data>
+  <data name="LogoBuildOK" xml:space="preserve">
+    <value>Создание логотипа: процесс завершен!</value>
+  </data>
+  <data name="LogoBuildZipFileM" xml:space="preserve">
+    <value>File Zip отсутствует, поэтому логотип нельзя будет прошить!</value>
+  </data>
+  <data name="LogoBuildZipFileMTitle" xml:space="preserve">
+    <value>Отсутствующие файлы сценария</value>
+  </data>
+  <data name="LogoName" xml:space="preserve">
+    <value>Название логотипа</value>
+  </data>
+  <data name="LogoTestADBstart" xml:space="preserve">
+    <value>Начиная adb ... Пожалуйста, подождите!</value>
+  </data>
+  <data name="LogoTestDeviceConnected" xml:space="preserve">
+    <value>Устройство подключено:</value>
+  </data>
+  <data name="LogoTestDeviceError" xml:space="preserve">
+    <value>Пожалуйста, подключите ваше устройство в режиме fastboot!</value>
+  </data>
+  <data name="LogoTestLogoB" xml:space="preserve">
+    <value>Теперь выберите ваш logo_b, пожалуйста!</value>
+  </data>
+  <data name="LogoTestMoveThis" xml:space="preserve">
+    <value>Пожалуйста, переместите ваш logo.bin в эту папку!</value>
+  </data>
+  <data name="LogoTestRO" xml:space="preserve">
+    <value>Опция перезагрузки</value>
+  </data>
+  <data name="LogoTestSaveLogsBTN" xml:space="preserve">
+    <value>Сохранить логи консоли</value>
+  </data>
+  <data name="LogoTestSelectedA" xml:space="preserve">
+    <value>Выбранный раздел А</value>
+  </data>
+  <data name="LogoTestSelectedAB" xml:space="preserve">
+    <value>Выбранный раздел А/Б</value>
+  </data>
+  <data name="LogoTestSelectedRBL" xml:space="preserve">
+    <value>Выбранная перезагрузка загрузчика</value>
+  </data>
+  <data name="LogoTestSelectUDP" xml:space="preserve">
+    <value>Выберите раздел вашего устройства</value>
+  </data>
+  <data name="LogoTestSelectYourDP" xml:space="preserve">
+    <value>Пожалуйста, выберите раздел устройства, прежде чем продолжить!</value>
+  </data>
+  <data name="LogoTestTitle" xml:space="preserve">
+    <value>Проверьте свой логотип бен!</value>
+  </data>
+  <data name="logo_battery_ToolTipText" xml:space="preserve">
+    <value>Отображается, когда аккумулятор полностью разряжен, а вы</value>
+  </data>
+  <data name="logo_battery_ToolTipText2" xml:space="preserve">
+    <value>подключите телефон к зарядке</value>
+  </data>
+  <data name="logo_boot_ToolTipText" xml:space="preserve">
+    <value>Видна только при заблокированном загрузчике телефона. Предлагается удалить</value>
+  </data>
+  <data name="logo_boot_ToolTipText2" xml:space="preserve">
+    <value>изображение, которое находится в этой записи, чтобы сохранить байты в вашем logo.bin</value>
+  </data>
+  <data name="logo_charge_ToolTipText" xml:space="preserve">
+    <value>Отображается, когда телефон подключен к сети, когда он полностью выключен, а телефон</value>
+  </data>
+  <data name="logo_charge_ToolTipText2" xml:space="preserve">
+    <value>чем 3% заряда. Вместо этого отображается logo_battery, если он имеет заряд 0-3%.</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText" xml:space="preserve">
+    <value>Отображается, когда телефон имеет более 3% энергии при полном отключении. Не намного больше известно.</value>
+  </data>
+  <data name="logo_lowpower_ToolTipText2" xml:space="preserve">
+    <value>Эта функция присутствует только на Moto E</value>
+  </data>
+  <data name="logo_orange_ToolTipText" xml:space="preserve">
+    <value>Видно на новом мото загрузчике разблокированных телефонов. То, что вы положили сюда, скорее всего, будет выглядеть</value>
+  </data>
+  <data name="logo_orange_ToolTipText2" xml:space="preserve">
+    <value>намного лучше, чем предупреждение о разблокированном устройстве. :)</value>
+  </data>
+  <data name="logo_red_ToolTipText" xml:space="preserve">
+    <value>Видимо, когда ваш телефон не прошел проверку ОС</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText" xml:space="preserve">
+    <value>Видно на загрузчике разблокированные телефоны. То, что вы положили сюда, скорее всего, будет выглядеть</value>
+  </data>
+  <data name="logo_unlocked_ToolTipText2" xml:space="preserve">
+    <value>намного лучше, чем предупреждение о разблокированном устройстве. :)</value>
+  </data>
+  <data name="logo_unplug_ToolTipText" xml:space="preserve">
+    <value>Отображается, когда телефон полностью заряжен, когда он подключен и полностью выключен.</value>
+  </data>
+  <data name="logo_unplug_ToolTipText2" xml:space="preserve">
+    <value>Эта функция присутствует только на Moto E</value>
+  </data>
+  <data name="logo_yellow_ToolTipText" xml:space="preserve">
+    <value>Видно, когда ваш телефон загружает другую ОС</value>
+  </data>
+  <data name="LogsErrorOpenFolder" xml:space="preserve">
+    <value>Вы хотите открыть папку журналов?</value>
+  </data>
+  <data name="LogsErrorSend" xml:space="preserve">
+    <value>Вы хотите отправить журналы сейчас?</value>
+  </data>
+  <data name="LogTestWrongBin" xml:space="preserve">
+    <value>Пожалуйста, выберите правильный файл logo.bin! это неправильный файл:</value>
+  </data>
+  <data name="MailMsgInternetError" xml:space="preserve">
+    <value>Не могу отправить запрос на лицензию! Пожалуйста, проверьте ваше интернет-соединение!</value>
+  </data>
+  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
+    <value>Потеряно интернет-соединение</value>
+  </data>
+  <data name="MailMsgIsEmpty" xml:space="preserve">
+    <value>Ящики не могут быть пустыми!</value>
+  </data>
+  <data name="MailMsgMailNotValid" xml:space="preserve">
+    <value>Введите действующий адрес электронной почты!</value>
+  </data>
+  <data name="MailMsgSent" xml:space="preserve">
+    <value>Сообщение отправлено!</value>
+  </data>
+  <data name="MailMsgSentTitle" xml:space="preserve">
+    <value>Письмо отправлено</value>
+  </data>
+  <data name="materialButtonResetAllProfiles" xml:space="preserve">
+    <value>Сбросить все профили</value>
+  </data>
+  <data name="materialButtonResetToolSettings" xml:space="preserve">
+    <value>Сбросить настройки инструмента</value>
+  </data>
+  <data name="materialLabel10" xml:space="preserve">
+    <value>* Нажмите на изображение, и он будет заблокирован</value>
+  </data>
+  <data name="materialLabel11" xml:space="preserve">
+    <value>* Двойной щелчок и будет разблокирован</value>
+  </data>
+  <data name="materialSwitch4" xml:space="preserve">
+    <value>Ящик - Используйте цвета</value>
+  </data>
+  <data name="materialSwitch5" xml:space="preserve">
+    <value>Ящик - Выделите с Акцентом</value>
+  </data>
+  <data name="materialSwitch6" xml:space="preserve">
+    <value>Ящик - Фон с Акцентом</value>
+  </data>
+  <data name="materialSwitch8" xml:space="preserve">
+    <value>Ящик - Отображать значки, когда скрыты</value>
+  </data>
+  <data name="MaxLogoBinSize" xml:space="preserve">
+    <value>Максимальный размер Logo.bin</value>
+  </data>
+  <data name="newToolStripMenuItem" xml:space="preserve">
+    <value>новый</value>
+  </data>
+  <data name="NoImageLoad" xml:space="preserve">
+    <value>Изображения не были загружены, вы уверены, что хотите продолжить работу с пустыми изображениями?</value>
+  </data>
+  <data name="openToolStripMenuItem" xml:space="preserve">
+    <value>открыто</value>
+  </data>
+  <data name="othersToolStripMenuItem" xml:space="preserve">
+    <value>другие</value>
+  </data>
+  <data name="ProductActivatedTitle" xml:space="preserve">
+    <value>Продукт активирован</value>
+  </data>
+  <data name="ProductNotActivated" xml:space="preserve">
+    <value>Товар не активирован</value>
+  </data>
+  <data name="ProductNotActivatedTitle" xml:space="preserve">
+    <value>Продукт не активирован, ОСТАЛОСЬ ВРЕМЯ:</value>
+  </data>
+  <data name="ProgramCheckAssembliesError" xml:space="preserve">
+    <value>Moto_Boot_Logo_Maker не может соответствовать оригинальным сборкам:</value>
+  </data>
+  <data name="ProgramCheckAssembliesErrorVer" xml:space="preserve">
+    <value>Версия:</value>
+  </data>
+  <data name="ProgramCheckBackRun" xml:space="preserve">
+    <value>Кажется, есть еще один экземпляр инструмента. Убедитесь, что он не работает в фоновом режиме.</value>
+  </data>
+  <data name="ProgramCheckBackRun2" xml:space="preserve">
+    <value>Другой экземпляр инструмента запущен</value>
+  </data>
+  <data name="ProgramCheckFolderWrong" xml:space="preserve">
+    <value>Папка неправильная, проверьте ее, должно быть так:</value>
+  </data>
+  <data name="ProgramCheckPrivileges" xml:space="preserve">
+    <value>Инструмент должен запускаться от имени администратора</value>
+  </data>
+  <data name="ProgramCheckPrivileges2" xml:space="preserve">
+    <value>Инструменту нужны привилегии</value>
+  </data>
+  <data name="ProgramCheckWindows" xml:space="preserve">
+    <value>Этот инструмент совместим с Windows 7, Windows 8, Windows 8.1 и Windows 10, у вас есть:</value>
+  </data>
+  <data name="ProgramCheckWindows2" xml:space="preserve">
+    <value>Не удается запустить инструмент, ошибка: совместимость с Windows</value>
+  </data>
+  <data name="rdoAndroid43" xml:space="preserve">
+    <value>540x540 Bundle</value>
+  </data>
+  <data name="rdoAndroid44" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="rdoImageCenter" xml:space="preserve">
+    <value>Центр</value>
+  </data>
+  <data name="rdoImageFill" xml:space="preserve">
+    <value>Заливка</value>
+  </data>
+  <data name="rdoImageStretchAspect" xml:space="preserve">
+    <value>Растянуть пропорционально</value>
+  </data>
+  <data name="rdoLayoutLandscape" xml:space="preserve">
+    <value>Пейзаж</value>
+  </data>
+  <data name="rdoLayoutPortrait" xml:space="preserve">
+    <value>Портрет</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>замещать</value>
+  </data>
+  <data name="saveAsToolStripMenuItem" xml:space="preserve">
+    <value>Сохранить как</value>
+  </data>
+  <data name="savefiledialog1Title" xml:space="preserve">
+    <value>Пожалуйста, выберите ваше устройство</value>
+  </data>
+  <data name="saveToolStripMenuItem" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SelectLogoSizeWarn" xml:space="preserve">
+    <value>Пожалуйста, выберите размер логотипа до открытия файла!</value>
+  </data>
+  <data name="SettingCLoading" xml:space="preserve">
+    <value>Загрузка настроек инструмента ...</value>
+  </data>
+  <data name="SettingGS" xml:space="preserve">
+    <value>общие настройки</value>
+  </data>
+  <data name="SettingRT" xml:space="preserve">
+    <value>Инструмент сброса</value>
+  </data>
+  <data name="SettingsGroupBox1" xml:space="preserve">
+    <value>Включить автосохранение профилей</value>
+  </data>
+  <data name="SettingsGroupBox2" xml:space="preserve">
+    <value>Включить автоматическое сохранение логотипа в памяти</value>
+  </data>
+  <data name="SettingsGroupBox3" xml:space="preserve">
+    <value>Включить автоматическую проверку обновлений</value>
+  </data>
+  <data name="SettingsNo" xml:space="preserve">
+    <value>НЕТ</value>
+  </data>
+  <data name="SettingsThemeNote" xml:space="preserve">
+    <value>* ПРИМЕЧАНИЕ: Пока это не будет сохранено, поэтому при выходе из Tool оно будет сброшено</value>
+  </data>
+  <data name="settingsToolStripMenuItem" xml:space="preserve">
+    <value>настройки</value>
+  </data>
+  <data name="SettingsYes" xml:space="preserve">
+    <value>ДА</value>
+  </data>
+  <data name="SignYourLogo" xml:space="preserve">
+    <value>Подпишите ваш новый логотип</value>
+  </data>
+  <data name="sourceToolStripMenuItem" xml:space="preserve">
+    <value>Источник</value>
+  </data>
+  <data name="TabHome" xml:space="preserve">
+    <value>Домой</value>
+  </data>
+  <data name="testToolStripMenuItem" xml:space="preserve">
+    <value>Тест</value>
+  </data>
+  <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
+    <value>Проверьте свой новый логотип</value>
+  </data>
+  <data name="themetoolStripMenuItem" xml:space="preserve">
+    <value>тема</value>
+  </data>
+  <data name="ToolErrorShow" xml:space="preserve">
+    <value>Произошла ошибка, перейдите в папку и пришлите мне логи!</value>
+  </data>
+  <data name="ToolErrorShowBTN" xml:space="preserve">
+    <value>Перейти в файл</value>
+  </data>
+  <data name="ToolErrorUpdate" xml:space="preserve">
+    <value>Не удалось связаться с сервером обновлений. Проверьте подключение к Интернету и повторите попытку позже.</value>
+  </data>
+  <data name="ToolErrorUpdateTitle" xml:space="preserve">
+    <value>Проверка обновления не удалась</value>
+  </data>
+  <data name="ToolInternetErrorUpdate" xml:space="preserve">
+    <value>Не удается проверить обновления инструмента, проверьте подключение к Интернету!</value>
+  </data>
+  <data name="ToolLangPortuguese" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="ToolNewUpdateText" xml:space="preserve">
+    <value>Есть новая версия</value>
+  </data>
+  <data name="ToolNewUpdateText2" xml:space="preserve">
+    <value>доступный. Вы используете версию</value>
+  </data>
+  <data name="ToolNewUpdateText3" xml:space="preserve">
+    <value>Это обязательное обновление. Нажмите Ok, чтобы начать обновление приложения.</value>
+  </data>
+  <data name="ToolNewUpdateTitle" xml:space="preserve">
+    <value>Доступно обновление</value>
+  </data>
+  <data name="ToolNoUpdate" xml:space="preserve">
+    <value>Нет доступных обновлений, попробуйте позже.</value>
+  </data>
+  <data name="ToolNoUpdateTitle" xml:space="preserve">
+    <value>Нет доступных обновлений</value>
+  </data>
+  <data name="ToolTipRGBCOLOUR" xml:space="preserve">
+    <value>Цвет RGB</value>
+  </data>
+  <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
+    <value>скопировано в буфер обмена!</value>
+  </data>
+  <data name="ToolUpdating" xml:space="preserve">
+    <value>Закрытие приложения для обновления ...</value>
+  </data>
+  <data name="UpdateStatus" xml:space="preserve">
+    <value>Положение дел:</value>
+  </data>
+  <data name="UpdateStatusOffline" xml:space="preserve">
+    <value>Не в сети</value>
+  </data>
+  <data name="UpdateStatusOnline" xml:space="preserve">
+    <value>В сети</value>
+  </data>
+  <data name="Zipfile_logo_bin_error" xml:space="preserve">
+    <value>Ошибка: Zip-файл &lt;ZFN&gt; не содержит logo.bin</value>
+  </data>
+</root>

@@ -1,0 +1,22 @@
+#################################################################
+# Moto_Boot_Logo_Maker_Files v1.0.0.3 Enhancements & bug-fixes: #
+#################################################################
+
+Zip Files
+* Fixed error 255 TWRP
+
+#################################################################
+
+#################################################################
+# Moto_Boot_Logo_Maker_Files v1.0.0.2 Enhancements & bug-fixes: #
+#################################################################
+
+Bin Files
+* Added new devices
+* Fixed folders and resolution files
+* Moved some devices from 32MB to 16MB
+
+Logo Zip
+* Updated updater-script
+
+#################################################################

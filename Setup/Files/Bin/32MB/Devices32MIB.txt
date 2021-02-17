@@ -1,0 +1,54 @@
+Compatible Devices:
+
+
+- Moto G6 Plus (evert) > 1080 x 2160
+
+- Moto G7 Plus (lake) > 1080 x 2270
+
+- Moto G8 Plus (doha) > 1080 x 2280
+
+- Moto G Power/G8 Power (sofia/r) > 1080 x 2300
+
+- Moto G Stylus/G Pro (sofiap) > 1080 x 2300
+
+- Moto G8/G Fast (rav) > 720 x 1560
+
+- Moto G9 Plus (odessa) > 1080 x 2400
+
+- Moto G 5G (kiev) > 1080 x 2400
+
+- Moto X4/X4 Android One (payton) > 1080 x 1920
+
+- Moto Z2 Force Edition/Z 2018 (nash) > 1440 x 2560
+
+- Moto Z3 Play (beckham) > 1080 x 2160
+
+- Moto Z3 (messi) > 1080 x 2160
+
+- Moto Z4 (foles) > 1080 x 2340
+
+- Motorola G7 Plus (lake) > 1080 x 2270
+
+- Motorola One Power (chef) > 1080 x 2246
+
+- Motorola One Vision (kane) > 1080 x 2520
+
+- Motorola One Action (troika) > 1080 x 2520
+
+- Motorola One Zoom (parker) > 1080 x 2340
+
+- Motorola One Hyper (def) > 1080 x 2340
+
+- Motorola One Fusion+ (liber) > 1080 x 2340
+
+- Motorola One Fusion (astro) > 720 x 1600
+
+- Motorola One Vision Plus (doha) > 1080 x 2280
+
+- Motorola P30 (robusta) > 1080 x 2246
+
+- Motorola P30 Note (chef) > 1080 x 2246
+
+- Motorola P50 (kane) > 1080 x 2520
+
+- Motorola Z3 (messi) > 1080 x 2160
