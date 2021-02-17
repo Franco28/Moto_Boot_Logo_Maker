@@ -1,4 +1,4 @@
-# ![Moto_Boot_Logo_Maker](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/BootLogoMaker.jpg)
+# ![Moto_Boot_Logo_Maker](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/BootLogoMaker.jpg)
 
 
 # Getting Started (Read all please!)
@@ -13,8 +13,8 @@
 
 #
 
-#### * [Downloads](https://github.com/Franco28/MotoBootLogoMaker#downloads) 
-#### * [Contact](https://github.com/Franco28/MotoBootLogoMaker#contact) 
+#### * [Downloads](https://github.com/Franco28/Moto_Boot_Logo_Maker#downloads) 
+#### * [Contact](https://github.com/Franco28/Moto_Boot_Logo_Maker#contact) 
 
 ## Prerequisites Windows
 - You must have NetFramework 4+ installed on your PC * [Net Framework](https://dotnet.microsoft.com/download) 
@@ -34,38 +34,15 @@
 
 -- Then you are free to load any logo and change logo images!
 
-## License _**IMPORTANT_**
-_**This is a new part of Moto_Boot_Logo_Maker that you need to understand, now Tool will be protected with a based UID License for 30 minutes, that means it will be free, then you must activate Tool with your License to enable all features and be able to use it. _**
-
-#### I need to pay? WHAT? How much??
-- Nothing for now, this License was made it to check how many users are using Moto_Boot_Logo_Maker, for now this is a TEST.
-
-#### What happens if a reach out the 30 minutes?
-- Nothing about to worry, Tool will let you know and insist to get your License, this means that Tool will be blocked until you get your License.
-
-#### How can I activate Tool?
-- You need to go to --> Help --> Activate Tool, you will see a list of numbers like a serial number, that is your UID, copy it, and send me that UID, so I be able to provide your License.
-
-#### What is UID?
-- That is Unique ID for the current PC. This means that is based on:  Application Name, Processor ID, Motherboard Serial Number and Disk Volume Serial Number of Drive C.
-
-#### Where I have to put the License?
-- Move License file into "C:\Moto_Boot_Logo_Maker\".
-
-#### What happens if I lost my License?
-- Send me again an message with your UID and I will provide your License.
-
-#### What happens if Tool crash and I don't have the License?
-- Simple, don´t ask for a fix or send logs, get License and Tool will work normally.
 
 ## Downloads SF
 
-#### Download Moto_Boot_Logo_Maker v4.4.2.9 (31-01-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.2.9_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.0 (xx-02-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.2.9_Setup.exe) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker v4.4.2.9 (31-01-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=17248734326145725870) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.0 (xx-02-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=17248734326145725870) 
 
-### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/changelog.txt) 
+### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Setup/OTAS/changelog.txt) 
 
 ####
 
@@ -73,38 +50,21 @@ _**This is a new part of Moto_Boot_Logo_Maker that you need to understand, now T
 
 ## Screenshots
 
-### Tool License Info
-![Tool License Info](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/LicenseInfo.png "Tool License Info")
 
-### Main Tool without License
-![Main Tool without License](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/ToolLicense.png "Main Tool without License")
-
-### Main Tool With License
-![Main Tool With License](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/tool.png "Main Tool With License")
+### Main Tool
+![Main Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/ToolLicense.png "Main Tool")
 
 ### Settigs Tool
-![Settigs Tool](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/settings.png "Settigs Tool")
+![Settigs Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/settings.png "Settigs Tool")
 
 ### Test your logo
-![Test your logo](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/testurlogo.png "Test your logo")
+![Test your logo](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/testurlogo.png "Test your logo")
 
 ### Search Device
-![Search Device](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/SearchDevice.png "Search Device")
-
-### License Request
-![License Request](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/LicenseRequest.png "License Request")
-
-### About License 
-![About License](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/LicenseInfoPanel.png "About License")
-
-### About License Not Activated
-![About License Not Activated](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/LicenseInfoPanelNActivated.png "About License Not Activated")
-
-### About License Install
-![About License Install](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/LicenseInfoPanelInstall.png "About License Install")
+![Search Device](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/SearchDevice.png "Search Device")
 
 ### About Tool 
-![About Tool](https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Logo/about.png "About Tool")
+![About Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/about.png "About Tool")
 
 
 ####
