@@ -2,6 +2,6 @@
 <item>
 <version>4.4.2.9</version>
 <url>https://master.dl.sourceforge.net/project/motobootlogomaker/OTA/MBLM_v4.4.2.9_OTA.exe</url>
-<changelog>https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/changelog.txt</changelog>
+<changelog>https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Setup/changelog.txt</changelog>
 <mandatory>true</mandatory>
 </item>
