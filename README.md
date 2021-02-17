@@ -40,7 +40,7 @@
 #### Download Moto_Boot_Logo_Maker v4.4.3.0 (17-02-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.0_Setup.exe) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker v4.4.3.0 (17-02-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=17248734326145725870) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.0 (17-02-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?w=files&flid=323184) 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Setup/changelog.txt) 
 
