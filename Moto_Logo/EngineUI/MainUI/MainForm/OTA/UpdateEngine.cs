@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.UpdateEngine.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 17-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -34,14 +34,14 @@ namespace Moto_Logo
 
         private void toolupdates(object sender, EventArgs e)
         {
-            AutoUpdater.Start("https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates.xml");
+            AutoUpdater.Start("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml");
         }
 
         public void CheckForUpdates()
         {
             if (InternetCheck.ConnectToInternet() == true)
             {
-                if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/MotoBootLogoMaker/master/Windows/OTAS/updates.xml") == true)
+                if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml") == true)
                 {
                     MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;

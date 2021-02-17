@@ -313,7 +313,7 @@ namespace Moto_Logo
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/MotoBootLogoMaker");
+            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker");
         }      
 
         private void buttonAppend_Click(object sender, EventArgs e)
