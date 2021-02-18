@@ -1,4 +1,4 @@
-﻿  Moto_Boot_Logo_Maker
+  Moto_Boot_Logo_Maker
   ~~~~~~~~~~~~~~~~~~~~
   License for use and distribution
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -4,11 +4,11 @@
 #define MyAppName "Moto_Boot_Logo_Maker"
 #define MyAppName2 "MBLM_v"
 #define MyInstallerSuffix "_OTA"
-#define MyAppVersion "4.4.3.0"
+#define MyAppVersion "4.4.3.1"
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-02-17"
+#define MyAppDate "2021-02-18"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -44,7 +44,7 @@ OutputDir=C:\Users\Franco28\Documents\GitHub\Moto_Boot_Logo_Maker
 UninstallDisplayName={#MyAppName}
 VersionInfoVersion={#MyAppVersion}
 TimeStampsInUTC=yes 
-LicenseFile=License
+LicenseFile=LICENSE.txt
 
 [Languages]
 Name: en; MessagesFile: "compiler:Default.isl"
@@ -88,9 +88,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
 [Files]     
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "change.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "AndroidLib.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "HtmlAgilityPack.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
@@ -101,11 +99,12 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Comment
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: shellexec nowait postinstall skipifsilent;
 
 [InstallDelete]
-Type: files; Name: "{app}\*.dll";
+Type: files; Name: "{app}\License";
+Type: files; Name: "{app}\change.txt";
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
-Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28\*'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28'; Type: filesandordirs;  
+Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\Files";

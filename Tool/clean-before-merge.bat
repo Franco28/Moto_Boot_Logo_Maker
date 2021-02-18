@@ -1,11 +1,11 @@
 @echo off
 
-title Clean Before Merge
+title clean-before-merge
 color d
 
 echo.
 echo.
-echo Clean Build Path
+echo clean-before-merge
 echo.
 
 SET dirt86=Moto_Logo\

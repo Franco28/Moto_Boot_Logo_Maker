@@ -19,7 +19,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <MapFileExtensions>true</MapFileExtensions>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>true</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -28,7 +27,8 @@
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\Setup\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -384,7 +384,9 @@
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.nl.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.pl.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.pt-BR.resx" />
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.resx" />
+    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.ru.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.sk.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.sv.resx" />
@@ -597,7 +599,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="EngineUI\AutoUpdaterDotNET\Resources\ZipExtractor.exe.config" />
     <None Include="EngineUI\AutoUpdaterDotNET\LICENSE" />
     <None Include="EngineUI\Ionic\Zip\Migrated rules for Zip DLL.ruleset" />
     <None Include="packages.config" />
@@ -626,7 +627,6 @@
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\download_32.png" />
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\hand_point.png" />
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\update.png" />
-    <Content Include="EngineUI\AutoUpdaterDotNET\Resources\ZipExtractor.exe" />
     <Content Include="EngineUI\Ionic\Zlib\LICENSE.jzlib.txt" />
     <Content Include="EngineUI\Ionic\Zlib\License.zlib.txt" />
     <None Include="Resources\ToolUI\fireworks.gif" />
@@ -731,6 +731,11 @@
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

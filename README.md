@@ -1,5 +1,6 @@
 # ![Moto_Boot_Logo_Maker](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/BootLogoMaker.jpg)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/49lbwcmbc90an8yt?svg=true)](https://ci.appveyor.com/project/Franco28/moto-boot-logo-maker)
 
 # Getting Started (Read all please!)
 
