@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Settings.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 18-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -64,6 +64,9 @@ namespace Moto_Logo
 
         private void Settings_Load(object sender, EventArgs e)
         {
+            cAppend(" " + res_man.GetString("settingsToolStripMenuItem", cul) + " ");
+            cAppend("");
+
             cAppend(res_man.GetString("SettingCLoading", cul));
             if (Properties.Settings.Default.SaveProfiles == true)
             {

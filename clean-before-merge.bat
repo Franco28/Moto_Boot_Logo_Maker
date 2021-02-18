@@ -8,8 +8,8 @@ echo.
 echo clean-before-merge
 echo.
 
-SET dirt86=Moto_Logo\
-SET dirset86=Setup\
+SET dirt86=Tool\Moto_Logo\
+SET dirset86=Tool\Setup\
 
 if exist "%dirt86%obj" (@RD /S /Q "%dirt86%obj") else (echo Folder %dirt86%obj already removed) 
 if exist "%dirt86%bin" (@RD /S /Q "%dirt86%bin") else (echo Folder %dirt86%bin already removed) 

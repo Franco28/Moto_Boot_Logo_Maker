@@ -246,7 +246,7 @@ namespace Moto_Logo
                             break;
                     }
                 }
-            }           
+            }
             #endregion LoadSettings 
         }
 
