@@ -10,6 +10,9 @@ NOTE: Some translations are missing, i will be working on this, for now still in
 - [fixed] Read Changelog link
 - [fixed] Some missing code
 - [fixed] Settings, label sizes
+- [fixed] EN Translations
+- [new] Added check sizes to new image extensions (need to check if new moto devices support more than 2.5MB)
+- [removed] Old code
 
 ---------------------------------------
 v4.4.3.0 - Released Feb 17, 2021

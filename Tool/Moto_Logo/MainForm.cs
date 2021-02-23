@@ -352,7 +352,7 @@ namespace Moto_Logo
                         init_tree(LOGO.LOGO_ORANGE);
                         break;
                 }
-            openFileDialog1.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap File|*.bmp|Gif file|*.gif|Icon file|*.ico|All Files|*.*";
+            openFileDialog1.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -418,7 +418,7 @@ namespace Moto_Logo
                         break;
                 }
             }
-            saveFileDialog2.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap File|*.bmp|Gif file|*.gif|Icon file|*.ico|All Files|*.*";
+            saveFileDialog2.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
             if (saveFileDialog2.ShowDialog() != DialogResult.OK) return;
             try
             {
@@ -605,7 +605,7 @@ namespace Moto_Logo
         private void tvLogo_DoubleClick(object sender, EventArgs e)
         {
             if (tvLogo.SelectedNode == null) return;
-            openFileDialog1.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap File|*.bmp|Gif file|*.gif|Icon file|*.ico|All Files|*.*";
+            openFileDialog1.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
             CheckIMGsize(2621440);

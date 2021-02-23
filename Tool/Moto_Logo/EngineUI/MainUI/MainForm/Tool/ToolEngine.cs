@@ -197,8 +197,18 @@ namespace Moto_Logo
 
         private void CheckIMGsize(int size2)
         {
-            var path = Path.GetExtension(".jpg");
-            if (openFileDialog1.FileName.EndsWith(path))
+            // NOTE: Need to check if new moto devices support more than 2.5MB//2.6MB (2621440b)
+            var pathJPG = Path.GetExtension(".jpg");
+            var pathPNG = Path.GetExtension(".png");
+            var pathBMP = Path.GetExtension(".bmp");
+            var pathGIF = Path.GetExtension(".gif");
+            var pathICO = Path.GetExtension(".ico");
+
+            if (openFileDialog1.FileName.EndsWith(pathJPG) || 
+                openFileDialog1.FileName.EndsWith(pathPNG) ||
+                openFileDialog1.FileName.EndsWith(pathGIF) ||
+                openFileDialog1.FileName.EndsWith(pathBMP) ||
+                openFileDialog1.FileName.EndsWith(pathICO))
             {
                 long size = openFileDialog1.FileName.Length;
                 if (size > size2)

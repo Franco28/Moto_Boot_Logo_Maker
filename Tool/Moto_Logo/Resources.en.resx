@@ -120,9 +120,6 @@
   <data name="AboutBoxAppTrusted" xml:space="preserve">
     <value>App Trusted:</value>
   </data>
-  <data name="AboutBoxBW" xml:space="preserve">
-    <value>Built With:</value>
-  </data>
   <data name="AboutBoxImageRunTime" xml:space="preserve">
     <value>Image Runtime:</value>
   </data>
@@ -151,10 +148,10 @@
     <value>checking for updates...</value>
   </data>
   <data name="AboutCopy" xml:space="preserve">
-    <value>A open source Tool to make Boot Logo for Motorola devices - Continued By @Franco28, made by CaitSith2</value>
+    <value>An open source Tool to make Boot Logo for Motorola devices - Continued By @Franco28, made by CaitSith2</value>
   </data>
   <data name="AboutDonationMSG" xml:space="preserve">
-    <value>If you want to buy me a beer or a pizza, scan QR or click it!</value>
+    <value>If you want to buy me a beer or a pizza, scan this QR or click it!</value>
   </data>
   <data name="AboutDownloadUpdateNetLost" xml:space="preserve">
     <value>NETWORK LOST: Please check your internet connection...</value>
@@ -190,7 +187,7 @@
     <value>There is no update available.</value>
   </data>
   <data name="AllImageFailed" xml:space="preserve">
-    <value>Every single image selected failed to load - Processing Aborted :(</value>
+    <value>Every single image selected failed to load - Status: Processing Aborted :(</value>
   </data>
   <data name="Append" xml:space="preserve">
     <value>Append</value>
@@ -220,7 +217,7 @@
     <value>Extract</value>
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
-    <value>Please make a logo first! then you will be able to save it!</value>
+    <value>Make or load a Logo first! Then you will be able to save it!</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Changing Theme, please wait...</value>
@@ -253,7 +250,7 @@
     <value>Select an extension before build...</value>
   </data>
   <data name="ComplieLNandPNEmpty" xml:space="preserve">
-    <value>Logo name box and logo path box can´t be empty! so please enter a logo name and path to compile!</value>
+    <value>Logo name box and logo path box can´t be empty! So please enter a logo name and path to compile!</value>
   </data>
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>Are you sure you wish to proceed with a blank image?</value>
@@ -268,31 +265,31 @@
     <value>Downloads</value>
   </data>
   <data name="ErrorLoadImage" xml:space="preserve">
-    <value>Error loading image - Processing Aborted :(</value>
+    <value>Error loading image - Status: Processing Aborted :(</value>
   </data>
   <data name="ErrorLogoFitImage" xml:space="preserve">
-    <value>Error: Images/options selected will not fit in logo.bin, Failed at</value>
+    <value>Error: Images/Options selected will not fit in logo.bin, Failed at</value>
   </data>
   <data name="ErrorLogoFitImage2" xml:space="preserve">
     <value>Produced file is</value>
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
-    <value>Bytes Too Large</value>
+    <value>Bytes too large</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>There is a current project opened:</value>
   </data>
   <data name="ExitLogoWasntSave2" xml:space="preserve">
-    <value>and you didn't save the logo! are you sure that you want to exit?</value>
+    <value>and you didn't save the Logo! Are you sure that you want to exit?</value>
   </data>
   <data name="ExtractLogoError" xml:space="preserve">
-    <value>Unable to Extract Image from bootlogo</value>
+    <value>Unable to extract image from bootlogo</value>
   </data>
   <data name="FileLoadOk" xml:space="preserve">
-    <value>File Load Complete :)</value>
+    <value>File load complete :)</value>
   </data>
   <data name="FileOpenError" xml:space="preserve">
-    <value>Error Opening file: &lt;FN&gt;</value>
+    <value>Error opening file: &lt;FN&gt;</value>
   </data>
   <data name="FileSaveError" xml:space="preserve">
     <value>Exception during processing:</value>
@@ -321,41 +318,8 @@
   <data name="groupBox7" xml:space="preserve">
     <value>Select your extension</value>
   </data>
-  <data name="HELPME" xml:space="preserve">
-    <value>* HEY IF YOU ARE SEEING THIS MESSAGE, IT'S BECAUSE YOU ARE SPECIAL, AND I NEED YOUR HELP!</value>
-  </data>
   <data name="helpToolStripMenuItem" xml:space="preserve">
     <value>Help</value>
-  </data>
-  <data name="HowToUseItLinkLabel" xml:space="preserve">
-    <value>More Info</value>
-  </data>
-  <data name="HowToUseItMainLoadText" xml:space="preserve">
-    <value>Please select your doubts on left panel!</value>
-  </data>
-  <data name="HowToUseItMainText" xml:space="preserve">
-    <value>Here you will be able to read how to use this Tool!</value>
-  </data>
-  <data name="HowToUseItMainTitle" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="HowToUseItNode1Text" xml:space="preserve">
-    <value>List of the partitions of the devices with their respective screen resolutions, which will then have to be placed when loading the external logo. List:</value>
-  </data>
-  <data name="HowToUseItNode1Title" xml:space="preserve">
-    <value>Logo Memory Size</value>
-  </data>
-  <data name="HowToUseItNode2Text" xml:space="preserve">
-    <value>First you must load your device logo.bin. Then when everything its loaded, do a double click on tree view on left panel where logo names are allocated and load a new image! Remember to respect your logo memory size, if this is not possible logo wont be compiled!</value>
-  </data>
-  <data name="HowToUseItNode2Title" xml:space="preserve">
-    <value>How to change logo images?</value>
-  </data>
-  <data name="HowToUseItResUnknown" xml:space="preserve">
-    <value>** If you have one of the marked devices, please contact us, we do not know for sure the size of the logo partition of these devices.</value>
-  </data>
-  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
-    <value>How to use it?</value>
   </data>
   <data name="ImageLoadFail" xml:space="preserve">
     <value>At least one image failed to load, are you sure you wish to proceed?</value>
@@ -373,7 +337,7 @@
     <value>Join Telegram Boot Logos</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>Please this jpg image, its too long! reduce the size lower than 2.5MB</value>
+    <value>This image is too long! Please reduce it size lower than 2.5MB.</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>Logo Build Path</value>
@@ -392,115 +356,6 @@
   </data>
   <data name="languageToolStripMenuItem" xml:space="preserve">
     <value>Language</value>
-  </data>
-  <data name="lblUIDTip" xml:space="preserve">
-    <value>Provide the below UID when purchasing the license</value>
-  </data>
-  <data name="LicActivateTitle" xml:space="preserve">
-    <value>Activate License</value>
-  </data>
-  <data name="LicActivateWhatIsUID" xml:space="preserve">
-    <value>What is UID?</value>
-  </data>
-  <data name="LicenseAccepte" xml:space="preserve">
-    <value>License accepted</value>
-  </data>
-  <data name="LicenseAcceptedInfo" xml:space="preserve">
-    <value>License accepted, Moto_Boot_Logo_Maker is going to restart</value>
-  </data>
-  <data name="LicenseAlreadyActivated" xml:space="preserve">
-    <value>License already activated</value>
-  </data>
-  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker is already activated, don't need to activate again!</value>
-  </data>
-  <data name="LicenseBuyInfo" xml:space="preserve">
-    <value>When you buy the license, please send me an Email with info about donation and: IMPORTANT your UID so i can provide you the license!</value>
-  </data>
-  <data name="LicenseDenied" xml:space="preserve">
-    <value>License denied</value>
-  </data>
-  <data name="LicenseDeniedInfo" xml:space="preserve">
-    <value>License denied, Moto_Boot_Logo_Maker is going to restart</value>
-  </data>
-  <data name="LicenseEnd" xml:space="preserve">
-    <value>Your copy of Moto_Boot_Logo_Maker is not activated... Please activate it!</value>
-  </data>
-  <data name="LicenseFreeInfo" xml:space="preserve">
-    <value>For now UID License will be free</value>
-  </data>
-  <data name="LicenseGetAsk" xml:space="preserve">
-    <value>Please contact to Developer to ask for License!</value>
-  </data>
-  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
-    <value>The license is NOT for this copy!</value>
-  </data>
-  <data name="LicenseNotActivated" xml:space="preserve">
-    <value>License is not activated</value>
-  </data>
-  <data name="LicenseRemoved" xml:space="preserve">
-    <value>License removed</value>
-  </data>
-  <data name="LicenseRemovedHard" xml:space="preserve">
-    <value>License removed, due to this, Moto_Boot_Logo_Maker now will be trial for 10 minutes... Open again Moto_Boot_Logo_Maker</value>
-  </data>
-  <data name="LicenseRemovedInfo" xml:space="preserve">
-    <value>License removed, Moto_Boot_Logo_Maker is going to restart</value>
-  </data>
-  <data name="LicenseUIDInfo" xml:space="preserve">
-    <value>What is UID? Unique ID for the current PC. This means that is based on:  Application Name, Processor ID, Motherboard Serial Number and Disk Volume Serial Number of Drive C</value>
-  </data>
-  <data name="LicImportantClosebtn" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="LicImportantDSTAbtn" xml:space="preserve">
-    <value>Don't show this again</value>
-  </data>
-  <data name="LicImportantGetLicbtn" xml:space="preserve">
-    <value>GET LICENSE</value>
-  </data>
-  <data name="LicImportantMoreInfobtn" xml:space="preserve">
-    <value>More Info</value>
-  </data>
-  <data name="LicImportantTitle" xml:space="preserve">
-    <value>Welcome to Moto_Boot_Logo_Maker!
-Important Changes! - README</value>
-  </data>
-  <data name="LicReadException" xml:space="preserve">
-    <value>Product is not activated, so license was not found...</value>
-  </data>
-  <data name="LicReadExportbtn" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="LicReadTitle" xml:space="preserve">
-    <value>License Key</value>
-  </data>
-  <data name="LicStatActivatebtn" xml:space="preserve">
-    <value>Activate</value>
-  </data>
-  <data name="LicStatCode" xml:space="preserve">
-    <value>License Code:</value>
-  </data>
-  <data name="LicStatCTCbtn" xml:space="preserve">
-    <value>Copy to clipboard</value>
-  </data>
-  <data name="LicStatCurrentUID" xml:space="preserve">
-    <value>Current UID:</value>
-  </data>
-  <data name="LicStatExpirationDate" xml:space="preserve">
-    <value>Expiration Date: N/A - UID License</value>
-  </data>
-  <data name="LicStatInstallbtn" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="LicStatStatus" xml:space="preserve">
-    <value>License Status:</value>
-  </data>
-  <data name="LicStatTitle" xml:space="preserve">
-    <value>License Info</value>
-  </data>
-  <data name="LicStatViewbtn" xml:space="preserve">
-    <value>View</value>
   </data>
   <data name="lighttoolStripMenuItem" xml:space="preserve">
     <value>Light</value>
@@ -638,25 +493,7 @@ Important Changes! - README</value>
     <value>Do you want to send Logs now?</value>
   </data>
   <data name="LogTestWrongBin" xml:space="preserve">
-    <value>Please select a correct logo.bin file! this is a wrong file:</value>
-  </data>
-  <data name="MailMsgInternetError" xml:space="preserve">
-    <value>Can't send License Request! Please check your internet connection!</value>
-  </data>
-  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
-    <value>Lost internet connection</value>
-  </data>
-  <data name="MailMsgIsEmpty" xml:space="preserve">
-    <value>The boxes can't be empty!</value>
-  </data>
-  <data name="MailMsgMailNotValid" xml:space="preserve">
-    <value>Input a valid email!</value>
-  </data>
-  <data name="MailMsgSent" xml:space="preserve">
-    <value>Message was sent!</value>
-  </data>
-  <data name="MailMsgSentTitle" xml:space="preserve">
-    <value>Email Sent</value>
+    <value>Please select a correct logo.bin file! This is a wrong file:</value>
   </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
     <value>Reset All Profiles</value>
@@ -684,15 +521,6 @@ Important Changes! - README</value>
   </data>
   <data name="othersToolStripMenuItem" xml:space="preserve">
     <value>Others</value>
-  </data>
-  <data name="ProductActivatedTitle" xml:space="preserve">
-    <value>Product Activated</value>
-  </data>
-  <data name="ProductNotActivated" xml:space="preserve">
-    <value>Product is not activated</value>
-  </data>
-  <data name="ProductNotActivatedTitle" xml:space="preserve">
-    <value>Product not activated, TIME LEFT:</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
     <value>Moto_Boot_Logo_Maker can't match with original assemblies:</value>
