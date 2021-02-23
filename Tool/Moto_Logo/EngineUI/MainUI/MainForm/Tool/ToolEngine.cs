@@ -198,24 +198,26 @@ namespace Moto_Logo
         private void CheckIMGsize(int size2)
         {
             // NOTE: Need to check if new moto devices support more than 2.5MB//2.6MB (2621440b)
-            var pathJPG = Path.GetExtension(".jpg");
-            var pathPNG = Path.GetExtension(".png");
-            var pathBMP = Path.GetExtension(".bmp");
-            var pathGIF = Path.GetExtension(".gif");
-            var pathICO = Path.GetExtension(".ico");
+            var IMGExtension = Path.GetExtension(openFileDialog1.FileName);
+            long size = new FileInfo(openFileDialog1.FileName).Length;
 
-            if (openFileDialog1.FileName.EndsWith(pathJPG) || 
-                openFileDialog1.FileName.EndsWith(pathPNG) ||
-                openFileDialog1.FileName.EndsWith(pathGIF) ||
-                openFileDialog1.FileName.EndsWith(pathBMP) ||
-                openFileDialog1.FileName.EndsWith(pathICO))
+            if (IMGExtension.EndsWith(".jpg") ||
+                IMGExtension.EndsWith(".jpeg") ||
+                IMGExtension.EndsWith(".png") ||
+                IMGExtension.EndsWith(".bmp") ||
+                IMGExtension.EndsWith(".gif") ||
+                IMGExtension.EndsWith(".ico"))
             {
-                long size = openFileDialog1.FileName.Length;
-                if (size > size2)
+                if (size >= size2)
                 {
                     MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+            }
+            else
+            {
+                MessageBox.Show("Wrong image type! Image type allowed: \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 

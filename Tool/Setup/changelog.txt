@@ -11,6 +11,8 @@ NOTE: Some translations are missing, i will be working on this, for now still in
 - [fixed] Some missing code
 - [fixed] Settings, label sizes
 - [fixed] EN Translations
+- [fixed] Check img size (OpenFileDialog)
+- [fixed] Missing img extension Jpeg (.jpeg)
 - [new] Added check sizes to new image extensions (need to check if new moto devices support more than 2.5MB)
 - [removed] Old code
 
