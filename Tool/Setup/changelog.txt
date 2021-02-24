@@ -3,13 +3,13 @@
 #####################
 
 ---------------------------------------
-v4.4.3.1 - Released xxx xx, 2021 - WIP
+v4.4.3.1 - Released Feb 24, 2021
 ---------------------------------------
 NOTE: Some translations are missing, i will be working on this, for now still in english
 
 - [fixed] Read Changelog link
 - [fixed] Some missing code
-- [fixed] Settings, label sizes
+- [fixed] Settings form: label sizes
 - [fixed] All Translations
 - [fixed] Check img size (OpenFileDialog)
 - [fixed] Missing img extension Jpeg (.jpeg)

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 24-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -17,9 +17,6 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -195,30 +192,31 @@ namespace Moto_Logo
             }
         }
 
-        private void CheckIMGsize(int size2)
-        {
-            // NOTE: Need to check if new moto devices support more than 2.5MB//2.6MB (2621440b)
+        private bool CheckAllIMG(int size2)
+        {            
+            // NOTE: Need to check if new moto devices support more than 2.6MB (2621440b)
             var IMGExtension = Path.GetExtension(openFileDialog1.FileName);
             long size = new FileInfo(openFileDialog1.FileName).Length;
-
+           
             if (IMGExtension.EndsWith(".jpg") ||
-                IMGExtension.EndsWith(".jpeg") ||
-                IMGExtension.EndsWith(".png") ||
-                IMGExtension.EndsWith(".bmp") ||
-                IMGExtension.EndsWith(".gif") ||
-                IMGExtension.EndsWith(".ico"))
+               IMGExtension.EndsWith(".jpeg") ||
+               IMGExtension.EndsWith(".png") ||
+               IMGExtension.EndsWith(".bmp") ||
+               IMGExtension.EndsWith(".gif") ||
+               IMGExtension.EndsWith(".ico"))
             {
                 if (size >= size2)
                 {
                     MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    return true;
                 }
             }
             else
             {
                 MessageBox.Show("Wrong image type! Image type allowed: \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                return true;
             }
+            return false;
         }
 
         private void labelColorDraw_Click(object sender, EventArgs e)

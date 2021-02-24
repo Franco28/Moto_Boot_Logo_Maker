@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 24-02-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -356,7 +356,10 @@ namespace Moto_Logo
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                CheckIMGsize(2621440);
+                if (CheckAllIMG(2621440) == true)
+                {
+                    return;
+                }
                 var img = new Bitmap(new MemoryStream(File.ReadAllBytes(openFileDialog1.FileName)));
                 AddToBitmapList(img, Path.GetFileName(openFileDialog1.FileName), txtLogoInternalFile.Text);
                 toolStripStatusLabel1.Text = openFileDialog1.FileName;
@@ -608,7 +611,10 @@ namespace Moto_Logo
             openFileDialog1.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-            CheckIMGsize(2621440);
+            if (CheckAllIMG(2621440) == true)
+            {
+                return;
+            }
             var img = new Bitmap(new MemoryStream(File.ReadAllBytes(openFileDialog1.FileName)));
             AddToBitmapList(img, Path.GetFileName(openFileDialog1.FileName), tvLogo.SelectedNode.Text);
             toolStripStatusLabel1.Text = openFileDialog1.FileName;
