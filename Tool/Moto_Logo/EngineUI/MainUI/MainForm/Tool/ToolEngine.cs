@@ -210,7 +210,7 @@ namespace Moto_Logo
             {
                 if (size >= size2)
                 {
-                    MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }

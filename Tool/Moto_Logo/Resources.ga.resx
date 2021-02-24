@@ -1,7 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
-       Language: Irish	
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -63,9 +119,6 @@
   </resheader>
   <data name="AboutBoxAppTrusted" xml:space="preserve">
     <value>App Iontaofa:</value>
-  </data>
-  <data name="AboutBoxBW" xml:space="preserve">
-    <value>Tógtha Le:</value>
   </data>
   <data name="AboutBoxImageRunTime" xml:space="preserve">
     <value>Íomhá Runtime:</value>
@@ -172,24 +225,6 @@
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>Seiceáil do nuashrónaithe</value>
   </data>
-  <data name="CLbtnSend" xml:space="preserve">
-    <value>Seol Ceadúnas Iarraidh</value>
-  </data>
-  <data name="CLlabelCLTitle" xml:space="preserve">
-    <value>Iarratas ar Cheadúnas</value>
-  </data>
-  <data name="CLlabelContactTO" xml:space="preserve">
-    <value>Déan teagmháil le:</value>
-  </data>
-  <data name="CLlabelEmailTitle" xml:space="preserve">
-    <value>Ríomhphost</value>
-  </data>
-  <data name="CLlabelNOTE" xml:space="preserve">
-    <value>NÓTA: D’fhéadfadh sé go dtógfadh d’iarratas lá amháin chun é a fháil!</value>
-  </data>
-  <data name="CLlabelYourEmailInfo" xml:space="preserve">
-    <value>Do r-phost:</value>
-  </data>
   <data name="CompilePathISWrong" xml:space="preserve">
     <value>Caithfidh an cosán &lt;pathbuild&gt; deireadh a chur le \</value>
   </data>
@@ -265,41 +300,8 @@
   <data name="groupBox7" xml:space="preserve">
     <value>Roghnaigh do shíneadh</value>
   </data>
-  <data name="HELPME" xml:space="preserve">
-    <value>* HEY MÁ TÁ SÉ AG TEACHT LEIS AN TEACHTAIREACHT SEO, IS FÉIDIR LEAT GO BHFUIL SÉ SPEISIALTA, AGUS NÍ MÓR DUIT DO CHÚNAMH!</value>
-  </data>
   <data name="helpToolStripMenuItem" xml:space="preserve">
     <value>Cabhrú</value>
-  </data>
-  <data name="HowToUseItLinkLabel" xml:space="preserve">
-    <value>Tuilleadh eolais</value>
-  </data>
-  <data name="HowToUseItMainLoadText" xml:space="preserve">
-    <value>Roghnaigh do chuid amhras ar an bpainéal ar chlé!</value>
-  </data>
-  <data name="HowToUseItMainText" xml:space="preserve">
-    <value>Anseo beidh tú in ann léamh conas an Uirlis seo a úsáid!</value>
-  </data>
-  <data name="HowToUseItMainTitle" xml:space="preserve">
-    <value>Priomh</value>
-  </data>
-  <data name="HowToUseItNode1Text" xml:space="preserve">
-    <value>Liosta de dheighiltí na bhfeistí lena rúin scáileáin faoi seach, a chaithfear a chur ansin agus an lógó seachtrach á luchtú. Liosta:</value>
-  </data>
-  <data name="HowToUseItNode1Title" xml:space="preserve">
-    <value>Méid Cuimhne Lógó</value>
-  </data>
-  <data name="HowToUseItNode2Text" xml:space="preserve">
-    <value>Ar dtús ní mór duit logo.bin do ghléis a luchtú. Ansin nuair a bhíonn gach rud luchtaithe, déan cliceáil faoi dhó ar amharc crainn ar an bpainéal ar chlé áit a ndéantar ainmneacha lógó a leithdháileadh agus íomhá nua a luchtú! Cuimhnigh meas a bheith agat ar mhéid cuimhne do lógó, mura féidir é sin ní chuirfear an lógó le chéile!</value>
-  </data>
-  <data name="HowToUseItNode2Title" xml:space="preserve">
-    <value>Conas íomhánna lógó a athrú?</value>
-  </data>
-  <data name="HowToUseItResUnknown" xml:space="preserve">
-    <value>** Má tá ceann de na gairis marcáilte agat, déan teagmháil linn, níl a fhios againn go cinnte méid dheighilt lógó na bhfeistí seo.</value>
-  </data>
-  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
-    <value>Conas é a úsáid?</value>
   </data>
   <data name="ImageLoadFail" xml:space="preserve">
     <value>Níor éirigh le híomhá amháin ar a laghad a luchtú, an bhfuil tú cinnte gur mian leat dul ar aghaidh?</value>
@@ -317,7 +319,7 @@
     <value>Bí ar Lógónna Tosaithe Telegram</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>Le do thoil an íomhá jpg seo, tá sé ró-fhada! laghdaigh an méid is ísle ná 2.5MB</value>
+    <value>Tá íomhá &lt;IMGExtension&gt; ró-mhór! Laghdaigh a mhéid níos ísle ná 2.6MB le do thoil.</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>Conair lógó</value>
@@ -336,115 +338,6 @@
   </data>
   <data name="languageToolStripMenuItem" xml:space="preserve">
     <value>Teanga</value>
-  </data>
-  <data name="lblUIDTip" xml:space="preserve">
-    <value>Cuir an UID thíos ar fáil agus an ceadúnas á cheannach agat</value>
-  </data>
-  <data name="LicActivateTitle" xml:space="preserve">
-    <value>Ceadúnas a Ghníomhachtú</value>
-  </data>
-  <data name="LicActivateWhatIsUID" xml:space="preserve">
-    <value>Cad é UID?</value>
-  </data>
-  <data name="LicenseAccepte" xml:space="preserve">
-    <value>Glactar le ceadúnas</value>
-  </data>
-  <data name="LicenseAcceptedInfo" xml:space="preserve">
-    <value>Glactar le ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
-  </data>
-  <data name="LicenseAlreadyActivated" xml:space="preserve">
-    <value>Ceadúnas curtha i ngníomh cheana féin</value>
-  </data>
-  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
-    <value>Tá Moto_Boot_Logo_Maker curtha i ngníomh cheana féin, ní gá duit gníomhachtú arís!</value>
-  </data>
-  <data name="LicenseBuyInfo" xml:space="preserve">
-    <value>Nuair a cheannaíonn tú an ceadúnas, seol R-phost chugam le faisnéis faoi dheonú agus: TÁBHACHTACH do UID le go bhféadfainn an ceadúnas a sholáthar duit!</value>
-  </data>
-  <data name="LicenseDenied" xml:space="preserve">
-    <value>Diúltaíodh ceadúnas</value>
-  </data>
-  <data name="LicenseDeniedInfo" xml:space="preserve">
-    <value>Diúltaíodh an ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
-  </data>
-  <data name="LicenseEnd" xml:space="preserve">
-    <value>Níl do chóip de Moto_Boot_Logo_Maker curtha i ngníomh ... Cuir i ngníomh é le do thoil!</value>
-  </data>
-  <data name="LicenseFreeInfo" xml:space="preserve">
-    <value>Go dtí seo beidh Ceadúnas UID saor in aisce</value>
-  </data>
-  <data name="LicenseGetAsk" xml:space="preserve">
-    <value>Téigh i dteagmháil leis an bhForbróir chun Ceadúnas a iarraidh!</value>
-  </data>
-  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
-    <value>NÍL an ceadúnas don chóip seo!</value>
-  </data>
-  <data name="LicenseNotActivated" xml:space="preserve">
-    <value>Ní chuirtear an ceadúnas i ngníomh</value>
-  </data>
-  <data name="LicenseRemoved" xml:space="preserve">
-    <value>Ceadúnas bainte</value>
-  </data>
-  <data name="LicenseRemovedHard" xml:space="preserve">
-    <value>Bainfear an ceadúnas, mar gheall air seo, triailfear Moto_Boot_Logo_Maker anois ar feadh 10 nóiméad ... Oscail arís Moto_Boot_Logo_Maker</value>
-  </data>
-  <data name="LicenseRemovedInfo" xml:space="preserve">
-    <value>Baintear an ceadúnas, tá Moto_Boot_Logo_Maker chun atosú</value>
-  </data>
-  <data name="LicenseUIDInfo" xml:space="preserve">
-    <value>Cad é UID? Aitheantas uathúil don ríomhaire reatha. Ciallaíonn sé seo go bhfuil sé bunaithe ar: Ainm an Iarratais, Aitheantas an Phróiseálaí, Sraithuimhir Motherboard agus Sraithuimhir Imleabhar Diosca Céide C</value>
-  </data>
-  <data name="LicImportantClosebtn" xml:space="preserve">
-    <value>Dún</value>
-  </data>
-  <data name="LicImportantDSTAbtn" xml:space="preserve">
-    <value>Ná taispeáin é seo arís</value>
-  </data>
-  <data name="LicImportantGetLicbtn" xml:space="preserve">
-    <value>FAIGH CEADÚNAS</value>
-  </data>
-  <data name="LicImportantMoreInfobtn" xml:space="preserve">
-    <value>Tuilleadh eolais</value>
-  </data>
-  <data name="LicImportantTitle" xml:space="preserve">
-    <value>Fáilte go Moto_Boot_Logo_Maker!
-Athruithe Tábhachtacha! - LÉAMH</value>
-  </data>
-  <data name="LicReadException" xml:space="preserve">
-    <value>Ní chuirtear an táirge i ngníomh, mar sin níor aimsíodh ceadúnas ...</value>
-  </data>
-  <data name="LicReadExportbtn" xml:space="preserve">
-    <value>Easpórtáil</value>
-  </data>
-  <data name="LicReadTitle" xml:space="preserve">
-    <value>Eochair an Cheadúnais</value>
-  </data>
-  <data name="LicStatActivatebtn" xml:space="preserve">
-    <value>Gníomhachtaigh</value>
-  </data>
-  <data name="LicStatCode" xml:space="preserve">
-    <value>Cód Ceadúnais:</value>
-  </data>
-  <data name="LicStatCTCbtn" xml:space="preserve">
-    <value>Cóipeáil chuig an gearrthaisce</value>
-  </data>
-  <data name="LicStatCurrentUID" xml:space="preserve">
-    <value>UID Reatha:</value>
-  </data>
-  <data name="LicStatExpirationDate" xml:space="preserve">
-    <value>Dáta Éaga: Neamhbhainteach - Ceadúnas UID</value>
-  </data>
-  <data name="LicStatInstallbtn" xml:space="preserve">
-    <value>Suiteáil</value>
-  </data>
-  <data name="LicStatStatus" xml:space="preserve">
-    <value>Stádas Ceadúnais:</value>
-  </data>
-  <data name="LicStatTitle" xml:space="preserve">
-    <value>Eolas faoi Cheadúnas</value>
-  </data>
-  <data name="LicStatViewbtn" xml:space="preserve">
-    <value>Amharc</value>
   </data>
   <data name="lighttoolStripMenuItem" xml:space="preserve">
     <value>Solas</value>
@@ -584,24 +477,6 @@ Athruithe Tábhachtacha! - LÉAMH</value>
   <data name="LogTestWrongBin" xml:space="preserve">
     <value>Roghnaigh comhad ceart logo.bin le do thoil! is comhad mícheart é seo:</value>
   </data>
-  <data name="MailMsgInternetError" xml:space="preserve">
-    <value>Ní féidir Iarratas ar Cheadúnas a sheoladh! Seiceáil do nasc idirlín le do thoil!</value>
-  </data>
-  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
-    <value>Nasc idirlín caillte</value>
-  </data>
-  <data name="MailMsgIsEmpty" xml:space="preserve">
-    <value>Ní féidir leis na boscaí a bheith folamh!</value>
-  </data>
-  <data name="MailMsgMailNotValid" xml:space="preserve">
-    <value>Ionchur ríomhphost bailí!</value>
-  </data>
-  <data name="MailMsgSent" xml:space="preserve">
-    <value>Cuireadh teachtaireacht!</value>
-  </data>
-  <data name="MailMsgSentTitle" xml:space="preserve">
-    <value>Seol Ríomhphost</value>
-  </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
     <value>Athshocraigh Gach Próifíl</value>
   </data>
@@ -628,15 +503,6 @@ Athruithe Tábhachtacha! - LÉAMH</value>
   </data>
   <data name="othersToolStripMenuItem" xml:space="preserve">
     <value>Daoine eile</value>
-  </data>
-  <data name="ProductActivatedTitle" xml:space="preserve">
-    <value>Táirge Gníomhachtaithe</value>
-  </data>
-  <data name="ProductNotActivated" xml:space="preserve">
-    <value>Ní chuirtear an táirge i ngníomh</value>
-  </data>
-  <data name="ProductNotActivatedTitle" xml:space="preserve">
-    <value>Níl an táirge curtha i ngníomh, AMA LEFT:</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
     <value>Ní féidir le Moto_Boot_Logo_Maker a mheaitseáil le tionóil bhunaidh:</value>

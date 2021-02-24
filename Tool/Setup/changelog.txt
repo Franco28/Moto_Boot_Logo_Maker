@@ -3,17 +3,18 @@
 #####################
 
 ---------------------------------------
-v4.4.3.1 - Released xxx xx, 2021
+v4.4.3.1 - Released xxx xx, 2021 - WIP
 ---------------------------------------
 NOTE: Some translations are missing, i will be working on this, for now still in english
 
 - [fixed] Read Changelog link
 - [fixed] Some missing code
 - [fixed] Settings, label sizes
-- [fixed] EN Translations
+- [fixed] All Translations
 - [fixed] Check img size (OpenFileDialog)
 - [fixed] Missing img extension Jpeg (.jpeg)
-- [new] Added check sizes to new image extensions (need to check if new moto devices support more than 2.5MB)
+- [fixed] Strings errors
+- [new] Added check sizes to new image extensions (need to check if new moto devices support more than 2.6MB)
 - [removed] Old code
 
 ---------------------------------------

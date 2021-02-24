@@ -1,7 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root> 
+<root>
   <!-- 
-       Language: Polish
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -63,9 +119,6 @@
   </resheader>
   <data name="AboutBoxAppTrusted" xml:space="preserve">
     <value>Zaufana aplikacja:</value>
-  </data>
-  <data name="AboutBoxBW" xml:space="preserve">
-    <value>Zbudowany z:</value>
   </data>
   <data name="AboutBoxImageRunTime" xml:space="preserve">
     <value>Image Runtime:</value>
@@ -172,24 +225,6 @@
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>Sprawdź aktualizacje</value>
   </data>
-  <data name="CLbtnSend" xml:space="preserve">
-    <value>Wyślij żądanie licencji</value>
-  </data>
-  <data name="CLlabelCLTitle" xml:space="preserve">
-    <value>Żądanie licencji</value>
-  </data>
-  <data name="CLlabelContactTO" xml:space="preserve">
-    <value>Kontakt do:</value>
-  </data>
-  <data name="CLlabelEmailTitle" xml:space="preserve">
-    <value>E-mail</value>
-  </data>
-  <data name="CLlabelNOTE" xml:space="preserve">
-    <value>UWAGA: Twoja prośba może zająć jeden dzień!</value>
-  </data>
-  <data name="CLlabelYourEmailInfo" xml:space="preserve">
-    <value>Twój email:</value>
-  </data>
   <data name="CompilePathISWrong" xml:space="preserve">
     <value>Ścieżka &lt;pathbuild&gt; musi kończyć się znakiem \</value>
   </data>
@@ -265,42 +300,6 @@
   <data name="groupBox7" xml:space="preserve">
     <value>Wybierz rozszerzenie</value>
   </data>
-  <data name="HELPME" xml:space="preserve">
-    <value>* HEJ, JEŚLI WIDZISZ TĘ WIADOMOŚĆ, PONIEWAŻ JESTEŚ SPECJALNY I POTRZEBUJĘ TWOJEJ POMOCY!</value>
-  </data>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
-    <value>Wsparcie</value>
-  </data>
-  <data name="HowToUseItLinkLabel" xml:space="preserve">
-    <value>Więcej informacji</value>
-  </data>
-  <data name="HowToUseItMainLoadText" xml:space="preserve">
-    <value>Wybierz swoje wątpliwości w lewym panelu!</value>
-  </data>
-  <data name="HowToUseItMainText" xml:space="preserve">
-    <value>Tutaj będziesz mógł przeczytać, jak używać tego narzędzia!</value>
-  </data>
-  <data name="HowToUseItMainTitle" xml:space="preserve">
-    <value>Główny</value>
-  </data>
-  <data name="HowToUseItNode1Text" xml:space="preserve">
-    <value>Lista partycji urządzeń wraz z ich rozdzielczościami ekranu, które będą następnie musiały zostać umieszczone podczas ładowania zewnętrznego logo. Lista:</value>
-  </data>
-  <data name="HowToUseItNode1Title" xml:space="preserve">
-    <value>Rozmiar pamięci logo</value>
-  </data>
-  <data name="HowToUseItNode2Text" xml:space="preserve">
-    <value>Najpierw musisz załadować logo.bin urządzenia. Następnie, gdy wszystko się załaduje, kliknij dwukrotnie widok drzewa na lewym panelu, gdzie przydzielone są nazwy logo i załaduj nowy obraz! Pamiętaj, aby uszanować rozmiar pamięci swojego logo, jeśli nie jest to możliwe, logo nie zostanie skompilowane!</value>
-  </data>
-  <data name="HowToUseItNode2Title" xml:space="preserve">
-    <value>Jak zmienić obrazy logo?</value>
-  </data>
-  <data name="HowToUseItResUnknown" xml:space="preserve">
-    <value>** Jeśli posiadasz jedno z oznaczonych urządzeń, skontaktuj się z nami, nie znamy na pewno rozmiaru partycji z logo tych urządzeń.</value>
-  </data>
-  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
-    <value>Jak tego użyć?</value>
-  </data>
   <data name="ImageLoadFail" xml:space="preserve">
     <value>Nie udało się załadować co najmniej jednego obrazu. Czy na pewno chcesz kontynuować?</value>
   </data>
@@ -317,7 +316,7 @@
     <value>Dołącz do logo startowego Telegram</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>Proszę, ten obraz jpg, jest za długi! zmniejszyć rozmiar poniżej 2,5 MB</value>
+    <value>Obraz &lt;IMGExtension&gt; jest za duży! Zmniejsz rozmiar do mniej niż 2,6 MB.</value>
   </data>
   <data name="label3" xml:space="preserve">
     <value>Uwagi:</value>
@@ -339,115 +338,6 @@
   </data>
   <data name="languageToolStripMenuItem" xml:space="preserve">
     <value>Język</value>
-  </data>
-  <data name="lblUIDTip" xml:space="preserve">
-    <value>Kupując licencję, podaj poniższy identyfikator UID</value>
-  </data>
-  <data name="LicActivateTitle" xml:space="preserve">
-    <value>Aktywuj licencję</value>
-  </data>
-  <data name="LicActivateWhatIsUID" xml:space="preserve">
-    <value>Co to jest UID?</value>
-  </data>
-  <data name="LicenseAccepte" xml:space="preserve">
-    <value>Licencja zaakceptowana</value>
-  </data>
-  <data name="LicenseAcceptedInfo" xml:space="preserve">
-    <value>Licencja zaakceptowana, Moto_Boot_Logo_Maker zostanie ponownie uruchomiony</value>
-  </data>
-  <data name="LicenseAlreadyActivated" xml:space="preserve">
-    <value>Licencja już aktywowana</value>
-  </data>
-  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker jest już aktywowany, nie trzeba go ponownie aktywować!</value>
-  </data>
-  <data name="LicenseBuyInfo" xml:space="preserve">
-    <value>Kiedy kupujesz licencję, wyślij mi e-mail z informacją o darowiznie oraz: WAŻNE Twój UID, abym mógł Ci ją dostarczyć!</value>
-  </data>
-  <data name="LicenseDenied" xml:space="preserve">
-    <value>Odmowa licencji</value>
-  </data>
-  <data name="LicenseDeniedInfo" xml:space="preserve">
-    <value>Odmowa licencji, Moto_Boot_Logo_Maker zostanie ponownie uruchomiony</value>
-  </data>
-  <data name="LicenseEnd" xml:space="preserve">
-    <value>Twoja kopia Moto_Boot_Logo_Maker nie jest aktywowana ... Aktywuj ją!</value>
-  </data>
-  <data name="LicenseFreeInfo" xml:space="preserve">
-    <value>Na razie licencja UID będzie bezpłatna</value>
-  </data>
-  <data name="LicenseGetAsk" xml:space="preserve">
-    <value>Skontaktuj się z programistą, aby poprosić o licencję!</value>
-  </data>
-  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
-    <value>Licencja NIE dotyczy tej kopii!</value>
-  </data>
-  <data name="LicenseNotActivated" xml:space="preserve">
-    <value>Licencja nie została aktywowana</value>
-  </data>
-  <data name="LicenseRemoved" xml:space="preserve">
-    <value>Licencja została usunięta</value>
-  </data>
-  <data name="LicenseRemovedHard" xml:space="preserve">
-    <value>Licencja została usunięta, z tego powodu Moto_Boot_Logo_Maker będzie teraz testowany przez 10 minut ... Otwórz ponownie Moto_Boot_Logo_Maker</value>
-  </data>
-  <data name="LicenseRemovedInfo" xml:space="preserve">
-    <value>Licencja została usunięta, Moto_Boot_Logo_Maker zostanie ponownie uruchomiony</value>
-  </data>
-  <data name="LicenseUIDInfo" xml:space="preserve">
-    <value>Co to jest UID? Unikalny identyfikator dla bieżącego komputera. Oznacza to, że jest to oparte na: nazwie aplikacji, identyfikatorze procesora, numerze seryjnym płyty głównej i numerze seryjnym woluminu dysku C</value>
-  </data>
-  <data name="LicImportantClosebtn" xml:space="preserve">
-    <value>Blisko</value>
-  </data>
-  <data name="LicImportantDSTAbtn" xml:space="preserve">
-    <value>Nie pokazuj tego ponownie</value>
-  </data>
-  <data name="LicImportantGetLicbtn" xml:space="preserve">
-    <value>UZYSKAJ LICENCJĘ</value>
-  </data>
-  <data name="LicImportantMoreInfobtn" xml:space="preserve">
-    <value>Więcej informacji</value>
-  </data>
-  <data name="LicImportantTitle" xml:space="preserve">
-    <value>Witamy w Moto_Boot_Logo_Maker!
-Ważne zmiany! - README</value>
-  </data>
-  <data name="LicReadException" xml:space="preserve">
-    <value>Produkt nie jest aktywowany, więc nie znaleziono licencji ...</value>
-  </data>
-  <data name="LicReadExportbtn" xml:space="preserve">
-    <value>Eksport</value>
-  </data>
-  <data name="LicReadTitle" xml:space="preserve">
-    <value>Klucz licencyjny</value>
-  </data>
-  <data name="LicStatActivatebtn" xml:space="preserve">
-    <value>Aktywuj</value>
-  </data>
-  <data name="LicStatCode" xml:space="preserve">
-    <value>Kod licencyjny:</value>
-  </data>
-  <data name="LicStatCTCbtn" xml:space="preserve">
-    <value>Skopiuj do schowka</value>
-  </data>
-  <data name="LicStatCurrentUID" xml:space="preserve">
-    <value>Aktualny UID:</value>
-  </data>
-  <data name="LicStatExpirationDate" xml:space="preserve">
-    <value>Data wygaśnięcia: nie dotyczy - Licencja UID</value>
-  </data>
-  <data name="LicStatInstallbtn" xml:space="preserve">
-    <value>zainstalować</value>
-  </data>
-  <data name="LicStatStatus" xml:space="preserve">
-    <value>Stan licencji:</value>
-  </data>
-  <data name="LicStatTitle" xml:space="preserve">
-    <value>Informacje o licencji</value>
-  </data>
-  <data name="LicStatViewbtn" xml:space="preserve">
-    <value>Widok</value>
   </data>
   <data name="lighttoolStripMenuItem" xml:space="preserve">
     <value>Lekki</value>
@@ -587,24 +477,6 @@ Ważne zmiany! - README</value>
   <data name="LogTestWrongBin" xml:space="preserve">
     <value>Wybierz poprawny plik logo.bin! to jest zły plik:</value>
   </data>
-  <data name="MailMsgInternetError" xml:space="preserve">
-    <value>Nie można wysłać prośby o licencję! Proszę sprawdzić swoje połączenie z internetem!</value>
-  </data>
-  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
-    <value>Utracone połączenie internetowe</value>
-  </data>
-  <data name="MailMsgIsEmpty" xml:space="preserve">
-    <value>Pudła nie mogą być puste!</value>
-  </data>
-  <data name="MailMsgMailNotValid" xml:space="preserve">
-    <value>Wpisz prawidłowy adres e-mail!</value>
-  </data>
-  <data name="MailMsgSent" xml:space="preserve">
-    <value>Wiadomość została wysłana!</value>
-  </data>
-  <data name="MailMsgSentTitle" xml:space="preserve">
-    <value>E-mail wysłany</value>
-  </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
     <value>Zresetuj wszystkie profile</value>
   </data>
@@ -631,15 +503,6 @@ Ważne zmiany! - README</value>
   </data>
   <data name="othersToolStripMenuItem" xml:space="preserve">
     <value>Inni</value>
-  </data>
-  <data name="ProductActivatedTitle" xml:space="preserve">
-    <value>Produkt aktywowany</value>
-  </data>
-  <data name="ProductNotActivated" xml:space="preserve">
-    <value>Produkt nie jest aktywowany</value>
-  </data>
-  <data name="ProductNotActivatedTitle" xml:space="preserve">
-    <value>Produkt nie aktywowany, POZOSTAŁY CZAS:</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
     <value>Moto_Boot_Logo_Maker nie może się równać z oryginalnymi zespołami:</value>

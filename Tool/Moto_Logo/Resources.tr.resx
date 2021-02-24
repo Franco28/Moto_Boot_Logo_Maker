@@ -1,7 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
-       Language: Turkish	
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -63,9 +119,6 @@
   </resheader>
   <data name="AboutBoxAppTrusted" xml:space="preserve">
     <value>Güvenilir Uygulama:</value>
-  </data>
-  <data name="AboutBoxBW" xml:space="preserve">
-    <value>İle inşa edildi:</value>
   </data>
   <data name="AboutBoxImageRunTime" xml:space="preserve">
     <value>Görüntü Çalışma Zamanı:</value>
@@ -172,24 +225,6 @@
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>Güncellemeleri kontrol et</value>
   </data>
-  <data name="CLbtnSend" xml:space="preserve">
-    <value>Lisans İsteği Gönder</value>
-  </data>
-  <data name="CLlabelCLTitle" xml:space="preserve">
-    <value>Lisans Talebi</value>
-  </data>
-  <data name="CLlabelContactTO" xml:space="preserve">
-    <value>İletişim:</value>
-  </data>
-  <data name="CLlabelEmailTitle" xml:space="preserve">
-    <value>Eposta</value>
-  </data>
-  <data name="CLlabelNOTE" xml:space="preserve">
-    <value>NOT: İsteğinizin alınması bir gün sürebilir!</value>
-  </data>
-  <data name="CLlabelYourEmailInfo" xml:space="preserve">
-    <value>E-posta adresiniz:</value>
-  </data>
   <data name="CompilePathISWrong" xml:space="preserve">
     <value>&lt;pathbuild&gt; yolu \ ile bitmelidir</value>
   </data>
@@ -265,42 +300,6 @@
   <data name="groupBox7" xml:space="preserve">
     <value>Uzantınızı seçin</value>
   </data>
-  <data name="HELPME" xml:space="preserve">
-    <value>* HEY BU MESAJI GÖRÜRSENİZ, ÇÜNKÜ ÖZELSİNİZ VE YARDIMINIZA İHTİYACIM VAR!</value>
-  </data>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
-    <value>Yardım</value>
-  </data>
-  <data name="HowToUseItLinkLabel" xml:space="preserve">
-    <value>Daha fazla bilgi</value>
-  </data>
-  <data name="HowToUseItMainLoadText" xml:space="preserve">
-    <value>Lütfen sol panelden şüphelerinizi seçin!</value>
-  </data>
-  <data name="HowToUseItMainText" xml:space="preserve">
-    <value>Burada, bu Aracı nasıl kullanacağınızı okuyabileceksiniz!</value>
-  </data>
-  <data name="HowToUseItMainTitle" xml:space="preserve">
-    <value>Ana</value>
-  </data>
-  <data name="HowToUseItNode1Text" xml:space="preserve">
-    <value>Harici logo yüklenirken yerleştirilmesi gereken ilgili ekran çözünürlükleriyle birlikte cihazların bölümlerinin listesi. Liste:</value>
-  </data>
-  <data name="HowToUseItNode1Title" xml:space="preserve">
-    <value>Logo Hafıza Boyutu</value>
-  </data>
-  <data name="HowToUseItNode2Text" xml:space="preserve">
-    <value>Öncelikle cihazınızın logo.bin dosyasını yüklemelisiniz. Ardından her şey yüklendiğinde, logo adlarının atandığı sol paneldeki ağaç görünümüne çift tıklayın ve yeni bir resim yükleyin! Logonuzun bellek boyutuna saygı duymayı unutmayın, bu mümkün değilse logo derlenmeyecektir!</value>
-  </data>
-  <data name="HowToUseItNode2Title" xml:space="preserve">
-    <value>Logo resimleri nasıl değiştirilir?</value>
-  </data>
-  <data name="HowToUseItResUnknown" xml:space="preserve">
-    <value>** İşaretli cihazlardan birine sahipseniz, lütfen bizimle iletişime geçin, bu cihazların logo bölümünün boyutundan emin değiliz.</value>
-  </data>
-  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
-    <value>Bu nasıl kullanılır?</value>
-  </data>
   <data name="ImageLoadFail" xml:space="preserve">
     <value>En az bir resim yüklenemedi, devam etmek istediğinizden emin misiniz?</value>
   </data>
@@ -317,7 +316,7 @@
     <value>Telegram Önyükleme Logolarına Katılın</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>Lütfen bu jpg resmi, çok uzun! boyutu 2,5 MB'tan daha küçük bir boyuta küçültün</value>
+    <value>&lt;IMGExtension&gt; görüntüsü çok büyük! Lütfen boyutu 2,6 MB'den daha düşük bir boyuta düşürün.</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>Logo yolu</value>
@@ -336,115 +335,6 @@
   </data>
   <data name="languageToolStripMenuItem" xml:space="preserve">
     <value>Dil</value>
-  </data>
-  <data name="lblUIDTip" xml:space="preserve">
-    <value>Lisansı satın alırken aşağıdaki UID'yi sağlayın</value>
-  </data>
-  <data name="LicActivateTitle" xml:space="preserve">
-    <value>Lisansı Etkinleştir</value>
-  </data>
-  <data name="LicActivateWhatIsUID" xml:space="preserve">
-    <value>UID nedir?</value>
-  </data>
-  <data name="LicenseAccepte" xml:space="preserve">
-    <value>Lisans kabul edildi</value>
-  </data>
-  <data name="LicenseAcceptedInfo" xml:space="preserve">
-    <value>Lisans kabul edildi, Moto_Boot_Logo_Maker yeniden başlayacak</value>
-  </data>
-  <data name="LicenseAlreadyActivated" xml:space="preserve">
-    <value>Lisans zaten etkinleştirildi</value>
-  </data>
-  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker zaten etkinleştirildi, tekrar etkinleştirmeye gerek yok!</value>
-  </data>
-  <data name="LicenseBuyInfo" xml:space="preserve">
-    <value>Lisansı satın aldığınızda, lütfen bana bağış hakkında bilgi içeren bir E-posta gönderin ve: Size lisansı sağlayabilmem için UID'niz ÖNEMLİ!</value>
-  </data>
-  <data name="LicenseDenied" xml:space="preserve">
-    <value>Lisans reddedildi</value>
-  </data>
-  <data name="LicenseDeniedInfo" xml:space="preserve">
-    <value>Lisans reddedildi, Moto_Boot_Logo_Maker yeniden başlayacak</value>
-  </data>
-  <data name="LicenseEnd" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker kopyanız etkinleştirilmedi ... Lütfen etkinleştirin!</value>
-  </data>
-  <data name="LicenseFreeInfo" xml:space="preserve">
-    <value>Şimdilik UID Lisansı ücretsiz olacak</value>
-  </data>
-  <data name="LicenseGetAsk" xml:space="preserve">
-    <value>Lisans istemek için lütfen Geliştirici ile iletişime geçin!</value>
-  </data>
-  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
-    <value>Lisans bu kopya için DEĞİLDİR!</value>
-  </data>
-  <data name="LicenseNotActivated" xml:space="preserve">
-    <value>Lisans etkinleştirilmedi</value>
-  </data>
-  <data name="LicenseRemoved" xml:space="preserve">
-    <value>Lisans kaldırıldı</value>
-  </data>
-  <data name="LicenseRemovedHard" xml:space="preserve">
-    <value>Lisans kaldırıldı, bundan dolayı, Moto_Boot_Logo_Maker şimdi 10 dakika boyunca deneme olacak ... Tekrar aç Moto_Boot_Logo_Maker</value>
-  </data>
-  <data name="LicenseRemovedInfo" xml:space="preserve">
-    <value>Lisans kaldırıldı, Moto_Boot_Logo_Maker yeniden başlayacak</value>
-  </data>
-  <data name="LicenseUIDInfo" xml:space="preserve">
-    <value>UID nedir? Mevcut PC için benzersiz kimlik. Bunun anlamı şunlara bağlıdır: Uygulama Adı, İşlemci Kimliği, Anakart Seri Numarası ve Disk Birimi Seri Numarası Sürücü C</value>
-  </data>
-  <data name="LicImportantClosebtn" xml:space="preserve">
-    <value>Kapat</value>
-  </data>
-  <data name="LicImportantDSTAbtn" xml:space="preserve">
-    <value>Bunu bir daha gösterme</value>
-  </data>
-  <data name="LicImportantGetLicbtn" xml:space="preserve">
-    <value>LİSANS ALIN</value>
-  </data>
-  <data name="LicImportantMoreInfobtn" xml:space="preserve">
-    <value>Daha fazla bilgi</value>
-  </data>
-  <data name="LicImportantTitle" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker'a hoş geldiniz!
-Önemli Değişiklikler! - README</value>
-  </data>
-  <data name="LicReadException" xml:space="preserve">
-    <value>Ürün etkinleştirilmedi, bu nedenle lisans bulunamadı ...</value>
-  </data>
-  <data name="LicReadExportbtn" xml:space="preserve">
-    <value>İhracat</value>
-  </data>
-  <data name="LicReadTitle" xml:space="preserve">
-    <value>Lisans anahtarı</value>
-  </data>
-  <data name="LicStatActivatebtn" xml:space="preserve">
-    <value>Etkinleştir</value>
-  </data>
-  <data name="LicStatCode" xml:space="preserve">
-    <value>Lisans kodu:</value>
-  </data>
-  <data name="LicStatCTCbtn" xml:space="preserve">
-    <value>Panoya kopyala</value>
-  </data>
-  <data name="LicStatCurrentUID" xml:space="preserve">
-    <value>Geçerli UID:</value>
-  </data>
-  <data name="LicStatExpirationDate" xml:space="preserve">
-    <value>Son Kullanma Tarihi: N/A - UID Lisansı</value>
-  </data>
-  <data name="LicStatInstallbtn" xml:space="preserve">
-    <value>Yüklemek</value>
-  </data>
-  <data name="LicStatStatus" xml:space="preserve">
-    <value>Lisans Durumu:</value>
-  </data>
-  <data name="LicStatTitle" xml:space="preserve">
-    <value>Lisans Bilgileri</value>
-  </data>
-  <data name="LicStatViewbtn" xml:space="preserve">
-    <value>Görünüm</value>
   </data>
   <data name="lighttoolStripMenuItem" xml:space="preserve">
     <value>Işık</value>
@@ -584,24 +474,6 @@
   <data name="LogTestWrongBin" xml:space="preserve">
     <value>Lütfen doğru bir logo.bin dosyası seçin! bu yanlış bir dosyadır:</value>
   </data>
-  <data name="MailMsgInternetError" xml:space="preserve">
-    <value>Lisans Talebi gönderilemiyor! Lütfen internet bağlantınızı kontrol edin!</value>
-  </data>
-  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
-    <value>İnternet bağlantısı kesildi</value>
-  </data>
-  <data name="MailMsgIsEmpty" xml:space="preserve">
-    <value>Kutular boş olamaz!</value>
-  </data>
-  <data name="MailMsgMailNotValid" xml:space="preserve">
-    <value>Geçerli bir e-posta girin!</value>
-  </data>
-  <data name="MailMsgSent" xml:space="preserve">
-    <value>Mesaj gönderildi!</value>
-  </data>
-  <data name="MailMsgSentTitle" xml:space="preserve">
-    <value>E-posta gönderildi</value>
-  </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
     <value>Tüm Profilleri Sıfırla</value>
   </data>
@@ -628,15 +500,6 @@
   </data>
   <data name="othersToolStripMenuItem" xml:space="preserve">
     <value>Diğerleri</value>
-  </data>
-  <data name="ProductActivatedTitle" xml:space="preserve">
-    <value>Ürün Etkinleştirildi</value>
-  </data>
-  <data name="ProductNotActivated" xml:space="preserve">
-    <value>Ürün aktif değil</value>
-  </data>
-  <data name="ProductNotActivatedTitle" xml:space="preserve">
-    <value>Ürün etkinleştirilmedi, TIME LEFT:</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
     <value>Moto_Boot_Logo_Maker, orijinal montajlarla eşleşemez:</value>

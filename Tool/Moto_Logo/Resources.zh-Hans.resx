@@ -1,7 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
-       Language: Chinese (Simplified)	
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -63,9 +119,6 @@
   </resheader>
   <data name="AboutBoxAppTrusted" xml:space="preserve">
     <value>应用受信任：</value>
-  </data>
-  <data name="AboutBoxBW" xml:space="preserve">
-    <value>内置：</value>
   </data>
   <data name="AboutBoxImageRunTime" xml:space="preserve">
     <value>图像运行时：</value>
@@ -172,24 +225,6 @@
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>检查更新</value>
   </data>
-  <data name="CLbtnSend" xml:space="preserve">
-    <value>发送请求许可证</value>
-  </data>
-  <data name="CLlabelCLTitle" xml:space="preserve">
-    <value>许可证申请</value>
-  </data>
-  <data name="CLlabelContactTO" xml:space="preserve">
-    <value>联络人：</value>
-  </data>
-  <data name="CLlabelEmailTitle" xml:space="preserve">
-    <value>电子邮件</value>
-  </data>
-  <data name="CLlabelNOTE" xml:space="preserve">
-    <value>注意：您的请求可能需要一天的时间才能收到！</value>
-  </data>
-  <data name="CLlabelYourEmailInfo" xml:space="preserve">
-    <value>你的邮件：</value>
-  </data>
   <data name="CompilePathISWrong" xml:space="preserve">
     <value>路径&lt;pathbuild&gt;必须以\结尾</value>
   </data>
@@ -265,42 +300,6 @@
   <data name="groupBox7" xml:space="preserve">
     <value>选择您的分机</value>
   </data>
-  <data name="HELPME" xml:space="preserve">
-    <value>*嘿，如果您正在查看此消息，那是因为您很特别，我需要您的帮助！</value>
-  </data>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
-    <value>救命</value>
-  </data>
-  <data name="HowToUseItLinkLabel" xml:space="preserve">
-    <value>更多信息</value>
-  </data>
-  <data name="HowToUseItMainLoadText" xml:space="preserve">
-    <value>请在左侧面板上选择您的疑问！</value>
-  </data>
-  <data name="HowToUseItMainText" xml:space="preserve">
-    <value>在这里您将能够阅读如何使用此工具！</value>
-  </data>
-  <data name="HowToUseItMainTitle" xml:space="preserve">
-    <value>主要</value>
-  </data>
-  <data name="HowToUseItNode1Text" xml:space="preserve">
-    <value>设备分区的列表及其各自的屏幕分辨率，然后在加载外部徽标时必须放置这些分区。 清单：</value>
-  </data>
-  <data name="HowToUseItNode1Title" xml:space="preserve">
-    <value>徽标记忆体大小</value>
-  </data>
-  <data name="HowToUseItNode2Text" xml:space="preserve">
-    <value>首先，您必须加载设备logo.bin。 然后，当所有内容加载完毕后，双击分配了徽标名称的左侧面板上的树状视图并加载新图像！ 记住要尊重徽标的内存大小，如果不可能的话，徽标将无法编译！</value>
-  </data>
-  <data name="HowToUseItNode2Title" xml:space="preserve">
-    <value>如何更改徽标图像？</value>
-  </data>
-  <data name="HowToUseItResUnknown" xml:space="preserve">
-    <value>**如果您有标记的设备之一，请与我们联系，我们不确定这些设备的徽标分区的大小。</value>
-  </data>
-  <data name="howToUseItToolStripMenuItem" xml:space="preserve">
-    <value>如何使用它？</value>
-  </data>
   <data name="ImageLoadFail" xml:space="preserve">
     <value>至少有一张图片无法加载，确定要继续吗？</value>
   </data>
@@ -317,7 +316,7 @@
     <value>加入电报启动徽标</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>请这张jpg图片，太长了！ 将大小减小到2.5MB以下</value>
+    <value>图像&lt;IMGExtension&gt;太大！ 请减小它的大小，使其小于2.6MB。</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>徽标构建路径</value>
@@ -336,115 +335,6 @@
   </data>
   <data name="languageToolStripMenuItem" xml:space="preserve">
     <value>语言</value>
-  </data>
-  <data name="lblUIDTip" xml:space="preserve">
-    <value>购买许可证时提供以下UID</value>
-  </data>
-  <data name="LicActivateTitle" xml:space="preserve">
-    <value>激活许可证</value>
-  </data>
-  <data name="LicActivateWhatIsUID" xml:space="preserve">
-    <value>什么是UID？</value>
-  </data>
-  <data name="LicenseAccepte" xml:space="preserve">
-    <value>接受许可</value>
-  </data>
-  <data name="LicenseAcceptedInfo" xml:space="preserve">
-    <value>许可证已接受，Moto_Boot_Logo_Maker将重新启动</value>
-  </data>
-  <data name="LicenseAlreadyActivated" xml:space="preserve">
-    <value>许可证已激活</value>
-  </data>
-  <data name="LicenseAlreadyActivatedInfo" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker已被激活，不需要再次激活！</value>
-  </data>
-  <data name="LicenseBuyInfo" xml:space="preserve">
-    <value>当您购买许可证时，请给我发送电子邮件，其中包含有关捐赠的信息，以及：重要的UID，以便我为您提供许可证！</value>
-  </data>
-  <data name="LicenseDenied" xml:space="preserve">
-    <value>许可证被拒绝</value>
-  </data>
-  <data name="LicenseDeniedInfo" xml:space="preserve">
-    <value>许可证被拒绝，Moto_Boot_Logo_Maker将重新启动</value>
-  </data>
-  <data name="LicenseEnd" xml:space="preserve">
-    <value>您的Moto_Boot_Logo_Maker副本未激活...请激活它！</value>
-  </data>
-  <data name="LicenseFreeInfo" xml:space="preserve">
-    <value>目前，UID许可证是免费的</value>
-  </data>
-  <data name="LicenseGetAsk" xml:space="preserve">
-    <value>请与开发人员联系以请求许可！</value>
-  </data>
-  <data name="LicenseIsNotForThisCopy" xml:space="preserve">
-    <value>该许可证不适用于该副本！</value>
-  </data>
-  <data name="LicenseNotActivated" xml:space="preserve">
-    <value>许可证未激活</value>
-  </data>
-  <data name="LicenseRemoved" xml:space="preserve">
-    <value>许可证已删除</value>
-  </data>
-  <data name="LicenseRemovedHard" xml:space="preserve">
-    <value>许可证已删除，因此，Moto_Boot_Logo_Maker现在将试用10分钟...再次打开Moto_Boot_Logo_Maker</value>
-  </data>
-  <data name="LicenseRemovedInfo" xml:space="preserve">
-    <value>许可证已删除，Moto_Boot_Logo_Maker将重新启动</value>
-  </data>
-  <data name="LicenseUIDInfo" xml:space="preserve">
-    <value>什么是UID？ 当前PC的唯一ID。 这表示基于：驱动器C的应用程序名称，处理器ID，主板序列号和磁盘卷序列号</value>
-  </data>
-  <data name="LicImportantClosebtn" xml:space="preserve">
-    <value>关</value>
-  </data>
-  <data name="LicImportantDSTAbtn" xml:space="preserve">
-    <value>不再显示</value>
-  </data>
-  <data name="LicImportantGetLicbtn" xml:space="preserve">
-    <value>获得许可</value>
-  </data>
-  <data name="LicImportantMoreInfobtn" xml:space="preserve">
-    <value>更多信息</value>
-  </data>
-  <data name="LicImportantTitle" xml:space="preserve">
-    <value>欢迎使用Moto_Boot_Logo_Maker！
-重要变化！ -自述文件</value>
-  </data>
-  <data name="LicReadException" xml:space="preserve">
-    <value>产品未激活，因此未找到许可证...</value>
-  </data>
-  <data name="LicReadExportbtn" xml:space="preserve">
-    <value>出口</value>
-  </data>
-  <data name="LicReadTitle" xml:space="preserve">
-    <value>注册码</value>
-  </data>
-  <data name="LicStatActivatebtn" xml:space="preserve">
-    <value>启用</value>
-  </data>
-  <data name="LicStatCode" xml:space="preserve">
-    <value>许可证代码：</value>
-  </data>
-  <data name="LicStatCTCbtn" xml:space="preserve">
-    <value>复制到剪贴板</value>
-  </data>
-  <data name="LicStatCurrentUID" xml:space="preserve">
-    <value>当前的UID：</value>
-  </data>
-  <data name="LicStatExpirationDate" xml:space="preserve">
-    <value>到期日期：N / A-UID许可证</value>
-  </data>
-  <data name="LicStatInstallbtn" xml:space="preserve">
-    <value>安装</value>
-  </data>
-  <data name="LicStatStatus" xml:space="preserve">
-    <value>许可证状态：</value>
-  </data>
-  <data name="LicStatTitle" xml:space="preserve">
-    <value>许可证信息</value>
-  </data>
-  <data name="LicStatViewbtn" xml:space="preserve">
-    <value>视图</value>
   </data>
   <data name="lighttoolStripMenuItem" xml:space="preserve">
     <value>光</value>
@@ -584,24 +474,6 @@
   <data name="LogTestWrongBin" xml:space="preserve">
     <value>请选择正确的logo.bin文件！ 这是一个错误的文件：</value>
   </data>
-  <data name="MailMsgInternetError" xml:space="preserve">
-    <value>无法发送许可证请求！ 请检查您的互联网连接！</value>
-  </data>
-  <data name="MailMsgInternetErrorTitle" xml:space="preserve">
-    <value>网路连线中断</value>
-  </data>
-  <data name="MailMsgIsEmpty" xml:space="preserve">
-    <value>盒子不能为空！</value>
-  </data>
-  <data name="MailMsgMailNotValid" xml:space="preserve">
-    <value>输入有效的电子邮件！</value>
-  </data>
-  <data name="MailMsgSent" xml:space="preserve">
-    <value>消息已发送！</value>
-  </data>
-  <data name="MailMsgSentTitle" xml:space="preserve">
-    <value>邮件已发送</value>
-  </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
     <value>重置所有配置文件</value>
   </data>
@@ -628,15 +500,6 @@
   </data>
   <data name="othersToolStripMenuItem" xml:space="preserve">
     <value>其他</value>
-  </data>
-  <data name="ProductActivatedTitle" xml:space="preserve">
-    <value>产品激活</value>
-  </data>
-  <data name="ProductNotActivated" xml:space="preserve">
-    <value>产品未激活</value>
-  </data>
-  <data name="ProductNotActivatedTitle" xml:space="preserve">
-    <value>产品未激活，剩余时间：</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
     <value>Moto_Boot_Logo_Maker无法与原始程序集匹配：</value>

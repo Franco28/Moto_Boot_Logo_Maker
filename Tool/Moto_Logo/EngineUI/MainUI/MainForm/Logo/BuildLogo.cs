@@ -134,7 +134,7 @@ namespace Moto_Logo
             string pathbuild = txtLogoBuildPath.Text;
             if (!pathbuild.EndsWith(@"\"))
             {
-                MessageBox.Show(res_man.GetString("CompilePathISWrong", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(res_man.GetString("CompilePathISWrong", cul).Replace("<pathbuild>", txtLogoBuildPath.Text), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
