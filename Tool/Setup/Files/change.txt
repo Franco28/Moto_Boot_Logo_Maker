@@ -1,4 +1,25 @@
 #################################################################
+# Moto_Boot_Logo_Maker_Files v1.0.0.4 Enhancements & bug-fixes: #
+#################################################################
+
+Zip Files
+* Added new devices
+
+Logos
+*Added:
+- Moto g10
+- Moto g30
+- Moto g play (2021)
+- Moto g power (2021)
+- Moto g stylus (2021)
+- Moto edge s
+- Moto one 5g ace
+
+*Updated:
+- Moto g stylus
+- Moto g pro
+
+#################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.3 Enhancements & bug-fixes: #
 #################################################################
 

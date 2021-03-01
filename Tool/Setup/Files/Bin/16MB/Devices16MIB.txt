@@ -1,5 +1,12 @@
-Compatible Devices:
+#############################
+# Compatible 16MIB Devices: #
+#############################
 
+##########
+# Moto E #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto E4 (s/perry) > 720 x 1280
 
@@ -21,6 +28,12 @@ Compatible Devices:
 
 - Moto E7 Plus (guam) > 720 x 1600
 
+##########
+# Moto G #
+##########
+
+Device Name  CodeName  Resolution
+
 - Moto G4/G4 Plus (athene) > 1080 x 1920
 
 - Moto G5 (cedric) > 1080 x 1920
@@ -41,13 +54,27 @@ Compatible Devices:
 
 - Moto G7 Power/G7 Supra/G7 Optimo Maxx (ocean) > 720 x 1520
 
+- Moto G 5G Plus (nairo) > 1080 x 2520
+
 - Moto G9 (guamp) > 720 x 1600
 
 - Moto G9 Play (guamp) > 720 x 1600
 
-- Moto G 5G Plus (nairo) > 1080 x 2520
-
 - Moto G9 Power (cebu) > 720 x 1600
+
+- Moto G Play (2021) (guamna) > 720 x 1600
+
+- Moto G Power (2021) (cebu) > 720 x 1600
+
+- Moto G10 (capri) > 720 x 1600
+
+- Moto G30 (caprip) > 720 x 1600
+
+##########
+# Moto Z #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto Z/Z Droid (griffin) > 1440 x 2560
 
@@ -57,11 +84,23 @@ Compatible Devices:
 
 - Moto Z2 Play (albus) > 1080 x 1920
 
-- Motorola E5 Plus (ahannah) > 720 x 1440
+#############
+# Moto Edge #
+#############
+
+Device Name  CodeName  Resolution
 
 - Motorola Edge (racer) > 1080 x 2340
 
 - Motorola Edge Plus (burton) > 1080 x 2340
+
+- Motorola Edge S (nio) > 1080 x 2520
+
+############
+# Moto One #
+############
+
+Device Name  CodeName  Resolution
 
 - Motorola One (deen) > 720 x 1520
 

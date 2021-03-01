@@ -3,6 +3,26 @@
 #####################
 
 ---------------------------------------
+v4.4.3.2 - Released Xxx xx, 2021
+---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
+- [removed] Old code
+- [re-order] Logo files
+- [new] Added new devices: 
+	*Moto g10
+	*Moto g30
+	*Moto g play (2021)
+	*Moto g power (2021)
+	*Moto g stylus (2021)
+	*Moto edge s
+	*Moto one 5g ace
+- [new] Way to open logo and search
+- [updated] Devices:
+	*Moto g stylus
+	*Moto g pro
+
+---------------------------------------
 v4.4.3.1 - Released Feb 24, 2021
 ---------------------------------------
 NOTE: Some translations are missing, i will be working on this, for now still in english

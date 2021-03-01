@@ -1,6 +1,13 @@
-Compatible Devices:
+#############################
+# Compatible 32MIB Devices: #
+#############################
 
+##########
+# Moto G #
+##########
 
+Device Name  CodeName  Resolution
+	
 - Moto G6 Plus (evert) > 1080 x 2160
 
 - Moto G7 Plus (lake) > 1080 x 2270
@@ -17,7 +24,21 @@ Compatible Devices:
 
 - Moto G 5G (kiev) > 1080 x 2400
 
+- Moto G Stylus (2021) (minsk) > 1080 x 2400
+
+##########
+# Moto X #
+##########
+
+Device Name  CodeName  Resolution
+
 - Moto X4/X4 Android One (payton) > 1080 x 1920
+
+##########
+# Moto Z #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto Z2 Force Edition/Z 2018 (nash) > 1440 x 2560
 
@@ -27,28 +48,38 @@ Compatible Devices:
 
 - Moto Z4 (foles) > 1080 x 2340
 
-- Motorola G7 Plus (lake) > 1080 x 2270
+############
+# Moto ONE #
+############
 
-- Motorola One Power (chef) > 1080 x 2246
+Device Name  CodeName  Resolution
 
-- Motorola One Vision (kane) > 1080 x 2520
+- Moto One Power (chef) > 1080 x 2246
 
-- Motorola One Action (troika) > 1080 x 2520
+- Moto One Vision (kane) > 1080 x 2520
 
-- Motorola One Zoom (parker) > 1080 x 2340
+- Moto One Action (troika) > 1080 x 2520
 
-- Motorola One Hyper (def) > 1080 x 2340
+- Moto One Zoom (parker) > 1080 x 2340
 
-- Motorola One Fusion+ (liber) > 1080 x 2340
+- Moto One Hyper (def) > 1080 x 2340
 
-- Motorola One Fusion (astro) > 720 x 1600
+- Moto One Fusion+ (liber) > 1080 x 2340
 
-- Motorola One Vision Plus (doha) > 1080 x 2280
+- Moto One Fusion (astro) > 720 x 1600
 
-- Motorola P30 (robusta) > 1080 x 2246
+- Moto One Vision Plus (doha) > 1080 x 2280
 
-- Motorola P30 Note (chef) > 1080 x 2246
+- Moto One 5G Ace (kiev) > 1080 x 2400
 
-- Motorola P50 (kane) > 1080 x 2520
+##########
+# Moto P #
+##########
 
-- Motorola Z3 (messi) > 1080 x 2160
+Device Name  CodeName  Resolution
+
+- Moto P30 (robusta) > 1080 x 2246
+
+- Moto P30 Note (chef) > 1080 x 2246
+
+- Moto P50 (kane) > 1080 x 2520

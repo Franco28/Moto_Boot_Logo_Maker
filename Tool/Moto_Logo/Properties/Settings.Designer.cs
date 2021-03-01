@@ -130,5 +130,29 @@ namespace Moto_Logo.Properties {
                 this["IsMax"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DeviceSelected {
+            get {
+                return ((string)(this["DeviceSelected"]));
+            }
+            set {
+                this["DeviceSelected"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LogoSelectedPath {
+            get {
+                return ((string)(this["LogoSelectedPath"]));
+            }
+            set {
+                this["LogoSelectedPath"] = value;
+            }
+        }
     }
 }

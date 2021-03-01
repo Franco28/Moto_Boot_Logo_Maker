@@ -189,17 +189,23 @@
     <Compile Include="EngineUI\Ionic\Zlib\ZlibCodec.cs" />
     <Compile Include="EngineUI\Ionic\Zlib\ZlibConstants.cs" />
     <Compile Include="EngineUI\Ionic\Zlib\ZlibStream.cs" />
-    <Compile Include="EngineUI\MainUI\Help\AboutBox.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Help\AboutBox.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Help\Credits.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\Credits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Help\Credits.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.Designer.cs">
+      <DependentUpon>LogoBrowser.cs</DependentUpon>
     </Compile>
     <Compile Include="EngineUI\MainUI\MainForm\MoveForm\MoveForm.cs">
       <SubType>Form</SubType>
@@ -213,26 +219,32 @@
     <Compile Include="EngineUI\MainUI\MainForm\OTA\DownloadS.Designer.cs">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.cs">
+    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.Designer.cs">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\MainForm\SearchDevice\SearchDevice.cs">
+    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\SearchDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Settings\SendLogs.cs" />
-    <Compile Include="EngineUI\MainUI\Telegram\BootLogoChannels.cs">
+    <Compile Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Telegram\BootLogoChannels.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.Designer.cs">
+      <DependentUpon>SelectDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Controls\Settings\SendLogs.cs" />
+    <Compile Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.Designer.cs">
       <DependentUpon>BootLogoChannels.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\LogoFlash\LogoTest.cs">
+    <Compile Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\LogoFlash\LogoTest.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.Designer.cs">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </Compile>
     <Compile Include="EngineUI\MainUI\MainForm\Image\ImageEngine.cs">
@@ -256,19 +268,19 @@
     <Compile Include="EngineUI\MainUI\MainForm\Logo\LogoTree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Help\ReadChangelog.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\ReadChangelog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Help\ReadChangelog.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Help\ReadChangelog.Designer.cs">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Settings\Settings.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Settings\Settings.Designer.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Settings\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Telegram\TelegramChannels.cs">
+    <Compile Include="EngineUI\MainUI\Controls\Telegram\TelegramChannels.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EngineUI\IntefaceClasses\AutoClosingMessageBox.cs" />
@@ -525,28 +537,34 @@
     <EmbeddedResource Include="EngineUI\FileManager\ToolLibsDownload.resx">
       <DependentUpon>ToolLibsDownload.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Help\AboutBox.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Help\Credits.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.resx">
+      <DependentUpon>LogoBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EngineUI\MainUI\MainForm\OTA\DownloadS.resx">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\MainForm\SearchDevice\DeviceInfo.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.resx">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Telegram\BootLogoChannels.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.resx">
+      <DependentUpon>SelectDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.resx">
       <DependentUpon>BootLogoChannels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\LogoFlash\LogoTest.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.resx">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Help\ReadChangelog.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\ReadChangelog.resx">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Settings\Settings.resx">
+    <EmbeddedResource Include="EngineUI\MainUI\Controls\Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -641,6 +659,11 @@
     <Content Include="Resources\devices\moto-x-2014-2.jpg" />
     <Content Include="Resources\devices\moto-x-play-1.jpg" />
     <Content Include="Resources\devices\moto-x-style-1.jpg" />
+    <Content Include="Resources\devices\MotoDroid.png" />
+    <Content Include="Resources\devices\MotoE.png" />
+    <Content Include="Resources\devices\MotoEdge.png" />
+    <Content Include="Resources\devices\MotoG.png" />
+    <Content Include="Resources\devices\MotoOne.png" />
     <Content Include="Resources\devices\motorola-droid-maxx-2.jpg" />
     <Content Include="Resources\devices\motorola-droid-maxx1.jpg" />
     <Content Include="Resources\devices\motorola-droid-mini2.jpg" />
@@ -662,12 +685,14 @@
     <Content Include="Resources\devices\motorola-moto-e5-plus-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-e6-xt2005-navy-blue1.jpg" />
     <Content Include="Resources\devices\motorola-moto-e7-plus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-edge-s.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-3rd-gen-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-5g-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-5g-plus-03.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-power-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-stylus-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-stylus-2021-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-turbo-edition-2.jpg" />
     <Content Include="Resources\devices\motorola-moto-g4-2.jpg" />
     <Content Include="Resources\devices\motorola-moto-g4-play-4.jpg" />
@@ -703,12 +728,14 @@
     <Content Include="Resources\devices\motorola-moto-z4-r.jpg" />
     <Content Include="Resources\devices\motorola-nexus-6-1.jpg" />
     <Content Include="Resources\devices\motorola-one-02.jpg" />
+    <Content Include="Resources\devices\motorola-one-5g-ace.jpg" />
     <Content Include="Resources\devices\motorola-one-action-denim-gray.jpg" />
     <Content Include="Resources\devices\motorola-one-fusion-plus-1.jpg" />
     <Content Include="Resources\devices\motorola-one-hyper-1.jpg" />
     <Content Include="Resources\devices\motorola-one-power-1.jpg" />
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
+    <Content Include="Resources\devices\MotoX.png" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
     <None Include="Resources\motoHallowen2.gif" />
     <None Include="Resources\motoHallowen.gif" />
@@ -738,10 +765,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

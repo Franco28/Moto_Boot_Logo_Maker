@@ -271,7 +271,7 @@ namespace Moto_Logo
             this.newToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -279,14 +279,14 @@ namespace Moto_Logo
             // 
             this.toolStripSeparator6.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(106, 6);
             this.toolStripSeparator6.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripSeparator2_Paint);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -480,35 +480,35 @@ namespace Moto_Logo
             // 
             this.sourceToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sourceToolStripMenuItem.Image")));
             this.sourceToolStripMenuItem.Name = "sourceToolStripMenuItem";
-            this.sourceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sourceToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.sourceToolStripMenuItem.Text = "Source";
             this.sourceToolStripMenuItem.Click += new System.EventHandler(this.sourceToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
             this.toolStripSeparator1.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripSeparator2_Paint);
             // 
             // changelogToolStripMenuItem
             // 
             this.changelogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("changelogToolStripMenuItem.Image")));
             this.changelogToolStripMenuItem.Name = "changelogToolStripMenuItem";
-            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.changelogToolStripMenuItem.Text = "Changelog";
             this.changelogToolStripMenuItem.Click += new System.EventHandler(this.changelogToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(138, 6);
             this.toolStripSeparator5.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripSeparator2_Paint);
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem1.Image")));
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -1655,48 +1655,33 @@ namespace Moto_Logo
         private System.Windows.Forms.ToolStripMenuItem changelogToolStripMenuItem;
         public System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label btnBuild;
-        private System.Windows.Forms.Label btnStop;
-        private System.Windows.Forms.Label labelbtnStop;
-        private System.Windows.Forms.Label labelbtnBuild;
-        private System.Windows.Forms.TextBox textLogoName;
-        private System.Windows.Forms.Label labelLogoName;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Label btnMaximize;
         public System.Windows.Forms.Label labelLicenseTimer;
         private System.Windows.Forms.Label btnOpenLogoFile;
         private System.Windows.Forms.Label labelbtnOpenLogoFile;
-        private System.Windows.Forms.Label btnAttachPath;
         public System.Windows.Forms.TextBox txtLogoBuildPath;
-        private System.Windows.Forms.Label labelBuildPath;
-        private System.Windows.Forms.GroupBox groupBoxLogoImageOrientation;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.RadioButton rdoLayoutPortrait;
         private System.Windows.Forms.RadioButton rdoLayoutLandscape;
-        private System.Windows.Forms.GroupBox groupBoxLogoMemory;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.RadioButton radioButton4mib;
         private System.Windows.Forms.RadioButton radioButton6MIB;
         private System.Windows.Forms.RadioButton radioButton8MIB;
         private System.Windows.Forms.RadioButton radioButton16MIB;
         private System.Windows.Forms.RadioButton radioButton32MIB;
-        private System.Windows.Forms.GroupBox groupBoxLogoImageOption;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.RadioButton rdoImageCenter;
         private System.Windows.Forms.RadioButton rdoImageStretchAspect;
         private System.Windows.Forms.RadioButton rdoImageFill;
-        private System.Windows.Forms.GroupBox groupBoxLogoFormat;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.RadioButton rdoAndroid44;
         private System.Windows.Forms.RadioButton rdoAndroid43;
         private System.Windows.Forms.RadioButton rdoAndroidRAW;
-        private System.Windows.Forms.GroupBox groupBoxLogoResolution;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown udResolutionX;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown udResolutionY;
-        private System.Windows.Forms.GroupBox groupBoxLogoExtension;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton radioButtonBIN;
@@ -1705,13 +1690,9 @@ namespace Moto_Logo
         private System.Windows.Forms.ToolStripProgressBar ProgressBar;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.TextBox txtComments;
         private System.Windows.Forms.Label labelSignYourLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TreeView tvLogo;
-        private System.Windows.Forms.ComboBox cboMoto;
         private System.Windows.Forms.Label labelLogos;
-        private System.Windows.Forms.TextBox txtLogoInternalFile;
         private System.Windows.Forms.Button buttonAppend;
         private System.Windows.Forms.Button buttonExtract;
         private System.Windows.Forms.Button buttonDelete;
@@ -1735,5 +1716,24 @@ namespace Moto_Logo
         private System.Windows.Forms.Label labelSearchDevice;
         private System.Windows.Forms.Label btnSearchDevice;
         private System.Windows.Forms.PictureBox pictureBoxMotoGifHallo;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox textLogoName;
+        public System.Windows.Forms.Label labelLogoName;
+        public System.Windows.Forms.Label btnAttachPath;
+        public System.Windows.Forms.Label labelBuildPath;
+        public System.Windows.Forms.GroupBox groupBoxLogoImageOrientation;
+        public System.Windows.Forms.GroupBox groupBoxLogoMemory;
+        public System.Windows.Forms.GroupBox groupBoxLogoImageOption;
+        public System.Windows.Forms.GroupBox groupBoxLogoFormat;
+        public System.Windows.Forms.GroupBox groupBoxLogoResolution;
+        public System.Windows.Forms.GroupBox groupBoxLogoExtension;
+        public System.Windows.Forms.TextBox txtComments;
+        public System.Windows.Forms.TreeView tvLogo;
+        public System.Windows.Forms.TextBox txtLogoInternalFile;
+        public System.Windows.Forms.Label btnBuild;
+        public System.Windows.Forms.Label btnStop;
+        public System.Windows.Forms.Label labelbtnStop;
+        public System.Windows.Forms.Label labelbtnBuild;
+        public System.Windows.Forms.ComboBox cboMoto;
     }
 }

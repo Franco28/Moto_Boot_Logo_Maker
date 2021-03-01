@@ -256,13 +256,43 @@ endif;
 if getprop("ro.product.device") != "cebu" then
   package_extract_file("logo.bin", "tmp/logo.bin");
 else
-  ui_print("*              Device: cebu                 *");
+  ui_print("*               Device: cebu                  *");
 endif;
 
 if getprop("ro.product.device") != "kiev" then
   package_extract_file("logo.bin", "tmp/logo.bin");
 else
-  ui_print("*              Device: kiev                 *");
+  ui_print("*               Device: kiev                  *");
+endif;
+
+if getprop("ro.product.device") != "guamna" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: guamna                 *");
+endif;
+
+if getprop("ro.product.device") != "borneo" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: borneo                 *");
+endif;
+
+if getprop("ro.product.device") != "minsk" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: minsk                  *");
+endif;
+
+if getprop("ro.product.device") != "capri" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: capri                  *");
+endif;
+
+if getprop("ro.product.device") != "caprip" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*              Device: caprip                 *");
 endif;
 
 if getprop("ro.build.product") != "condor" then
@@ -461,6 +491,12 @@ if getprop("ro.product.device") != "burton" then
   package_extract_file("logo.bin", "tmp/logo.bin");
 else
   ui_print("*              Device: burton                 *");
+endif;
+
+if getprop("ro.product.device") != "nio" then
+  package_extract_file("logo.bin", "tmp/logo.bin");
+else
+  ui_print("*               Device: nio                   *");
 endif;
 
 if getprop("ro.build.system_root_image") != "true" then

@@ -1,10 +1,22 @@
-Compatible 8MIB Devices:
+############################
+# Compatible 8MIB Devices: #
+############################
 
- Device Name  CodeName  Resolution
+##############
+# Moto Droid #
+##############
+
+Device Name  CodeName  Resolution
  
 - Droid Turbo / Moto Maxx (quark) > 1440 x 2560
 
 - Droid Turbo 2 / Moto X Force (kinzie) > 1440 x 2560
+
+##########
+# Moto X #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto X Pro (shamu) > 1440 x 2560
 

@@ -1,6 +1,12 @@
-Compatible 4MIB Devices:
+############################
+# Compatible 4MIB Devices: #
+############################
 
- Device Name  CodeName  Resolution
+##############
+# Moto Droid #
+##############
+
+Device Name  CodeName  Resolution
 
 - Droid Maxx (obake-maxx) > 720 x 1280
 
@@ -8,11 +14,23 @@ Compatible 4MIB Devices:
 
 - Droid Ultra (obake) > 720 x 1280
 
+##########
+# Moto E #
+##########
+
+Device Name  CodeName  Resolution
+
 - Moto E (condor) > 560 x 960
 
 - Moto E2 (otus) > 560 x 960
 
 - Moto E2 LTE (surnia) > 540 x 960
+
+##########
+# Moto G #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto G/G Google Play Edition/G Forte/G Ferrari Edition (falcon) > 720 x 1280
 
@@ -27,6 +45,12 @@ Compatible 4MIB Devices:
 - Moto G3 Turbo Edition (merlin) > 720 x 1280
 
 - Moto G4 Play (harpia) > 720 x 1280
+
+##########
+# Moto X #
+##########
+
+Device Name  CodeName  Resolution
 
 - Moto X (ghost) > 720 x 1280
 

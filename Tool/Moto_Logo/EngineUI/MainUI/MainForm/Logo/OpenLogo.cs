@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.OpenLogo.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 01-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -23,7 +23,7 @@ namespace Moto_Logo
 {
     public partial class MainForm
     {
-        private static byte[] ExtractLogoBin(string zipfilename)
+        public static byte[] ExtractLogoBin(string zipfilename)
         {
             byte[] buffer = null;
             using (var input = new ZipInputStream(zipfilename))
@@ -42,7 +42,7 @@ namespace Moto_Logo
         }
 
         // ReSharper disable once InconsistentNaming
-        private Bitmap Decode540x540Image(BinaryReader reader)
+        public Bitmap Decode540x540Image(BinaryReader reader)
         {
             var img = new Bitmap(540, 540, PixelFormat.Format24bppRgb);
             ProgressBar.Visible = true;
@@ -69,10 +69,9 @@ namespace Moto_Logo
             return img;
         }
 
-        private void OpenFile(string filename)
+        public void OpenFile(string filename)
         {
             var zipFile = false;
-            var openfilename = filename;
             byte[] logobin = null;
 
             try
@@ -96,7 +95,7 @@ namespace Moto_Logo
                     }
                     else
                     {
-                        stream = new FileStream(openfilename, FileMode.Open);
+                        stream = new FileStream(filename, FileMode.Open);
                     }
                 }
                 catch (Exception ex)

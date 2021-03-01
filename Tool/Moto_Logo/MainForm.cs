@@ -266,48 +266,13 @@ namespace Moto_Logo
             if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
             {
                 MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            } 
             else
             {
-                openFileDialog1.Title = res_man.GetString("savefiledialog1Title", cul) + " logo.bin!";
-                openFileDialog1.Filter = @"Logo Files|*.zip;*.bin|Bin Files|*.bin|Flashable Zip files|*.zip|All Files|*.*";
-                if (radioButton4mib.Checked == true)
-                    openFileDialog1.InitialDirectory = exePath + @"\Files\Bin\4MB\";
-                if (radioButton6MIB.Checked == true)
-                    openFileDialog1.InitialDirectory = exePath + @"\Files\Bin\6MB\";
-                if (radioButton8MIB.Checked == true)
-                    openFileDialog1.InitialDirectory = exePath + @"\Files\Bin\8MB\";
-                if (radioButton16MIB.Checked == true)
-                    openFileDialog1.InitialDirectory = exePath + @"\Files\Bin\16MB\";
-                if (radioButton32MIB.Checked == true)
-                    openFileDialog1.InitialDirectory = exePath + @"\Files\Bin\32MB\";
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    OpenFile(openFileDialog1.FileName);
-                    Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString();
-                    Properties.Settings.Default.Save();
-                    txtComments.Enabled = true;
-                    cboMoto.Enabled = true;
-                    groupBoxLogoFormat.Enabled = true;
-                    groupBoxLogoResolution.Enabled = true;
-                    groupBoxLogoImageOption.Enabled = true;
-                    groupBoxLogoImageOrientation.Enabled = true;
-                    groupBoxLogoExtension.Enabled = true;
-                    textLogoName.Enabled = true;
-                    txtLogoBuildPath.Enabled = true;
-                    btnAttachPath.Enabled = true;
-                    groupBoxLogoMemory.Enabled = false;
-                    DisableControls();
-                    labelbtnStop.Enabled = false;
-                    btnStop.Enabled = false;
-                    labelbtnBuild.Enabled = true;
-                    btnBuild.Enabled = true;
-                }
-                else
-                {
-                    return;
-                }
-            }
+                var selectdevicetest = new SelectDevice();
+                selectdevicetest.Show();
+                return;
+            }           
             #endregion OpenLogoFile
         }
 
@@ -658,26 +623,36 @@ namespace Moto_Logo
         private void radioButton4mib_CheckedChanged(object sender, EventArgs e)
         {
             LogoMaxMIB(4194304, " 4MiB");
+            Properties.Profiles.Default.LogoMemory4MB = true;
+            Properties.Profiles.Default.Save();
         }
 
         private void radioButton6MIB_CheckedChanged(object sender, EventArgs e)
         {
             LogoMaxMIB(6291456, " 6MiB");
+            Properties.Profiles.Default.LogoMemory6MB = true;
+            Properties.Profiles.Default.Save();
         }
 
         private void radioButton8MIB_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(8388608, " 8MiB");
+            LogoMaxMIB(8388608, " 8MiB"); 
+            Properties.Profiles.Default.LogoMemory8MB = true;
+            Properties.Profiles.Default.Save();
         }
 
         private void radioButton16MIB_CheckedChanged(object sender, EventArgs e)
         {
             LogoMaxMIB(16777216, " 16MiB");
+            Properties.Profiles.Default.LogoMemory16MB = true;
+            Properties.Profiles.Default.Save();
         }
 
         private void radioButton32MIB_CheckedChanged(object sender, EventArgs e)
         {
             LogoMaxMIB(34226176, " 32MiB");
+            Properties.Profiles.Default.LogoMemory32MB = true;
+            Properties.Profiles.Default.Save();
         }
         #endregion LogoSettings
 

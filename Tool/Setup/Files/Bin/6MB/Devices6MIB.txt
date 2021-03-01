@@ -1,5 +1,11 @@
-Compatible 6MIB Devices:
+############################
+# Compatible 6MIB Devices: #
+############################
 
- Device Name  CodeName  Resolution
+##########
+# Moto X #
+##########
+
+Device Name  CodeName  Resolution
 
 - Droid Maxx 2 / Moto X3 Play (lux) > 1080 x 1920
