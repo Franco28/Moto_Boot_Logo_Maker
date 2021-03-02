@@ -59,84 +59,69 @@ namespace Moto_Logo
             return directoryNode;
         }
 
+        public void CheckDeviceAndFolder(string device, string path)
+        {
+            if (Properties.Settings.Default.DeviceSelected == device)
+            {
+                ListDirectory(exePath + @"\Files\Bin\" + path);
+                return;
+            }
+        }
+
         private void LogoBrowser_Load(object sender, EventArgs e)
         {
             Round(panel);
             treeView1.Nodes.Clear();
             if (Properties.Profiles.Default.LogoMemory4MB == true)
             {
-                if (Properties.Settings.Default.DeviceSelected == "MotoDroid")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoDroid\");
-                    return;
-                }
-
-                if (Properties.Settings.Default.DeviceSelected == "MotoG")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoG\");
-                    return;
-                }
-
-                if (Properties.Settings.Default.DeviceSelected == "MotoE")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoE\");
-                    return;
-                }
-
-                if (Properties.Settings.Default.DeviceSelected == "MotoX")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoX\");
-                    return;
-                }
+                CheckDeviceAndFolder("MotoDroid", @"4MB\MotoDroid\");
+                CheckDeviceAndFolder("MotoG", @"4MB\MotoG\");
+                CheckDeviceAndFolder("MotoE", @"4MB\MotoE\");
+                CheckDeviceAndFolder("MotoX", @"4MB\MotoX\");
             }
 
             if (Properties.Profiles.Default.LogoMemory6MB == true)
             {
-                if (Properties.Settings.Default.DeviceSelected == "MotoDroid")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\6MB\MotoDroid\");
-                    return;
-                }
-
-                if (Properties.Settings.Default.DeviceSelected == "MotoX")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\6MB\MotoX\");
-                    return;
-                }
+                CheckDeviceAndFolder("MotoDroid", @"6MB\MotoDroid\");
+                CheckDeviceAndFolder("MotoX", @"6MB\MotoX\");
             }
 
             if (Properties.Profiles.Default.LogoMemory8MB == true)
             {
-                if (Properties.Settings.Default.DeviceSelected == "MotoDroid")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\8MB\MotoDroid\");
-                    return;
-                }
+                CheckDeviceAndFolder("MotoDroid", @"8MB\MotoDroid\");
+                CheckDeviceAndFolder("MotoX", @"8MB\MotoX\");
+                CheckDeviceAndFolder("Nexus", @"8MB\Nexus\");
+            }
 
-                if (Properties.Settings.Default.DeviceSelected == "MotoX")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\8MB\MotoX\");
-                    return;
-                }
+            if (Properties.Profiles.Default.LogoMemory16MB == true)
+            {
+                CheckDeviceAndFolder("MotoE", @"16MB\MotoE\");
+                CheckDeviceAndFolder("MotoEdge", @"16MB\MotoEdge\");
+                CheckDeviceAndFolder("MotoG", @"16MB\MotoG\");
+                CheckDeviceAndFolder("MotoOne", @"16MB\MotoOne\");
+                CheckDeviceAndFolder("MotoZ", @"16MB\MotoZ\");
+            }
 
-                if (Properties.Settings.Default.DeviceSelected == "Nexus")
-                {
-                    ListDirectory(exePath + @"\Files\Bin\8MB\Nexus\");
-                    return;
-                }
+            if (Properties.Profiles.Default.LogoMemory32MB == true)
+            {
+                CheckDeviceAndFolder("MotoEdge", @"32MB\MotoEdge\");
+                CheckDeviceAndFolder("MotoG", @"32MB\MotoG\");
+                CheckDeviceAndFolder("MotoOne", @"32MB\MotoOne\");
+                CheckDeviceAndFolder("MotoZ", @"32MB\MotoZ\");
+                CheckDeviceAndFolder("MotoX", @"32MB\MotoX\");
             }
         }
 
         public void buttonSelect_Click(object sender, EventArgs e)
         {
-            string p = (treeView1.SelectedNode?.Tag as FileInfo)?.FullName;
-            if (p != null)
+            string sN = (treeView1.SelectedNode?.Tag as FileInfo)?.FullName;
+            if (sN != null)
             {
-                if (p.EndsWith("bin"))
+                if (sN.EndsWith("bin"))
                 {
                     this.Hide();
                     var mainform = Form.ActiveForm as MainForm;
-                    mainform.OpenFile(p.ToString());
+                    mainform.OpenFile(sN.ToString());
                     mainform.txtComments.Enabled = true;
                     mainform.cboMoto.Enabled = true;
                     mainform.groupBoxLogoFormat.Enabled = true;
@@ -153,19 +138,20 @@ namespace Moto_Logo
                     mainform.btnStop.Enabled = false;
                     mainform.labelbtnBuild.Enabled = true;
                     mainform.btnBuild.Enabled = true;
-                    Properties.Settings.Default.LogoBinOpen = p.ToString();
+                    Properties.Settings.Default.LogoBinOpen = sN.ToString();
                     Properties.Settings.Default.Save();
+                    this.Close();
                     return;
                 }
                 else
                 {
-                    MessageBox.Show("File " + p + " is not a .bin file!");
+                    MessageBox.Show("File " + sN + " is not a .bin file... Select only .bin files!", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("This " + p + " is a directory, not a file...");
+                MessageBox.Show("This " + sN + " is a directory...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
         }

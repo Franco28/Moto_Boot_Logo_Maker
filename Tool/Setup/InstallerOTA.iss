@@ -89,6 +89,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
 Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Files"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Files/*"; DestDir: "{app}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs  
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
@@ -99,6 +101,7 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Comment
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: shellexec nowait postinstall skipifsilent;
 
 [InstallDelete]
+Type: filesandordirs; Name: "|{app}\Files";
 Type: files; Name: "{app}\License";
 Type: files; Name: "{app}\change.txt";
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";

@@ -664,6 +664,7 @@
     <Content Include="Resources\devices\MotoEdge.png" />
     <Content Include="Resources\devices\MotoG.png" />
     <Content Include="Resources\devices\MotoOne.png" />
+    <Content Include="Resources\devices\MotoP.jpg" />
     <Content Include="Resources\devices\motorola-droid-maxx-2.jpg" />
     <Content Include="Resources\devices\motorola-droid-maxx1.jpg" />
     <Content Include="Resources\devices\motorola-droid-mini2.jpg" />
@@ -736,6 +737,7 @@
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
     <Content Include="Resources\devices\MotoX.png" />
+    <Content Include="Resources\devices\MotoZ.jpg" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
     <None Include="Resources\motoHallowen2.gif" />
     <None Include="Resources\motoHallowen.gif" />
@@ -769,7 +771,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

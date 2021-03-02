@@ -3,7 +3,7 @@
 #####################
 
 ---------------------------------------
-v4.4.3.2 - Released Xxx xx, 2021
+v4.4.3.2 - Released Xxx xx, 2021 - WIP
 ---------------------------------------
 NOTE: Some translations are missing, I will be working on this, for now still in english
 
@@ -21,6 +21,7 @@ NOTE: Some translations are missing, I will be working on this, for now still in
 - [updated] Devices:
 	*Moto g stylus
 	*Moto g pro
+- [fixed] Some settings isn't saving correctly
 
 ---------------------------------------
 v4.4.3.1 - Released Feb 24, 2021

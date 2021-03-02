@@ -622,36 +622,71 @@ namespace Moto_Logo
         #region LogoSettings
         private void radioButton4mib_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(4194304, " 4MiB");
-            Properties.Profiles.Default.LogoMemory4MB = true;
+            if (radioButton4mib.Checked == true)
+            {
+                LogoMaxMIB(4194304, " 4MiB");
+                Properties.Profiles.Default.LogoMemory4MB = true;
+            }
+            else
+            {
+                Properties.Profiles.Default.LogoMemory4MB = false;
+            }
             Properties.Profiles.Default.Save();
         }
 
         private void radioButton6MIB_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(6291456, " 6MiB");
-            Properties.Profiles.Default.LogoMemory6MB = true;
+            if (radioButton6MIB.Checked == true)
+            {
+                LogoMaxMIB(6291456, " 6MiB");
+                Properties.Profiles.Default.LogoMemory6MB = true;
+            }
+            else
+            {
+                Properties.Profiles.Default.LogoMemory6MB = false;
+            }
             Properties.Profiles.Default.Save();
         }
 
         private void radioButton8MIB_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(8388608, " 8MiB"); 
-            Properties.Profiles.Default.LogoMemory8MB = true;
+            if (radioButton8MIB.Checked == true)
+            {
+                LogoMaxMIB(8388608, " 8MiB");
+                Properties.Profiles.Default.LogoMemory8MB = true;
+            }
+            else
+            {
+                Properties.Profiles.Default.LogoMemory8MB = false;
+            }
             Properties.Profiles.Default.Save();
         }
 
         private void radioButton16MIB_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(16777216, " 16MiB");
-            Properties.Profiles.Default.LogoMemory16MB = true;
+            if (radioButton16MIB.Checked == true)
+            {
+                LogoMaxMIB(16777216, " 16MiB");
+                Properties.Profiles.Default.LogoMemory16MB = true;
+            }
+            else
+            {
+                Properties.Profiles.Default.LogoMemory16MB = false;
+            }
             Properties.Profiles.Default.Save();
         }
 
         private void radioButton32MIB_CheckedChanged(object sender, EventArgs e)
         {
-            LogoMaxMIB(34226176, " 32MiB");
-            Properties.Profiles.Default.LogoMemory32MB = true;
+            if (radioButton32MIB.Checked == true)
+            {
+                LogoMaxMIB(34226176, " 32MiB");
+                Properties.Profiles.Default.LogoMemory32MB = true;
+            }
+            else
+            {
+                Properties.Profiles.Default.LogoMemory32MB = false;
+            }
             Properties.Profiles.Default.Save();
         }
         #endregion LogoSettings

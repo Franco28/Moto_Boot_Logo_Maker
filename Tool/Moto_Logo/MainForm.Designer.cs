@@ -1665,11 +1665,6 @@ namespace Moto_Logo
         private System.Windows.Forms.RadioButton rdoLayoutPortrait;
         private System.Windows.Forms.RadioButton rdoLayoutLandscape;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private System.Windows.Forms.RadioButton radioButton4mib;
-        private System.Windows.Forms.RadioButton radioButton6MIB;
-        private System.Windows.Forms.RadioButton radioButton8MIB;
-        private System.Windows.Forms.RadioButton radioButton16MIB;
-        private System.Windows.Forms.RadioButton radioButton32MIB;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.RadioButton rdoImageCenter;
         private System.Windows.Forms.RadioButton rdoImageStretchAspect;
@@ -1735,5 +1730,10 @@ namespace Moto_Logo
         public System.Windows.Forms.Label labelbtnStop;
         public System.Windows.Forms.Label labelbtnBuild;
         public System.Windows.Forms.ComboBox cboMoto;
+        public System.Windows.Forms.RadioButton radioButton4mib;
+        public System.Windows.Forms.RadioButton radioButton6MIB;
+        public System.Windows.Forms.RadioButton radioButton8MIB;
+        public System.Windows.Forms.RadioButton radioButton16MIB;
+        public System.Windows.Forms.RadioButton radioButton32MIB;
     }
 }

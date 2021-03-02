@@ -353,6 +353,16 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap MotoP {
+            get {
+                object obj = ResourceManager.GetObject("MotoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap motorola_droid_maxx_2 {
             get {
                 object obj = ResourceManager.GetObject("motorola_droid_maxx_2", resourceCulture);
@@ -1086,6 +1096,16 @@ namespace Moto_Logo.Properties {
         public static System.Drawing.Bitmap MotoX {
             get {
                 object obj = ResourceManager.GetObject("MotoX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap MotoZ {
+            get {
+                object obj = ResourceManager.GetObject("MotoZ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
