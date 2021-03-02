@@ -2,7 +2,9 @@
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 using System.IO;
+using System.Resources;
 using System.Windows.Forms;
 
 namespace Moto_Logo
@@ -10,11 +12,15 @@ namespace Moto_Logo
     public partial class LogoBrowser : Form
     {
 
+        public CultureInfo cul;
+        public ResourceManager res_man;
+
         public LogoBrowser()
         {
-            InitializeComponent();
-            this.Text = " logo.bin!";
-            label1.Text = " logo.bin!";
+            InitializeComponent(); 
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.Text = res_man.GetString("savefiledialog1Title", cul) + " logo.bin!";
+            label1.Text = res_man.GetString("savefiledialog1Title", cul) + " logo.bin!";
         }
 
         public void Round(Panel picturebox)
@@ -55,12 +61,6 @@ namespace Moto_Logo
 
         private void LogoBrowser_Load(object sender, EventArgs e)
         {
-            Form fc = Application.OpenForms["LogoBrowser"];
-            if (fc != null)
-            {
-                MessageBox.Show("Already opened: " + fc.Text + ", close it to open new one!", "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                fc.BringToFront();
-            }
             Round(panel);
             treeView1.Nodes.Clear();
             if (Properties.Profiles.Default.LogoMemory4MB == true)
@@ -73,19 +73,61 @@ namespace Moto_Logo
 
                 if (Properties.Settings.Default.DeviceSelected == "MotoG")
                 {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoDroid\");
+                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoG\");
                     return;
                 }
 
                 if (Properties.Settings.Default.DeviceSelected == "MotoE")
                 {
-                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoDroid\");
+                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoE\");
+                    return;
+                }
+
+                if (Properties.Settings.Default.DeviceSelected == "MotoX")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\4MB\MotoX\");
+                    return;
+                }
+            }
+
+            if (Properties.Profiles.Default.LogoMemory6MB == true)
+            {
+                if (Properties.Settings.Default.DeviceSelected == "MotoDroid")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\6MB\MotoDroid\");
+                    return;
+                }
+
+                if (Properties.Settings.Default.DeviceSelected == "MotoX")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\6MB\MotoX\");
+                    return;
+                }
+            }
+
+            if (Properties.Profiles.Default.LogoMemory8MB == true)
+            {
+                if (Properties.Settings.Default.DeviceSelected == "MotoDroid")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\8MB\MotoDroid\");
+                    return;
+                }
+
+                if (Properties.Settings.Default.DeviceSelected == "MotoX")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\8MB\MotoX\");
+                    return;
+                }
+
+                if (Properties.Settings.Default.DeviceSelected == "Nexus")
+                {
+                    ListDirectory(exePath + @"\Files\Bin\8MB\Nexus\");
                     return;
                 }
             }
         }
 
-        private void buttonSelect_Click(object sender, EventArgs e)
+        public void buttonSelect_Click(object sender, EventArgs e)
         {
             string p = (treeView1.SelectedNode?.Tag as FileInfo)?.FullName;
             if (p != null)
@@ -93,7 +135,7 @@ namespace Moto_Logo
                 if (p.EndsWith("bin"))
                 {
                     this.Hide();
-                    var mainform = new MainForm();
+                    var mainform = Form.ActiveForm as MainForm;
                     mainform.OpenFile(p.ToString());
                     mainform.txtComments.Enabled = true;
                     mainform.cboMoto.Enabled = true;
@@ -117,15 +159,22 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    MessageBox.Show("File " + p + " is not a bin file.");
+                    MessageBox.Show("File " + p + " is not a .bin file!");
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("This is a directory, not a file...");
+                MessageBox.Show("This " + p + " is a directory, not a file...");
                 return;
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            var opendialog = new SelectDevice();
+            opendialog.Show();
+            this.Close();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

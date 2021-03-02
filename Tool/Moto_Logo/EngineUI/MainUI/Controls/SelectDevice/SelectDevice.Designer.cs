@@ -77,10 +77,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoG.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMotoG.Image")));
-            this.pictureBoxMotoG.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoG.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoG.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoG.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoG.Name = "pictureBoxMotoG";
-            this.pictureBoxMotoG.Size = new System.Drawing.Size(260, 260);
+            this.pictureBoxMotoG.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoG.TabIndex = 0;
             this.pictureBoxMotoG.TabStop = false;
             this.pictureBoxMotoG.Click += new System.EventHandler(this.pictureBoxMotoG_Click);
@@ -101,10 +101,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoX.Image = global::Moto_Logo.Properties.Resources.MotoX;
-            this.pictureBoxMotoX.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoX.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoX.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoX.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoX.Name = "pictureBoxMotoX";
-            this.pictureBoxMotoX.Size = new System.Drawing.Size(261, 260);
+            this.pictureBoxMotoX.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoX.TabIndex = 0;
             this.pictureBoxMotoX.TabStop = false;
             this.pictureBoxMotoX.Click += new System.EventHandler(this.pictureBoxMotoX_Click);
@@ -125,10 +125,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoOne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoOne.Image = global::Moto_Logo.Properties.Resources.MotoOne;
-            this.pictureBoxMotoOne.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoOne.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoOne.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoOne.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoOne.Name = "pictureBoxMotoOne";
-            this.pictureBoxMotoOne.Size = new System.Drawing.Size(261, 260);
+            this.pictureBoxMotoOne.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoOne.TabIndex = 0;
             this.pictureBoxMotoOne.TabStop = false;
             this.pictureBoxMotoOne.Click += new System.EventHandler(this.pictureBoxMotoOne_Click);
@@ -149,10 +149,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoEdge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoEdge.Image = global::Moto_Logo.Properties.Resources.MotoEdge;
-            this.pictureBoxMotoEdge.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoEdge.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoEdge.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoEdge.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoEdge.Name = "pictureBoxMotoEdge";
-            this.pictureBoxMotoEdge.Size = new System.Drawing.Size(261, 260);
+            this.pictureBoxMotoEdge.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoEdge.TabIndex = 0;
             this.pictureBoxMotoEdge.TabStop = false;
             this.pictureBoxMotoEdge.Click += new System.EventHandler(this.pictureBoxMotoEdge_Click);
@@ -173,10 +173,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoDroid.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoDroid.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMotoDroid.Image")));
-            this.pictureBoxMotoDroid.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoDroid.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoDroid.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoDroid.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoDroid.Name = "pictureBoxMotoDroid";
-            this.pictureBoxMotoDroid.Size = new System.Drawing.Size(261, 260);
+            this.pictureBoxMotoDroid.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoDroid.TabIndex = 0;
             this.pictureBoxMotoDroid.TabStop = false;
             this.pictureBoxMotoDroid.Click += new System.EventHandler(this.pictureBoxMotoDroid_Click);
@@ -197,10 +197,10 @@ namespace Moto_Logo
             // 
             this.pictureBoxMotoE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoE.Image = global::Moto_Logo.Properties.Resources.MotoE;
-            this.pictureBoxMotoE.Location = new System.Drawing.Point(10, 12);
-            this.pictureBoxMotoE.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMotoE.Location = new System.Drawing.Point(8, 12);
+            this.pictureBoxMotoE.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoE.Name = "pictureBoxMotoE";
-            this.pictureBoxMotoE.Size = new System.Drawing.Size(261, 260);
+            this.pictureBoxMotoE.Size = new System.Drawing.Size(268, 268);
             this.pictureBoxMotoE.TabIndex = 0;
             this.pictureBoxMotoE.TabStop = false;
             this.pictureBoxMotoE.Click += new System.EventHandler(this.pictureBoxMotoE_Click);

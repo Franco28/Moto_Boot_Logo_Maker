@@ -34,8 +34,9 @@ namespace Moto_Logo
             this.binlogo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.buttonSelect = new System.Windows.Forms.Button();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.btnBack = new System.Windows.Forms.Label();
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,9 +54,9 @@ namespace Moto_Logo
             // 
             this.binlogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.binlogo.Image = ((System.Drawing.Image)(resources.GetObject("binlogo.Image")));
-            this.binlogo.Location = new System.Drawing.Point(12, 9);
+            this.binlogo.Location = new System.Drawing.Point(11, 9);
             this.binlogo.Name = "binlogo";
-            this.binlogo.Size = new System.Drawing.Size(104, 95);
+            this.binlogo.Size = new System.Drawing.Size(105, 87);
             this.binlogo.TabIndex = 166;
             // 
             // label1
@@ -79,6 +80,19 @@ namespace Moto_Logo
             this.panel.Size = new System.Drawing.Size(847, 430);
             this.panel.TabIndex = 168;
             // 
+            // buttonSelect
+            // 
+            this.buttonSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSelect.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSelect.Location = new System.Drawing.Point(15, 387);
+            this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.Size = new System.Drawing.Size(160, 32);
+            this.buttonSelect.TabIndex = 1;
+            this.buttonSelect.Text = "Select";
+            this.buttonSelect.UseVisualStyleBackColor = true;
+            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
+            // 
             // treeView1
             // 
             this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -87,21 +101,18 @@ namespace Moto_Logo
             this.treeView1.LineColor = System.Drawing.Color.Red;
             this.treeView1.Location = new System.Drawing.Point(15, 15);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(813, 287);
+            this.treeView1.Size = new System.Drawing.Size(813, 360);
             this.treeView1.TabIndex = 0;
             // 
-            // buttonSelect
+            // btnBack
             // 
-            this.buttonSelect.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSelect.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSelect.Location = new System.Drawing.Point(15, 337);
-            this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(160, 32);
-            this.buttonSelect.TabIndex = 1;
-            this.buttonSelect.Text = "Select";
-            this.buttonSelect.UseVisualStyleBackColor = true;
-            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(770, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(41, 37);
+            this.btnBack.TabIndex = 169;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // LogoBrowser
             // 
@@ -109,6 +120,7 @@ namespace Moto_Logo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(868, 547);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.binlogo);
@@ -134,5 +146,6 @@ namespace Moto_Logo
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button buttonSelect;
+        private System.Windows.Forms.Label btnBack;
     }
 }

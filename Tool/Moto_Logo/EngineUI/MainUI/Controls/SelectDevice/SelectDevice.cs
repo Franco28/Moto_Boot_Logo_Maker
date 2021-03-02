@@ -149,9 +149,18 @@ namespace Moto_Logo
 
         public void OpenForm()
         {
-            var opendialog = new LogoBrowser();
-            opendialog.Show();
-            this.Close();
+            Form fc = Application.OpenForms["LogoBrowser"];
+            if (fc != null)
+            {
+                MessageBox.Show("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                fc.BringToFront();
+            } 
+            else
+            {
+                var opendialog = new LogoBrowser();
+                opendialog.Show();
+                this.Close();
+            }
         }
 
         private void pictureBoxMotoDroid_Click(object sender, EventArgs e)
