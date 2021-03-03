@@ -57,6 +57,8 @@ namespace Moto_Logo
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemOpenCustomLogo = new System.Windows.Forms.ToolStripMenuItem();
             this.othersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themetoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darktoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -257,7 +259,9 @@ namespace Moto_Logo
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.toolStripSeparator6,
-            this.openToolStripMenuItem});
+            this.openToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.toolStripMenuItemOpenCustomLogo});
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.fileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fileToolStripMenuItem.Image")));
@@ -271,7 +275,7 @@ namespace Moto_Logo
             this.newToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -279,16 +283,31 @@ namespace Moto_Logo
             // 
             this.toolStripSeparator6.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(106, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(191, 6);
             this.toolStripSeparator6.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripSeparator2_Paint);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(191, 6);
+            this.toolStripSeparator2.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripSeparator2_Paint);
+            // 
+            // toolStripMenuItemOpenCustomLogo
+            // 
+            this.toolStripMenuItemOpenCustomLogo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemOpenCustomLogo.Image")));
+            this.toolStripMenuItemOpenCustomLogo.Name = "toolStripMenuItemOpenCustomLogo";
+            this.toolStripMenuItemOpenCustomLogo.Size = new System.Drawing.Size(194, 22);
+            this.toolStripMenuItemOpenCustomLogo.Text = "&Open Custom Logo";
+            this.toolStripMenuItemOpenCustomLogo.Click += new System.EventHandler(this.toolStripMenuItemOpenCustomLogo_Click);
             // 
             // othersToolStripMenuItem
             // 
@@ -1735,5 +1754,7 @@ namespace Moto_Logo
         public System.Windows.Forms.RadioButton radioButton8MIB;
         public System.Windows.Forms.RadioButton radioButton16MIB;
         public System.Windows.Forms.RadioButton radioButton32MIB;
+        public System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOpenCustomLogo;
     }
 }

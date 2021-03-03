@@ -18,6 +18,7 @@ NOTE: Some translations are missing, I will be working on this, for now still in
 	*Moto edge s
 	*Moto one 5g ace
 - [new] Way to open logo and search
+- [new] Added new way to open custom logos, for those who runs Tool as an administrator, and for those who nons
 - [updated] Devices:
 	*Moto g stylus
 	*Moto g pro

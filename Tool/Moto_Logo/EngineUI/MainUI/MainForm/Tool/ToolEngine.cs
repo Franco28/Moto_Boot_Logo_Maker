@@ -28,50 +28,13 @@ namespace Moto_Logo
         private void labelGoToError_Click(object sender, EventArgs e)
         {
             #region gotoerror
-            try
-            {
-                var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-                var newpath = path.Replace(@"\user.config", "").Trim();
-                string filePath = newpath + @"\DebugLogs\Error_" + Environment.UserName + ".txt";
+            var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
+            var newpath = path.Replace(@"\user.config", "").Trim();
+            string errorpath = newpath + @"\DebugLogs\";
 
-                if (File.Exists(filePath))
-                {
-                    DialogResult dialogResult = MessageBox.Show(res_man.GetString("LogsErrorSend", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                    if (dialogResult == DialogResult.Yes)
-                    {
-                        using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
-                        {
-                            stream.Dispose();
-                            watchererrorlogs.Dispose();
-                            watchererrorlogs.Changed -= new FileSystemEventHandler(OnChangedErrorLog);
-                            watchererrorlogs.Created -= Watcher_CreatedErrorLog;
-                            watchererrorlogs.Deleted -= Watcher_DeletedErrorLog;
-                          
-                            SendLogs.sendMailToAdmin();
-
-                            stream.Dispose();
-                        }
-                        this.Refresh();
-                        Form NewForm = new MainForm();
-                        NewForm.Show();
-                        this.Dispose(false);
-                        Application.DoEvents();
-                    }
-                    if (dialogResult == DialogResult.No)
-                    {
-                        return;
-                    }
-                }
-                else
-                {
-                    return;
-                }
-
-            }
-            catch (Exception er)
-            {
-                MessageBox.Show(er.Message, "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            MessageBox.Show("Remember to send logs, then remove this file!", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            Process.Start(errorpath);
+            return;
             #endregion gotoerror
         }
 

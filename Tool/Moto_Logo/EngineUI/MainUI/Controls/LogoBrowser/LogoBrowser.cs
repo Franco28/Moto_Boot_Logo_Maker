@@ -19,8 +19,6 @@ namespace Moto_Logo
         {
             InitializeComponent(); 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Text = res_man.GetString("savefiledialog1Title", cul) + " logo.bin!";
-            label1.Text = res_man.GetString("savefiledialog1Title", cul) + " logo.bin!";
         }
 
         public void Round(Panel picturebox)
@@ -72,29 +70,43 @@ namespace Moto_Logo
         {
             Round(panel);
             treeView1.Nodes.Clear();
-            if (Properties.Profiles.Default.LogoMemory4MB == true)
+            var mainform = Form.ActiveForm as MainForm;
+
+            if (mainform.radioButton4mib.Checked == true)
             {
+                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
+                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
+
                 CheckDeviceAndFolder("MotoDroid", @"4MB\MotoDroid\");
                 CheckDeviceAndFolder("MotoG", @"4MB\MotoG\");
                 CheckDeviceAndFolder("MotoE", @"4MB\MotoE\");
                 CheckDeviceAndFolder("MotoX", @"4MB\MotoX\");
             }
 
-            if (Properties.Profiles.Default.LogoMemory6MB == true)
+            if (mainform.radioButton6MIB.Checked == true)
             {
+                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
+                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
+
                 CheckDeviceAndFolder("MotoDroid", @"6MB\MotoDroid\");
                 CheckDeviceAndFolder("MotoX", @"6MB\MotoX\");
             }
 
-            if (Properties.Profiles.Default.LogoMemory8MB == true)
+            if (mainform.radioButton8MIB.Checked == true)
             {
+                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
+                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
+
                 CheckDeviceAndFolder("MotoDroid", @"8MB\MotoDroid\");
                 CheckDeviceAndFolder("MotoX", @"8MB\MotoX\");
                 CheckDeviceAndFolder("Nexus", @"8MB\Nexus\");
             }
 
-            if (Properties.Profiles.Default.LogoMemory16MB == true)
+            if (mainform.radioButton16MIB.Checked == true)
             {
+                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
+                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
+
                 CheckDeviceAndFolder("MotoE", @"16MB\MotoE\");
                 CheckDeviceAndFolder("MotoEdge", @"16MB\MotoEdge\");
                 CheckDeviceAndFolder("MotoG", @"16MB\MotoG\");
@@ -102,8 +114,11 @@ namespace Moto_Logo
                 CheckDeviceAndFolder("MotoZ", @"16MB\MotoZ\");
             }
 
-            if (Properties.Profiles.Default.LogoMemory32MB == true)
+            if (mainform.radioButton32MIB.Checked == true)
             {
+                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
+                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
+
                 CheckDeviceAndFolder("MotoEdge", @"32MB\MotoEdge\");
                 CheckDeviceAndFolder("MotoG", @"32MB\MotoG\");
                 CheckDeviceAndFolder("MotoOne", @"32MB\MotoOne\");

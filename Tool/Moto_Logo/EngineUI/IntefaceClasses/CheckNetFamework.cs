@@ -13,7 +13,6 @@
 
 using Microsoft.Win32;
 using System;
-using System.Diagnostics;
 
 namespace Moto_Logo
 {

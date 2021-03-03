@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 24-02-2021                                               #
+#    Date: 03-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -266,7 +266,8 @@ namespace Moto_Logo
             if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
             {
                 MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            } 
+                return;
+            }
             else
             {
                 var selectdevicetest = new SelectDevice();
@@ -274,6 +275,58 @@ namespace Moto_Logo
                 return;
             }           
             #endregion OpenLogoFile
+        }
+
+        private void toolStripMenuItemOpenCustomLogo_Click(object sender, EventArgs e)
+        {
+            #region OpenLogoFileAdmin
+            if (Program.IsUserAdministrator() == true)
+            {
+                openFileDialog1.Filter = @"BIN file|*.bin|ZIP file|*.zip";
+                openFileDialog1.InitialDirectory = userdesktoppath;
+                if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+                if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
+                {
+                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    OpenFile(openFileDialog1.FileName);
+                    Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString(); ;
+                    Properties.Settings.Default.Save();
+                    txtComments.Enabled = true;
+                    cboMoto.Enabled = true;
+                    groupBoxLogoFormat.Enabled = true;
+                    groupBoxLogoResolution.Enabled = true;
+                    groupBoxLogoImageOption.Enabled = true;
+                    groupBoxLogoImageOrientation.Enabled = true;
+                    groupBoxLogoExtension.Enabled = true;
+                    textLogoName.Enabled = true;
+                    txtLogoBuildPath.Enabled = true;
+                    btnAttachPath.Enabled = true;
+                    groupBoxLogoMemory.Enabled = false;
+                    DisableControls();
+                    labelbtnStop.Enabled = false;
+                    btnStop.Enabled = false;
+                    labelbtnBuild.Enabled = true;
+                    btnBuild.Enabled = true;
+                }
+            }
+            else
+            {
+                if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
+                {
+                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("If you want to open a custom logo, just drag and drop the file into Tool!", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                return;
+            }
+            #endregion OpenLogoFileAdmin
         }
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -710,6 +763,7 @@ namespace Moto_Logo
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
                     MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
                 else
                 {
@@ -885,5 +939,6 @@ namespace Moto_Logo
             this.WindowState = FormWindowState.Minimized;
         }
         #endregion CloseTool
+
     }
 }

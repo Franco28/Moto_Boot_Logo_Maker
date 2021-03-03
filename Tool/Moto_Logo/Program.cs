@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Program.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 03-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -48,11 +48,6 @@ namespace Moto_Logo
                 isAdmin = false;
             }
             return isAdmin;
-        }
-
-        public static void Rename(this FileInfo fileInfo, string newName)
-        {
-            fileInfo.MoveTo(Path.Combine(fileInfo.Directory.FullName, newName));
         }
 
         public static void CreateDirectory(string directory)

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ThemeEngine.cs                                  #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 03-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,7 +13,6 @@
 
 using System;
 using System.Drawing;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -283,8 +282,8 @@ namespace Moto_Logo
 
         private void LoadMenuStripItemsTheme()
         {
-             motoG6ToolStripMenuItem.BackColor = motoG6PlayToolStripMenuItem.BackColor = motoG7PlusToolStripMenuItem.BackColor = downloadSiteToolStripMenuItem.BackColor = motoG7PlayToolStripMenuItem.BackColor = lighttoolStripMenuItem.BackColor = darktoolStripMenuItem.BackColor = checkForUpdatesToolStripMenuItem.BackColor = themetoolStripMenuItem.BackColor = aboutToolStripMenuItem1.BackColor = changelogToolStripMenuItem.BackColor = sourceToolStripMenuItem.BackColor = testYourNewLogoToolStripMenuItem.BackColor = motoG7PowerToolStripMenuItem.BackColor = motoG7ToolStripMenuItem.BackColor = mToolStripMenuItem.BackColor = joinTelegramBootLogosToolStripMenuItem.BackColor = openToolStripMenuItem.BackColor = newToolStripMenuItem.BackColor = Color.FromArgb(38, 38, 38);
-             motoG6ToolStripMenuItem.ForeColor = motoG6PlayToolStripMenuItem.ForeColor = motoG7PlusToolStripMenuItem.ForeColor = downloadSiteToolStripMenuItem.ForeColor = motoG7PlayToolStripMenuItem.ForeColor = lighttoolStripMenuItem.ForeColor = darktoolStripMenuItem.ForeColor = checkForUpdatesToolStripMenuItem.ForeColor = themetoolStripMenuItem.ForeColor = aboutToolStripMenuItem1.ForeColor = changelogToolStripMenuItem.ForeColor = sourceToolStripMenuItem.ForeColor = testYourNewLogoToolStripMenuItem.ForeColor = motoG7PowerToolStripMenuItem.ForeColor = motoG7ToolStripMenuItem.ForeColor = mToolStripMenuItem.ForeColor = joinTelegramBootLogosToolStripMenuItem.ForeColor = openToolStripMenuItem.ForeColor = newToolStripMenuItem.ForeColor = Color.FromArgb(255, 255, 255);
+            toolStripMenuItemOpenCustomLogo.BackColor = motoG6ToolStripMenuItem.BackColor = motoG6PlayToolStripMenuItem.BackColor = motoG7PlusToolStripMenuItem.BackColor = downloadSiteToolStripMenuItem.BackColor = motoG7PlayToolStripMenuItem.BackColor = lighttoolStripMenuItem.BackColor = darktoolStripMenuItem.BackColor = checkForUpdatesToolStripMenuItem.BackColor = themetoolStripMenuItem.BackColor = aboutToolStripMenuItem1.BackColor = changelogToolStripMenuItem.BackColor = sourceToolStripMenuItem.BackColor = testYourNewLogoToolStripMenuItem.BackColor = motoG7PowerToolStripMenuItem.BackColor = motoG7ToolStripMenuItem.BackColor = mToolStripMenuItem.BackColor = joinTelegramBootLogosToolStripMenuItem.BackColor = openToolStripMenuItem.BackColor = newToolStripMenuItem.BackColor = Color.FromArgb(38, 38, 38);
+            toolStripMenuItemOpenCustomLogo.ForeColor = motoG6ToolStripMenuItem.ForeColor = motoG6PlayToolStripMenuItem.ForeColor = motoG7PlusToolStripMenuItem.ForeColor = downloadSiteToolStripMenuItem.ForeColor = motoG7PlayToolStripMenuItem.ForeColor = lighttoolStripMenuItem.ForeColor = darktoolStripMenuItem.ForeColor = checkForUpdatesToolStripMenuItem.ForeColor = themetoolStripMenuItem.ForeColor = aboutToolStripMenuItem1.ForeColor = changelogToolStripMenuItem.ForeColor = sourceToolStripMenuItem.ForeColor = testYourNewLogoToolStripMenuItem.ForeColor = motoG7PowerToolStripMenuItem.ForeColor = motoG7ToolStripMenuItem.ForeColor = mToolStripMenuItem.ForeColor = joinTelegramBootLogosToolStripMenuItem.ForeColor = openToolStripMenuItem.ForeColor = newToolStripMenuItem.ForeColor = Color.FromArgb(255, 255, 255);
         }
 
         private class RendererLighTheme : ToolStripProfessionalRenderer

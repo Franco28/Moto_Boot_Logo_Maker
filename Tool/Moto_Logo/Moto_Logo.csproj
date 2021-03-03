@@ -234,7 +234,6 @@
     <Compile Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.Designer.cs">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Settings\SendLogs.cs" />
     <Compile Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,7 +284,6 @@
     </Compile>
     <Compile Include="EngineUI\IntefaceClasses\AutoClosingMessageBox.cs" />
     <Compile Include="EngineUI\IntefaceClasses\CheckNetFamework.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\GifImage.cs" />
     <Compile Include="EngineUI\IntefaceClasses\MessageBoxManager.cs" />
     <Compile Include="EngineUI\IntefaceClasses\OSArchitecture.cs" />
     <Compile Include="EngineUI\IntefaceClasses\OSVersionInfoClass.cs" />
@@ -771,7 +769,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

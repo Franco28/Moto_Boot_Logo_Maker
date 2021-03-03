@@ -400,7 +400,7 @@ namespace Moto_Logo
             // 
             // binlogo
             // 
-            this.binlogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.binlogo.Cursor = System.Windows.Forms.Cursors.Default;
             this.binlogo.Image = ((System.Drawing.Image)(resources.GetObject("binlogo.Image")));
             this.binlogo.Location = new System.Drawing.Point(8, 4);
             this.binlogo.Name = "binlogo";

@@ -123,9 +123,6 @@
   <metadata name="pictureBoxMotoG.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoG.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxMotoG.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2059,13 +2056,7 @@
   <metadata name="pictureBoxMotoX.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoX.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="panelMotoOne.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pictureBoxMotoOne.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="pictureBoxMotoOne.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2077,13 +2068,7 @@
   <metadata name="pictureBoxMotoEdge.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoEdge.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="panelMotoDroid.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pictureBoxMotoDroid.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="pictureBoxMotoDroid.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -4675,9 +4660,6 @@
   <metadata name="pictureBoxMotoE.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoE.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -4732,9 +4714,6 @@
   <metadata name="pictureBoxMotoZ.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoZ.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -4744,20 +4723,17 @@
   <metadata name="pictureBoxMotoP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="pictureBoxMotoP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="binlogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAGfSURBVFhH7ZbNSsNAFIUD+gb5aV2JvoO49QVEEQq+ijST
-        eSndtj6E4s61upeSTGm8N/cKQ3uSpmmDLnLgI3TumZyZm2mbYNCgf6PYurswzT/jzJVtCa270un7K8zy
-        LxSyhWedvr/AzVtxsC6gm7fkMF0AN+4NPmuJcTcaLULGPuFFaLQImfpGo0XIsA6t+jsyRZrYxXlgy+Px
-        dHUaZcWUx5F/GxotQgYfDhmZ4jJKl/dx6l7jNHd0fePPoSkuuixCo0XI4MM7r8JRjcapEwbVmtBoETL4
-        cNurnYMaj4+mizNYa0CjRcjgw8+8ajuo8XgwKY9grQGNFiGDDx84fuaoFmXupfcO8GmvOwNxtpxQ3eJa
-        PRotQgYfPuV82v1vAe+cw6v5Jn9C85qogn+FDOtUvwN02rnd/Mz5KjvPH09sGdF1hubVodEiZNiNfDZ+
-        WMXUiTmub6LRImTYHV0E/UNu1jbRaBEydII60HYRGi1Chs7QIkZ2lYSZe4d1RaNFHV/JatkWTnkfGi1K
-        rLulU77TS2lXODw07lqjBw36SwXBD5nxnv11W5EFAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAZ9JREFUWEftls1Kw0AUhQP6BvlpXYm+g7j1BUQRCr6KNJN5Kd22PoTizrW6l5JM
+        abw39wpDe5KmaYMucuAjdO6ZnJmbaZtg0KB/o9i6uzDNP+PMlW0JrbvS6fsrzPIvFLKFZ52+v8DNW3Gw
+        LqCbt+QwXQA37g0+a4lxNxotQsY+4UVotAiZ+kajRciwDq36OzJFmtjFeWDL4/F0dRplxZTHkX8bGi1C
+        Bh8OGZniMkqX93HqXuM0d3R948+hKS66LEKjRcjgwzuvwlGNxqkTBtWa0GgRMvhw26udgxqPj6aLM1hr
+        QKNFyODDz7xqO6jxeDApj2CtAY0WIYMPHzh+5qgWZe6l9w7waa87A3G2nFDd4lo9Gi1CBh8+5Xza/W8B
+        75zDq/kmf0LzmqiCf4UM61S/A3Taud38zPkqO88fT2wZ0XWG5tWh0SJk2I18Nn5YxdSJOa5votEiZNgd
+        XQT9Q27WNtFoETJ0gjrQdhEaLUKGztAiRnaVhJl7h3VFo0UdX8lq2RZOeR8aLUqsu6VTvtNLaVc4PDTu
+        WqMHDfpLBcEPmfGe/XVbkQUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
