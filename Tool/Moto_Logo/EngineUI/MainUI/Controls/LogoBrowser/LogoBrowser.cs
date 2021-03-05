@@ -1,4 +1,16 @@
-﻿
+﻿/* 
+#####################################################################
+#    File: LogoBrowser.cs                                           #
+#    Author: Franco28                                               # 
+#    Date: 05-03-2021                                               #
+#    Note: If you are someone that extracted the assemblie,         #
+#          please if you want something ask me,                     #
+#          don´t try to corrupt or break Tool!                      #
+#    Personal Contact:                                              #
+#    Telegram: https://t.me/francom28/                              #
+#####################################################################
+ */
+
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -36,16 +48,16 @@ namespace Moto_Logo
             }
         }
 
-        private static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+        public static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
-        private void ListDirectory(string path)
+        public void ListDirectory(string path)
         {
             treeView1.Nodes.Clear();
             var rootDirectoryInfo = new DirectoryInfo(path);
             treeView1.Nodes.Add(CreateDirectoryNode(rootDirectoryInfo));
         }
 
-        private static TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
+        public static TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
         {
             var directoryNode = new TreeNode(directoryInfo.Name);
             foreach (var directory in directoryInfo.GetDirectories())
@@ -66,64 +78,69 @@ namespace Moto_Logo
             }
         }
 
-        private void LogoBrowser_Load(object sender, EventArgs e)
+        public void LogoBrowser_Load(object sender, EventArgs e)
         {
             Round(panel);
             treeView1.Nodes.Clear();
-            var mainform = Form.ActiveForm as MainForm;
-
-            if (mainform.radioButton4mib.Checked == true)
+            try
             {
-                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
-                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
+                if (Properties.Profiles.Default.LogoMemory4MB == true)
+                {
+                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
+                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
 
-                CheckDeviceAndFolder("MotoDroid", @"4MB\MotoDroid\");
-                CheckDeviceAndFolder("MotoG", @"4MB\MotoG\");
-                CheckDeviceAndFolder("MotoE", @"4MB\MotoE\");
-                CheckDeviceAndFolder("MotoX", @"4MB\MotoX\");
-            }
+                    CheckDeviceAndFolder("MotoDroid", @"4MB\MotoDroid\");
+                    CheckDeviceAndFolder("MotoG", @"4MB\MotoG\");
+                    CheckDeviceAndFolder("MotoE", @"4MB\MotoE\");
+                    CheckDeviceAndFolder("MotoX", @"4MB\MotoX\");
+                }
 
-            if (mainform.radioButton6MIB.Checked == true)
+                if (Properties.Profiles.Default.LogoMemory6MB == true)
+                {
+                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
+                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
+
+                    CheckDeviceAndFolder("MotoDroid", @"6MB\MotoDroid\");
+                    CheckDeviceAndFolder("MotoX", @"6MB\MotoX\");
+                }
+
+                if (Properties.Profiles.Default.LogoMemory8MB == true)
+                {
+                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
+                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
+
+                    CheckDeviceAndFolder("MotoDroid", @"8MB\MotoDroid\");
+                    CheckDeviceAndFolder("MotoX", @"8MB\MotoX\");
+                    CheckDeviceAndFolder("Nexus", @"8MB\Nexus\");
+                }
+
+                if (Properties.Profiles.Default.LogoMemory16MB == true)
+                {
+                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
+                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
+
+                    CheckDeviceAndFolder("MotoE", @"16MB\MotoE\");
+                    CheckDeviceAndFolder("MotoEdge", @"16MB\MotoEdge\");
+                    CheckDeviceAndFolder("MotoG", @"16MB\MotoG\");
+                    CheckDeviceAndFolder("MotoOne", @"16MB\MotoOne\");
+                    CheckDeviceAndFolder("MotoZ", @"16MB\MotoZ\");
+                }
+
+                if (Properties.Profiles.Default.LogoMemory32MB == true)
+                {
+                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
+                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
+
+                    CheckDeviceAndFolder("MotoEdge", @"32MB\MotoEdge\");
+                    CheckDeviceAndFolder("MotoG", @"32MB\MotoG\");
+                    CheckDeviceAndFolder("MotoOne", @"32MB\MotoOne\");
+                    CheckDeviceAndFolder("MotoZ", @"32MB\MotoZ\");
+                    CheckDeviceAndFolder("MotoX", @"32MB\MotoX\");
+                }
+            } 
+            catch (Exception ex)
             {
-                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
-                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
-
-                CheckDeviceAndFolder("MotoDroid", @"6MB\MotoDroid\");
-                CheckDeviceAndFolder("MotoX", @"6MB\MotoX\");
-            }
-
-            if (mainform.radioButton8MIB.Checked == true)
-            {
-                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
-                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
-
-                CheckDeviceAndFolder("MotoDroid", @"8MB\MotoDroid\");
-                CheckDeviceAndFolder("MotoX", @"8MB\MotoX\");
-                CheckDeviceAndFolder("Nexus", @"8MB\Nexus\");
-            }
-
-            if (mainform.radioButton16MIB.Checked == true)
-            {
-                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
-                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
-
-                CheckDeviceAndFolder("MotoE", @"16MB\MotoE\");
-                CheckDeviceAndFolder("MotoEdge", @"16MB\MotoEdge\");
-                CheckDeviceAndFolder("MotoG", @"16MB\MotoG\");
-                CheckDeviceAndFolder("MotoOne", @"16MB\MotoOne\");
-                CheckDeviceAndFolder("MotoZ", @"16MB\MotoZ\");
-            }
-
-            if (mainform.radioButton32MIB.Checked == true)
-            {
-                this.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
-                label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
-
-                CheckDeviceAndFolder("MotoEdge", @"32MB\MotoEdge\");
-                CheckDeviceAndFolder("MotoG", @"32MB\MotoG\");
-                CheckDeviceAndFolder("MotoOne", @"32MB\MotoOne\");
-                CheckDeviceAndFolder("MotoZ", @"32MB\MotoZ\");
-                CheckDeviceAndFolder("MotoX", @"32MB\MotoX\");
+                MessageBox.Show(ex.Message.ToString());
             }
         }
 
@@ -173,8 +190,10 @@ namespace Moto_Logo
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            var opendialog = new SelectDevice();
-            opendialog.Show();
+            var sd = new SelectDevice();
+            this.Hide();
+            sd.Show();
+            this.Show();
             this.Close();
         }
 

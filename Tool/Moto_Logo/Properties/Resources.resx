@@ -445,4 +445,16 @@
   <data name="MotoZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devices\motoz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="motorola_moto_g10_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g10-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g30_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g30-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_play_2021_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-play-2021-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorola_moto_g_power_2021_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\devices\motorola-moto-g-power-2021-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

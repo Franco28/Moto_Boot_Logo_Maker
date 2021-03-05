@@ -1,4 +1,16 @@
-﻿
+﻿/* 
+#####################################################################
+#    File: LogoBrowser.Designer.cs                                  #
+#    Author: Franco28                                               # 
+#    Date: 05-03-2021                                               #
+#    Note: If you are someone that extracted the assemblie,         #
+#          please if you want something ask me,                     #
+#          don´t try to corrupt or break Tool!                      #
+#    Personal Contact:                                              #
+#    Telegram: https://t.me/francom28/                              #
+#####################################################################
+ */
+
 namespace Moto_Logo
 {
     partial class LogoBrowser

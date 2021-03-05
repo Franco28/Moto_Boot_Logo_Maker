@@ -1,18 +1,35 @@
-﻿
+﻿/* 
+#####################################################################
+#    File: SelectDevice.cs                                          #
+#    Author: Franco28                                               # 
+#    Date: 05-03-2021                                               #
+#    Note: If you are someone that extracted the assemblie,         #
+#          please if you want something ask me,                     #
+#          don´t try to corrupt or break Tool!                      #
+#    Personal Contact:                                              #
+#    Telegram: https://t.me/francom28/                              #
+#####################################################################
+ */
+
 using Moto_Logo.Properties;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Resources;
 
 namespace Moto_Logo
 {
     public partial class SelectDevice : Form
     {
+        public CultureInfo cul;
+        public ResourceManager res_man;
 
         public SelectDevice()
         {
             InitializeComponent();
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         }
 
         public void Round(Panel picturebox) 

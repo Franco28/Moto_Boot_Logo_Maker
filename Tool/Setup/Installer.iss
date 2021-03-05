@@ -8,7 +8,7 @@
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-03-03"
+#define MyAppDate "2021-03-05"
 
 [Setup]
 PrivilegesRequired=admin    

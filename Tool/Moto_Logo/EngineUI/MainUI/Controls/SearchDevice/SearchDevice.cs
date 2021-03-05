@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.SearchDevice.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 01-03-2021                                               #
+#    Date: 05-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -968,6 +968,63 @@ namespace Moto_Logo
                         MotoGPath16 + @"G9_Power\720x1600.bin",
                         null,
                         Resources.motorola_moto_g9_power_2);
+                    return;
+                }
+
+                if (textBoxSearchDevice.Text.ToLower() == "moto g10" || textBoxSearchDevice.Text.ToLower().Contains("capri"))
+                {
+                    CallForm("Motorola Moto G10 - Capri",
+                        "Motorola Moto G10",
+                        "Capri",
+                        "720 x 1600",
+                        "16",
+                        LogoSize(MotoGPath16 + @"G10\720x1600.bin"),
+                        MotoGPath16 + @"G10\720x1600.bin",
+                        null,
+                        Resources.motorola_moto_g10_1);
+                    return;
+                }
+
+                if (textBoxSearchDevice.Text.ToLower() == "moto g30" || textBoxSearchDevice.Text.ToLower().Contains("caprip"))
+                {
+                    CallForm("Motorola Moto G30 - Caprip",
+                        "Motorola Moto G30",
+                        "Caprip",
+                        "720 x 1600",
+                        "16",
+                        LogoSize(MotoGPath16 + @"G30\720x1600.bin"),
+                        MotoGPath16 + @"G30\720x1600.bin",
+                        null,
+                        Resources.motorola_moto_g30_1);
+                    return;
+                }
+
+                if (textBoxSearchDevice.Text.ToLower() == "moto g play 2021" || textBoxSearchDevice.Text.ToLower().Contains("guamna"))
+                {
+                    CallForm("Motorola Moto G Play 2021 - Guamna",
+                        "Motorola Moto G Play 2021",
+                        "Guamna",
+                        "720 x 1600",
+                        "16",
+                        LogoSize(MotoGPath16 + @"G_Play(2021)\720x1600.bin"),
+                        MotoGPath16 + @"G_Play(2021)\720x1600.bin",
+                        null,
+                        Resources.motorola_moto_g_play_2021_1);
+                    return;
+                }
+
+
+                if (textBoxSearchDevice.Text.ToLower() == "moto g power 2021" || textBoxSearchDevice.Text.ToLower().Contains("cebu"))
+                {
+                    CallForm("Motorola Moto G Power 2021 - Cebu",
+                        "Motorola Moto G Power 2021",
+                        "Cebu",
+                        "720 x 1600",
+                        "16",
+                        LogoSize(MotoGPath16 + @"G_Power(2021)\720x1600.bin"),
+                        MotoGPath16 + @"G_Power(2021)\720x1600.bin",
+                        null,
+                        Resources.motorola_moto_g_power_2021_1);
                     return;
                 }
                 #endregion 16MIB Devices

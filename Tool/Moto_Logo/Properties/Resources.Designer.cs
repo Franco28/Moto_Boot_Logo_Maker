@@ -623,9 +623,29 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap motorola_moto_g_play_2021_1 {
+            get {
+                object obj = ResourceManager.GetObject("motorola_moto_g_play_2021_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap motorola_moto_g_power_1 {
             get {
                 object obj = ResourceManager.GetObject("motorola_moto_g_power_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap motorola_moto_g_power_2021_1 {
+            get {
+                object obj = ResourceManager.GetObject("motorola_moto_g_power_2021_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -656,6 +676,26 @@ namespace Moto_Logo.Properties {
         public static System.Drawing.Bitmap motorola_moto_g_turbo_edition_2 {
             get {
                 object obj = ResourceManager.GetObject("motorola_moto_g_turbo_edition_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap motorola_moto_g10_1 {
+            get {
+                object obj = ResourceManager.GetObject("motorola_moto_g10_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap motorola_moto_g30_1 {
+            get {
+                object obj = ResourceManager.GetObject("motorola_moto_g30_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -3,7 +3,7 @@
 #####################
 
 ---------------------------------------
-v4.4.3.2 - Released Xxx xx, 2021 - WIP
+v4.4.3.2 - Released March xx, 2021 - WIP
 ---------------------------------------
 NOTE: Some translations are missing, I will be working on this, for now still in english
 

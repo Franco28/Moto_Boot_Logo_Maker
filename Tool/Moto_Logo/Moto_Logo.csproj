@@ -689,10 +689,14 @@
     <Content Include="Resources\devices\motorola-moto-g-3rd-gen-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-5g-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-5g-plus-03.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-play-2021-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-power-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g-power-2021-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-stylus-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-stylus-2021-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g-turbo-edition-2.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g10-1.jpg" />
+    <Content Include="Resources\devices\motorola-moto-g30-1.jpg" />
     <Content Include="Resources\devices\motorola-moto-g4-2.jpg" />
     <Content Include="Resources\devices\motorola-moto-g4-play-4.jpg" />
     <Content Include="Resources\devices\motorola-moto-g4-plus-2.jpg" />
@@ -769,7 +773,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
