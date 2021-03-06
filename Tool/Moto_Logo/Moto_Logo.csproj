@@ -58,8 +58,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Setup\AndroidLib.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.11.30.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.11.30\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.11.31.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.31\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -657,12 +657,12 @@
     <Content Include="Resources\devices\moto-x-2014-2.jpg" />
     <Content Include="Resources\devices\moto-x-play-1.jpg" />
     <Content Include="Resources\devices\moto-x-style-1.jpg" />
-    <Content Include="Resources\devices\MotoDroid.png" />
-    <Content Include="Resources\devices\MotoE.png" />
-    <Content Include="Resources\devices\MotoEdge.png" />
-    <Content Include="Resources\devices\MotoG.png" />
-    <Content Include="Resources\devices\MotoOne.png" />
-    <Content Include="Resources\devices\MotoP.jpg" />
+    <Content Include="Resources\devices\MotoDroid.jpg" />
+    <Content Include="Resources\devices\MotoE.jpg" />
+    <Content Include="Resources\devices\MotoEdge.jpg" />
+    <Content Include="Resources\devices\MotoG.jpg" />
+    <Content Include="Resources\devices\MotoOne.jpg" />
+    <Content Include="Resources\devices\MotoP.jpeg" />
     <Content Include="Resources\devices\motorola-droid-maxx-2.jpg" />
     <Content Include="Resources\devices\motorola-droid-maxx1.jpg" />
     <Content Include="Resources\devices\motorola-droid-mini2.jpg" />
@@ -738,10 +738,9 @@
     <Content Include="Resources\devices\motorola-one-power-1.jpg" />
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
-    <Content Include="Resources\devices\MotoX.png" />
+    <Content Include="Resources\devices\MotoX.jpg" />
     <Content Include="Resources\devices\MotoZ.jpg" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
-    <None Include="Resources\motoHallowen2.gif" />
     <None Include="Resources\motoHallowen.gif" />
     <Content Include="Resources\ToolUI\Build.png" />
     <Content Include="Resources\ToolUI\Cancel.png" />
@@ -773,7 +772,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

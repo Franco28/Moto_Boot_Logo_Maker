@@ -99,8 +99,9 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoG
             // 
+            this.pictureBoxMotoG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMotoG.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMotoG.Image")));
+            this.pictureBoxMotoG.Image = global::Moto_Logo.Properties.Resources.MotoG;
             this.pictureBoxMotoG.Location = new System.Drawing.Point(8, 12);
             this.pictureBoxMotoG.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoG.Name = "pictureBoxMotoG";
@@ -123,6 +124,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoX
             // 
+            this.pictureBoxMotoX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoX.Image = global::Moto_Logo.Properties.Resources.MotoX;
             this.pictureBoxMotoX.Location = new System.Drawing.Point(8, 12);
@@ -147,6 +149,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoOne
             // 
+            this.pictureBoxMotoOne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoOne.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoOne.Image = global::Moto_Logo.Properties.Resources.MotoOne;
             this.pictureBoxMotoOne.Location = new System.Drawing.Point(8, 12);
@@ -171,6 +174,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoEdge
             // 
+            this.pictureBoxMotoEdge.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoEdge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoEdge.Image = global::Moto_Logo.Properties.Resources.MotoEdge;
             this.pictureBoxMotoEdge.Location = new System.Drawing.Point(8, 12);
@@ -195,8 +199,9 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoDroid
             // 
+            this.pictureBoxMotoDroid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoDroid.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMotoDroid.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMotoDroid.Image")));
+            this.pictureBoxMotoDroid.Image = global::Moto_Logo.Properties.Resources.MotoDroid;
             this.pictureBoxMotoDroid.Location = new System.Drawing.Point(8, 12);
             this.pictureBoxMotoDroid.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMotoDroid.Name = "pictureBoxMotoDroid";
@@ -219,6 +224,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoE
             // 
+            this.pictureBoxMotoE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoE.Image = global::Moto_Logo.Properties.Resources.MotoE;
             this.pictureBoxMotoE.Location = new System.Drawing.Point(8, 12);
@@ -351,6 +357,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoZ
             // 
+            this.pictureBoxMotoZ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoZ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoZ.Image = global::Moto_Logo.Properties.Resources.MotoZ;
             this.pictureBoxMotoZ.Location = new System.Drawing.Point(8, 12);
@@ -389,6 +396,7 @@ namespace Moto_Logo
             // 
             // pictureBoxMotoP
             // 
+            this.pictureBoxMotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMotoP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxMotoP.Image = global::Moto_Logo.Properties.Resources.MotoP;
             this.pictureBoxMotoP.Location = new System.Drawing.Point(8, 12);
@@ -424,7 +432,7 @@ namespace Moto_Logo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1168, 711);
+            this.ClientSize = new System.Drawing.Size(1167, 711);
             this.Controls.Add(this.binlogo);
             this.Controls.Add(this.labelLogoMemory);
             this.Controls.Add(this.label8);

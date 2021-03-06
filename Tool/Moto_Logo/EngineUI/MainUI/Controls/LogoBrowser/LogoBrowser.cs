@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 05-03-2021                                               #
+#    Date: 06-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -16,6 +16,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Resources;
 using System.Windows.Forms;
 
@@ -31,20 +32,51 @@ namespace Moto_Logo
         {
             InitializeComponent(); 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            if (Properties.Settings.Default.Theme == "light")
+            {
+                this.BackColor = Color.FromArgb(255, 255, 255);
+                this.ForeColor = Color.FromArgb(0, 0, 0);
+
+                foreach (Panel pan in Controls.OfType<Panel>())
+                {
+                    pan.BackColor = Color.FromArgb(235, 237, 240);
+                    pan.ForeColor = Color.FromArgb(0, 0, 0);
+                }
+
+                foreach (Label label in Controls.OfType<Label>())
+                {
+                    label.BackColor = Color.FromArgb(255, 255, 255);
+                    label.ForeColor = Color.FromArgb(0, 0, 0);
+                }
+
+                treeView1.BackColor = Color.FromArgb(255, 255, 255);
+                treeView1.ForeColor = Color.FromArgb(0, 0, 0);
+
+                buttonSelect.BackColor = Color.FromArgb(255, 255, 255);
+                buttonSelect.ForeColor = Color.FromArgb(0, 0, 0);
+            }
         }
 
-        public void Round(Panel picturebox)
+        public void Round(Panel panel)
         {
             using (var gp = new GraphicsPath())
             {
-                picturebox.BackColor = Color.FromArgb(44, 44, 44);
-                Rectangle r = new Rectangle(0, 0, picturebox.Width, picturebox.Height);
+                if (Properties.Settings.Default.Theme == "dark")
+                {
+                    panel.BackColor = Color.FromArgb(44, 44, 44);
+                }
+                else
+                {
+                    panel.BackColor = Color.FromArgb(235, 237, 240);
+                }
+                Rectangle r = new Rectangle(0, 0, panel.Width, panel.Height);
                 int d = 50;
                 gp.AddArc(r.X, r.Y, d, d, 180, 90);
                 gp.AddArc(r.X + r.Width - d, r.Y, d, d, 270, 90);
                 gp.AddArc(r.X + r.Width - d, r.Y + r.Height - d, d, d, 0, 90);
                 gp.AddArc(r.X, r.Y + r.Height - d, d, d, 90, 90);
-                picturebox.Region = new Region(gp);
+                panel.Region = new Region(gp);
             }
         }
 
