@@ -34,6 +34,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <LangVersion>8.0</LangVersion>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>main_icon.ico</ApplicationIcon>
@@ -653,16 +654,18 @@
     <None Include="Resources\ToolUI\Fullscreen.png" />
     <None Include="Resources\welcome_gif.gif" />
     <None Include="Resources\logo.png" />
+    <Content Include="Resources\devicesSearch\MotoDroid.png" />
+    <Content Include="Resources\devicesSearch\MotoE.png" />
+    <Content Include="Resources\devicesSearch\MotoEdge.png" />
+    <Content Include="Resources\devicesSearch\MotoG.png" />
+    <Content Include="Resources\devicesSearch\MotoOne.png" />
+    <Content Include="Resources\devicesSearch\MotoP.png" />
+    <Content Include="Resources\devicesSearch\MotoX.png" />
+    <Content Include="Resources\devicesSearch\MotoZ.png" />
     <Content Include="Resources\devices\moto-g-2014-1.jpg" />
     <Content Include="Resources\devices\moto-x-2014-2.jpg" />
     <Content Include="Resources\devices\moto-x-play-1.jpg" />
     <Content Include="Resources\devices\moto-x-style-1.jpg" />
-    <Content Include="Resources\devices\MotoDroid.jpg" />
-    <Content Include="Resources\devices\MotoE.jpg" />
-    <Content Include="Resources\devices\MotoEdge.jpg" />
-    <Content Include="Resources\devices\MotoG.jpg" />
-    <Content Include="Resources\devices\MotoOne.jpg" />
-    <Content Include="Resources\devices\MotoP.jpeg" />
     <Content Include="Resources\devices\motorola-droid-maxx-2.jpg" />
     <Content Include="Resources\devices\motorola-droid-maxx1.jpg" />
     <Content Include="Resources\devices\motorola-droid-mini2.jpg" />
@@ -738,8 +741,6 @@
     <Content Include="Resources\devices\motorola-one-power-1.jpg" />
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
-    <Content Include="Resources\devices\MotoX.jpg" />
-    <Content Include="Resources\devices\MotoZ.jpg" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
     <None Include="Resources\motoHallowen.gif" />
     <Content Include="Resources\ToolUI\Build.png" />
