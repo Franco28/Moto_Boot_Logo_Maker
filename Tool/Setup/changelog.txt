@@ -3,6 +3,12 @@
 #####################
 
 ---------------------------------------
+v4.4.3.4 - Released April xx, 2021 - WIP
+---------------------------------------
+- [fixed] In some Windows versions, Tool can´t get .NetFramework version from registry
+- [updated] HtmlAgilityPack dll & Newtonsoft.Json dll
+
+---------------------------------------
 v4.4.3.3 - Released March 20, 2021
 ---------------------------------------
 NOTE: Some translations are missing, I will be working on this, for now still in english

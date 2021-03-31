@@ -34,6 +34,7 @@
             this.labelInformation = new System.Windows.Forms.Label();
             this.labelSize = new System.Windows.Forms.Label();
             this.labelExit = new System.Windows.Forms.Label();
+            this.btnMinimize = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,11 +67,19 @@
             this.labelExit.Name = "labelExit";
             this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
             // 
+            // btnMinimize
+            // 
+            resources.ApplyResources(this.btnMinimize, "btnMinimize");
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
             // DownloadUpdateDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.labelExit);
             this.Controls.Add(this.labelSize);
             this.Controls.Add(this.labelInformation);
@@ -96,5 +105,6 @@
         private System.Windows.Forms.Label labelInformation;
         private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Label labelExit;
+        private System.Windows.Forms.Label btnMinimize;
     }
 }

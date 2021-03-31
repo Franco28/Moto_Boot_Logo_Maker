@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Program.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 03-03-2021                                               #
+#    Date: 30-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -85,14 +85,14 @@ namespace Moto_Logo
 
                 if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
                 {
-                    CheckNetFamework.Get45or451FromRegistry();
+                    CheckNetFamework.Get48FromRegistry();
                     MessageBox.Show(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     PanicKillInternal();
                     return;
                 }
                 else
                 {
-                    CheckNetFamework.Get45or451FromRegistry();
+                    CheckNetFamework.Get48FromRegistry();
                 }
 
                 if (!Directory.Exists(exePath + @"\Files\"))

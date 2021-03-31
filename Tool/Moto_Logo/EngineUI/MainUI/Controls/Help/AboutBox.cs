@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 30-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -82,9 +82,14 @@ namespace Moto_Logo
             using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey("SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full\\"))
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-                if (true)
+
+                if (ndpKey == null)
                 {
-                    cAppend("NetFramework: v" + CheckNetFamework.CheckFor45DotVersion(releaseKey));
+                    cAppend("NetFramework: Unable to reach out net framework version...");
+                }
+                else
+                {
+                    cAppend("NetFramework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));
                 }
             }
 

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckNetFramework.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 30-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -18,26 +18,26 @@ namespace Moto_Logo
 {
     public class CheckNetFamework
     {
-        public static void Get45or451FromRegistry()
+        public static void Get48FromRegistry()
         {
             const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
-
             using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-                if (true)
+
+                if (ndpKey == null)
                 {
-                    DateTime Tthen = DateTime.Now;
-                    do
-                    {
-                        Logs.DebugWindwosInfo("NetFramework: v" + CheckFor45DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
-                    }
-                    while (Tthen.AddMilliseconds(500) > DateTime.Now);
+                    Logs.DebugWindwosInfo("NetFramework: Unable to reach out net framework version...", "OS: " + OSVersionInfo.Name.ToString());
+                    return;
+                }
+                else
+                {
+                    Logs.DebugWindwosInfo("NetFramework: v" + CheckFor48DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
                 }
             }
         }
 
-        public static string CheckFor45DotVersion(int releaseKey)
+        public static string CheckFor48DotVersion(int releaseKey)
         {
             if (releaseKey >= 528049)
             {

@@ -4,11 +4,11 @@
 #define MyAppName "Moto_Boot_Logo_Maker"
 #define MyAppName2 "Moto_Boot_Logo_Maker_v"
 #define MyInstallerSuffix "_Setup"
-#define MyAppVersion "4.4.3.3"
+#define MyAppVersion "4.4.3.4"
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-03-20"
+#define MyAppDate "2021-03-31"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -140,12 +140,13 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs   
 Source: "AndroidLib.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Newtonsoft.Json.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "HtmlAgilityPack.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs     
 Source: "LICENSE.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "credits.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Files"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Files/*"; DestDir: "{code:GetExeLocation|{app}}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs    
-
+  
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"; IconFilename: "{code:GetExeLocation|{app}}\Files\Images\Logo\unins.ico";
