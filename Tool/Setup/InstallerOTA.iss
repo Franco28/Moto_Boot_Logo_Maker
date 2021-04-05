@@ -4,7 +4,7 @@
 #define MyAppName "Moto_Boot_Logo_Maker"
 #define MyAppName2 "MBLM_v"
 #define MyInstallerSuffix "_OTA"
-#define MyAppVersion "4.4.3.4"
+#define MyAppVersion "4.4.3.5"
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"

@@ -963,6 +963,7 @@ namespace Moto_Logo
             this.btnBuild.Size = new System.Drawing.Size(23, 25);
             this.btnBuild.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnBuild.ToolTipText = "Build and save Logo.bin file";
+            this.btnBuild.Click += new System.EventHandler(this.btnBuild_Click);
             // 
             // labelbtnStop
             // 
@@ -983,6 +984,7 @@ namespace Moto_Logo
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(23, 25);
             this.btnStop.ToolTipText = "Stop logo build process";
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // toolStripSeparator7
             // 
