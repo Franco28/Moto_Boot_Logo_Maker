@@ -157,26 +157,8 @@
   <data name="_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\logo\_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fireworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\fireworks.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fullscreen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\fullscreen2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minizime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\minizime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="motosnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\motosnow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="welcome_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\welcome_gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,12 +382,6 @@
   <data name="motorola_moto_g_5g_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devices\motorola-moto-g-5g-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Build" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\build.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\toolui\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="motorola_moto_edge_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devices\motorola-moto-edge-s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -439,9 +415,6 @@
   <data name="MotoG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devicessearch\motog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="motoHallowen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\motoHallowen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MotoOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devicessearch\motoone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -453,5 +426,26 @@
   </data>
   <data name="MotoZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\devicessearch\motoz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Build_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\build_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelBuild_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\cancelbuild_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\error_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\folder_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenFolder_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\openfolder_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reload_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\reload_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchDevice_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\searchdevice_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

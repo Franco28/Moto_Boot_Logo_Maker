@@ -8,7 +8,7 @@
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-03-31"
+#define MyAppDate "2021-04-05"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -141,7 +141,8 @@ Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{code:GetExeLocation|{app}}"; Flag
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs   
 Source: "AndroidLib.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Newtonsoft.Json.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "HtmlAgilityPack.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs     
+Source: "HtmlAgilityPack.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "DarkUI.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs  
 Source: "LICENSE.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "credits.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Files"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs

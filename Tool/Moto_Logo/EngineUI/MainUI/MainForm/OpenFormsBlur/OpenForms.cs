@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.OpenForms.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 30-03-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,8 +13,6 @@
 
 using System;
 using System.Drawing;
-using System.IO;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace Moto_Logo

@@ -3,12 +3,14 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Media;
 using System.Net;
 using System.Net.Mime;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using AutoUpdaterDotNET.Properties;
+using DarkUI.Forms;
 
 namespace AutoUpdaterDotNET
 {
@@ -211,7 +213,8 @@ namespace AutoUpdaterDotNET
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message, e.GetType().ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(e.Message, e.GetType().ToString());
                 _webClient = null;
             }
             finally

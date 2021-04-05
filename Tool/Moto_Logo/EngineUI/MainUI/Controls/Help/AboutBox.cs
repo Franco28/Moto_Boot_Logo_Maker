@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 30-03-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -17,14 +17,14 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
-    partial class AboutBox : Form
+    partial class AboutBox : DarkForm
     {
         public readonly CultureInfo cul = null;
         public ResourceManager res_man;
@@ -46,21 +46,16 @@ namespace Moto_Logo
 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                LighTheme();
-            }
-
             button1.Hide();
             labelTITLEMAINTEINERS.Text = res_man.GetString("AboutMainteiners", cul);
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                labelTITLE.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - PORTABLE - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
+                this.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - PORTABLE - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
             }
             else
             {
-                labelTITLE.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
+                this.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
             }
 
             button2.Text = res_man.GetString("AboutBTNContributors", cul);
@@ -70,8 +65,6 @@ namespace Moto_Logo
 
         private void AboutBox_Load(object sender, EventArgs e)
         {
-            DayRender();
-
             cAppend("------------------------------------------ Tool Info ------------------------------------------");
             cAppend(res_man.GetString("AboutBoxToolName", cul) + " " + AssemblyProduct);
             cAppend(res_man.GetString("AboutBoxToolVer", cul) + " v" + Application.ProductVersion);
@@ -83,13 +76,13 @@ namespace Moto_Logo
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
 
-                if (ndpKey == null)
-                {
-                    cAppend("NetFramework: Unable to reach out net framework version...");
-                }
-                else
+                try
                 {
                     cAppend("NetFramework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));
+                }
+                catch (ArgumentException ex)
+                {
+                    cAppend("NetFramework: Unable to reach out net framework version... " + ex);
                 }
             }
 
@@ -103,30 +96,6 @@ namespace Moto_Logo
                 cAppend(" ");
                 cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutCheckinf4Updates", cul));
                 CheckForUpdates();
-            }
-        }
-
-        private void DayRender()
-        {
-            if (DateTime.Today.Month == 12 || DateTime.Today.Month == 1 && DateTime.Today.Day == 1)
-            {
-                Image f = Properties.Resources.fireworks;
-                pictureBoxMotoGif.Show();
-            }
-            else
-            {
-                pictureBoxMotoGif.Hide();
-                Controls.Remove(pictureBoxMotoGif);
-            }
-
-            if (DateTime.Today.Month == 10 || DateTime.Today.Month == 10 && DateTime.Today.Day == 31)
-            {
-                pictureBoxMotoGifHallo.Show();
-            }
-            else
-            {
-                pictureBoxMotoGifHallo.Hide();
-                Controls.Remove(pictureBoxMotoGifHallo);
             }
         }
 
@@ -236,28 +205,6 @@ namespace Moto_Logo
         }
         #endregion AssemblyInfo
 
-        #region Theme
-        public void LighTheme()
-        {
-            BackColor = Color.FromArgb(255, 255, 255);
-            ForeColor = Color.FromArgb(0, 0, 0);
-
-            foreach (Label label in Controls.OfType<Label>())
-            {
-                label.BackColor = Color.FromArgb(255, 255, 255);
-                label.ForeColor = Color.FromArgb(0, 0, 0);
-            }
-
-            console.BackColor = labelTITLE.BackColor = pictureBox2.BackColor = label12.BackColor = labelTITLEMAINTEINERS.BackColor = label7.BackColor = label8.BackColor = labelCopyright.BackColor = Color.FromArgb(255, 255, 255);
-            console.ForeColor = label12.ForeColor = labelTITLEMAINTEINERS.ForeColor = label7.ForeColor = label8.ForeColor = labelCopyright.ForeColor = Color.FromArgb(0, 0, 0);
-
-            labelTITLE.ForeColor = Color.Red;
-
-            button2.BackColor = button1.BackColor = Color.FromArgb(255, 255, 255);
-            button2.ForeColor = button1.ForeColor = Color.FromArgb(0, 0, 0);
-        }
-        #endregion Theme
-
         public void OpenTelegram(string url)
         {
             var main = new MainForm();
@@ -341,11 +288,6 @@ namespace Moto_Logo
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             InternetCheck.CheckInternetProcessStart("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RPY4ZNYX2VA4G&source=url");
-            this.Close();
-        }
-
-        private void okButton_Click(object sender, EventArgs e)
-        {
             this.Close();
         }
     }

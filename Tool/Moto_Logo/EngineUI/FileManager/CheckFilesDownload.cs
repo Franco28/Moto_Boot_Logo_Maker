@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFilesDownload.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 05-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,20 +11,20 @@
 #####################################################################
  */
 
+using DarkUI.Forms;
 using Ionic.Zip;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
+using System.Media;
 using System.Net;
 using System.Windows.Forms;
 using System.Xml;
 
 namespace Moto_Logo
 {
-    public partial class CheckFilesDownload : Form
+    public partial class CheckFilesDownload : DarkForm
     {
         public WebClient webClient;
         public Stopwatch sw = new Stopwatch();
@@ -41,19 +41,7 @@ namespace Moto_Logo
 
         public CheckFilesDownload()
         {
-            InitializeComponent();
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                BackColor = Color.FromArgb(255, 255, 255);
-                ForeColor = Color.FromArgb(0, 0, 0);
-
-                foreach (Label label in Controls.OfType<Label>())
-                {
-                    label.BackColor = Color.FromArgb(255, 255, 255);
-                    label.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-            }
+            InitializeComponent();           
         }
 
         #region XML
@@ -103,12 +91,14 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    MessageBox.Show("Check your internet connection...", "Error Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    SystemSounds.Hand.Play();
+                    DarkMessageBox.ShowError("Check your internet connection...", "Error Internet Connection");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(ex.ToString(), ex.Source);
                 this.Close();
             }
             finally
@@ -135,7 +125,8 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...");
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(oConfigMng.Config.FileName + " is corrupted, downloading again...", "");
                     CallDownload();
                     return;
                 }
@@ -143,6 +134,7 @@ namespace Moto_Logo
                 {
                     progressBar.Cursor = Cursors.WaitCursor;
                     labelInformation.Text = "Extracting " + oConfigMng.Config.FileName + "...";
+                    this.Text = labelInformation.Text;
 
                     if (File.Exists(exePath + @"\Files\" + oConfigMng.Config.FileName))
                     {
@@ -184,6 +176,7 @@ namespace Moto_Logo
         {
             this.Show();
             labelInformation.Text = "Starting download... please wait";
+            this.Text = labelInformation.Text;
             using (webClient = new WebClient())
             {
                 string urlAddress = oConfigMng.Config.FileURL;
@@ -197,12 +190,14 @@ namespace Moto_Logo
                     {
                         if (InternetCheck.CheckServerRed(oConfigMng.Config.FileURL) == true)
                         {
-                            MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - file updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            SystemSounds.Hand.Play();
+                            DarkMessageBox.ShowError(@"Server is down :\", "Moto_Boot_Logo_Maker - file updates");
                             this.Close();
                         }
                         else
                         {
                             labelInformation.Text = "Downloading " + oConfigMng.Config.FileName + "...";
+                            this.Text = labelInformation.Text;
                             sw.Start();
                             webClient.DownloadFileAsync(URL, location);
                         }
@@ -271,7 +266,8 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...");
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(oConfigMng.Config.FileName + " is corrupted, downloading again...", "");
                     CallDownload();
                     return;
                 }
@@ -279,6 +275,7 @@ namespace Moto_Logo
                 {
                     progressBar.Cursor = Cursors.Default;
                     labelInformation.Text = "Extracting " + oConfigMng.Config.FileName + "...";
+                    this.Text = labelInformation.Text;
                     if (File.Exists(exePath + @"\Files\" + oConfigMng.Config.FileName))
                     {
                         progressBar.Cursor = Cursors.WaitCursor;
@@ -298,16 +295,12 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                sw.Stop();
-                MessageBox.Show(er.ToString(), "File Extraction Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                sw.Stop(); 
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(er.ToString(), "File Extraction Error");
                 this.Close();
             }
             return;
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

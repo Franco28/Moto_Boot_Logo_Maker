@@ -10,6 +10,7 @@ Image Design Credits:
 - @GarfieldArbuckle - Logos and main Tool icon
 
 Tool Credits:
-- @ravibpatel (Updater lib)
 - @CaitSith2 (Main Creator)
+- @ravibpatel (Updater lib)
+- @Robin Perris (DarkUI lib)
 - @Dan Wager (Android lib)

@@ -17,12 +17,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9F62A088-0410-4CF9-B554-78FE55E96866}
-		BuildVersion_UseGlobalSettings = True
-		BuildVersion_AssemblyInfoFilename = Moto_Logo\Properties\AssemblyInfo.cs
-		BuildVersion_StartDate = 2014/8/15
-		BuildVersion_UpdateFileVersion = True
-		BuildVersion_UpdateAssemblyVersion = True
 		BuildVersion_BuildVersioningStyle = None.None.MonthAndDayStamp.TimeStamp
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_StartDate = 2014/8/15
+		BuildVersion_AssemblyInfoFilename = Moto_Logo\Properties\AssemblyInfo.cs
+		BuildVersion_UseGlobalSettings = True
+		SolutionGuid = {9F62A088-0410-4CF9-B554-78FE55E96866}
 	EndGlobalSection
 EndGlobal

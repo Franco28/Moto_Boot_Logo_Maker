@@ -4,11 +4,12 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
+using DarkUI.Forms;
 using Microsoft.Win32;
 
 namespace AutoUpdaterDotNET
 {
-    internal partial class UpdateForm : Form
+    internal partial class UpdateForm : DarkForm
     {
         private readonly UpdateInfoEventArgs _args;
 
@@ -79,16 +80,6 @@ namespace AutoUpdaterDotNET
 
         private void UpdateFormLoad(object sender, EventArgs e)
         {
-            if (Moto_Logo.Properties.Settings.Default.Theme == "light")
-            {
-                this.BackColor = labelUpdate.BackColor = labelDescription.BackColor = labelReleaseNotes.BackColor = Color.FromArgb(255, 255, 255);
-                this.ForeColor = labelUpdate.ForeColor = labelDescription.ForeColor = labelReleaseNotes.ForeColor = Color.FromArgb(38, 38, 38);
-
-                buttonSkip.FlatStyle = buttonRemindLater.FlatStyle = buttonUpdate.FlatStyle = FlatStyle.System;
-                buttonSkip.BackColor = buttonRemindLater.BackColor = buttonUpdate.BackColor = Color.FromArgb(255, 255, 255);
-                buttonSkip.ForeColor = buttonRemindLater.ForeColor = buttonUpdate.ForeColor = Color.FromArgb(38, 38, 38);
-            }
-
             if (string.IsNullOrEmpty(_args.ChangelogURL))
             {
                 var reduceHeight = labelReleaseNotes.Height + webBrowser.Height;

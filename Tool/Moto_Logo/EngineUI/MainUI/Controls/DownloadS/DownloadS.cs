@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DownloadS.cs                                             #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,34 +13,18 @@
 
 using HtmlAgilityPack;
 using System;
-using System.Drawing;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
+using DarkUI.Forms;
+using System.Media;
 
 namespace Moto_Logo
 {
-    public partial class DownloadS : Form
+    public partial class DownloadS : DarkForm
     {
 
         public DownloadS()
         {
             InitializeComponent();
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                console.BackColor = BackColor = Color.FromArgb(255, 255, 255);
-                console.ForeColor = ForeColor = Color.FromArgb(0, 0, 0);
-
-                foreach (Label label in Controls.OfType<Label>())
-                {
-                    label.BackColor = Color.FromArgb(255, 255, 255);
-                    label.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-
-                button1.BackColor = btnGoTo.BackColor = Color.FromArgb(255, 255, 255);
-                button1.ForeColor = btnGoTo.ForeColor = Color.FromArgb(0, 0, 0);
-            }
         }
 
         protected void cAppend(string message)
@@ -104,7 +88,8 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                MessageBox.Show(er.Message, er.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(er.Message, er.Source);
             }
         }
 
@@ -117,11 +102,6 @@ namespace Moto_Logo
         private void button1_Click(object sender, EventArgs e)
         {
             InternetCheck.CheckInternetProcessStart("https://www.androidfilehost.com/?w=files&flid=323184");
-            this.Close();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
             this.Close();
         }
     }

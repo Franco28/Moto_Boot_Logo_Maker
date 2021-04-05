@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 06-03-2021                                               #
+#    Date: 05-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -16,13 +16,14 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.IO;
-using System.Linq;
+using System.Media;
 using System.Resources;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
-    public partial class LogoBrowser : Form
+    public partial class LogoBrowser : DarkForm
     {
 
         public CultureInfo cul;
@@ -32,44 +33,12 @@ namespace Moto_Logo
         {
             InitializeComponent(); 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                this.BackColor = Color.FromArgb(255, 255, 255);
-                this.ForeColor = Color.FromArgb(0, 0, 0);
-
-                foreach (Panel pan in Controls.OfType<Panel>())
-                {
-                    pan.BackColor = Color.FromArgb(235, 237, 240);
-                    pan.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-
-                foreach (Label label in Controls.OfType<Label>())
-                {
-                    label.BackColor = Color.FromArgb(255, 255, 255);
-                    label.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-
-                treeView1.BackColor = Color.FromArgb(255, 255, 255);
-                treeView1.ForeColor = Color.FromArgb(0, 0, 0);
-
-                buttonSelect.BackColor = Color.FromArgb(255, 255, 255);
-                buttonSelect.ForeColor = Color.FromArgb(0, 0, 0);
-            }
         }
 
         public void Round(Panel panel)
         {
             using (var gp = new GraphicsPath())
             {
-                if (Properties.Settings.Default.Theme == "dark")
-                {
-                    panel.BackColor = Color.FromArgb(44, 44, 44);
-                }
-                else
-                {
-                    panel.BackColor = Color.FromArgb(235, 237, 240);
-                }
                 Rectangle r = new Rectangle(0, 0, panel.Width, panel.Height);
                 int d = 50;
                 gp.AddArc(r.X, r.Y, d, d, 180, 90);
@@ -156,6 +125,7 @@ namespace Moto_Logo
                     CheckDeviceAndFolder("MotoG", @"16MB\MotoG\");
                     CheckDeviceAndFolder("MotoOne", @"16MB\MotoOne\");
                     CheckDeviceAndFolder("MotoZ", @"16MB\MotoZ\");
+                    CheckDeviceAndFolder("MotoP", @"16MB\MotoP\");
                 }
 
                 if (Properties.Profiles.Default.LogoMemory32MB == true)
@@ -168,11 +138,13 @@ namespace Moto_Logo
                     CheckDeviceAndFolder("MotoOne", @"32MB\MotoOne\");
                     CheckDeviceAndFolder("MotoZ", @"32MB\MotoZ\");
                     CheckDeviceAndFolder("MotoX", @"32MB\MotoX\");
+                    CheckDeviceAndFolder("MotoP", @"32MB\MotoP\");
                 }
             } 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(ex.Message.ToString(), "");
             }
         }
 
@@ -209,13 +181,15 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    MessageBox.Show("File " + sN + " is not a .bin file... Select only .bin files!", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning("File " + sN + " is not a .bin file... Select only .bin files!", "Moto_Boot_Logo_Maker");
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("This " + sN + " is a directory...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowWarning("This " + sN + " is a directory...", "Moto_Boot_Logo_Maker");
                 return;
             }
         }
@@ -226,11 +200,6 @@ namespace Moto_Logo
             this.Hide();
             sd.Show();
             this.Show();
-            this.Close();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
             this.Close();
         }
     }

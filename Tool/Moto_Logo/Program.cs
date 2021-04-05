@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Program.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 30-03-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -16,8 +16,10 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Security.Principal;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
@@ -71,7 +73,8 @@ namespace Moto_Logo
                 {
                     if (IsUserAdministrator() == false)
                     {
-                        MessageBox.Show(res_man.GetString("ProgramCheckPrivileges", cul), res_man.GetString("ProgramCheckPrivileges2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        SystemSounds.Hand.Play();
+                        DarkMessageBox.ShowError(res_man.GetString("ProgramCheckPrivileges", cul), res_man.GetString("ProgramCheckPrivileges2", cul));
                         PanicKillInternal();
                         return;
                     }
@@ -79,14 +82,16 @@ namespace Moto_Logo
 
                 if (Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1)
                 {
-                    MessageBox.Show(res_man.GetString("ProgramCheckBackRun", cul), res_man.GetString("ProgramCheckBackRun2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    SystemSounds.Hand.Play();
+                    DarkMessageBox.ShowError(res_man.GetString("ProgramCheckBackRun", cul), res_man.GetString("ProgramCheckBackRun2", cul));
                     return;
                 }
 
                 if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
                 {
                     CheckNetFamework.Get48FromRegistry();
-                    MessageBox.Show(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    SystemSounds.Hand.Play();
+                    DarkMessageBox.ShowError(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul));
                     PanicKillInternal();
                     return;
                 }
@@ -145,8 +150,9 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                Logs.DebugErrorLogs(er);
-                MessageBox.Show("Moto_Boot_Logo_Maker: Start up error: " + er, "FATAL ERROR: Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logs.DebugErrorLogs(er); 
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError("Moto_Boot_Logo_Maker: Start up error: " + er, "FATAL ERROR: Moto_Boot_Logo_Maker");
                 PanicKill();
                 return;
             }

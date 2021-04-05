@@ -2,7 +2,7 @@
 #####################################################################
 #    File: ReadChangelog.cs                                         #
 #    Author: Franco28                                               # 
-#    Date: 18-02-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -12,32 +12,20 @@
  */
 
 using System;
-using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
-    public partial class ReadChangelog : Form
+    public partial class ReadChangelog : DarkForm
     {
         public ReadChangelog()
         {
             InitializeComponent();
             this.Text = "Changelog v" + Application.ProductVersion + " build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                Light();
-            }
-        }
-
-        public void Light()
-        {
-            this.BackColor = Color.FromArgb(255, 255, 255);
-            this.ForeColor = Color.FromArgb(38, 38, 38);
-            richTextBox1.BackColor = Color.FromArgb(255, 255, 255);
-            richTextBox1.ForeColor = Color.FromArgb(38, 38, 38);
         }
 
         private void ReadChangelog_Load(object sender, EventArgs e)

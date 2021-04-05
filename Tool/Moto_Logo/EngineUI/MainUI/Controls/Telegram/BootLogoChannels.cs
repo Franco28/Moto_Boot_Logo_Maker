@@ -26,32 +26,7 @@ namespace Moto_Logo
         public BootLogoChannels()
         {
             InitializeComponent();
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                LighTheme();
-            }
-            if (Properties.Settings.Default.Theme == "dark")
-            {
-                DarkTheme();
-            }
-        }
-
-        public void DarkTheme()
-        {
-            webBrowser1.BackColor = Color.FromArgb(38, 38, 38);
-            webBrowser1.ForeColor = Color.FromArgb(250, 232, 232);
-
-        }
-
-        public void LighTheme()
-        {
-            this.BackColor = Color.FromArgb(255, 255, 255);
-            this.ForeColor = Color.FromArgb(0, 0, 0);
-
-            webBrowser1.BackColor = Color.FromArgb(255, 255, 255);
-            webBrowser1.ForeColor = Color.FromArgb(0, 0, 0);
-        }
+        }             
 
         private void BootLogoChannels_Load(object sender, System.EventArgs e)
         {

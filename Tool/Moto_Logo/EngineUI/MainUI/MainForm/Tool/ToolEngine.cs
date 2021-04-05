@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 24-02-2021                                               #
+#    Date: 05-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,12 +11,14 @@
 #####################################################################
  */
 
+using DarkUI.Forms;
 using Moto_Logo.Properties;
 using System;
 using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Media;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -31,8 +33,8 @@ namespace Moto_Logo
             var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
             var newpath = path.Replace(@"\user.config", "").Trim();
             string errorpath = newpath + @"\DebugLogs\";
-
-            MessageBox.Show("Remember to send logs, then remove this file!", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            SystemSounds.Exclamation.Play();
+            DarkMessageBox.ShowInformation("Remember to send logs, then remove this file!", "Moto_Boot_Logo_Maker");
             Process.Start(errorpath);
             return;
             #endregion gotoerror
@@ -83,48 +85,48 @@ namespace Moto_Logo
 
             if (File.Exists(fileLogPath + "Error_" + Environment.UserName + ".txt") && new FileInfo(fileLogPath + "Error_" + Environment.UserName + ".txt").Length != 0)
             {
-                labelErrorIcon.Show();
-                labelErrorInfo.Show();
-                labelErrorGoToFileInfo.Show();
+                labelErrorIcon.Visible = true;
+                labelErrorInfo.Visible = true;
+                labelErrorGoToFileInfo.Visible = true;
                 labelErrorGoToFileInfo.Text = "Send logs";
                 labelErrorInfo.Text = res_man.GetString("ToolErrorShow", cul);
-                labelGoToError.Show();
+                labelGoToError.Visible = true;
             }
             else
             {
-                labelErrorGoToFileInfo.Hide();
-                labelErrorIcon.Hide();
-                labelErrorInfo.Hide();
-                labelGoToError.Hide();
+                labelErrorGoToFileInfo.Visible = false;
+                labelErrorIcon.Visible = false;
+                labelErrorInfo.Visible = false;
+                labelGoToError.Visible = false;
             }
         }
 
         private void Watcher_CreatedErrorLog(object sender, FileSystemEventArgs e)
         {
-            labelErrorIcon.Show();
-            labelErrorInfo.Show();
-            labelErrorGoToFileInfo.Show();
+            labelErrorIcon.Visible = true;
+            labelErrorInfo.Visible = true;
+            labelErrorGoToFileInfo.Visible = true;
             labelErrorGoToFileInfo.Text = "Send logs";
             labelErrorInfo.Text = res_man.GetString("ToolErrorShow", cul);
-            labelGoToError.Show();
+            labelGoToError.Visible = true;
         }
 
         private void OnChangedErrorLog(object sender, FileSystemEventArgs e)
         {
-            labelErrorIcon.Show();
-            labelErrorInfo.Show();
-            labelErrorGoToFileInfo.Show();
+            labelErrorIcon.Visible = true;
+            labelErrorInfo.Visible = true;
+            labelErrorGoToFileInfo.Visible = true;
             labelErrorGoToFileInfo.Text = "Send logs";
             labelErrorInfo.Text = res_man.GetString("ToolErrorShow", cul);
-            labelGoToError.Show();
+            labelGoToError.Visible = true;
         }
 
         private void Watcher_DeletedErrorLog(object sender, FileSystemEventArgs e)
         {
-            labelErrorGoToFileInfo.Hide();
-            labelErrorIcon.Hide();
-            labelErrorInfo.Hide();
-            labelGoToError.Hide();
+            labelErrorGoToFileInfo.Visible = false;
+            labelErrorIcon.Visible = false;
+            labelErrorInfo.Visible = false;
+            labelGoToError.Visible = false;
         }
         #endregion FileSystemWatcher
 
@@ -169,13 +171,15 @@ namespace Moto_Logo
             {
                 if (size >= size2)
                 {
-                    MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker");
                     return true;
                 }
             }
             else
             {
-                MessageBox.Show("Wrong image type! Image type allowed: \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError("Wrong image type! Image type allowed: \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker");
                 return true;
             }
             return false;
@@ -311,7 +315,8 @@ namespace Moto_Logo
             }
             else
             {
-                MessageBox.Show(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowWarning(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
         }
@@ -334,7 +339,7 @@ namespace Moto_Logo
             #endregion DisableControls
         }
 
-        public void CallReloadItems(string message, string logomessage)
+        public void Reload()
         {
             #region Reload
             textBoxSearchDevice.Text = "";
@@ -373,15 +378,15 @@ namespace Moto_Logo
             _deviceLogoBinContents.Clear();
             Init_cboMoto(res_man.GetString("DevicesCustom", cul), 720, 1080, 4194304, 0x3FFFFFFF);
             cboMoto.SelectedIndex = 0;
-            cboMoto_SelectedIndexChanged(null, null);
+            //cboMoto_SelectedIndexChanged(null, null);
             picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
             _BackColor = pictureBox1.BackColor;
             _ZoomFactor = trbZoomFactor.Value;
             lblZoomFactor.Text = string.Format("x{0}", _ZoomFactor);
             pictureBoxColors.Image = new Bitmap(1, 1);
-            Properties.Profiles.Default.LogoName = logomessage;
+            Properties.Profiles.Default.LogoName = "";
             textLogoName.Text = Properties.Profiles.Default.LogoName;
-            txtComments.Text = message;
+            txtComments.Text = "";
             txtLogoInternalFile.Text = "";
             labelColorDraw.Text = "RGB: ";
             toolStripStatusLabel1.Text = "";
@@ -405,13 +410,6 @@ namespace Moto_Logo
                 _OriginalImage = pictureBox1.Image;
             }
             ResizeAndDisplayImage();
-            #endregion Reload
-        }
-
-        public void Reload()
-        {
-            #region Reload
-            CallReloadItems("", "logo");
             #endregion Reload
         }
     }

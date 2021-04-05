@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 03-03-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -27,10 +27,12 @@ using System.Windows.Forms;
 using Image = System.Drawing.Image;
 using Timer = System.Windows.Forms.Timer;
 using TreeNode = System.Windows.Forms.TreeNode;
+using DarkUI.Forms;
+using System.Media;
 
 namespace Moto_Logo
 {
-    public partial class MainForm : Form
+    public partial class MainForm : DarkForm
     {
         private static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
         private string userdesktoppath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -54,16 +56,11 @@ namespace Moto_Logo
         public MainForm()
         {
             #region Settings
-
             InitializeComponent();
 
             CheckForIllegalCrossThreadCalls = false;
-            this.FormBorderStyle = FormBorderStyle.None;
             this.DoubleBuffered = true;
-            this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.KeyPreview = true;
-
-            OnLoad(null);
 
             CheckDLL.dll();
             CheckFiles.files();
@@ -80,30 +77,16 @@ namespace Moto_Logo
             }
             Properties.Settings.Default.Save();
 
-            if (Properties.Settings.Default.Theme == "dark")
-            {
-                Dark();
-                pictureBox1.BackColor = Color.FromArgb(38, 38, 38);
-                picZoom.BackColor = Color.FromArgb(38, 38, 38);
-            }
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                Light();
-                pictureBox1.BackColor = Color.Lavender;
-                picZoom.BackColor = Color.Lavender;
-            }
-
             Translations();
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                ToolTitle.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
+                this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
                 checkForUpdatesToolStripMenuItem.Enabled = false;
             }
             else
             {
-                ToolTitle.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " -" + OSArchitecture.Get();
+                this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " -" + OSArchitecture.Get();
                 if (Properties.Settings.Default.Updates == true)
                 {
                     CheckForUpdates();
@@ -111,9 +94,6 @@ namespace Moto_Logo
             }
 
             FileSystemWatcherErrorLogs();
-
-            // 24-12
-            DayRender();
 
             this.backgroundWorkerLogBuild = new BackgroundWorker();
             this.backgroundWorkerLogBuild.DoWork += new DoWorkEventHandler(this.backgroundWorkerLogBuild_DoWork);
@@ -132,7 +112,6 @@ namespace Moto_Logo
             textLogoName.Enabled = false;
             txtLogoBuildPath.Enabled = false;
             btnAttachPath.Enabled = false;
-            labelLicenseTimer.Hide();
 
             _ZoomFactor = trbZoomFactor.Value;
             _BackColor = pictureBox1.BackColor;
@@ -140,65 +119,16 @@ namespace Moto_Logo
 
             if (Properties.Settings.Default.IsMax == true)
             {
-                if (File.Exists(exePath + @"\Files\Images\Icons\Fullscreen2.png"))
-                {
-                    btnMaximize.Image = Image.FromFile(exePath + @"\Files\Images\Icons\Fullscreen2.png");
-                }
-                else
-                {
-                    btnMaximize.Image = Resources.Fullscreen2;
-                }
                 this.WindowState = FormWindowState.Maximized;
             }
             else
             {
-                if (File.Exists(exePath + @"\Files\Images\Icons\Fullscreen.png"))
-                {
-                    btnMaximize.Image = Image.FromFile(exePath + @"\Files\Images\Icons\Fullscreen.png");
-                }
-                else
-                {
-                    btnMaximize.Image = Resources.Fullscreen;
-                }
                 this.WindowState = FormWindowState.Normal;
                 this.StartPosition = FormStartPosition.CenterScreen;
             }
             Reload();
             #endregion Settings
         }
-
-        #region renderEvents
-        private void DayRender()
-        {
-            if (DateTime.Today.Month == 12 || DateTime.Today.Month == 1 && DateTime.Today.Day == 1)
-            {
-                Image f = Properties.Resources.fireworks;
-                pictureBoxFireworks.Show();
-                pictureBoxFireworks.Image = f;
-                pictureBoxFireworks.Parent = labelMainIconTool;
-                pictureBoxFireworks.BackColor = Color.Transparent;
-                pictureBoxFireworks.BringToFront();
-                pictureBoxMotoGif.Show();
-            }
-            else
-            {
-                pictureBoxMotoGif.Hide();
-                pictureBoxFireworks.Hide();
-                Controls.Remove(pictureBoxFireworks);
-                Controls.Remove(pictureBoxMotoGif);
-            }
-
-            if (DateTime.Today.Month == 10 || DateTime.Today.Month == 10 && DateTime.Today.Day == 31)
-            {
-                pictureBoxMotoGifHallo.Show();
-            }
-            else
-            {
-                pictureBoxMotoGifHallo.Hide();
-                Controls.Remove(pictureBoxMotoGifHallo);
-            }
-        }
-        #endregion renderEvents
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -212,7 +142,7 @@ namespace Moto_Logo
                 Properties.Settings.Default.LogoWasSaved = false;
                 Properties.Settings.Default.LogoBinOpen = "";
                 Properties.Settings.Default.Save();
-            }            
+            }
             if (Properties.Settings.Default.LogoBinOpenSave == true)
             {
                 if (Properties.Settings.Default.LogoBinOpen == "")
@@ -229,7 +159,7 @@ namespace Moto_Logo
                     switch (answer)
                     {
                         case DialogResult.Yes:
-                            ToolTitle.Text = "Opening logo: " + Properties.Settings.Default.LogoBinOpen + " Please wait...";
+                            this.Text = "Opening logo: " + Properties.Settings.Default.LogoBinOpen + " Please wait...";
                             OpenFile(Properties.Settings.Default.LogoBinOpen);
                             txtComments.Enabled = true;
                             cboMoto.Enabled = true;
@@ -265,7 +195,8 @@ namespace Moto_Logo
             #region OpenLogoFile
             if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
             {
-                MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
             else
@@ -273,7 +204,7 @@ namespace Moto_Logo
                 var selectdevicetest = new SelectDevice();
                 selectdevicetest.Show();
                 return;
-            }           
+            }
             #endregion OpenLogoFile
         }
 
@@ -287,7 +218,8 @@ namespace Moto_Logo
                 if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
-                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
                     return;
                 }
                 else
@@ -317,22 +249,29 @@ namespace Moto_Logo
             {
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
-                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
                     return;
                 }
                 else
                 {
-                    MessageBox.Show("If you want to open a custom logo, just drag and drop the file into Tool!", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowInformation("If you want to open a custom logo, just drag and drop the file into Tool!", "Moto_Boot_Logo_Maker");
                 }
                 return;
             }
             #endregion OpenLogoFileAdmin
         }
 
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker");
-        }      
+        }
 
         private void buttonAppend_Click(object sender, EventArgs e)
         {
@@ -762,7 +701,8 @@ namespace Moto_Logo
             {
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
-                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
                     return;
                 }
                 else
@@ -790,15 +730,20 @@ namespace Moto_Logo
             }
         }
 
-        #region CloseTool
-        private void CloseToolSaveData(FormClosingEventArgs e)
+        private void testLogoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var l = new LogoTest();
+            l.Show();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             #region ExitToolSaveData
             var openfilename = Properties.Settings.Default.LogoBinOpen;
-            string closeadb = "adb"; 
+            string closeadb = "adb";
             string closefastboot = "fastboot";
             string closetool = "Moto_Boot_Logo_Maker";
-          
+
             if (Properties.Settings.Default.LogoWasSaved == true)
             {
                 timerupdates.Stop();
@@ -843,7 +788,7 @@ namespace Moto_Logo
                         process.Kill();
                     }
                 }
-               
+
                 if (dialogResult == DialogResult.No)
                 {
                     try
@@ -852,8 +797,9 @@ namespace Moto_Logo
                     }
                     catch (Exception er)
                     {
-                        Logs.DebugErrorLogs(er);
-                        MessageBox.Show(er.ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Logs.DebugErrorLogs(er); 
+                        SystemSounds.Hand.Play();
+                        DarkMessageBox.ShowError(er.ToString(), "");
                     }
                 }
             }
@@ -879,66 +825,5 @@ namespace Moto_Logo
             }
             #endregion ExitToolSaveData         
         }
-
-        protected void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            #region ExitTool         
-            CloseToolSaveData(e);
-            #endregion ExitTool
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            MainForm_FormClosing(sender, null);
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                if (File.Exists(exePath + @"\Files\Images\Icons\Fullscreen.png"))
-                {
-                    btnMaximize.Image = Image.FromFile(exePath + @"\Files\Images\Icons\Fullscreen.png");
-                }
-                else
-                {
-                    btnMaximize.Image = Resources.Fullscreen;
-                }
-                this.WindowState = FormWindowState.Normal;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.CenterToScreen();
-                pictureBox1.Refresh();
-                pictureBox1.Update();
-                pictureBox1.ResumeLayout();
-                Properties.Settings.Default.IsMax = false;
-                Properties.Settings.Default.Save();
-            }
-            else
-            {
-                if (File.Exists(exePath + @"\Files\Images\Icons\Fullscreen2.png"))
-                {
-                    btnMaximize.Image = Image.FromFile(exePath + @"\Files\Images\Icons\Fullscreen2.png");
-                } 
-                else
-                {
-                    btnMaximize.Image = Resources.Fullscreen2;
-                }
-                this.WindowState = FormWindowState.Maximized;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.CenterToScreen();
-                pictureBox1.Refresh();
-                pictureBox1.Update();
-                pictureBox1.ResumeLayout();
-                Properties.Settings.Default.IsMax = true;
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-        #endregion CloseTool
-
     }
 }

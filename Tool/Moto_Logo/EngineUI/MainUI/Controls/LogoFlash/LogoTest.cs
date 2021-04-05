@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoTest.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 05-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -14,17 +14,18 @@
 using RegawMOD.Android;
 using System;
 using System.Diagnostics;
-using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DarkUI.Forms;
+using System.Media;
 
 namespace Moto_Logo
 {
-    public partial class LogoTest : Form
+    public partial class LogoTest : DarkForm
     {
         public CultureInfo cul;
         public ResourceManager res_man;
@@ -42,10 +43,6 @@ namespace Moto_Logo
             groupBox2.Hide();
             groupBox1.Hide();
             buttonsavelogs.Hide();
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                LighTheme();
-            }
         }
 
         private async void LogoTest_Load(object sender, EventArgs e)
@@ -71,24 +68,7 @@ namespace Moto_Logo
             isConnected();
             progress.Report(100);
         }
-
-        #region theme
-
-        private void LighTheme()
-        {
-            this.BackColor = Color.FromArgb(255, 255, 255);
-            this.ForeColor = Color.FromArgb(38, 38, 38);
-
-            groupBox2.BackColor = groupBox1.BackColor = console.BackColor = Color.FromArgb(255, 255, 255);
-            groupBox2.ForeColor = groupBox1.ForeColor = console.ForeColor = Color.FromArgb(38, 38, 38);
-
-            buttonsavelogs.FlatStyle = buttonFlashLogo.FlatStyle = FlatStyle.Flat;
-            buttonsavelogs.BackColor = buttonFlashLogo.BackColor = Color.FromArgb(255, 255, 255);
-            buttonsavelogs.ForeColor = buttonFlashLogo.ForeColor = Color.FromArgb(38, 38, 38);
-        }
-
-        #endregion theme
-
+        
         public void cAppend(string message)
         {
             this.Invoke((Action)delegate
@@ -121,7 +101,8 @@ namespace Moto_Logo
             {
                 if (radioButtonA.Checked == false && radioButtonAB.Checked == false)
                 {
-                    MessageBox.Show(res_man.GetString("LogoTestSelectYourDP", cul), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    SystemSounds.Exclamation.Play();
+                    DarkMessageBox.ShowWarning(res_man.GetString("LogoTestSelectYourDP", cul), "");
                     return;
                 }
                 else
@@ -162,13 +143,15 @@ namespace Moto_Logo
                                     }
                                     else
                                     {
-                                        MessageBox.Show(res_man.GetString("LogoTestDeviceError", cul), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        SystemSounds.Exclamation.Play();
+                                        DarkMessageBox.ShowWarning(res_man.GetString("LogoTestDeviceError", cul), "");
                                         return;
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show(res_man.GetString("LogTestWrongBin", cul) + " " + path, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    SystemSounds.Exclamation.Play();
+                                    DarkMessageBox.ShowWarning(res_man.GetString("LogTestWrongBin", cul) + " " + path, "");
                                     return;
                                 }
                             }
@@ -176,7 +159,8 @@ namespace Moto_Logo
                         }
                         else
                         {
-                            MessageBox.Show(res_man.GetString("LogoTestMoveThis", cul) + @" - C:\adb\", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            SystemSounds.Exclamation.Play();
+                            DarkMessageBox.ShowWarning(res_man.GetString("LogoTestMoveThis", cul) + @" - C:\adb\", "");
                             Process.Start(@"C:\adb\");
                             return;
                         }
@@ -212,7 +196,8 @@ namespace Moto_Logo
                                         cAppend("Flashing logo_a...");
                                         Fastboot.ExecuteFastbootCommand(Fastboot.FormFastbootCommand(" flash logo_a " + openFileDialog1.FileName.ToString()));
                                         cAppend("Flashing logo_a... {OK}");
-                                        MessageBox.Show(res_man.GetString("LogoTestLogoB", cul), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        SystemSounds.Exclamation.Play();
+                                        DarkMessageBox.ShowInformation(res_man.GetString("LogoTestLogoB", cul), "");
                                         openFileDialog2.InitialDirectory = @"C:\adb\";
                                         openFileDialog2.Title = "Logo.bin";
                                         openFileDialog2.Filter = @"Logo Files|*.bin";
@@ -228,19 +213,22 @@ namespace Moto_Logo
                                         }
                                         else
                                         {
-                                            MessageBox.Show(res_man.GetString("LogTestWrongBin", cul) + " " + path, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                            SystemSounds.Exclamation.Play();
+                                            DarkMessageBox.ShowWarning(res_man.GetString("LogTestWrongBin", cul) + " " + path, "");
                                             return;
                                         }
                                     }
                                     else
                                     {
-                                        MessageBox.Show(res_man.GetString("LogoTestDeviceError", cul), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        SystemSounds.Exclamation.Play();
+                                        DarkMessageBox.ShowWarning(res_man.GetString("LogoTestDeviceError", cul), "");
                                         return;
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show(res_man.GetString("LogTestWrongBin", cul) + " " + path, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    SystemSounds.Exclamation.Play();
+                                    DarkMessageBox.ShowWarning(res_man.GetString("LogTestWrongBin", cul) + " " + path, "");
                                     return;
                                 }
                             }
@@ -248,7 +236,8 @@ namespace Moto_Logo
                         }
                         else
                         {
-                            MessageBox.Show(res_man.GetString("LogoTestMoveThis", cul) + @" - C:\adb\", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            SystemSounds.Exclamation.Play();
+                            DarkMessageBox.ShowWarning(res_man.GetString("LogoTestMoveThis", cul) + @" - C:\adb\", "");
                             Process.Start(@"C:\adb\");
                             return;
                         }
@@ -257,8 +246,9 @@ namespace Moto_Logo
             }
             catch (Exception ex)
             {
-                Logs.DebugErrorLogs(ex);
-                MessageBox.Show(@"" + ex.ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logs.DebugErrorLogs(ex); 
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(@"" + ex.ToString(), "");
                 cAppend("ERROR TASK {FLASHING}: " + ex.ToString());
             }
         }
@@ -273,7 +263,8 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 Logs.DebugErrorLogs(ex);
-                MessageBox.Show(res_man.GetString("LogoTestSaveLogsBTN", cul) + ": " + ex.ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(res_man.GetString("LogoTestSaveLogsBTN", cul) + ": " + ex.ToString(), "");
                 cAppend("ERROR TASK {SAVING LOGS}: " + ex.ToString());
             }
         }

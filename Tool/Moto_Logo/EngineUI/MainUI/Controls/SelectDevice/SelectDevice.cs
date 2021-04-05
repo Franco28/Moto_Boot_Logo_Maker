@@ -2,7 +2,7 @@
 #####################################################################
 #    File: SelectDevice.cs                                          #
 #    Author: Franco28                                               # 
-#    Date: 06-03-2021                                               #
+#    Date: 04-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -18,11 +18,12 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Resources;
-using System.Linq;
+using DarkUI.Forms;
+using System.Media;
 
 namespace Moto_Logo
 {
-    public partial class SelectDevice : Form
+    public partial class SelectDevice : DarkForm
     {
         public CultureInfo cul;
         public ResourceManager res_man;
@@ -30,46 +31,13 @@ namespace Moto_Logo
         public SelectDevice()
         {
             InitializeComponent();
-            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                this.BackColor = Color.FromArgb(255, 255, 255);
-                this.ForeColor = Color.FromArgb(0, 0, 0);
-
-                foreach (PictureBox pic in Controls.OfType<PictureBox>())
-                {
-                    pic.BackColor = Color.FromArgb(255, 255, 255);
-                }
-
-                foreach (Panel pan in Controls.OfType<Panel>())
-                {
-                    pan.BackColor = Color.FromArgb(255, 255, 255);
-                    pan.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-
-                foreach (Label label in Controls.OfType<Label>())
-                {
-                    label.BackColor = Color.FromArgb(255, 255, 255);
-                    label.ForeColor = Color.FromArgb(0, 0, 0);
-                }
-
-                label5.ForeColor = label1.ForeColor = label2.ForeColor = label7.ForeColor = label3.ForeColor = label4.ForeColor = label6.ForeColor = label8.ForeColor = Color.Lime;
-            }
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));           
         }
 
         public void Round(Panel panel) 
         {
             using (var gp = new GraphicsPath())
             {
-                if (Properties.Settings.Default.Theme == "dark")
-                {
-                    panel.BackColor = Color.FromArgb(44, 44, 44);
-                } 
-                else
-                {
-                    panel.BackColor = Color.FromArgb(235, 237, 240);
-                }
                 Rectangle r = new Rectangle(0, 0, panel.Width, panel.Height);
                 int d = 50;
                 gp.AddArc(r.X, r.Y, d, d, 180, 90);
@@ -84,14 +52,6 @@ namespace Moto_Logo
         {
             using (var gp = new GraphicsPath())
             {
-                if (Properties.Settings.Default.Theme == "dark")
-                {
-                    picturebox.BackColor = Color.FromArgb(44, 44, 44);
-                }
-                else
-                {
-                    picturebox.BackColor = Color.FromArgb(235, 237, 240);
-                }
                 Rectangle r = new Rectangle(0, 0, picturebox.Width, picturebox.Height);
                 int d = 50;
                 gp.AddArc(r.X, r.Y, d, d, 180, 90);
@@ -106,14 +66,6 @@ namespace Moto_Logo
         {
             using (var gp = new GraphicsPath())
             {
-                if (Properties.Settings.Default.Theme == "dark")
-                {
-                    form.BackColor = Color.FromArgb(38, 38, 38);
-                }
-                else
-                {
-                    form.BackColor = Color.FromArgb(255, 255, 255);
-                }
                 Rectangle r = new Rectangle(0, 0, form.Width, form.Height);
                 int d = 50;
                 gp.AddArc(r.X, r.Y, d, d, 180, 90);
@@ -147,7 +99,6 @@ namespace Moto_Logo
 
         private void SelectDevice_Load(object sender, EventArgs e)
         {
-            RoundF(this);
             RoundP(pictureBoxMotoG);
             RoundP(pictureBoxMotoX);
             RoundP(pictureBoxMotoDroid);
@@ -206,7 +157,8 @@ namespace Moto_Logo
             if (mainform.radioButton4mib.Checked == true)
             {
                 labelLogoMemory.Text = @"Logo Memory: 4MB";
-                
+                this.Text = @"Select your device - Logo Memory: 4MB";
+
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
                 panelMotoDroid.Cursor = Cursors.Hand;
@@ -227,6 +179,7 @@ namespace Moto_Logo
             if (mainform.radioButton6MIB.Checked == true)
             {
                 labelLogoMemory.Text = @"Logo Memory: 6MB";
+                this.Text = @"Select your device - Logo Memory: 6MB";
 
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
@@ -240,6 +193,7 @@ namespace Moto_Logo
             if (mainform.radioButton8MIB.Checked == true)
             {
                 labelLogoMemory.Text = @"Logo Memory: 8MB";
+                this.Text = @"Select your device - Logo Memory: 8MB";
 
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
@@ -253,6 +207,7 @@ namespace Moto_Logo
             if (mainform.radioButton16MIB.Checked == true)
             {
                 labelLogoMemory.Text = @"Logo Memory: 16MB";
+                this.Text = @"Select your device - Logo Memory: 16MB";
 
                 pictureBoxMotoE.Enabled = true;
                 pictureBoxMotoE.Cursor = Cursors.Hand;
@@ -282,6 +237,7 @@ namespace Moto_Logo
             if (mainform.radioButton32MIB.Checked == true)
             {
                 labelLogoMemory.Text = "Logo Memory: 32MB";
+                this.Text = @"Select your device - Logo Memory: 32MB";
 
                 pictureBoxMotoG.Enabled = true;
                 pictureBoxMotoG.Cursor = Cursors.Hand;
@@ -303,11 +259,6 @@ namespace Moto_Logo
                 pictureBoxMotoZ.Cursor = Cursors.Hand;
                 panelMotoZ.Cursor = Cursors.Hand;
             }
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void pictureBoxMotoDroid_MouseHover(object sender, EventArgs e)
@@ -395,7 +346,8 @@ namespace Moto_Logo
             Form fc = Application.OpenForms["LogoBrowser"];
             if (fc != null)
             {
-                MessageBox.Show("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowWarning("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened");
                 fc.BringToFront();
             } 
             else

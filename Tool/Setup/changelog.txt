@@ -3,10 +3,14 @@
 #####################
 
 ---------------------------------------
-v4.4.3.4 - Released April xx, 2021 - WIP
+v4.4.3.4 - Released April 05, 2021
 ---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
 - [fixed] In some Windows versions, Tool can´t get .NetFramework version from registry
+- [fixed] Select device MotoP
 - [updated] HtmlAgilityPack dll & Newtonsoft.Json dll
+- [new] Added new UI, thanks to DarkUI dll (Robin Perris)
 
 ---------------------------------------
 v4.4.3.3 - Released March 20, 2021

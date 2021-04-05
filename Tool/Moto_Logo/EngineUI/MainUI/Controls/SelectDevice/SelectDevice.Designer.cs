@@ -60,15 +60,14 @@ namespace Moto_Logo
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panelMotoZ = new System.Windows.Forms.Panel();
             this.pictureBoxMotoZ = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panelMotoP = new System.Windows.Forms.Panel();
             this.pictureBoxMotoP = new System.Windows.Forms.PictureBox();
-            this.labelLogoMemory = new System.Windows.Forms.Label();
             this.binlogo = new System.Windows.Forms.Label();
+            this.labelLogoMemory = new DarkUI.Controls.DarkTitle();
             this.panelMotoG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMotoG)).BeginInit();
             this.panelMotoX.SuspendLayout();
@@ -89,7 +88,7 @@ namespace Moto_Logo
             // 
             // panelMotoG
             // 
-            this.panelMotoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoG.Controls.Add(this.pictureBoxMotoG);
             this.panelMotoG.Location = new System.Drawing.Point(298, 85);
             this.panelMotoG.Margin = new System.Windows.Forms.Padding(2);
@@ -114,7 +113,7 @@ namespace Moto_Logo
             // 
             // panelMotoX
             // 
-            this.panelMotoX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoX.Controls.Add(this.pictureBoxMotoX);
             this.panelMotoX.Location = new System.Drawing.Point(9, 411);
             this.panelMotoX.Margin = new System.Windows.Forms.Padding(2);
@@ -139,7 +138,7 @@ namespace Moto_Logo
             // 
             // panelMotoOne
             // 
-            this.panelMotoOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoOne.Controls.Add(this.pictureBoxMotoOne);
             this.panelMotoOne.Location = new System.Drawing.Point(584, 411);
             this.panelMotoOne.Margin = new System.Windows.Forms.Padding(2);
@@ -164,7 +163,7 @@ namespace Moto_Logo
             // 
             // panelMotoEdge
             // 
-            this.panelMotoEdge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoEdge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoEdge.Controls.Add(this.pictureBoxMotoEdge);
             this.panelMotoEdge.Location = new System.Drawing.Point(296, 411);
             this.panelMotoEdge.Margin = new System.Windows.Forms.Padding(2);
@@ -189,7 +188,7 @@ namespace Moto_Logo
             // 
             // panelMotoDroid
             // 
-            this.panelMotoDroid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoDroid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoDroid.Controls.Add(this.pictureBoxMotoDroid);
             this.panelMotoDroid.Location = new System.Drawing.Point(11, 85);
             this.panelMotoDroid.Margin = new System.Windows.Forms.Padding(2);
@@ -214,7 +213,7 @@ namespace Moto_Logo
             // 
             // panelMotoE
             // 
-            this.panelMotoE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoE.Controls.Add(this.pictureBoxMotoE);
             this.panelMotoE.Location = new System.Drawing.Point(586, 85);
             this.panelMotoE.Margin = new System.Windows.Forms.Padding(2);
@@ -321,16 +320,6 @@ namespace Moto_Logo
             this.label6.Text = "Moto One";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnExit
-            // 
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1115, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(41, 37);
-            this.btnExit.TabIndex = 164;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -347,7 +336,7 @@ namespace Moto_Logo
             // 
             // panelMotoZ
             // 
-            this.panelMotoZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoZ.Controls.Add(this.pictureBoxMotoZ);
             this.panelMotoZ.Location = new System.Drawing.Point(873, 85);
             this.panelMotoZ.Margin = new System.Windows.Forms.Padding(2);
@@ -386,7 +375,7 @@ namespace Moto_Logo
             // 
             // panelMotoP
             // 
-            this.panelMotoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.panelMotoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.panelMotoP.Controls.Add(this.pictureBoxMotoP);
             this.panelMotoP.Location = new System.Drawing.Point(871, 411);
             this.panelMotoP.Margin = new System.Windows.Forms.Padding(2);
@@ -409,37 +398,38 @@ namespace Moto_Logo
             this.pictureBoxMotoP.MouseLeave += new System.EventHandler(this.pictureBoxMotoP_MouseLeave);
             this.pictureBoxMotoP.MouseHover += new System.EventHandler(this.pictureBoxMotoP_MouseHover);
             // 
-            // labelLogoMemory
-            // 
-            this.labelLogoMemory.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.labelLogoMemory.Location = new System.Drawing.Point(70, 12);
-            this.labelLogoMemory.Name = "labelLogoMemory";
-            this.labelLogoMemory.Size = new System.Drawing.Size(1039, 36);
-            this.labelLogoMemory.TabIndex = 169;
-            this.labelLogoMemory.Text = "Logo Memory: ";
-            // 
             // binlogo
             // 
             this.binlogo.Cursor = System.Windows.Forms.Cursors.Default;
             this.binlogo.Image = ((System.Drawing.Image)(resources.GetObject("binlogo.Image")));
-            this.binlogo.Location = new System.Drawing.Point(8, 4);
+            this.binlogo.Location = new System.Drawing.Point(4, 2);
             this.binlogo.Name = "binlogo";
             this.binlogo.Size = new System.Drawing.Size(56, 44);
             this.binlogo.TabIndex = 170;
+            // 
+            // labelLogoMemory
+            // 
+            this.labelLogoMemory.AutoSize = true;
+            this.labelLogoMemory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelLogoMemory.Location = new System.Drawing.Point(66, 13);
+            this.labelLogoMemory.Name = "labelLogoMemory";
+            this.labelLogoMemory.Size = new System.Drawing.Size(143, 25);
+            this.labelLogoMemory.TabIndex = 172;
+            this.labelLogoMemory.Text = "Logo Memory: ";
+            this.labelLogoMemory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SelectDevice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(1167, 711);
-            this.Controls.Add(this.binlogo);
             this.Controls.Add(this.labelLogoMemory);
+            this.Controls.Add(this.binlogo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panelMotoP);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panelMotoZ);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -453,10 +443,12 @@ namespace Moto_Logo
             this.Controls.Add(this.panelMotoOne);
             this.Controls.Add(this.panelMotoX);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SelectDevice";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select your device";
             this.Load += new System.EventHandler(this.SelectDevice_Load);
@@ -501,14 +493,13 @@ namespace Moto_Logo
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label btnExit;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panelMotoZ;
         private System.Windows.Forms.PictureBox pictureBoxMotoZ;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panelMotoP;
         private System.Windows.Forms.PictureBox pictureBoxMotoP;
-        private System.Windows.Forms.Label labelLogoMemory;
         private System.Windows.Forms.Label binlogo;
+        private DarkUI.Controls.DarkTitle labelLogoMemory;
     }
 }
