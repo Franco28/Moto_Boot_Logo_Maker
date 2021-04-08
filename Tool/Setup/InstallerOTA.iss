@@ -88,11 +88,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
 #define VCLStylesSkinPath "{localappdata}\VCLStylesSkin"
 [Files]
 Source: "SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
-Source: "SetupTheme\Windows10Dark.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
+Source: "SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
 Source: "SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
-Source: "SetupTheme\Windows10Dark.vsf"; DestDir: "{app}"; Flags: dontcopy
+Source: "SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
@@ -146,8 +146,8 @@ procedure UnLoadVCLStyles_UnInstall; external 'UnLoadVCLStyles@{#VCLStylesSkinPa
 
 function InitializeSetup(): Boolean;
 begin
- ExtractTemporaryFile('Windows10Dark.vsf');
- LoadVCLStyle(ExpandConstant('{tmp}\Windows10Dark.vsf'));
+ ExtractTemporaryFile('Glossy.vsf');
+ LoadVCLStyle(ExpandConstant('{tmp}\Glossy.vsf'));
  Result := True;
 end;
 
@@ -159,7 +159,7 @@ end;
 function InitializeUninstall: Boolean;
 begin
   Result := True;
-  LoadVCLStyle_UnInstall(ExpandConstant('{#VCLStylesSkinPath}\Windows10Dark.vsf'));
+  LoadVCLStyle_UnInstall(ExpandConstant('{#VCLStylesSkinPath}\Glossy.vsf'));
 end;
 
 procedure DeinitializeUninstall();
