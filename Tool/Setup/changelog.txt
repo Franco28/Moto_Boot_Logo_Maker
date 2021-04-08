@@ -10,6 +10,7 @@ NOTE: Some translations are missing, I will be working on this, for now still in
 - [fixed] Missing dll in FileManager
 - [fixed] Missing dark Message Boxes
 - [fixed] In some Windows versions, Tool can´t get .NetFramework version from registry
+- [fixed] Exit event when logo is open
 
 ---------------------------------------
 v4.4.3.4 - Released April 05, 2021

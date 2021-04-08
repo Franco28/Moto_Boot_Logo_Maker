@@ -4,7 +4,7 @@
 
 # Getting Started (Read all please!)
 
-## First of all, im not responsible of any device damage, you are accepting a license when you install the Tool and you are using this at your own risk!
+## First of all, im not responsible of any device damage, you are accepting a license when you install the Tool, and you are using this at your own risk!
 
 ### Moto Boot Logo Maker for Motorola Moto Devices (4MiB, 6MiB, 8MiB, 16MiB & 32MiB) 
 
@@ -14,34 +14,32 @@
 
 #
 
-#### * [Downloads](https://github.com/Franco28/Moto_Boot_Logo_Maker#downloads) 
-#### * [Contact](https://github.com/Franco28/Moto_Boot_Logo_Maker#contact) 
-
 ## Prerequisites Windows
-- You must have NetFramework 4+ installed on your PC * [Net Framework](https://dotnet.microsoft.com/download) 
+- You must have .Net Framework 4.8 installed on your PC (Select .NET Framework 4.8 Runtime) * [.Net Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) 
 - Windows 7+ x64 (64) or x86 (32) Bits
 
 ## Install
 - Start the "Moto_Boot_Logo_Maker_x.x.x_Setup.exe"
-- The installer will create a desktop shortcut and in Windows app will create a folder with the tool inside. 
+- The installer will create a desktop shortcut and in Windows app will create a folder, with the tool inside. 
 
 ## How it works
 - The installation will create a "Moto_Boot_Logo_Maker" shortcut on desktop
 - When you launch the Tool on the first time this will:
 
--- unpack on "C:\Users\%USERNAME%\AppData\Local\Franco28\ -> (Tool Settings)
--- unpack on "C:\adb\" -> (ADB&FASTBOOT)
--- unpack on "C:\NewMotoLogo\" --> future builds of logos, you can change this!
+-- unpack on "C:\\Users\\%USERNAME%\\AppData\\Local\\Franco28\\ -> (Tool Settings)
+-- unpack on "C:\\adb\\" -> (ADB & FASTBOOT)
+-- unpack on "C:\\NewMotoLogo\\" -> default folder to save logo build, you can change this!
 
--- Then you are free to load any logo and change logo images!
+-- Then, you are free to load any logo and change logo images!
 
+-- If you want portable version, just select portable option on installer!
 
 ## Downloads SF
 
 #### Download Moto_Boot_Logo_Maker v4.4.3.5 (08-04-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.5_Setup.exe) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker v4.4.3.5 (08-04-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=2188818919693778392) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.5 (08-04-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=2188818919693778483) 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt) 
 
@@ -78,5 +76,6 @@
 
 ## Credits
 #### Thanks to [CaitSith2](https://github.com/CaitSith2/MotoBootLogoMaker) main Tool creator!
-#### Thanks to [regaw-leinad](https://github.com/regaw-leinad/AndroidLib) for this Android lib!
-#### Thanks to [rbsoft](https://github.com/ravibpatel/AutoUpdater.NET) for this Update lib!
+#### Thanks to [regaw-leinad](https://github.com/regaw-leinad/AndroidLib) for AndroidLib dll!
+#### Thanks to [rbsoft](https://github.com/ravibpatel/AutoUpdater.NET) for AutoUpdater dll!
+#### Thanks to [RobinPerris](https://github.com/RobinPerris/DarkUI) for DarkUI!

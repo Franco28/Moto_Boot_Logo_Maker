@@ -787,17 +787,17 @@ namespace Moto_Logo
                     {
                         process.Kill();
                     }
-                }
-
-                if (dialogResult == DialogResult.No)
+                } 
+                else if (dialogResult == DialogResult.No)
                 {
                     try
                     {
+                        e.Cancel = true;
                         return;
                     }
                     catch (Exception er)
                     {
-                        Logs.DebugErrorLogs(er); 
+                        Logs.DebugErrorLogs(er);
                         SystemSounds.Hand.Play();
                         DarkMessageBox.ShowError(er.ToString(), "");
                     }
