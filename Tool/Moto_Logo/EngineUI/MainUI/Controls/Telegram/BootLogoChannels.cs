@@ -2,7 +2,7 @@
 #####################################################################
 #    File: BootLogoChannels.cs                                      #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 08-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,18 +11,12 @@
 #####################################################################
  */
 
-using System.Drawing;
-using System.Globalization;
-using System.Resources;
-using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
-    public partial class BootLogoChannels : Form
+    public partial class BootLogoChannels : DarkForm
     {
-        public CultureInfo cul;
-        public ResourceManager res_man;
-
         public BootLogoChannels()
         {
             InitializeComponent();

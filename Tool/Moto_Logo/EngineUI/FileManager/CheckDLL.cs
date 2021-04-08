@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckDLL.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 08-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,8 +11,9 @@
 #####################################################################
  */
 
+using DarkUI.Forms;
 using System.IO;
-using System.Windows.Forms;
+using System.Media;
 
 namespace Moto_Logo
 {
@@ -22,7 +23,8 @@ namespace Moto_Logo
 
         public static void openform(string filemissing)
         {
-            MessageBox.Show(@"DLL: " + filemissing + " is missing, downloading...", "Moto_Boot_Logo_Maker dll missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            SystemSounds.Hand.Play();
+            DarkMessageBox.ShowError(@"DLL: " + filemissing + " is missing, downloading...", "Moto_Boot_Logo_Maker dll " + filemissing + " missing...");
             var form = new ToolLibsDownload();
             form.ShowDialog();
         }
@@ -41,7 +43,14 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    return;
+                    if (!File.Exists(exePath + @"\DarkUI.dll"))
+                    {
+                        openform("DarkUI.dll");
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
         }

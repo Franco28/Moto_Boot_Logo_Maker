@@ -76,13 +76,13 @@ namespace Moto_Logo
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
 
-                try
+                if (ndpKey != null && ndpKey.GetValue("Release") != null)
                 {
                     cAppend("NetFramework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));
                 }
-                catch (ArgumentException ex)
+                else
                 {
-                    cAppend("NetFramework: Unable to reach out net framework version... " + ex);
+                    cAppend("NetFramework: Unable to reach out net framework version... ");
                 }
             }
 

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFiles.cs                                            #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 08-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,7 +13,8 @@
 
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
+using System.Media;
+using DarkUI.Forms;
 
 namespace Moto_Logo
 {
@@ -28,9 +29,36 @@ namespace Moto_Logo
 
         public static void openform(string filemissing)
         {
-            MessageBox.Show(@"Files from: " + filemissing + " are missing, downloading files again...", "Moto_Boot_Logo_Maker files missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            SystemSounds.Hand.Play();
+            DarkMessageBox.ShowError(@"Files from: " + filemissing + " are missing, downloading files again...", "Moto_Boot_Logo_Maker files from: " + filemissing + " missing...");
             var form = new CheckFilesDownload();
             form.ShowDialog();
+        }
+
+        public static long DirSize(DirectoryInfo d)
+        {
+            long size = 0;
+            FileInfo[] fis = d.GetFiles();
+            foreach (FileInfo fi in fis)
+            {
+                size += fi.Length;
+            }
+            DirectoryInfo[] dis = d.GetDirectories();
+            foreach (DirectoryInfo di in dis)
+            {
+                size += DirSize(di);
+            }
+            return size;
+        }
+
+        public static void CheckFSize(string dirpath, int size, string foldername)
+        {
+            if (DirSize(new DirectoryInfo(dirpath)) != size)
+            {
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(@"Something went wrong with sizes of folder: " + dirpath + ", downloading again files...", "Moto_Boot_Logo_Maker files size error...");
+                openform(foldername);
+            }
         }
 
         public static void files()
@@ -71,6 +99,12 @@ namespace Moto_Logo
                                 }
                                 else
                                 {
+                                    CheckFSize(exePath + @"\Files\LogoZip\", 208775, @"\Files\LogoZip\");
+                                    CheckFSize(exePath + @"\Files\Bin\4MB\", 5317710, @"\Files\Bin\4MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\6MB\", 3348696, @"\Files\Bin\6MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\8MB\", 12513554, @"\Files\Bin\8MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\16MB\", 81355343, @"\Files\Bin\16MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\32MB\", 93169590, @"\Files\Bin\32MB\");
                                     return;
                                 }
                             }

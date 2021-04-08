@@ -24,15 +24,13 @@ namespace Moto_Logo
             using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-
-                try
+                if (ndpKey != null && ndpKey.GetValue("Release") != null)
                 {
-                    Logs.DebugWindwosInfo("NetFramework: v" + CheckFor48DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
+                    Logs.DebugWindwosInfo($"NetFramework: v" + CheckFor48DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
                 }
-                catch (ArgumentException ex)
+                else
                 {
-                    Logs.DebugWindwosInfo("NetFramework: Unable to reach out net framework version... " + ex.ToString(), "OS: " + OSVersionInfo.Name.ToString());
-                    return;
+                    Logs.DebugWindwosInfo("NetFramework: Unable to reach out net framework version...", "OS: " + OSVersionInfo.Name.ToString());
                 }
             }
         }
