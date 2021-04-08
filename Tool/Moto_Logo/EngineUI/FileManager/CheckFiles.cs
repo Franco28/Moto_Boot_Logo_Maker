@@ -100,7 +100,7 @@ namespace Moto_Logo
                                 else
                                 {
                                     CheckFSize(exePath + @"\Files\LogoZip\", 208775, @"\Files\LogoZip\");
-                                    CheckFSize(exePath + @"\Files\Bin\4MB\", 5317710, @"\Files\Bin\4MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\4MB\", 5318719, @"\Files\Bin\4MB\");
                                     CheckFSize(exePath + @"\Files\Bin\6MB\", 3348696, @"\Files\Bin\6MB\");
                                     CheckFSize(exePath + @"\Files\Bin\8MB\", 12513554, @"\Files\Bin\8MB\");
                                     CheckFSize(exePath + @"\Files\Bin\16MB\", 81355343, @"\Files\Bin\16MB\");
