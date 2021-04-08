@@ -84,10 +84,15 @@ ja.RemoveToolSettings=Moto_Boot_Logo_Maker設定をすべて削除しますか�
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
-
-[Files]     
+    
+#define VCLStylesSkinPath "{localappdata}\VCLStylesSkin"
+[Files]
+Source: "SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
+Source: "SetupTheme\Windows10Dark.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
+Source: "SetupTheme\Windows10Dark.vsf"; DestDir: "{app}"; Flags: dontcopy
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
@@ -129,3 +134,35 @@ begin
         end;
   end;
 end;   
+
+// Visual Style   
+
+// Import the LoadVCLStyle function from VclStylesInno.DLL
+procedure LoadVCLStyle(VClStyleFile: String); external 'LoadVCLStyleW@files:VclStylesInno.dll stdcall setuponly';
+procedure LoadVCLStyle_UnInstall(VClStyleFile: String); external 'LoadVCLStyleW@{#VCLStylesSkinPath}\VclStylesInno.dll stdcall uninstallonly';
+// Import the UnLoadVCLStyles function from VclStylesInno.DLL
+procedure UnLoadVCLStyles; external 'UnLoadVCLStyles@files:VclStylesInno.dll stdcall setuponly';
+procedure UnLoadVCLStyles_UnInstall; external 'UnLoadVCLStyles@{#VCLStylesSkinPath}\VclStylesInno.dll stdcall uninstallonly';
+
+function InitializeSetup(): Boolean;
+begin
+ ExtractTemporaryFile('Windows10Dark.vsf');
+ LoadVCLStyle(ExpandConstant('{tmp}\Windows10Dark.vsf'));
+ Result := True;
+end;
+
+procedure DeinitializeSetup();
+begin
+	UnLoadVCLStyles;
+end;
+
+function InitializeUninstall: Boolean;
+begin
+  Result := True;
+  LoadVCLStyle_UnInstall(ExpandConstant('{#VCLStylesSkinPath}\Windows10Dark.vsf'));
+end;
+
+procedure DeinitializeUninstall();
+begin
+  UnLoadVCLStyles_UnInstall;
+end;
