@@ -27,7 +27,9 @@
 - When you launch the Tool on the first time this will:
 
 -- unpack on "C:\\Users\\%USERNAME%\\AppData\\Local\\Franco28\\ -> (Tool Settings)
+
 -- unpack on "C:\\adb\\" -> (ADB & FASTBOOT)
+
 -- unpack on "C:\\NewMotoLogo\\" -> default folder to save logo build, you can change this!
 
 -- Then, you are free to load any logo and change logo images!
