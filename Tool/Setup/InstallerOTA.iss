@@ -87,12 +87,12 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
     
 #define VCLStylesSkinPath "{localappdata}\VCLStylesSkin"
 [Files]
-Source: "SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
-Source: "SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
+Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
+Source: "..\SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
+Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
+Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
-Source: "SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
