@@ -148,7 +148,9 @@
     <Compile Include="EngineUI\FileManager\ToolLibsDownload.Designer.cs">
       <DependentUpon>ToolLibsDownload.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\IntefaceClasses\CheckAdmin.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\MainProgram\CheckAdmin.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\MainProgram\IniToolSettings.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\MainProgram\Kill.cs" />
     <Compile Include="EngineUI\Ionic\CommonSrc\CRC32.cs" />
     <Compile Include="EngineUI\Ionic\Zip\ComHelper.cs" />
     <Compile Include="EngineUI\Ionic\Zip\EncryptionAlgorithm.cs" />
@@ -278,10 +280,10 @@
     <Compile Include="EngineUI\MainUI\Controls\Telegram\TelegramChannels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\IntefaceClasses\CheckNetFamework.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\MessageBoxManager.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\OSArchitecture.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\OSVersionInfoClass.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OS\CheckNetFamework.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Others\MessageBoxManager.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OS\OSArchitecture.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OS\OSVersionInfoClass.cs" />
     <Compile Include="EngineUI\MainUI\MainForm\Logo\OpenLogo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,9 +300,9 @@
     <Compile Include="EngineUI\MainUI\MainForm\Logo\BuildLogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\IntefaceClasses\CheckInternet.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\Logs.cs" />
-    <Compile Include="EngineUI\IntefaceClasses\Utils.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OS\CheckInternet.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\OS\Logs.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Others\Utils.cs" />
     <Compile Include="Properties\Profiles.Designer.cs">
       <DependentUpon>Profiles.settings</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -768,7 +770,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -188,7 +188,9 @@ begin
      usPostUninstall:
        begin
          if MsgBox(ExpandConstant('{cm:RemoveToolSettings}'), mbConfirmation, MB_YESNO) = IDYES then      
-            DelTree(ExpandConstant('{localappdata}\Franco28'), True, True, True);
+            DelTree(ExpandConstant('{app}\Settings'), True, True, True);
+            DelTree(ExpandConstant('{app}\Logs'), True, True, True);
+            DelTree(ExpandConstant('{app}'), True, True, True);
             DelTree(ExpandConstant('C:\adb'), True, True, True);  
             DelTree(ExpandConstant('C:\NewMotoLogo'), True, True, True);
         end;
