@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -64,12 +64,6 @@ namespace Moto_Logo
 
             CheckDLL.dll();
             CheckFiles.files();
-
-            if (Properties.Settings.Default.UpgradeRequired == true)
-            {
-                Properties.Settings.Default.Upgrade();
-                Properties.Settings.Default.UpgradeRequired = false;
-            }
 
             if (Properties.Settings.Default.LogoWasSaved == true)
             {
@@ -211,7 +205,7 @@ namespace Moto_Logo
         private void toolStripMenuItemOpenCustomLogo_Click(object sender, EventArgs e)
         {
             #region OpenLogoFileAdmin
-            if (Program.IsUserAdministrator() == true)
+            if (CheckAdmin.IsUserAdministrator() == true)
             {
                 openFileDialog1.Filter = @"BIN file|*.bin|ZIP file|*.zip";
                 openFileDialog1.InitialDirectory = userdesktoppath;
@@ -227,22 +221,7 @@ namespace Moto_Logo
                     OpenFile(openFileDialog1.FileName);
                     Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString(); ;
                     Properties.Settings.Default.Save();
-                    txtComments.Enabled = true;
-                    cboMoto.Enabled = true;
-                    groupBoxLogoFormat.Enabled = true;
-                    groupBoxLogoResolution.Enabled = true;
-                    groupBoxLogoImageOption.Enabled = true;
-                    groupBoxLogoImageOrientation.Enabled = true;
-                    groupBoxLogoExtension.Enabled = true;
-                    textLogoName.Enabled = true;
-                    txtLogoBuildPath.Enabled = true;
-                    btnAttachPath.Enabled = true;
-                    groupBoxLogoMemory.Enabled = false;
-                    DisableControls();
-                    labelbtnStop.Enabled = false;
-                    btnStop.Enabled = false;
-                    labelbtnBuild.Enabled = true;
-                    btnBuild.Enabled = true;
+                    EnableControlsWhenLoadLogo();
                 }
             }
             else
@@ -263,9 +242,10 @@ namespace Moto_Logo
             #endregion OpenLogoFileAdmin
         }
 
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        private void testLogoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var l = new LogoTest();
+            l.Show();
         }
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -710,30 +690,9 @@ namespace Moto_Logo
                     OpenFile(files[0]);
                     Properties.Settings.Default.LogoBinOpen = files[0].ToString();
                     Properties.Settings.Default.Save();
-                    txtComments.Enabled = true;
-                    cboMoto.Enabled = true;
-                    groupBoxLogoFormat.Enabled = true;
-                    groupBoxLogoResolution.Enabled = true;
-                    groupBoxLogoImageOption.Enabled = true;
-                    groupBoxLogoImageOrientation.Enabled = true;
-                    groupBoxLogoExtension.Enabled = true;
-                    textLogoName.Enabled = true;
-                    txtLogoBuildPath.Enabled = true;
-                    btnAttachPath.Enabled = true;
-                    groupBoxLogoMemory.Enabled = false;
-                    DisableControls();
-                    labelbtnStop.Enabled = false;
-                    btnStop.Enabled = false;
-                    labelbtnBuild.Enabled = true;
-                    btnBuild.Enabled = true;
+                    EnableControlsWhenLoadLogo();
                 }
             }
-        }
-
-        private void testLogoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var l = new LogoTest();
-            l.Show();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -799,7 +758,7 @@ namespace Moto_Logo
                     {
                         Logs.DebugErrorLogs(er);
                         SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(er.ToString(), "");
+                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
                     }
                 }
             }

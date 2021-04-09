@@ -226,9 +226,9 @@ namespace Moto_Logo
             this.groupBoxLogoImageOrientation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxLogoImageOrientation.Controls.Add(this.rdoLayoutLandscape);
             this.groupBoxLogoImageOrientation.Controls.Add(this.rdoLayoutPortrait);
-            this.groupBoxLogoImageOrientation.Location = new System.Drawing.Point(905, 91);
+            this.groupBoxLogoImageOrientation.Location = new System.Drawing.Point(901, 91);
             this.groupBoxLogoImageOrientation.Name = "groupBoxLogoImageOrientation";
-            this.groupBoxLogoImageOrientation.Size = new System.Drawing.Size(245, 46);
+            this.groupBoxLogoImageOrientation.Size = new System.Drawing.Size(250, 46);
             this.groupBoxLogoImageOrientation.TabIndex = 196;
             this.groupBoxLogoImageOrientation.TabStop = false;
             this.groupBoxLogoImageOrientation.Text = "Image Orientation Options";
@@ -264,9 +264,9 @@ namespace Moto_Logo
             this.groupBoxLogoImageOption.Controls.Add(this.rdoImageFill);
             this.groupBoxLogoImageOption.Controls.Add(this.rdoImageStretchAspect);
             this.groupBoxLogoImageOption.Controls.Add(this.rdoImageCenter);
-            this.groupBoxLogoImageOption.Location = new System.Drawing.Point(207, 143);
+            this.groupBoxLogoImageOption.Location = new System.Drawing.Point(209, 143);
             this.groupBoxLogoImageOption.Name = "groupBoxLogoImageOption";
-            this.groupBoxLogoImageOption.Size = new System.Drawing.Size(943, 46);
+            this.groupBoxLogoImageOption.Size = new System.Drawing.Size(942, 46);
             this.groupBoxLogoImageOption.TabIndex = 195;
             this.groupBoxLogoImageOption.TabStop = false;
             this.groupBoxLogoImageOption.Text = "Image Fill Options";
@@ -496,7 +496,7 @@ namespace Moto_Logo
             this.groupBoxLogoExtension.Controls.Add(this.radioButtonZIP);
             this.groupBoxLogoExtension.Location = new System.Drawing.Point(4, 91);
             this.groupBoxLogoExtension.Name = "groupBoxLogoExtension";
-            this.groupBoxLogoExtension.Size = new System.Drawing.Size(152, 46);
+            this.groupBoxLogoExtension.Size = new System.Drawing.Size(156, 46);
             this.groupBoxLogoExtension.TabIndex = 185;
             this.groupBoxLogoExtension.TabStop = false;
             this.groupBoxLogoExtension.Text = "Select your extension";
@@ -910,7 +910,7 @@ namespace Moto_Logo
             this.groupBoxLogoResolution.Controls.Add(this.udResolutionX);
             this.groupBoxLogoResolution.Location = new System.Drawing.Point(4, 143);
             this.groupBoxLogoResolution.Name = "groupBoxLogoResolution";
-            this.groupBoxLogoResolution.Size = new System.Drawing.Size(197, 46);
+            this.groupBoxLogoResolution.Size = new System.Drawing.Size(203, 46);
             this.groupBoxLogoResolution.TabIndex = 194;
             this.groupBoxLogoResolution.TabStop = false;
             this.groupBoxLogoResolution.Text = "Resolution";
@@ -1153,6 +1153,7 @@ namespace Moto_Logo
             this.labelErrorInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.labelErrorInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.labelErrorInfo.Name = "labelErrorInfo";
+            this.labelErrorInfo.ReadOnly = true;
             this.labelErrorInfo.Size = new System.Drawing.Size(550, 28);
             this.labelErrorInfo.Text = "---";
             // 

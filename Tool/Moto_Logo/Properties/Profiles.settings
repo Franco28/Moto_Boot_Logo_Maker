@@ -2,55 +2,55 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Moto_Logo.Properties" GeneratedClassName="Profiles">
   <Profiles />
   <Settings>
-    <Setting Name="LogoImageFill" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoImageFill" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoImageCenter" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoImageCenter" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoMemory4MB" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoMemory4MB" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoMemory8MB" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoMemory8MB" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoMemory16MB" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoMemory16MB" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoMemory32MB" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoMemory32MB" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoImageStrech" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoImageStrech" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoBinFormatRaw" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoBinFormatRaw" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoBinFormatBundle" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoBinFormatBundle" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoBinFormatDefault" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoBinFormatDefault" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoImageLandscape" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoImageLandscape" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoImagePortrait" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoImagePortrait" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoMemory6MB" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoMemory6MB" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoExtensionBIN" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoExtensionBIN" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoExtensionZIP" Type="System.Boolean" Scope="User">
+    <Setting Name="LogoExtensionZIP" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="LogoName" Type="System.String" Scope="User">
+    <Setting Name="LogoName" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="LogoPath" Type="System.String" Scope="User">
+    <Setting Name="LogoPath" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

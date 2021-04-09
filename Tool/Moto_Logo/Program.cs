@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Program.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -17,8 +17,9 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Media;
-using System.Security.Principal;
+using System.Reflection;
 using System.Windows.Forms;
+using Bluegrams.Application;
 using DarkUI.Forms;
 
 namespace Moto_Logo
@@ -30,26 +31,6 @@ namespace Moto_Logo
         public static bool IsDirectoryEmpty(string path)
         {
             return !Directory.EnumerateFileSystemEntries(path).Any();
-        }
-
-        public static bool IsUserAdministrator()
-        {
-            bool isAdmin;
-            try
-            {
-                WindowsIdentity user = WindowsIdentity.GetCurrent();
-                WindowsPrincipal principal = new WindowsPrincipal(user);
-                isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
-            }
-            catch (UnauthorizedAccessException)
-            {
-                isAdmin = false;
-            }
-            catch (Exception)
-            {
-                isAdmin = false;
-            }
-            return isAdmin;
         }
 
         public static void CreateDirectory(string directory)
@@ -68,10 +49,44 @@ namespace Moto_Logo
             {
                 var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
                 string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+             
+                if (!Directory.Exists(exePath + @"\Settings\"))
+                {
+                    Directory.CreateDirectory(exePath + @"\Settings\");
+                }
+
+                if (!Directory.Exists(exePath + @"\Logs\"))
+                {
+                    Directory.CreateDirectory(exePath + @"\Logs\");
+                }
+
+                PortableSettingsProvider.SettingsFileName = "settings.config";
+                PortableSettingsProvider.SettingsDirectory = "Settings\\";
+                PortableSettingsProvider.ApplyProvider(Properties.Settings.Default);
+                PortableSettingsProvider.ApplyProvider(Properties.Profiles.Default);
+
+                string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+                if (Properties.Settings.Default.ToolVersion == "")
+                {
+                    if (Properties.Settings.Default.UpgradeRequired == true)
+                    {
+                        Properties.Settings.Default.Upgrade();
+                        Properties.Settings.Default.UpgradeRequired = false;
+                    }
+                    Properties.Settings.Default.ToolVersion = version;
+                    Properties.Settings.Default.Save();
+                }
+
+                if (version != Properties.Settings.Default.ToolVersion)
+                {
+                    Properties.Settings.Default.ToolVersion = version;
+                    Properties.Settings.Default.Save();
+                }
 
                 if (exePath == @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" || exePath == @"C:\Program Files\Moto_Boot_Logo_Maker")
                 {
-                    if (IsUserAdministrator() == false)
+                    if (CheckAdmin.IsUserAdministrator() == false)
                     {
                         SystemSounds.Hand.Play();
                         DarkMessageBox.ShowError(res_man.GetString("ProgramCheckPrivileges", cul), res_man.GetString("ProgramCheckPrivileges2", cul));

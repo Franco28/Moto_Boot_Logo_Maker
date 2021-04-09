@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.BuildLogo.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -81,6 +81,7 @@ namespace Moto_Logo
             if (txtLogoBuildPath.Text == string.Empty)
             {
                 SystemSounds.Hand.Play();
+                Logs.LogoBuildError(res_man.GetString("LogoBuildFolderError", cul));
                 DarkMessageBox.ShowError(res_man.GetString("LogoBuildFolderError", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
@@ -131,6 +132,7 @@ namespace Moto_Logo
             if (radioButtonBIN.Checked == false && radioButtonZIP.Checked == false)
             {
                 SystemSounds.Hand.Play();
+                Logs.LogoBuildError(res_man.GetString("CompileRadioBTNEmpty", cul));
                 DarkMessageBox.ShowError(res_man.GetString("CompileRadioBTNEmpty", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
@@ -139,6 +141,7 @@ namespace Moto_Logo
             if (!pathbuild.EndsWith(@"\"))
             {
                 SystemSounds.Hand.Play();
+                Logs.LogoBuildError(res_man.GetString("CompilePathISWrong", cul));
                 DarkMessageBox.ShowError(res_man.GetString("CompilePathISWrong", cul).Replace("<pathbuild>", txtLogoBuildPath.Text), "Moto_Boot_Logo_Maker");
                 return;
             }
@@ -146,6 +149,7 @@ namespace Moto_Logo
             if (String.IsNullOrEmpty(txtLogoBuildPath.Text) && String.IsNullOrEmpty(textLogoName.Text))
             {
                 SystemSounds.Hand.Play();
+                Logs.LogoBuildError(res_man.GetString("ComplieLNandPNEmpty", cul));
                 DarkMessageBox.ShowError(res_man.GetString("ComplieLNandPNEmpty", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
@@ -187,6 +191,7 @@ namespace Moto_Logo
                             {
                                 if (tvLogo.Nodes[0].Name != "")
                                 {
+                                    Logs.LogoBuildError(res_man.GetString("ErrorLoadImage", cul));
                                     toolStripStatusLabel1.Text = res_man.GetString("ErrorLoadImage", cul);
                                     writer.Close();
                                     return;
@@ -286,6 +291,7 @@ namespace Moto_Logo
                                     _tvLogoAfterSelectProcessing = false;
                                     if (!errorproceed && (errorCount > 0))
                                     {
+                                        Logs.LogoBuildError(res_man.GetString("ImageLoadFail", cul));
                                         if (MessageBox.Show(res_man.GetString("ImageLoadFail", cul),
                                             @"Moto_Boot_Logo_Maker",
                                             MessageBoxButtons.YesNo,
@@ -293,6 +299,7 @@ namespace Moto_Logo
                                             MessageBoxDefaultButton.Button2) == DialogResult.No)
                                         {
                                             toolStripStatusLabel1.Text = res_man.GetString("LogoBinProcessAborted", cul);
+                                            Logs.LogoBuildError(res_man.GetString("LogoBinProcessAborted", cul));
                                             writer.Close();
                                             return;
                                         }
@@ -319,6 +326,7 @@ namespace Moto_Logo
                                     if (((errorCount + blankCount) == tvLogo.Nodes.Count) && (errorCount > 0))
                                     {
                                         toolStripStatusLabel1.Text = res_man.GetString("AllImageFailed", cul);
+                                        Logs.LogoBuildError(res_man.GetString("AllImageFailed", cul));
                                         writer.Close();
                                         return;
                                     }
@@ -413,6 +421,7 @@ namespace Moto_Logo
                                 writer.BaseStream.Position = writer.BaseStream.Length;
                                 if (writer.BaseStream.Length <= _maxFileSize) continue;
                                 toolStripStatusLabel1.Text = res_man.GetString("ErrorLogoFitImage", cul) + ": " + tvLogo.Nodes[i].Text + " " + res_man.GetString("ErrorLogoFitImage2", cul) + " " + (writer.BaseStream.Length - _maxFileSize) + " " + res_man.GetString("ErrorLogoFitImage3", cul);
+                                Logs.LogoBuildError(res_man.GetString("ErrorLogoFitImage", cul) + ": " + tvLogo.Nodes[i].Text + " " + res_man.GetString("ErrorLogoFitImage2", cul) + " " + (writer.BaseStream.Length - _maxFileSize) + " " + res_man.GetString("ErrorLogoFitImage3", cul));
                                 return;
                             }
                         }
@@ -490,6 +499,7 @@ namespace Moto_Logo
                     Logs.DebugErrorLogs(ex);
                     ProgressBar.Visible = false;
                     toolStripStatusLabel1.Text = res_man.GetString("FileSaveError", cul) + @": " + ex.GetBaseException();
+                    Logs.LogoBuildError(res_man.GetString("FileSaveError", cul) + @": " + ex.GetBaseException());
                     labelbtnStop.Enabled = false;
                     btnStop.Enabled = false;
                     labelbtnBuild.Enabled = false;
@@ -641,7 +651,8 @@ namespace Moto_Logo
             else if (e.Error != null)
             {
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(res_man.GetString("LogoBuildError", cul), "Moto_Boot_Logo_Maker");
+                DarkMessageBox.ShowError(res_man.GetString("LogoBuildError", cul), "Moto_Boot_Logo_Maker: " + e.Error.ToString());
+                Logs.LogoBuildError(res_man.GetString("LogoBuildError", cul) + " : " + e.Error.ToString());
                 labelbtnStop.Enabled = false;
                 btnStop.Enabled = false;
                 labelbtnBuild.Enabled = true;

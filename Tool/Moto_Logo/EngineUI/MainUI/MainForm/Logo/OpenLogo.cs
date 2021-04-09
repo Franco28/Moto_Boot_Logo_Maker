@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.OpenLogo.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -84,6 +84,7 @@ namespace Moto_Logo
                     if ((logobin = ExtractLogoBin(filename)) == null)
                     {
                         toolStripStatusLabel1.Text = res_man.GetString("Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename);
+                        Logs.LogoOpenError(res_man.GetString("Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename));
                         Application.DoEvents();
                         return;
                     }
@@ -105,6 +106,7 @@ namespace Moto_Logo
                     Logs.DebugErrorLogs(ex);
                     ProgressBar.Visible = false;
                     toolStripStatusLabel1.Text = res_man.GetString("FileOpenError", cul).Replace("<FN>", filename);
+                    Logs.LogoOpenError(res_man.GetString("FileOpenError", cul).Replace("<FN>", filename) + " Error: " + ex.ToString());
                     return;
                 }
 
@@ -171,6 +173,9 @@ namespace Moto_Logo
                                 txtComments.Text = Encoding.ASCII.GetString(reader.ReadBytes(temp)).Replace("@TeamDeluxe", "@Franco28").Trim();
                                 temp = reader.ReadInt32();
                                 comment = Encoding.UTF8.GetString(reader.ReadBytes(temp));
+                                Properties.Settings.Default.LogoMessage = txtComments.Text.ToString();
+                                Properties.Settings.Default.Save();
+
                                 if (cboMoto.SelectedIndex == 0)
                                 {
                                     var resx = reader.ReadUInt16();
@@ -287,6 +292,7 @@ namespace Moto_Logo
                 Logs.DebugErrorLogs(ex);
                 ProgressBar.Visible = false;
                 toolStripStatusLabel1.Text = @"Error: " + ex.GetBaseException();
+                Logs.LogoOpenError(@"Error: " + ex.GetBaseException());
                 return;
             }
             toolStripStatusLabel1.Text = res_man.GetString("FileLoadOk", cul);

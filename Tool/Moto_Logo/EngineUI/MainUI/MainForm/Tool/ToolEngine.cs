@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -14,7 +14,6 @@
 using DarkUI.Forms;
 using Moto_Logo.Properties;
 using System;
-using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -30,9 +29,11 @@ namespace Moto_Logo
         private void labelGoToError_Click(object sender, EventArgs e)
         {
             #region gotoerror
-            var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-            var newpath = path.Replace(@"\user.config", "").Trim();
-            string errorpath = newpath + @"\DebugLogs\";
+            //var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
+            //var newpath = path.Replace(@"\user.config", "").Trim();
+            //string errorpath = newpath + @"\DebugLogs\";
+
+            string errorpath = exePath + @"\Logs\";
             SystemSounds.Exclamation.Play();
             DarkMessageBox.ShowInformation("Remember to send logs, then remove this file!", "Moto_Boot_Logo_Maker");
             Process.Start(errorpath);
@@ -70,9 +71,11 @@ namespace Moto_Logo
 
         private void CallLogError()
         {
-            var logpath = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-            var newlogpath = logpath.Replace(@"\user.config", "").Trim();
-            string fileLogPath = newlogpath + @"\DebugLogs\";
+            //var logpath = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
+            //var newlogpath = logpath.Replace(@"\user.config", "").Trim();
+            //string fileLogPath = newlogpath + @"\DebugLogs\";
+
+            string fileLogPath = exePath + @"\Logs\";
 
             watchererrorlogs.Path = fileLogPath;
             watchererrorlogs.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
@@ -339,77 +342,100 @@ namespace Moto_Logo
             #endregion DisableControls
         }
 
+        public void EnableControlsWhenLoadLogo()
+        {
+            txtComments.Enabled = true;
+            cboMoto.Enabled = true;
+            groupBoxLogoFormat.Enabled = true;
+            groupBoxLogoResolution.Enabled = true;
+            groupBoxLogoImageOption.Enabled = true;
+            groupBoxLogoImageOrientation.Enabled = true;
+            groupBoxLogoExtension.Enabled = true;
+            textLogoName.Enabled = true;
+            txtLogoBuildPath.Enabled = true;
+            btnAttachPath.Enabled = true;
+            groupBoxLogoMemory.Enabled = false;
+            DisableControls();
+            labelbtnStop.Enabled = false;
+            btnStop.Enabled = false;
+            labelbtnBuild.Enabled = true;
+            btnBuild.Enabled = true;
+        }
+
         public void Reload()
         {
             #region Reload
-            textBoxSearchDevice.Text = "";
-            txtComments.Enabled = false;
-            cboMoto.Enabled = false;
-            txtLogoBuildPath.Enabled = false;
-            btnAttachPath.Enabled = false;
-            groupBoxLogoFormat.Enabled = false;
-            groupBoxLogoResolution.Enabled = false;
-            groupBoxLogoImageOption.Enabled = false;
-            groupBoxLogoImageOrientation.Enabled = false;
-            groupBoxLogoExtension.Enabled = false;
-            textLogoName.Enabled = false;
-            btnStop.Enabled = false;
-            labelbtnStop.Enabled = false;
-            btnBuild.Enabled = false;
-            labelbtnBuild.Enabled = false;
-            groupBoxLogoMemory.Enabled = true;
-            radioButton4mib.Checked = false;
-            radioButton6MIB.Checked = false;
-            radioButton8MIB.Checked = false;
-            radioButton16MIB.Checked = false;
-            radioButton32MIB.Checked = false;
-            rdoAndroid44.Checked = true;
-            rdoImageCenter.Checked = true;
-            ProgressBar.Visible = false;
-            tvLogo.SelectedNode = null;
-            tvLogo.Invalidate();
-            tvLogo.Nodes.Clear();
-            _loadedbitmaps.Clear();
-            _loadedbitmapnames.Clear();
-            cboMoto.Items.Clear();
-            _deviceResolutionX.Clear();
-            _deviceResolutionY.Clear();
-            _deviceLogoBinSize.Clear();
-            _deviceLogoBinContents.Clear();
-            Init_cboMoto(res_man.GetString("DevicesCustom", cul), 720, 1080, 4194304, 0x3FFFFFFF);
-            cboMoto.SelectedIndex = 0;
-            //cboMoto_SelectedIndexChanged(null, null);
-            picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
-            _BackColor = pictureBox1.BackColor;
-            _ZoomFactor = trbZoomFactor.Value;
-            lblZoomFactor.Text = string.Format("x{0}", _ZoomFactor);
-            pictureBoxColors.Image = new Bitmap(1, 1);
-            Properties.Profiles.Default.LogoName = "";
-            textLogoName.Text = Properties.Profiles.Default.LogoName;
-            txtComments.Text = "";
-            txtLogoInternalFile.Text = "";
-            labelColorDraw.Text = "RGB: ";
-            toolStripStatusLabel1.Text = "";
-            toolStripStatusLabel2.Text = "";
-            if (txtLogoBuildPath.Text == string.Empty)
+            try
             {
-                txtLogoBuildPath.Text = @"C:\NewMotoLogo\";
-                Properties.Profiles.Default.LogoPath = txtLogoBuildPath.Text;
-            }
-            Properties.Profiles.Default.Save();
-            if (File.Exists(exePath + @"\Files\Images\Logo\logo.png"))
-            {
-                pictureBox1.Image = Image.FromFile(exePath + @"\Files\Images\Logo\logo.png");
-                picZoom.Image = pictureBox1.Image;
-                _OriginalImage = pictureBox1.Image;
-            }
-            else
-            {
+                txtComments.Enabled = false;
+                cboMoto.Enabled = false;
+                txtLogoBuildPath.Enabled = false;
+                btnAttachPath.Enabled = false;
+                groupBoxLogoFormat.Enabled = false;
+                groupBoxLogoResolution.Enabled = false;
+                groupBoxLogoImageOption.Enabled = false;
+                groupBoxLogoImageOrientation.Enabled = false;
+                groupBoxLogoExtension.Enabled = false;
+                textLogoName.Enabled = false;
+                btnStop.Enabled = false;
+                labelbtnStop.Enabled = false;
+                btnBuild.Enabled = false;
+                labelbtnBuild.Enabled = false;
+                groupBoxLogoMemory.Enabled = true;
+                radioButton4mib.Checked = false;
+                radioButton6MIB.Checked = false;
+                radioButton8MIB.Checked = false;
+                radioButton16MIB.Checked = false;
+                radioButton32MIB.Checked = false;
+                rdoAndroid44.Checked = true;
+                rdoImageCenter.Checked = true;
+                ProgressBar.Visible = false;
+                tvLogo.SelectedNode = null;
+                tvLogo.Invalidate();
+                tvLogo.Nodes.Clear();
+                _loadedbitmaps.Clear();
+                _loadedbitmapnames.Clear();
+                _deviceResolutionX.Clear();
+                _deviceResolutionY.Clear();
+                _deviceLogoBinSize.Clear();
+                _deviceLogoBinContents.Clear();
+                cboMoto.Items.Clear();
+                Init_cboMoto(res_man.GetString("DevicesCustom", cul), 720, 1080, 4194304, 0x3FFFFFFF);
+                cboMoto.SelectedIndex = 0;
+                //cboMoto_SelectedIndexChanged(null, null);
+                textBoxSearchDevice.Text = "";
+                txtComments.Text = "";
+                txtLogoInternalFile.Text = "";
+                labelColorDraw.Text = "RGB: ";
+                toolStripStatusLabel1.Text = "";
+                toolStripStatusLabel2.Text = "";
+                if (txtLogoBuildPath.Text == string.Empty)
+                {
+                    txtLogoBuildPath.Text = @"C:\NewMotoLogo\";
+                    Properties.Profiles.Default.LogoPath = txtLogoBuildPath.Text;
+                }
+                if (textLogoName.Text == string.Empty)
+                {
+                    textLogoName.Text = @"logo";
+                    Properties.Profiles.Default.LogoName = textLogoName.Text;
+                }
+                Properties.Profiles.Default.Save();
+                picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
+                _BackColor = pictureBox1.BackColor;
+                _ZoomFactor = trbZoomFactor.Value;
+                lblZoomFactor.Text = string.Format("x{0}", _ZoomFactor);
+                pictureBoxColors.Image = new Bitmap(1, 1);
                 pictureBox1.Image = Resources.logo;
                 picZoom.Image = pictureBox1.Image;
                 _OriginalImage = pictureBox1.Image;
-            }
-            ResizeAndDisplayImage();
+                ResizeAndDisplayImage();
+            } 
+            catch (Exception er)
+            {
+                Logs.DebugErrorLogs(er);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+            }               
             #endregion Reload
         }
     }

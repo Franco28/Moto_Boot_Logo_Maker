@@ -148,6 +148,7 @@
     <Compile Include="EngineUI\FileManager\ToolLibsDownload.Designer.cs">
       <DependentUpon>ToolLibsDownload.cs</DependentUpon>
     </Compile>
+    <Compile Include="EngineUI\IntefaceClasses\CheckAdmin.cs" />
     <Compile Include="EngineUI\Ionic\CommonSrc\CRC32.cs" />
     <Compile Include="EngineUI\Ionic\Zip\ComHelper.cs" />
     <Compile Include="EngineUI\Ionic\Zip\EncryptionAlgorithm.cs" />
@@ -284,6 +285,8 @@
     <Compile Include="EngineUI\MainUI\MainForm\Logo\OpenLogo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EngineUI\PortableSettingsProvider\PortableSettingsProvider.cs" />
+    <Compile Include="EngineUI\PortableSettingsProvider\Shared\PortableSettingsProviderBase.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -641,6 +644,7 @@
     <Content Include="EngineUI\Ionic\Zlib\License.zlib.txt" />
     <None Include="Resources\welcome_gif.gif" />
     <None Include="Resources\logo.png" />
+    <Content Include="EngineUI\PortableSettingsProvider\LICENSE.txt" />
     <Content Include="Resources\devicesSearch\MotoDroid.png" />
     <Content Include="Resources\devicesSearch\MotoE.png" />
     <Content Include="Resources\devicesSearch\MotoEdge.png" />
@@ -764,7 +768,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

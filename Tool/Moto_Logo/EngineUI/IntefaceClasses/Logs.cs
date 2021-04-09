@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Logs.cs                                                  #
 #    Author: Franco28                                               # 
-#    Date: 17-02-2021                                               #
+#    Date: 09-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -12,7 +12,6 @@
  */
 
 using System;
-using System.Configuration;
 using System.Globalization;
 using System.IO;
 using System.Net;
@@ -25,23 +24,60 @@ namespace Moto_Logo
     public class Logs
     {
         public static CultureInfo ci = CultureInfo.InstalledUICulture;
+        static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
         public class IpInfo
         {
             public string Country { get; set; }
         }
 
+        public static void LogoOpenError(string error)
+        {
+            string filePath = exePath + @"\Logs\LogoOpenError.txt";
+
+            using (FileStream fs = File.Create(filePath))
+            {
+
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine("-----------------------------------------------------------------------------");
+                writer.WriteLine("File Generated Date: " + DateTime.Now.ToString());
+                writer.WriteLine("Error: \n " + error);
+            }
+        }
+
+        public static void LogoBuildError(string error)
+        {
+            string filePath = exePath + @"\Logs\LogoBuild.txt";
+
+            using (FileStream fs = File.Create(filePath))
+            {
+
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine("-----------------------------------------------------------------------------");
+                writer.WriteLine("File Generated Date: " + DateTime.Now.ToString());
+                writer.WriteLine("Error: \n " + error);
+            }
+        }
+
         public static void DebugWindwosInfo(string netframworkversion, string windowsver)
         {
-            var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-            var newpath = path.Replace(@"\user.config", "").Trim();
+            //Old folder
+            //var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
+            //var newpath = path.Replace(@"\user.config", "").Trim();
+            //string filePath = newpath + @"\DebugLogs\WinInfo_" + Environment.UserName + ".txt";
 
-            string filePath = newpath + @"\DebugLogs\WinInfo_" + Environment.UserName + ".txt";
-
-            if (!Directory.Exists(newpath + @"\DebugLogs"))
+            /*if (!Directory.Exists(newpath + @"\DebugLogs"))
             {
                 Directory.CreateDirectory(newpath + @"\DebugLogs");
-            }
+            }*/
+
+            string filePath = exePath + @"\Logs\ToolInfo_" + Environment.UserName + ".txt";
 
             using (FileStream fs = File.Create(filePath))
             {
@@ -86,15 +122,16 @@ namespace Moto_Logo
 
         public static void DebugErrorLogs(Exception er)
         {
-            var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-            var newpath = path.Replace(@"\user.config", "").Trim();
+            //var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
+            //var newpath = path.Replace(@"\user.config", "").Trim();
+            //string filePath = newpath + @"\DebugLogs\Error_" + Environment.UserName + ".txt";
 
-            string filePath = newpath + @"\DebugLogs\Error_" + Environment.UserName + ".txt";
-
-            if (!Directory.Exists(newpath + @"\DebugLogs"))
+            /*if (!Directory.Exists(newpath + @"\DebugLogs"))
             {
                 Directory.CreateDirectory(newpath + @"\DebugLogs");
-            }
+            }*/
+
+            string filePath = exePath + @"\Logs\Error_" + Environment.UserName + ".txt";
 
             Exception ex = er;
             using (StreamWriter writer = new StreamWriter(filePath, true))
