@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>ブートロゴチャネル</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>ロゴビルドパスを選択してください</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>コンパイル</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Logo.binファイルを作成して保存します</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>テーマを変更</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>ファイルパスを開く</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>ロゴフォルダを開く</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>リロードツール</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>検索デバイス</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>キャンセル</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>ロゴビルドプロセスを停止します</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>追加</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>まずロゴを作ってください！ その後、それを保存できるようになります！</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>変更ログを読み取れません。インターネット接続を確認してください。</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>テーマを変更しています。お待ちください...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>空白の画像で続行してもよろしいですか？</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>クレジットを読み取れません...ファイルがありません！</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>クレジット</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>闇</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>端末</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>ロゴ情報</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>カスタム</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>ダウンロード統計が読めません。インターネット接続を確認してください。</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>ダウンロード</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>バイトが大きすぎます</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>ログを送信してから、このファイルを削除することを忘れないでください。</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>画像の種類が間違っています！ 許可される画像タイプ：</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>現在開いているプロジェクトがあります：</value>
@@ -321,6 +366,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>ロゴパス</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>開いているログ：</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>ログフォルダを開く</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>*画像のステータス：ロック</value>
   </data>
@@ -356,6 +407,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>状態：</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>.binファイルではありません.... binファイルのみを選択してください！</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>ディレクトリです。。。</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>選択する</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>ロゴビルド：プロセスがキャンセルされました！</value>
@@ -489,11 +549,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>最大Logo.binサイズ</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework：.NETFrameworkバージョンにアクセスできません。..</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>新着</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>画像がロードされていません。空白の画像で続行してもよろしいですか？</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>カスタムロゴを開きたい場合は、ファイルをツールにドラッグアンドドロップするだけです。</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>ロゴの読み込み：</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>お待ちください...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>開いた</value>
@@ -561,6 +633,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>保存する</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>デバイスはすでに開かれています：</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>それを閉じて新しいデバイスを検索してください！</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>見つかりませんでした。次のように入力してください：moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>デバイスを入力してください！</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>ファイルを開く前に、ロゴのメモリサイズを選択してください！</value>
   </data>
@@ -606,6 +690,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>新しいロゴをテストする</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>次のようにデバイスモデルを入力します：「moto g8 power」</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>テーマ</value>
   </data>
@@ -642,11 +729,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>更新はありません</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>カスタムロゴを開く</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>RGBカラー</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>クリップボードにコピーしました！</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>ツール</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>更新するアプリケーションを閉じています...</value>

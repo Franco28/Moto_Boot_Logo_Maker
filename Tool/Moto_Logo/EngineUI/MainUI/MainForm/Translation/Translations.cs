@@ -89,6 +89,17 @@ namespace Moto_Logo
             labelbtnOpenLogoFile.Text = res_man.GetString("btnOpenLogoFile", cul);
             labelSearchDevice.Text = res_man.GetString("labelSearchDevice", cul);
             labelReload.Text = res_man.GetString("labelReloadTool", cul);
+            btnBuild.ToolTipText = res_man.GetString("btnBuildToolTipText", cul);
+            btnStop.ToolTipText = res_man.GetString("btnStopToolTipText", cul);
+            btnAttachPath.ToolTipText = res_man.GetString("btnAttachPathToolTipText", cul);
+            btnOpenLogoFile.ToolTipText = res_man.GetString("btnOpenLogoFileToolTipText", cul);
+            btnReload.ToolTipText = res_man.GetString("btnReloadToolTipText", cul);
+            labelGoToError.ToolTipText = res_man.GetString("labelGoToErrorToolTipText", cul);
+            textBoxSearchDevice.ToolTipText = res_man.GetString("textBoxSearchDeviceToolTipText", cul);
+            btnSearchDevice.ToolTipText = res_man.GetString("btnSearchDeviceToolTipText", cul);
+            toolStripMenuItemOpenCustomLogo.Text = res_man.GetString("toolStripMenuItemOpenCustomLogo", cul);
+            toolToolStripMenuItem.Text = res_man.GetString("toolToolStripMenuItem", cul);
+            labelErrorGoToFileInfo.Text = res_man.GetString("labelErrorGoToFileInfo", cul);
         }
     }
 }

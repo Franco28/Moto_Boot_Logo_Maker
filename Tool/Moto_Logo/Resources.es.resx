@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>Canal De Boot Logos</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>Elija la ruta de creación del logotipo</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Compilar</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Cree y guarde el archivo Logo.bin</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>Cambiar Tema</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Abrir ruta de archivo</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>Abrir carpeta de logotipos</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>Recargar herramienta</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>Buscar dispositivo</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>Detener el proceso de creación del logotipo</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>Adjuntar</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>Por favor haga un logo primero! entonces podrás guardarlo!</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>No se puede leer el registro de cambios, compruebe su conexión a Internet.</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Cambiando tema, por favor espere...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>¿Estás seguro de que deseas continuar con una imagen en blanco?</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>No se pueden leer los créditos ... ¡Falta el archivo!</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>Créditos</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>Oscuro</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>Dispositivo</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>Pantalla</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>Información del logotipo</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>Predeterminado</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>No se pueden leer las estadísticas de descarga, compruebe su conexión a Internet.</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>Descargas</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>Bytes demasiado grandes</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>¡Recuerde enviar registros y luego eliminar este archivo!</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>¡Tipo de imagen incorrecto! Tipo de imagen permitido:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Hay un proyecto actual abierto:</value>
@@ -324,6 +369,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>Ruta del logotipo</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>Abrir registros:</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>Abrir carpeta de registros</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>* Estado de la imagen: Bloqueado</value>
   </data>
@@ -359,6 +410,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>Estado:</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>no es un archivo .bin ... ¡Seleccione solo archivos .bin!</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>es un directorio...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>Seleccionar</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>Compilar logo: ¡El proceso fue cancelado!</value>
@@ -492,11 +552,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Tamaño máximo del logotipo</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework: No se puede acceder a la versión de .NET Framework ...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>Nuevo</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>No se cargaron imágenes, ¿está seguro de que desea continuar con las imágenes en blanco?</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>Si desea abrir un logotipo personalizado, simplemente arrastre y suelte el archivo en la herramienta.</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>Cargando logo:</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>Espere por favor...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>Abrir</value>
@@ -564,6 +636,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>Guardar</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>Dispositivo ya abierto:</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>ciérralo para buscar nuevos dispositivos!</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>no se encontró, ingrese así: moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>Introduzca un dispositivo.</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Seleccione el tamaño de la memoria de su logotipo antes de abrir un archivo!</value>
   </data>
@@ -609,6 +693,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>Prueba su nuevo logo</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>Ingresa el modelo de tu dispositivo de esta manera: "moto g8 power"</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>Tema</value>
   </data>
@@ -648,11 +735,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Actualización no disponible</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>Abrir logotipo personalizado</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>Color RGB</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>Copiado al portapapeles!</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>Herramienta</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>Cerrando aplicación para actualizar...</value>

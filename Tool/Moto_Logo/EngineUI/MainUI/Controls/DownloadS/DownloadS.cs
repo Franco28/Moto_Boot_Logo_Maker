@@ -16,15 +16,21 @@ using System;
 using System.Text.RegularExpressions;
 using DarkUI.Forms;
 using System.Media;
+using System.Resources;
+using System.Globalization;
 
 namespace Moto_Logo
 {
     public partial class DownloadS : DarkForm
     {
+        private CultureInfo cul;
+        private ResourceManager res_man;
 
         public DownloadS()
         {
             InitializeComponent();
+
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         }
 
         protected void cAppend(string message)
@@ -80,7 +86,7 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    cAppend("Can't read download statistics, please check your internet connection!");
+                    cAppend(res_man.GetString("DownloadSFormInternetError", cul));
                     btnGoTo.Enabled = false;
                     button1.Enabled = false;
                     return;

@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>Boot Logos Channel</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>Roghnaigh cosán tógála lógó</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Tiomsú</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Ní bhfuarthas, le do thoil ionchur mar seo: moto g6 plus</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>Téama Athraigh</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Cosán comhaid a oscailt</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>Fillteán lógó oscailte</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>Uirlis Athlódáil</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>Gléas Cuardaigh</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>Cealaigh</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>Stop an próiseas tógála lógó</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>Aguisín</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>Déan lógó ar dtús le do thoil! ansin beidh tú in ann é a shábháil!</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>Ní féidir changelog a léamh, seiceáil do nasc idirlín le do thoil!</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Téama ag Athrú, fan le do thoil ...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>An bhfuil tú cinnte gur mian leat dul ar aghaidh le híomhá bán?</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>Ní féidir creidmheasanna a léamh ... tá an comhad ar iarraidh!</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>Creidmheasanna</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>Dorcha</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>Gléas</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>Taispeáin</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>Eolas Lógó</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>Saincheaptha</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>Ní féidir staitisticí íoslódála a léamh, seiceáil do nasc idirlín le do thoil!</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>Íoslódálacha</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>Bearta Ró-Mhóra</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>Cuimhnigh logaí a sheoladh, ansin bain an comhad seo!</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>Cineál íomhá mícheart! Cineál íomhá ceadaithe:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Tá tionscadal reatha oscailte:</value>
@@ -324,6 +369,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>Conair lógó</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>Logaí Oscailte:</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>Fillteán logaí oscailte</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>* Stádas Íomhá: Faoi Ghlas</value>
   </data>
@@ -359,6 +410,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>Stádas:</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>ní comhad .bin é ... Roghnaigh comhaid .bin amháin!</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>is eolaire é ...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>Roghnaigh</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>Tógáil Lógó: Cuireadh an próiseas ar ceal!</value>
@@ -492,11 +552,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Max Logo.bin méid</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework: Ní féidir síneadh amach. Leagan Creat NET ...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>Nua</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>Níor luchtaíodh aon íomhánna, an bhfuil tú cinnte gur mian leat dul ar aghaidh le híomhánna bána?</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>Más mian leat lógó saincheaptha a oscailt, ní gá ach an comhad a tharraingt agus scaoil isteach Uirlis!</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>Lógó luchtaithe:</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>Fán le do thoil...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>Oscail</value>
@@ -564,6 +636,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>Sábháil</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>Gléas oscailte cheana féin:</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>dún é chun gairis nua a chuardach!</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>Ní bhfuarthas, le do thoil ionchur mar seo: moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>Cuir gléas isteach!</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Roghnaigh méid cuimhne do lógó le do thoil sula n-osclaítear comhad!</value>
   </data>
@@ -609,6 +693,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>Tástáil do lógó nua</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>Ionchur do mhúnla feiste mar seo: "cumhacht moto g8"</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>Téama</value>
   </data>
@@ -645,11 +732,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Níl aon nuashonrú ar fáil</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>Oscail Lógó Saincheaptha</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>Dath RGB</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>cóipeáladh chuig gearrthaisce!</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>Uirlis</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>Iarratas deiridh le nuashonrú ...</value>

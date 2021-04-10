@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>Önyükleme Logoları Kanalı</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>Logo oluşturma yolunu seçin</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Derleme</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Logo.bin dosyasını oluşturun ve kaydedin</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>Temayı değiştir</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Dosya yolunu aç</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>Logo klasörünü aç</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>Aracı Yeniden Yükle</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>Cihaz Ara</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>İptal etmek</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>Logo oluşturma sürecini durdurun</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>Ekle</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>Lütfen önce bir logo yapın! o zaman onu kurtarabilirsiniz!</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>Değişim günlüğünü okuyamıyorum, lütfen internet bağlantınızı kontrol edin!</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Tema Değiştiriliyor, lütfen bekleyin ...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>Boş bir resimle devam etmek istediğinizden emin misiniz?</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>Krediler okunamıyor ... dosya eksik!</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>Kredi</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>Karanlık</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>cihaz</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>Görüntüle</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>Logo Bilgisi</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>Özel</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>İndirme istatistiklerini okuyamıyorum, lütfen internet bağlantınızı kontrol edin!</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>İndirilenler</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>Bayt Çok Büyük</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>Günlükleri göndermeyi ve ardından bu dosyayı kaldırmayı unutmayın!</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>Yanlış resim türü! Resim türüne izin verilir:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Açılmış mevcut bir proje var:</value>
@@ -321,6 +366,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>Logo yolu</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>Günlükleri Aç:</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>Günlük klasörünü aç</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>* Görüntü Durumu: Kilitli</value>
   </data>
@@ -356,6 +407,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>Durum:</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>bir .bin dosyası değil ... Yalnızca .bin dosyalarını seçin!</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>bir dizindir ...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>Seçiniz</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>Logo Oluşturma: İşlem iptal edildi!</value>
@@ -489,11 +549,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Max Logo.bin boyutu</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework: .NET Framework sürümüne ulaşılamıyor ...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>Yeni</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>Hiç resim yüklenmedi, boş resimlerle devam etmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>Özel bir logo açmak istiyorsanız, dosyayı Araç'a sürükleyip bırakmanız yeterlidir!</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>Logo yükleniyor:</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>Lütfen bekle...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>Açık</value>
@@ -561,6 +633,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>Kayıt etmek</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>Cihaz zaten açılmış:</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>yeni cihazları aramak için kapatın!</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>bulunamadı, lütfen şöyle girin: moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>Lütfen bir cihaz girin!</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Lütfen bir dosyayı açmadan önce logo bellek boyutunuzu seçin!</value>
   </data>
@@ -606,6 +690,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>Yeni logonuzu test edin</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>Cihaz modelinizi şu şekilde girin: "moto g8 power"</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>Tema</value>
   </data>
@@ -642,11 +729,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Güncelleme mevcut değil</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>Özel Logoyu Aç</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>RGB rengi</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>panoya kopyalandı!</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>Araç</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>Güncellenecek uygulama kapatılıyor ...</value>

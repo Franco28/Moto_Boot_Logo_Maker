@@ -2,7 +2,7 @@
 #####################################################################
 #    File: ReadChangelog.cs                                         #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -12,9 +12,11 @@
  */
 
 using System;
+using System.Globalization;
 using System.IO;
 using System.Net;
 using System.Reflection;
+using System.Resources;
 using System.Windows.Forms;
 using DarkUI.Forms;
 
@@ -22,9 +24,15 @@ namespace Moto_Logo
 {
     public partial class ReadChangelog : DarkForm
     {
+        private CultureInfo cul;
+        private ResourceManager res_man;
+
         public ReadChangelog()
         {
             InitializeComponent();
+
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             this.Text = "Changelog v" + Application.ProductVersion + " build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
         }
 
@@ -43,7 +51,7 @@ namespace Moto_Logo
             }
             else
             {
-                richTextBox1.Text = "Can't read changelog, please check your internet connection!";
+                richTextBox1.Text = res_man.GetString("ChangelogFormError", cul);
                 return;
             }
         }

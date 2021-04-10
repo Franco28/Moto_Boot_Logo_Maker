@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.SearchDevice.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -19,19 +19,20 @@ using System.Text;
 using System.Windows.Forms;
 using DarkUI.Forms;
 using System.Media;
+using System.Resources;
+using System.Globalization;
 
 namespace Moto_Logo
 {
     public partial class MainForm
     {
-
         public void CallForm(string title, string dname, string dcn, string reso, string mem, long logosize, string logopath, string logopath2, Bitmap picture)
         {
             Form fc = Application.OpenForms["DeviceInfo"];
             if (fc != null)
             {
                 SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning("Device already opened: " + fc.Text + ", close it to search new devices!", "Device " + fc.Text + " already opened");
+                DarkMessageBox.ShowWarning(res_man.GetString("SearchDeviceAlreadyOpened", cul) + " " + fc.Text + ", " + res_man.GetString("SearchDeviceAlreadyOpened2", cul), "Moto_Boot_Logo_Maker");
                 fc.BringToFront();
             }
             else
@@ -165,7 +166,7 @@ namespace Moto_Logo
             if (textBoxSearchDevice.Text == string.Empty)
             {
                 SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning("Please input a device!", "Search Moto Device");
+                DarkMessageBox.ShowWarning(res_man.GetString("SearchDevicePleaseInputDevice", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
             else
@@ -1326,7 +1327,7 @@ namespace Moto_Logo
                 #endregion 4MIB Devices
 
                 SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning("Device: " + textBoxSearchDevice.Text + ", was not found, please input like this: moto g6 plus", "Device was not found");
+                DarkMessageBox.ShowWarning(textBoxSearchDevice.Text + ", " + res_man.GetString("SearchDeviceNotFound", cul), "Moto_Boot_Logo_Maker");
             }
         }
 

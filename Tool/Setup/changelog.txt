@@ -2,6 +2,14 @@
 # CHANGELOG Windows #
 #####################
 
+
+---------------------------------------
+v4.4.3.7 - Released April xx, 2021 - WIP
+---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
+- [updated] Translations
+
 ---------------------------------------
 v4.4.3.6 - Released April 09, 2021
 ---------------------------------------

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 09-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -35,7 +35,7 @@ namespace Moto_Logo
 
             string errorpath = exePath + @"\Logs\";
             SystemSounds.Exclamation.Play();
-            DarkMessageBox.ShowInformation("Remember to send logs, then remove this file!", "Moto_Boot_Logo_Maker");
+            DarkMessageBox.ShowInformation(res_man.GetString("ErrorLogsWarnigMSG", cul), "Moto_Boot_Logo_Maker");
             Process.Start(errorpath);
             return;
             #endregion gotoerror
@@ -182,7 +182,7 @@ namespace Moto_Logo
             else
             {
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError("Wrong image type! Image type allowed: \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker");
+                DarkMessageBox.ShowError(res_man.GetString("ErrorWrongTypeOfIMG", cul) + " \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker");
                 return true;
             }
             return false;
@@ -429,6 +429,15 @@ namespace Moto_Logo
                 picZoom.Image = pictureBox1.Image;
                 _OriginalImage = pictureBox1.Image;
                 ResizeAndDisplayImage();
+                if (Properties.Settings.Default.IsMax == true)
+                {
+                    this.WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.StartPosition = FormStartPosition.CenterScreen;
+                }
             } 
             catch (Exception er)
             {

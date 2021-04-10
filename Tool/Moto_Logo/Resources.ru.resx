@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>Boot Logos Channel</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>Выберите путь сборки логотипа</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Компилировать</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Создайте и сохраните файл Logo.bin</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>Смени тему</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Путь к открытому файлу</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>Открыть папку с логотипом</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>Инструмент перезагрузки</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>Поиск на устройстве</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>Отмена</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>Остановить процесс создания логотипа</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>добавлять</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>Пожалуйста, сделайте логотип первым! тогда вы сможете сохранить его!</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>Не удается прочитать журнал изменений, проверьте подключение к Интернету!</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Смена темы, пожалуйста, подождите ...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>Вы уверены, что хотите перейти к пустому изображению?</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>Не могу прочитать кредиты ... файл отсутствует!</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>Кредиты</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>Dark</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>Устройство</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>Отображать</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>Информация о логотипе</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>изготовленный на заказ</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>Не удается прочитать статистику загрузок, проверьте подключение к Интернету!</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>Загрузки</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>Слишком большие байты</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>Не забудьте отправить логи, а затем удалите этот файл!</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>Неправильный тип изображения! Допустимый тип изображения:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Текущий проект открыт:</value>
@@ -324,6 +369,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>Путь к логотипу</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>Открытые журналы:</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>Открыть папку журналов</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>* Статус изображения: заблокировано</value>
   </data>
@@ -359,6 +410,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>Положение дел:</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>не является файлом .bin ... Выбирайте только файлы .bin!</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>это каталог...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>Выбирать</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>Создание логотипа: процесс был отменен!</value>
@@ -504,11 +564,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Максимальный размер Logo.bin</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework: невозможно получить доступ к версии .NET Framework ...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>новый</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>Изображения не были загружены, вы уверены, что хотите продолжить работу с пустыми изображениями?</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>Если вы хотите открыть собственный логотип, просто перетащите файл в Tool!</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>Загрузка логотипа:</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>Пожалуйста, подождите...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>открыто</value>
@@ -576,6 +648,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>Сохранить</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>Устройство уже открыто:</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>закройте для поиска новых устройств!</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>не найден, введите, пожалуйста, так: moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>Пожалуйста, введите устройство!</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Пожалуйста, выберите размер логотипа до открытия файла!</value>
   </data>
@@ -624,6 +708,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>Проверьте свой новый логотип</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>Введите модель своего устройства так: "moto g8 power"</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>тема</value>
   </data>
@@ -663,11 +750,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Нет доступных обновлений</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>Открыть собственный логотип</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>Цвет RGB</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>скопировано в буфер обмена!</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>Инструмент</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>Закрытие приложения для обновления ...</value>

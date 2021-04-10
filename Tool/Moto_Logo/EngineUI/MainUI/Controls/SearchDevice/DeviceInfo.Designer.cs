@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DeviceInfo.Designer.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -43,12 +43,12 @@ namespace Moto_Logo
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeviceInfo));
             this.pictureBoxDevice = new System.Windows.Forms.PictureBox();
-            this.labelBuildPath = new System.Windows.Forms.Label();
+            this.LabelDisplayTitle = new System.Windows.Forms.Label();
             this.labelResolution = new System.Windows.Forms.Label();
             this.labelLMemory = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LabelLogoInfoTitle = new System.Windows.Forms.Label();
             this.labelDName = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LabelDeviceTitle = new System.Windows.Forms.Label();
             this.labelCodeName = new System.Windows.Forms.Label();
             this.labelLogoSize = new System.Windows.Forms.Label();
             this.labelLogoPath = new System.Windows.Forms.Label();
@@ -80,18 +80,18 @@ namespace Moto_Logo
             this.pictureBoxDevice.TabStop = false;
             this.pictureBoxDevice.WaitOnLoad = true;
             // 
-            // labelBuildPath
+            // LabelDisplayTitle
             // 
-            this.labelBuildPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelBuildPath.AutoSize = true;
-            this.labelBuildPath.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.labelBuildPath.ForeColor = System.Drawing.Color.Lime;
-            this.labelBuildPath.Location = new System.Drawing.Point(596, 96);
-            this.labelBuildPath.Name = "labelBuildPath";
-            this.labelBuildPath.Size = new System.Drawing.Size(83, 28);
-            this.labelBuildPath.TabIndex = 153;
-            this.labelBuildPath.Text = "Display ";
-            this.labelBuildPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelDisplayTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelDisplayTitle.AutoSize = true;
+            this.LabelDisplayTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.LabelDisplayTitle.ForeColor = System.Drawing.Color.Lime;
+            this.LabelDisplayTitle.Location = new System.Drawing.Point(596, 96);
+            this.LabelDisplayTitle.Name = "LabelDisplayTitle";
+            this.LabelDisplayTitle.Size = new System.Drawing.Size(83, 28);
+            this.LabelDisplayTitle.TabIndex = 153;
+            this.LabelDisplayTitle.Text = "Display ";
+            this.LabelDisplayTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelResolution
             // 
@@ -118,19 +118,19 @@ namespace Moto_Logo
             this.labelLMemory.Text = "Memory: ---";
             this.labelLMemory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // LabelLogoInfoTitle
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.LabelLogoInfoTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(596, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 28);
-            this.label3.TabIndex = 155;
-            this.label3.Text = "Logo Info";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelLogoInfoTitle.AutoSize = true;
+            this.LabelLogoInfoTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.LabelLogoInfoTitle.ForeColor = System.Drawing.Color.Lime;
+            this.LabelLogoInfoTitle.Location = new System.Drawing.Point(596, 158);
+            this.LabelLogoInfoTitle.Name = "LabelLogoInfoTitle";
+            this.LabelLogoInfoTitle.Size = new System.Drawing.Size(101, 28);
+            this.LabelLogoInfoTitle.TabIndex = 155;
+            this.LabelLogoInfoTitle.Text = "Logo Info";
+            this.LabelLogoInfoTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelDName
             // 
@@ -143,19 +143,19 @@ namespace Moto_Logo
             this.labelDName.TabIndex = 158;
             this.labelDName.Text = "Name: ---";
             // 
-            // label5
+            // LabelDeviceTitle
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LabelDeviceTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(596, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 28);
-            this.label5.TabIndex = 157;
-            this.label5.Text = "Device";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelDeviceTitle.AutoSize = true;
+            this.LabelDeviceTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.LabelDeviceTitle.ForeColor = System.Drawing.Color.Lime;
+            this.LabelDeviceTitle.Location = new System.Drawing.Point(596, 12);
+            this.LabelDeviceTitle.Name = "LabelDeviceTitle";
+            this.LabelDeviceTitle.Size = new System.Drawing.Size(72, 28);
+            this.LabelDeviceTitle.TabIndex = 157;
+            this.LabelDeviceTitle.Text = "Device";
+            this.LabelDeviceTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCodeName
             // 
@@ -323,11 +323,11 @@ namespace Moto_Logo
             this.Controls.Add(this.labelLogoSize);
             this.Controls.Add(this.labelCodeName);
             this.Controls.Add(this.labelDName);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.LabelDeviceTitle);
             this.Controls.Add(this.labelLMemory);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LabelLogoInfoTitle);
             this.Controls.Add(this.labelResolution);
-            this.Controls.Add(this.labelBuildPath);
+            this.Controls.Add(this.LabelDisplayTitle);
             this.Controls.Add(this.pictureBoxDevice);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -343,10 +343,10 @@ namespace Moto_Logo
         }
 
         #endregion
-        private System.Windows.Forms.Label labelBuildPath;
+        private System.Windows.Forms.Label LabelDisplayTitle;
         public System.Windows.Forms.PictureBox pictureBoxDevice;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LabelLogoInfoTitle;
+        private System.Windows.Forms.Label LabelDeviceTitle;
         public System.Windows.Forms.Label labelLMemory;
         public System.Windows.Forms.Label labelDName;
         public System.Windows.Forms.Label labelCodeName;

@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>开机徽标频道</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>选择徽标构建路径</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>建立</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>生成并保存Logo.bin文件</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>改变主题</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>打开文件路径</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>打开徽标文件夹</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>重新加载工具</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>搜索设备</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>取消</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>停止徽标构建过程</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>附加</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>请先制作徽标！ 那么您就可以保存它！</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>无法阅读变更日志，请检查您的互联网连接！</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>正在更改主题，请稍候...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>您确定要空白图像吗？</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>无法读取积分...文件丢失！</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>学分</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>黑暗</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>展示</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>徽标信息</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>自订</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>无法读取下载统计信息，请检查您的互联网连接！</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>资料下载</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>字节太大</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>记住要发送日志，然后删除该文件！</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>图像类型错误！ 允许的图像类型：</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>当前打开了一个项目：</value>
@@ -321,6 +366,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>徽标构建路径</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>打开日志：</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>打开日志文件夹</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>*图片状态：锁定</value>
   </data>
@@ -356,6 +407,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>状态：</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>不是.bin文件...仅选择.bin文件！</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>是一个目录...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>选择</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>徽标构建：流程已取消！</value>
@@ -489,11 +549,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Logo.bin的最大大小</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework：无法访问.NET Framework版本...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>新</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>没有加载图像，确定要继续处理空白图像吗？</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>如果要打开自定义徽标，只需将文件拖放到“工具”中即可！</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>正在加载徽标：</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>请稍等...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>打开</value>
@@ -561,6 +633,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>保存</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>设备已打开：</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>关闭它以搜索新设备！</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>找不到，请输入以下内容：moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>请输入设备！</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>打开文件前，请选择徽标存储器的大小！</value>
   </data>
@@ -603,6 +687,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>测试您的新徽标</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>像这样输入您的设备型号：“ moto g8 power”</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>主题</value>
   </data>
@@ -639,11 +726,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>无可用更新</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>打开自定义徽标</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>RGB颜色</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>复制到剪贴板！</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>工具</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>正在关闭应用程序以进行更新...</value>

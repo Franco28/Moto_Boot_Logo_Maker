@@ -151,48 +151,48 @@
     <Compile Include="EngineUI\IntefaceClasses\MainProgram\CheckAdmin.cs" />
     <Compile Include="EngineUI\IntefaceClasses\MainProgram\IniToolSettings.cs" />
     <Compile Include="EngineUI\IntefaceClasses\MainProgram\Kill.cs" />
-    <Compile Include="EngineUI\Ionic\CommonSrc\CRC32.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ComHelper.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\EncryptionAlgorithm.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\Events.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\Exceptions.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ExtractExistingFileAction.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\FileSelector.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\OffsetStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\Shared.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipConstants.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipCrypto.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipDirEntry.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Extract.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Read.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipEntry.Write.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipEntrySource.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipErrorAction.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.AddUpdate.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Check.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Events.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Extract.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Read.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Save.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.Selector.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipFile.x-IEnumerable.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipInputStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipOutputStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zip\ZipSegmentedStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\Deflate.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\DeflateStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\GZipStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\Inflate.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\InfTree.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\ParallelDeflateOutputStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\Tree.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\Zlib.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\ZlibBaseStream.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\ZlibCodec.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\ZlibConstants.cs" />
-    <Compile Include="EngineUI\Ionic\Zlib\ZlibStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\CommonSrc\CRC32.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ComHelper.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\Events.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\Exceptions.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\FileSelector.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\OffsetStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\Shared.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipConstants.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipCrypto.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipDirEntry.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipEntry.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipEntry.Extract.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipEntry.Read.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipEntry.Write.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipEntrySource.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipErrorAction.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.AddUpdate.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Check.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Events.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Extract.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Read.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Save.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.Selector.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipFile.x-IEnumerable.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipInputStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipOutputStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zip\ZipSegmentedStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\Deflate.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\DeflateStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\GZipStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\Inflate.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\InfTree.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\Tree.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\Zlib.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibCodec.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibConstants.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibStream.cs" />
     <Compile Include="EngineUI\MainUI\Controls\Help\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,8 +287,8 @@
     <Compile Include="EngineUI\MainUI\MainForm\Logo\OpenLogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\PortableSettingsProvider\PortableSettingsProvider.cs" />
-    <Compile Include="EngineUI\PortableSettingsProvider\Shared\PortableSettingsProviderBase.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\PortableSettingsProvider\PortableSettingsProvider.cs" />
+    <Compile Include="EngineUI\IntefaceClasses\PortableSettingsProvider\Shared\PortableSettingsProviderBase.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -573,7 +573,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="EngineUI\AutoUpdaterDotNET\LICENSE" />
-    <None Include="EngineUI\Ionic\Zip\Migrated rules for Zip DLL.ruleset" />
+    <None Include="EngineUI\IntefaceClasses\Ionic\Zip\Migrated rules for Zip DLL.ruleset" />
     <None Include="packages.config" />
     <None Include="Properties\Profiles.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -642,11 +642,11 @@
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\download_32.png" />
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\hand_point.png" />
     <Content Include="EngineUI\AutoUpdaterDotNET\Resources\update.png" />
-    <Content Include="EngineUI\Ionic\Zlib\LICENSE.jzlib.txt" />
-    <Content Include="EngineUI\Ionic\Zlib\License.zlib.txt" />
+    <Content Include="EngineUI\IntefaceClasses\Ionic\Zlib\LICENSE.jzlib.txt" />
+    <Content Include="EngineUI\IntefaceClasses\Ionic\Zlib\License.zlib.txt" />
     <None Include="Resources\welcome_gif.gif" />
     <None Include="Resources\logo.png" />
-    <Content Include="EngineUI\PortableSettingsProvider\LICENSE.txt" />
+    <Content Include="EngineUI\IntefaceClasses\PortableSettingsProvider\LICENSE.txt" />
     <Content Include="Resources\devicesSearch\MotoDroid.png" />
     <Content Include="Resources\devicesSearch\MotoE.png" />
     <Content Include="Resources\devicesSearch\MotoEdge.png" />

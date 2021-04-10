@@ -195,8 +195,14 @@
   <data name="BootLogosChannel" xml:space="preserve">
     <value>Bootlogo-Kanal</value>
   </data>
+  <data name="btnAttachPathToolTipText" xml:space="preserve">
+    <value>Wählen Sie den Pfad zum Erstellen des Logos</value>
+  </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Kompilieren</value>
+  </data>
+  <data name="btnBuildToolTipText" xml:space="preserve">
+    <value>Erstellen und speichern Sie die Datei Logo.bin</value>
   </data>
   <data name="btnChangeTheme" xml:space="preserve">
     <value>Thema ändern</value>
@@ -204,8 +210,20 @@
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Dateipfad öffnen</value>
   </data>
+  <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
+    <value>Öffnen Sie den Logo-Ordner</value>
+  </data>
+  <data name="btnReloadToolTipText" xml:space="preserve">
+    <value>Tool neu laden</value>
+  </data>
+  <data name="btnSearchDeviceToolTipText" xml:space="preserve">
+    <value>Gerät suchen</value>
+  </data>
   <data name="btnStop" xml:space="preserve">
     <value>Stornieren</value>
+  </data>
+  <data name="btnStopToolTipText" xml:space="preserve">
+    <value>Stoppen Sie den Logo-Erstellungsprozess</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>Hinzufügen</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
     <value>Bitte mach erst ein Logo - du kannst es dann speichern.</value>
+  </data>
+  <data name="ChangelogFormError" xml:space="preserve">
+    <value>Changelog kann nicht gelesen werden, bitte überprüfen Sie Ihre Internetverbindung!</value>
   </data>
   <data name="ChangeThemeInfo" xml:space="preserve">
     <value>Ändere Thema, bitte warten...</value>
@@ -237,11 +258,29 @@
   <data name="ContinueWithBlankImge" xml:space="preserve">
     <value>Willst du mit einem leeren Bild weitermachen?</value>
   </data>
+  <data name="CreditsFormError" xml:space="preserve">
+    <value>Credits können nicht gelesen werden ... Datei fehlt!</value>
+  </data>
+  <data name="CreditsFormTitle" xml:space="preserve">
+    <value>Credits</value>
+  </data>
   <data name="darktoolStripMenuItem" xml:space="preserve">
     <value>Dunkel</value>
   </data>
+  <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
+    <value>Gerät</value>
+  </data>
+  <data name="DeviceInfoLabelDisplayTitle" xml:space="preserve">
+    <value>Anzeige</value>
+  </data>
+  <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
+    <value>Logo Info</value>
+  </data>
   <data name="DevicesCustom" xml:space="preserve">
     <value>Eigenes</value>
+  </data>
+  <data name="DownloadSFormInternetError" xml:space="preserve">
+    <value>Download-Statistiken können nicht gelesen werden. Bitte überprüfen Sie Ihre Internetverbindung!</value>
   </data>
   <data name="downloadSiteToolStripMenuItem" xml:space="preserve">
     <value>Downloads</value>
@@ -257,6 +296,12 @@
   </data>
   <data name="ErrorLogoFitImage3" xml:space="preserve">
     <value>Bytes zu groß</value>
+  </data>
+  <data name="ErrorLogsWarnigMSG" xml:space="preserve">
+    <value>Denken Sie daran, Protokolle zu senden und diese Datei dann zu entfernen!</value>
+  </data>
+  <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
+    <value>Falscher Bildtyp! Bildtyp erlaubt:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Du hast ein Projekt geöffnet:</value>
@@ -324,6 +369,12 @@
   <data name="labelBuildPath" xml:space="preserve">
     <value>Logo-Pfad</value>
   </data>
+  <data name="labelErrorGoToFileInfo" xml:space="preserve">
+    <value>Protokolle öffnen:</value>
+  </data>
+  <data name="labelGoToErrorToolTipText" xml:space="preserve">
+    <value>Öffnen Sie den Protokollordner</value>
+  </data>
   <data name="labelImageStatusLocked" xml:space="preserve">
     <value>* Bildstatus: Gesperrt</value>
   </data>
@@ -359,6 +410,15 @@
   </data>
   <data name="LogoBinStatus" xml:space="preserve">
     <value>Status:</value>
+  </data>
+  <data name="LogoBrowserErrorBinFile" xml:space="preserve">
+    <value>ist keine .bin-Datei ... Wählen Sie nur .bin-Dateien aus!</value>
+  </data>
+  <data name="LogoBrowserIsADir" xml:space="preserve">
+    <value>ist ein Verzeichnis...</value>
+  </data>
+  <data name="LogoBrowserSelectButton" xml:space="preserve">
+    <value>Wählen</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
     <value>Logo Build: Prozess wurde abgebrochen!</value>
@@ -492,11 +552,23 @@
   <data name="MaxLogoBinSize" xml:space="preserve">
     <value>Maximale Logo.bin Größe</value>
   </data>
+  <data name="NETFRAMEWORKERROR" xml:space="preserve">
+    <value>.NET Framework: Die .NET Framework-Version kann nicht erreicht werden ...</value>
+  </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>Neu</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
     <value>Keine Bilder wurden geladen. Willst du wirklich weitermachen?</value>
+  </data>
+  <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
+    <value>Wenn Sie ein benutzerdefiniertes Logo öffnen möchten, ziehen Sie die Datei einfach per Drag &amp; Drop in das Tool!</value>
+  </data>
+  <data name="OpenLogoMemoryTitle" xml:space="preserve">
+    <value>Logo wird geladen:</value>
+  </data>
+  <data name="OpenLogoMemoryTitle2" xml:space="preserve">
+    <value>Warten Sie mal...</value>
   </data>
   <data name="openToolStripMenuItem" xml:space="preserve">
     <value>Öffnen</value>
@@ -564,6 +636,18 @@
   <data name="saveToolStripMenuItem" xml:space="preserve">
     <value>Speichern</value>
   </data>
+  <data name="SearchDeviceAlreadyOpened" xml:space="preserve">
+    <value>Gerät bereits geöffnet:</value>
+  </data>
+  <data name="SearchDeviceAlreadyOpened2" xml:space="preserve">
+    <value>Schließen Sie es, um nach neuen Geräten zu suchen!</value>
+  </data>
+  <data name="SearchDeviceNotFound" xml:space="preserve">
+    <value>wurde nicht gefunden, bitte wie folgt eingeben: moto g6 plus</value>
+  </data>
+  <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
+    <value>Bitte geben Sie ein Gerät ein!</value>
+  </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Bitte wähle die Speichergröße vor dem Öffnen einer Datei!</value>
   </data>
@@ -609,6 +693,9 @@
   <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
     <value>Teste dein Logo</value>
   </data>
+  <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
+    <value>Geben Sie Ihr Gerätemodell folgendermaßen ein: "moto g8 power"</value>
+  </data>
   <data name="themetoolStripMenuItem" xml:space="preserve">
     <value>Thema</value>
   </data>
@@ -645,11 +732,17 @@
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Kein Update verfügbar</value>
   </data>
+  <data name="toolStripMenuItemOpenCustomLogo" xml:space="preserve">
+    <value>Öffnen Sie das benutzerdefinierte Logo</value>
+  </data>
   <data name="ToolTipRGBCOLOUR" xml:space="preserve">
     <value>RGB-Farben</value>
   </data>
   <data name="ToolTipRGBCOLOURCOPIED" xml:space="preserve">
     <value>In die Zwischenablage kopiert!</value>
+  </data>
+  <data name="toolToolStripMenuItem" xml:space="preserve">
+    <value>Werkzeug</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
     <value>Aktualisiere...</value>

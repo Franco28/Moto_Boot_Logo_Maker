@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 09-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -65,13 +65,13 @@ namespace Moto_Logo
             CheckDLL.dll();
             CheckFiles.files();
 
+            Translations();
+
             if (Properties.Settings.Default.LogoWasSaved == true)
             {
                 Properties.Settings.Default.LogoWasSaved = false;
             }
             Properties.Settings.Default.Save();
-
-            Translations();
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
@@ -111,15 +111,6 @@ namespace Moto_Logo
             _BackColor = pictureBox1.BackColor;
             picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            if (Properties.Settings.Default.IsMax == true)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-                this.StartPosition = FormStartPosition.CenterScreen;
-            }
             Reload();
             #endregion Settings
         }
@@ -153,7 +144,7 @@ namespace Moto_Logo
                     switch (answer)
                     {
                         case DialogResult.Yes:
-                            this.Text = "Opening logo: " + Properties.Settings.Default.LogoBinOpen + " Please wait...";
+                            this.Text = res_man.GetString("OpenLogoMemoryTitle", cul) + " " + Properties.Settings.Default.LogoBinOpen + " " + res_man.GetString("OpenLogoMemoryTitle2", cul);
                             OpenFile(Properties.Settings.Default.LogoBinOpen);
                             txtComments.Enabled = true;
                             cboMoto.Enabled = true;
@@ -235,7 +226,7 @@ namespace Moto_Logo
                 else
                 {
                     SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowInformation("If you want to open a custom logo, just drag and drop the file into Tool!", "Moto_Boot_Logo_Maker");
+                    DarkMessageBox.ShowInformation(res_man.GetString("OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker");
                 }
                 return;
             }

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Credits.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -12,9 +12,11 @@
  */
 
 using System;
+using System.Globalization;
 using System.IO;
 using System.Media;
 using System.Reflection;
+using System.Resources;
 using DarkUI.Forms;
 
 namespace Moto_Logo
@@ -22,10 +24,16 @@ namespace Moto_Logo
     public partial class Credits : DarkForm
     {
         string exePath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+        private CultureInfo cul;
+        private ResourceManager res_man;
 
         public Credits()
         {
             InitializeComponent();
+
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            this.Text = res_man.GetString("CreditsFormTitle", cul);
         }
 
         public void cAppend(string message)
@@ -58,7 +66,7 @@ namespace Moto_Logo
             }
             else
             {
-                cAppend("Can´t read credits... file is missing!");
+                cAppend(res_man.GetString("CreditsFormError", cul));
                 return;
             }
         }

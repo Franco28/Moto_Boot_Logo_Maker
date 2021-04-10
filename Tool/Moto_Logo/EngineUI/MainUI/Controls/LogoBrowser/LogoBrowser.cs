@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -33,6 +33,8 @@ namespace Moto_Logo
         {
             InitializeComponent(); 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            buttonSelect.Text = res_man.GetString("LogoBrowserSelectButton", cul);
         }
 
         public void Round(Panel panel)
@@ -144,7 +146,7 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.Message.ToString(), "");
+                DarkMessageBox.ShowError(ex.Message.ToString(), "Moto_Boot_Logo_Maker");
             }
         }
 
@@ -182,14 +184,14 @@ namespace Moto_Logo
                 else
                 {
                     SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning("File " + sN + " is not a .bin file... Select only .bin files!", "Moto_Boot_Logo_Maker");
+                    DarkMessageBox.ShowWarning(sN + " " + res_man.GetString("LogoBrowserErrorBinFile", cul), "Moto_Boot_Logo_Maker");
                     return;
                 }
             }
             else
             {
                 SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning("This " + sN + " is a directory...", "Moto_Boot_Logo_Maker");
+                DarkMessageBox.ShowWarning(sN + " " + res_man.GetString("LogoBrowserIsADir", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
         }
