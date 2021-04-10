@@ -5,25 +5,28 @@
   
   Moto_Boot_Logo_Maker Copyright (C) 2020 - 2021 Franco28.
 
-  The licenses for files are:
+  The Licenses for files are:
   
   1) Moto_Boot_Logo_Maker.exe:
 	- The "MIT License" as main license for most of the code.
 	- The "GNU LGPL License" for some code.
 	- The "BSD-style License" for Zlib.
+	- The "BSD 3-Clause License" for PortableSettingsProvider.
 
   2) AndroidLib.dll:
-	- The "MIT License" as main license for most of the code.
+	- The "MIT License" as main License for most of the code.
 
   3) HtmlAgilityPack.dll:
-	- The "MIT License" as main license for most of the code.	
+	- The "MIT License" as main License for most of the code.	
 
+  4) DarkUI.dll:
+	- The "MIT License" as main License for most of the code.	
 --
 
   NOTE:
       I. You can use Moto_Boot_Logo_Maker on any computer with this minimum requirements: 
-      	  1. NetFramework v4.8. 
-	  2. Windows 7, Windows 8, Windows 8.1 & Windows 10. 
+      	  1. Net Framework v4.8. 
+	  2. Windows 7, Windows 8, Windows 8.1 or Windows 10. 
       	  3. arch x86 or x64 (any cpu).
       II. Redistributions in binary form must reproduce related license information from this file.	
 
@@ -66,8 +69,8 @@
 	http://www.gnu.org/
 --
 
-	BSD-style information
-	---------------------	
+	BSD-style/BSD 3-Clause information
+	----------------------------------	
 	Redistribution and use in source and binary forms, with or without
 	modification, are permitted provided that the following conditions are met:
 	

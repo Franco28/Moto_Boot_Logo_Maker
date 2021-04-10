@@ -53,7 +53,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AndroidLib, Version=1.5.3.0, Culture=neutral, PublicKeyToken=a80a6e5735e30a18, processorArchitecture=MSIL">
+    <Reference Include="AndroidLib, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Setup\AndroidLib.dll</HintPath>
     </Reference>
