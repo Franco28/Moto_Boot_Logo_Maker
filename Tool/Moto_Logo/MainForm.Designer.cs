@@ -1258,6 +1258,9 @@ namespace Moto_Logo
             this.Text = "Moto_Boot_Logo_Maker by Franco28";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.groupBoxLogoImageOrientation.ResumeLayout(false);
             this.groupBoxLogoImageOrientation.PerformLayout();
             this.groupBoxLogoImageOption.ResumeLayout(false);

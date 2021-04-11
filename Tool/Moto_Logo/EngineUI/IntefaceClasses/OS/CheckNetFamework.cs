@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckNetFramework.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 10-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,31 +13,44 @@
 
 using Microsoft.Win32;
 using System;
+using System.Globalization;
+using System.Resources;
 
 namespace Moto_Logo
 {
     public class CheckNetFamework
     {
+        public static CultureInfo cul = null;
+        public static ResourceManager res_man;
+
         public static void Get48FromRegistry()
         {
-            const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
-            using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            try
             {
-                int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-                if (ndpKey != null && ndpKey.GetValue("Release") != null)
+                const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
+                using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
                 {
-                    Logs.DebugWindwosInfo($"NetFramework: v" + CheckFor48DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
+                    int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
+                    if (ndpKey != null && ndpKey.GetValue("Release") != null)
+                    {
+                        Logs.DebugWindwosInfo($".NET Framework: v" + CheckFor48DotVersion(releaseKey), "OS: " + OSVersionInfo.Name.ToString());
+                    }
+                    else
+                    {
+                        Logs.DebugWindwosInfo(res_man.GetString("NETFRAMEWORKERROR", cul), "OS: " + OSVersionInfo.Name.ToString());
+                    }
                 }
-                else
-                {
-                    Logs.DebugWindwosInfo("NetFramework: Unable to reach out net framework version...", "OS: " + OSVersionInfo.Name.ToString());
-                }
+            } 
+            catch (Exception er)
+            {
+                Logs.DebugWindwosInfo(res_man.GetString("NETFRAMEWORKERROR", cul) + " \n" + er.ToString(), "OS: " + OSVersionInfo.Name.ToString());
             }
         }
 
         public static string CheckFor48DotVersion(int releaseKey)
         {
-            if (releaseKey >= 528049)
+            if (releaseKey >= 528372)
             {
                 return "4.8";
             }
@@ -82,7 +95,7 @@ namespace Moto_Logo
                 return "4.5 or later";
             }
             InternetCheck.CheckInternetProcessStart("https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-web-installer");
-            return "No .NET 4.5 or later version detected. So Tool won´t be launched. Please if you want to fix this, install .NET 4.8.";
+            return "No .NET 4.5 or later version detected. So Tool won´t be launched. Please if you want to fix this, install .NET v4.8.";
         }
     }
 }

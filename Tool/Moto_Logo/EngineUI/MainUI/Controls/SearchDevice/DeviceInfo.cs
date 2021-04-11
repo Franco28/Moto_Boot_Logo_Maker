@@ -21,7 +21,7 @@ namespace Moto_Logo
 {
     public partial class DeviceInfo : DarkForm
     {
-        private CultureInfo cul;
+        public readonly CultureInfo cul = null;
         private ResourceManager res_man;
 
         public DeviceInfo()

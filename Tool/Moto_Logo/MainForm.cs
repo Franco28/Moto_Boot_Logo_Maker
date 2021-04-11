@@ -686,6 +686,36 @@ namespace Moto_Logo
             }
         }
 
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.StartPosition = FormStartPosition.CenterScreen;
+                picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
+                _BackColor = pictureBox1.BackColor;
+                _ZoomFactor = trbZoomFactor.Value;
+                pictureBox1.Image = Resources.logo;
+                picZoom.Image = pictureBox1.Image;
+                _OriginalImage = pictureBox1.Image;
+                ResizeAndDisplayImage();
+                Properties.Settings.Default.IsMax = false;
+                Properties.Settings.Default.Save();
+            }
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
+                _BackColor = pictureBox1.BackColor;
+                _ZoomFactor = trbZoomFactor.Value;
+                pictureBox1.Image = Resources.logo;
+                picZoom.Image = pictureBox1.Image;
+                _OriginalImage = pictureBox1.Image;
+                ResizeAndDisplayImage();
+                Properties.Settings.Default.IsMax = true;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             #region ExitToolSaveData

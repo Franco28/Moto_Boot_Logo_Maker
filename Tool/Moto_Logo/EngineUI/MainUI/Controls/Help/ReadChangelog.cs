@@ -24,7 +24,7 @@ namespace Moto_Logo
 {
     public partial class ReadChangelog : DarkForm
     {
-        private CultureInfo cul;
+        public readonly CultureInfo cul = null;
         private ResourceManager res_man;
 
         public ReadChangelog()

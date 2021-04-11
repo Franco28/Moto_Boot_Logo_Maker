@@ -75,7 +75,6 @@ namespace Moto_Logo
             using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey("SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full\\"))
             {
                 int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-
                 if (ndpKey != null && ndpKey.GetValue("Release") != null)
                 {
                     cAppend(".NET Framework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));

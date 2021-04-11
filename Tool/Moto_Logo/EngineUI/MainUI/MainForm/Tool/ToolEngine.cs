@@ -419,6 +419,19 @@ namespace Moto_Logo
                     textLogoName.Text = @"logo";
                     Properties.Profiles.Default.LogoName = textLogoName.Text;
                 }
+                if (Properties.Settings.Default.IsMax == true)
+                {
+                    this.WindowState = FormWindowState.Maximized;
+                    Properties.Settings.Default.IsMax = true;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.StartPosition = FormStartPosition.CenterScreen;
+                    Properties.Settings.Default.IsMax = false;
+                    Properties.Settings.Default.Save();
+                }
                 Properties.Profiles.Default.Save();
                 picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
                 _BackColor = pictureBox1.BackColor;
@@ -429,15 +442,6 @@ namespace Moto_Logo
                 picZoom.Image = pictureBox1.Image;
                 _OriginalImage = pictureBox1.Image;
                 ResizeAndDisplayImage();
-                if (Properties.Settings.Default.IsMax == true)
-                {
-                    this.WindowState = FormWindowState.Maximized;
-                }
-                else
-                {
-                    this.WindowState = FormWindowState.Normal;
-                    this.StartPosition = FormStartPosition.CenterScreen;
-                }
             } 
             catch (Exception er)
             {

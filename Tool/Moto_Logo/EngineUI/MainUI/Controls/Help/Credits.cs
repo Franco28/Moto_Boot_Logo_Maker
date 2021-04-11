@@ -24,7 +24,7 @@ namespace Moto_Logo
     public partial class Credits : DarkForm
     {
         string exePath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-        private CultureInfo cul;
+        public readonly CultureInfo cul = null;
         private ResourceManager res_man;
 
         public Credits()
