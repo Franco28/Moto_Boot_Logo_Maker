@@ -52,10 +52,10 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 ## Downloads SF
 
-#### Download Moto_Boot_Logo_Maker v4.4.3.6 (09-04-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.6_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.7 (13-04-2021) from here * [Moto_Boot_Logo_Maker](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.7_Setup.exe) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker v4.4.3.6 (09-04-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=2188818919693780426) 
+#### Download Moto_Boot_Logo_Maker v4.4.3.7 (13-04-2021) from here * [Moto_Boot_Logo_Maker]() 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt) 
 
