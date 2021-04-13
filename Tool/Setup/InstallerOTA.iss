@@ -8,7 +8,7 @@
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-04-10"
+#define MyAppDate "2021-04-13"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -30,7 +30,7 @@ ArchitecturesAllowed=x86 x64
 OutputBaseFilename={#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}
 Compression=lzma2/ultra64
 InternalCompressLevel=ultra
-CompressionThreads=4
+CompressionThreads=8
 WizardImageStretch=True
 AppContact=Support
 AppCopyright=Copyright © 2020 - 2021 MOD by @Franco28
@@ -93,8 +93,6 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "credits.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 13-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -72,17 +72,25 @@ namespace Moto_Logo
             cAppend(res_man.GetString("AboutBoxToolCul", cul) + " " + ci.Name.ToString());
             cAppend(res_man.GetString("AboutBoxOS", cul) + " " + OSVersionInfo.Name.ToString());
 
-            using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey("SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full\\"))
+            try
             {
-                int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
-                if (ndpKey != null && ndpKey.GetValue("Release") != null)
+                const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
+                using (RegistryKey ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
                 {
-                    cAppend(".NET Framework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));
+                    int releaseKey = Convert.ToInt32(ndpKey.GetValue("Release"));
+                    if (ndpKey != null && ndpKey.GetValue("Release") != null)
+                    {
+                        cAppend(".NET Framework: v" + CheckNetFamework.CheckFor48DotVersion(releaseKey));
+                    }
+                    else
+                    {
+                        cAppend(res_man.GetString("NETFRAMEWORKERROR", cul));
+                    }
                 }
-                else
-                {
-                    cAppend(res_man.GetString("NETFRAMEWORKERROR", cul));
-                }
+            }             
+            catch (Exception er)
+            {
+                Logs.DebugWindwosInfo(res_man.GetString("NETFRAMEWORKERROR", cul) + " \n" + er.ToString(), "OS: " + OSVersionInfo.Name.ToString());
             }
 
             cAppend(res_man.GetString("AboutBoxImageRunTime", cul) + " " + typeof(string).Assembly.ImageRuntimeVersion);
