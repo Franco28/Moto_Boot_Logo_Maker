@@ -4,7 +4,7 @@
 
 
 ---------------------------------------
-v4.4.3.7 - Released April 13, 2021 - WIP
+v4.4.3.7 - Released April 13, 2021
 ---------------------------------------
 NOTE: Some translations are missing, I will be working on this, for now still in english
 
