@@ -32,6 +32,8 @@
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.labelInformation = new DarkUI.Controls.DarkTitle();
             this.labelSize = new DarkUI.Controls.DarkTitle();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBar
@@ -49,11 +51,18 @@
             resources.ApplyResources(this.labelSize, "labelSize");
             this.labelSize.Name = "labelSize";
             // 
+            // pictureBoxIcon
+            // 
+            resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.TabStop = false;
+            // 
             // DownloadUpdateDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.labelSize);
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.progressBar);
@@ -63,8 +72,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DownloadUpdateDialog_FormClosing);
             this.Load += new System.EventHandler(this.DownloadUpdateDialogLoad);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -72,5 +81,6 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private DarkUI.Controls.DarkTitle labelInformation;
         private DarkUI.Controls.DarkTitle labelSize;
+        private System.Windows.Forms.PictureBox pictureBoxIcon;
     }
 }
