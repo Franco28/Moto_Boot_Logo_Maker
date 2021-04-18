@@ -657,6 +657,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>重置工具</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>打開工具文件夾</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>啟用自動保存配置文件</value>
   </data>

@@ -660,6 +660,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Narzędzie resetowania</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Otwórz folder narzędzi</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Włącz profile automatycznego zapisywania</value>
   </data>

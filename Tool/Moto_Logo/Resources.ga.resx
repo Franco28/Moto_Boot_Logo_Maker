@@ -660,6 +660,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Uirlis Athshocraigh</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Fillteán Uirlisí Oscailte</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Cumasaigh próifílí sábhála uathoibríoch</value>
   </data>

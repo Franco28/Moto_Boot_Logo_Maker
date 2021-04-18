@@ -672,6 +672,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Инструмент сброса</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Открыть папку с инструментами</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Включить автосохранение профилей</value>
   </data>

@@ -690,6 +690,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Strumento di ripristino</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Apri la cartella degli strumenti</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Abilita i profili di salvataggio automatico</value>
   </data>

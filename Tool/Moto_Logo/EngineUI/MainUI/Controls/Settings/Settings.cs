@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Settings.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 09-04-2021                                               #
+#    Date: 17-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -34,15 +34,16 @@ namespace Moto_Logo
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
             this.Text = res_man.GetString("settingsToolStripMenuItem", cul);  
-            groupBox1.Text = res_man.GetString("SettingsGroupBox1", cul);
-            groupBox2.Text = res_man.GetString("SettingsGroupBox2", cul);
-            groupBox3.Text = res_man.GetString("SettingsGroupBox3", cul);
+            groupBoxEASP.Text = res_man.GetString("SettingsGroupBox1", cul);
+            groupBoxEASLIM.Text = res_man.GetString("SettingsGroupBox2", cul);
+            groupBoxEU.Text = res_man.GetString("SettingsGroupBox3", cul);
             radioButtonYESUpdates.Text = radioButtonYESLogo.Text = radioButtonYES.Text = res_man.GetString("SettingsYes", cul);
             radioButtonNOUpdates.Text = radioButtonNO.Text = radioButtonNOLogo.Text = res_man.GetString("SettingsNo", cul);
             buttonRTP.Text = res_man.GetString("materialButtonResetAllProfiles", cul);
             buttonRTS.Text = res_man.GetString("materialButtonResetToolSettings", cul);
-            label8.Text = res_man.GetString("SettingRT", cul);
-            label7.Text = res_man.GetString("SettingGS", cul);
+            labelResetTool.Text = res_man.GetString("SettingRT", cul);
+            labelGeneralSettings.Text = res_man.GetString("SettingGS", cul);
+            buttonOpenToolFolder.Text = res_man.GetString("SettingsbuttonOpenToolFolder", cul);
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -129,7 +130,7 @@ namespace Moto_Logo
         {
             //var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
             //var newpath = path.Replace(@"\user.config", "").Trim();
-            Process.Start(exePath + @"\Settings\");
+            Process.Start(exePath);
             this.Close();
         }
     }

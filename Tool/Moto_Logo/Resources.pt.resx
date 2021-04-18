@@ -657,6 +657,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Ferramenta de Reinicialização</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Abrir pasta de ferramentas</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Ativar o salvamento automático dos perfis</value>
   </data>

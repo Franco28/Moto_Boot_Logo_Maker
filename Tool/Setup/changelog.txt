@@ -5,7 +5,9 @@
 ---------------------------------------
 v4.4.3.8 - Released April xx, 2021 - WIP
 ---------------------------------------
-- [fixed] OTA Download DPI form and labels
+- [fixed] OTA Download Form: speed label size, title label DPI scaling
+- [fixed] Settings Form: GroupBox Updates wrong title (EN Language)
+- [updated] Settings Form: Re-named and change button "go to settings folder" to --> Open Tool Folder
 
 ---------------------------------------
 v4.4.3.7 - Released April 13, 2021

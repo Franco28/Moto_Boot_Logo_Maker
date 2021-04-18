@@ -675,6 +675,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Outil de réinitialisation</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Ouvrir le dossier d'outils</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Activer les profils d'enregistrement automatique</value>
   </data>

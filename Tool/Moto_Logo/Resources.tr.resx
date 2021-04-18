@@ -657,6 +657,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Aracı Sıfırla</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Araç Klasörünü Aç</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Otomatik kaydetme profillerini etkinleştir</value>
   </data>

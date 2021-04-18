@@ -678,6 +678,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Reset Tool</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Open Tool Folder</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Enable auto save profiles</value>
   </data>

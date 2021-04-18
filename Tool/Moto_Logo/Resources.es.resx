@@ -660,6 +660,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>Reinicio de la herramienta</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>Abrir carpeta de la herramienta</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>Habilitar el auto guardado de perfiles</value>
   </data>

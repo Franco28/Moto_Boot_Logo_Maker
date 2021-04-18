@@ -657,6 +657,9 @@
   <data name="SettingRT" xml:space="preserve">
     <value>リセットツール</value>
   </data>
+  <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
+    <value>ツールフォルダを開く</value>
+  </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
     <value>自動保存プロファイルを有効にする</value>
   </data>
