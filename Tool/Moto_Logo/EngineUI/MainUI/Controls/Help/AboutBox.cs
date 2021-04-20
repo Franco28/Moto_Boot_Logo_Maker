@@ -98,12 +98,9 @@ namespace Moto_Logo
 
             cAppend("---------------------------------------- End Tool Info ----------------------------------------");
 
-            if (Properties.Settings.Default.Updates == true)
-            {
-                cAppend(" ");
-                cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutCheckinf4Updates", cul));
-                CheckForUpdates();
-            }
+            cAppend(" ");
+            cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutCheckinf4Updates", cul));
+            CheckForUpdates();
         }
 
         #region updatesinfo
@@ -296,6 +293,11 @@ namespace Moto_Logo
         {
             InternetCheck.CheckInternetProcessStart("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RPY4ZNYX2VA4G&source=url");
             this.Close();
+        }
+
+        private void AboutBox_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
         }
     }
 }
