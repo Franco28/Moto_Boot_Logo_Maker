@@ -45,19 +45,20 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 ---- unpack on "C:\\NewMotoLogo\\" -> default folder to save logo build, you can change this!
 
-#### NOTE: If you want portable version, just select portable option on installer!
+#### NOTE: If you want PORTABLE version, just download PORTABLE version ;)!
 
 ##### Then, you are free to load any logo and change logo images!
 
 
 ## Downloads SF
-
 #### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.8_Setup.exe) 
 
 #### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.3.8_PORTABLE.zip) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker](https://www.androidfilehost.com/?fid=2188818919693786167) 
+#### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://www.androidfilehost.com/?fid=2188818919693786167) 
+
+#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://www.androidfilehost.com/?fid=2188818919693786171) 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt) 
 
