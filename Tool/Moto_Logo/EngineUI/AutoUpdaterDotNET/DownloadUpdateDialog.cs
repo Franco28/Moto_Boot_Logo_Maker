@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
@@ -11,6 +12,7 @@ using System.Text;
 using System.Windows.Forms;
 using AutoUpdaterDotNET.Properties;
 using DarkUI.Forms;
+using Moto_Logo;
 
 namespace AutoUpdaterDotNET
 {
@@ -260,20 +262,46 @@ namespace AutoUpdaterDotNET
         }
 
         private void DownloadUpdateDialog_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (AutoUpdater.Mandatory && AutoUpdater.UpdateMode == Mode.ForcedDownload)
-            {
-                if (ModifierKeys == Keys.Alt || ModifierKeys == Keys.F4)
-                {
-                    e.Cancel = true;
-                    return;
-                }
-            }
+        {           
+            string closeadb = "adb";
+            string closefastboot = "fastboot";
+            string closetool = "Moto_Boot_Logo_Maker";
 
             if (_webClient != null && _webClient.IsBusy)
             {
-                _webClient.CancelAsync();
-                DialogResult = DialogResult.Cancel;
+                DialogResult answer = MessageBox.Show("Do you want to exit UPDATE? This will kill Tool and UPDATE will continue in next Tool launch...", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                switch (answer)
+                {
+                    case DialogResult.Yes:
+                        _webClient.CancelAsync();
+                        _webClient.Dispose();
+                        foreach (var process in Process.GetProcessesByName(closeadb))
+                        {
+                            process.Kill();
+                        }
+                        foreach (var process in Process.GetProcessesByName(closefastboot))
+                        {
+                            process.Kill();
+                        }
+                        foreach (var process in Process.GetProcessesByName(closetool))
+                        {
+                            process.Kill();
+                        }
+                        break;
+                    case DialogResult.No:
+                        try
+                        {
+                            e.Cancel = true;
+                            return;
+                        }
+                        catch (Exception er)
+                        {
+                            Logs.DebugErrorLogs(er);
+                            SystemSounds.Hand.Play();
+                            DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                        }
+                        break;
+                }
             }
         }
 

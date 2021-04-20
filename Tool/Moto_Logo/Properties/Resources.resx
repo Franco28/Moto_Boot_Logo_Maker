@@ -448,4 +448,37 @@
   <data name="SearchDevice_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\toolui\searchdevice_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image_x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\image_x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\lock_x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rgb_x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\rgb_x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock_x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\unlock_x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\zoom_x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logolist_x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\logolist_x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messageBbl_x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\messagebbl_x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aupdates_x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\aupdates_x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="generalsettings_x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\generalsettings_x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smemory_x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\smemory_x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sprofile_x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\sprofile_x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

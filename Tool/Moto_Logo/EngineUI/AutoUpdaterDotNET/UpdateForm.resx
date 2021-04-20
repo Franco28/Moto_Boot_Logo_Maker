@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;webBrowser.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="buttonRemindLater.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -180,7 +180,7 @@
 </value>
   </data>
   <data name="buttonRemindLater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 573</value>
+    <value>252, 573</value>
   </data>
   <data name="buttonRemindLater.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -210,7 +210,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonRemindLater.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pictureBoxIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -308,7 +308,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxIcon.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buttonSkip.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -366,20 +366,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonSkip.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="buttonUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABmUlEQVQ4T41QS0sCURjt30QR
-        ZLTo9QMyaqO9FtE/aEQNK2oVQZaZZS1rYRCtemFEBJYgmW2iNkWLgh4QgZo9iUo73XNnJhhHyQNn5uOc
-        8525c8sASLbOJzItwTis/5AZZvW9vwIaM3tXmI5cIlCE9Jhh1lRgnY1jLn4PW+gM7Uvn6MgjNXrMMGsq
-        aBatC6fvcOym4CxCesw0Bw/NBdZAFE2+GOrHo5IN3igaNXLWdWbavNvmgm5lkmJJ6FJ8fBkL7H1TFHF3
-        e4Pk/R36Qweo8mxKcqZGj7ArMmsssKkinlIPyL4mUT0Yxs5FBisnSdQMbUmNHqFljQV2xU8RA8sJ1Ijl
-        uuEwFo8f0bt6jYaRsCgJS4/QsoULyt0bGEu8wZt4xmgsLW4+iYmjF6nRIwoW6L+A3Acq3etwRDJwRdKS
-        nKnRIwr+gk27xNzXp3h+i4U1uPafJTlTUz1RoGbzCvQT/GTFIyfHCvFVUoXQpFfkBJ3OAMWSoGWNBT2e
-        4AsNm7ggHpFfaRczyVnV/HKZWVOBgEWwtkRa1D2U/QIUT+dvijeyIwAAAABJRU5ErkJggg==
-</value>
+    <value>7</value>
   </data>
   <data name="buttonUpdate.Location" type="System.Drawing.Point, System.Drawing">
     <value>584, 573</value>
@@ -409,7 +396,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonUpdate.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelUpdate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -439,7 +426,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelUpdate.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelDescription.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -466,7 +453,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelDescription.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="labelReleaseNotes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -496,6 +483,51 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelReleaseNotes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelIconDownload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEB0lEQVRYR61TS2yUZRSdhS6N
+        K9iyYQEJgWgCRNwIgrVRkgLaEAmKMUSibcKQFNAtEVNgoJRHSACrJD5CLaS2ISZWIEhbIJZHASXUMG3n
+        PfNPp/P6Z/6ZTg/3fPNwal30/6Y3Oblz7z3nfIcfcACYBakX6ttu9Na3D+Dt4/01gz70oy/NZ7xVPVSW
+        DsdL9e39cPWN4MhvI3DVAKUXH/rRd64BFjB5a98zrGu/jfUn7mCDBqijnj70o+9cAyykwHXdi4bzD7Gl
+        4yHe63hkG9RRT59SgIVzD9B2E8cHQtj+0z/YcVEf1NOHfrYC1B27idN/TmJXjx+fCT7vtQ/qqKcP/ewF
+        aOvH2UcWWq7FsbcGtFxL4OxjC3V2/wrqDvWlXm+9gdUHr2L1VzVA9GvEZ+PBXnsBGne75Of8VWPzIXsB
+        Njcdlp/AqNsNt2DUPWobRZ1b+dDPVoBN5QBjY4JxgQdj40WMCzye2eC+zCG/qBtTPvTTCqDMvd4K/H4f
+        jLAfcSOARDRYAWfuea/mU8/SDuD1+uD1+RV8fj+i4RBaLgxi2d4eLN/XgxUCds7c805eWUM9SzuAPxAQ
+        BBWCoRBSMUMe+wWd9wLouh/AZQE7Z+55J6+soZ6lHSAYlIeDIYVIOIxsPIrl8lD3cAir5L/Xa4f/UJ0z
+        97yTV9ZQz9IOEApHKjAMA1ZyUj3U+ziCN9oGsb79luqcueedvGodSzuAETEQEUTFdHJiAgUzrh769UkU
+        b50ewjtn7qrOmXveySOfOupZ2gGiYhaLxWAm45jKJCEv4JX98gWeTODdcw/Q8M2w6py555088qmjnqUd
+        YDIeQyYdx77vb2NZSzdelUdWfiH/CIcNbP72LzRe+Ft1ztzzTh751FHP0g6QTCSQN1NY7LyM80NRdNw1
+        8N1QBF9f9WHbD0+x/ccRfCD95EBA7Xknj3zqqGfpB0gmYKZT8mkzWLLnEk7diWLbRTc+6nTj45/d+KSr
+        2D/sfKb2vJNHPnXUs7QDpFNppJIp5DImMG1hifMSjt2KYWe3F592e7BLwM6Ze97JI5866ln6AUwxSqel
+        p5G3MrLJYemeLrQOxtF0JYzmKyHVOXPPO3nkF3USXEo7QDaThWnK5xRkMxkUcpZsC1jq7MKBgSScv8dU
+        58w97+T9q8kqH9sBGkoBcjTMZivIWWJYyMllWj36Zb9Zenxa7XmfwVeBAfppBcjn87Cs3Azkc3l5bErd
+        FzV1qs6Z+1lc0bO0AxRoLCb/RWFKjKcLwpA/uXTO/8srBbUdYFNzMcB8Ff1sBXh/91H5OX9FPzsBFmx1
+        ujwUMTk/ny6opw/96DvXAC8LVgjWCt6cB9CHfvSd+Vb1UFk6HC+WyEzMz1Yr6EM/+la9Bcdz7TEMuGYc
+        PkoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="labelIconDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 573</value>
+  </data>
+  <data name="labelIconDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="labelIconDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>209</value>
+  </data>
+  <data name="&gt;&gt;labelIconDownload.Name" xml:space="preserve">
+    <value>labelIconDownload</value>
+  </data>
+  <data name="&gt;&gt;labelIconDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIconDownload.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelIconDownload.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

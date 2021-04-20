@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 20-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -29,6 +29,7 @@ using Timer = System.Windows.Forms.Timer;
 using TreeNode = System.Windows.Forms.TreeNode;
 using DarkUI.Forms;
 using System.Media;
+using AutoUpdaterDotNET;
 
 namespace Moto_Logo
 {
@@ -77,6 +78,7 @@ namespace Moto_Logo
             {
                 this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
                 checkForUpdatesToolStripMenuItem.Enabled = false;
+                AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
             }
             else
             {
@@ -118,6 +120,10 @@ namespace Moto_Logo
         private void MainForm_Load(object sender, EventArgs e)
         {
             #region LoadSettings 
+            ImageStatusBox.Clear();
+            ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
+            ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
+
             if (Properties.Settings.Default.SaveProfiles == true)
             {
                 LoadProfiles();
@@ -167,6 +173,9 @@ namespace Moto_Logo
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ImageStatusBox.Clear();
+            ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
+            ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
             Properties.Settings.Default.LogoBinOpen = "";
             Properties.Settings.Default.Save();
             buttonAppend.Enabled = true;

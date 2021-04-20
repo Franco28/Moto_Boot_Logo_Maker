@@ -140,6 +140,7 @@ namespace Moto_Logo
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Downloading file...";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CheckFilesDownload_FormClosing);
             this.Load += new System.EventHandler(this.CheckFilesDownload_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);

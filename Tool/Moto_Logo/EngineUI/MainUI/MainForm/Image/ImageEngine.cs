@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ImageEngine.cs                                  #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 20-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,6 +11,7 @@
 #####################################################################
  */
 
+using Moto_Logo.Properties;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -26,16 +27,29 @@ namespace Moto_Logo
         private Color _BackColor;
         private Image _OriginalImage;
 
+        public void ImageStatusBoxMSG(string message)
+        {
+            this.Invoke((Action)delegate
+            {
+                ImageStatusBox.AppendText("\n" + message);
+                ImageStatusBox.ScrollToCaret();
+            });
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             pictureBox1.MouseMove -= pictureBox1_MouseMove;
-            labelImageStatus.Text = res_man.GetString("labelImageStatusLocked", cul);
+            labelIconLUImage.Image = Resources.lock_x20;
+            ImageStatusBox.Clear();
+            ImageStatusBoxMSG(res_man.GetString("labelImageStatusLocked", cul));
         }
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
         {
             pictureBox1.MouseMove += pictureBox1_MouseMove;
-            labelImageStatus.Text = res_man.GetString("labelImageStatusUnlocked", cul);
+            labelIconLUImage.Image = Resources.unlock_x20;
+            ImageStatusBox.Clear();
+            ImageStatusBoxMSG(res_man.GetString("labelImageStatusUnlocked", cul));
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
@@ -44,12 +58,15 @@ namespace Moto_Logo
             {
                 if (pictureBox1.Image == null)
                 {
+                    labelIconLUImage.Image = null;
+                    ImageStatusBox.Clear();
+                    ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
+                    ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
                     return;
                 }
                 else
                 {
                     UpdateZoomedImage(e);
-                    labelImageStatus.Text = res_man.GetString("labelImageStatusUnlocked", cul);
                 }
             }
             catch (Exception er)

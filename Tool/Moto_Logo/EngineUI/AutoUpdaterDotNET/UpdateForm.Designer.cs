@@ -38,6 +38,7 @@ namespace AutoUpdaterDotNET
             this.labelUpdate = new DarkUI.Controls.DarkTitle();
             this.labelDescription = new DarkUI.Controls.DarkLabel();
             this.labelReleaseNotes = new DarkUI.Controls.DarkTitle();
+            this.labelIconDownload = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,11 +92,17 @@ namespace AutoUpdaterDotNET
             resources.ApplyResources(this.labelReleaseNotes, "labelReleaseNotes");
             this.labelReleaseNotes.Name = "labelReleaseNotes";
             // 
+            // labelIconDownload
+            // 
+            resources.ApplyResources(this.labelIconDownload, "labelIconDownload");
+            this.labelIconDownload.Name = "labelIconDownload";
+            // 
             // UpdateForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.Controls.Add(this.labelIconDownload);
             this.Controls.Add(this.labelReleaseNotes);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.labelUpdate);
@@ -128,5 +135,6 @@ namespace AutoUpdaterDotNET
         private DarkUI.Controls.DarkTitle labelUpdate;
         private DarkUI.Controls.DarkLabel labelDescription;
         private DarkUI.Controls.DarkTitle labelReleaseNotes;
+        private System.Windows.Forms.Label labelIconDownload;
     }
 }

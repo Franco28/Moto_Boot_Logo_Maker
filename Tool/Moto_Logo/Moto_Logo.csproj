@@ -735,13 +735,24 @@
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
+    <Content Include="Resources\ToolUI\aupdates_x32.png" />
     <Content Include="Resources\ToolUI\Build_x16.png" />
     <Content Include="Resources\ToolUI\CancelBuild_x16.png" />
     <Content Include="Resources\ToolUI\Error_x16.png" />
     <Content Include="Resources\ToolUI\folder_x16.png" />
+    <Content Include="Resources\ToolUI\generalsettings_x32.png" />
+    <Content Include="Resources\ToolUI\image_x20.png" />
+    <Content Include="Resources\ToolUI\lock_x20.png" />
+    <Content Include="Resources\ToolUI\logolist_x24.png" />
+    <Content Include="Resources\ToolUI\messageBbl_x24.png" />
     <Content Include="Resources\ToolUI\OpenFolder_x16.png" />
     <Content Include="Resources\ToolUI\Reload_x16.png" />
+    <Content Include="Resources\ToolUI\rgb_x24.png" />
     <Content Include="Resources\ToolUI\SearchDevice_x16.png" />
+    <Content Include="Resources\ToolUI\smemory_x32.png" />
+    <Content Include="Resources\ToolUI\sprofile_x32.png" />
+    <Content Include="Resources\ToolUI\unlock_x20.png" />
+    <Content Include="Resources\ToolUI\zoom_x24.png" />
     <Content Include="unins.ico" />
     <None Include="Resources\telegramico.ico" />
     <Content Include="Resources\logo\logo_battery.png" />
@@ -770,7 +781,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

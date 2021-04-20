@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Settings.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 17-04-2021                                               #
+#    Date: 20-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -48,6 +48,11 @@ namespace Moto_Logo
 
         private void Settings_Load(object sender, EventArgs e)
         {
+            groupBoxEU.Enabled = false;
+            radioButtonYESUpdates.Checked = false;
+            radioButtonNOUpdates.Checked = false;
+            label4.Enabled = false;
+
             if (Properties.Settings.Default.SaveProfiles == true)
             {
                 radioButtonYES.PerformClick();
@@ -64,13 +69,30 @@ namespace Moto_Logo
             {
                 radioButtonYESLogo.PerformClick();
             }
-            if (Properties.Settings.Default.Updates == true)
+
+            if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                radioButtonYESUpdates.PerformClick();
+                this.Text = res_man.GetString("settingsToolStripMenuItem", cul) + " - PORTABLE";
+
+                groupBoxEU.Enabled = false;
+                radioButtonYESUpdates.Checked = false;
+                radioButtonNOUpdates.Checked = false;
+                label4.Enabled = false;
             }
-            if (Properties.Settings.Default.Updates == false)
+            else
             {
-                radioButtonNOUpdates.PerformClick();
+                groupBoxEU.Enabled = true;
+                radioButtonYESUpdates.Checked = true;
+                radioButtonNOUpdates.Checked = true;
+                label4.Enabled = true;
+                if (Properties.Settings.Default.Updates == true)
+                {
+                    radioButtonYESUpdates.PerformClick();
+                }
+                if (Properties.Settings.Default.Updates == false)
+                {
+                    radioButtonNOUpdates.PerformClick();
+                }
             }
         }
 

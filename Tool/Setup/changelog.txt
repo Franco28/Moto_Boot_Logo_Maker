@@ -3,11 +3,15 @@
 #####################
 
 ---------------------------------------
-v4.4.3.8 - Released April xx, 2021 - WIP
+v4.4.3.8 - Released April 20, 2021
 ---------------------------------------
 - [fixed] OTA Download Form: speed label size, title label DPI scaling
 - [fixed] Settings Form: GroupBox Updates wrong title (EN Language)
 - [updated] Settings Form: Re-named and change button "go to settings folder" to --> Open Tool Folder
+- [updated] Main Form UI
+- [updated] Settings Form UI
+- [new] Tool PORTABLE prevents to users in Settings change Update box values 
+- [new] Prevent to user to exit download important files and avoid start tool when exit (Download Files or Download Libs)
 
 ---------------------------------------
 v4.4.3.7 - Released April 13, 2021

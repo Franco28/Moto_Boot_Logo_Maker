@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.Translations.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 30-03-2021                                               #
+#    Date: 20-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -53,8 +53,6 @@ namespace Moto_Logo
                 CreateCulture("en");
             }
 
-            labelimageInfoClick.Text = res_man.GetString("materialLabel10", cul);
-            labelimageInfoDClick.Text = res_man.GetString("materialLabel11", cul);
             fileToolStripMenuItem.Text = res_man.GetString("fileToolStripMenuItem", cul);
             newToolStripMenuItem.Text = res_man.GetString("newToolStripMenuItem", cul);
             openToolStripMenuItem.Text = res_man.GetString("openToolStripMenuItem", cul);
@@ -70,7 +68,6 @@ namespace Moto_Logo
             groupBoxLogoImageOrientation.Text = res_man.GetString("groupBox5", cul);
             groupBoxLogoMemory.Text = res_man.GetString("groupBox6", cul);
             groupBoxLogoExtension.Text = res_man.GetString("groupBox7", cul);
-            labelSignYourLogo.Text = res_man.GetString("SignYourLogo", cul);
             labelLogoName.Text = res_man.GetString("LogoName", cul);
             buttonAppend.Text = res_man.GetString("button1", cul);
             buttonDelete.Text = res_man.GetString("button2", cul);
