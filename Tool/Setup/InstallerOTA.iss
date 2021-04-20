@@ -93,7 +93,6 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "Files/Images/Icons"; DestDir: "{app}/Files/Images/Icons"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Files/Images/Icons/*"; DestDir: "{app}/Files/Images/Icons/"; Flags: ignoreversion recursesubdirs createallsubdirs  
 
 [Icons]

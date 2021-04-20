@@ -77,6 +77,8 @@ namespace Moto_Logo
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
                 this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
+                Properties.Settings.Default.Updates = false;
+                Properties.Settings.Default.Save();
                 checkForUpdatesToolStripMenuItem.Enabled = false;
                 AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
             }

@@ -293,6 +293,7 @@ namespace Moto_Logo
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ToolSettings_FormClosing);
             this.Load += new System.EventHandler(this.Settings_Load);
             this.groupBoxEASP.ResumeLayout(false);
             this.groupBoxEASP.PerformLayout();

@@ -49,8 +49,6 @@ namespace Moto_Logo
         private void Settings_Load(object sender, EventArgs e)
         {
             groupBoxEU.Enabled = false;
-            radioButtonYESUpdates.Checked = false;
-            radioButtonNOUpdates.Checked = false;
             label4.Enabled = false;
 
             if (Properties.Settings.Default.SaveProfiles == true)
@@ -75,15 +73,13 @@ namespace Moto_Logo
                 this.Text = res_man.GetString("settingsToolStripMenuItem", cul) + " - PORTABLE";
 
                 groupBoxEU.Enabled = false;
+                label4.Enabled = false;
                 radioButtonYESUpdates.Checked = false;
                 radioButtonNOUpdates.Checked = false;
-                label4.Enabled = false;
             }
             else
             {
                 groupBoxEU.Enabled = true;
-                radioButtonYESUpdates.Checked = true;
-                radioButtonNOUpdates.Checked = true;
                 label4.Enabled = true;
                 if (Properties.Settings.Default.Updates == true)
                 {
@@ -154,6 +150,11 @@ namespace Moto_Logo
             //var newpath = path.Replace(@"\user.config", "").Trim();
             Process.Start(exePath);
             this.Close();
+        }
+
+        private void ToolSettings_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save();
         }
     }
 }

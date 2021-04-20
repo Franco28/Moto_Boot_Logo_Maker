@@ -142,39 +142,39 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags:
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
 Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
-Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "AndroidLib.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "Newtonsoft.Json.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "HtmlAgilityPack.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "DarkUI.dll"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs  
-Source: "LICENSE.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "credits.txt"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "Files"; DestDir: "{code:GetExeLocation|{app}}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "Files/*"; DestDir: "{code:GetExeLocation|{app}}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs    
+Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "AndroidLib.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "HtmlAgilityPack.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "DarkUI.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs  
+Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "credits.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Files"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Files/*"; DestDir: "{app}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs    
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
-Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"; IconFilename: "{code:GetExeLocation|{app}}\Files\Images\Logo\unins.ico";
-Name: "{commondesktop}\{#MyAppName}"; Filename: "{code:GetExeLocation|{app}}\{#MyAppExeName}"; Comment: "{#MyAppPublisher}"; Tasks: desktopicon;
+Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"; IconFilename: "{app}\Files\Images\Logo\unins.ico";
+Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Comment: "{#MyAppPublisher}"; Tasks: desktopicon;
 
 [Run]
-Filename: "{code:GetExeLocation|{app}}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: shellexec nowait postinstall skipifsilent;
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: shellexec nowait postinstall skipifsilent;
 
 [InstallDelete]
-Type: filesandordirs; Name: "{code:GetExeLocation|{app}}\Files";
+Type: filesandordirs; Name: "{app}\Files";
 Type: files; Name: "{app}\License";
-Type: files; Name: "{code:GetExeLocation|{app}}\*.dll"; 
-Type: files; Name: "{code:GetExeLocation|{app}}\*.txt";
-Type: files; Name: "{code:GetExeLocation|{app}}\Moto_Boot_Logo_Maker.exe.config";
+Type: files; Name: "{app}\*.dll"; 
+Type: files; Name: "{app}\*.txt";
+Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
 Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28\*'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28'; Type: filesandordirs;  
 
 [UninstallDelete]
-Type: filesandordirs; Name: "{code:GetExeLocation|{app}}\Files";
-Type: files; Name: "{code:GetExeLocation|{app}}\*.dll";
-Type: files; Name: "{code:GetExeLocation|{app}}\*.txt";
+Type: filesandordirs; Name: "{app}\Files";
+Type: files; Name: "{app}\*.dll";
+Type: files; Name: "{app}\*.txt";
 
 [Registry]
 Root: "HKLM"; Subkey: "SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"; \
@@ -196,57 +196,6 @@ begin
         end;
   end;
 end;   
-
-[Code]
-var
-UsagePage: TInputOptionWizardPage;
-
-procedure InitializeWizard;
-begin
-
-{ Create the pages }
-UsagePage := CreateInputOptionPage(wpWelcome,
-ExpandConstant('{cm:PortableOptionTitle}'), ExpandConstant('{cm:PortableOptionSubTitle}'),
-ExpandConstant('{cm:PortableOptionAsk}'),
-True, False);
-UsagePage.Add(ExpandConstant('{cm:PortableOptionC}'));
-UsagePage.Add(ExpandConstant('{cm:PortableOptionPortable}'));
-
-{Set Default - Normal Install}
-UsagePage.SelectedValueIndex := 0;
-end;
-
-var
-bIsPortable : Boolean;
-
-function NextButtonClick(CurPageID: Integer): Boolean;
-begin
-
-// If we have clicked the next button on our custom page.
-if (CurPageID = UsagePage.ID) then
-begin
-bIsPortable := not (UsagePage.SelectedValueIndex = 0);
-end;
-
-result := true; // need to return a value so next key has an impact
-end;
-
-function GetExeLocation (Param: String) : String;
-begin
-if bIsPortable then
-result := Param 
-else
-result := 'C:\Moto_Boot_Logo_Maker\';
-end;
-
-// Set the return value to be true if the required install type is as specified
-function InstallType(sRequiredType:String):Boolean;
-begin
-if sRequiredType = 'Portable' then
-result := bIsPortable
-else
-result := not bIsPortable;
-end;
 
 // Visual Style   
 
