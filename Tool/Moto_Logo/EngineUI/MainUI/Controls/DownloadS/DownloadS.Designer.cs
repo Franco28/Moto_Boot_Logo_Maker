@@ -45,6 +45,7 @@ namespace Moto_Logo
             this.console = new System.Windows.Forms.RichTextBox();
             this.btnGoTo = new DarkUI.Controls.DarkButton();
             this.button1 = new DarkUI.Controls.DarkButton();
+            this.labelIconRGB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // console
@@ -66,7 +67,7 @@ namespace Moto_Logo
             this.btnGoTo.Location = new System.Drawing.Point(12, 345);
             this.btnGoTo.Name = "btnGoTo";
             this.btnGoTo.Padding = new System.Windows.Forms.Padding(5);
-            this.btnGoTo.Size = new System.Drawing.Size(275, 23);
+            this.btnGoTo.Size = new System.Drawing.Size(298, 23);
             this.btnGoTo.TabIndex = 40;
             this.btnGoTo.Text = "Go to SourceForge";
             this.btnGoTo.Click += new System.EventHandler(this.btnGoTo_Click);
@@ -74,24 +75,37 @@ namespace Moto_Logo
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(378, 345);
+            this.button1.Location = new System.Drawing.Point(354, 345);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(5);
-            this.button1.Size = new System.Drawing.Size(275, 23);
+            this.button1.Size = new System.Drawing.Size(299, 23);
             this.button1.TabIndex = 41;
             this.button1.Text = "Go to Android File Host";
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // labelIconRGB
+            // 
+            this.labelIconRGB.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelIconRGB.Image = global::Moto_Logo.Properties.Resources.server_x24;
+            this.labelIconRGB.Location = new System.Drawing.Point(316, 341);
+            this.labelIconRGB.Name = "labelIconRGB";
+            this.labelIconRGB.Size = new System.Drawing.Size(32, 36);
+            this.labelIconRGB.TabIndex = 206;
             // 
             // DownloadS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(665, 380);
+            this.Controls.Add(this.labelIconRGB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGoTo);
             this.Controls.Add(this.console);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -109,5 +123,6 @@ namespace Moto_Logo
         private System.Windows.Forms.RichTextBox console;
         private DarkUI.Controls.DarkButton btnGoTo;
         private DarkUI.Controls.DarkButton button1;
+        private System.Windows.Forms.Label labelIconRGB;
     }
 }

@@ -111,7 +111,9 @@ namespace AutoUpdaterDotNET
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.buttonSkip);
             this.Controls.Add(this.buttonRemindLater);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateForm";

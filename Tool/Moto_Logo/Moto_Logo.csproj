@@ -749,8 +749,10 @@
     <Content Include="Resources\ToolUI\Reload_x16.png" />
     <Content Include="Resources\ToolUI\rgb_x24.png" />
     <Content Include="Resources\ToolUI\SearchDevice_x16.png" />
+    <Content Include="Resources\ToolUI\server_x24.png" />
     <Content Include="Resources\ToolUI\smemory_x32.png" />
     <Content Include="Resources\ToolUI\sprofile_x32.png" />
+    <Content Include="Resources\ToolUI\textInfo_x24.png" />
     <Content Include="Resources\ToolUI\unlock_x20.png" />
     <Content Include="Resources\ToolUI\zoom_x24.png" />
     <Content Include="unins.ico" />

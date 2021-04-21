@@ -66,7 +66,9 @@
             this.Controls.Add(this.labelSize);
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.progressBar);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "DownloadUpdateDialog";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

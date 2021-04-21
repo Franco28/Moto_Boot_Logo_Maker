@@ -487,26 +487,26 @@
   </data>
   <data name="labelIconDownload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEB0lEQVRYR61TS2yUZRSdhS6N
-        K9iyYQEJgWgCRNwIgrVRkgLaEAmKMUSibcKQFNAtEVNgoJRHSACrJD5CLaS2ISZWIEhbIJZHASXUMG3n
-        PfNPp/P6Z/6ZTg/3fPNwal30/6Y3Oblz7z3nfIcfcACYBakX6ttu9Na3D+Dt4/01gz70oy/NZ7xVPVSW
-        DsdL9e39cPWN4MhvI3DVAKUXH/rRd64BFjB5a98zrGu/jfUn7mCDBqijnj70o+9cAyykwHXdi4bzD7Gl
-        4yHe63hkG9RRT59SgIVzD9B2E8cHQtj+0z/YcVEf1NOHfrYC1B27idN/TmJXjx+fCT7vtQ/qqKcP/ewF
-        aOvH2UcWWq7FsbcGtFxL4OxjC3V2/wrqDvWlXm+9gdUHr2L1VzVA9GvEZ+PBXnsBGne75Of8VWPzIXsB
-        Njcdlp/AqNsNt2DUPWobRZ1b+dDPVoBN5QBjY4JxgQdj40WMCzye2eC+zCG/qBtTPvTTCqDMvd4K/H4f
-        jLAfcSOARDRYAWfuea/mU8/SDuD1+uD1+RV8fj+i4RBaLgxi2d4eLN/XgxUCds7c805eWUM9SzuAPxAQ
-        BBWCoRBSMUMe+wWd9wLouh/AZQE7Z+55J6+soZ6lHSAYlIeDIYVIOIxsPIrl8lD3cAir5L/Xa4f/UJ0z
-        97yTV9ZQz9IOEApHKjAMA1ZyUj3U+ziCN9oGsb79luqcueedvGodSzuAETEQEUTFdHJiAgUzrh769UkU
-        b50ewjtn7qrOmXveySOfOupZ2gGiYhaLxWAm45jKJCEv4JX98gWeTODdcw/Q8M2w6py555088qmjnqUd
-        YDIeQyYdx77vb2NZSzdelUdWfiH/CIcNbP72LzRe+Ft1ztzzTh751FHP0g6QTCSQN1NY7LyM80NRdNw1
-        8N1QBF9f9WHbD0+x/ccRfCD95EBA7Xknj3zqqGfpB0gmYKZT8mkzWLLnEk7diWLbRTc+6nTj45/d+KSr
-        2D/sfKb2vJNHPnXUs7QDpFNppJIp5DImMG1hifMSjt2KYWe3F592e7BLwM6Ze97JI5866ln6AUwxSqel
-        p5G3MrLJYemeLrQOxtF0JYzmKyHVOXPPO3nkF3USXEo7QDaThWnK5xRkMxkUcpZsC1jq7MKBgSScv8dU
-        58w97+T9q8kqH9sBGkoBcjTMZivIWWJYyMllWj36Zb9Zenxa7XmfwVeBAfppBcjn87Cs3Azkc3l5bErd
-        FzV1qs6Z+1lc0bO0AxRoLCb/RWFKjKcLwpA/uXTO/8srBbUdYFNzMcB8Ff1sBXh/91H5OX9FPzsBFmx1
-        ujwUMTk/ny6opw/96DvXAC8LVgjWCt6cB9CHfvSd+Vb1UFk6HC+WyEzMz1Yr6EM/+la9Bcdz7TEMuGYc
-        PkoAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAQHSURBVFhHrVNLbJRlFJ2FLo0r2LJhAQmBaAJE3AiC
+        tVGSAtoQCYoxRKJtwpAU0C0RU2CglEdIAKskPkItpLYhJlYgSFsglkcBJdQwbec980+n8/pn/plOD/d8
+        83BqXfT/pjc5uXPvPed8hx9wAJgFqRfq22701rcP4O3j/TWDPvSjL81nvFU9VJYOx0v17f1w9Y3gyG8j
+        cNUApRcf+tF3rgEWMHlr3zOsa7+N9SfuYIMGqKOePvSj71wDLKTAdd2LhvMPsaXjId7reGQb1FFPn1KA
+        hXMP0HYTxwdC2P7TP9hxUR/U04d+tgLUHbuJ039OYlePH58JPu+1D+qopw/97AVo68fZRxZarsWxtwa0
+        XEvg7GMLdXb/CuoO9aVeb72B1QevYvVXNUD0a8Rn48FeewEad7vk5/xVY/MhewE2Nx2Wn8Co2w23YNQ9
+        ahtFnVv50M9WgE3lAGNjgnGBB2PjRYwLPJ7Z4L7MIb+oG1M+9NMKoMy93gr8fh+MsB9xI4BENFgBZ+55
+        r+ZTz9IO4PX64PX5FXx+P6LhEFouDGLZ3h4s39eDFQJ2ztzzTl5ZQz1LO4A/EBAEFYKhEFIxQx77BZ33
+        Aui6H8BlATtn7nknr6yhnqUdIBiUh4MhhUg4jGw8iuXyUPdwCKvkv9drh/9QnTP3vJNX1lDP0g4QCkcq
+        MAwDVnJSPdT7OII32gaxvv2W6py55528ah1LO4ARMRARRMV0cmICBTOuHvr1SRRvnR7CO2fuqs6Ze97J
+        I5866lnaAaJiFovFYCbjmMokIS/glf3yBZ5M4N1zD9DwzbDqnLnnnTzyqaOepR1gMh5DJh3Hvu9vY1lL
+        N16VR1Z+If8Ihw1s/vYvNF74W3XO3PNOHvnUUc/SDpBMJJA3U1jsvIzzQ1F03DXw3VAEX1/1YdsPT7H9
+        xxF8IP3kQEDteSePfOqoZ+kHSCZgplPyaTNYsucSTt2JYttFNz7qdOPjn934pKvYP+x8pva8k0c+ddSz
+        tAOkU2mkkinkMiYwbWGJ8xKO3YphZ7cXn3Z7sEvAzpl73skjnzrqWfoBTDFKp6Wnkbcysslh6Z4utA7G
+        0XQljOYrIdU5c887eeQXdRJcSjtANpOFacrnFGQzGRRylmwLWOrswoGBJJy/x1TnzD3v5P2rySof2wEa
+        SgFyNMxmK8hZYljIyWVaPfplv1l6fFrteZ/BV4EB+mkFyOfzsKzcDORzeXlsSt0XNXWqzpn7WVzRs7QD
+        FGgsJv9FYUqMpwvCkD+5dM7/yysFtR1gU3MxwHwV/WwFeH/3Ufk5f0U/OwEWbHW6PBQxOT+fLqinD/3o
+        O9cALwtWCNYK3pwH0Id+9J35VvVQWTocL5bITMzPVivoQz/6Vr0Fx3PtMQy4Zhw+SgAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="labelIconDownload.Location" type="System.Drawing.Point, System.Drawing">
@@ -535,6 +535,9 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>747, 612</value>

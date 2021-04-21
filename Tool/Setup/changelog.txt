@@ -3,8 +3,20 @@
 #####################
 
 ---------------------------------------
+v4.4.3.9 - Released April 21, 2021
+---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
+- [fixed] When user maximize form, Tool always change image from picturebox to main Logo Tool
+- [fixed] RGB text missing click action (Copy RGB color to clipboard)
+- [removed] Resize forms
+- [new] Added new label in bottom to see open Logo path
+
+---------------------------------------
 v4.4.3.8 - Released April 20, 2021
 ---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
 - [fixed] OTA Download Form: speed label size, title label DPI scaling
 - [fixed] Settings Form: GroupBox Updates wrong title (EN Language)
 - [updated] Settings Form: Re-named and change button "go to settings folder" to --> Open Tool Folder

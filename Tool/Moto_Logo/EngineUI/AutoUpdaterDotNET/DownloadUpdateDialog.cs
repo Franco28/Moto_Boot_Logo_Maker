@@ -16,7 +16,7 @@ using Moto_Logo;
 
 namespace AutoUpdaterDotNET
 {
-    internal partial class DownloadUpdateDialog : Form
+    internal partial class DownloadUpdateDialog : DarkForm
     {
         private readonly UpdateInfoEventArgs _args;
 

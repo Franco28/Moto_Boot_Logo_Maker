@@ -1213,6 +1213,16 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap server_x24 {
+            get {
+                object obj = ResourceManager.GetObject("server_x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap smemory_x32 {
             get {
                 object obj = ResourceManager.GetObject("smemory_x32", resourceCulture);
@@ -1237,6 +1247,16 @@ namespace Moto_Logo.Properties {
             get {
                 object obj = ResourceManager.GetObject("telegramico", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap textInfo_x24 {
+            get {
+                object obj = ResourceManager.GetObject("textInfo_x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -213,7 +213,9 @@ namespace Moto_Logo
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelCopyright);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

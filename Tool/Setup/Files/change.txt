@@ -1,28 +1,30 @@
 #################################################################
+# Moto_Boot_Logo_Maker_Files v1.0.0.8 Enhancements & bug-fixes: #
+#################################################################
+Icons
+* Updated Tool icons
+
+#################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.7 Enhancements & bug-fixes: #
 #################################################################
-
 Icons
 * Updated Tool icons
 
 #################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.6 Enhancements & bug-fixes: #
 #################################################################
-
 Icons
 * Updated Tool icons
 
 #################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.5 Enhancements & bug-fixes: #
 #################################################################
-
 Icons
 * Updated Tool icons
 
 #################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.4 Enhancements & bug-fixes: #
 #################################################################
-
 Zip Files
 * Added new devices
 
@@ -43,7 +45,6 @@ Logos
 #################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.3 Enhancements & bug-fixes: #
 #################################################################
-
 Zip Files
 * Fixed error 255 TWRP
 
@@ -52,7 +53,6 @@ Zip Files
 #################################################################
 # Moto_Boot_Logo_Maker_Files v1.0.0.2 Enhancements & bug-fixes: #
 #################################################################
-
 Bin Files
 * Added new devices
 * Fixed folders and resolution files

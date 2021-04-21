@@ -49,8 +49,8 @@ namespace Moto_Logo
             this.groupBox1 = new DarkUI.Controls.DarkGroupBox();
             this.radioButtonBootloader = new DarkUI.Controls.DarkRadioButton();
             this.groupBox2 = new DarkUI.Controls.DarkGroupBox();
-            this.radioButtonA = new DarkUI.Controls.DarkRadioButton();
             this.radioButtonAB = new DarkUI.Controls.DarkRadioButton();
+            this.radioButtonA = new DarkUI.Controls.DarkRadioButton();
             this.buttonsavelogs = new DarkUI.Controls.DarkButton();
             this.buttonFlashLogo = new DarkUI.Controls.DarkButton();
             this.groupBox1.SuspendLayout();
@@ -119,16 +119,6 @@ namespace Moto_Logo
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select your device partition";
             // 
-            // radioButtonA
-            // 
-            this.radioButtonA.AutoSize = true;
-            this.radioButtonA.Location = new System.Drawing.Point(6, 19);
-            this.radioButtonA.Name = "radioButtonA";
-            this.radioButtonA.Size = new System.Drawing.Size(32, 17);
-            this.radioButtonA.TabIndex = 0;
-            this.radioButtonA.TabStop = true;
-            this.radioButtonA.Text = "A";
-            // 
             // radioButtonAB
             // 
             this.radioButtonAB.AutoSize = true;
@@ -138,6 +128,16 @@ namespace Moto_Logo
             this.radioButtonAB.TabIndex = 1;
             this.radioButtonAB.TabStop = true;
             this.radioButtonAB.Text = "A/B";
+            // 
+            // radioButtonA
+            // 
+            this.radioButtonA.AutoSize = true;
+            this.radioButtonA.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonA.Name = "radioButtonA";
+            this.radioButtonA.Size = new System.Drawing.Size(32, 17);
+            this.radioButtonA.TabIndex = 0;
+            this.radioButtonA.TabStop = true;
+            this.radioButtonA.Text = "A";
             // 
             // buttonsavelogs
             // 
@@ -172,7 +172,9 @@ namespace Moto_Logo
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.console);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LogoTest";

@@ -308,6 +308,7 @@ namespace Moto_Logo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(1155, 614);
             this.Controls.Add(this.btnOpenLogoFile2);
@@ -329,7 +330,9 @@ namespace Moto_Logo
             this.Controls.Add(this.labelResolution);
             this.Controls.Add(this.LabelDisplayTitle);
             this.Controls.Add(this.pictureBoxDevice);
+            this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DeviceInfo";

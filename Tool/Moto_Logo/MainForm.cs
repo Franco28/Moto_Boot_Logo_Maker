@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 20-04-2021                                               #
+#    Date: 21-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -221,8 +221,9 @@ namespace Moto_Logo
                 else
                 {
                     OpenFile(openFileDialog1.FileName);
-                    Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString(); ;
+                    Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString();
                     Properties.Settings.Default.Save();
+                    toolStripStatusLabel3.Text = @"\ Current project: " + Properties.Settings.Default.LogoBinOpen;
                     EnableControlsWhenLoadLogo();
                 }
             }
@@ -252,7 +253,7 @@ namespace Moto_Logo
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker");
+            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker#readme");
         }
 
         private void buttonAppend_Click(object sender, EventArgs e)
@@ -692,6 +693,7 @@ namespace Moto_Logo
                     OpenFile(files[0]);
                     Properties.Settings.Default.LogoBinOpen = files[0].ToString();
                     Properties.Settings.Default.Save();
+                    toolStripStatusLabel3.Text = @"\ Current project: " + Properties.Settings.Default.LogoBinOpen;
                     EnableControlsWhenLoadLogo();
                 }
             }
@@ -701,27 +703,17 @@ namespace Moto_Logo
         {
             if (this.WindowState == FormWindowState.Normal)
             {
-                this.WindowState = FormWindowState.Normal;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
-                _BackColor = pictureBox1.BackColor;
-                _ZoomFactor = trbZoomFactor.Value;
-                pictureBox1.Image = Resources.logo;
+                pictureBox1.Image = pictureBox1.Image;
                 picZoom.Image = pictureBox1.Image;
                 _OriginalImage = pictureBox1.Image;
-                ResizeAndDisplayImage();
                 Properties.Settings.Default.IsMax = false;
                 Properties.Settings.Default.Save();
             }
             else if (this.WindowState == FormWindowState.Maximized)
             {
-                picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
-                _BackColor = pictureBox1.BackColor;
-                _ZoomFactor = trbZoomFactor.Value;
-                pictureBox1.Image = Resources.logo;
+                pictureBox1.Image = pictureBox1.Image;
                 picZoom.Image = pictureBox1.Image;
                 _OriginalImage = pictureBox1.Image;
-                ResizeAndDisplayImage();
                 Properties.Settings.Default.IsMax = true;
                 Properties.Settings.Default.Save();
             }

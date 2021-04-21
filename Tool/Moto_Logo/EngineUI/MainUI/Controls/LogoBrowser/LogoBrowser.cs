@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 21-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -177,6 +177,7 @@ namespace Moto_Logo
                     mainform.labelbtnBuild.Enabled = true;
                     mainform.btnBuild.Enabled = true;
                     Properties.Settings.Default.LogoBinOpen = sN.ToString();
+                    mainform.toolStripStatusLabel3.Text = @"\ Current project: " + sN.ToString();
                     Properties.Settings.Default.Save();
                     this.Close();
                     return;

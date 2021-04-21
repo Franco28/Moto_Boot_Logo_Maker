@@ -17,7 +17,7 @@
 #
 
 ## Prerequisites Windows
-- You must have .NET Framework 4.8 installed on your PC (Select .NET Framework 4.8 Runtime) * [.Net Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) 
+- You must have .NET Framework 4.8 installed on your PC (Select .NET Framework 4.8 Runtime) * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) 
 - Windows 7+ x64 (64) or x86 (32) Bits
 
 ## Install
@@ -43,10 +43,6 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 ---- unpack on "%USERPORTABLEPATH%\\Logs\\ -> (Tool Logs)
 
----- unpack on "C:\\adb\\" -> (ADB & FASTBOOT)
-
----- unpack on "C:\\NewMotoLogo\\" -> default folder to save logo build, you can change this!
-
 #### NOTE: If you want PORTABLE version, just download PORTABLE version ;)!
 
 ##### Then, you are free to load any logo and change logo images!
@@ -56,14 +52,17 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 [![Downloads SF](https://sourceforge.net/sflogo.php?type=16&group_id=3254118)](https://sourceforge.net/p/motobootlogomaker/)
 
-#### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.8_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker Installer v4.4.3.9 (21-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.9_Setup.exe) 
 
-#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.3.8_PORTABLE.zip) 
+#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.9 (21-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.3.9_PORTABLE.zip) 
 
 ## Downloads Mirror AFH
-#### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://www.androidfilehost.com/?fid=2188818919693786167) 
 
-#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://www.androidfilehost.com/?fid=2188818919693786171) 
+[![Downloads AFH](https://androidfilehost.com/images/afh.png)](https://androidfilehost.com/?w=files&flid=323184)
+
+#### Download Moto_Boot_Logo_Maker Installer v4.4.3.9 (21-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://www.androidfilehost.com/?fid=2188818919693786451) 
+
+#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.3.9 (21-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://www.androidfilehost.com/?fid=2188818919693786455) 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt) 
 
