@@ -1,5 +1,7 @@
 # ![Moto_Boot_Logo_Maker](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/BootLogoMaker.jpg)
 
+[![License](https://img.shields.io/badge/license-MIT-green)](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/LICENSE.txt)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/49lbwcmbc90an8yt?svg=true)](https://ci.appveyor.com/project/Franco28/moto-boot-logo-maker)
 
 # Getting Started (Read all please!)
@@ -53,8 +55,6 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 ## Downloads SF
 
 [![Downloads SF](https://sourceforge.net/sflogo.php?type=16&group_id=3254118)](https://sourceforge.net/p/motobootlogomaker/)
-
-[![Downloads](https://img.shields.io/sourceforge/dt/motobootlogomaker.svg)](https://sourceforge.net/projects/motobootlogomaker/files/latest/download)
 
 #### Download Moto_Boot_Logo_Maker Installer v4.4.3.8 (20-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.3.8_Setup.exe) 
 
