@@ -69,8 +69,6 @@ namespace Moto_Logo
 
         private void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
         {
-            AutoUpdater.Mandatory = true;
-            AutoUpdater.UpdateMode = Mode.Forced;
             AutoUpdater.RunUpdateAsAdmin = true;
 
             if (args.Error == null)
@@ -78,11 +76,9 @@ namespace Moto_Logo
                 if (args.IsUpdateAvailable)
                 {
                     DialogResult dialogResult;
-                    if (args.Mandatory.Value)
-                    {
-                        SystemSounds.Exclamation.Play();
-                        dialogResult = DarkMessageBox.ShowInformation(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul));
-                    }
+                    SystemSounds.Exclamation.Play();
+                    dialogResult = DarkMessageBox.ShowInformation(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul));
+
                     try
                     {
                         if (AutoUpdater.DownloadUpdate(args))

@@ -12,12 +12,6 @@ namespace AutoUpdaterDotNET
         private string _changelogURL;
         private string _downloadURL;
 
-        /// <inheritdoc />
-        public UpdateInfoEventArgs()
-        {
-            Mandatory = new Mandatory();
-        }
-
         /// <summary>
         ///     If new update is available then returns true otherwise false.
         /// </summary>
@@ -59,12 +53,6 @@ namespace AutoUpdaterDotNET
         ///     Returns version of the application currently installed on the user's PC.
         /// </summary>
         public Version InstalledVersion { get; set; }
-
-        /// <summary>
-        ///     Shows if the update is required or optional.
-        /// </summary>
-        [XmlElement("mandatory")]
-        public Mandatory Mandatory { get; set; }
 
         /// <summary>
         ///     Command line arguments used by Installer.
@@ -110,12 +98,6 @@ namespace AutoUpdaterDotNET
         /// </summary>
         [XmlAttribute("minVersion")]
         public string MinimumVersion { get; set; }
-
-        /// <summary>
-        ///     Mode that should be used for this update.
-        /// </summary>
-        [XmlAttribute("mode")]
-        public Mode UpdateMode { get; set; }
     }
 
     /// <summary>

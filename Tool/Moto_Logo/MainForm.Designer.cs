@@ -102,6 +102,7 @@ namespace Moto_Logo
             this.ProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -148,7 +149,6 @@ namespace Moto_Logo
             this.labelIconTVLogo = new System.Windows.Forms.Label();
             this.labelIconZoomFC = new System.Windows.Forms.Label();
             this.labelIcontxtLogoInternalFile = new System.Windows.Forms.Label();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBoxLogoImageOrientation.SuspendLayout();
             this.groupBoxLogoImageOption.SuspendLayout();
             this.groupBoxLogoFormat.SuspendLayout();
@@ -803,6 +803,12 @@ namespace Moto_Logo
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(22, 20);
             this.toolStripStatusLabel2.Text = "---";
             // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(22, 20);
+            this.toolStripStatusLabel3.Text = "---";
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.Filter = "Image files|*.bmp;*.png;*.jpg|Bin Files|*.bin|All Files|*.*";
@@ -1254,14 +1260,9 @@ namespace Moto_Logo
             this.labelIcontxtLogoInternalFile.Size = new System.Drawing.Size(26, 20);
             this.labelIcontxtLogoInternalFile.TabIndex = 211;
             // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(22, 20);
-            this.toolStripStatusLabel3.Text = "---";
-            // 
             // MainForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

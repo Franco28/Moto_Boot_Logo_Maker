@@ -178,5 +178,29 @@ namespace Moto_Logo.Properties {
                 this["LogoMessage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NeedUpdate {
+            get {
+                return ((bool)(this["NeedUpdate"]));
+            }
+            set {
+                this["NeedUpdate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NewTVer {
+            get {
+                return ((string)(this["NewTVer"]));
+            }
+            set {
+                this["NewTVer"] = value;
+            }
+        }
     }
 }

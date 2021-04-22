@@ -31,11 +31,6 @@ namespace AutoUpdaterDotNET
             InitializeComponent();
 
             _args = args;
-
-            if (AutoUpdater.Mandatory && AutoUpdater.UpdateMode == Mode.ForcedDownload)
-            {
-                ControlBox = false;
-            }
         }
 
         private void DownloadUpdateDialogLoad(object sender, EventArgs e)
@@ -82,7 +77,10 @@ namespace AutoUpdaterDotNET
                 }
             }
             progressBar.Cursor = Cursors.WaitCursor;
-            labelSize.Text = $@"{BytesToString(e.BytesReceived)} / {BytesToString(e.TotalBytesToReceive)}";
+            labelfilesize.Text = string.Format("{0} MB's / {1} MB's", 
+                (e.BytesReceived / 1024d / 1024d).ToString("0.00"),
+                (e.TotalBytesToReceive / 1024d / 1024d).ToString("0.00"));
+            labelPerc.Text = e.ProgressPercentage.ToString() + "%";
             progressBar.Value = e.ProgressPercentage;
         }
 
@@ -215,6 +213,7 @@ namespace AutoUpdaterDotNET
             }
             catch (Exception e)
             {
+                Logs.DebugErrorLogs(e);
                 SystemSounds.Hand.Play();
                 DarkMessageBox.ShowError(e.Message, e.GetType().ToString());
                 _webClient = null;
@@ -303,16 +302,6 @@ namespace AutoUpdaterDotNET
                         break;
                 }
             }
-        }
-
-        private void labelExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

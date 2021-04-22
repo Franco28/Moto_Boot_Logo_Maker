@@ -31,9 +31,7 @@ namespace AutoUpdaterDotNET
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateForm));
             this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.buttonRemindLater = new System.Windows.Forms.Button();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
-            this.buttonSkip = new System.Windows.Forms.Button();
             this.buttonUpdate = new DarkUI.Controls.DarkButton();
             this.labelUpdate = new DarkUI.Controls.DarkTitle();
             this.labelDescription = new DarkUI.Controls.DarkLabel();
@@ -48,26 +46,11 @@ namespace AutoUpdaterDotNET
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.ScriptErrorsSuppressed = true;
             // 
-            // buttonRemindLater
-            // 
-            resources.ApplyResources(this.buttonRemindLater, "buttonRemindLater");
-            this.buttonRemindLater.Name = "buttonRemindLater";
-            this.buttonRemindLater.UseVisualStyleBackColor = true;
-            this.buttonRemindLater.Click += new System.EventHandler(this.ButtonRemindLaterClick);
-            // 
             // pictureBoxIcon
             // 
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
-            // 
-            // buttonSkip
-            // 
-            resources.ApplyResources(this.buttonSkip, "buttonSkip");
-            this.buttonSkip.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.buttonSkip.Name = "buttonSkip";
-            this.buttonSkip.UseVisualStyleBackColor = true;
-            this.buttonSkip.Click += new System.EventHandler(this.ButtonSkipClick);
             // 
             // buttonUpdate
             // 
@@ -109,8 +92,6 @@ namespace AutoUpdaterDotNET
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.webBrowser);
-            this.Controls.Add(this.buttonSkip);
-            this.Controls.Add(this.buttonRemindLater);
             this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -118,7 +99,6 @@ namespace AutoUpdaterDotNET
             this.MinimizeBox = false;
             this.Name = "UpdateForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateForm_FormClosed);
             this.Load += new System.EventHandler(this.UpdateFormLoad);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
@@ -128,9 +108,6 @@ namespace AutoUpdaterDotNET
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonRemindLater;
-        private System.Windows.Forms.Button buttonSkip;
         private System.Windows.Forms.WebBrowser webBrowser;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
         private DarkUI.Controls.DarkButton buttonUpdate;

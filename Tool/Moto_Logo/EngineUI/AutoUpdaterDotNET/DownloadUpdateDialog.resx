@@ -119,14 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 84</value>
+    <value>76, 113</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="progressBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>673, 23</value>
+    <value>654, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
@@ -142,67 +142,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelInformation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="labelInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 9</value>
-  </data>
-  <data name="labelInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 45</value>
-  </data>
-  <data name="labelInformation.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelInformation.Text" xml:space="preserve">
-    <value>Downloading Update...</value>
-  </data>
-  <data name="&gt;&gt;labelInformation.Name" xml:space="preserve">
-    <value>labelInformation</value>
-  </data>
-  <data name="&gt;&gt;labelInformation.Type" xml:space="preserve">
-    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;labelInformation.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelInformation.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11pt</value>
-  </data>
-  <data name="labelSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 54</value>
-  </data>
-  <data name="labelSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 26</value>
-  </data>
-  <data name="labelSize.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="labelSize.Text" xml:space="preserve">
-    <value>---</value>
-  </data>
-  <data name="labelSize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;labelSize.Name" xml:space="preserve">
-    <value>labelSize</value>
-  </data>
-  <data name="&gt;&gt;labelSize.Type" xml:space="preserve">
-    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;labelSize.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelSize.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="pictureBoxIcon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -324,7 +264,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="pictureBoxIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 120</value>
+    <value>68, 148</value>
   </data>
   <data name="pictureBoxIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
@@ -342,7 +282,148 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxIcon.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelspeed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelspeed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="labelspeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelspeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 80</value>
+  </data>
+  <data name="labelspeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="labelspeed.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="labelspeed.Text" xml:space="preserve">
+    <value>Speed: ---</value>
+  </data>
+  <data name="labelspeed.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelspeed.Name" xml:space="preserve">
+    <value>labelspeed</value>
+  </data>
+  <data name="&gt;&gt;labelspeed.Type" xml:space="preserve">
+    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelspeed.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelspeed.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="labelfilesize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelfilesize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="labelfilesize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelfilesize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 49</value>
+  </data>
+  <data name="labelfilesize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="labelfilesize.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="labelfilesize.Text" xml:space="preserve">
+    <value>File Size: ---</value>
+  </data>
+  <data name="labelfilesize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelfilesize.Name" xml:space="preserve">
+    <value>labelfilesize</value>
+  </data>
+  <data name="&gt;&gt;labelfilesize.Type" xml:space="preserve">
+    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelfilesize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelfilesize.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelPerc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPerc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="labelPerc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelPerc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>701, 89</value>
+  </data>
+  <data name="labelPerc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 20</value>
+  </data>
+  <data name="labelPerc.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="labelPerc.Text" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="labelPerc.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelPerc.Name" xml:space="preserve">
+    <value>labelPerc</value>
+  </data>
+  <data name="&gt;&gt;labelPerc.Type" xml:space="preserve">
+    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelPerc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelPerc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelInformation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelInformation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="labelInformation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 9</value>
+  </data>
+  <data name="labelInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 21</value>
+  </data>
+  <data name="labelInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="labelInformation.Text" xml:space="preserve">
+    <value>Downloading Update..</value>
+  </data>
+  <data name="&gt;&gt;labelInformation.Name" xml:space="preserve">
+    <value>labelInformation</value>
+  </data>
+  <data name="&gt;&gt;labelInformation.Type" xml:space="preserve">
+    <value>DarkUI.Controls.DarkTitle, DarkUI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelInformation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelInformation.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -354,7 +435,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>762, 120</value>
+    <value>743, 148</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>

@@ -20,7 +20,6 @@ namespace Moto_Logo
 {
     static class Program
     {
-
         [STAThread]
         static void Main()
         {
@@ -28,7 +27,7 @@ namespace Moto_Logo
             {
                 // Ini Tool Settings -> IniToolSettings.cs
                 IniToolSettings.InitilizeSettings();
-                
+
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new MainForm());

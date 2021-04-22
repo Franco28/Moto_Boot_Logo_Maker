@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.BuildLogo.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 09-04-2021                                               #
+#    Date: 22-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -53,6 +53,7 @@ namespace Moto_Logo
 
             toolStripStatusLabel1.Text = res_man.GetString("LogoBinProcessAborted", cul);
             toolStripStatusLabel2.Text = "";
+            toolStripStatusLabel3.Text = "";
             Thread.Sleep(500);
             DirectoryInfo di = new DirectoryInfo(txtLogoBuildPath.Text);
             foreach (FileInfo file in di.GetFiles())
@@ -125,10 +126,12 @@ namespace Moto_Logo
             labelbtnBuild.Enabled = true;
             toolStripStatusLabel1.Visible = true;
             toolStripStatusLabel2.Visible = true;
+            toolStripStatusLabel3.Visible = true;
 
             // File To Save Check
             toolStripStatusLabel1.Text = "";
             toolStripStatusLabel2.Text = "";
+            toolStripStatusLabel3.Text = "";
             if (radioButtonBIN.Checked == false && radioButtonZIP.Checked == false)
             {
                 SystemSounds.Hand.Play();
@@ -641,6 +644,7 @@ namespace Moto_Logo
                 DarkMessageBox.ShowWarning(res_man.GetString("LogoBuildCancel", cul), "Moto_Boot_Logo_Maker");
                 toolStripStatusLabel1.Text = "";
                 toolStripStatusLabel2.Text = "";
+                toolStripStatusLabel3.Text = "";
                 ProgressBar.Visible = false;
                 labelbtnStop.Enabled = false;
                 btnStop.Enabled = false;
@@ -664,6 +668,7 @@ namespace Moto_Logo
                 DarkMessageBox.ShowInformation(res_man.GetString("LogoBuildOK", cul), "Moto_Boot_Logo_Maker");
                 toolStripStatusLabel1.Text = "";
                 toolStripStatusLabel2.Text = "";
+                toolStripStatusLabel3.Text = "";
                 ProgressBar.Visible = false;
                 labelbtnStop.Enabled = false;
                 btnStop.Enabled = false;

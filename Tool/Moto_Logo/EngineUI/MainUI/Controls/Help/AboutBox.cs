@@ -157,15 +157,12 @@ namespace Moto_Logo
             {
                 if (args.IsUpdateAvailable)
                 {
-                    if (args.Mandatory.Value)
-                    {
-                        button1.Show();                         
-                        AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
-                        timer1.Stop();
-                        timer1.Dispose();
-                        cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul));
-                        return;
-                    }
+                    button1.Show();
+                    AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
+                    timer1.Stop();
+                    timer1.Dispose();
+                    cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul));
+                    return;
                 }
                 else
                 {

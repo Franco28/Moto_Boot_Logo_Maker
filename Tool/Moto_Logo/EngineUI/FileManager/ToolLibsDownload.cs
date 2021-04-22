@@ -293,7 +293,8 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                sw.Stop(); 
+                sw.Stop();
+                Logs.DebugErrorLogs(er);
                 SystemSounds.Hand.Play();
                 DarkMessageBox.ShowError(er.ToString(), "File Extraction Error");
                 this.Close();

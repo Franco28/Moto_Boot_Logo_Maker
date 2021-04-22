@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DownloadUpdateDialog));
             this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.labelInformation = new DarkUI.Controls.DarkTitle();
-            this.labelSize = new DarkUI.Controls.DarkTitle();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.labelspeed = new DarkUI.Controls.DarkTitle();
+            this.labelfilesize = new DarkUI.Controls.DarkTitle();
+            this.labelPerc = new DarkUI.Controls.DarkTitle();
+            this.labelInformation = new DarkUI.Controls.DarkTitle();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,30 +43,42 @@
             resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.Name = "progressBar";
             // 
-            // labelInformation
-            // 
-            resources.ApplyResources(this.labelInformation, "labelInformation");
-            this.labelInformation.Name = "labelInformation";
-            // 
-            // labelSize
-            // 
-            resources.ApplyResources(this.labelSize, "labelSize");
-            this.labelSize.Name = "labelSize";
-            // 
             // pictureBoxIcon
             // 
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
             // 
+            // labelspeed
+            // 
+            resources.ApplyResources(this.labelspeed, "labelspeed");
+            this.labelspeed.Name = "labelspeed";
+            // 
+            // labelfilesize
+            // 
+            resources.ApplyResources(this.labelfilesize, "labelfilesize");
+            this.labelfilesize.Name = "labelfilesize";
+            // 
+            // labelPerc
+            // 
+            resources.ApplyResources(this.labelPerc, "labelPerc");
+            this.labelPerc.Name = "labelPerc";
+            // 
+            // labelInformation
+            // 
+            resources.ApplyResources(this.labelInformation, "labelInformation");
+            this.labelInformation.Name = "labelInformation";
+            // 
             // DownloadUpdateDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.Controls.Add(this.pictureBoxIcon);
-            this.Controls.Add(this.labelSize);
+            this.Controls.Add(this.labelspeed);
+            this.Controls.Add(this.labelfilesize);
+            this.Controls.Add(this.labelPerc);
             this.Controls.Add(this.labelInformation);
+            this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.progressBar);
             this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
@@ -76,13 +90,16 @@
             this.Load += new System.EventHandler(this.DownloadUpdateDialogLoad);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.ProgressBar progressBar;
-        private DarkUI.Controls.DarkTitle labelInformation;
-        private DarkUI.Controls.DarkTitle labelSize;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
+        private DarkUI.Controls.DarkTitle labelspeed;
+        private DarkUI.Controls.DarkTitle labelfilesize;
+        private DarkUI.Controls.DarkTitle labelPerc;
+        private DarkUI.Controls.DarkTitle labelInformation;
     }
 }

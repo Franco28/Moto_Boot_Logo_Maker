@@ -668,12 +668,21 @@ namespace Moto_Logo
 
         private void MainForm_DragEnter(object sender, DragEventArgs e)
         {
-            e.Effect = DragDropEffects.None;
-            if (!e.Data.GetDataPresent(DataFormats.FileDrop)) return;
-            var files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            if ((files.Count() == 1) && ((Path.GetExtension(files[0]) == ".bin") ||
-                                        (Path.GetExtension(files[0]) == ".zip")))
-                e.Effect = DragDropEffects.Copy;
+            try
+            {
+                e.Effect = DragDropEffects.None;
+                if (!e.Data.GetDataPresent(DataFormats.FileDrop)) return;
+                var files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                if ((files.Count() == 1) && ((Path.GetExtension(files[0]) == ".bin") ||
+                                            (Path.GetExtension(files[0]) == ".zip")))
+                    e.Effect = DragDropEffects.Copy;
+            } 
+            catch (Exception er)
+            {
+                Logs.DebugErrorLogs(er);
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowWarning(er.ToString(), "Moto_Boot_Logo_Maker");
+            }
         }
 
         private void MainForm_DragDrop(object sender, DragEventArgs e)

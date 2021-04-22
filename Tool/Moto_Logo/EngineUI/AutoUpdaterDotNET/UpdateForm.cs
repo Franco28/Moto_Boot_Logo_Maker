@@ -19,8 +19,6 @@ namespace AutoUpdaterDotNET
             _args = args;
             InitializeComponent();
             UseLatestIE();
-            buttonSkip.Visible = AutoUpdater.ShowSkipButton;
-            buttonRemindLater.Visible = AutoUpdater.ShowRemindLaterButton;
             var resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateForm));
             Text = string.Format(resources.GetString("$this.Text", CultureInfo.CurrentCulture),
                 AutoUpdater.AppTitle, _args.CurrentVersion);
@@ -29,11 +27,6 @@ namespace AutoUpdaterDotNET
             labelDescription.Text =
                 string.Format(resources.GetString("labelDescription.Text", CultureInfo.CurrentCulture),
                     AutoUpdater.AppTitle, _args.CurrentVersion, _args.InstalledVersion);
-
-            if (AutoUpdater.Mandatory && AutoUpdater.UpdateMode == Mode.Forced)
-            {
-                ControlBox = false;
-            }
         }
 
         private void UseLatestIE()
@@ -124,74 +117,9 @@ namespace AutoUpdaterDotNET
             }
         }
 
-        private void ButtonSkipClick(object sender, EventArgs e)
-        {
-            AutoUpdater.PersistenceProvider.SetSkippedVersion(new Version(_args.CurrentVersion));
-        }
-
-        private void ButtonRemindLaterClick(object sender, EventArgs e)
-        {
-            if (AutoUpdater.LetUserSelectRemindLater)
-            {
-                using (var remindLaterForm = new RemindLaterForm())
-                {
-                    var dialogResult = remindLaterForm.ShowDialog();
-
-                    if (dialogResult.Equals(DialogResult.OK))
-                    {
-                        AutoUpdater.RemindLaterTimeSpan = remindLaterForm.RemindLaterFormat;
-                        AutoUpdater.RemindLaterAt = remindLaterForm.RemindLaterAt;
-                    }
-                    else if (dialogResult.Equals(DialogResult.Abort))
-                    {
-                        ButtonUpdateClick(sender, e);
-                        return;
-                    }
-                    else
-                    {
-                        return;
-                    }
-                }
-            }
-
-            AutoUpdater.PersistenceProvider.SetSkippedVersion(null);
-
-            DateTime remindLaterDateTime = DateTime.Now;
-            switch (AutoUpdater.RemindLaterTimeSpan)
-            {
-                case RemindLaterFormat.Days:
-                    remindLaterDateTime = DateTime.Now + TimeSpan.FromDays(AutoUpdater.RemindLaterAt);
-                    break;
-                case RemindLaterFormat.Hours:
-                    remindLaterDateTime = DateTime.Now + TimeSpan.FromHours(AutoUpdater.RemindLaterAt);
-                    break;
-                case RemindLaterFormat.Minutes:
-                    remindLaterDateTime = DateTime.Now + TimeSpan.FromMinutes(AutoUpdater.RemindLaterAt);
-                    break;
-            }
-
-            AutoUpdater.PersistenceProvider.SetRemindLater(remindLaterDateTime);
-            AutoUpdater.SetTimer(remindLaterDateTime);
-
-            DialogResult = DialogResult.Cancel;
-        }
-
         private void UpdateForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             AutoUpdater.Running = false;
-        }
-
-        private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (AutoUpdater.Mandatory && AutoUpdater.UpdateMode == Mode.Forced)
-            {
-                e.Cancel = ModifierKeys == Keys.Alt || ModifierKeys == Keys.F4;
-            }
-        }
-
-        private void labelExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

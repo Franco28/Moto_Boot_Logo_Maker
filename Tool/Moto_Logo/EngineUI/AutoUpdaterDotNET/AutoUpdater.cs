@@ -1,3 +1,4 @@
+
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,48 +16,6 @@ using AutoUpdaterDotNET.Properties;
 
 namespace AutoUpdaterDotNET
 {
-    /// <summary>
-    ///     Enum representing the remind later time span.
-    /// </summary>
-    public enum RemindLaterFormat
-    {
-        /// <summary>
-        ///     Represents the time span in minutes.
-        /// </summary>
-        Minutes,
-
-        /// <summary>
-        ///     Represents the time span in hours.
-        /// </summary>
-        Hours,
-
-        /// <summary>
-        ///     Represents the time span in days.
-        /// </summary>
-        Days
-    }
-
-    /// <summary>
-    ///     Enum representing the effect of Mandatory flag.
-    /// </summary>
-    public enum Mode
-    {
-        /// <summary>
-        /// In this mode, it ignores Remind Later and Skip values set previously and hide both buttons.
-        /// </summary>
-        [XmlEnum("0")] Normal,
-
-        /// <summary>
-        /// In this mode, it won't show close button in addition to Normal mode behaviour.
-        /// </summary>
-        [XmlEnum("1")] Forced,
-
-        /// <summary>
-        /// In this mode, it will start downloading and applying update without showing standard update dialog in addition to Forced mode behaviour.
-        /// </summary>
-        [XmlEnum("2")] ForcedDownload
-    }
-
     /// <summary>
     ///     Main class that lets you auto update applications by setting some static fields and executing its Start method.
     /// </summary>
@@ -161,16 +120,6 @@ namespace AutoUpdaterDotNET
         /// </summary>
         public static bool Synchronous = false;
 
-        ///<summary>
-        ///     Set this to true if you want to ignore previously assigned Remind Later and Skip settings. It will also hide Remind Later and Skip buttons.
-        /// </summary>
-        public static bool Mandatory;
-
-        /// <summary>
-        ///     Set this to any of the available modes to change behaviour of the Mandatory flag.
-        /// </summary>
-        public static Mode UpdateMode;
-
         /// <summary>
         ///     Set Proxy server to use for all the web requests in AutoUpdater.NET.
         /// </summary>
@@ -180,11 +129,6 @@ namespace AutoUpdaterDotNET
         /// Set this to an instance implementing the IPersistenceProvider interface for using a data storage method different from the default Windows Registry based one.
         /// </summary>
         public static IPersistenceProvider PersistenceProvider;
-
-        /// <summary>
-        ///     Set if RemindLaterAt interval should be in Minutes, Hours or Days.
-        /// </summary>
-        public static RemindLaterFormat RemindLaterTimeSpan = RemindLaterFormat.Days;
 
         /// <summary>
         ///     A delegate type to handle how to exit the application after update is downloaded.
@@ -258,13 +202,6 @@ namespace AutoUpdaterDotNET
             }
             catch (NotSupportedException)
             {
-            }
-
-            if (Mandatory && _remindLaterTimer != null)
-            {
-                _remindLaterTimer.Stop();
-                _remindLaterTimer.Close();
-                _remindLaterTimer = null;
             }
 
             if (!Running && _remindLaterTimer == null)
@@ -383,48 +320,30 @@ namespace AutoUpdaterDotNET
             args.InstalledVersion = InstalledVersion != null ? InstalledVersion : mainAssembly.GetName().Version;
             args.IsUpdateAvailable = new Version(args.CurrentVersion) > args.InstalledVersion;
 
-            if (!Mandatory)
+            // Read the persisted state from the persistence provider.
+            // This method makes the persistence handling independent from the storage method.
+            var skippedVersion = PersistenceProvider.GetSkippedVersion();
+            if (skippedVersion != null)
             {
-                if (string.IsNullOrEmpty(args.Mandatory.MinimumVersion) ||
-                    args.InstalledVersion < new Version(args.Mandatory.MinimumVersion))
+                var currentVersion = new Version(args.CurrentVersion);
+                if (currentVersion <= skippedVersion)
+                    return null;
+
+                if (currentVersion > skippedVersion)
                 {
-                    Mandatory = args.Mandatory.Value;
-                    UpdateMode = args.Mandatory.UpdateMode;
+                    // Update the persisted state. Its no longer makes sense to have this flag set as we are working on a newer application version.
+                    PersistenceProvider.SetSkippedVersion(null);
                 }
             }
 
-            if (Mandatory)
+            var remindLaterAt = PersistenceProvider.GetRemindLater();
+            if (remindLaterAt != null)
             {
-                ShowRemindLaterButton = false;
-                ShowSkipButton = false;
-            }
-            else
-            {
-                // Read the persisted state from the persistence provider.
-                // This method makes the persistence handling independent from the storage method.
-                var skippedVersion = PersistenceProvider.GetSkippedVersion();
-                if (skippedVersion != null)
+                int compareResult = DateTime.Compare(DateTime.Now, remindLaterAt.Value);
+
+                if (compareResult < 0)
                 {
-                    var currentVersion = new Version(args.CurrentVersion);
-                    if (currentVersion <= skippedVersion)
-                        return null;
-
-                    if (currentVersion > skippedVersion)
-                    {
-                        // Update the persisted state. Its no longer makes sense to have this flag set as we are working on a newer application version.
-                        PersistenceProvider.SetSkippedVersion(null);
-                    }
-                }
-
-                var remindLaterAt = PersistenceProvider.GetRemindLater();
-                if (remindLaterAt != null)
-                {
-                    int compareResult = DateTime.Compare(DateTime.Now, remindLaterAt.Value);
-
-                    if (compareResult < 0)
-                    {
-                        return remindLaterAt.Value;
-                    }
+                    return remindLaterAt.Value;
                 }
             }
 
@@ -449,26 +368,18 @@ namespace AutoUpdaterDotNET
                     {
                         if (args.IsUpdateAvailable)
                         {
-                            if (Mandatory && UpdateMode == Mode.ForcedDownload)
+                            if (Thread.CurrentThread.GetApartmentState().Equals(ApartmentState.STA))
                             {
-                                DownloadUpdate(args);
-                                Exit();
+                                ShowUpdateForm(args);
                             }
                             else
                             {
-                                if (Thread.CurrentThread.GetApartmentState().Equals(ApartmentState.STA))
-                                {
-                                    ShowUpdateForm(args);
-                                }
-                                else
-                                {
-                                    Thread thread = new Thread(new ThreadStart(delegate { ShowUpdateForm(args); }));
-                                    thread.CurrentCulture =
-                                        thread.CurrentUICulture = CultureInfo.CurrentCulture;
-                                    thread.SetApartmentState(ApartmentState.STA);
-                                    thread.Start();
-                                    thread.Join();
-                                }
+                                Thread thread = new Thread(new ThreadStart(delegate { ShowUpdateForm(args); }));
+                                thread.CurrentCulture =
+                                    thread.CurrentUICulture = CultureInfo.CurrentCulture;
+                                thread.SetApartmentState(ApartmentState.STA);
+                                thread.Start();
+                                thread.Join();
                             }
 
                             return true;

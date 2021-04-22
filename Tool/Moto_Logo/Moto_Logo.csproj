@@ -119,12 +119,6 @@
     <Compile Include="EngineUI\AutoUpdaterDotNET\ParseUpdateInfoEventArgs.cs" />
     <Compile Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.Designer.cs" />
     <Compile Include="EngineUI\AutoUpdaterDotNET\RegistryPersistenceProvider.cs" />
-    <Compile Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.Designer.cs">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="EngineUI\AutoUpdaterDotNET\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,69 +396,6 @@
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.th.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.zh-tw.resx" />
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\Properties\Resources.zh.resx" />
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ar.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.cs.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.da.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.de.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.es.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.fr.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.it.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ja-JP.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ko.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.nl.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pl.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pt-BR.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.pt.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.ru.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.sk.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.sv.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.th.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.tr.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.zh-tw.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\RemindLaterForm.zh.resx">
-      <DependentUpon>RemindLaterForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EngineUI\AutoUpdaterDotNET\UpdateForm.ar.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>

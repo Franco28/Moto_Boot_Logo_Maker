@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFilesDownload.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 20-04-2021                                               #
+#    Date: 22-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -158,18 +158,6 @@ namespace Moto_Logo
                 CallDownload();
                 return;
             }
-
-            //string assemblyVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            /*if (oConfigMng.Config.FileVersion != assemblyVersion)
-              {
-                  MessageBox.Show("A new version v" + oConfigMng.Config.FileVersion + " of Tool files was found, this will be downloaded!", "File Manager", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                  CallDownload();
-                  return;
-              }
-              else
-              {
-
-              }*/
         }
 
         public void CallDownload()
@@ -293,7 +281,8 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                sw.Stop(); 
+                sw.Stop();
+                Logs.DebugErrorLogs(er);
                 SystemSounds.Hand.Play();
                 DarkMessageBox.ShowError(er.ToString(), "File Extraction Error");
                 this.Close();
