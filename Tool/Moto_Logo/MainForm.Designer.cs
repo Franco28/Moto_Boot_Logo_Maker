@@ -149,6 +149,11 @@ namespace Moto_Logo
             this.labelIconTVLogo = new System.Windows.Forms.Label();
             this.labelIconZoomFC = new System.Windows.Forms.Label();
             this.labelIcontxtLogoInternalFile = new System.Windows.Forms.Label();
+            this.labelIconBTNDelete = new System.Windows.Forms.Label();
+            this.labelIconBTNExtract = new System.Windows.Forms.Label();
+            this.labelIconBTNAppend = new System.Windows.Forms.Label();
+            this.darkSectionPanelMainBTNS = new DarkUI.Controls.DarkSectionPanel();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBoxLogoImageOrientation.SuspendLayout();
             this.groupBoxLogoImageOption.SuspendLayout();
             this.groupBoxLogoFormat.SuspendLayout();
@@ -165,6 +170,7 @@ namespace Moto_Logo
             this.groupBoxLogoResolution.SuspendLayout();
             this.darkToolStrip1.SuspendLayout();
             this.darkToolStrip2.SuspendLayout();
+            this.darkSectionPanelMainBTNS.SuspendLayout();
             this.SuspendLayout();
             // 
             // tvLogo
@@ -175,10 +181,10 @@ namespace Moto_Logo
             this.tvLogo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.tvLogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.tvLogo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.tvLogo.Location = new System.Drawing.Point(33, 316);
+            this.tvLogo.Location = new System.Drawing.Point(33, 291);
             this.tvLogo.Name = "tvLogo";
             this.tvLogo.ShowNodeToolTips = true;
-            this.tvLogo.Size = new System.Drawing.Size(299, 307);
+            this.tvLogo.Size = new System.Drawing.Size(292, 305);
             this.tvLogo.TabIndex = 201;
             this.tvLogo.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvLogo_AfterSelect);
             this.tvLogo.DoubleClick += new System.EventHandler(this.tvLogo_DoubleClick);
@@ -187,7 +193,7 @@ namespace Moto_Logo
             // 
             this.labelColorDraw.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelColorDraw.AutoSize = true;
-            this.labelColorDraw.Location = new System.Drawing.Point(896, 510);
+            this.labelColorDraw.Location = new System.Drawing.Point(909, 530);
             this.labelColorDraw.Name = "labelColorDraw";
             this.labelColorDraw.Size = new System.Drawing.Size(33, 13);
             this.labelColorDraw.TabIndex = 197;
@@ -202,9 +208,9 @@ namespace Moto_Logo
             this.groupBoxLogoImageOrientation.Controls.Add(this.rdoLayoutLandscape);
             this.groupBoxLogoImageOrientation.Controls.Add(this.rdoLayoutPortrait);
             this.groupBoxLogoImageOrientation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoImageOrientation.Location = new System.Drawing.Point(901, 91);
+            this.groupBoxLogoImageOrientation.Location = new System.Drawing.Point(936, 91);
             this.groupBoxLogoImageOrientation.Name = "groupBoxLogoImageOrientation";
-            this.groupBoxLogoImageOrientation.Size = new System.Drawing.Size(250, 46);
+            this.groupBoxLogoImageOrientation.Size = new System.Drawing.Size(244, 46);
             this.groupBoxLogoImageOrientation.TabIndex = 196;
             this.groupBoxLogoImageOrientation.TabStop = false;
             this.groupBoxLogoImageOrientation.Text = "Image Orientation Options";
@@ -212,7 +218,7 @@ namespace Moto_Logo
             // rdoLayoutLandscape
             // 
             this.rdoLayoutLandscape.AutoSize = true;
-            this.rdoLayoutLandscape.Location = new System.Drawing.Point(104, 23);
+            this.rdoLayoutLandscape.Location = new System.Drawing.Point(115, 19);
             this.rdoLayoutLandscape.Name = "rdoLayoutLandscape";
             this.rdoLayoutLandscape.Size = new System.Drawing.Size(78, 17);
             this.rdoLayoutLandscape.TabIndex = 7;
@@ -223,7 +229,7 @@ namespace Moto_Logo
             // 
             this.rdoLayoutPortrait.AutoSize = true;
             this.rdoLayoutPortrait.Checked = true;
-            this.rdoLayoutPortrait.Location = new System.Drawing.Point(6, 23);
+            this.rdoLayoutPortrait.Location = new System.Drawing.Point(6, 19);
             this.rdoLayoutPortrait.Name = "rdoLayoutPortrait";
             this.rdoLayoutPortrait.Size = new System.Drawing.Size(58, 17);
             this.rdoLayoutPortrait.TabIndex = 6;
@@ -241,27 +247,27 @@ namespace Moto_Logo
             this.groupBoxLogoImageOption.Controls.Add(this.rdoImageStretchAspect);
             this.groupBoxLogoImageOption.Controls.Add(this.rdoImageCenter);
             this.groupBoxLogoImageOption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoImageOption.Location = new System.Drawing.Point(209, 143);
+            this.groupBoxLogoImageOption.Location = new System.Drawing.Point(629, 91);
             this.groupBoxLogoImageOption.Name = "groupBoxLogoImageOption";
-            this.groupBoxLogoImageOption.Size = new System.Drawing.Size(942, 46);
+            this.groupBoxLogoImageOption.Size = new System.Drawing.Size(301, 98);
             this.groupBoxLogoImageOption.TabIndex = 195;
             this.groupBoxLogoImageOption.TabStop = false;
             this.groupBoxLogoImageOption.Text = "Image Fill Options";
             // 
             // rdoImageFill
             // 
-            this.rdoImageFill.Location = new System.Drawing.Point(421, 21);
+            this.rdoImageFill.Location = new System.Drawing.Point(6, 48);
             this.rdoImageFill.Name = "rdoImageFill";
-            this.rdoImageFill.Size = new System.Drawing.Size(500, 17);
+            this.rdoImageFill.Size = new System.Drawing.Size(289, 17);
             this.rdoImageFill.TabIndex = 8;
             this.rdoImageFill.Text = "Fill";
             this.rdoImageFill.CheckedChanged += new System.EventHandler(this.rdoAndroid43_CheckedChanged);
             // 
             // rdoImageStretchAspect
             // 
-            this.rdoImageStretchAspect.Location = new System.Drawing.Point(131, 23);
+            this.rdoImageStretchAspect.Location = new System.Drawing.Point(6, 75);
             this.rdoImageStretchAspect.Name = "rdoImageStretchAspect";
-            this.rdoImageStretchAspect.Size = new System.Drawing.Size(275, 17);
+            this.rdoImageStretchAspect.Size = new System.Drawing.Size(289, 17);
             this.rdoImageStretchAspect.TabIndex = 7;
             this.rdoImageStretchAspect.Text = "Stretch Proportionately";
             this.rdoImageStretchAspect.CheckedChanged += new System.EventHandler(this.rdoAndroid43_CheckedChanged);
@@ -269,9 +275,9 @@ namespace Moto_Logo
             // rdoImageCenter
             // 
             this.rdoImageCenter.Checked = true;
-            this.rdoImageCenter.Location = new System.Drawing.Point(6, 23);
+            this.rdoImageCenter.Location = new System.Drawing.Point(6, 19);
             this.rdoImageCenter.Name = "rdoImageCenter";
-            this.rdoImageCenter.Size = new System.Drawing.Size(119, 17);
+            this.rdoImageCenter.Size = new System.Drawing.Size(289, 17);
             this.rdoImageCenter.TabIndex = 6;
             this.rdoImageCenter.TabStop = true;
             this.rdoImageCenter.Text = "Center";
@@ -279,24 +285,22 @@ namespace Moto_Logo
             // 
             // groupBoxLogoFormat
             // 
-            this.groupBoxLogoFormat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxLogoFormat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBoxLogoFormat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxLogoFormat.Controls.Add(this.rdoAndroidRAW);
             this.groupBoxLogoFormat.Controls.Add(this.rdoAndroid43);
             this.groupBoxLogoFormat.Controls.Add(this.rdoAndroid44);
             this.groupBoxLogoFormat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoFormat.Location = new System.Drawing.Point(450, 91);
+            this.groupBoxLogoFormat.Location = new System.Drawing.Point(453, 91);
             this.groupBoxLogoFormat.Name = "groupBoxLogoFormat";
-            this.groupBoxLogoFormat.Size = new System.Drawing.Size(449, 46);
+            this.groupBoxLogoFormat.Size = new System.Drawing.Size(170, 98);
             this.groupBoxLogoFormat.TabIndex = 193;
             this.groupBoxLogoFormat.TabStop = false;
             this.groupBoxLogoFormat.Text = "logo.bin format";
             // 
             // rdoAndroidRAW
             // 
-            this.rdoAndroidRAW.Location = new System.Drawing.Point(293, 23);
+            this.rdoAndroidRAW.Location = new System.Drawing.Point(6, 75);
             this.rdoAndroidRAW.Name = "rdoAndroidRAW";
             this.rdoAndroidRAW.Size = new System.Drawing.Size(150, 17);
             this.rdoAndroidRAW.TabIndex = 8;
@@ -305,7 +309,7 @@ namespace Moto_Logo
             // 
             // rdoAndroid43
             // 
-            this.rdoAndroid43.Location = new System.Drawing.Point(130, 23);
+            this.rdoAndroid43.Location = new System.Drawing.Point(6, 48);
             this.rdoAndroid43.Name = "rdoAndroid43";
             this.rdoAndroid43.Size = new System.Drawing.Size(157, 17);
             this.rdoAndroid43.TabIndex = 7;
@@ -333,9 +337,9 @@ namespace Moto_Logo
             this.groupBoxLogoMemory.Controls.Add(this.radioButton6MIB);
             this.groupBoxLogoMemory.Controls.Add(this.radioButton4mib);
             this.groupBoxLogoMemory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoMemory.Location = new System.Drawing.Point(162, 91);
+            this.groupBoxLogoMemory.Location = new System.Drawing.Point(33, 91);
             this.groupBoxLogoMemory.Name = "groupBoxLogoMemory";
-            this.groupBoxLogoMemory.Size = new System.Drawing.Size(286, 46);
+            this.groupBoxLogoMemory.Size = new System.Drawing.Size(217, 98);
             this.groupBoxLogoMemory.TabIndex = 186;
             this.groupBoxLogoMemory.TabStop = false;
             this.groupBoxLogoMemory.Text = "Select your logo memory";
@@ -343,7 +347,7 @@ namespace Moto_Logo
             // radioButton32MIB
             // 
             this.radioButton32MIB.AutoSize = true;
-            this.radioButton32MIB.Location = new System.Drawing.Point(224, 23);
+            this.radioButton32MIB.Location = new System.Drawing.Point(6, 75);
             this.radioButton32MIB.Name = "radioButton32MIB";
             this.radioButton32MIB.Size = new System.Drawing.Size(53, 17);
             this.radioButton32MIB.TabIndex = 10;
@@ -353,7 +357,7 @@ namespace Moto_Logo
             // radioButton16MIB
             // 
             this.radioButton16MIB.AutoSize = true;
-            this.radioButton16MIB.Location = new System.Drawing.Point(165, 23);
+            this.radioButton16MIB.Location = new System.Drawing.Point(59, 48);
             this.radioButton16MIB.Name = "radioButton16MIB";
             this.radioButton16MIB.Size = new System.Drawing.Size(53, 17);
             this.radioButton16MIB.TabIndex = 9;
@@ -363,7 +367,7 @@ namespace Moto_Logo
             // radioButton8MIB
             // 
             this.radioButton8MIB.AutoSize = true;
-            this.radioButton8MIB.Location = new System.Drawing.Point(112, 23);
+            this.radioButton8MIB.Location = new System.Drawing.Point(6, 48);
             this.radioButton8MIB.Name = "radioButton8MIB";
             this.radioButton8MIB.Size = new System.Drawing.Size(47, 17);
             this.radioButton8MIB.TabIndex = 8;
@@ -373,7 +377,7 @@ namespace Moto_Logo
             // radioButton6MIB
             // 
             this.radioButton6MIB.AutoSize = true;
-            this.radioButton6MIB.Location = new System.Drawing.Point(59, 23);
+            this.radioButton6MIB.Location = new System.Drawing.Point(59, 19);
             this.radioButton6MIB.Name = "radioButton6MIB";
             this.radioButton6MIB.Size = new System.Drawing.Size(47, 17);
             this.radioButton6MIB.TabIndex = 7;
@@ -383,7 +387,7 @@ namespace Moto_Logo
             // radioButton4mib
             // 
             this.radioButton4mib.AutoSize = true;
-            this.radioButton4mib.Location = new System.Drawing.Point(6, 23);
+            this.radioButton4mib.Location = new System.Drawing.Point(6, 19);
             this.radioButton4mib.Name = "radioButton4mib";
             this.radioButton4mib.Size = new System.Drawing.Size(47, 17);
             this.radioButton4mib.TabIndex = 6;
@@ -411,9 +415,9 @@ namespace Moto_Logo
             this.pictureBoxColors.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBoxColors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.pictureBoxColors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxColors.Location = new System.Drawing.Point(896, 526);
+            this.pictureBoxColors.Location = new System.Drawing.Point(912, 546);
             this.pictureBoxColors.Name = "pictureBoxColors";
-            this.pictureBoxColors.Size = new System.Drawing.Size(255, 31);
+            this.pictureBoxColors.Size = new System.Drawing.Size(268, 31);
             this.pictureBoxColors.TabIndex = 191;
             this.pictureBoxColors.TabStop = false;
             this.pictureBoxColors.Click += new System.EventHandler(this.pictureBoxColors_Click);
@@ -423,11 +427,11 @@ namespace Moto_Logo
             this.trbZoomFactor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.trbZoomFactor.Cursor = System.Windows.Forms.Cursors.NoMoveHoriz;
             this.trbZoomFactor.LargeChange = 1;
-            this.trbZoomFactor.Location = new System.Drawing.Point(896, 455);
+            this.trbZoomFactor.Location = new System.Drawing.Point(912, 455);
             this.trbZoomFactor.Maximum = 6;
             this.trbZoomFactor.Minimum = 2;
             this.trbZoomFactor.Name = "trbZoomFactor";
-            this.trbZoomFactor.Size = new System.Drawing.Size(232, 45);
+            this.trbZoomFactor.Size = new System.Drawing.Size(245, 45);
             this.trbZoomFactor.TabIndex = 189;
             this.trbZoomFactor.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trbZoomFactor.Value = 3;
@@ -438,9 +442,9 @@ namespace Moto_Logo
             this.picZoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picZoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.picZoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picZoom.Location = new System.Drawing.Point(865, 195);
+            this.picZoom.Location = new System.Drawing.Point(878, 195);
             this.picZoom.Name = "picZoom";
-            this.picZoom.Size = new System.Drawing.Size(286, 254);
+            this.picZoom.Size = new System.Drawing.Size(302, 254);
             this.picZoom.TabIndex = 188;
             this.picZoom.TabStop = false;
             // 
@@ -476,9 +480,9 @@ namespace Moto_Logo
             this.groupBoxLogoExtension.Controls.Add(this.radioButtonBIN);
             this.groupBoxLogoExtension.Controls.Add(this.radioButtonZIP);
             this.groupBoxLogoExtension.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoExtension.Location = new System.Drawing.Point(4, 91);
+            this.groupBoxLogoExtension.Location = new System.Drawing.Point(256, 91);
             this.groupBoxLogoExtension.Name = "groupBoxLogoExtension";
-            this.groupBoxLogoExtension.Size = new System.Drawing.Size(156, 46);
+            this.groupBoxLogoExtension.Size = new System.Drawing.Size(191, 98);
             this.groupBoxLogoExtension.TabIndex = 185;
             this.groupBoxLogoExtension.TabStop = false;
             this.groupBoxLogoExtension.Text = "Select your extension";
@@ -487,7 +491,7 @@ namespace Moto_Logo
             // 
             this.radioButtonBIN.AutoSize = true;
             this.radioButtonBIN.Checked = true;
-            this.radioButtonBIN.Location = new System.Drawing.Point(67, 23);
+            this.radioButtonBIN.Location = new System.Drawing.Point(9, 19);
             this.radioButtonBIN.Name = "radioButtonBIN";
             this.radioButtonBIN.Size = new System.Drawing.Size(42, 17);
             this.radioButtonBIN.TabIndex = 7;
@@ -497,7 +501,7 @@ namespace Moto_Logo
             // radioButtonZIP
             // 
             this.radioButtonZIP.AutoSize = true;
-            this.radioButtonZIP.Location = new System.Drawing.Point(6, 23);
+            this.radioButtonZIP.Location = new System.Drawing.Point(9, 42);
             this.radioButtonZIP.Name = "radioButtonZIP";
             this.radioButtonZIP.Size = new System.Drawing.Size(41, 17);
             this.radioButtonZIP.TabIndex = 6;
@@ -512,9 +516,9 @@ namespace Moto_Logo
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBox1.Location = new System.Drawing.Point(336, 195);
+            this.pictureBox1.Location = new System.Drawing.Point(331, 195);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(523, 480);
+            this.pictureBox1.Size = new System.Drawing.Size(541, 530);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 183;
             this.pictureBox1.TabStop = false;
@@ -537,10 +541,10 @@ namespace Moto_Logo
             // 
             this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDelete.Location = new System.Drawing.Point(233, 652);
+            this.buttonDelete.Location = new System.Drawing.Point(197, 50);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonDelete.Size = new System.Drawing.Size(98, 23);
+            this.buttonDelete.Size = new System.Drawing.Size(120, 23);
             this.buttonDelete.TabIndex = 181;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
@@ -549,10 +553,10 @@ namespace Moto_Logo
             // 
             this.buttonExtract.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonExtract.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonExtract.Location = new System.Drawing.Point(118, 652);
+            this.buttonExtract.Location = new System.Drawing.Point(35, 70);
             this.buttonExtract.Name = "buttonExtract";
             this.buttonExtract.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonExtract.Size = new System.Drawing.Size(98, 23);
+            this.buttonExtract.Size = new System.Drawing.Size(125, 23);
             this.buttonExtract.TabIndex = 180;
             this.buttonExtract.Text = "Extract";
             this.buttonExtract.Click += new System.EventHandler(this.buttonExtract_Click);
@@ -561,10 +565,10 @@ namespace Moto_Logo
             // 
             this.buttonAppend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonAppend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAppend.Location = new System.Drawing.Point(4, 652);
+            this.buttonAppend.Location = new System.Drawing.Point(35, 30);
             this.buttonAppend.Name = "buttonAppend";
             this.buttonAppend.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonAppend.Size = new System.Drawing.Size(98, 23);
+            this.buttonAppend.Size = new System.Drawing.Size(125, 23);
             this.buttonAppend.TabIndex = 179;
             this.buttonAppend.Text = "Append";
             this.buttonAppend.Click += new System.EventHandler(this.buttonAppend_Click);
@@ -574,10 +578,11 @@ namespace Moto_Logo
             this.txtLogoInternalFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtLogoInternalFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.txtLogoInternalFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLogoInternalFile.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogoInternalFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.txtLogoInternalFile.Location = new System.Drawing.Point(33, 628);
+            this.txtLogoInternalFile.Location = new System.Drawing.Point(33, 602);
             this.txtLogoInternalFile.Name = "txtLogoInternalFile";
-            this.txtLogoInternalFile.Size = new System.Drawing.Size(299, 20);
+            this.txtLogoInternalFile.Size = new System.Drawing.Size(292, 22);
             this.txtLogoInternalFile.TabIndex = 178;
             this.txtLogoInternalFile.TextChanged += new System.EventHandler(this.txtLogoInternalFile_TextChanged);
             // 
@@ -593,7 +598,7 @@ namespace Moto_Logo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1155, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
             this.menuStrip1.TabIndex = 176;
             this.menuStrip1.Text = "darkMenuStrip1";
             // 
@@ -749,11 +754,12 @@ namespace Moto_Logo
             // 
             this.txtComments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.txtComments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtComments.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.txtComments.Location = new System.Drawing.Point(33, 195);
             this.txtComments.Multiline = true;
             this.txtComments.Name = "txtComments";
-            this.txtComments.Size = new System.Drawing.Size(298, 115);
+            this.txtComments.Size = new System.Drawing.Size(292, 90);
             this.txtComments.TabIndex = 175;
             // 
             // lblZoomFactor
@@ -761,7 +767,7 @@ namespace Moto_Logo
             this.lblZoomFactor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblZoomFactor.AutoSize = true;
             this.lblZoomFactor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.lblZoomFactor.Location = new System.Drawing.Point(1134, 470);
+            this.lblZoomFactor.Location = new System.Drawing.Point(1163, 470);
             this.lblZoomFactor.Name = "lblZoomFactor";
             this.lblZoomFactor.Size = new System.Drawing.Size(20, 13);
             this.lblZoomFactor.TabIndex = 190;
@@ -778,10 +784,10 @@ namespace Moto_Logo
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.darkStatusStrip1.Location = new System.Drawing.Point(0, 678);
+            this.darkStatusStrip1.Location = new System.Drawing.Point(0, 728);
             this.darkStatusStrip1.Name = "darkStatusStrip1";
             this.darkStatusStrip1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.darkStatusStrip1.Size = new System.Drawing.Size(1155, 33);
+            this.darkStatusStrip1.Size = new System.Drawing.Size(1184, 33);
             this.darkStatusStrip1.SizingGrip = false;
             this.darkStatusStrip1.TabIndex = 184;
             this.darkStatusStrip1.Text = "darkStatusStrip1";
@@ -871,6 +877,7 @@ namespace Moto_Logo
             // 
             // groupBoxLogoResolution
             // 
+            this.groupBoxLogoResolution.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxLogoResolution.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBoxLogoResolution.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxLogoResolution.Controls.Add(this.udResolutionY);
@@ -878,12 +885,13 @@ namespace Moto_Logo
             this.groupBoxLogoResolution.Controls.Add(this.label2);
             this.groupBoxLogoResolution.Controls.Add(this.udResolutionX);
             this.groupBoxLogoResolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxLogoResolution.Location = new System.Drawing.Point(4, 143);
+            this.groupBoxLogoResolution.Location = new System.Drawing.Point(936, 143);
             this.groupBoxLogoResolution.Name = "groupBoxLogoResolution";
-            this.groupBoxLogoResolution.Size = new System.Drawing.Size(203, 46);
+            this.groupBoxLogoResolution.Size = new System.Drawing.Size(244, 46);
             this.groupBoxLogoResolution.TabIndex = 194;
             this.groupBoxLogoResolution.TabStop = false;
             this.groupBoxLogoResolution.Text = "Resolution";
+            this.groupBoxLogoResolution.Visible = false;
             // 
             // darkToolStrip1
             // 
@@ -910,7 +918,7 @@ namespace Moto_Logo
             this.darkToolStrip1.Location = new System.Drawing.Point(0, 24);
             this.darkToolStrip1.Name = "darkToolStrip1";
             this.darkToolStrip1.Padding = new System.Windows.Forms.Padding(5, 0, 1, 0);
-            this.darkToolStrip1.Size = new System.Drawing.Size(1155, 28);
+            this.darkToolStrip1.Size = new System.Drawing.Size(1184, 28);
             this.darkToolStrip1.TabIndex = 202;
             this.darkToolStrip1.Text = "darkToolStrip1";
             // 
@@ -1076,7 +1084,7 @@ namespace Moto_Logo
             this.darkToolStrip2.Location = new System.Drawing.Point(0, 52);
             this.darkToolStrip2.Name = "darkToolStrip2";
             this.darkToolStrip2.Padding = new System.Windows.Forms.Padding(5, 0, 1, 0);
-            this.darkToolStrip2.Size = new System.Drawing.Size(1155, 28);
+            this.darkToolStrip2.Size = new System.Drawing.Size(1184, 28);
             this.darkToolStrip2.TabIndex = 203;
             this.darkToolStrip2.Text = "darkToolStrip2";
             // 
@@ -1193,10 +1201,10 @@ namespace Moto_Logo
             this.ImageStatusBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.ImageStatusBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImageStatusBox.ForeColor = System.Drawing.Color.White;
-            this.ImageStatusBox.Location = new System.Drawing.Point(896, 563);
+            this.ImageStatusBox.Location = new System.Drawing.Point(912, 606);
             this.ImageStatusBox.Name = "ImageStatusBox";
             this.ImageStatusBox.ReadOnly = true;
-            this.ImageStatusBox.Size = new System.Drawing.Size(255, 93);
+            this.ImageStatusBox.Size = new System.Drawing.Size(268, 93);
             this.ImageStatusBox.TabIndex = 204;
             this.ImageStatusBox.Text = "";
             // 
@@ -1204,7 +1212,7 @@ namespace Moto_Logo
             // 
             this.labelIconRGB.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelIconRGB.Image = global::Moto_Logo.Properties.Resources.rgb_x24;
-            this.labelIconRGB.Location = new System.Drawing.Point(862, 526);
+            this.labelIconRGB.Location = new System.Drawing.Point(878, 546);
             this.labelIconRGB.Name = "labelIconRGB";
             this.labelIconRGB.Size = new System.Drawing.Size(28, 31);
             this.labelIconRGB.TabIndex = 205;
@@ -1213,7 +1221,7 @@ namespace Moto_Logo
             // 
             this.labelIconImageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelIconImageBox.Image = global::Moto_Logo.Properties.Resources.image_x20;
-            this.labelIconImageBox.Location = new System.Drawing.Point(862, 563);
+            this.labelIconImageBox.Location = new System.Drawing.Point(878, 606);
             this.labelIconImageBox.Name = "labelIconImageBox";
             this.labelIconImageBox.Size = new System.Drawing.Size(28, 93);
             this.labelIconImageBox.TabIndex = 206;
@@ -1221,32 +1229,32 @@ namespace Moto_Logo
             // labelIconLUImage
             // 
             this.labelIconLUImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelIconLUImage.Location = new System.Drawing.Point(896, 657);
+            this.labelIconLUImage.Location = new System.Drawing.Point(912, 702);
             this.labelIconLUImage.Name = "labelIconLUImage";
-            this.labelIconLUImage.Size = new System.Drawing.Size(258, 19);
+            this.labelIconLUImage.Size = new System.Drawing.Size(268, 26);
             this.labelIconLUImage.TabIndex = 207;
             // 
             // labelIconMessageBoxLogo
             // 
             this.labelIconMessageBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("labelIconMessageBoxLogo.Image")));
-            this.labelIconMessageBoxLogo.Location = new System.Drawing.Point(1, 195);
+            this.labelIconMessageBoxLogo.Location = new System.Drawing.Point(2, 195);
             this.labelIconMessageBoxLogo.Name = "labelIconMessageBoxLogo";
-            this.labelIconMessageBoxLogo.Size = new System.Drawing.Size(28, 115);
+            this.labelIconMessageBoxLogo.Size = new System.Drawing.Size(28, 90);
             this.labelIconMessageBoxLogo.TabIndex = 208;
             // 
             // labelIconTVLogo
             // 
             this.labelIconTVLogo.Image = ((System.Drawing.Image)(resources.GetObject("labelIconTVLogo.Image")));
-            this.labelIconTVLogo.Location = new System.Drawing.Point(1, 316);
+            this.labelIconTVLogo.Location = new System.Drawing.Point(1, 291);
             this.labelIconTVLogo.Name = "labelIconTVLogo";
-            this.labelIconTVLogo.Size = new System.Drawing.Size(28, 307);
+            this.labelIconTVLogo.Size = new System.Drawing.Size(28, 305);
             this.labelIconTVLogo.TabIndex = 209;
             // 
             // labelIconZoomFC
             // 
             this.labelIconZoomFC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelIconZoomFC.Image = global::Moto_Logo.Properties.Resources.zoom_x24;
-            this.labelIconZoomFC.Location = new System.Drawing.Point(862, 452);
+            this.labelIconZoomFC.Location = new System.Drawing.Point(878, 452);
             this.labelIconZoomFC.Name = "labelIconZoomFC";
             this.labelIconZoomFC.Size = new System.Drawing.Size(28, 47);
             this.labelIconZoomFC.TabIndex = 210;
@@ -1255,10 +1263,62 @@ namespace Moto_Logo
             // 
             this.labelIcontxtLogoInternalFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelIcontxtLogoInternalFile.Image = global::Moto_Logo.Properties.Resources.textInfo_x24;
-            this.labelIcontxtLogoInternalFile.Location = new System.Drawing.Point(4, 627);
+            this.labelIcontxtLogoInternalFile.Location = new System.Drawing.Point(4, 601);
             this.labelIcontxtLogoInternalFile.Name = "labelIcontxtLogoInternalFile";
-            this.labelIcontxtLogoInternalFile.Size = new System.Drawing.Size(26, 20);
+            this.labelIcontxtLogoInternalFile.Size = new System.Drawing.Size(26, 22);
             this.labelIcontxtLogoInternalFile.TabIndex = 211;
+            // 
+            // labelIconBTNDelete
+            // 
+            this.labelIconBTNDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelIconBTNDelete.Image = global::Moto_Logo.Properties.Resources.delete_x16;
+            this.labelIconBTNDelete.Location = new System.Drawing.Point(166, 50);
+            this.labelIconBTNDelete.Name = "labelIconBTNDelete";
+            this.labelIconBTNDelete.Size = new System.Drawing.Size(25, 23);
+            this.labelIconBTNDelete.TabIndex = 212;
+            // 
+            // labelIconBTNExtract
+            // 
+            this.labelIconBTNExtract.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelIconBTNExtract.Image = global::Moto_Logo.Properties.Resources.extract_x16;
+            this.labelIconBTNExtract.Location = new System.Drawing.Point(7, 70);
+            this.labelIconBTNExtract.Name = "labelIconBTNExtract";
+            this.labelIconBTNExtract.Size = new System.Drawing.Size(26, 23);
+            this.labelIconBTNExtract.TabIndex = 213;
+            // 
+            // labelIconBTNAppend
+            // 
+            this.labelIconBTNAppend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelIconBTNAppend.Image = global::Moto_Logo.Properties.Resources.add_x16;
+            this.labelIconBTNAppend.Location = new System.Drawing.Point(7, 30);
+            this.labelIconBTNAppend.Name = "labelIconBTNAppend";
+            this.labelIconBTNAppend.Size = new System.Drawing.Size(26, 23);
+            this.labelIconBTNAppend.TabIndex = 214;
+            // 
+            // darkSectionPanelMainBTNS
+            // 
+            this.darkSectionPanelMainBTNS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.darkSectionPanelMainBTNS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.darkSectionPanelMainBTNS.Controls.Add(this.buttonAppend);
+            this.darkSectionPanelMainBTNS.Controls.Add(this.labelIconBTNAppend);
+            this.darkSectionPanelMainBTNS.Controls.Add(this.buttonExtract);
+            this.darkSectionPanelMainBTNS.Controls.Add(this.labelIconBTNExtract);
+            this.darkSectionPanelMainBTNS.Controls.Add(this.buttonDelete);
+            this.darkSectionPanelMainBTNS.Controls.Add(this.labelIconBTNDelete);
+            this.darkSectionPanelMainBTNS.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darkSectionPanelMainBTNS.Location = new System.Drawing.Point(4, 628);
+            this.darkSectionPanelMainBTNS.Name = "darkSectionPanelMainBTNS";
+            this.darkSectionPanelMainBTNS.SectionHeader = "Controls of Logo list";
+            this.darkSectionPanelMainBTNS.Size = new System.Drawing.Size(321, 97);
+            this.darkSectionPanelMainBTNS.TabIndex = 215;
+            // 
+            // label6
+            // 
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(0, 91);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 98);
+            this.label6.TabIndex = 216;
             // 
             // MainForm
             // 
@@ -1266,7 +1326,9 @@ namespace Moto_Logo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1155, 711);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.darkSectionPanelMainBTNS);
             this.Controls.Add(this.labelIcontxtLogoInternalFile);
             this.Controls.Add(this.labelIconZoomFC);
             this.Controls.Add(this.labelIconTVLogo);
@@ -1290,9 +1352,6 @@ namespace Moto_Logo
             this.Controls.Add(this.groupBoxLogoExtension);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.darkLabel1);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonExtract);
-            this.Controls.Add(this.buttonAppend);
             this.Controls.Add(this.txtLogoInternalFile);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtComments);
@@ -1335,6 +1394,7 @@ namespace Moto_Logo
             this.darkToolStrip1.PerformLayout();
             this.darkToolStrip2.ResumeLayout(false);
             this.darkToolStrip2.PerformLayout();
+            this.darkSectionPanelMainBTNS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1448,5 +1508,10 @@ namespace Moto_Logo
         private System.Windows.Forms.Label labelIconZoomFC;
         private System.Windows.Forms.Label labelIcontxtLogoInternalFile;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.Label labelIconBTNDelete;
+        private System.Windows.Forms.Label labelIconBTNExtract;
+        private System.Windows.Forms.Label labelIconBTNAppend;
+        private DarkUI.Controls.DarkSectionPanel darkSectionPanelMainBTNS;
+        private System.Windows.Forms.Label label6;
     }
 }

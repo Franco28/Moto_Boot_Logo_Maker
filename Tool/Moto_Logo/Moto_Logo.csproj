@@ -666,10 +666,13 @@
     <Content Include="Resources\devices\motorola-one-vision-0.jpg" />
     <Content Include="Resources\devices\motorola-one-zoom-r1.jpg" />
     <Content Include="Resources\devices\one-fusion-1.jpg" />
+    <Content Include="Resources\ToolUI\add_x16.png" />
     <Content Include="Resources\ToolUI\aupdates_x32.png" />
     <Content Include="Resources\ToolUI\Build_x16.png" />
     <Content Include="Resources\ToolUI\CancelBuild_x16.png" />
+    <Content Include="Resources\ToolUI\delete_x16.png" />
     <Content Include="Resources\ToolUI\Error_x16.png" />
+    <Content Include="Resources\ToolUI\extract_x16.png" />
     <Content Include="Resources\ToolUI\folder_x16.png" />
     <Content Include="Resources\ToolUI\generalsettings_x32.png" />
     <Content Include="Resources\ToolUI\image_x20.png" />
@@ -714,7 +717,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 21-04-2021                                               #
+#    Date: 23-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -341,6 +341,8 @@ namespace Moto_Logo
             groupBoxLogoExtension.Enabled = true;
             textLogoName.Enabled = true;
             txtLogoBuildPath.Enabled = true;
+            labelBuildPath.Enabled = true;
+            labelLogoName.Enabled = true;
             btnAttachPath.Enabled = true;
             groupBoxLogoMemory.Enabled = false;
             buttonExtract.Enabled = true;
@@ -366,15 +368,23 @@ namespace Moto_Logo
             labelbtnBuild.Enabled = true;
             btnBuild.Enabled = true;
         }
-
+        
         public void Reload()
         {
             #region Reload
             try
             {
+                if (groupBoxLogoResolution.Visible == false)
+                {
+                    groupBoxLogoImageOrientation.Size = new Size(301, 98);
+                    rdoLayoutLandscape.Location = new Point(6, 42);
+                }
+
                 txtComments.Enabled = false;
                 cboMoto.Enabled = false;
                 txtLogoBuildPath.Enabled = false;
+                labelBuildPath.Enabled = false;
+                labelLogoName.Enabled = false;
                 btnAttachPath.Enabled = false;
                 groupBoxLogoFormat.Enabled = false;
                 groupBoxLogoResolution.Enabled = false;

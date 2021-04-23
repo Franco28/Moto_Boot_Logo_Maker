@@ -7,6 +7,8 @@ v4.4.4.0 - Released April xx, 2021
 ---------------------------------------
 - [removed] Some OTA functions, and OTA Force Mode, so now you can update Tool when you want
 - [fixed] Drag and Drop was disabled, now are enabled
+- [fixed] Logo Name label and Logo Build Path label wast disabled, now are disable for default
+- [updated] Main Form UI
 
 ---------------------------------------
 v4.4.3.9 - Released April 21, 2021
