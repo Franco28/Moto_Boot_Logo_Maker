@@ -229,28 +229,30 @@ namespace Moto_Logo
             this.Close();
         }
 
+        void SetIconForNode(TreeNode node, string imageindex)
+        {
+            node.ImageKey = imageindex;
+            node.SelectedImageKey = imageindex;
+        }
+
         private void treeView1_BeforeCollapse(object sender, TreeViewCancelEventArgs e)
         {
-            e.Node.ImageKey = "FolderClosed";
-            e.Node.SelectedImageKey = "FolderClosed";
+            SetIconForNode(e.Node, "FolderClosed");
         }
 
         private void treeView1_BeforeExpand(object sender, TreeViewCancelEventArgs e)
         {
-            e.Node.ImageKey = "FolderOpened";
-            e.Node.SelectedImageKey = "FolderOpened";
+            SetIconForNode(e.Node, "FolderOpened");
         }
 
         private void treeView1_AfterCollapse(object sender, TreeViewEventArgs e)
         {
-            e.Node.ImageKey = "FolderClosed";
-            e.Node.SelectedImageKey = "FolderClosed";
+            SetIconForNode(e.Node, "FolderClosed");
         }
 
         private void treeView1_AfterExpand(object sender, TreeViewEventArgs e)
         {
-            e.Node.ImageKey = "FolderOpened";
-            e.Node.SelectedImageKey = "FolderOpened";
+            SetIconForNode(e.Node, "FolderOpened");
         }
     }
 }
