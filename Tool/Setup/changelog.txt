@@ -9,6 +9,7 @@ v4.4.4.0 - Released April xx, 2021
 - [fixed] Drag and Drop was disabled, now are enabled
 - [fixed] Logo Name label and Logo Build Path label wast disabled, now are disable for default
 - [updated] Main Form UI
+- [improve] Internal Code
 
 ---------------------------------------
 v4.4.3.9 - Released April 21, 2021

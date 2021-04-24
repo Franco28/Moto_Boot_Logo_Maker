@@ -77,6 +77,7 @@ namespace Moto_Logo
                 {
                     DialogResult dialogResult;
                     SystemSounds.Exclamation.Play();
+
                     dialogResult = DarkMessageBox.ShowInformation(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul));
 
                     try

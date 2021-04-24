@@ -120,7 +120,7 @@ namespace Moto_Logo
         }
 
         private void MainForm_Load(object sender, EventArgs e)
-        {
+        {   
             #region LoadSettings 
             ImageStatusBox.Clear();
             ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
@@ -175,15 +175,49 @@ namespace Moto_Logo
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ImageStatusBox.Clear();
-            ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
-            ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
-            Properties.Settings.Default.LogoBinOpen = "";
-            Properties.Settings.Default.Save();
-            buttonAppend.Enabled = true;
-            buttonDelete.Enabled = true;
-            buttonExtract.Enabled = true;
-            Reload();
+            var openfilename = Properties.Settings.Default.LogoBinOpen;
+
+            if (Properties.Settings.Default.LogoBinOpen.EndsWith(".bin") && Properties.Settings.Default.LogoWasSaved == false)
+            {
+                DialogResult dialogResult = MessageBox.Show(res_man.GetString("ExitLogoWasntSave1", cul) + "\n\n" + openfilename + "\n\n" + "Are you sure about to Reload Tool?", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    ImageStatusBox.Clear();
+                    ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
+                    ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
+                    Properties.Settings.Default.LogoBinOpen = "";
+                    Properties.Settings.Default.Save();
+                    buttonAppend.Enabled = true;
+                    buttonDelete.Enabled = true;
+                    buttonExtract.Enabled = true;
+                    Reload();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    try
+                    {
+                        return;
+                    }
+                    catch (Exception er)
+                    {
+                        Logs.DebugErrorLogs(er);
+                        SystemSounds.Hand.Play();
+                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                    }
+                }
+            } 
+            else
+            {
+                ImageStatusBox.Clear();
+                ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
+                ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
+                Properties.Settings.Default.LogoBinOpen = "";
+                Properties.Settings.Default.Save();
+                buttonAppend.Enabled = true;
+                buttonDelete.Enabled = true;
+                buttonExtract.Enabled = true;
+                Reload();
+            }
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

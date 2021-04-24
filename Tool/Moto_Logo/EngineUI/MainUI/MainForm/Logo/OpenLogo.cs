@@ -295,6 +295,13 @@ namespace Moto_Logo
                 Logs.LogoOpenError(@"Error: " + ex.GetBaseException());
                 return;
             }
+
+            groupBoxLogoMemory.Size = new Size(217, 65);
+            labelResoTitle.Visible = true;
+            labelDRX.Visible = true;
+            labelDRY.Visible = true;
+            labelDRX.Text = "X: " + udResolutionX.Value.ToString();
+            labelDRY.Text = "Y: " + udResolutionY.Value.ToString();
             toolStripStatusLabel1.Text = res_man.GetString("FileLoadOk", cul);
         }
     }

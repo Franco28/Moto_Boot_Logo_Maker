@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.LogoTree.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 24-04-2021                                              #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,6 +11,7 @@
 #####################################################################
  */
 
+using Moto_Logo.Properties;
 using System;
 using System.Windows.Forms;
 
@@ -74,6 +75,22 @@ namespace Moto_Logo
             return keep;
         }
 
+        // Add Small Icon to TreeView
+        static ImageList _imageList;
+        public static ImageList ImageList
+        {
+            get
+            {
+                if (_imageList == null)
+                {
+                    _imageList = new ImageList();
+                    _imageList.Images.Add("Applications", Resources.imageTreeView_x16);
+                    _imageList.Images.Add("Application", Resources.imageTreeView_x16);
+                }
+                return _imageList;
+            }
+        }
+
         private void init_tree(bool logoboot, bool logobattery,
             bool logounlocked, bool logolowpower, bool logounplug, bool logocharge, bool logoyellow, bool logored, bool logoorange)
         {
@@ -89,6 +106,12 @@ namespace Moto_Logo
             for (var index = tvLogo.Nodes.Count - 1; index >= 0; index--)
             {
                 var node = tvLogo.Nodes[index];
+
+                // Set Image to TreeView
+                tvLogo.ImageList = MainForm.ImageList;
+                node.ImageKey = "Applications";
+                node.SelectedImageKey = "Application";
+
                 switch (node.Text)
                 {
                     case "logo_boot":
@@ -132,6 +155,12 @@ namespace Moto_Logo
             for (var index = tvLogo.Nodes.Count - 1; index >= 0; index--)
             {
                 var node = tvLogo.Nodes[index];
+
+                // Set Image to TreeView
+                tvLogo.ImageList = MainForm.ImageList;
+                node.ImageKey = "Applications";
+                node.SelectedImageKey = "Application";
+
                 switch (node.Text)
                 {
                     case "logo_boot":

@@ -673,8 +673,12 @@
     <Content Include="Resources\ToolUI\delete_x16.png" />
     <Content Include="Resources\ToolUI\Error_x16.png" />
     <Content Include="Resources\ToolUI\extract_x16.png" />
+    <Content Include="Resources\ToolUI\filesLogoBrowser_x16.png" />
+    <Content Include="Resources\ToolUI\folder_Closed_LogoBrowser_16xLG.png" />
+    <Content Include="Resources\ToolUI\folder_LogoBrowser_16x.png" />
     <Content Include="Resources\ToolUI\folder_x16.png" />
     <Content Include="Resources\ToolUI\generalsettings_x32.png" />
+    <Content Include="Resources\ToolUI\imageTreeView_x16.png" />
     <Content Include="Resources\ToolUI\image_x20.png" />
     <Content Include="Resources\ToolUI\lock_x20.png" />
     <Content Include="Resources\ToolUI\logolist_x24.png" />
@@ -684,6 +688,7 @@
     <Content Include="Resources\ToolUI\rgb_x24.png" />
     <Content Include="Resources\ToolUI\SearchDevice_x16.png" />
     <Content Include="Resources\ToolUI\server_x24.png" />
+    <Content Include="Resources\ToolUI\settings_mainform_x24.png" />
     <Content Include="Resources\ToolUI\smemory_x32.png" />
     <Content Include="Resources\ToolUI\sprofile_x32.png" />
     <Content Include="Resources\ToolUI\textInfo_x24.png" />

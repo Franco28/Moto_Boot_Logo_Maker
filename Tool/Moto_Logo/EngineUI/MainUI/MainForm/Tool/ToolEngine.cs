@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 23-04-2021                                               #
+#    Date: 24-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -26,6 +26,7 @@ namespace Moto_Logo
 {
     public partial class MainForm
     {
+        
         private void labelGoToError_Click(object sender, EventArgs e)
         {
             #region gotoerror
@@ -43,11 +44,41 @@ namespace Moto_Logo
 
         private void btnReload_Click(object sender, EventArgs e)
         {
-            this.Refresh();
-            Form NewForm = new MainForm();
-            NewForm.Show();
-            this.Dispose(false);
-            Application.DoEvents();
+            var openfilename = Properties.Settings.Default.LogoBinOpen;
+
+            if (Properties.Settings.Default.LogoBinOpen.EndsWith(".bin") && Properties.Settings.Default.LogoWasSaved == false)
+            {
+                DialogResult dialogResult = MessageBox.Show(res_man.GetString("ExitLogoWasntSave1", cul) + "\n\n" + openfilename + "\n\n" + "Are you sure about to Reload Tool?", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    this.Refresh();
+                    Form NewForm = new MainForm();
+                    NewForm.Show();
+                    this.Dispose(false);
+                    Application.DoEvents();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    try
+                    {                        
+                        return;
+                    }
+                    catch (Exception er)
+                    {
+                        Logs.DebugErrorLogs(er);
+                        SystemSounds.Hand.Play();
+                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                    }
+                }
+            }
+            else
+            {
+                this.Refresh();
+                Form NewForm = new MainForm();
+                NewForm.Show();
+                this.Dispose(false);
+                Application.DoEvents();
+            }
         }
 
         private void LogoTree(Bitmap resourcesimg)
@@ -374,10 +405,23 @@ namespace Moto_Logo
             #region Reload
             try
             {
+                labelResoTitle.Visible = false;
+                labelDRX.Visible = false;
+                labelDRY.Visible = false;
+
+                groupBoxLogoResolution.Visible = false;
+                groupBoxLogoResolution.Hide();
+
                 if (groupBoxLogoResolution.Visible == false)
                 {
                     groupBoxLogoImageOrientation.Size = new Size(301, 98);
                     rdoLayoutLandscape.Location = new Point(6, 42);
+                }
+
+                if (labelResoTitle.Visible == false && labelDRX.Visible == false && labelDRY.Visible == false)
+                {
+                    groupBoxLogoExtension.Size = new Size(191, 98);
+                    groupBoxLogoMemory.Size = new Size(217, 98);
                 }
 
                 txtComments.Enabled = false;

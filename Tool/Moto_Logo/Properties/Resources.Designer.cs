@@ -153,6 +153,36 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap filesLogoBrowser_x16 {
+            get {
+                object obj = ResourceManager.GetObject("filesLogoBrowser_x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap folder_Closed_LogoBrowser_16xLG {
+            get {
+                object obj = ResourceManager.GetObject("folder_Closed_LogoBrowser_16xLG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap folder_LogoBrowser_16x {
+            get {
+                object obj = ResourceManager.GetObject("folder_LogoBrowser_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap folder_x16 {
             get {
                 object obj = ResourceManager.GetObject("folder_x16", resourceCulture);
@@ -176,6 +206,16 @@ namespace Moto_Logo.Properties {
         public static System.Drawing.Bitmap image_x20 {
             get {
                 object obj = ResourceManager.GetObject("image_x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap imageTreeView_x16 {
+            get {
+                object obj = ResourceManager.GetObject("imageTreeView_x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1246,6 +1286,16 @@ namespace Moto_Logo.Properties {
         public static System.Drawing.Bitmap server_x24 {
             get {
                 object obj = ResourceManager.GetObject("server_x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap settings_mainform_x24 {
+            get {
+                object obj = ResourceManager.GetObject("settings_mainform_x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

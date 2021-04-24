@@ -59,7 +59,7 @@ namespace Moto_Logo
             checkForUpdatesToolStripMenuItem.Text = res_man.GetString("checkForUpdatesToolStripMenuItem", cul);
             sourceToolStripMenuItem.Text = res_man.GetString("sourceToolStripMenuItem", cul);
             aboutToolStripMenuItem.Text = res_man.GetString("aboutToolStripMenuItem1", cul);
-            aboutToolStripMenuItem1.Text = res_man.GetString("aboutToolStripMenuItem1", cul);
+            aboutToolStripMenuItem.Text = res_man.GetString("aboutToolStripMenuItem1", cul);
             helpToolStripMenuItem.Text = res_man.GetString("helpToolStripMenuItem", cul);
             downloadSiteToolStripMenuItem.Text = res_man.GetString("downloadSiteToolStripMenuItem", cul);
             groupBoxLogoFormat.Text = res_man.GetString("groupBox2", cul);

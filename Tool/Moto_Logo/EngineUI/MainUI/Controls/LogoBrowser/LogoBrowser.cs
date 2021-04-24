@@ -20,6 +20,7 @@ using System.Media;
 using System.Resources;
 using System.Windows.Forms;
 using DarkUI.Forms;
+using Moto_Logo.Properties;
 
 namespace Moto_Logo
 {
@@ -35,6 +36,24 @@ namespace Moto_Logo
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
             buttonSelect.Text = res_man.GetString("LogoBrowserSelectButton", cul);
+        }
+
+
+        // Add Small Icon to TreeView
+        static ImageList _imageList;
+        public static ImageList ImageList
+        {
+            get
+            {
+                if (_imageList == null)
+                {
+                    _imageList = new ImageList();
+                    _imageList.Images.Add("FolderClosed", Resources.folder_Closed_LogoBrowser_16xLG);
+                    _imageList.Images.Add("FolderOpened", Resources.folder_LogoBrowser_16x);
+                    _imageList.Images.Add("File", Resources.filesLogoBrowser_x16);
+                }
+                return _imageList;
+            }
         }
 
         public void Round(Panel panel)
@@ -56,6 +75,10 @@ namespace Moto_Logo
         public void ListDirectory(string path)
         {
             treeView1.Nodes.Clear();
+
+            // Set Image to TreeView
+            treeView1.ImageList = LogoBrowser.ImageList;
+
             var rootDirectoryInfo = new DirectoryInfo(path);
             treeView1.Nodes.Add(CreateDirectoryNode(rootDirectoryInfo));
         }
@@ -63,11 +86,11 @@ namespace Moto_Logo
         public static TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
         {
             var directoryNode = new TreeNode(directoryInfo.Name);
-            foreach (var directory in directoryInfo.GetDirectories())
-                directoryNode.Nodes.Add(CreateDirectoryNode(directory));
+            foreach (var directory in directoryInfo.GetDirectories())           
+                directoryNode.Nodes.Add(CreateDirectoryNode(directory));            
 
-            foreach (var file in directoryInfo.GetFiles())
-                directoryNode.Nodes.Add(new TreeNode(file.Name) { Tag = file });
+            foreach (var file in directoryInfo.GetFiles())           
+                directoryNode.Nodes.Add(new TreeNode(file.Name) { Tag = file });          
 
             return directoryNode;
         }
@@ -204,6 +227,30 @@ namespace Moto_Logo
             sd.Show();
             this.Show();
             this.Close();
+        }
+
+        private void treeView1_BeforeCollapse(object sender, TreeViewCancelEventArgs e)
+        {
+            e.Node.ImageKey = "FolderClosed";
+            e.Node.SelectedImageKey = "FolderClosed";
+        }
+
+        private void treeView1_BeforeExpand(object sender, TreeViewCancelEventArgs e)
+        {
+            e.Node.ImageKey = "FolderOpened";
+            e.Node.SelectedImageKey = "FolderOpened";
+        }
+
+        private void treeView1_AfterCollapse(object sender, TreeViewEventArgs e)
+        {
+            e.Node.ImageKey = "FolderClosed";
+            e.Node.SelectedImageKey = "FolderClosed";
+        }
+
+        private void treeView1_AfterExpand(object sender, TreeViewEventArgs e)
+        {
+            e.Node.ImageKey = "FolderOpened";
+            e.Node.SelectedImageKey = "FolderOpened";
         }
     }
 }

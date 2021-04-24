@@ -496,4 +496,19 @@
   <data name="extract_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\toolui\extract_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="settings_mainform_x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\settings_mainform_x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filesLogoBrowser_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\fileslogobrowser_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_Closed_LogoBrowser_16xLG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\folder_closed_logobrowser_16xlg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_LogoBrowser_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\folder_logobrowser_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imageTreeView_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\toolui\imagetreeview_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
