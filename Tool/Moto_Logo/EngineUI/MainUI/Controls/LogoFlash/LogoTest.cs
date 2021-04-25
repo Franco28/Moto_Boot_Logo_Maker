@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoTest.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 25-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -289,11 +289,6 @@ namespace Moto_Logo
                 Logs.DebugErrorLogs(ex);
                 cAppend("ERROR TASK {KILLING ADB SERVICES}: " + ex.ToString());
             }
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -414,7 +414,7 @@ namespace Moto_Logo
 
                 if (groupBoxLogoResolution.Visible == false)
                 {
-                    groupBoxLogoImageOrientation.Size = new Size(301, 98);
+                    groupBoxLogoImageOrientation.Size = new Size(244, 98);
                     rdoLayoutLandscape.Location = new Point(6, 42);
                 }
 

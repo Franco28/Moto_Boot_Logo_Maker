@@ -148,6 +148,7 @@ namespace Moto_Logo
             this.buttonsavelogs.Size = new System.Drawing.Size(434, 23);
             this.buttonsavelogs.TabIndex = 13;
             this.buttonsavelogs.Text = "Save console logs";
+            this.buttonsavelogs.Click += new System.EventHandler(this.buttonsavelogs_Click);
             // 
             // buttonFlashLogo
             // 
@@ -158,6 +159,7 @@ namespace Moto_Logo
             this.buttonFlashLogo.Size = new System.Drawing.Size(285, 23);
             this.buttonFlashLogo.TabIndex = 14;
             this.buttonFlashLogo.Text = "Flash Logo";
+            this.buttonFlashLogo.Click += new System.EventHandler(this.buttonFlashLogo_Click);
             // 
             // LogoTest
             // 

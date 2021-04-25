@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 23-04-2021                                               #
+#    Date: 24-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -746,17 +746,22 @@ namespace Moto_Logo
         {
             if (this.WindowState == FormWindowState.Normal)
             {
-                pictureBox1.Image = pictureBox1.Image;
-                picZoom.Image = pictureBox1.Image;
-                _OriginalImage = pictureBox1.Image;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox1.Refresh();
+                pictureBox1.Invalidate();
+                pictureBox1.Update();
+                ResizeAndDisplayImage();
                 Properties.Settings.Default.IsMax = false;
                 Properties.Settings.Default.Save();
             }
-            else if (this.WindowState == FormWindowState.Maximized)
+            
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                pictureBox1.Image = pictureBox1.Image;
-                picZoom.Image = pictureBox1.Image;
-                _OriginalImage = pictureBox1.Image;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox1.Refresh();
+                pictureBox1.Invalidate();
+                pictureBox1.Update();
+                ResizeAndDisplayImage();
                 Properties.Settings.Default.IsMax = true;
                 Properties.Settings.Default.Save();
             }
