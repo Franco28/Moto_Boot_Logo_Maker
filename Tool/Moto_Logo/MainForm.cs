@@ -175,8 +175,8 @@ namespace Moto_Logo
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            #region OpenNewLogo
             var openfilename = Properties.Settings.Default.LogoBinOpen;
-
             if (Properties.Settings.Default.LogoBinOpen.EndsWith(".bin") && Properties.Settings.Default.LogoWasSaved == false)
             {
                 DialogResult dialogResult = MessageBox.Show(res_man.GetString("ExitLogoWasntSave1", cul) + "\n\n" + openfilename + "\n\n" + "Are you sure about to Reload Tool?", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -218,6 +218,7 @@ namespace Moto_Logo
                 buttonExtract.Enabled = true;
                 Reload();
             }
+            #endregion OpenNewLogo
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -281,8 +282,15 @@ namespace Moto_Logo
 
         private void testLogoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var l = new LogoTest();
-            l.Show();
+            var s = new LogoTest();
+            if (s.IsDisposed == false)
+            {
+                s.Show();
+            }
+            else
+            {
+                s.Dispose();
+            }
         }
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -293,7 +301,14 @@ namespace Moto_Logo
         private void downloadSiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var s = new DownloadS();
-            s.Show();
+            if (s.IsDisposed == false)
+            {
+                s.Show();
+            } 
+            else
+            {
+                s.Dispose();
+            }
         }
 
         private void buttonAppend_Click(object sender, EventArgs e)

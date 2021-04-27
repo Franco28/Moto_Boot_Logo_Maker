@@ -278,6 +278,9 @@ namespace Moto_Logo
         {
             try
             {
+                this.Hide();
+                e.Cancel = true;
+
                 string taskname = "adb";
                 foreach (var process in Process.GetProcessesByName(taskname))
                 {

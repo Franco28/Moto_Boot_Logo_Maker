@@ -46,18 +46,19 @@ namespace Moto_Logo
             this.btnGoTo = new DarkUI.Controls.DarkButton();
             this.button1 = new DarkUI.Controls.DarkButton();
             this.labelIconRGB = new System.Windows.Forms.Label();
+            this.labelGetting = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // console
             // 
             this.console.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.console.Dock = System.Windows.Forms.DockStyle.Top;
+            this.console.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.console.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.console.ForeColor = System.Drawing.Color.White;
-            this.console.Location = new System.Drawing.Point(0, 0);
+            this.console.Location = new System.Drawing.Point(0, 32);
             this.console.Name = "console";
             this.console.ReadOnly = true;
-            this.console.Size = new System.Drawing.Size(665, 339);
+            this.console.Size = new System.Drawing.Size(665, 348);
             this.console.TabIndex = 38;
             this.console.Text = "";
             // 
@@ -92,6 +93,16 @@ namespace Moto_Logo
             this.labelIconRGB.Size = new System.Drawing.Size(32, 36);
             this.labelIconRGB.TabIndex = 206;
             // 
+            // labelGetting
+            // 
+            this.labelGetting.AutoSize = true;
+            this.labelGetting.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGetting.Location = new System.Drawing.Point(8, 9);
+            this.labelGetting.Name = "labelGetting";
+            this.labelGetting.Size = new System.Drawing.Size(27, 20);
+            this.labelGetting.TabIndex = 208;
+            this.labelGetting.Text = "---";
+            // 
             // DownloadS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,6 +110,7 @@ namespace Moto_Logo
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(665, 380);
+            this.Controls.Add(this.labelGetting);
             this.Controls.Add(this.labelIconRGB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGoTo);
@@ -113,9 +125,10 @@ namespace Moto_Logo
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Downloads - Moto_Boot_Logo_Maker";
-            this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DownloadS_FormClosing);
             this.Load += new System.EventHandler(this.Download_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -124,5 +137,6 @@ namespace Moto_Logo
         private DarkUI.Controls.DarkButton btnGoTo;
         private DarkUI.Controls.DarkButton button1;
         private System.Windows.Forms.Label labelIconRGB;
+        private System.Windows.Forms.Label labelGetting;
     }
 }
