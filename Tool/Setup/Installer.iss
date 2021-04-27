@@ -4,11 +4,11 @@
 #define MyAppName "Moto_Boot_Logo_Maker"
 #define MyAppName2 "Moto_Boot_Logo_Maker_v"
 #define MyInstallerSuffix "_Setup"
-#define MyAppVersion "4.4.4.0"
+#define MyAppVersion "4.4.4.1"
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-04-25"
+#define MyAppDate "2021-04-27"
 
 [Setup]
 PrivilegesRequired=admin    

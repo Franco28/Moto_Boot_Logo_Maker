@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckInternet.cs                                         #
 #    Author: Franco28                                               # 
-#    Date: 22-12-2020                                               #
+#    Date: 27-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,6 +13,7 @@
 
 using System.Diagnostics;
 using System.Globalization;
+using System.Net.Http;
 using System.Net.NetworkInformation;
 using System.Resources;
 using System.Windows.Forms;
@@ -23,6 +24,16 @@ namespace Moto_Logo
     {
         public static readonly CultureInfo cul = null;
         public static ResourceManager res_man;
+
+        public static async void CheckPageIsAliveAsync(string url)
+        {
+            HttpClient client = new HttpClient();
+            var checkingResponse = await client.GetAsync(url);
+            if (!checkingResponse.IsSuccessStatusCode)
+            {
+                return;
+            } 
+        }
 
         public static void CheckInternetProcessStart(string url)
         {

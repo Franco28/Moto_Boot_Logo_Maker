@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 24-04-2021                                               #
+#    Date: 27-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -288,6 +288,12 @@ namespace Moto_Logo
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker#readme");
+        }
+
+        private void downloadSiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var s = new DownloadS();
+            s.Show();
         }
 
         private void buttonAppend_Click(object sender, EventArgs e)

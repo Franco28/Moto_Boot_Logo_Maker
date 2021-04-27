@@ -20,39 +20,6 @@ namespace Moto_Logo
     public partial class MainForm
     {
 
-        private void downloadSiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form formBackground = new Form();
-            try
-            {
-                using (DownloadS uu = new DownloadS())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
-        }
-
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form formBackground = new Form();
@@ -150,39 +117,6 @@ namespace Moto_Logo
             {
                 formBackground.Dispose();
             }
-        }
-
-        private void testYourNewLogoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form formBackground = new Form();
-            try
-            {
-                using (LogoTest uu = new LogoTest())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
-        }
+        }       
     }
 }
