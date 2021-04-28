@@ -50,7 +50,7 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 [![Downloads SF](https://sourceforge.net/sflogo.php?type=16&group_id=3254118)](https://sourceforge.net/p/motobootlogomaker/)
 
-#### Download Moto_Boot_Logo_Maker Installer v4.4.4.1 (28-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/Moto_Boot_Logo_Maker_v4.4.4.1_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker Installer v4.4.4.1 (28-04-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/SETUP/Moto_Boot_Logo_Maker_v4.4.4.1_Setup.exe) 
 
 #### Download Moto_Boot_Logo_Maker PORTABLE v4.4.4.1 (28-04-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.4.1_PORTABLE.zip) 
 
