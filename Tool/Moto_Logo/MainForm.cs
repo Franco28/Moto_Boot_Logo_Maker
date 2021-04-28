@@ -351,7 +351,7 @@ namespace Moto_Logo
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                if (CheckAllIMG(2621440) == true)
+                if (CheckAllIMG(5621440) == true)
                 {
                     return;
                 }
@@ -606,7 +606,7 @@ namespace Moto_Logo
             openFileDialog1.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
             openFileDialog1.InitialDirectory = userdesktoppath;
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-            if (CheckAllIMG(2621440) == true)
+            if (CheckAllIMG(5621440) == true)
             {
                 return;
             }

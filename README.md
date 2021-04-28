@@ -6,11 +6,9 @@
 
 # Getting Started (Read all please!)
 
-## First of all, im not responsible of any device damage, you are accepting a license when you install the Tool, and you are using this at your own risk!
-
 ### Moto Boot Logo Maker for Motorola Moto Devices (4MiB, 6MiB, 8MiB, 16MiB & 32MiB) 
 
-### Support only Qualcomm devices not MediaTek
+### Support only Qualcomm devices not MediaTek not Exynos.
 
 ### Support 10+ languages! (English (United States), Spanish (Mexico), Turkish, German (Germany), Portuguese (Brazil), Japanese, Polish, Russian, Italian (Italy), French (France), Irish
 
@@ -100,6 +98,18 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 ### About Tool 
 ![About Tool](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/about.png "About Tool")
 
+
+####
+
+#
+
+## Problems
+
+#### Dark image when boot device, no logo image, why? 
+- This may happen when you exceeded your logo supported image size. So try to low down the size of the image!
+
+#### Tool doesn´t find device, why?
+- This may happen for two reasons. First your device maybe is not supported. Second try to check if you wrote it ok.
 
 ####
 

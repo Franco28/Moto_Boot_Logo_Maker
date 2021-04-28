@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFiles.cs                                            #
 #    Author: Franco28                                               # 
-#    Date: 08-04-2021                                               #
+#    Date: 28-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -99,12 +99,12 @@ namespace Moto_Logo
                                 }
                                 else
                                 {
-                                    CheckFSize(exePath + @"\Files\LogoZip\", 208775, @"\Files\LogoZip\");
+                                    CheckFSize(exePath + @"\Files\LogoZip\", 208425, @"\Files\LogoZip\");
                                     CheckFSize(exePath + @"\Files\Bin\4MB\", 5318719, @"\Files\Bin\4MB\");
                                     CheckFSize(exePath + @"\Files\Bin\6MB\", 3348696, @"\Files\Bin\6MB\");
                                     CheckFSize(exePath + @"\Files\Bin\8MB\", 12513554, @"\Files\Bin\8MB\");
-                                    CheckFSize(exePath + @"\Files\Bin\16MB\", 81355343, @"\Files\Bin\16MB\");
-                                    CheckFSize(exePath + @"\Files\Bin\32MB\", 93169590, @"\Files\Bin\32MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\16MB\", 81354831, @"\Files\Bin\16MB\");
+                                    CheckFSize(exePath + @"\Files\Bin\32MB\", 86740758, @"\Files\Bin\32MB\");
                                     return;
                                 }
                             }

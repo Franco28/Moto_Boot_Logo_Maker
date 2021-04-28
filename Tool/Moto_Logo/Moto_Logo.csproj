@@ -188,58 +188,58 @@
     <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibCodec.cs" />
     <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibConstants.cs" />
     <Compile Include="EngineUI\IntefaceClasses\Ionic\Zlib\ZlibStream.cs" />
-    <Compile Include="EngineUI\MainUI\Controls\Help\AboutBox.cs">
+    <Compile Include="EngineUI\Help\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Help\AboutBox.Designer.cs">
+    <Compile Include="EngineUI\Help\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Help\Credits.cs">
+    <Compile Include="EngineUI\Help\Credits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Help\Credits.Designer.cs">
+    <Compile Include="EngineUI\Help\Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.cs">
+    <Compile Include="EngineUI\LogoSearch\LogoBrowser\LogoBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.Designer.cs">
+    <Compile Include="EngineUI\LogoSearch\LogoBrowser\LogoBrowser.Designer.cs">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </Compile>
     <Compile Include="EngineUI\MainUI\MainForm\OpenFormsBlur\OpenForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\DownloadS\DownloadS.cs">
+    <Compile Include="EngineUI\DownloadS\DownloadS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\DownloadS\DownloadS.Designer.cs">
+    <Compile Include="EngineUI\DownloadS\DownloadS.Designer.cs">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.cs">
+    <Compile Include="EngineUI\SearchDevice\DeviceInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.Designer.cs">
+    <Compile Include="EngineUI\SearchDevice\DeviceInfo.Designer.cs">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\SearchDevice\SearchDevice.cs">
+    <Compile Include="EngineUI\SearchDevice\SearchDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.cs">
+    <Compile Include="EngineUI\LogoSearch\SelectDevice\SelectDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.Designer.cs">
+    <Compile Include="EngineUI\LogoSearch\SelectDevice\SelectDevice.Designer.cs">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.cs">
+    <Compile Include="EngineUI\Telegram\BootLogoChannels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.Designer.cs">
+    <Compile Include="EngineUI\Telegram\BootLogoChannels.Designer.cs">
       <DependentUpon>BootLogoChannels.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.cs">
+    <Compile Include="EngineUI\LogoFlash\LogoTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.Designer.cs">
+    <Compile Include="EngineUI\LogoFlash\LogoTest.Designer.cs">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </Compile>
     <Compile Include="EngineUI\MainUI\MainForm\Image\ImageEngine.cs">
@@ -260,19 +260,19 @@
     <Compile Include="EngineUI\MainUI\MainForm\Logo\LogoTree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Help\ReadChangelog.cs">
+    <Compile Include="EngineUI\Help\ReadChangelog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Help\ReadChangelog.Designer.cs">
+    <Compile Include="EngineUI\Help\ReadChangelog.Designer.cs">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Settings\Settings.cs">
+    <Compile Include="EngineUI\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Settings\Settings.Designer.cs">
+    <Compile Include="EngineUI\Settings\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="EngineUI\MainUI\Controls\Telegram\TelegramChannels.cs">
+    <Compile Include="EngineUI\Telegram\TelegramChannels.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EngineUI\IntefaceClasses\OS\CheckNetFamework.cs" />
@@ -466,34 +466,34 @@
     <EmbeddedResource Include="EngineUI\FileManager\ToolLibsDownload.resx">
       <DependentUpon>ToolLibsDownload.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\AboutBox.resx">
+    <EmbeddedResource Include="EngineUI\Help\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\Credits.resx">
+    <EmbeddedResource Include="EngineUI\Help\Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\LogoBrowser\LogoBrowser.resx">
+    <EmbeddedResource Include="EngineUI\LogoSearch\LogoBrowser\LogoBrowser.resx">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\DownloadS\DownloadS.resx">
+    <EmbeddedResource Include="EngineUI\DownloadS\DownloadS.resx">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\SearchDevice\DeviceInfo.resx">
+    <EmbeddedResource Include="EngineUI\SearchDevice\DeviceInfo.resx">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\SelectDevice\SelectDevice.resx">
+    <EmbeddedResource Include="EngineUI\LogoSearch\SelectDevice\SelectDevice.resx">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\Telegram\BootLogoChannels.resx">
+    <EmbeddedResource Include="EngineUI\Telegram\BootLogoChannels.resx">
       <DependentUpon>BootLogoChannels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\LogoFlash\LogoTest.resx">
+    <EmbeddedResource Include="EngineUI\LogoFlash\LogoTest.resx">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\Help\ReadChangelog.resx">
+    <EmbeddedResource Include="EngineUI\Help\ReadChangelog.resx">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EngineUI\MainUI\Controls\Settings\Settings.resx">
+    <EmbeddedResource Include="EngineUI\Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -723,7 +723,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -8,7 +8,7 @@
 #define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-04-27"
+#define MyAppDate "2021-04-28"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -93,6 +93,9 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
+Source: "Files/Bin/16MB/*"; DestDir: "{app}/Files/Bin/16MB/"; Flags: ignoreversion recursesubdirs createallsubdirs    
+Source: "Files/Bin/32MB/*"; DestDir: "{app}/Files/Bin/32MB/"; Flags: ignoreversion recursesubdirs createallsubdirs    
+Source: "Files/LogoZip/*"; DestDir: "{app}/Files/LogoZip/"; Flags: ignoreversion recursesubdirs createallsubdirs 
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";

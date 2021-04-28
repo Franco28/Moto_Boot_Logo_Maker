@@ -191,8 +191,8 @@ namespace Moto_Logo
         }
 
         private bool CheckAllIMG(int size2)
-        {            
-            // NOTE: Need to check if new moto devices support more than 2.6MB (2621440b)
+        {
+            // NOTE: Need to check if new moto devices support more than 5.6MB (5621440 bytes)
             var IMGExtension = Path.GetExtension(openFileDialog1.FileName);
             long size = new FileInfo(openFileDialog1.FileName).Length;
            

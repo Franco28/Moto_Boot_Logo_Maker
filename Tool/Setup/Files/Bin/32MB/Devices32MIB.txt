@@ -56,10 +56,6 @@ Device Name  CodeName  Resolution
 
 - Moto One Power (chef) > 1080 x 2246
 
-- Moto One Vision (kane) > 1080 x 2520
-
-- Moto One Action (troika) > 1080 x 2520
-
 - Moto One Zoom (parker) > 1080 x 2340
 
 - Moto One Hyper (def) > 1080 x 2340
@@ -81,5 +77,3 @@ Device Name  CodeName  Resolution
 - Moto P30 (robusta) > 1080 x 2246
 
 - Moto P30 Note (chef) > 1080 x 2246
-
-- Moto P50 (kane) > 1080 x 2520

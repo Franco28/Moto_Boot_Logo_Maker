@@ -445,18 +445,6 @@ else
   ui_print("*               Device: chef                  *");
 endif;
 
-if getprop("ro.build.product") != "kane" then
-  package_extract_file("logo.bin", "tmp/logo.bin");
-else
-  ui_print("*               Device: kane                  *");
-endif;
-
-if getprop("ro.build.product") != "troika" then
-  package_extract_file("logo.bin", "tmp/logo.bin");
-else
-  ui_print("*              Device: troika                 *");
-endif;
-
 if getprop("ro.build.product") != "parker" then
   package_extract_file("logo.bin", "tmp/logo.bin");
 else

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.SearchDevice.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 28-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -19,8 +19,6 @@ using System.Text;
 using System.Windows.Forms;
 using DarkUI.Forms;
 using System.Media;
-using System.Resources;
-using System.Globalization;
 
 namespace Moto_Logo
 {
@@ -395,34 +393,6 @@ namespace Moto_Logo
                         MotoOnePath32 + @"One_Power\1080x2246.bin",
                         MotoPPath32 + @"P30_P30_Note\1080x2246.bin",
                         Resources.motorola_one_power_1);
-                    return;
-                }
-
-                if (textBoxSearchDevice.Text.ToLower() == "moto one vision" || textBoxSearchDevice.Text.ToLower() == "moto p50" || textBoxSearchDevice.Text.ToLower().Contains("kane"))
-                {
-                    CallForm("Motorola Moto One Vision / P50 - Kane",
-                        "Motorola Moto One Vision / P50",
-                        "Kane",
-                        "1080 x 2520",
-                        "32",
-                        LogoSize(MotoOnePath32 + @"One_Vision\1080x2520.bin"),
-                        MotoOnePath32 + @"One_Vision\1080x2520.bin",
-                        MotoPPath32 + @"P50\1080x2520.bin",
-                        Resources.motorola_one_vision_0);
-                    return;
-                }
-
-                if (textBoxSearchDevice.Text.ToLower() == "moto one action" || textBoxSearchDevice.Text.ToLower().Contains("troika"))
-                {
-                    CallForm("Motorola Moto One Action - Troika",
-                        "Motorola Moto One Action",
-                        "Troika",
-                        "1080 x 2520",
-                        "32",
-                        LogoSize(MotoOnePath32 + @"One_Action\1080x2520.bin"),
-                        MotoOnePath32 + @"One_Action\1080x2520.bin",
-                        MotoPPath32 + @"P50\1080x2520.bin",
-                        Resources.motorola_one_action_denim_gray);
                     return;
                 }
 
