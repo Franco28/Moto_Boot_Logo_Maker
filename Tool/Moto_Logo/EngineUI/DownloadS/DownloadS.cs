@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DownloadS.cs                                             #
 #    Author: Franco28                                               # 
-#    Date: 27-04-2021                                               #
+#    Date: 28-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -47,80 +47,89 @@ namespace Moto_Logo
 
         public void LoadSFS()
         {
-            cAppend(" SourceForge ");
-            labelGetting.Text = "Getting server data. SourceForge";
-            var html = @"https://sourceforge.net/projects/motobootlogomaker/files/";
-            HtmlWeb web = new HtmlWeb();
-            var htmlDoc = web.Load(html);
+            try
+            {
+                cAppend(" SourceForge ");
+                labelGetting.Text = "Getting server data. SourceForge";
+                var html = @"https://sourceforge.net/projects/motobootlogomaker/files/SETUP/";
+                HtmlWeb web = new HtmlWeb();
+                var htmlDoc = web.Load(html);
 
-            labelGetting.Text = "Getting server data. . SourceForge";
-            HtmlNode nodeDownloadTotal = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='files_list']/tfoot/tr/td[4]/a");
-            var dt = Regex.Replace(nodeDownloadTotal.InnerText, @"(\d)(\p{L})", "$1 $2");
-            cAppend(" Moto_Boot_Logo_Maker: " + dt.ToString());
+                labelGetting.Text = "Getting server data. . SourceForge";
+                HtmlNode nodeDownloadTotal = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='files_list']/tfoot/tr/td[4]/a");
+                var dt = Regex.Replace(nodeDownloadTotal.InnerText, @"(\d)(\p{L})", "$1 $2");
+                cAppend(" Moto_Boot_Logo_Maker: " + dt.ToString());
 
-
-            var htmlP = @"https://sourceforge.net/projects/motobootlogomaker/files/PORTABLE/";
-            HtmlWeb webP = new HtmlWeb();
-            var htmlDocP = webP.Load(htmlP);
-            labelGetting.Text = "Getting server data. . . SourceForge";
-            HtmlNode nodeDownloadTotalP = htmlDocP.DocumentNode.SelectSingleNode("//*[@id='files_list']/tfoot/tr/td[4]/a");
-            var dtP = Regex.Replace(nodeDownloadTotalP.InnerText, @"(\d)(\p{L})", "$1 $2");
-            cAppend(" Moto_Boot_Logo_Maker PORTABLE: " + dtP.ToString());
-            labelGetting.Text = "Getting server data. . . SourceForge. Done!";
+                var htmlP = @"https://sourceforge.net/projects/motobootlogomaker/files/PORTABLE/";
+                HtmlWeb webP = new HtmlWeb();
+                var htmlDocP = webP.Load(htmlP);
+                labelGetting.Text = "Getting server data. . . SourceForge";
+                HtmlNode nodeDownloadTotalP = htmlDocP.DocumentNode.SelectSingleNode("//*[@id='files_list']/tfoot/tr/td[4]/a");
+                var dtP = Regex.Replace(nodeDownloadTotalP.InnerText, @"(\d)(\p{L})", "$1 $2");
+                cAppend(" Moto_Boot_Logo_Maker PORTABLE: " + dtP.ToString());
+                labelGetting.Text = "Getting server data. . . SourceForge. Done!";
+            }
+            catch (Exception)
+            {
+                cAppend(" ");
+                cAppend("Error getting server data from SourceForge, retry later...");
+                SystemSounds.Hand.Play();
+            }
         }
 
         public void LoadAFH()
         {
-            cAppend(" Android File Host ");
-            labelGetting.Text = "Getting server data. . . Android File Host";
-            var html = @"https://www.androidfilehost.com/?w=files&flid=323184";
-            HtmlWeb web = new HtmlWeb();
-            var htmlDoc = web.Load(html);
+            try
+            {
+                cAppend(" Android File Host ");
+                labelGetting.Text = "Getting server data. . . Android File Host";
+                var html = @"https://www.androidfilehost.com/?w=files&flid=323184";
+                HtmlWeb web = new HtmlWeb();
+                var htmlDoc = web.Load(html);
 
-            labelGetting.Text = "Getting server data. . Android File Host";
-            HtmlNode nodeDownloadTotal = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='wrapper']/div[2]/div[2]/div[1]/ul/li[2]/div[1]/div[2]/div[1]/span");
-            var dt = Regex.Replace(nodeDownloadTotal.InnerText, @"(\d)(\p{L})", "$1 $2");
-            cAppend(" Moto_Boot_Logo_Maker: " + dt.ToString());
+                labelGetting.Text = "Getting server data. . Android File Host";
+                HtmlNode nodeDownloadTotal = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='wrapper']/div[2]/div[2]/div[1]/ul/li[2]/div[1]/div[2]/div[1]/span");
+                var dt = Regex.Replace(nodeDownloadTotal.InnerText, @"(\d)(\p{L})", "$1 $2");
+                cAppend(" Moto_Boot_Logo_Maker: " + dt.ToString());
 
-            labelGetting.Text = "Getting server data. Android File Host";
-            HtmlNode nodeDownloadTotalP = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='wrapper']/div[2]/div[2]/div[1]/ul/li[2]/div[1]/div[2]/div[1]/span");
-            var dtP = Regex.Replace(nodeDownloadTotalP.InnerText, @"(\d)(\p{L})", "$1 $2");
-            cAppend(" Moto_Boot_Logo_Maker PORTABLE: " + dtP.ToString());
-            labelGetting.Text = "Getting server data. . . Android File Host. Done!";
+                labelGetting.Text = "Getting server data. Android File Host";
+                HtmlNode nodeDownloadTotalP = htmlDoc.DocumentNode.SelectSingleNode("//*[@id='wrapper']/div[2]/div[2]/div[1]/ul/li[2]/div[1]/div[2]/div[1]/span");
+                var dtP = Regex.Replace(nodeDownloadTotalP.InnerText, @"(\d)(\p{L})", "$1 $2");
+                cAppend(" Moto_Boot_Logo_Maker PORTABLE: " + dtP.ToString());
+                labelGetting.Text = "Getting server data. . . Android File Host. Done!";
+            }
+            catch (Exception)
+            {
+                cAppend(" ");
+                cAppend("Error getting server data from Android File Host, retry later...");
+                SystemSounds.Hand.Play();
+            }          
         }
 
         public void GetData(IProgress<int> progress)
         {
-            try
+            Thread.Sleep(100);
+            labelGetting.Text = "Getting server data. ";
+            if (InternetCheck.ConnectToInternet() == true)
             {
-                Thread.Sleep(100);
+                labelGetting.Text = "Getting server data. . ";
+                InternetCheck.CheckPageIsAliveAsync("https://sourceforge.net/projects/motobootlogomaker/files/");
+                labelGetting.Text = "Getting server data. . . ";
+                InternetCheck.CheckPageIsAliveAsync("https://www.androidfilehost.com/?w=files&flid=323184");
                 labelGetting.Text = "Getting server data. ";
-                if (InternetCheck.ConnectToInternet() == true)
-                {
-                    labelGetting.Text = "Getting server data. . ";
-                    InternetCheck.CheckPageIsAliveAsync("https://sourceforge.net/projects/motobootlogomaker/files/");
-                    labelGetting.Text = "Getting server data. . . ";
-                    InternetCheck.CheckPageIsAliveAsync("https://www.androidfilehost.com/?w=files&flid=323184");
-                    labelGetting.Text = "Getting server data. ";
-                    LoadSFS();
-                    labelGetting.Text = "Getting server data. . ";
-                    cAppend(" ");
-                    LoadAFH();
-                    labelGetting.Text = "Getting server data. . . ";
-                }
-                else
-                {
-                    labelGetting.Text = "Getting server data... ERROR ";
-                    cAppend(res_man.GetString("DownloadSFormInternetError", cul));
-                    btnGoTo.Enabled = false;
-                    button1.Enabled = false;
-                    return;
-                }
+                LoadSFS();
+                labelGetting.Text = "Getting server data. . ";
+                cAppend(" ");
+                LoadAFH();
+                labelGetting.Text = "Getting server data. . . ";
             }
-            catch (Exception er)
+            else
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(er.Message, er.Source);
+                labelGetting.Text = "Getting server data... ERROR ";
+                cAppend(res_man.GetString("DownloadSFormInternetError", cul));
+                btnGoTo.Enabled = false;
+                button1.Enabled = false;
+                return;
             }
         }
 

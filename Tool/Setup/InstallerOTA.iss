@@ -93,9 +93,8 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "Files/Bin/16MB/*"; DestDir: "{app}/Files/Bin/16MB/"; Flags: ignoreversion recursesubdirs createallsubdirs    
-Source: "Files/Bin/32MB/*"; DestDir: "{app}/Files/Bin/32MB/"; Flags: ignoreversion recursesubdirs createallsubdirs    
-Source: "Files/LogoZip/*"; DestDir: "{app}/Files/LogoZip/"; Flags: ignoreversion recursesubdirs createallsubdirs 
+Source: "Files"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Files/*"; DestDir: "{app}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs 
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";
@@ -106,12 +105,8 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Comment
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: shellexec nowait postinstall skipifsilent;
 
 [InstallDelete]
-Type: filesandordirs; Name: "|{app}\Files";
-Type: files; Name: "{app}\License";
-Type: files; Name: "{app}\change.txt";
+Type: filesandordirs; Name: "|{app}\Files"; 
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
-Name: ExpandConstant('{localappdata}\Franco28\*'; Type: filesandordirs;  
-Name: ExpandConstant('{localappdata}\Franco28'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 
 [UninstallDelete]

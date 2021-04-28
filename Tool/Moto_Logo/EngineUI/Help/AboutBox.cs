@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 13-04-2021                                               #
+#    Date: 28-04-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -263,7 +263,7 @@ namespace Moto_Logo
                     this.Close();
                     break;
                 case DialogResult.No:
-                    InternetCheck.CheckInternetProcessStart("https://sourceforge.net/projects/motobootlogomaker/files/");
+                    InternetCheck.CheckInternetProcessStart("https://sourceforge.net/projects/motobootlogomaker/files/PORTABLE/");
                     MessageBoxManager.Unregister();
                     this.Close();
                     break;
