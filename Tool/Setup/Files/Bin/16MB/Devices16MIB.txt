@@ -64,7 +64,7 @@ Device Name  CodeName  Resolution
 
 - Moto G Play (2021) (guamna) > 720 x 1600
 
-- Moto G Power (2021) (cebu) > 720 x 1600
+- Moto G Power (2021) (borneo) > 720 x 1600
 
 - Moto G10 (capri) > 720 x 1600
 
