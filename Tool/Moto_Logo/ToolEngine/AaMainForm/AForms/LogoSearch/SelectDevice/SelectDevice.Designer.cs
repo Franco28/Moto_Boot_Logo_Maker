@@ -54,16 +54,16 @@ namespace Moto_Logo
             this.pictureBoxMotoDroid = new System.Windows.Forms.PictureBox();
             this.panelMotoE = new System.Windows.Forms.Panel();
             this.pictureBoxMotoE = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelMotoDroi = new System.Windows.Forms.Label();
+            this.labelMotoG = new System.Windows.Forms.Label();
+            this.labelMotoE = new System.Windows.Forms.Label();
+            this.labelMotoX = new System.Windows.Forms.Label();
+            this.labelMotoEdge = new System.Windows.Forms.Label();
+            this.labelMotoOne = new System.Windows.Forms.Label();
+            this.labelMotoZ = new System.Windows.Forms.Label();
             this.panelMotoZ = new System.Windows.Forms.Panel();
             this.pictureBoxMotoZ = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelMotoP = new System.Windows.Forms.Label();
             this.panelMotoP = new System.Windows.Forms.Panel();
             this.pictureBoxMotoP = new System.Windows.Forms.PictureBox();
             this.binlogo = new System.Windows.Forms.Label();
@@ -236,103 +236,103 @@ namespace Moto_Logo
             this.pictureBoxMotoE.MouseLeave += new System.EventHandler(this.pictureBoxMotoE_MouseLeave);
             this.pictureBoxMotoE.MouseHover += new System.EventHandler(this.pictureBoxMotoE_MouseHover);
             // 
-            // label5
+            // labelMotoDroi
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoDroi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(12, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 28);
-            this.label5.TabIndex = 158;
-            this.label5.Text = "Moto Droid";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoDroi.AutoSize = true;
+            this.labelMotoDroi.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoDroi.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoDroi.Location = new System.Drawing.Point(12, 48);
+            this.labelMotoDroi.Name = "labelMotoDroi";
+            this.labelMotoDroi.Size = new System.Drawing.Size(117, 28);
+            this.labelMotoDroi.TabIndex = 158;
+            this.labelMotoDroi.Text = "Moto Droid";
+            this.labelMotoDroi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // labelMotoG
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(294, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 28);
-            this.label1.TabIndex = 159;
-            this.label1.Text = "Moto G";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoG.AutoSize = true;
+            this.labelMotoG.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoG.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoG.Location = new System.Drawing.Point(294, 48);
+            this.labelMotoG.Name = "labelMotoG";
+            this.labelMotoG.Size = new System.Drawing.Size(81, 28);
+            this.labelMotoG.TabIndex = 159;
+            this.labelMotoG.Text = "Moto G";
+            this.labelMotoG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // labelMotoE
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(581, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 28);
-            this.label2.TabIndex = 160;
-            this.label2.Text = "Moto E";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoE.AutoSize = true;
+            this.labelMotoE.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoE.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoE.Location = new System.Drawing.Point(581, 48);
+            this.labelMotoE.Name = "labelMotoE";
+            this.labelMotoE.Size = new System.Drawing.Size(77, 28);
+            this.labelMotoE.TabIndex = 160;
+            this.labelMotoE.Text = "Moto E";
+            this.labelMotoE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // labelMotoX
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(10, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 28);
-            this.label3.TabIndex = 161;
-            this.label3.Text = "Moto X";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoX.AutoSize = true;
+            this.labelMotoX.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoX.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoX.Location = new System.Drawing.Point(10, 376);
+            this.labelMotoX.Name = "labelMotoX";
+            this.labelMotoX.Size = new System.Drawing.Size(79, 28);
+            this.labelMotoX.TabIndex = 161;
+            this.labelMotoX.Text = "Moto X";
+            this.labelMotoX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // labelMotoEdge
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoEdge.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(292, 376);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 28);
-            this.label4.TabIndex = 162;
-            this.label4.Text = "Moto Edge";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoEdge.AutoSize = true;
+            this.labelMotoEdge.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoEdge.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoEdge.Location = new System.Drawing.Point(292, 376);
+            this.labelMotoEdge.Name = "labelMotoEdge";
+            this.labelMotoEdge.Size = new System.Drawing.Size(112, 28);
+            this.labelMotoEdge.TabIndex = 162;
+            this.labelMotoEdge.Text = "Moto Edge";
+            this.labelMotoEdge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // labelMotoOne
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoOne.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(579, 376);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 28);
-            this.label6.TabIndex = 163;
-            this.label6.Text = "Moto One";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoOne.AutoSize = true;
+            this.labelMotoOne.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoOne.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoOne.Location = new System.Drawing.Point(579, 376);
+            this.labelMotoOne.Name = "labelMotoOne";
+            this.labelMotoOne.Size = new System.Drawing.Size(105, 28);
+            this.labelMotoOne.TabIndex = 163;
+            this.labelMotoOne.Text = "Moto One";
+            this.labelMotoOne.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // labelMotoZ
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoZ.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Lime;
-            this.label7.Location = new System.Drawing.Point(868, 48);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 28);
-            this.label7.TabIndex = 166;
-            this.label7.Text = "Moto Z";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoZ.AutoSize = true;
+            this.labelMotoZ.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoZ.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoZ.Location = new System.Drawing.Point(868, 48);
+            this.labelMotoZ.Name = "labelMotoZ";
+            this.labelMotoZ.Size = new System.Drawing.Size(79, 28);
+            this.labelMotoZ.TabIndex = 166;
+            this.labelMotoZ.Text = "Moto Z";
+            this.labelMotoZ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelMotoZ
             // 
@@ -359,19 +359,19 @@ namespace Moto_Logo
             this.pictureBoxMotoZ.MouseLeave += new System.EventHandler(this.pictureBoxMotoZ_MouseLeave);
             this.pictureBoxMotoZ.MouseHover += new System.EventHandler(this.pictureBoxMotoZ_MouseHover);
             // 
-            // label8
+            // labelMotoP
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelMotoP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(866, 376);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 28);
-            this.label8.TabIndex = 168;
-            this.label8.Text = "Moto P";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMotoP.AutoSize = true;
+            this.labelMotoP.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.labelMotoP.ForeColor = System.Drawing.Color.Lime;
+            this.labelMotoP.Location = new System.Drawing.Point(866, 376);
+            this.labelMotoP.Name = "labelMotoP";
+            this.labelMotoP.Size = new System.Drawing.Size(79, 28);
+            this.labelMotoP.TabIndex = 168;
+            this.labelMotoP.Text = "Moto P";
+            this.labelMotoP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelMotoP
             // 
@@ -427,16 +427,16 @@ namespace Moto_Logo
             this.ClientSize = new System.Drawing.Size(1167, 711);
             this.Controls.Add(this.labelLogoMemory);
             this.Controls.Add(this.binlogo);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.labelMotoP);
             this.Controls.Add(this.panelMotoP);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelMotoZ);
             this.Controls.Add(this.panelMotoZ);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelMotoOne);
+            this.Controls.Add(this.labelMotoEdge);
+            this.Controls.Add(this.labelMotoX);
+            this.Controls.Add(this.labelMotoE);
+            this.Controls.Add(this.labelMotoG);
+            this.Controls.Add(this.labelMotoDroi);
             this.Controls.Add(this.panelMotoE);
             this.Controls.Add(this.panelMotoG);
             this.Controls.Add(this.panelMotoDroid);
@@ -490,16 +490,16 @@ namespace Moto_Logo
         private System.Windows.Forms.PictureBox pictureBoxMotoDroid;
         private System.Windows.Forms.Panel panelMotoE;
         private System.Windows.Forms.PictureBox pictureBoxMotoE;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelMotoDroi;
+        private System.Windows.Forms.Label labelMotoG;
+        private System.Windows.Forms.Label labelMotoE;
+        private System.Windows.Forms.Label labelMotoX;
+        private System.Windows.Forms.Label labelMotoEdge;
+        private System.Windows.Forms.Label labelMotoOne;
+        private System.Windows.Forms.Label labelMotoZ;
         private System.Windows.Forms.Panel panelMotoZ;
         private System.Windows.Forms.PictureBox pictureBoxMotoZ;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelMotoP;
         private System.Windows.Forms.Panel panelMotoP;
         private System.Windows.Forms.PictureBox pictureBoxMotoP;
         private System.Windows.Forms.Label binlogo;

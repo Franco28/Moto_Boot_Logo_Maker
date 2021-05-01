@@ -2,7 +2,7 @@
 #####################################################################
 #    File: SelectDevice.cs                                          #
 #    Author: Franco28                                               # 
-#    Date: 04-04-2021                                               #
+#    Date: 01-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -116,15 +116,6 @@ namespace Moto_Logo
             Round(panelMotoZ);
             Round(panelMotoP);
 
-            pictureBoxMotoDroid.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoG.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoEdge.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoX.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoOne.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoP.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoZ.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxMotoE.SizeMode = PictureBoxSizeMode.Zoom;
-
             pictureBoxMotoG.Enabled = false;
             pictureBoxMotoX.Enabled = false;
             pictureBoxMotoDroid.Enabled = false;
@@ -133,6 +124,42 @@ namespace Moto_Logo
             pictureBoxMotoOne.Enabled = false;
             pictureBoxMotoZ.Enabled = false;
             pictureBoxMotoP.Enabled = false;
+
+            panelMotoDroid.Hide();
+            panelMotoE.Hide();
+            panelMotoX.Hide();
+            panelMotoEdge.Hide();
+            panelMotoOne.Hide();
+            panelMotoG.Hide();
+            panelMotoZ.Hide();
+            panelMotoP.Hide();
+
+            pictureBoxMotoG.Hide();
+            pictureBoxMotoX.Hide();
+            pictureBoxMotoDroid.Hide();
+            pictureBoxMotoE.Hide();
+            pictureBoxMotoEdge.Hide();
+            pictureBoxMotoOne.Hide();
+            pictureBoxMotoZ.Hide();
+            pictureBoxMotoP.Hide();
+
+            labelMotoDroi.Hide();
+            labelMotoG.Hide();
+            labelMotoE.Hide();
+            labelMotoZ.Hide();
+            labelMotoX.Hide();
+            labelMotoEdge.Hide();
+            labelMotoOne.Hide();
+            labelMotoP.Hide();
+
+            pictureBoxMotoDroid.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoG.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoEdge.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoX.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoOne.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoP.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoZ.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxMotoE.SizeMode = PictureBoxSizeMode.Zoom;
 
             pictureBoxMotoG.Cursor = Cursors.No;
             pictureBoxMotoX.Cursor = Cursors.No;
@@ -156,21 +183,39 @@ namespace Moto_Logo
 
             if (mainform.radioButton4mib.Checked == true)
             {
+                this.Size = new Size(600, 750);
+                this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 4MB";
                 this.Text = @"Select your device - Logo Memory: 4MB";
 
+                labelMotoE.Location = new Point(292, 376);
+                panelMotoE.Location = new Point(296, 411);
+                pictureBoxMotoE.Location = new Point(8, 12);
+
+                panelMotoDroid.Show();
+                labelMotoDroi.Show();
+                pictureBoxMotoDroid.Show();
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
                 panelMotoDroid.Cursor = Cursors.Hand;
 
+                panelMotoE.Show();
+                labelMotoE.Show();
+                pictureBoxMotoE.Show();
                 pictureBoxMotoE.Enabled = true;
                 pictureBoxMotoE.Cursor = Cursors.Hand;
                 panelMotoE.Cursor = Cursors.Hand;
 
+                panelMotoG.Show();
+                labelMotoG.Show();
+                pictureBoxMotoG.Show();
                 pictureBoxMotoG.Enabled = true;
                 pictureBoxMotoG.Cursor = Cursors.Hand;
                 panelMotoG.Cursor = Cursors.Hand;
 
+                panelMotoX.Show();
+                labelMotoX.Show();
+                pictureBoxMotoX.Show();
                 pictureBoxMotoX.Enabled = true;
                 pictureBoxMotoX.Cursor = Cursors.Hand;
                 panelMotoX.Cursor = Cursors.Hand; 
@@ -178,13 +223,29 @@ namespace Moto_Logo
 
             if (mainform.radioButton6MIB.Checked == true)
             {
+                this.Size = new Size(500, 750);
+                this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 6MB";
                 this.Text = @"Select your device - Logo Memory: 6MB";
 
+                labelMotoDroi.Location = new Point(60, 48);
+                panelMotoDroid.Location = new Point(110, 85);
+                pictureBoxMotoDroid.Location = new Point(8, 12);
+
+                labelMotoX.Location = new Point(60, 376);
+                panelMotoX.Location = new Point(110, 411);
+                pictureBoxMotoX.Location = new Point(8, 12);
+
+                panelMotoDroid.Show();
+                labelMotoDroi.Show();
+                pictureBoxMotoDroid.Show();
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
                 panelMotoDroid.Cursor = Cursors.Hand;
 
+                panelMotoX.Show();
+                labelMotoX.Show();
+                pictureBoxMotoX.Show();
                 pictureBoxMotoX.Enabled = true;
                 pictureBoxMotoX.Cursor = Cursors.Hand;
                 panelMotoX.Cursor = Cursors.Hand;
@@ -192,13 +253,29 @@ namespace Moto_Logo
 
             if (mainform.radioButton8MIB.Checked == true)
             {
+                this.Size = new Size(500, 750);
+                this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 8MB";
                 this.Text = @"Select your device - Logo Memory: 8MB";
 
+                labelMotoDroi.Location = new Point(60, 48);
+                panelMotoDroid.Location = new Point(110, 85);
+                pictureBoxMotoDroid.Location = new Point(8, 12);
+
+                labelMotoX.Location = new Point(60, 376);
+                panelMotoX.Location = new Point(110, 411);
+                pictureBoxMotoX.Location = new Point(8, 12);
+
+                panelMotoDroid.Show();
+                labelMotoDroi.Show();
+                pictureBoxMotoDroid.Show();
                 pictureBoxMotoDroid.Enabled = true;
                 pictureBoxMotoDroid.Cursor = Cursors.Hand;
                 panelMotoDroid.Cursor = Cursors.Hand;
 
+                panelMotoX.Show();
+                labelMotoX.Show();
+                pictureBoxMotoX.Show();
                 pictureBoxMotoX.Enabled = true;
                 pictureBoxMotoX.Cursor = Cursors.Hand;
                 panelMotoX.Cursor = Cursors.Hand;
@@ -206,29 +283,73 @@ namespace Moto_Logo
 
             if (mainform.radioButton16MIB.Checked == true)
             {
+                this.Size = new Size(900, 750);
+                this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 16MB";
                 this.Text = @"Select your device - Logo Memory: 16MB";
 
+                labelMotoG.Location = new Point(12, 48);
+                panelMotoG.Location = new Point(11, 85);
+                pictureBoxMotoG.Location = new Point(8, 12);
+
+                labelMotoE.Location = new Point(294, 48);
+                panelMotoE.Location = new Point(298, 85);
+                pictureBoxMotoE.Location = new Point(8, 12);
+
+                labelMotoZ.Location = new Point(581, 48);
+                panelMotoZ.Location = new Point(586, 85);
+                pictureBoxMotoZ.Location = new Point(8, 12);
+
+                labelMotoEdge.Location = new Point(10, 376);
+                panelMotoEdge.Location = new Point(9, 411);
+                pictureBoxMotoEdge.Location = new Point(8, 12);
+
+                labelMotoOne.Location = new Point(292, 376);
+                panelMotoOne.Location = new Point(296, 411);
+                pictureBoxMotoOne.Location = new Point(8, 12);
+
+                labelMotoP.Location = new Point(579, 376);
+                panelMotoP.Location = new Point(584, 411);
+                pictureBoxMotoP.Location = new Point(8, 12);
+
+                panelMotoE.Show();
+                labelMotoE.Show();
+                pictureBoxMotoE.Show();
                 pictureBoxMotoE.Enabled = true;
                 pictureBoxMotoE.Cursor = Cursors.Hand;
                 panelMotoE.Cursor = Cursors.Hand;
 
+                panelMotoEdge.Show();
+                labelMotoEdge.Show();
+                pictureBoxMotoEdge.Show();
                 pictureBoxMotoEdge.Enabled = true;
                 pictureBoxMotoEdge.Cursor = Cursors.Hand;
                 panelMotoEdge.Cursor = Cursors.Hand;
 
+                panelMotoG.Show();
+                labelMotoG.Show();
+                pictureBoxMotoG.Show();
                 pictureBoxMotoG.Enabled = true;
                 pictureBoxMotoG.Cursor = Cursors.Hand;
                 panelMotoG.Cursor = Cursors.Hand;
 
+                panelMotoOne.Show();
+                labelMotoOne.Show();
+                pictureBoxMotoOne.Show();
                 pictureBoxMotoOne.Enabled = true;
                 pictureBoxMotoOne.Cursor = Cursors.Hand;
                 panelMotoOne.Cursor = Cursors.Hand;
 
+                panelMotoP.Show();
+                labelMotoP.Show();
+                pictureBoxMotoP.Show();
                 pictureBoxMotoP.Enabled = true;
                 pictureBoxMotoP.Cursor = Cursors.Hand;
                 panelMotoP.Cursor = Cursors.Hand;
 
+                panelMotoZ.Show();
+                labelMotoZ.Show();
+                pictureBoxMotoZ.Show();
                 pictureBoxMotoZ.Enabled = true;
                 pictureBoxMotoZ.Cursor = Cursors.Hand;
                 panelMotoZ.Cursor = Cursors.Hand;
@@ -236,25 +357,58 @@ namespace Moto_Logo
 
             if (mainform.radioButton32MIB.Checked == true)
             {
+                this.Size = new Size(890, 750);
+                this.CenterToScreen();
                 labelLogoMemory.Text = "Logo Memory: 32MB";
                 this.Text = @"Select your device - Logo Memory: 32MB";
 
+                labelMotoG.Location = new Point(12, 48);
+                panelMotoG.Location = new Point(11, 85);
+                pictureBoxMotoG.Location = new Point(8, 12);
+
+                labelMotoZ.Location = new Point(294, 48);
+                panelMotoZ.Location = new Point(298, 85);
+                pictureBoxMotoZ.Location = new Point(8, 12);
+
+                labelMotoOne.Location = new Point(292, 376);
+                panelMotoOne.Location = new Point(296, 411);
+                pictureBoxMotoOne.Location = new Point(8, 12);
+
+                labelMotoP.Location = new Point(579, 200);
+                panelMotoP.Location = new Point(584, 250);
+                pictureBoxMotoP.Location = new Point(8, 12);
+
+                panelMotoG.Show();
+                labelMotoG.Show();
+                pictureBoxMotoG.Show();
                 pictureBoxMotoG.Enabled = true;
                 pictureBoxMotoG.Cursor = Cursors.Hand;
                 panelMotoG.Cursor = Cursors.Hand;
 
+                panelMotoOne.Show();
+                labelMotoOne.Show();
+                pictureBoxMotoOne.Show();
                 pictureBoxMotoOne.Enabled = true;
                 pictureBoxMotoOne.Cursor = Cursors.Hand;
                 panelMotoOne.Cursor = Cursors.Hand;
 
+                panelMotoP.Show();
+                labelMotoP.Show();
+                pictureBoxMotoP.Show();
                 pictureBoxMotoP.Enabled = true;
                 pictureBoxMotoP.Cursor = Cursors.Hand;
                 panelMotoP.Cursor = Cursors.Hand;
 
+                panelMotoX.Show();
+                labelMotoX.Show();
+                pictureBoxMotoX.Show();
                 pictureBoxMotoX.Enabled = true;
                 pictureBoxMotoX.Cursor = Cursors.Hand;
                 panelMotoX.Cursor = Cursors.Hand;
 
+                panelMotoZ.Show();
+                labelMotoZ.Show();
+                pictureBoxMotoZ.Show();
                 pictureBoxMotoZ.Enabled = true;
                 pictureBoxMotoZ.Cursor = Cursors.Hand;
                 panelMotoZ.Cursor = Cursors.Hand;
