@@ -202,5 +202,17 @@ namespace Moto_Logo.Properties {
                 this["NewTVer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KeepLogoBinFormatGrid {
+            get {
+                return ((bool)(this["KeepLogoBinFormatGrid"]));
+            }
+            set {
+                this["KeepLogoBinFormatGrid"] = value;
+            }
+        }
     }
 }

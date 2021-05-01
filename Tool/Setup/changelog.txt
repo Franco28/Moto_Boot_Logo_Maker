@@ -5,7 +5,11 @@
 ---------------------------------------
 v4.4.4.3 - Released May xx, 2021 - WIP
 ---------------------------------------
+NOTE: Some translations are missing, I will be working on this, for now still in english
+
 - [improve] Select device form UI
+- [improve] Internal Code
+- [fixed] IWin32Window error, when Tool is already running and call another thread of tool crashes 
 
 ---------------------------------------
 v4.4.4.2 - Released April 29, 2021

@@ -398,7 +398,7 @@ namespace Moto_Logo
             btnBuild.Enabled = true;
         }
         
-        public void Reload()
+        public void IniUITool()
         {
             #region Reload
             try
@@ -412,6 +412,21 @@ namespace Moto_Logo
 
                 if (groupBoxLogoResolution.Visible == false)
                 {
+                    rdoLayoutLandscape.Location = new Point(6, 42);
+                }
+
+                if (Properties.Settings.Default.KeepLogoBinFormatGrid == false)
+                {
+                    groupBoxLogoFormat.Hide();
+                    groupBoxLogoFormat.Visible = false;
+                    groupBoxLogoImageOption.Location = new Point(453, 91);
+                    groupBoxLogoImageOrientation.Location = new Point(760, 91);
+                    groupBoxLogoImageOrientation.Size = new Size(420, 98);
+                }
+
+                if (Properties.Settings.Default.KeepLogoBinFormatGrid == true)
+                {
+                    groupBoxLogoImageOrientation.Location = new Point(936, 91);
                     groupBoxLogoImageOrientation.Size = new Size(244, 98);
                     rdoLayoutLandscape.Location = new Point(6, 42);
                 }

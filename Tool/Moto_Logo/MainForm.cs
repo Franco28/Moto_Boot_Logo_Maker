@@ -115,7 +115,7 @@ namespace Moto_Logo
             _BackColor = pictureBox1.BackColor;
             picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            Reload();
+            IniUITool();
             #endregion Settings
         }
 
@@ -190,7 +190,7 @@ namespace Moto_Logo
                     buttonAppend.Enabled = true;
                     buttonDelete.Enabled = true;
                     buttonExtract.Enabled = true;
-                    Reload();
+                    IniUITool();
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -216,7 +216,7 @@ namespace Moto_Logo
                 buttonAppend.Enabled = true;
                 buttonDelete.Enabled = true;
                 buttonExtract.Enabled = true;
-                Reload();
+                IniUITool();
             }
             #endregion OpenNewLogo
         }

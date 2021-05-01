@@ -283,7 +283,7 @@ namespace Moto_Logo
             // 
             this.rdoAndroidRAW.Location = new System.Drawing.Point(6, 75);
             this.rdoAndroidRAW.Name = "rdoAndroidRAW";
-            this.rdoAndroidRAW.Size = new System.Drawing.Size(150, 17);
+            this.rdoAndroidRAW.Size = new System.Drawing.Size(158, 17);
             this.rdoAndroidRAW.TabIndex = 8;
             this.rdoAndroidRAW.Text = "Raw 540x540";
             this.rdoAndroidRAW.CheckedChanged += new System.EventHandler(this.rdoAndroidRAW_CheckedChanged);
@@ -300,9 +300,9 @@ namespace Moto_Logo
             // rdoAndroid44
             // 
             this.rdoAndroid44.Checked = true;
-            this.rdoAndroid44.Location = new System.Drawing.Point(6, 23);
+            this.rdoAndroid44.Location = new System.Drawing.Point(6, 19);
             this.rdoAndroid44.Name = "rdoAndroid44";
-            this.rdoAndroid44.Size = new System.Drawing.Size(118, 17);
+            this.rdoAndroid44.Size = new System.Drawing.Size(157, 17);
             this.rdoAndroid44.TabIndex = 6;
             this.rdoAndroid44.TabStop = true;
             this.rdoAndroid44.Text = "Default";
@@ -473,9 +473,9 @@ namespace Moto_Logo
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBox1.Location = new System.Drawing.Point(331, 195);
+            this.pictureBox1.Location = new System.Drawing.Point(332, 195);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(541, 530);
+            this.pictureBox1.Size = new System.Drawing.Size(540, 532);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 183;
             this.pictureBox1.TabStop = false;
@@ -547,7 +547,7 @@ namespace Moto_Logo
             // 
             this.txtComments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
             this.txtComments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtComments.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComments.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.txtComments.Location = new System.Drawing.Point(33, 195);
             this.txtComments.Multiline = true;
@@ -942,7 +942,7 @@ namespace Moto_Logo
             this.txtLogoBuildPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.txtLogoBuildPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.txtLogoBuildPath.Name = "txtLogoBuildPath";
-            this.txtLogoBuildPath.Size = new System.Drawing.Size(500, 34);
+            this.txtLogoBuildPath.Size = new System.Drawing.Size(460, 34);
             // 
             // labelbtnOpenLogoFile
             // 
@@ -1238,7 +1238,7 @@ namespace Moto_Logo
             this.labelErrorInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.labelErrorInfo.Name = "labelErrorInfo";
             this.labelErrorInfo.ReadOnly = true;
-            this.labelErrorInfo.Size = new System.Drawing.Size(620, 34);
+            this.labelErrorInfo.Size = new System.Drawing.Size(600, 34);
             this.labelErrorInfo.Text = "---";
             // 
             // labelErrorGoToFileInfo

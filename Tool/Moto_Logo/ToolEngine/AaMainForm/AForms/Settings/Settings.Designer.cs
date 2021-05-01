@@ -41,6 +41,7 @@ namespace Moto_Logo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolSettings));
             this.labelIconWarning = new System.Windows.Forms.Label();
             this.groupBoxEASP = new DarkUI.Controls.DarkGroupBox();
@@ -61,9 +62,21 @@ namespace Moto_Logo
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GroupBoxELBF = new DarkUI.Controls.DarkGroupBox();
+            this.RadioButtonNoELBF = new DarkUI.Controls.DarkRadioButton();
+            this.RadioButtonYesELBF = new DarkUI.Controls.DarkRadioButton();
+            this.linkMoreInfo = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.darkTitle1 = new DarkUI.Controls.DarkTitle();
+            this.label7 = new System.Windows.Forms.Label();
+            this.linkHideMoreInfo = new System.Windows.Forms.LinkLabel();
+            this.labelRebootTool = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBoxEASP.SuspendLayout();
             this.groupBoxEASLIM.SuspendLayout();
             this.groupBoxEU.SuspendLayout();
+            this.GroupBoxELBF.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelIconWarning
@@ -264,13 +277,129 @@ namespace Moto_Logo
             this.label4.Size = new System.Drawing.Size(37, 50);
             this.label4.TabIndex = 50;
             // 
+            // label5
+            // 
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Location = new System.Drawing.Point(12, 481);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 50);
+            this.label5.TabIndex = 52;
+            // 
+            // GroupBoxELBF
+            // 
+            this.GroupBoxELBF.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.GroupBoxELBF.Controls.Add(this.RadioButtonNoELBF);
+            this.GroupBoxELBF.Controls.Add(this.RadioButtonYesELBF);
+            this.GroupBoxELBF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.GroupBoxELBF.Location = new System.Drawing.Point(55, 481);
+            this.GroupBoxELBF.Name = "GroupBoxELBF";
+            this.GroupBoxELBF.Size = new System.Drawing.Size(512, 50);
+            this.GroupBoxELBF.TabIndex = 51;
+            this.GroupBoxELBF.TabStop = false;
+            this.GroupBoxELBF.Text = "Enable logo bin format?";
+            // 
+            // RadioButtonNoELBF
+            // 
+            this.RadioButtonNoELBF.AutoSize = true;
+            this.RadioButtonNoELBF.Checked = true;
+            this.RadioButtonNoELBF.Location = new System.Drawing.Point(74, 22);
+            this.RadioButtonNoELBF.Name = "RadioButtonNoELBF";
+            this.RadioButtonNoELBF.Size = new System.Drawing.Size(47, 21);
+            this.RadioButtonNoELBF.TabIndex = 1;
+            this.RadioButtonNoELBF.TabStop = true;
+            this.RadioButtonNoELBF.Text = "NO";
+            this.RadioButtonNoELBF.CheckedChanged += new System.EventHandler(this.RadioButtonNoELBF_CheckedChanged);
+            // 
+            // RadioButtonYesELBF
+            // 
+            this.RadioButtonYesELBF.AutoSize = true;
+            this.RadioButtonYesELBF.Location = new System.Drawing.Point(6, 22);
+            this.RadioButtonYesELBF.Name = "RadioButtonYesELBF";
+            this.RadioButtonYesELBF.Size = new System.Drawing.Size(53, 21);
+            this.RadioButtonYesELBF.TabIndex = 0;
+            this.RadioButtonYesELBF.Text = "YES";
+            this.RadioButtonYesELBF.CheckedChanged += new System.EventHandler(this.RadioButtonYesELBF_CheckedChanged);
+            // 
+            // linkMoreInfo
+            // 
+            this.linkMoreInfo.AutoSize = true;
+            this.linkMoreInfo.LinkColor = System.Drawing.Color.Yellow;
+            this.linkMoreInfo.Location = new System.Drawing.Point(52, 539);
+            this.linkMoreInfo.Name = "linkMoreInfo";
+            this.linkMoreInfo.Size = new System.Drawing.Size(52, 13);
+            this.linkMoreInfo.TabIndex = 53;
+            this.linkMoreInfo.TabStop = true;
+            this.linkMoreInfo.Text = "More Info";
+            this.linkMoreInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkMoreInfo_LinkClicked);
+            // 
+            // label6
+            // 
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(9, 427);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 28);
+            this.label6.TabIndex = 55;
+            // 
+            // darkTitle1
+            // 
+            this.darkTitle1.AutoSize = true;
+            this.darkTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.darkTitle1.Location = new System.Drawing.Point(43, 427);
+            this.darkTitle1.Name = "darkTitle1";
+            this.darkTitle1.Size = new System.Drawing.Size(92, 29);
+            this.darkTitle1.TabIndex = 54;
+            this.darkTitle1.Text = "Tool UI";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(52, 561);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(515, 49);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "This option enables in Tool the grid of ´logo.bin format´ options to build your L" +
+    "ogo. If you don´t know what this do, keep it disable!";
+            // 
+            // linkHideMoreInfo
+            // 
+            this.linkHideMoreInfo.AutoSize = true;
+            this.linkHideMoreInfo.LinkColor = System.Drawing.Color.Yellow;
+            this.linkHideMoreInfo.Location = new System.Drawing.Point(538, 597);
+            this.linkHideMoreInfo.Name = "linkHideMoreInfo";
+            this.linkHideMoreInfo.Size = new System.Drawing.Size(29, 13);
+            this.linkHideMoreInfo.TabIndex = 57;
+            this.linkHideMoreInfo.TabStop = true;
+            this.linkHideMoreInfo.Text = "Hide";
+            this.linkHideMoreInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHideMoreInfo_LinkClicked);
+            // 
+            // labelRebootTool
+            // 
+            this.labelRebootTool.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelRebootTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRebootTool.ForeColor = System.Drawing.Color.Yellow;
+            this.labelRebootTool.Location = new System.Drawing.Point(52, 460);
+            this.labelRebootTool.Name = "labelRebootTool";
+            this.labelRebootTool.Size = new System.Drawing.Size(515, 21);
+            this.labelRebootTool.TabIndex = 58;
+            this.labelRebootTool.Text = "NOTE: If you changed value of Enable Logo bin format; Click me to reboot Tool to " +
+    "see updated controls!";
+            this.labelRebootTool.Click += new System.EventHandler(this.labelRebootTool_Click);
+            // 
             // ToolSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.ClientSize = new System.Drawing.Size(579, 418);
+            this.ClientSize = new System.Drawing.Size(579, 619);
+            this.Controls.Add(this.labelRebootTool);
+            this.Controls.Add(this.linkHideMoreInfo);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.darkTitle1);
+            this.Controls.Add(this.linkMoreInfo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.GroupBoxELBF);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -303,6 +432,8 @@ namespace Moto_Logo
             this.groupBoxEASLIM.PerformLayout();
             this.groupBoxEU.ResumeLayout(false);
             this.groupBoxEU.PerformLayout();
+            this.GroupBoxELBF.ResumeLayout(false);
+            this.GroupBoxELBF.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +459,16 @@ namespace Moto_Logo
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private DarkUI.Controls.DarkGroupBox GroupBoxELBF;
+        private DarkUI.Controls.DarkRadioButton RadioButtonNoELBF;
+        private DarkUI.Controls.DarkRadioButton RadioButtonYesELBF;
+        private System.Windows.Forms.LinkLabel linkMoreInfo;
+        private System.Windows.Forms.Label label6;
+        private DarkUI.Controls.DarkTitle darkTitle1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.LinkLabel linkHideMoreInfo;
+        private System.Windows.Forms.Label labelRebootTool;
+        private System.Windows.Forms.Timer timer1;
     }
 }

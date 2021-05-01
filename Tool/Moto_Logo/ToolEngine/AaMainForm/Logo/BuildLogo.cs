@@ -110,7 +110,7 @@ namespace Moto_Logo
                 e.Cancel = true;
                 backgroundWorkerLogBuild.ReportProgress(0);
                 backgroundWorkerLogBuild.CancelAsync();
-                Reload();
+                IniUITool();
                 return;
             }
 
