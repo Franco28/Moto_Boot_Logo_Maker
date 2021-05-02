@@ -131,31 +131,6 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="label5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAUFJREFUWEftlT9qhUAQhyXkDKnTCSo2BkQRbUQ7CxMbS48QhHcBCxv/NYKNVh4g
-        bc6QKkmTMn3uMJk1vsfjsSHqWhjwBx8W6858O4jL7dlsZFm+EQThGXn5C8MwnizLuh63rhNRFO8RmILr
-        umDb9vuqEniyB1ozGkTA9/1BArde/VRgzBKBVSWWCqwmwSJAcBznDcssl2AVYJaYI4AjpwoQUOIVy82X
-        mCOA/wzQNA10XaeiKMrjWHZ65ghMIB7LTs8usAvsArvApgQOhwNkWQZt24KqqpCmKXRdB1EUDetk7fju
-        L7ALEJqmOQlUVQVFUYBpmsPzrBkNdoEwDCFJEgiC4CSAlwzUdQ1lWV42vIRNII5jyPN8mAC5+4nIceye
-        50Hf9+fNaPzzj3AF5gvwPH+LGz+QL0Y+JUm6G8vu2Vo47hvw5+U/5gNxbwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="label6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAeJJREFUWEftls9LwzAUx4t6UQTxoE7Rg3jxIuhB8CAMtnYbuh0EPQie/COGKFh/
-        XEWdDpmzSUHx4P4J/wJvMl3iGAoe/Cv0vdBKLVGbtaLCvvCBJH0v79s0KdFa+vPKlNhYpsyGo2aWsD6n
-        xOdKWo0pnbBNg7K9qNEpM+PF226nlFwJwsq6dTfkdLW4ed3hNEPLIGwFjOScrlw65fuugezpc5dO+K4Y
-        C0GG1qdxPmUDusUKWbsxjv0wpCgrzl8+9qob8LTDKAkGMrABWwaUDRjk4cOJaFZSA1BoXRTzY9VukvRu
-        AmMMuzaZJHxLGheQBOUnsAlXTfO17d0APEinSW0Z384P/gdSlI8Il6Bc+X5UFqfCUuW1Hed6NwCNRcPm
-        S6KCT8I5JDndSKVsAFdKxH4BLK8hEgMI4pswAHFfYrGUSAwgZQNRS30FCFsT/RBArbyYGKRsAM8utsOA
-        c4iJQcoGEmf1AdnFIgju0fNK2QDE5SFBern4Du+bu1I2ELX+hwF4lpctXxQKZOAn9XcM4NXYoHxbfG8/
-        Nt+QjnuA3AMB4YcuMF5AoMiRj2ME7wQ6re3MXD11CjcLF9VB3Gx+5iovMdm4l3SpOuglbjdi+M/wYpw/
-        9CO4n1z0Sr1HFG/pd6Vpb9/hVSVZobjvAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

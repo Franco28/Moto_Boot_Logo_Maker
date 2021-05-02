@@ -459,8 +459,10 @@
   <ItemGroup>
     <None Include="Resources\QR Code.png" />
     <None Include="Resources\logo\_null.png" />
+    <Content Include="Resources\ToolUI\binIcon_x32.png" />
     <Content Include="Resources\ToolUI\downloadgif.gif" />
     <Content Include="Resources\ToolUI\download_32.png" />
+    <Content Include="Resources\ToolUI\toolUIIcon_x32.png" />
     <Content Include="Resources\ToolUI\update.png" />
     <Content Include="ToolEngine\Classes\Ionic\Zlib\LICENSE.jzlib.txt" />
     <Content Include="ToolEngine\Classes\Ionic\Zlib\License.zlib.txt" />
@@ -611,7 +613,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

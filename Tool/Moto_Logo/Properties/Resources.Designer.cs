@@ -103,6 +103,16 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap binIcon_x32 {
+            get {
+                object obj = ResourceManager.GetObject("binIcon_x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Build_x16 {
             get {
                 object obj = ResourceManager.GetObject("Build_x16", resourceCulture);
@@ -1356,6 +1366,16 @@ namespace Moto_Logo.Properties {
         public static System.Drawing.Bitmap textInfo_x24 {
             get {
                 object obj = ResourceManager.GetObject("textInfo_x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap toolUIIcon_x32 {
+            get {
+                object obj = ResourceManager.GetObject("toolUIIcon_x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

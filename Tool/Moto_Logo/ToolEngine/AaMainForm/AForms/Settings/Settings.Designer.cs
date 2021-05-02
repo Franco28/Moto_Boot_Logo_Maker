@@ -279,7 +279,7 @@ namespace Moto_Logo
             // 
             // label5
             // 
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.Image = global::Moto_Logo.Properties.Resources.binIcon_x32;
             this.label5.Location = new System.Drawing.Point(12, 481);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 50);
@@ -334,7 +334,7 @@ namespace Moto_Logo
             // 
             // label6
             // 
-            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Image = global::Moto_Logo.Properties.Resources.toolUIIcon_x32;
             this.label6.Location = new System.Drawing.Point(9, 427);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 28);
