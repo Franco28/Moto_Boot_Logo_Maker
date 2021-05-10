@@ -2,7 +2,7 @@
 #####################################################################
 #    File: IniToolSettings.cs                                       #
 #    Author: Franco28                                               # 
-#    Date: 01-05-2021                                               #
+#    Date: 10-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,7 +13,7 @@
 
 using Bluegrams.Application;
 using DarkUI.Forms;
-using System.Diagnostics;
+using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -45,6 +45,8 @@ namespace Moto_Logo
             string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
             var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
+            CheckNetFamework.IFNOT48();
+
             // Tool Settings
             if (!Directory.Exists(exePath + @"\Settings\"))
             {
@@ -54,6 +56,19 @@ namespace Moto_Logo
             if (!Directory.Exists(exePath + @"\Logs\"))
             {
                 Directory.CreateDirectory(exePath + @"\Logs\");
+            }
+
+            if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
+            {
+                CheckNetFamework.Get48FromRegistry();
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul));
+                Kill.PanicKillInternal();
+                return;
+            }
+            else
+            {
+                CheckNetFamework.Get48FromRegistry();
             }
 
             PortableSettingsProvider.SettingsFileName = "settings.config";
@@ -80,8 +95,11 @@ namespace Moto_Logo
                 Properties.Settings.Default.Save();
             }
 
+            string x86path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
+            string x64path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+
             // Check Others
-            if (exePath == @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" || exePath == @"C:\Program Files\Moto_Boot_Logo_Maker")
+            if (exePath == x86path || exePath == x64path)
             {
                 if (CheckAdmin.IsUserAdministrator() == false)
                 {
@@ -90,19 +108,6 @@ namespace Moto_Logo
                     Kill.PanicKillInternal();
                     return;
                 }
-            }
-
-            if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
-            {
-                CheckNetFamework.Get48FromRegistry();
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul));
-                Kill.PanicKillInternal();
-                return;
-            }
-            else
-            {
-                CheckNetFamework.Get48FromRegistry();
             }
 
             if (!Directory.Exists(exePath + @"\Files\"))

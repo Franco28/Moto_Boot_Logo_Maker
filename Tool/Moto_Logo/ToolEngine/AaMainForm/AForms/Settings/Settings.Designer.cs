@@ -335,7 +335,7 @@ namespace Moto_Logo
             // label6
             // 
             this.label6.Image = global::Moto_Logo.Properties.Resources.toolUIIcon_x32;
-            this.label6.Location = new System.Drawing.Point(9, 427);
+            this.label6.Location = new System.Drawing.Point(9, 422);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 28);
             this.label6.TabIndex = 55;
@@ -344,7 +344,7 @@ namespace Moto_Logo
             // 
             this.darkTitle1.AutoSize = true;
             this.darkTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.darkTitle1.Location = new System.Drawing.Point(43, 427);
+            this.darkTitle1.Location = new System.Drawing.Point(43, 422);
             this.darkTitle1.Name = "darkTitle1";
             this.darkTitle1.Size = new System.Drawing.Size(92, 29);
             this.darkTitle1.TabIndex = 54;
@@ -363,7 +363,7 @@ namespace Moto_Logo
             // linkHideMoreInfo
             // 
             this.linkHideMoreInfo.AutoSize = true;
-            this.linkHideMoreInfo.LinkColor = System.Drawing.Color.Yellow;
+            this.linkHideMoreInfo.LinkColor = System.Drawing.Color.Red;
             this.linkHideMoreInfo.Location = new System.Drawing.Point(538, 597);
             this.linkHideMoreInfo.Name = "linkHideMoreInfo";
             this.linkHideMoreInfo.Size = new System.Drawing.Size(29, 13);
@@ -376,7 +376,7 @@ namespace Moto_Logo
             // 
             this.labelRebootTool.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelRebootTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRebootTool.ForeColor = System.Drawing.Color.Yellow;
+            this.labelRebootTool.ForeColor = System.Drawing.Color.Gold;
             this.labelRebootTool.Location = new System.Drawing.Point(52, 460);
             this.labelRebootTool.Name = "labelRebootTool";
             this.labelRebootTool.Size = new System.Drawing.Size(515, 21);

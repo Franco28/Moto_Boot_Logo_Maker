@@ -38,13 +38,13 @@
     <Setting Name="LogoMessage" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="NeedUpdate" Type="System.Boolean" Scope="User">
+    <Setting Name="NeedUpdate" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="NewTVer" Type="System.String" Scope="User">
+    <Setting Name="NewTVer" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="KeepLogoBinFormatGrid" Type="System.Boolean" Scope="User">
+    <Setting Name="KeepLogoBinFormatGrid" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>

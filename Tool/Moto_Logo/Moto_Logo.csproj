@@ -105,11 +105,11 @@
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\BasicAuthentication.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\CustomAuthentication.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\IAuthentication.cs" />
+    <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\NetworkAuthentication.cs" />
+    <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\ParseUpdateInfoEventArgs.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Forms\MyWebClient.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\NetworkAuthentication.cs" />
-    <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\ParseUpdateInfoEventArgs.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Forms\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>

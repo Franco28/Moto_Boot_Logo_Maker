@@ -9,7 +9,7 @@ NOTE: Some translations are missing, I will be working on this, for now still in
 
 - [improve] Select device form UI
 - [improve] Internal Code
-- [fixed] IWin32Window error, when Tool is already running and call another thread of tool crashes 
+- [fixed] IWin32Window error, when Tool is already running and call another thread of Tool crashes 
 
 ---------------------------------------
 v4.4.4.2 - Released April 29, 2021
