@@ -42,7 +42,7 @@ namespace Moto_Logo
         private ResourceManager res_man;
         public Timer timerupdates = new Timer();
         private bool _autoselectlogobinversion = true;
-        private int _maxFileSize = 4 * 1024 * 1024; // 4MiB
+        private int _maxFileSize = 4 * 1024 * 1024; // 4MB
         private int _logosize;
         private bool _tvLogoAfterSelectProcessing;
         private readonly List<String> _loadedbitmapnames = new List<string>();
@@ -300,14 +300,17 @@ namespace Moto_Logo
 
         private void downloadSiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var s = new DownloadS();
-            if (s.IsDisposed == false)
+            if (InternetCheck.ConnectToInternet() == true)
             {
-                s.Show();
-            } 
-            else
-            {
-                s.Dispose();
+                var s = new DownloadS();
+                if (s.IsDisposed == false)
+                {
+                    s.Show();
+                }
+                else
+                {
+                    s.Dispose();
+                }
             }
         }
 

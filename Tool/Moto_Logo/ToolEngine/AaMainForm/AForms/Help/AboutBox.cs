@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 28-04-2021                                               #
+#    Date: 14-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -31,15 +31,6 @@ namespace Moto_Logo
         string exePath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
         public static CultureInfo ci = CultureInfo.InstalledUICulture;
 
-        public void cAppend(string message)
-        {
-            this.Invoke((Action)delegate
-            {
-                console.AppendText("\n" + message);
-                console.ScrollToCaret();
-            });
-        }
-
         public AboutBox()
         {         
             InitializeComponent();
@@ -61,6 +52,15 @@ namespace Moto_Logo
             button2.Text = res_man.GetString("AboutBTNContributors", cul);
             button1.Text = res_man.GetString("AboutBTNDownloadUpdate", cul);
             label12.Text = res_man.GetString("AboutDonationMSG", cul);
+        }
+
+        public void cAppend(string message)
+        {
+            this.Invoke((Action)delegate
+            {
+                console.AppendText("\n" + message);
+                console.ScrollToCaret();
+            });
         }
 
         private void AboutBox_Load(object sender, EventArgs e)
@@ -215,6 +215,10 @@ namespace Moto_Logo
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (!File.Exists(exePath + @"\credits.txt"))
+            {
+                return;
+            }
             Form formBackground = new Form();
             try
             {

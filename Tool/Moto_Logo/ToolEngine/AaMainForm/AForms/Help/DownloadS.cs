@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DownloadS.cs                                             #
 #    Author: Franco28                                               # 
-#    Date: 28-04-2021                                               #
+#    Date: 14-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -34,6 +34,20 @@ namespace Moto_Logo
             InitializeComponent();
 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+        }
+
+        private void Download_Load(object sender, EventArgs e)
+        {
+            if (InternetCheck.ConnectToInternet() == true)
+            {
+                labelGetting.Text = "Getting server data... Please wait... ";
+                startProgressAsync();
+            }
+            else
+            {
+                labelGetting.Text = "Getting server data... {ERROR} No internet connection...";
+                return;
+            }
         }
 
         protected void cAppend(string message)
@@ -140,17 +154,10 @@ namespace Moto_Logo
                 labelGetting.Text = "Getting server data... Please wait... " + percent;
             });
 
-
             await Task.Run(() => GetData(progress));
             labelGetting.Text = "Getting server data... DONE! " ;
             labelGetting.Visible = false;
             console.Dock = DockStyle.Fill;
-        }
-
-        private void Download_Load(object sender, EventArgs e)
-        {
-            labelGetting.Text = "Getting server data... Please wait... ";
-            startProgressAsync();
         }
 
         private void btnGoTo_Click(object sender, EventArgs e)

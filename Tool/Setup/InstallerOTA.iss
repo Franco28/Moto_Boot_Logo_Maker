@@ -5,10 +5,10 @@
 #define MyAppName2 "MBLM_v"
 #define MyInstallerSuffix "_OTA"
 #define MyAppVersion "4.4.4.3"
-#define MyAppPublisher "A .NET Tool to make and build Moto Boot Logos(4MiB, 6MiB, 8MiB, 16MiB & 32MiB)"
+#define MyAppPublisher "A .NET Tool for make and build Moto Boot Logos(4MB, 6MB, 8MB, 16MB & 32MB) - (logo.bin)"
 #define MyAppURL "https://github.com/Franco28/Moto_Boot_Logo_Maker"
 #define MyAppExeName "Moto_Boot_Logo_Maker.exe"
-#define MyAppDate "2021-05-01"
+#define MyAppDate "2021-05-14"
 
 [Setup]
 PrivilegesRequired=admin    
@@ -93,8 +93,6 @@ Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: "{app}"; Flags: dontcopy
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: "{app}"; Flags: dontcopy
 Source: "Moto_Boot_Logo_Maker.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "Moto_Boot_Logo_Maker.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs   
-Source: "Files"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "Files/*"; DestDir: "{app}/Files/"; Flags: ignoreversion recursesubdirs createallsubdirs 
 
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}";

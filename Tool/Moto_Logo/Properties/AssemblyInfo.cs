@@ -3,12 +3,12 @@ using System.Resources;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Moto_Boot_Logo_Maker")]
-[assembly: AssemblyDescription("A .NET Tool for make Motorola Boot Logos")]
+[assembly: AssemblyDescription("A .NET Tool for make and build Motorola Boot Logos (logo.bin)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Franco28")]
 [assembly: AssemblyProduct("Moto_Boot_Logo_Maker")]
 [assembly: AssemblyCopyright("Copyrigth © 2020 - 2021 Franco28")]
-[assembly: AssemblyTrademark("Motorola - Lenovo - Android")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(true)]
