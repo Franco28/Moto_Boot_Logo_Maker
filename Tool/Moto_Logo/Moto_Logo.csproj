@@ -179,102 +179,102 @@
     <Compile Include="ToolEngine\Classes\Ionic\Zlib\ZlibCodec.cs" />
     <Compile Include="ToolEngine\Classes\Ionic\Zlib\ZlibConstants.cs" />
     <Compile Include="ToolEngine\Classes\Ionic\Zlib\ZlibStream.cs" />
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\AboutBox.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\AboutBox.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\Credits.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\Credits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\Credits.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.Designer.cs">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\OpenFormsBlur\OpenForms.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OpenFormsBlur\OpenForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\DownloadS.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\DownloadS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\DownloadS.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\DownloadS.Designer.cs">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\SearchDevice\DeviceInfo.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\SearchDevice\DeviceInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\SearchDevice\DeviceInfo.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\SearchDevice\DeviceInfo.Designer.cs">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\SearchDevice\SearchDevice.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\SearchDevice\SearchDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.Designer.cs">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoFlash\LogoTest.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\LogoFlash\LogoTest.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.Designer.cs">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\Image\ImageEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Image\ImageEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\Tool\ToolEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Tool\ToolEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\Profile\ProfilesEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Profile\ProfilesEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\OTA\UpdateEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OTA\UpdateEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\Translation\Translations.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Translation\Translations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\Logo\LogoTree.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\LogoTree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\ReadChangelog.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\ReadChangelog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Help\ReadChangelog.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Help\ReadChangelog.Designer.cs">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Settings\Settings.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AaMainForm\AForms\Settings\Settings.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AForms\Settings\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="ToolEngine\Classes\OS\CheckNetFamework.cs" />
     <Compile Include="ToolEngine\Classes\Others\MessageBoxManager.cs" />
     <Compile Include="ToolEngine\Classes\OS\OSArchitecture.cs" />
     <Compile Include="ToolEngine\Classes\OS\OSVersionInfoClass.cs" />
-    <Compile Include="ToolEngine\AaMainForm\Logo\OpenLogo.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\OpenLogo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\Classes\PortableSettingsProvider\PortableSettingsProvider.cs" />
     <Compile Include="ToolEngine\Classes\PortableSettingsProvider\Shared\PortableSettingsProviderBase.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="ToolEngine\AAAMainUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="ToolEngine\AAAMainUI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ToolEngine\AaMainForm\Logo\BuildLogo.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\BuildLogo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\Classes\OS\CheckInternet.cs" />
@@ -364,34 +364,34 @@
     <EmbeddedResource Include="ToolEngine\FileManager\FMForms\ToolLibsDownload.resx">
       <DependentUpon>ToolLibsDownload.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\Help\AboutBox.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Help\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\Help\Credits.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Help\Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.resx">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\Help\DownloadS.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Help\DownloadS.resx">
       <DependentUpon>DownloadS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\SearchDevice\DeviceInfo.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\SearchDevice\DeviceInfo.resx">
       <DependentUpon>DeviceInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.resx">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\LogoFlash\LogoTest.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.resx">
       <DependentUpon>LogoTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\Help\ReadChangelog.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Help\ReadChangelog.resx">
       <DependentUpon>ReadChangelog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AaMainForm\AForms\Settings\Settings.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -414,46 +414,46 @@
     <None Include="app.config" />
     <None Include="Resources\bin\motorun.bin" />
     <None Include="Properties\app.manifest" />
-    <EmbeddedResource Include="Resources.de.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.de.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.en.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.es.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.es.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.fr.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.fr.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.ga.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ga.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.it.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.it.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.pl.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.pl.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.pt.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.pt.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.ru.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.tr.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.tr.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.ja.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ja.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.zh-CN.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-CN.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.zh-Hans.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-Hans.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources.zh-Hant.resx">
+    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-Hant.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
