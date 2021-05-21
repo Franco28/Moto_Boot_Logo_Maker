@@ -102,6 +102,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\AutoUpdater.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\BasicAuthentication.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\CustomAuthentication.cs" />
@@ -285,11 +290,6 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -460,6 +460,14 @@
   <ItemGroup>
     <None Include="Resources\QR Code.png" />
     <None Include="Resources\logo\_null.png" />
+    <Content Include="Resources\devicesSearch\MotoDroid.png" />
+    <Content Include="Resources\devicesSearch\MotoE.png" />
+    <Content Include="Resources\devicesSearch\MotoEdge.png" />
+    <Content Include="Resources\devicesSearch\MotoG.png" />
+    <Content Include="Resources\devicesSearch\MotoOne.png" />
+    <Content Include="Resources\devicesSearch\MotoP.png" />
+    <Content Include="Resources\devicesSearch\MotoX.png" />
+    <Content Include="Resources\devicesSearch\MotoZ.png" />
     <Content Include="Resources\ToolUI\binIcon_x32.png" />
     <Content Include="Resources\ToolUI\downloadgif.gif" />
     <Content Include="Resources\ToolUI\download_32.png" />
@@ -470,14 +478,6 @@
     <None Include="Resources\welcome_gif.gif" />
     <None Include="Resources\logo.png" />
     <Content Include="ToolEngine\Classes\PortableSettingsProvider\LICENSE.txt" />
-    <Content Include="Resources\devicesSearch\MotoDroid.png" />
-    <Content Include="Resources\devicesSearch\MotoE.png" />
-    <Content Include="Resources\devicesSearch\MotoEdge.png" />
-    <Content Include="Resources\devicesSearch\MotoG.png" />
-    <Content Include="Resources\devicesSearch\MotoOne.png" />
-    <Content Include="Resources\devicesSearch\MotoP.png" />
-    <Content Include="Resources\devicesSearch\MotoX.png" />
-    <Content Include="Resources\devicesSearch\MotoZ.png" />
     <Content Include="Resources\devices\moto-g-2014-1.jpg" />
     <Content Include="Resources\devices\moto-x-2014-2.jpg" />
     <Content Include="Resources\devices\moto-x-play-1.jpg" />
@@ -614,7 +614,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

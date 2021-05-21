@@ -2,7 +2,7 @@
 #####################################################################
 #    File: IniToolSettings.cs                                       #
 #    Author: Franco28                                               # 
-#    Date: 10-05-2021                                               #
+#    Date: 21-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -25,6 +25,7 @@ namespace Moto_Logo
     public static class IniToolSettings
     {
         public static CultureInfo cul = null;
+        public static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
         public static bool IsDirectoryEmpty(string path)
         {
@@ -33,7 +34,6 @@ namespace Moto_Logo
 
         public static void CreateDirectory(string directory)
         {
-            string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
             if (!Directory.Exists(exePath + @"\Files\" + directory))
             {
                 Directory.CreateDirectory(exePath + @"\Files\" + directory);
@@ -42,21 +42,26 @@ namespace Moto_Logo
 
         public static void InitilizeSettings()
         {
-            string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-
-            CheckNetFamework.IFNOT48();
-
-            // Tool Settings
-            if (!Directory.Exists(exePath + @"\Settings\"))
-            {
-                Directory.CreateDirectory(exePath + @"\Settings\");
-            }
+            // Tool Initial Settings
 
             if (!Directory.Exists(exePath + @"\Logs\"))
             {
                 Directory.CreateDirectory(exePath + @"\Logs\");
             }
+
+            CheckNetFamework.IFNOT48();
+
+            if (!Directory.Exists(exePath + @"\Settings\"))
+            {
+                Directory.CreateDirectory(exePath + @"\Settings\");
+            }
+
+            PortableSettingsProvider.SettingsFileName = "Settings.config";
+            PortableSettingsProvider.SettingsDirectory = "Settings\\";
+            PortableSettingsProvider.ApplyProvider(Properties.Settings.Default);
+            PortableSettingsProvider.ApplyProvider(Properties.Profiles.Default);
+
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
             if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
             {
@@ -71,13 +76,7 @@ namespace Moto_Logo
                 CheckNetFamework.Get48FromRegistry();
             }
 
-            PortableSettingsProvider.SettingsFileName = "settings.config";
-            PortableSettingsProvider.SettingsDirectory = "Settings\\";
-            PortableSettingsProvider.ApplyProvider(Properties.Settings.Default);
-            PortableSettingsProvider.ApplyProvider(Properties.Profiles.Default);
-
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-
             if (Properties.Settings.Default.ToolVersion == "")
             {
                 if (Properties.Settings.Default.UpgradeRequired == true)
@@ -95,10 +94,20 @@ namespace Moto_Logo
                 Properties.Settings.Default.Save();
             }
 
+            if (CheckAdmin.IsUserAdministrator() == true)
+            {
+                Properties.Settings.Default.IsAdmin = true;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.IsAdmin = false;
+                Properties.Settings.Default.Save();
+            }
+
             string x86path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
             string x64path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
 
-            // Check Others
             if (exePath == x86path || exePath == x64path)
             {
                 if (CheckAdmin.IsUserAdministrator() == false)
@@ -136,7 +145,6 @@ namespace Moto_Logo
             }
 
             string ADBpath = @"C:\\adb\\";
-
             if (!Directory.Exists(ADBpath))
             {
                 DirectoryInfo di = Directory.CreateDirectory(ADBpath);

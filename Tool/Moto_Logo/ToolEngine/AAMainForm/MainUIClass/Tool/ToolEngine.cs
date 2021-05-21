@@ -91,12 +91,61 @@ namespace Moto_Logo
             ResizeAndDisplayImage();
         }
 
+        public void FileSystemWatcherFilesFolder()
+        {
+            CallFilesFolderError();
+        }
+
         public void FileSystemWatcherErrorLogs()
         {
             CallLogError();
         }
 
         #region FileSystemWatcher
+
+        FileSystemWatcher watchFilesFolder = new FileSystemWatcher(exePath + @"\Files");
+     
+        private void CallFilesFolderError()
+        {
+            watchFilesFolder.IncludeSubdirectories = true; 
+            watchFilesFolder.NotifyFilter = NotifyFilters.DirectoryName;
+            watchFilesFolder.Changed += new FileSystemEventHandler(watchFilesFolder_Changed);
+            watchFilesFolder.Created += watchFilesFolder_Created;
+            watchFilesFolder.Deleted += watchFilesFolder_Deleted;
+            watchFilesFolder.EnableRaisingEvents = true;
+        }
+
+        private void watchFilesFolder_Deleted(object sender, FileSystemEventArgs e)
+        {
+            MessageBox.Show("Se elimino la carpeta... " + e.Name);
+            return;
+        }
+
+        private void watchFilesFolder_Created(object sender, FileSystemEventArgs e)
+        {
+            MessageBox.Show("Se creo una nueva carpeta... " + e.Name);
+            return;
+        }
+
+        private void watchFilesFolder_Changed(object sender, FileSystemEventArgs e)
+        {
+            if (e.Name == "Bin")
+            {
+                MessageBox.Show("Se renombro la carpeta... " + e.Name);
+                Directory.Move(exePath + @"\Files\Bin", exePath + @"\Files\Bin");
+            }
+            if (e.Name == "Images")
+            {
+                MessageBox.Show("Se renombro la carpeta... " + e.Name);
+                Directory.Move(exePath + @"\Files\Images", exePath + @"\Files\Images");
+            }
+            if (e.Name == "LogoZip")
+            {
+                MessageBox.Show("Se renombro la carpeta... " + e.Name);
+                Directory.Move(exePath + @"\Files\LogoZip", exePath + @"\Files\LogoZip");
+            }
+            return;
+        }
 
         FileSystemWatcher watchererrorlogs = new FileSystemWatcher();
 

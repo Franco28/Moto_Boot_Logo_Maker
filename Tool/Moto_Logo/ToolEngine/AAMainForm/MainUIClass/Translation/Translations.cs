@@ -12,6 +12,7 @@
  */
 
 using System.Globalization;
+using System.Threading;
 
 namespace Moto_Logo
 {
@@ -22,7 +23,15 @@ namespace Moto_Logo
             if (ci.Name.Contains(lang))
             {
                 Properties.Settings.Default.ToolLang = ci.Name.ToString();
+             
                 cul = CultureInfo.CreateSpecificCulture(lang);
+
+                CultureInfo ui_culture = new CultureInfo(lang);
+                CultureInfo culture = new CultureInfo(lang);
+
+                Thread.CurrentThread.CurrentUICulture = ui_culture;
+                Thread.CurrentThread.CurrentCulture = culture;
+
                 Properties.Settings.Default.Save();
             }
         }

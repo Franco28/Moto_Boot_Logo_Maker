@@ -76,7 +76,18 @@ namespace Moto_Logo
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
+                if (Properties.Settings.Default.IsAdmin == true)
+                {
+                    Properties.Settings.Default.ToolTitle = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get() + " - Administrator";
+                    Properties.Settings.Default.Save();
+                } 
+                else
+                {
+                    Properties.Settings.Default.ToolTitle = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " - PORTABLE -" + OSArchitecture.Get();
+                    Properties.Settings.Default.Save();
+                }
+
+                this.Text = Properties.Settings.Default.ToolTitle;
                 Properties.Settings.Default.Updates = false;
                 Properties.Settings.Default.Save();
                 checkForUpdatesToolStripMenuItem.Enabled = false;
@@ -84,13 +95,26 @@ namespace Moto_Logo
             }
             else
             {
-                this.Text = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " -" + OSArchitecture.Get();
+                if (Properties.Settings.Default.IsAdmin == true)
+                {
+                    Properties.Settings.Default.ToolTitle = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " -" + OSArchitecture.Get() + " - Administrator";
+                    Properties.Settings.Default.Save();
+                } 
+                else
+                {
+                    Properties.Settings.Default.ToolTitle = "Moto_Boot_Logo_Maker v" + Application.ProductVersion + " - " + Properties.Settings.Default.ToolLang + " -" + OSArchitecture.Get();
+                    Properties.Settings.Default.Save();
+                }
+
+                this.Text = Properties.Settings.Default.ToolTitle;
                 if (Properties.Settings.Default.Updates == true)
                 {
                     CheckForUpdates();
                 }
+                Properties.Settings.Default.Save();
             }
 
+            FileSystemWatcherFilesFolder();
             FileSystemWatcherErrorLogs();
 
             this.backgroundWorkerLogBuild = new BackgroundWorker();
@@ -244,9 +268,6 @@ namespace Moto_Logo
             #region OpenLogoFileAdmin
             if (CheckAdmin.IsUserAdministrator() == true)
             {
-                openFileDialog1.Filter = @"BIN file|*.bin|ZIP file|*.zip";
-                openFileDialog1.InitialDirectory = userdesktoppath;
-                if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
                     SystemSounds.Exclamation.Play();
@@ -255,6 +276,9 @@ namespace Moto_Logo
                 }
                 else
                 {
+                    openFileDialog1.Filter = @"BIN file|*.bin|ZIP file|*.zip";
+                    openFileDialog1.InitialDirectory = userdesktoppath;
+                    if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
                     OpenFile(openFileDialog1.FileName);
                     Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString();
                     Properties.Settings.Default.Save();
@@ -264,17 +288,8 @@ namespace Moto_Logo
             }
             else
             {
-                if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
-                {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
-                    return;
-                }
-                else
-                {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowInformation(res_man.GetString("OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker");
-                }
+                SystemSounds.Exclamation.Play();
+                DarkMessageBox.ShowInformation(res_man.GetString("OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker");
                 return;
             }
             #endregion OpenLogoFileAdmin

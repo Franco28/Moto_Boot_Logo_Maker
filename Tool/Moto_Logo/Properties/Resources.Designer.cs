@@ -1243,9 +1243,29 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap MotoX1 {
+            get {
+                object obj = ResourceManager.GetObject("MotoX1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap MotoZ {
             get {
                 object obj = ResourceManager.GetObject("MotoZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap MotoZ1 {
+            get {
+                object obj = ResourceManager.GetObject("MotoZ1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
