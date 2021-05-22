@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.OpenLogo.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 09-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -18,8 +18,6 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Ionic.Zip;
-using DarkUI.Forms;
-using System.Media;
 
 namespace Moto_Logo
 {
@@ -287,9 +285,8 @@ namespace Moto_Logo
             }
             catch (Exception ex)
             {
-                SystemSounds.Hand.Play();
                 Logs.DebugErrorLogs(ex);
-                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ProgressBar.Visible = false;
                 toolStripStatusLabel1.Text = @"Error: " + ex.GetBaseException();
                 Logs.LogoOpenError(@"Error: " + ex.GetBaseException());

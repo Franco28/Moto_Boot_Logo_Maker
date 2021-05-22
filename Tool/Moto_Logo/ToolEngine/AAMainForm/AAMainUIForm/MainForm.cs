@@ -16,7 +16,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Globalization;
@@ -28,7 +27,6 @@ using Image = System.Drawing.Image;
 using Timer = System.Windows.Forms.Timer;
 using TreeNode = System.Windows.Forms.TreeNode;
 using DarkUI.Forms;
-using System.Media;
 using AutoUpdaterDotNET;
 
 namespace Moto_Logo
@@ -60,8 +58,7 @@ namespace Moto_Logo
             InitializeComponent();
 
             CheckForIllegalCrossThreadCalls = false;
-            this.DoubleBuffered = true;
-            this.KeyPreview = true;
+            this.MinimumSize = new Size(1000, 910);
 
             CheckDLL.dll();
             CheckFiles.files();
@@ -235,8 +232,7 @@ namespace Moto_Logo
                     catch (Exception ex)
                     {
                         Logs.DebugErrorLogs(ex);
-                        SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                        MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             } 
@@ -260,8 +256,7 @@ namespace Moto_Logo
             #region OpenLogoFile
             if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -280,17 +275,16 @@ namespace Moto_Logo
             {
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
+                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
                 {
-                    openFileDialog1.Filter = @"BIN file|*.bin|ZIP file|*.zip";
-                    openFileDialog1.InitialDirectory = userdesktoppath;
-                    if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
-                    OpenFile(openFileDialog1.FileName);
-                    Properties.Settings.Default.LogoBinOpen = openFileDialog1.FileName.ToString();
+                    MainOpenFileDialog.Filter = @"BIN file|*.bin|ZIP file|*.zip";
+                    MainOpenFileDialog.InitialDirectory = userdesktoppath;
+                    if (MainOpenFileDialog.ShowDialog() != DialogResult.OK) return;
+                    OpenFile(MainOpenFileDialog.FileName);
+                    Properties.Settings.Default.LogoBinOpen = MainOpenFileDialog.FileName.ToString();
                     Properties.Settings.Default.Save();
                     toolStripStatusLabel3.Text = @"\ Current project: " + Properties.Settings.Default.LogoBinOpen;
                     EnableControlsWhenLoadLogo();
@@ -298,24 +292,10 @@ namespace Moto_Logo
             }
             else
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowInformation(res_man.GetString("OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Information);                
                 return;
             }
             #endregion OpenLogoFileAdmin
-        }
-
-        private void testLogoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var s = new LogoTest();
-            if (s.IsDisposed == false)
-            {
-                s.Show();
-            }
-            else
-            {
-                s.Dispose();
-            }
         }
 
         private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -375,17 +355,17 @@ namespace Moto_Logo
                         init_tree(LOGO.LOGO_ORANGE);
                         break;
                 }
-            openFileDialog1.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
-            openFileDialog1.InitialDirectory = userdesktoppath;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            MainOpenFileDialog.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
+            MainOpenFileDialog.InitialDirectory = userdesktoppath;
+            if (MainOpenFileDialog.ShowDialog() == DialogResult.OK)
             {
                 if (CheckAllIMG(5621440) == true)
                 {
                     return;
                 }
-                var img = new Bitmap(new MemoryStream(File.ReadAllBytes(openFileDialog1.FileName)));
-                AddToBitmapList(img, Path.GetFileName(openFileDialog1.FileName), txtLogoInternalFile.Text);
-                toolStripStatusLabel1.Text = openFileDialog1.FileName;
+                var img = new Bitmap(new MemoryStream(File.ReadAllBytes(MainOpenFileDialog.FileName)));
+                AddToBitmapList(img, Path.GetFileName(MainOpenFileDialog.FileName), txtLogoInternalFile.Text);
+                toolStripStatusLabel1.Text = MainOpenFileDialog.FileName;
             }
             else
             {
@@ -444,30 +424,30 @@ namespace Moto_Logo
                         break;
                 }
             }
-            saveFileDialog2.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
-            if (saveFileDialog2.ShowDialog() != DialogResult.OK) return;
+            SecondSaveFileDialog.Filter = @"Png file|*.png|Jpeg file|*.jpg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
+            if (SecondSaveFileDialog.ShowDialog() != DialogResult.OK) return;
             try
             {
-                switch (Path.GetExtension(saveFileDialog2.FileName))
+                switch (Path.GetExtension(SecondSaveFileDialog.FileName))
                 {
                     case ".gif":
-                        img.Save(saveFileDialog2.FileName, ImageFormat.Gif);
+                        img.Save(SecondSaveFileDialog.FileName, ImageFormat.Gif);
                         break;
-                    case ".jpg":
-                        img.Save(saveFileDialog2.FileName, ImageFormat.Jpeg);
+                    case ".jpeg":
+                        img.Save(SecondSaveFileDialog.FileName, ImageFormat.Jpeg);
                         break;
                     case ".bmp":
-                        img.Save(saveFileDialog2.FileName, ImageFormat.Bmp);
+                        img.Save(SecondSaveFileDialog.FileName, ImageFormat.Bmp);
                         break;
                     case ".ico":
-                        img.Save(saveFileDialog2.FileName, ImageFormat.Icon);
+                        img.Save(SecondSaveFileDialog.FileName, ImageFormat.Icon);
                         break;
                     default:
-                        img.Save(saveFileDialog2.FileName, ImageFormat.Png);
+                        img.Save(SecondSaveFileDialog.FileName, ImageFormat.Png);
                         break;
 
                 }
-                toolStripStatusLabel1.Text = res_man.GetString("ImageSaveOk", cul) + " " + Path.GetFileName(saveFileDialog2.FileName) + " " +
+                toolStripStatusLabel1.Text = res_man.GetString("ImageSaveOk", cul) + " " + Path.GetFileName(SecondSaveFileDialog.FileName) + " " +
                                              res_man.GetString("ImageSaveOk2", cul) + @" :)";
                 Application.DoEvents();
             }
@@ -475,7 +455,7 @@ namespace Moto_Logo
             {
                 Logs.DebugErrorLogs(ex);
                 toolStripStatusLabel1.Text = res_man.GetString("ExtractLogoError", cul) + @" :(";
-                DarkMessageBox.ShowError(res_man.GetString("ExtractLogoError", cul) + @" :(", @"Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("ExtractLogoError", cul) + @" :(", @"Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.DoEvents();
                 return;
             }
@@ -633,16 +613,16 @@ namespace Moto_Logo
         private void tvLogo_DoubleClick(object sender, EventArgs e)
         {
             if (tvLogo.SelectedNode == null) return;
-            openFileDialog1.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
-            openFileDialog1.InitialDirectory = userdesktoppath;
-            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+            MainOpenFileDialog.Filter = @"Png file|*.png|Jpg file|*.jpg|Jpeg file|*.jpeg|Bitmap file|*.bmp|Gif file|*.gif|Icon file|*.ico|All files|*.*";
+            MainOpenFileDialog.InitialDirectory = userdesktoppath;
+            if (MainOpenFileDialog.ShowDialog() != DialogResult.OK) return;
             if (CheckAllIMG(5621440) == true)
             {
                 return;
             }
-            var img = new Bitmap(new MemoryStream(File.ReadAllBytes(openFileDialog1.FileName)));
-            AddToBitmapList(img, Path.GetFileName(openFileDialog1.FileName), tvLogo.SelectedNode.Text);
-            toolStripStatusLabel1.Text = openFileDialog1.FileName;
+            var img = new Bitmap(new MemoryStream(File.ReadAllBytes(MainOpenFileDialog.FileName)));
+            AddToBitmapList(img, Path.GetFileName(MainOpenFileDialog.FileName), tvLogo.SelectedNode.Text);
+            toolStripStatusLabel1.Text = MainOpenFileDialog.FileName;
             tvLogo_AfterSelect(sender, null);
         }
 
@@ -765,8 +745,7 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 Logs.DebugErrorLogs(ex);
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -778,8 +757,7 @@ namespace Moto_Logo
             {
                 if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker");
+                    MessageBox.Show(res_man.GetString("SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -795,6 +773,8 @@ namespace Moto_Logo
 
         private void MainForm_Resize(object sender, EventArgs e)
         {
+            this.Text = Properties.Settings.Default.ToolTitle + " - Width: " + this.Size.Width + " " + " Heigth: " + this.Size.Height;
+
             if (this.WindowState == FormWindowState.Normal)
             {
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -818,29 +798,10 @@ namespace Moto_Logo
         {
             #region ExitToolSaveData
             var openfilename = Properties.Settings.Default.LogoBinOpen;
-            string closeadb = "adb";
-            string closefastboot = "fastboot";
-            string closetool = "Moto_Boot_Logo_Maker";
 
             if (Properties.Settings.Default.LogoWasSaved == true)
             {
-                timerupdates.Stop();
-                if (Properties.Settings.Default.SaveProfiles == true)
-                {
-                    SaveProfiles();
-                }
-                foreach (var process in Process.GetProcessesByName(closeadb))
-                {
-                    process.Kill();
-                }
-                foreach (var process in Process.GetProcessesByName(closefastboot))
-                {
-                    process.Kill();
-                }
-                foreach (var process in Process.GetProcessesByName(closetool))
-                {
-                    process.Kill();
-                }
+                KillTool();
             }
 
             if (Properties.Settings.Default.LogoBinOpen.EndsWith(".bin") && Properties.Settings.Default.LogoWasSaved == false)
@@ -848,24 +809,12 @@ namespace Moto_Logo
                 DialogResult dialogResult = MessageBox.Show(res_man.GetString("ExitLogoWasntSave1", cul) + "\n\n" + openfilename + "\n\n" + res_man.GetString("ExitLogoWasntSave2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    timerupdates.Stop();
                     if (Properties.Settings.Default.SaveProfiles == true)
                     {
                         SaveProfiles();
                     }
-                    foreach (var process in Process.GetProcessesByName(closeadb))
-                    {
-                        process.Kill();
-                    }
-                    foreach (var process in Process.GetProcessesByName(closefastboot))
-                    {
-                        process.Kill();
-                    }
-                    foreach (var process in Process.GetProcessesByName(closetool))
-                    {
-                        process.Kill();
-                    }
-                } 
+                    KillTool();
+                }
                 else if (dialogResult == DialogResult.No)
                 {
                     try
@@ -876,30 +825,13 @@ namespace Moto_Logo
                     catch (Exception ex)
                     {
                         Logs.DebugErrorLogs(ex);
-                        SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                        MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             else
             {
-                timerupdates.Stop();
-                if (Properties.Settings.Default.SaveProfiles == true)
-                {
-                    SaveProfiles();
-                }
-                foreach (var process in Process.GetProcessesByName(closeadb))
-                {
-                    process.Kill();
-                }
-                foreach (var process in Process.GetProcessesByName(closefastboot))
-                {
-                    process.Kill();
-                }
-                foreach (var process in Process.GetProcessesByName(closetool))
-                {
-                    process.Kill();
-                }
+                KillTool();
             }
             #endregion ExitToolSaveData         
         }

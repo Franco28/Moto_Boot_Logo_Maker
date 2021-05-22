@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFiles.cs                                            #
 #    Author: Franco28                                               # 
-#    Date: 29-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,8 +13,7 @@
 
 using System.IO;
 using System.Linq;
-using System.Media;
-using DarkUI.Forms;
+using System.Windows.Forms;
 
 namespace Moto_Logo
 {
@@ -29,8 +28,8 @@ namespace Moto_Logo
 
         public static void openform(string filemissing)
         {
-            SystemSounds.Hand.Play();
-            DarkMessageBox.ShowError(@"Files from: " + filemissing + " are missing, downloading files again...", "Moto_Boot_Logo_Maker files from: " + filemissing + " missing...");
+            MessageBox.Show(@"Files from: " + filemissing + " are missing, downloading files again...", "Moto_Boot_Logo_Maker files from: " + filemissing + " missing...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             var form = new CheckFilesDownload();
             form.ShowDialog();
         }
@@ -55,8 +54,8 @@ namespace Moto_Logo
         {
             if (DirSize(new DirectoryInfo(dirpath)) != size)
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(@"Something went wrong with sizes of folder: " + dirpath + ", downloading again files...", "Moto_Boot_Logo_Maker files size error...");
+                MessageBox.Show(@"Something went wrong with sizes of folder: " + dirpath + ", downloading again files...", "Moto_Boot_Logo_Maker files size error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 openform(foldername);
             }
         }

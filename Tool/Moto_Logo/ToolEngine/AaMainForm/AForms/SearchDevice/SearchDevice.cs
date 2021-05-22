@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.SearchDevice.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 29-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -17,8 +17,6 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using DarkUI.Forms;
-using System.Media;
 
 namespace Moto_Logo
 {
@@ -29,8 +27,7 @@ namespace Moto_Logo
             Form fc = Application.OpenForms["DeviceInfo"];
             if (fc != null)
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(res_man.GetString("SearchDeviceAlreadyOpened", cul) + " " + fc.Text + ", " + res_man.GetString("SearchDeviceAlreadyOpened2", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("SearchDeviceAlreadyOpened", cul) + " " + fc.Text + ", " + res_man.GetString("SearchDeviceAlreadyOpened2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 fc.BringToFront();
             }
             else
@@ -163,8 +160,7 @@ namespace Moto_Logo
 
             if (textBoxSearchDevice.Text == string.Empty)
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(res_man.GetString("SearchDevicePleaseInputDevice", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("SearchDevicePleaseInputDevice", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -1296,8 +1292,7 @@ namespace Moto_Logo
                 }
                 #endregion 4MIB Devices
 
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(textBoxSearchDevice.Text + ", " + res_man.GetString("SearchDeviceNotFound", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(textBoxSearchDevice.Text + ", " + res_man.GetString("SearchDeviceNotFound", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

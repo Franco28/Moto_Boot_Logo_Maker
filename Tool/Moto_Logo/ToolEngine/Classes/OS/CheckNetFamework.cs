@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckNetFramework.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 10-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,13 +11,12 @@
 #####################################################################
  */
 
-using DarkUI.Forms;
 using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using System.Media;
 using System.Resources;
+using System.Windows.Forms;
 
 namespace Moto_Logo
 {
@@ -38,8 +37,7 @@ namespace Moto_Logo
                     {
                         if (CheckFor48DotVersion(releaseKey) != "4.8")
                         {
-                            SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(".NET Framework version does not match with v4.8! \nDebug Info: " + CheckFor48DotVersion(releaseKey), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles");
+                            MessageBox.Show(".NET Framework version does not match with v4.8! \nDebug Info: " + CheckFor48DotVersion(releaseKey), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             Process.Start("https://dotnet.microsoft.com/download/dotnet-framework/net48");
                             Kill.PanicKillInternal();
                             return;
@@ -49,8 +47,7 @@ namespace Moto_Logo
                     {
                         if (CheckFor48DotVersion(releaseKey) != "4.8")
                         {
-                            SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(".NET Framework error missig or lower than v4.8 \nDebug Info: " + CheckFor48DotVersion(releaseKey), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles");
+                            MessageBox.Show(".NET Framework error missig or lower than v4.8 \nDebug Info: " + CheckFor48DotVersion(releaseKey), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             Process.Start("https://dotnet.microsoft.com/download/dotnet-framework/net48");
                             Kill.PanicKillInternal();
                             return;
@@ -58,10 +55,9 @@ namespace Moto_Logo
                     }
                 }
             }
-            catch (Exception er)
+            catch (Exception ex)
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(".NET Framework error" + er.ToString(), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles");
+                MessageBox.Show(".NET Framework error" + ex.ToString(), "Moto_Boot_Logo_Maker cannot be launched... .NET Framework troubles", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Process.Start("https://dotnet.microsoft.com/download/dotnet-framework/net48");
                 Kill.PanicKillInternal();
                 return;

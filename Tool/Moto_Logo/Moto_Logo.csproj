@@ -54,10 +54,6 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AndroidLib, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Setup\AndroidLib.dll</HintPath>
-    </Reference>
     <Reference Include="DarkUI, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DarkUI.2.0.2\lib\DarkUI.dll</HintPath>
     </Reference>
@@ -202,7 +198,7 @@
     <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.Designer.cs">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OpenFormsBlur\OpenForms.cs">
+    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OpenForms\OpenForms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\AAMainForm\AForms\Help\DownloadS.cs">
@@ -225,12 +221,6 @@
     </Compile>
     <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.Designer.cs">
       <DependentUpon>SelectDevice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.Designer.cs">
-      <DependentUpon>LogoTest.cs</DependentUpon>
     </Compile>
     <Compile Include="ToolEngine\AAMainForm\MainUIClass\Image\ImageEngine.cs">
       <SubType>Form</SubType>
@@ -381,9 +371,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.resx">
       <DependentUpon>SelectDevice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\LogoFlash\LogoTest.resx">
-      <DependentUpon>LogoTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Help\ReadChangelog.resx">
       <DependentUpon>ReadChangelog.cs</DependentUpon>

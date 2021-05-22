@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.UpdateEngine.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 05-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -15,8 +15,6 @@ using AutoUpdaterDotNET;
 using System;
 using System.Net;
 using System.Windows.Forms;
-using DarkUI.Forms;
-using System.Media;
 
 namespace Moto_Logo
 {
@@ -45,8 +43,7 @@ namespace Moto_Logo
             {
                 if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml") == true)
                 {
-                    SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError(@"Server is down :\", "Moto_Boot_Logo_Maker - updates");
+                    MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
                     return;
@@ -59,8 +56,7 @@ namespace Moto_Logo
             }
             else
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(res_man.GetString("ToolInternetErrorUpdate", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("ToolInternetErrorUpdate", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                 timerupdates.Stop();
                 return;
@@ -76,9 +72,8 @@ namespace Moto_Logo
                 if (args.IsUpdateAvailable)
                 {
                     DialogResult dialogResult;
-                    SystemSounds.Exclamation.Play();
 
-                    dialogResult = DarkMessageBox.ShowInformation(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul));
+                    dialogResult = MessageBox.Show(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     try
                     {
@@ -89,9 +84,8 @@ namespace Moto_Logo
                     }
                     catch (Exception ex)
                     {
-                        Logs.DebugErrorLogs(ex); 
-                        SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                        Logs.DebugErrorLogs(ex);
+                        MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                         timerupdates.Stop();
                         return;
@@ -99,8 +93,7 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowInformation(res_man.GetString("ToolNoUpdate", cul), res_man.GetString("ToolNoUpdateTitle", cul));
+                    MessageBox.Show(res_man.GetString("ToolNoUpdate", cul), res_man.GetString("ToolNoUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
@@ -111,16 +104,14 @@ namespace Moto_Logo
             {
                 if (args.Error is WebException)
                 {
-                    SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError(res_man.GetString("ToolErrorUpdate", cul), res_man.GetString("ToolErrorUpdateTitle", cul));
+                    MessageBox.Show(res_man.GetString("ToolErrorUpdate", cul), res_man.GetString("ToolErrorUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
                     return;
                 }
                 else
                 {
-                    SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError(args.Error.Message, args.Error.GetType().ToString());
+                    MessageBox.Show(args.Error.Message, args.Error.GetType().ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
                     return;

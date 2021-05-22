@@ -19,7 +19,6 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Resources;
 using DarkUI.Forms;
-using System.Media;
 
 namespace Moto_Logo
 {
@@ -435,8 +434,7 @@ namespace Moto_Logo
             Form fc = Application.OpenForms["LogoBrowser"];
             if (fc != null)
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened");
+                MessageBox.Show("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 fc.BringToFront();
             } 
             else

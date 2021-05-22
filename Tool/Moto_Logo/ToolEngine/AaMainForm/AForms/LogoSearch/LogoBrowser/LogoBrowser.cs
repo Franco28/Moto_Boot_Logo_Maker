@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 24-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -16,7 +16,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.IO;
-using System.Media;
 using System.Resources;
 using System.Windows.Forms;
 using DarkUI.Forms;
@@ -168,8 +167,7 @@ namespace Moto_Logo
             } 
             catch (Exception ex)
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.Message.ToString(), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(ex.Message.ToString(), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -207,15 +205,13 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(sN + " " + res_man.GetString("LogoBrowserErrorBinFile", cul), "Moto_Boot_Logo_Maker");
+                    MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserErrorBinFile", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             else
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(sN + " " + res_man.GetString("LogoBrowserIsADir", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserIsADir", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
                 return;
             }
         }

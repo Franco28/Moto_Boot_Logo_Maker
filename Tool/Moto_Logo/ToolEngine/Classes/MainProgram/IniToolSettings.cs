@@ -2,7 +2,7 @@
 #####################################################################
 #    File: IniToolSettings.cs                                       #
 #    Author: Franco28                                               # 
-#    Date: 21-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -12,13 +12,12 @@
  */
 
 using Bluegrams.Application;
-using DarkUI.Forms;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Media;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace Moto_Logo
 {
@@ -66,8 +65,7 @@ namespace Moto_Logo
             if (!OSVersionInfo.Name.Equals("Windows 10") && !OSVersionInfo.Name.Equals("Windows 8.1") && !OSVersionInfo.Name.Equals("Windows 8") && !OSVersionInfo.Name.Equals("Windows 7"))
             {
                 CheckNetFamework.Get48FromRegistry();
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul));
+                MessageBox.Show(res_man.GetString("ProgramCheckWindows", cul) + " " + OSVersionInfo.Name, res_man.GetString("ProgramCheckWindows2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Kill.PanicKillInternal();
                 return;
             }
@@ -112,8 +110,7 @@ namespace Moto_Logo
             {
                 if (CheckAdmin.IsUserAdministrator() == false)
                 {
-                    SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError(res_man.GetString("ProgramCheckPrivileges", cul), res_man.GetString("ProgramCheckPrivileges2", cul));
+                    MessageBox.Show(res_man.GetString("ProgramCheckPrivileges", cul), res_man.GetString("ProgramCheckPrivileges2", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Kill.PanicKillInternal();
                     return;
                 }
@@ -142,25 +139,6 @@ namespace Moto_Logo
             if (File.Exists(exePath + @"\*.zip"))
             {
                 File.Delete(exePath + @"\*.zip");
-            }
-
-            string ADBpath = @"C:\\adb\\";
-            if (!Directory.Exists(ADBpath))
-            {
-                DirectoryInfo di = Directory.CreateDirectory(ADBpath);
-                if (IsDirectoryEmpty(ADBpath) == true)
-                {
-                    Directory.CreateDirectory(ADBpath);
-                    di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
-                }
-            }
-            else
-            {
-                var dir = new DirectoryInfo(ADBpath);
-                if (IsDirectoryEmpty(ADBpath) == false)
-                {
-                    dir.Attributes = dir.Attributes & ~FileAttributes.Hidden;
-                }
             }
         }
     }

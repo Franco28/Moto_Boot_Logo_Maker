@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFilesDownload.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 22-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -17,7 +17,6 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Media;
 using System.Net;
 using System.Windows.Forms;
 using System.Xml;
@@ -91,14 +90,13 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError("Check your internet connection...", "Error Internet Connection");
+                    MessageBox.Show("Check your internet connection...", "Error Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.ToString(), ex.Source);
+                Logs.DebugErrorLogs(ex);
+                MessageBox.Show(ex.ToString() + " " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), ex.Source, MessageBoxButtons.OK, MessageBoxIcon.Warning); 
                 this.Close();
             }
             finally
@@ -125,8 +123,7 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(oConfigMng.Config.FileName + " is corrupted, downloading again...", "");
+                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     CallDownload();
                     return;
                 }
@@ -177,8 +174,7 @@ namespace Moto_Logo
                 {
                     if (InternetCheck.CheckServerRed(oConfigMng.Config.FileURL) == true)
                     {
-                        SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(@"Server is down :\", "Moto_Boot_Logo_Maker - file updates");
+                        MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - file updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         this.Close();
                     }
                     else
@@ -252,8 +248,7 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(oConfigMng.Config.FileName + " is corrupted, downloading again...", "");
+                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     CallDownload();
                     return;
                 }
@@ -283,8 +278,7 @@ namespace Moto_Logo
             {
                 sw.Stop();
                 Logs.DebugErrorLogs(ex);
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: File Extraction Error: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: File Extraction Error: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
             return;
@@ -292,8 +286,6 @@ namespace Moto_Logo
 
         private void CheckFilesDownload_FormClosing(object sender, FormClosingEventArgs e)
         {
-            string closeadb = "adb";
-            string closefastboot = "fastboot";
             string closetool = "Moto_Boot_Logo_Maker";
 
             if (webClient != null && webClient.IsBusy == true)
@@ -304,15 +296,7 @@ namespace Moto_Logo
                     case DialogResult.Yes:
                         webClient.CancelAsync();
                         webClient.Dispose();
-                        foreach (var process in Process.GetProcessesByName(closeadb))
-                        {
-                            process.Kill();
-                        }
-                        foreach (var process in Process.GetProcessesByName(closefastboot))
-                        {
-                            process.Kill();
-                        }
-                        foreach (var process in Process.GetProcessesByName(closetool))
+                          foreach (var process in Process.GetProcessesByName(closetool))
                         {
                             process.Kill();
                         }
@@ -326,8 +310,7 @@ namespace Moto_Logo
                         catch (Exception ex)
                         {
                             Logs.DebugErrorLogs(ex);
-                            SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                            MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
                 }

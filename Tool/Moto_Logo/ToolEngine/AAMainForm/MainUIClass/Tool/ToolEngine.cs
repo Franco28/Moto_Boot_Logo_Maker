@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 21-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,13 +11,11 @@
 #####################################################################
  */
 
-using DarkUI.Forms;
 using Moto_Logo.Properties;
 using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Media;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -35,8 +33,7 @@ namespace Moto_Logo
             //string errorpath = newpath + @"\DebugLogs\";
 
             string errorpath = exePath + @"\Logs\";
-            SystemSounds.Exclamation.Play();
-            DarkMessageBox.ShowInformation(res_man.GetString("ErrorLogsWarnigMSG", cul), "Moto_Boot_Logo_Maker");
+            MessageBox.Show(res_man.GetString("ErrorLogsWarnigMSG", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Process.Start(errorpath);
             return;
             #endregion gotoerror
@@ -66,8 +63,7 @@ namespace Moto_Logo
                     catch (Exception ex)
                     {
                         Logs.DebugErrorLogs(ex);
-                        SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                        MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);                   
                     }
                 }
             }
@@ -227,15 +223,15 @@ namespace Moto_Logo
                 StringBuilder clipboard = new StringBuilder();
                 clipboard.Append(labelColorDraw.Text.Replace("RGB:", "").Trim());
                 Clipboard.SetText(clipboard.ToString());
-                ToolTip1.ToolTipTitle = res_man.GetString("ToolTipRGBCOLOUR", cul);
-                ToolTip1.AutoPopDelay = 1500;
-                ToolTip1.InitialDelay = 400;
-                ToolTip1.ReshowDelay = 500;
-                ToolTip1.IsBalloon = true;
-                ToolTip1.UseAnimation = true;
-                ToolTip1.UseFading = true;
-                ToolTip1.Active = true;
-                ToolTip1.SetToolTip(labelColorDraw, res_man.GetString("ToolTipRGBCOLOUR", cul) + " " + clipboard.ToString() + " " + res_man.GetString("ToolTipRGBCOLOURCOPIED", cul));
+                MainToolTip.ToolTipTitle = res_man.GetString("ToolTipRGBCOLOUR", cul);
+                MainToolTip.AutoPopDelay = 1500;
+                MainToolTip.InitialDelay = 400;
+                MainToolTip.ReshowDelay = 500;
+                MainToolTip.IsBalloon = true;
+                MainToolTip.UseAnimation = true;
+                MainToolTip.UseFading = true;
+                MainToolTip.Active = true;
+                MainToolTip.SetToolTip(labelColorDraw, res_man.GetString("ToolTipRGBCOLOUR", cul) + " " + clipboard.ToString() + " " + res_man.GetString("ToolTipRGBCOLOURCOPIED", cul));
                 return;
             }
             else
@@ -247,8 +243,8 @@ namespace Moto_Logo
         private bool CheckAllIMG(int size2)
         {
             // NOTE: Need to check if new moto devices support more than 5.6MB (5621440 bytes)
-            var IMGExtension = Path.GetExtension(openFileDialog1.FileName);
-            long size = new FileInfo(openFileDialog1.FileName).Length;
+            var IMGExtension = Path.GetExtension(MainOpenFileDialog.FileName);
+            long size = new FileInfo(MainOpenFileDialog.FileName).Length;
            
             if (IMGExtension.EndsWith(".jpg") ||
                IMGExtension.EndsWith(".jpeg") ||
@@ -259,15 +255,13 @@ namespace Moto_Logo
             {
                 if (size >= size2)
                 {
-                    SystemSounds.Exclamation.Play();
-                    DarkMessageBox.ShowWarning(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker");
+                    MessageBox.Show(res_man.GetString("JPGimgIsToBig", cul).Replace("<IMGExtension>", IMGExtension), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return true;
                 }
             }
             else
             {
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(res_man.GetString("ErrorWrongTypeOfIMG", cul) + " \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("ErrorWrongTypeOfIMG", cul) + " \n- .png\n- .jpg\n- .jpeg\n- .bmp\n- .gif\n- .ico", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return true;
             }
             return false;
@@ -285,8 +279,8 @@ namespace Moto_Logo
 
         private void labelImageStatus_MouseLeave(object sender, EventArgs e)
         {
-            ToolTip1.Dispose();
-            ToolTip1.RemoveAll();
+            MainToolTip.Dispose();
+            MainToolTip.RemoveAll();
         }
 
         public void RestartApp()
@@ -406,9 +400,33 @@ namespace Moto_Logo
             }
             else
             {
-                SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker");
+                MessageBox.Show(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+        }
+
+        public void KillTool()
+        {
+            string closeadb = "adb";
+            string closefastboot = "fastboot";
+            string closetool = "Moto_Boot_Logo_Maker";
+
+            timerupdates.Stop();
+            if (Properties.Settings.Default.SaveProfiles == true)
+            {
+                SaveProfiles();
+            }
+            foreach (var process in Process.GetProcessesByName(closeadb))
+            {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName(closefastboot))
+            {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName(closetool))
+            {
+                process.Kill();
             }
         }
 
@@ -528,8 +546,7 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 Logs.DebugErrorLogs(ex);
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             #endregion Reload
         }

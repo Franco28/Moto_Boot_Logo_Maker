@@ -5,7 +5,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
-using System.Media;
 using System.Net;
 using System.Net.Mime;
 using System.Windows.Forms;
@@ -202,8 +201,7 @@ namespace AutoUpdaterDotNET
             catch (Exception ex)
             {
                 Logs.DebugErrorLogs(ex);
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 _webClient = null;
             }
             finally
@@ -266,8 +264,7 @@ namespace AutoUpdaterDotNET
                         catch (Exception ex)
                         {
                             Logs.DebugErrorLogs(ex);
-                            SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                            MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
                 }

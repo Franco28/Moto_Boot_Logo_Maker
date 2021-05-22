@@ -219,36 +219,8 @@ namespace Moto_Logo
             {
                 return;
             }
-            Form formBackground = new Form();
-            try
-            {
-                using (Credits uu = new Credits())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
-            return;
+            var credits = new Credits();
+            credits.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Program.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 01-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -14,10 +14,8 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using System.Media;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using DarkUI.Forms;
 
 namespace Moto_Logo
 {
@@ -39,8 +37,7 @@ namespace Moto_Logo
                 if (process > 1)
                 {
                     SetForegroundWindow(process);
-                    SystemSounds.Exclamation.Play();          
-                    DarkMessageBox.ShowError(res_man.GetString("ProgramCheckBackRun", cul), res_man.GetString("ProgramCheckBackRun2", cul));
+                    MessageBox.Show(res_man.GetString("ProgramCheckBackRun", cul), res_man.GetString("ProgramCheckBackRun2", cul), MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -56,9 +53,8 @@ namespace Moto_Logo
             }
             catch (Exception ex)
             {
-                Logs.DebugErrorLogs(ex); 
-                SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError("Moto_Boot_Logo_Maker: Start up error: " + ex, "EXECUTING FATAL ERROR: Moto_Boot_Logo_Maker " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                Logs.DebugErrorLogs(ex);
+                MessageBox.Show("Moto_Boot_Logo_Maker: Start up error: " + ex, "EXECUTING FATAL ERROR: Moto_Boot_Logo_Maker " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Kill.PanicKill();
                 return;
             }

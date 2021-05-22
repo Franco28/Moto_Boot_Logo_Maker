@@ -11,6 +11,8 @@ NOTE: Some translations are missing, I will be working on this, for now still in
 - [improve] Internal Code
 - [improve] Tool DPI Resolution
 - [improve] MainForm UI 
+- [removed] DarkUI Dialogs
+- [dropped] LogoTest
 
 ---------------------------------------
 v4.4.4.3 - Released May 14, 2021
