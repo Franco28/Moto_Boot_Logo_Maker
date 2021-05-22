@@ -209,19 +209,6 @@ namespace Moto_Logo.Properties {
         [global::System.Configuration.SettingsProviderAttribute(typeof(Bluegrams.Application.PortableSettingsProvider))]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool KeepLogoBinFormatGrid {
-            get {
-                return ((bool)(this["KeepLogoBinFormatGrid"]));
-            }
-            set {
-                this["KeepLogoBinFormatGrid"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Configuration.SettingsProviderAttribute(typeof(Bluegrams.Application.PortableSettingsProvider))]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool IsAdmin {
             get {
                 return ((bool)(this["IsAdmin"]));

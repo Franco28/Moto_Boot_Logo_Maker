@@ -199,11 +199,11 @@ namespace AutoUpdaterDotNET
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(e);
+                Logs.DebugErrorLogs(ex);
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(e.Message, e.GetType().ToString());
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                 _webClient = null;
             }
             finally
@@ -263,11 +263,11 @@ namespace AutoUpdaterDotNET
                             e.Cancel = true;
                             return;
                         }
-                        catch (Exception er)
+                        catch (Exception ex)
                         {
-                            Logs.DebugErrorLogs(er);
+                            Logs.DebugErrorLogs(ex);
                             SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                            DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                         }
                         break;
                 }

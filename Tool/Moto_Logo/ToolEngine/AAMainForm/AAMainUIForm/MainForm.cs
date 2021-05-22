@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 27-04-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -114,6 +114,12 @@ namespace Moto_Logo
                 Properties.Settings.Default.Save();
             }
 
+            labelErrorIcon.Visible = false;
+            labelErrorInfo.Visible = false;
+            labelErrorGoToFileInfo.Visible = false;
+            labelGoToError.Visible = false;
+            toolStripSeparator11.Visible = false;
+
             FileSystemWatcherFilesFolder();
             FileSystemWatcherErrorLogs();
 
@@ -138,6 +144,9 @@ namespace Moto_Logo
             _ZoomFactor = trbZoomFactor.Value;
             _BackColor = pictureBox1.BackColor;
             picZoom.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            udResolutionX.Controls[0].Enabled = false;
+            udResolutionY.Controls[0].Enabled = false;
 
             IniUITool();
             #endregion Settings
@@ -185,6 +194,7 @@ namespace Moto_Logo
                             groupBoxLogoImageOption.Enabled = true;
                             groupBoxLogoImageOrientation.Enabled = true;
                             DisableControls();
+                            this.Text = Properties.Settings.Default.ToolTitle;
                             break;
                         case DialogResult.No:
                             Properties.Settings.Default.LogoWasSaved = false;
@@ -222,11 +232,11 @@ namespace Moto_Logo
                     {
                         return;
                     }
-                    catch (Exception er)
+                    catch (Exception ex)
                     {
-                        Logs.DebugErrorLogs(er);
+                        Logs.DebugErrorLogs(ex);
                         SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                     }
                 }
             } 
@@ -461,11 +471,13 @@ namespace Moto_Logo
                                              res_man.GetString("ImageSaveOk2", cul) + @" :)";
                 Application.DoEvents();
             }
-            catch (Exception er)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(er);
+                Logs.DebugErrorLogs(ex);
                 toolStripStatusLabel1.Text = res_man.GetString("ExtractLogoError", cul) + @" :(";
+                DarkMessageBox.ShowError(res_man.GetString("ExtractLogoError", cul) + @" :(", @"Moto_Boot_Logo_Maker");
                 Application.DoEvents();
+                return;
             }
             #endregion ExtractImageFromLogo
         }
@@ -750,11 +762,11 @@ namespace Moto_Logo
                                             (Path.GetExtension(files[0]) == ".zip")))
                     e.Effect = DragDropEffects.Copy;
             } 
-            catch (Exception er)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(er);
+                Logs.DebugErrorLogs(ex);
                 SystemSounds.Exclamation.Play();
-                DarkMessageBox.ShowWarning(er.ToString(), "Moto_Boot_Logo_Maker");
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
             }
         }
 
@@ -865,11 +877,11 @@ namespace Moto_Logo
                         e.Cancel = true;
                         return;
                     }
-                    catch (Exception er)
+                    catch (Exception ex)
                     {
-                        Logs.DebugErrorLogs(er);
+                        Logs.DebugErrorLogs(ex);
                         SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                     }
                 }
             }

@@ -248,8 +248,8 @@ namespace Moto_Logo
             {
                 Logs.DebugErrorLogs(ex); 
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(@"" + ex.ToString(), "");
                 cAppend("ERROR TASK {FLASHING}: " + ex.ToString());
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
             }
         }
 
@@ -290,6 +290,8 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 Logs.DebugErrorLogs(ex);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                 cAppend("ERROR TASK {KILLING ADB SERVICES}: " + ex.ToString());
             }
         }

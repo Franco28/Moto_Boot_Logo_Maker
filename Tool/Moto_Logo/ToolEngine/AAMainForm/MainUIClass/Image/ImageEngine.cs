@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ImageEngine.cs                                  #
 #    Author: Franco28                                               # 
-#    Date: 20-04-2021                                               #
+#    Date: 21-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,11 +11,13 @@
 #####################################################################
  */
 
+using DarkUI.Forms;
 using Moto_Logo.Properties;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Moto_Logo
@@ -69,9 +71,12 @@ namespace Moto_Logo
                     UpdateZoomedImage(e);
                 }
             }
-            catch (Exception er)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(er);
+                Logs.DebugErrorLogs(ex);
+                SystemSounds.Hand.Play();
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+                return;
             }
         }
 

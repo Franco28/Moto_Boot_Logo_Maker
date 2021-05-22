@@ -125,7 +125,7 @@ namespace AutoUpdaterDotNET
             // UpdateForm
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.labelspeed);
@@ -140,6 +140,7 @@ namespace AutoUpdaterDotNET
             this.Controls.Add(this.labelReleaseNotes);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.pictureBoxIcon);
+            this.DoubleBuffered = true;
             this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

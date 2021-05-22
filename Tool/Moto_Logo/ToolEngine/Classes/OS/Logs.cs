@@ -12,6 +12,7 @@
  */
 
 using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Net;
@@ -120,6 +121,29 @@ namespace Moto_Logo
             }
         }
 
+        public static int GetLineNumber(Exception ex)
+        {
+            var lineNumber = 0;
+            const string lineSearch = ":line ";
+            var index = ex.StackTrace.LastIndexOf(lineSearch);
+            if (index != -1)
+            {
+                var lineNumberText = ex.StackTrace.Substring(index + lineSearch.Length);
+                if (int.TryParse(lineNumberText, out lineNumber))
+                {
+                }
+            }
+            return lineNumber;
+        }
+
+        public static string GetClassName(Exception ex)
+        {
+            StackTrace trace = new System.Diagnostics.StackTrace(ex, true);
+            string classname = trace.GetFrame(0).GetMethod().ReflectedType.FullName;
+
+            return classname;
+        }
+
         public static void DebugErrorLogs(Exception er)
         {
             //var path = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
@@ -134,6 +158,10 @@ namespace Moto_Logo
             string filePath = exePath + @"\Logs\Error_" + Environment.UserName + ".txt";
 
             Exception ex = er;
+
+            int lineerror = GetLineNumber(ex);
+            string classname = GetClassName(ex);
+
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine("-----------------------------------------------------------------------------");
@@ -141,7 +169,8 @@ namespace Moto_Logo
                 writer.WriteLine("Tool Version: v" + Application.ProductVersion);
                 writer.WriteLine("Tool Build Date: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString());
                 writer.WriteLine();
-                writer.WriteLine("ERROR: ");
+                writer.WriteLine("Class Name: " + classname.ToString());
+                writer.WriteLine("Line: " + lineerror.ToString());
                 writer.WriteLine();
 
                 while (ex != null)

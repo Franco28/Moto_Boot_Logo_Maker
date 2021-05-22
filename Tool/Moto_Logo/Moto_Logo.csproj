@@ -271,10 +271,10 @@
     </Compile>
     <Compile Include="ToolEngine\Classes\PortableSettingsProvider\PortableSettingsProvider.cs" />
     <Compile Include="ToolEngine\Classes\PortableSettingsProvider\Shared\PortableSettingsProviderBase.cs" />
-    <Compile Include="ToolEngine\AAAMainUI\MainForm.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAAMainUI\MainForm.Designer.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -391,7 +391,7 @@
     <EmbeddedResource Include="ToolEngine\AAMainForm\AForms\Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\MainForm.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -414,46 +414,46 @@
     <None Include="app.config" />
     <None Include="Resources\bin\motorun.bin" />
     <None Include="Properties\app.manifest" />
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.de.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.de.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.en.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.es.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.es.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.fr.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.fr.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ga.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.ga.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.it.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.it.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.pl.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.pl.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.pt.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.pt.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ru.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.tr.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.tr.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.ja.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.ja.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-CN.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.zh-CN.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-Hans.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.zh-Hans.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToolEngine\AAAMainUI\Resources.zh-Hant.resx">
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.zh-Hant.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -614,7 +614,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

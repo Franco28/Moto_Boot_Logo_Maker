@@ -21,7 +21,6 @@ if exist "%dirset86%HtmlAgilityPack.xml" (del /F "%dirset86%HtmlAgilityPack.xml"
 
 if exist "%dirset86%Newtonsoft.Json.xml" (del /F "%dirset86%Newtonsoft.Json.xml") else (echo File Newtonsoft.Json.xml already removed) 
 
-
 if exist "%dirset86%Moto_Boot_Logo_Maker.exe" (del /F "%dirset86%Moto_Boot_Logo_Maker.exe") else (echo File Moto_Boot_Logo_Maker.exe already removed) 
 if exist "%dirset86%Moto_Boot_Logo_Maker.exe.config" (del /F "%dirset86%Moto_Boot_Logo_Maker.exe.config") else (echo File Moto_Boot_Logo_Maker.exe.config already removed) 
 if exist "%dirset86%Moto_Boot_Logo_Maker.application" (del /F "%dirset86%Moto_Boot_Logo_Maker.application") else (echo File Moto_Boot_Logo_Maker.application already removed) 

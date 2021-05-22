@@ -91,7 +91,7 @@ namespace Moto_Logo
                     {
                         Logs.DebugErrorLogs(ex); 
                         SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(ex.Message, ex.GetType().ToString());
+                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                         AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                         timerupdates.Stop();
                         return;

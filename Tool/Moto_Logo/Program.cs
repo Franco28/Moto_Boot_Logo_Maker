@@ -15,6 +15,7 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Media;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using DarkUI.Forms;
 
@@ -22,6 +23,9 @@ namespace Moto_Logo
 {
     static class Program
     {
+        [DllImport("User32.dll")]
+        public static extern Int32 SetForegroundWindow(int hWnd);
+
         public static CultureInfo cul = null;
 
         [STAThread]
@@ -31,25 +35,30 @@ namespace Moto_Logo
             {
                 var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-                if (Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1)
+                int process = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length;
+                if (process > 1)
                 {
-                    SystemSounds.Hand.Play();
+                    SetForegroundWindow(process);
+                    SystemSounds.Exclamation.Play();          
                     DarkMessageBox.ShowError(res_man.GetString("ProgramCheckBackRun", cul), res_man.GetString("ProgramCheckBackRun2", cul));
                     return;
                 }
 
                 // Ini Tool Settings -> IniToolSettings.cs
                 IniToolSettings.InitilizeSettings();
+                
+                if (Environment.OSVersion.Version.Major >= 6)
+                    SetProcessDPIAware();
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Start();
             }
-            catch (Exception er)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(er); 
+                Logs.DebugErrorLogs(ex); 
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError("Moto_Boot_Logo_Maker: Start up error: " + er, "EXECUTING FATAL ERROR: Moto_Boot_Logo_Maker");
+                DarkMessageBox.ShowError("Moto_Boot_Logo_Maker: Start up error: " + ex, "EXECUTING FATAL ERROR: Moto_Boot_Logo_Maker " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                 Kill.PanicKill();
                 return;
             }
@@ -59,5 +68,8 @@ namespace Moto_Logo
         {
             Application.Run(new MainForm());
         }
+
+        [DllImport("User32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 }

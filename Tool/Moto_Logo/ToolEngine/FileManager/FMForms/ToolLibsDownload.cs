@@ -291,12 +291,12 @@ namespace Moto_Logo
                     }
                 }
             }
-            catch (Exception er)
+            catch (Exception ex)
             {
                 sw.Stop();
-                Logs.DebugErrorLogs(er);
+                Logs.DebugErrorLogs(ex);
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(er.ToString(), "File Extraction Error");
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: File Extraction Error: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                 this.Close();
             }
             return;
@@ -335,11 +335,11 @@ namespace Moto_Logo
                             e.Cancel = true;
                             return;
                         }
-                        catch (Exception er)
+                        catch (Exception ex)
                         {
-                            Logs.DebugErrorLogs(er);
+                            Logs.DebugErrorLogs(ex);
                             SystemSounds.Hand.Play();
-                            DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                            DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                         }
                         break;
                 }

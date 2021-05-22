@@ -62,27 +62,28 @@ namespace Moto_Logo
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.GroupBoxELBF = new DarkUI.Controls.DarkGroupBox();
-            this.RadioButtonNoELBF = new DarkUI.Controls.DarkRadioButton();
-            this.RadioButtonYesELBF = new DarkUI.Controls.DarkRadioButton();
-            this.linkMoreInfo = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.darkTitle1 = new DarkUI.Controls.DarkTitle();
-            this.label7 = new System.Windows.Forms.Label();
-            this.linkHideMoreInfo = new System.Windows.Forms.LinkLabel();
-            this.labelRebootTool = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanelgroupBoxEASP = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBoxEASP.SuspendLayout();
             this.groupBoxEASLIM.SuspendLayout();
             this.groupBoxEU.SuspendLayout();
-            this.GroupBoxELBF.SuspendLayout();
+            this.flowLayoutPanelgroupBoxEASP.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelIconWarning
             // 
+            this.labelIconWarning.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelIconWarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelIconWarning.Image = ((System.Drawing.Image)(resources.GetObject("labelIconWarning.Image")));
-            this.labelIconWarning.Location = new System.Drawing.Point(9, 21);
+            this.labelIconWarning.Location = new System.Drawing.Point(3, 0);
             this.labelIconWarning.Name = "labelIconWarning";
             this.labelIconWarning.Size = new System.Drawing.Size(28, 28);
             this.labelIconWarning.TabIndex = 10;
@@ -92,10 +93,11 @@ namespace Moto_Logo
             this.groupBoxEASP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxEASP.Controls.Add(this.radioButtonNO);
             this.groupBoxEASP.Controls.Add(this.radioButtonYES);
+            this.groupBoxEASP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxEASP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBoxEASP.Location = new System.Drawing.Point(55, 234);
+            this.groupBoxEASP.Location = new System.Drawing.Point(46, 3);
             this.groupBoxEASP.Name = "groupBoxEASP";
-            this.groupBoxEASP.Size = new System.Drawing.Size(512, 50);
+            this.groupBoxEASP.Size = new System.Drawing.Size(537, 50);
             this.groupBoxEASP.TabIndex = 41;
             this.groupBoxEASP.TabStop = false;
             this.groupBoxEASP.Text = "Enable auto save profiles?";
@@ -103,6 +105,7 @@ namespace Moto_Logo
             // radioButtonNO
             // 
             this.radioButtonNO.AutoSize = true;
+            this.radioButtonNO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonNO.Location = new System.Drawing.Point(74, 22);
             this.radioButtonNO.Name = "radioButtonNO";
             this.radioButtonNO.Size = new System.Drawing.Size(47, 21);
@@ -114,6 +117,7 @@ namespace Moto_Logo
             // 
             this.radioButtonYES.AutoSize = true;
             this.radioButtonYES.Checked = true;
+            this.radioButtonYES.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonYES.Location = new System.Drawing.Point(6, 22);
             this.radioButtonYES.Name = "radioButtonYES";
             this.radioButtonYES.Size = new System.Drawing.Size(53, 21);
@@ -125,10 +129,10 @@ namespace Moto_Logo
             // buttonOpenToolFolder
             // 
             this.buttonOpenToolFolder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenToolFolder.Location = new System.Drawing.Point(12, 195);
+            this.buttonOpenToolFolder.Location = new System.Drawing.Point(3, 32);
             this.buttonOpenToolFolder.Name = "buttonOpenToolFolder";
             this.buttonOpenToolFolder.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonOpenToolFolder.Size = new System.Drawing.Size(555, 23);
+            this.buttonOpenToolFolder.Size = new System.Drawing.Size(580, 23);
             this.buttonOpenToolFolder.TabIndex = 42;
             this.buttonOpenToolFolder.Text = "Open Tool Folder";
             this.buttonOpenToolFolder.Click += new System.EventHandler(this.btngotosettingslogs_Click);
@@ -136,10 +140,11 @@ namespace Moto_Logo
             // buttonRTP
             // 
             this.buttonRTP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonRTP.Location = new System.Drawing.Point(12, 76);
+            this.buttonRTP.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonRTP.Location = new System.Drawing.Point(3, 32);
             this.buttonRTP.Name = "buttonRTP";
             this.buttonRTP.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonRTP.Size = new System.Drawing.Size(555, 23);
+            this.buttonRTP.Size = new System.Drawing.Size(580, 23);
             this.buttonRTP.TabIndex = 43;
             this.buttonRTP.Text = "Reset Tool Profile";
             this.buttonRTP.Click += new System.EventHandler(this.button1_Click);
@@ -147,10 +152,11 @@ namespace Moto_Logo
             // buttonRTS
             // 
             this.buttonRTS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonRTS.Location = new System.Drawing.Point(12, 105);
+            this.buttonRTS.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonRTS.Location = new System.Drawing.Point(3, 61);
             this.buttonRTS.Name = "buttonRTS";
             this.buttonRTS.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonRTS.Size = new System.Drawing.Size(555, 23);
+            this.buttonRTS.Size = new System.Drawing.Size(580, 23);
             this.buttonRTS.TabIndex = 44;
             this.buttonRTS.Text = "Reset Tool Settings";
             this.buttonRTS.Click += new System.EventHandler(this.button2_Click);
@@ -159,7 +165,7 @@ namespace Moto_Logo
             // 
             this.labelGeneralSettings.AutoSize = true;
             this.labelGeneralSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.labelGeneralSettings.Location = new System.Drawing.Point(43, 147);
+            this.labelGeneralSettings.Location = new System.Drawing.Point(37, 0);
             this.labelGeneralSettings.Name = "labelGeneralSettings";
             this.labelGeneralSettings.Size = new System.Drawing.Size(192, 29);
             this.labelGeneralSettings.TabIndex = 45;
@@ -168,8 +174,9 @@ namespace Moto_Logo
             // labelResetTool
             // 
             this.labelResetTool.AutoSize = true;
+            this.labelResetTool.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelResetTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.labelResetTool.Location = new System.Drawing.Point(43, 21);
+            this.labelResetTool.Location = new System.Drawing.Point(37, 0);
             this.labelResetTool.Name = "labelResetTool";
             this.labelResetTool.Size = new System.Drawing.Size(132, 29);
             this.labelResetTool.TabIndex = 46;
@@ -180,10 +187,11 @@ namespace Moto_Logo
             this.groupBoxEASLIM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxEASLIM.Controls.Add(this.radioButtonNOLogo);
             this.groupBoxEASLIM.Controls.Add(this.radioButtonYESLogo);
+            this.groupBoxEASLIM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxEASLIM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBoxEASLIM.Location = new System.Drawing.Point(55, 297);
+            this.groupBoxEASLIM.Location = new System.Drawing.Point(46, 3);
             this.groupBoxEASLIM.Name = "groupBoxEASLIM";
-            this.groupBoxEASLIM.Size = new System.Drawing.Size(512, 50);
+            this.groupBoxEASLIM.Size = new System.Drawing.Size(537, 50);
             this.groupBoxEASLIM.TabIndex = 42;
             this.groupBoxEASLIM.TabStop = false;
             this.groupBoxEASLIM.Text = "Enable auto save logo in memory?";
@@ -192,6 +200,7 @@ namespace Moto_Logo
             // 
             this.radioButtonNOLogo.AutoSize = true;
             this.radioButtonNOLogo.Checked = true;
+            this.radioButtonNOLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonNOLogo.Location = new System.Drawing.Point(74, 22);
             this.radioButtonNOLogo.Name = "radioButtonNOLogo";
             this.radioButtonNOLogo.Size = new System.Drawing.Size(47, 21);
@@ -203,6 +212,7 @@ namespace Moto_Logo
             // radioButtonYESLogo
             // 
             this.radioButtonYESLogo.AutoSize = true;
+            this.radioButtonYESLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonYESLogo.Location = new System.Drawing.Point(6, 22);
             this.radioButtonYESLogo.Name = "radioButtonYESLogo";
             this.radioButtonYESLogo.Size = new System.Drawing.Size(53, 21);
@@ -215,10 +225,11 @@ namespace Moto_Logo
             this.groupBoxEU.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.groupBoxEU.Controls.Add(this.radioButtonNOUpdates);
             this.groupBoxEU.Controls.Add(this.radioButtonYESUpdates);
+            this.groupBoxEU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxEU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBoxEU.Location = new System.Drawing.Point(55, 356);
+            this.groupBoxEU.Location = new System.Drawing.Point(46, 3);
             this.groupBoxEU.Name = "groupBoxEU";
-            this.groupBoxEU.Size = new System.Drawing.Size(512, 50);
+            this.groupBoxEU.Size = new System.Drawing.Size(537, 50);
             this.groupBoxEU.TabIndex = 42;
             this.groupBoxEU.TabStop = false;
             this.groupBoxEU.Text = "Enable auto updates?";
@@ -226,6 +237,7 @@ namespace Moto_Logo
             // radioButtonNOUpdates
             // 
             this.radioButtonNOUpdates.AutoSize = true;
+            this.radioButtonNOUpdates.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonNOUpdates.Location = new System.Drawing.Point(74, 22);
             this.radioButtonNOUpdates.Name = "radioButtonNOUpdates";
             this.radioButtonNOUpdates.Size = new System.Drawing.Size(47, 21);
@@ -237,6 +249,7 @@ namespace Moto_Logo
             // 
             this.radioButtonYESUpdates.AutoSize = true;
             this.radioButtonYESUpdates.Checked = true;
+            this.radioButtonYESUpdates.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonYESUpdates.Location = new System.Drawing.Point(6, 22);
             this.radioButtonYESUpdates.Name = "radioButtonYESUpdates";
             this.radioButtonYESUpdates.Size = new System.Drawing.Size(53, 21);
@@ -248,171 +261,105 @@ namespace Moto_Logo
             // label1
             // 
             this.label1.Image = global::Moto_Logo.Properties.Resources.generalsettings_x32;
-            this.label1.Location = new System.Drawing.Point(9, 147);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 28);
             this.label1.TabIndex = 47;
             // 
             // label2
             // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Image = global::Moto_Logo.Properties.Resources.sprofile_x32;
-            this.label2.Location = new System.Drawing.Point(12, 234);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 50);
+            this.label2.Size = new System.Drawing.Size(37, 56);
             this.label2.TabIndex = 48;
             // 
             // label3
             // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Image = global::Moto_Logo.Properties.Resources.smemory_x32;
-            this.label3.Location = new System.Drawing.Point(12, 297);
+            this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 50);
+            this.label3.Size = new System.Drawing.Size(37, 56);
             this.label3.TabIndex = 49;
             // 
             // label4
             // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.Image = global::Moto_Logo.Properties.Resources.aupdates_x32;
-            this.label4.Location = new System.Drawing.Point(12, 356);
+            this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 50);
+            this.label4.Size = new System.Drawing.Size(37, 56);
             this.label4.TabIndex = 50;
             // 
-            // label5
+            // flowLayoutPanelgroupBoxEASP
             // 
-            this.label5.Image = global::Moto_Logo.Properties.Resources.binIcon_x32;
-            this.label5.Location = new System.Drawing.Point(12, 481);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 50);
-            this.label5.TabIndex = 52;
+            this.flowLayoutPanelgroupBoxEASP.Controls.Add(this.label2);
+            this.flowLayoutPanelgroupBoxEASP.Controls.Add(this.groupBoxEASP);
+            this.flowLayoutPanelgroupBoxEASP.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanelgroupBoxEASP.Location = new System.Drawing.Point(0, 303);
+            this.flowLayoutPanelgroupBoxEASP.Name = "flowLayoutPanelgroupBoxEASP";
+            this.flowLayoutPanelgroupBoxEASP.Size = new System.Drawing.Size(587, 57);
+            this.flowLayoutPanelgroupBoxEASP.TabIndex = 51;
             // 
-            // GroupBoxELBF
+            // flowLayoutPanel1
             // 
-            this.GroupBoxELBF.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.GroupBoxELBF.Controls.Add(this.RadioButtonNoELBF);
-            this.GroupBoxELBF.Controls.Add(this.RadioButtonYesELBF);
-            this.GroupBoxELBF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.GroupBoxELBF.Location = new System.Drawing.Point(55, 481);
-            this.GroupBoxELBF.Name = "GroupBoxELBF";
-            this.GroupBoxELBF.Size = new System.Drawing.Size(512, 50);
-            this.GroupBoxELBF.TabIndex = 51;
-            this.GroupBoxELBF.TabStop = false;
-            this.GroupBoxELBF.Text = "Enable logo bin format?";
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.groupBoxEASLIM);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 246);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(587, 57);
+            this.flowLayoutPanel1.TabIndex = 52;
             // 
-            // RadioButtonNoELBF
+            // flowLayoutPanel2
             // 
-            this.RadioButtonNoELBF.AutoSize = true;
-            this.RadioButtonNoELBF.Checked = true;
-            this.RadioButtonNoELBF.Location = new System.Drawing.Point(74, 22);
-            this.RadioButtonNoELBF.Name = "RadioButtonNoELBF";
-            this.RadioButtonNoELBF.Size = new System.Drawing.Size(47, 21);
-            this.RadioButtonNoELBF.TabIndex = 1;
-            this.RadioButtonNoELBF.TabStop = true;
-            this.RadioButtonNoELBF.Text = "NO";
-            this.RadioButtonNoELBF.CheckedChanged += new System.EventHandler(this.RadioButtonNoELBF_CheckedChanged);
+            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel2.Controls.Add(this.label4);
+            this.flowLayoutPanel2.Controls.Add(this.groupBoxEU);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 189);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(587, 57);
+            this.flowLayoutPanel2.TabIndex = 53;
             // 
-            // RadioButtonYesELBF
+            // flowLayoutPanel3
             // 
-            this.RadioButtonYesELBF.AutoSize = true;
-            this.RadioButtonYesELBF.Location = new System.Drawing.Point(6, 22);
-            this.RadioButtonYesELBF.Name = "RadioButtonYesELBF";
-            this.RadioButtonYesELBF.Size = new System.Drawing.Size(53, 21);
-            this.RadioButtonYesELBF.TabIndex = 0;
-            this.RadioButtonYesELBF.Text = "YES";
-            this.RadioButtonYesELBF.CheckedChanged += new System.EventHandler(this.RadioButtonYesELBF_CheckedChanged);
+            this.flowLayoutPanel3.Controls.Add(this.labelIconWarning);
+            this.flowLayoutPanel3.Controls.Add(this.labelResetTool);
+            this.flowLayoutPanel3.Controls.Add(this.buttonRTP);
+            this.flowLayoutPanel3.Controls.Add(this.buttonRTS);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(587, 104);
+            this.flowLayoutPanel3.TabIndex = 54;
             // 
-            // linkMoreInfo
+            // flowLayoutPanel4
             // 
-            this.linkMoreInfo.AutoSize = true;
-            this.linkMoreInfo.LinkColor = System.Drawing.Color.Yellow;
-            this.linkMoreInfo.Location = new System.Drawing.Point(52, 539);
-            this.linkMoreInfo.Name = "linkMoreInfo";
-            this.linkMoreInfo.Size = new System.Drawing.Size(52, 13);
-            this.linkMoreInfo.TabIndex = 53;
-            this.linkMoreInfo.TabStop = true;
-            this.linkMoreInfo.Text = "More Info";
-            this.linkMoreInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkMoreInfo_LinkClicked);
-            // 
-            // label6
-            // 
-            this.label6.Image = global::Moto_Logo.Properties.Resources.toolUIIcon_x32;
-            this.label6.Location = new System.Drawing.Point(9, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 28);
-            this.label6.TabIndex = 55;
-            // 
-            // darkTitle1
-            // 
-            this.darkTitle1.AutoSize = true;
-            this.darkTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.darkTitle1.Location = new System.Drawing.Point(43, 422);
-            this.darkTitle1.Name = "darkTitle1";
-            this.darkTitle1.Size = new System.Drawing.Size(92, 29);
-            this.darkTitle1.TabIndex = 54;
-            this.darkTitle1.Text = "Tool UI";
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(52, 561);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(515, 49);
-            this.label7.TabIndex = 56;
-            this.label7.Text = "This option enables in Tool the grid of ´logo.bin format´ options to build your L" +
-    "ogo. If you don´t know what this do, keep it disable!";
-            // 
-            // linkHideMoreInfo
-            // 
-            this.linkHideMoreInfo.AutoSize = true;
-            this.linkHideMoreInfo.LinkColor = System.Drawing.Color.Red;
-            this.linkHideMoreInfo.Location = new System.Drawing.Point(538, 597);
-            this.linkHideMoreInfo.Name = "linkHideMoreInfo";
-            this.linkHideMoreInfo.Size = new System.Drawing.Size(29, 13);
-            this.linkHideMoreInfo.TabIndex = 57;
-            this.linkHideMoreInfo.TabStop = true;
-            this.linkHideMoreInfo.Text = "Hide";
-            this.linkHideMoreInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHideMoreInfo_LinkClicked);
-            // 
-            // labelRebootTool
-            // 
-            this.labelRebootTool.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelRebootTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRebootTool.ForeColor = System.Drawing.Color.Gold;
-            this.labelRebootTool.Location = new System.Drawing.Point(52, 460);
-            this.labelRebootTool.Name = "labelRebootTool";
-            this.labelRebootTool.Size = new System.Drawing.Size(515, 21);
-            this.labelRebootTool.TabIndex = 58;
-            this.labelRebootTool.Text = "NOTE: If you changed value of Enable Logo bin format; Click me to reboot Tool to " +
-    "see updated controls!";
-            this.labelRebootTool.Click += new System.EventHandler(this.labelRebootTool_Click);
+            this.flowLayoutPanel4.Controls.Add(this.label1);
+            this.flowLayoutPanel4.Controls.Add(this.labelGeneralSettings);
+            this.flowLayoutPanel4.Controls.Add(this.buttonOpenToolFolder);
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 104);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(587, 73);
+            this.flowLayoutPanel4.TabIndex = 55;
             // 
             // ToolSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.ClientSize = new System.Drawing.Size(579, 619);
-            this.Controls.Add(this.labelRebootTool);
-            this.Controls.Add(this.linkHideMoreInfo);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.darkTitle1);
-            this.Controls.Add(this.linkMoreInfo);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.GroupBoxELBF);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBoxEU);
-            this.Controls.Add(this.groupBoxEASLIM);
-            this.Controls.Add(this.labelResetTool);
-            this.Controls.Add(this.labelGeneralSettings);
-            this.Controls.Add(this.buttonRTS);
-            this.Controls.Add(this.buttonRTP);
-            this.Controls.Add(this.buttonOpenToolFolder);
-            this.Controls.Add(this.groupBoxEASP);
-            this.Controls.Add(this.labelIconWarning);
+            this.ClientSize = new System.Drawing.Size(587, 360);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanelgroupBoxEASP);
+            this.DoubleBuffered = true;
             this.FlatBorder = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -432,10 +379,14 @@ namespace Moto_Logo
             this.groupBoxEASLIM.PerformLayout();
             this.groupBoxEU.ResumeLayout(false);
             this.groupBoxEU.PerformLayout();
-            this.GroupBoxELBF.ResumeLayout(false);
-            this.GroupBoxELBF.PerformLayout();
+            this.flowLayoutPanelgroupBoxEASP.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -459,16 +410,11 @@ namespace Moto_Logo
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private DarkUI.Controls.DarkGroupBox GroupBoxELBF;
-        private DarkUI.Controls.DarkRadioButton RadioButtonNoELBF;
-        private DarkUI.Controls.DarkRadioButton RadioButtonYesELBF;
-        private System.Windows.Forms.LinkLabel linkMoreInfo;
-        private System.Windows.Forms.Label label6;
-        private DarkUI.Controls.DarkTitle darkTitle1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.LinkLabel linkHideMoreInfo;
-        private System.Windows.Forms.Label labelRebootTool;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelgroupBoxEASP;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
     }
 }

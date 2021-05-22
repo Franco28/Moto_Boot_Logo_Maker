@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ToolEngine.cs                                   #
 #    Author: Franco28                                               # 
-#    Date: 24-04-2021                                               #
+#    Date: 21-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -63,11 +63,11 @@ namespace Moto_Logo
                     {                        
                         return;
                     }
-                    catch (Exception er)
+                    catch (Exception ex)
                     {
-                        Logs.DebugErrorLogs(er);
+                        Logs.DebugErrorLogs(ex);
                         SystemSounds.Hand.Play();
-                        DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
+                        DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                     }
                 }
             }
@@ -171,12 +171,14 @@ namespace Moto_Logo
                 labelErrorIcon.Visible = true;
                 labelErrorInfo.Visible = true;
                 labelErrorGoToFileInfo.Visible = true;
+                toolStripSeparatorErrorMsg.Visible = true;
                 labelErrorGoToFileInfo.Text = "Send logs";
                 labelErrorInfo.Text = res_man.GetString("ToolErrorShow", cul);
                 labelGoToError.Visible = true;
             }
             else
             {
+                toolStripSeparatorErrorMsg.Visible = false;
                 labelErrorGoToFileInfo.Visible = false;
                 labelErrorIcon.Visible = false;
                 labelErrorInfo.Visible = false;
@@ -186,6 +188,7 @@ namespace Moto_Logo
 
         private void Watcher_CreatedErrorLog(object sender, FileSystemEventArgs e)
         {
+            toolStripSeparatorErrorMsg.Visible = true;
             labelErrorIcon.Visible = true;
             labelErrorInfo.Visible = true;
             labelErrorGoToFileInfo.Visible = true;
@@ -196,6 +199,7 @@ namespace Moto_Logo
 
         private void OnChangedErrorLog(object sender, FileSystemEventArgs e)
         {
+            toolStripSeparatorErrorMsg.Visible = true;
             labelErrorIcon.Visible = true;
             labelErrorInfo.Visible = true;
             labelErrorGoToFileInfo.Visible = true;
@@ -206,6 +210,7 @@ namespace Moto_Logo
 
         private void Watcher_DeletedErrorLog(object sender, FileSystemEventArgs e)
         {
+            toolStripSeparatorErrorMsg.Visible = false;
             labelErrorGoToFileInfo.Visible = false;
             labelErrorIcon.Visible = false;
             labelErrorInfo.Visible = false;
@@ -429,6 +434,7 @@ namespace Moto_Logo
 
         public void EnableControlsWhenLoadLogo()
         {
+            #region EnableControlsWhenLoadLogo
             txtComments.Enabled = true;
             cboMoto.Enabled = true;
             groupBoxLogoFormat.Enabled = true;
@@ -445,47 +451,14 @@ namespace Moto_Logo
             btnStop.Enabled = false;
             labelbtnBuild.Enabled = true;
             btnBuild.Enabled = true;
+            #endregion EnableControlsWhenLoadLogo
         }
-        
+
         public void IniUITool()
         {
             #region Reload
             try
             {
-                labelResoTitle.Visible = false;
-                labelDRX.Visible = false;
-                labelDRY.Visible = false;
-
-                groupBoxLogoResolution.Visible = false;
-                groupBoxLogoResolution.Hide();
-
-                if (groupBoxLogoResolution.Visible == false)
-                {
-                    rdoLayoutLandscape.Location = new Point(6, 42);
-                }
-
-                if (Properties.Settings.Default.KeepLogoBinFormatGrid == false)
-                {
-                    groupBoxLogoFormat.Hide();
-                    groupBoxLogoFormat.Visible = false;
-                    groupBoxLogoImageOption.Location = new Point(453, 91);
-                    groupBoxLogoImageOrientation.Location = new Point(760, 91);
-                    groupBoxLogoImageOrientation.Size = new Size(420, 98);
-                }
-
-                if (Properties.Settings.Default.KeepLogoBinFormatGrid == true)
-                {
-                    groupBoxLogoImageOrientation.Location = new Point(936, 91);
-                    groupBoxLogoImageOrientation.Size = new Size(244, 98);
-                    rdoLayoutLandscape.Location = new Point(6, 42);
-                }
-
-                if (labelResoTitle.Visible == false && labelDRX.Visible == false && labelDRY.Visible == false)
-                {
-                    groupBoxLogoExtension.Size = new Size(191, 98);
-                    groupBoxLogoMemory.Size = new Size(217, 98);
-                }
-
                 txtComments.Enabled = false;
                 cboMoto.Enabled = false;
                 txtLogoBuildPath.Enabled = false;
@@ -565,12 +538,12 @@ namespace Moto_Logo
                 _OriginalImage = pictureBox1.Image;
                 ResizeAndDisplayImage();
             } 
-            catch (Exception er)
+            catch (Exception ex)
             {
-                Logs.DebugErrorLogs(er);
+                Logs.DebugErrorLogs(ex);
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(er.ToString(), "Moto_Boot_Logo_Maker");
-            }               
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
+            }
             #endregion Reload
         }
     }

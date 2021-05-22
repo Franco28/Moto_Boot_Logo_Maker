@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Settings.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 01-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -49,7 +49,6 @@ namespace Moto_Logo
 
         private void Settings_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(595, 597);
             groupBoxEU.Enabled = false;
             label4.Enabled = false;
 
@@ -68,14 +67,6 @@ namespace Moto_Logo
             if (Properties.Settings.Default.LogoBinOpenSave == true)
             {
                 radioButtonYESLogo.PerformClick();
-            }
-            if (Properties.Settings.Default.KeepLogoBinFormatGrid == true)
-            {
-                RadioButtonYesELBF.PerformClick();
-            }
-            if (Properties.Settings.Default.KeepLogoBinFormatGrid == false)
-            {
-                RadioButtonNoELBF.PerformClick();
             }
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
@@ -138,18 +129,6 @@ namespace Moto_Logo
             Properties.Settings.Default.Save();
         }
 
-        private void RadioButtonYesELBF_CheckedChanged(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.KeepLogoBinFormatGrid = true;
-            Properties.Settings.Default.Save();
-        }
-
-        private void RadioButtonNoELBF_CheckedChanged(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.KeepLogoBinFormatGrid = false;
-            Properties.Settings.Default.Save();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Properties.Profiles.Default.Reset();
@@ -171,16 +150,6 @@ namespace Moto_Logo
             Properties.Settings.Default.Save();
             var mainf = new MainForm();
             mainf.RestartApp();
-        }
-
-        private void linkMoreInfo_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
-        {
-            this.Size = new Size(595, 650);
-        }
-
-        private void linkHideMoreInfo_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
-        {
-            this.Size = new Size(595, 597);
         }
 
         private void btngotosettingslogs_Click(object sender, EventArgs e)

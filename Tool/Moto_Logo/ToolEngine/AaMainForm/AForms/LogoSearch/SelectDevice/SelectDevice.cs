@@ -2,7 +2,7 @@
 #####################################################################
 #    File: SelectDevice.cs                                          #
 #    Author: Franco28                                               # 
-#    Date: 01-05-2021                                               #
+#    Date: 22-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -183,14 +183,9 @@ namespace Moto_Logo
 
             if (mainform.radioButton4mib.Checked == true)
             {
-                this.Size = new Size(600, 750);
                 this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 4MB";
                 this.Text = @"Select your device - Logo Memory: 4MB";
-
-                labelMotoE.Location = new Point(292, 376);
-                panelMotoE.Location = new Point(296, 411);
-                pictureBoxMotoE.Location = new Point(8, 12);
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -223,18 +218,9 @@ namespace Moto_Logo
 
             if (mainform.radioButton6MIB.Checked == true)
             {
-                this.Size = new Size(500, 750);
                 this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 6MB";
                 this.Text = @"Select your device - Logo Memory: 6MB";
-
-                labelMotoDroi.Location = new Point(60, 48);
-                panelMotoDroid.Location = new Point(110, 85);
-                pictureBoxMotoDroid.Location = new Point(8, 12);
-
-                labelMotoX.Location = new Point(60, 376);
-                panelMotoX.Location = new Point(110, 411);
-                pictureBoxMotoX.Location = new Point(8, 12);
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -253,18 +239,9 @@ namespace Moto_Logo
 
             if (mainform.radioButton8MIB.Checked == true)
             {
-                this.Size = new Size(500, 750);
                 this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 8MB";
                 this.Text = @"Select your device - Logo Memory: 8MB";
-
-                labelMotoDroi.Location = new Point(60, 48);
-                panelMotoDroid.Location = new Point(110, 85);
-                pictureBoxMotoDroid.Location = new Point(8, 12);
-
-                labelMotoX.Location = new Point(60, 376);
-                panelMotoX.Location = new Point(110, 411);
-                pictureBoxMotoX.Location = new Point(8, 12);
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -283,34 +260,9 @@ namespace Moto_Logo
 
             if (mainform.radioButton16MIB.Checked == true)
             {
-                this.Size = new Size(900, 750);
                 this.CenterToScreen();
                 labelLogoMemory.Text = @"Logo Memory: 16MB";
                 this.Text = @"Select your device - Logo Memory: 16MB";
-
-                labelMotoG.Location = new Point(12, 48);
-                panelMotoG.Location = new Point(11, 85);
-                pictureBoxMotoG.Location = new Point(8, 12);
-
-                labelMotoE.Location = new Point(294, 48);
-                panelMotoE.Location = new Point(298, 85);
-                pictureBoxMotoE.Location = new Point(8, 12);
-
-                labelMotoZ.Location = new Point(581, 48);
-                panelMotoZ.Location = new Point(586, 85);
-                pictureBoxMotoZ.Location = new Point(8, 12);
-
-                labelMotoEdge.Location = new Point(10, 376);
-                panelMotoEdge.Location = new Point(9, 411);
-                pictureBoxMotoEdge.Location = new Point(8, 12);
-
-                labelMotoOne.Location = new Point(292, 376);
-                panelMotoOne.Location = new Point(296, 411);
-                pictureBoxMotoOne.Location = new Point(8, 12);
-
-                labelMotoP.Location = new Point(579, 376);
-                panelMotoP.Location = new Point(584, 411);
-                pictureBoxMotoP.Location = new Point(8, 12);
 
                 panelMotoE.Show();
                 labelMotoE.Show();
@@ -357,26 +309,9 @@ namespace Moto_Logo
 
             if (mainform.radioButton32MIB.Checked == true)
             {
-                this.Size = new Size(890, 750);
                 this.CenterToScreen();
                 labelLogoMemory.Text = "Logo Memory: 32MB";
                 this.Text = @"Select your device - Logo Memory: 32MB";
-
-                labelMotoG.Location = new Point(12, 48);
-                panelMotoG.Location = new Point(11, 85);
-                pictureBoxMotoG.Location = new Point(8, 12);
-
-                labelMotoZ.Location = new Point(294, 48);
-                panelMotoZ.Location = new Point(298, 85);
-                pictureBoxMotoZ.Location = new Point(8, 12);
-
-                labelMotoOne.Location = new Point(292, 376);
-                panelMotoOne.Location = new Point(296, 411);
-                pictureBoxMotoOne.Location = new Point(8, 12);
-
-                labelMotoP.Location = new Point(579, 200);
-                panelMotoP.Location = new Point(584, 250);
-                pictureBoxMotoP.Location = new Point(8, 12);
 
                 panelMotoG.Show();
                 labelMotoG.Show();

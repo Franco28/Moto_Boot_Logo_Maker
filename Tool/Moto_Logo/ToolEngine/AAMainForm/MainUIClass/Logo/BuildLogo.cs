@@ -507,8 +507,10 @@ namespace Moto_Logo
                     btnStop.Enabled = false;
                     labelbtnBuild.Enabled = false;
                     btnBuild.Enabled = false;
+                    DarkMessageBox.ShowError(res_man.GetString("FileSaveError", cul) + @": " + ex.GetBaseException(), res_man.GetString("FileSaveError", cul) + @": " + ex.GetBaseException());
                 }
             }
+
             // Done
             backgroundWorkerLogBuild.ReportProgress(100);
             labelbtnStop.Enabled = false;

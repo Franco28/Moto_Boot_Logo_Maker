@@ -56,11 +56,11 @@ namespace Moto_Logo
                     sr.Close();
                     sr.Dispose();
                 }
-                catch (Exception er)
+                catch (Exception ex)
                 {
                     SystemSounds.Hand.Play();
-                    DarkMessageBox.ShowError(er.ToString(), "Read credits");
-                    Logs.DebugErrorLogs(er);
+                    Logs.DebugErrorLogs(ex);
+                    DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                     return;
                 }
             }

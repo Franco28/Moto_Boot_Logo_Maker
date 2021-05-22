@@ -288,20 +288,14 @@ namespace Moto_Logo
             catch (Exception ex)
             {
                 SystemSounds.Hand.Play();
-                DarkMessageBox.ShowError(ex.ToString(), "Error Open Logo");
                 Logs.DebugErrorLogs(ex);
+                DarkMessageBox.ShowError(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex));
                 ProgressBar.Visible = false;
                 toolStripStatusLabel1.Text = @"Error: " + ex.GetBaseException();
                 Logs.LogoOpenError(@"Error: " + ex.GetBaseException());
                 return;
             }
 
-            groupBoxLogoMemory.Size = new Size(217, 65);
-            labelResoTitle.Visible = true;
-            labelDRX.Visible = true;
-            labelDRY.Visible = true;
-            labelDRX.Text = "X: " + udResolutionX.Value.ToString();
-            labelDRY.Text = "Y: " + udResolutionY.Value.ToString();
             toolStripStatusLabel1.Text = res_man.GetString("FileLoadOk", cul);
         }
     }

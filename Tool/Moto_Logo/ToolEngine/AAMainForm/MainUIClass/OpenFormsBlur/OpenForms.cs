@@ -12,8 +12,6 @@
  */
 
 using System;
-using System.Drawing;
-using System.Windows.Forms;
 
 namespace Moto_Logo
 {
@@ -22,101 +20,20 @@ namespace Moto_Logo
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form formBackground = new Form();
-            try
-            {
-                using (AboutBox uu = new AboutBox())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
+            var about = new AboutBox();
+            about.ShowDialog();
         }
 
         private void changelogToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form formBackground = new Form();
-            try
-            {
-                using (ReadChangelog uu = new ReadChangelog())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
+            var changelog = new ReadChangelog();
+            changelog.ShowDialog();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form formBackground = new Form();
-            try
-            {
-                using (ToolSettings uu = new ToolSettings())
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .80d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
-
-                    uu.Owner = formBackground;
-                    uu.ShowDialog();
-
-                    formBackground.Dispose();
-                }
-            }
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
+            var settings = new ToolSettings();
+            settings.ShowDialog();
         }       
     }
 }
