@@ -42,7 +42,14 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    return;
+                    if (!File.Exists(exePath + @"\Newtonsoft.Json.dll"))
+                    {
+                        openform("Newtonsoft.Json.dll");
+                    } 
+                    else
+                    {
+                        return;
+                    }
                 }
             }
         }

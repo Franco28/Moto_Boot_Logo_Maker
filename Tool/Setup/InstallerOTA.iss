@@ -105,6 +105,7 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 [InstallDelete]
 Type: filesandordirs; Name: "|{app}\Files"; 
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
+Type: files; Name: "{app}\AndroidLib.dll";
 Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 
 [UninstallDelete]

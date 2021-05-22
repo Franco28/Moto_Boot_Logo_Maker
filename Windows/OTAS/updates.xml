@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <item>
-<version>4.4.4.3</version>
-<url>https://master.dl.sourceforge.net/project/motobootlogomaker/OTA/MBLM_v4.4.4.3_OTA.exe</url>
+<version>4.4.4.4</version>
+<url>https://master.dl.sourceforge.net/project/motobootlogomaker/OTA/MBLM_v4.4.4.4_OTA.exe</url>
 <changelog>https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt</changelog>
 <mandatory>true</mandatory>
 </item>
