@@ -118,7 +118,7 @@ namespace Moto_Logo
             labelErrorInfo.Visible = false;
             labelErrorGoToFileInfo.Visible = false;
             labelGoToError.Visible = false;
-            toolStripSeparator11.Visible = false;
+            toolStripSeparatorErrorMsg.Visible = false;
 
             FileSystemWatcherFilesFolder();
             FileSystemWatcherErrorLogs();
@@ -802,8 +802,6 @@ namespace Moto_Logo
                 pictureBox1.Invalidate();
                 pictureBox1.Update();
                 ResizeAndDisplayImage();
-                Properties.Settings.Default.IsMax = false;
-                Properties.Settings.Default.Save();
             }
             
             if (this.WindowState == FormWindowState.Maximized)
@@ -813,8 +811,6 @@ namespace Moto_Logo
                 pictureBox1.Invalidate();
                 pictureBox1.Update();
                 ResizeAndDisplayImage();
-                Properties.Settings.Default.IsMax = true;
-                Properties.Settings.Default.Save();
             }
         }
 

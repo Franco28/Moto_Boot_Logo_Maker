@@ -29,9 +29,6 @@
     <Setting Name="LogoSelectedPath" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="IsMax" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="ToolVersion" Provider="Bluegrams.Application.PortableSettingsProvider" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
