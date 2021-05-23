@@ -89,9 +89,6 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 ### logo.bin Opened
 ![logo.bin Opened](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/LogoOpened.png "logo.bin Opened")
 
-### Test your logo
-![Test your logo](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/testurlogo.png "Test your logo")
-
 ### Search Device
 ![Search Device](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Logo/SearchDevice.png "Search Device")
 
