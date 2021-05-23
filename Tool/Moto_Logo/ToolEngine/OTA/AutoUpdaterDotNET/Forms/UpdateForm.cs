@@ -212,17 +212,6 @@ namespace AutoUpdaterDotNET
             }
         }
 
-        private static string BytesToString(long byteCount)
-        {
-            string[] suf = { "B", "KB", "MB", "GB", "TB", "PB", "EB" };
-            if (byteCount == 0)
-                return "0" + suf[0];
-            long bytes = Math.Abs(byteCount);
-            int place = Convert.ToInt32(Math.Floor(Math.Log(bytes, 1024)));
-            double num = Math.Round(bytes / Math.Pow(1024, place), 1);
-            return $"{(Math.Sign(byteCount) * num).ToString(CultureInfo.InvariantCulture)} {suf[place]}";
-        }
-
         private void UpdateForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             AutoUpdater.Running = true;
@@ -230,8 +219,6 @@ namespace AutoUpdaterDotNET
 
         private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            string closeadb = "adb";
-            string closefastboot = "fastboot";
             string closetool = "Moto_Boot_Logo_Maker";
 
             if (_webClient != null && _webClient.IsBusy)
@@ -242,14 +229,6 @@ namespace AutoUpdaterDotNET
                     case DialogResult.Yes:
                         _webClient.CancelAsync();
                         _webClient.Dispose();
-                        foreach (var process in Process.GetProcessesByName(closeadb))
-                        {
-                            process.Kill();
-                        }
-                        foreach (var process in Process.GetProcessesByName(closefastboot))
-                        {
-                            process.Kill();
-                        }
                         foreach (var process in Process.GetProcessesByName(closetool))
                         {
                             process.Kill();

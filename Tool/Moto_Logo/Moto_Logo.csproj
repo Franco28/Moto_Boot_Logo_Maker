@@ -54,9 +54,6 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DarkUI, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DarkUI.2.0.2\lib\DarkUI.dll</HintPath>
-    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.11.33.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.11.33\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -103,6 +100,146 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ToolEngine\DarkUI\Collections\ObservableList.cs" />
+    <Compile Include="ToolEngine\DarkUI\Collections\ObservableListModified.cs" />
+    <Compile Include="ToolEngine\DarkUI\Config\Colors.cs" />
+    <Compile Include="ToolEngine\DarkUI\Config\Consts.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkButtonStyle.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkContentAlignment.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkControlState.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkDropdownItem.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkDropdownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkListItem.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkScrollBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkScrollOrientation.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkScrollView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkSectionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkTreeNode.cs" />
+    <Compile Include="ToolEngine\DarkUI\Controls\DarkTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Controls\ScrollValueEventArgs.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockArea.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockRegion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockSplitter.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockTab.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDockTabArea.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkSplitterType.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DarkToolWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Docking\DockContentEventArgs.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockDropArea.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockDropCollection.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockGroupState.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockInsertType.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockPanelState.cs" />
+    <Compile Include="ToolEngine\DarkUI\Docking\DockRegionState.cs" />
+    <Compile Include="ToolEngine\DarkUI\Extensions\BitmapExtensions.cs" />
+    <Compile Include="ToolEngine\DarkUI\Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkDialog.Designer.cs">
+      <DependentUpon>DarkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkDialogButton.cs" />
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkMessageBox.Designer.cs">
+      <DependentUpon>DarkMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkMessageBoxIcon.cs" />
+    <Compile Include="ToolEngine\DarkUI\Forms\DarkTranslucentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\DarkUI\Icons\DockIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Icons\DropdownIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Icons\MenuIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Icons\MessageBoxIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Icons\ScrollIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Icons\TreeViewIcons.Designer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Renderers\DarkMenuRenderer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Renderers\DarkToolStripRenderer.cs" />
+    <Compile Include="ToolEngine\DarkUI\Win32\ControlScrollFilter.cs" />
+    <Compile Include="ToolEngine\DarkUI\Win32\DockContentDragFilter.cs" />
+    <Compile Include="ToolEngine\DarkUI\Win32\DockResizeFilter.cs" />
+    <Compile Include="ToolEngine\DarkUI\Win32\Native.cs" />
+    <Compile Include="ToolEngine\DarkUI\Win32\WindowsMessages.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\AutoUpdater.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\BasicAuthentication.cs" />
     <Compile Include="ToolEngine\OTA\AutoUpdaterDotNET\Classes\CustomAuthentication.cs" />
@@ -285,6 +422,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ToolEngine\DarkUI\Forms\DarkDialog.resx">
+      <DependentUpon>DarkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolEngine\DarkUI\Forms\DarkMessageBox.resx">
+      <DependentUpon>DarkMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\DockIcons.resx" />
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\DropdownIcons.resx" />
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\MenuIcons.resx" />
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\MessageBoxIcons.resx" />
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\ScrollIcons.resx" />
+    <EmbeddedResource Include="ToolEngine\DarkUI\Icons\TreeViewIcons.resx" />
     <EmbeddedResource Include="ToolEngine\OTA\AutoUpdaterDotNET\Forms\UpdateForm.ar.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -573,6 +722,34 @@
     <Content Include="Resources\ToolUI\textInfo_x24.png" />
     <Content Include="Resources\ToolUI\unlock_x20.png" />
     <Content Include="Resources\ToolUI\zoom_x24.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\active-inactive-close.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\arrow.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\close-selected.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\close.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\error.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\grip.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\inactive-close-selected.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\inactive-close.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\info.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\node_closed_empty.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\node_closed_full.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\node_open.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\node_open_empty.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_clicked.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_hot.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_small_clicked.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_small_hot.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_small_standard.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_arrow_standard.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\scrollbar_disabled.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\small_arrow.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\tick.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\tw_active_close.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\tw_active_close_selected.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\tw_close.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\tw_close_selected.png" />
+    <Content Include="ToolEngine\DarkUI\Resources\warning.png" />
     <Content Include="unins.ico" />
     <None Include="Resources\telegramico.ico" />
     <Content Include="Resources\logo\logo_battery.png" />

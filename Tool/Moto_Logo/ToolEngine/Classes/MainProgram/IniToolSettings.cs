@@ -39,6 +39,13 @@ namespace Moto_Logo
             }
         }
 
+        public static bool OTAFILE(string fileName)
+        {
+            var workingDirectory = Environment.CurrentDirectory;
+            var file = $@"{workingDirectory}\{fileName}";
+            return File.Exists(file);
+        }
+
         public static void InitilizeSettings()
         {
             // Tool Initial Settings

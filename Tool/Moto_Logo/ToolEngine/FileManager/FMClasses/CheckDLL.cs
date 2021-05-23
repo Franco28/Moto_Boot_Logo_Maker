@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckDLL.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 23-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -36,20 +36,13 @@ namespace Moto_Logo
             }
             else
             {
-                if (!File.Exists(exePath + @"\DarkUI.dll"))
+                if (!File.Exists(exePath + @"\Newtonsoft.Json.dll"))
                 {
-                    openform("DarkUI.dll");
+                    openform("Newtonsoft.Json.dll");
                 }
                 else
                 {
-                    if (!File.Exists(exePath + @"\Newtonsoft.Json.dll"))
-                    {
-                        openform("Newtonsoft.Json.dll");
-                    } 
-                    else
-                    {
-                        return;
-                    }
+                    return;
                 }
             }
         }

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.Translations.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 20-04-2021                                               #
+#    Date: 23-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -25,6 +25,13 @@ namespace Moto_Logo
                 Properties.Settings.Default.ToolLang = ci.Name.ToString();
              
                 cul = CultureInfo.CreateSpecificCulture(lang);
+
+                NumberFormatInfo numberInfo = CultureInfo.CreateSpecificCulture(lang).NumberFormat;
+
+                CultureInfo info = new CultureInfo(lang);
+                info.NumberFormat = numberInfo;
+                info.DateTimeFormat.DateSeparator = "/";
+                info.DateTimeFormat.ShortDatePattern = "dd/MM/yyyy";
 
                 CultureInfo ui_culture = new CultureInfo(lang);
                 CultureInfo culture = new CultureInfo(lang);
