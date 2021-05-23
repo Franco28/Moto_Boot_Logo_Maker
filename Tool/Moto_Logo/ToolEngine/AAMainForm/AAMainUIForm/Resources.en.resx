@@ -147,9 +147,6 @@
   <data name="AboutCheckinf4Updates" xml:space="preserve">
     <value>checking for updates...</value>
   </data>
-  <data name="AboutCopy" xml:space="preserve">
-    <value>An open source Tool to make Boot Logo for Motorola devices - Continued By @Franco28, made by CaitSith2</value>
-  </data>
   <data name="AboutDonationMSG" xml:space="preserve">
     <value>If you want to buy me a beer or a pizza, scan this QR or click it!</value>
   </data>
@@ -192,9 +189,6 @@
   <data name="Append" xml:space="preserve">
     <value>Append</value>
   </data>
-  <data name="BootLogosChannel" xml:space="preserve">
-    <value>Boot Logos Channel</value>
-  </data>
   <data name="btnAttachPathToolTipText" xml:space="preserve">
     <value>Choose logo build path</value>
   </data>
@@ -202,10 +196,7 @@
     <value>Build</value>
   </data>
   <data name="btnBuildToolTipText" xml:space="preserve">
-    <value>Build and save Logo.bin file</value>
-  </data>
-  <data name="btnChangeTheme" xml:space="preserve">
-    <value>Change Theme</value>
+    <value>Build and save logo.bin file</value>
   </data>
   <data name="btnOpenLogoFile" xml:space="preserve">
     <value>Open File Path</value>
@@ -240,29 +231,8 @@
   <data name="ChangelogFormError" xml:space="preserve">
     <value>Can't read changelog, please check your internet connection!</value>
   </data>
-  <data name="ChangeThemeInfo" xml:space="preserve">
-    <value>Changing Theme, please wait...</value>
-  </data>
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>Check for updates</value>
-  </data>
-  <data name="CLbtnSend" xml:space="preserve">
-    <value>Send Request License</value>
-  </data>
-  <data name="CLlabelCLTitle" xml:space="preserve">
-    <value>License Request</value>
-  </data>
-  <data name="CLlabelContactTO" xml:space="preserve">
-    <value>Contact To:</value>
-  </data>
-  <data name="CLlabelEmailTitle" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="CLlabelNOTE" xml:space="preserve">
-    <value>NOTE: Your request may take one day to get it!</value>
-  </data>
-  <data name="CLlabelYourEmailInfo" xml:space="preserve">
-    <value>Your Email:</value>
   </data>
   <data name="CompilePathISWrong" xml:space="preserve">
     <value>Path &lt;pathbuild&gt; must end with \</value>
@@ -274,16 +244,13 @@
     <value>Logo name box and logo path box can´t be empty! So please enter a logo name and path to compile!</value>
   </data>
   <data name="ContinueWithBlankImge" xml:space="preserve">
-    <value>Are you sure you wish to proceed with a blank image?</value>
+    <value>Are you sure to proceed with a blank image?</value>
   </data>
   <data name="CreditsFormError" xml:space="preserve">
     <value>Can't read credits... file is missing!</value>
   </data>
   <data name="CreditsFormTitle" xml:space="preserve">
     <value>Credits</value>
-  </data>
-  <data name="darktoolStripMenuItem" xml:space="preserve">
-    <value>Dark</value>
   </data>
   <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
     <value>Device</value>
@@ -378,11 +345,8 @@
   <data name="InternetCheck" xml:space="preserve">
     <value>Please check your internet connection and try again!</value>
   </data>
-  <data name="joinTelegramBootLogosToolStripMenuItem" xml:space="preserve">
-    <value>Join Telegram Boot Logos</value>
-  </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>Image &lt;IMGExtension&gt; is too big! Please reduce it size lower than 2.6MB.</value>
+    <value>Image &lt;IMGExtension&gt; is too big! Please reduce it size lower than 5.6MB</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>Logo Build Path</value>
@@ -405,14 +369,8 @@
   <data name="labelSearchDevice" xml:space="preserve">
     <value>Search Device</value>
   </data>
-  <data name="languageToolStripMenuItem" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="lighttoolStripMenuItem" xml:space="preserve">
-    <value>Light</value>
-  </data>
   <data name="LoadPreviousLogo" xml:space="preserve">
-    <value>There was a previous loaded logo, do you want to load it again? NOTE: This will take a time...</value>
+    <value>There was a previous loaded logo, do you want to load it again? NOTE: This will take a second...</value>
   </data>
   <data name="LogoBinInvalid" xml:space="preserve">
     <value>Invalid logo.bin file loaded</value>
@@ -458,45 +416,6 @@
   </data>
   <data name="LogoName" xml:space="preserve">
     <value>Logo Name</value>
-  </data>
-  <data name="LogoTestADBstart" xml:space="preserve">
-    <value>Starting adb... Please wait!</value>
-  </data>
-  <data name="LogoTestDeviceConnected" xml:space="preserve">
-    <value>Device connected:</value>
-  </data>
-  <data name="LogoTestDeviceError" xml:space="preserve">
-    <value>Please connect your device in fastboot mode!</value>
-  </data>
-  <data name="LogoTestLogoB" xml:space="preserve">
-    <value>Now select your logo_b please!</value>
-  </data>
-  <data name="LogoTestMoveThis" xml:space="preserve">
-    <value>Please move your logo.bin into this folder!</value>
-  </data>
-  <data name="LogoTestRO" xml:space="preserve">
-    <value>Reboot option</value>
-  </data>
-  <data name="LogoTestSaveLogsBTN" xml:space="preserve">
-    <value>Save console logs</value>
-  </data>
-  <data name="LogoTestSelectedA" xml:space="preserve">
-    <value>Selected A Partition</value>
-  </data>
-  <data name="LogoTestSelectedAB" xml:space="preserve">
-    <value>Selected A/B Partition</value>
-  </data>
-  <data name="LogoTestSelectedRBL" xml:space="preserve">
-    <value>Selected reboot bootloader</value>
-  </data>
-  <data name="LogoTestSelectUDP" xml:space="preserve">
-    <value>Select your device partition</value>
-  </data>
-  <data name="LogoTestSelectYourDP" xml:space="preserve">
-    <value>Please select your device partition before continue!</value>
-  </data>
-  <data name="LogoTestTitle" xml:space="preserve">
-    <value>Test your logo bin!</value>
   </data>
   <data name="logo_battery_ToolTipText" xml:space="preserve">
     <value>Visible when your phone has had its battery fully discharged, and you</value>
@@ -568,7 +487,7 @@
     <value>* Double click and will be unlocked</value>
   </data>
   <data name="MaxLogoBinSize" xml:space="preserve">
-    <value>Max Logo.bin size</value>
+    <value>Max logo.bin size</value>
   </data>
   <data name="NETFRAMEWORKERROR" xml:space="preserve">
     <value>.NET Framework: Unable to reach out .NET Framework version...</value>
@@ -577,7 +496,7 @@
     <value>New</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
-    <value>No images were loaded, are you sure you wish to proceed with blank images?</value>
+    <value>No images were loaded, are you sure to proceed with blank images?</value>
   </data>
   <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
     <value>If you want to open a custom logo, just drag and drop the file into Tool!</value>
@@ -669,9 +588,6 @@
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Please select your logo memory size before opening a file!</value>
   </data>
-  <data name="SettingCLoading" xml:space="preserve">
-    <value>Loading Tool Settings...</value>
-  </data>
   <data name="SettingGS" xml:space="preserve">
     <value>General Settings</value>
   </data>
@@ -699,23 +615,11 @@
   <data name="SettingsYes" xml:space="preserve">
     <value>YES</value>
   </data>
-  <data name="SignYourLogo" xml:space="preserve">
-    <value>Sign your new logo</value>
-  </data>
   <data name="sourceToolStripMenuItem" xml:space="preserve">
     <value>Source</value>
   </data>
-  <data name="testToolStripMenuItem" xml:space="preserve">
-    <value>Test</value>
-  </data>
-  <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
-    <value>Test your new logo</value>
-  </data>
   <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
     <value>Input your device model like this: "moto g8 power"</value>
-  </data>
-  <data name="themetoolStripMenuItem" xml:space="preserve">
-    <value>Theme</value>
   </data>
   <data name="ToolErrorShow" xml:space="preserve">
     <value>An error has occurred, please go to folder and send me logs!</value>

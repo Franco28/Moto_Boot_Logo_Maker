@@ -145,16 +145,13 @@
     <value>Descargar actualización</value>
   </data>
   <data name="AboutCheckinf4Updates" xml:space="preserve">
-    <value>Comprobando actualizaciones...</value>
-  </data>
-  <data name="AboutCopy" xml:space="preserve">
-    <value>Una herramienta código abierto para hacer el logo de inicio para dispositivos Motorola - Continuado por @Franco28, hecho por CaitSith2</value>
+    <value>comprobando actualizaciones...</value>
   </data>
   <data name="AboutDonationMSG" xml:space="preserve">
-    <value>¡Si quieres comprarme una cerveza o una pizza, escanea QR o haz clic en él!</value>
+    <value>¡Si quieres comprarme una cerveza o una pizza, escanea este QR o haz clic en él!</value>
   </data>
   <data name="AboutDownloadUpdateNetLost" xml:space="preserve">
-    <value>RED PERDIDA: compruebe su conexión a Internet ...</value>
+    <value>CONEXIÓN PERDIDA: compruebe su conexión a Internet...</value>
   </data>
   <data name="AboutDownloadUpdateServer" xml:space="preserve">
     <value>Seleccione su servidor para descargar:</value>
@@ -172,7 +169,7 @@
     <value>sin conexión a Internet...</value>
   </data>
   <data name="AboutNoUpdatePortable" xml:space="preserve">
-    <value>sin actualizaciones en la edición PORTABLE.</value>
+    <value>no hay actualizaciones en la edición PORTÁTIL.</value>
   </data>
   <data name="AboutThanksTo" xml:space="preserve">
     <value>Gracias a</value>
@@ -184,46 +181,40 @@
     <value>Actualizaciones:</value>
   </data>
   <data name="AboutUpdates2" xml:space="preserve">
-    <value>No hay actualizaciones disponibles.</value>
+    <value>No hay ninguna actualización disponible.</value>
   </data>
   <data name="AllImageFailed" xml:space="preserve">
-    <value>No se pudo cargar cada una de las imágenes seleccionadas - Procesamiento cancelado :(</value>
+    <value>Cada imagen seleccionada no se pudo cargar - Estado: Procesamiento cancelado :(</value>
   </data>
   <data name="Append" xml:space="preserve">
     <value>Adjuntar</value>
   </data>
-  <data name="BootLogosChannel" xml:space="preserve">
-    <value>Canal De Boot Logos</value>
-  </data>
   <data name="btnAttachPathToolTipText" xml:space="preserve">
-    <value>Elija la ruta de creación del logotipo</value>
+    <value>Elija la ruta del logotipo</value>
   </data>
   <data name="btnBuild" xml:space="preserve">
     <value>Compilar</value>
   </data>
   <data name="btnBuildToolTipText" xml:space="preserve">
-    <value>Cree y guarde el archivo Logo.bin</value>
-  </data>
-  <data name="btnChangeTheme" xml:space="preserve">
-    <value>Cambiar Tema</value>
+    <value>Cree y guarde el archivo logo.bin</value>
   </data>
   <data name="btnOpenLogoFile" xml:space="preserve">
-    <value>Abrir ruta de archivo</value>
+    <value>Ir al archivo</value>
   </data>
   <data name="btnOpenLogoFileToolTipText" xml:space="preserve">
-    <value>Abrir carpeta de logotipos</value>
+    <value>Abrir la carpeta de los logotipos creados</value>
   </data>
   <data name="btnReloadToolTipText" xml:space="preserve">
     <value>Recargar herramienta</value>
   </data>
   <data name="btnSearchDeviceToolTipText" xml:space="preserve">
-    <value>Buscar dispositivo</value>
+    <value>Buscar Dispositivo</value>
   </data>
   <data name="btnStop" xml:space="preserve">
     <value>Cancelar</value>
   </data>
   <data name="btnStopToolTipText" xml:space="preserve">
-    <value>Detener el proceso de creación del logotipo</value>
+    <value>Detener el proceso de compilación del logotipo</value>
   </data>
   <data name="button1" xml:space="preserve">
     <value>Adjuntar</value>
@@ -235,13 +226,10 @@
     <value>Extraer</value>
   </data>
   <data name="CantSaveEmptyFiles" xml:space="preserve">
-    <value>Por favor haga un logo primero! entonces podrás guardarlo!</value>
+    <value>Cree o cargue un logotipo primero! Entonces podrás guardarlo!</value>
   </data>
   <data name="ChangelogFormError" xml:space="preserve">
     <value>No se puede leer el registro de cambios, compruebe su conexión a Internet.</value>
-  </data>
-  <data name="ChangeThemeInfo" xml:space="preserve">
-    <value>Cambiando tema, por favor espere...</value>
   </data>
   <data name="checkForUpdatesToolStripMenuItem" xml:space="preserve">
     <value>Buscar actualizaciones</value>
@@ -250,22 +238,19 @@
     <value>La ruta &lt;pathbuild&gt; debe terminar con \</value>
   </data>
   <data name="CompileRadioBTNEmpty" xml:space="preserve">
-    <value>Seleccione una extensión antes de compilar ...</value>
+    <value>Seleccione una extensión antes de compilar...</value>
   </data>
   <data name="ComplieLNandPNEmpty" xml:space="preserve">
-    <value>El nombre del logotipo y la ruta del logotipo no pueden estar vacíos. Ingrese un nombre de logotipo y una ruta para compilar.</value>
+    <value>El cuadro de nombre del logotipo y el cuadro de ruta del logotipo no pueden estar vacíos. Por lo tanto, ingrese un nombre de logotipo y una ruta para compilar.</value>
   </data>
   <data name="ContinueWithBlankImge" xml:space="preserve">
-    <value>¿Estás seguro de que deseas continuar con una imagen en blanco?</value>
+    <value>Está seguro de continuar con una imagen en blanco?</value>
   </data>
   <data name="CreditsFormError" xml:space="preserve">
-    <value>No se pueden leer los créditos ... ¡Falta el archivo!</value>
+    <value>No se pueden leer los créditos... Falta el archivo!</value>
   </data>
   <data name="CreditsFormTitle" xml:space="preserve">
     <value>Créditos</value>
-  </data>
-  <data name="darktoolStripMenuItem" xml:space="preserve">
-    <value>Oscuro</value>
   </data>
   <data name="DeviceInfoLabelDeviceTitle" xml:space="preserve">
     <value>Dispositivo</value>
@@ -274,10 +259,10 @@
     <value>Pantalla</value>
   </data>
   <data name="DeviceInfoLabelLogoInfoTitle" xml:space="preserve">
-    <value>Información del logotipo</value>
+    <value>Info del logotipo</value>
   </data>
   <data name="DevicesCustom" xml:space="preserve">
-    <value>Predeterminado</value>
+    <value>Personalizado</value>
   </data>
   <data name="DownloadSFormInternetError" xml:space="preserve">
     <value>No se pueden leer las estadísticas de descarga, compruebe su conexión a Internet.</value>
@@ -286,10 +271,10 @@
     <value>Descargas</value>
   </data>
   <data name="ErrorLoadImage" xml:space="preserve">
-    <value>Error al cargar la imagen - Procesamiento cancelado :(</value>
+    <value>Error al cargar la imagen - Estado: Procesamiento cancelado :(</value>
   </data>
   <data name="ErrorLogoFitImage" xml:space="preserve">
-    <value>Error: las imágenes / opciones seleccionadas no caben en logo.bin, Error en</value>
+    <value>Error: Las imágenes/opciones seleccionadas no encajarán en el archivo logo.bin, falló en</value>
   </data>
   <data name="ErrorLogoFitImage2" xml:space="preserve">
     <value>El archivo producido es</value>
@@ -298,22 +283,22 @@
     <value>Bytes demasiado grandes</value>
   </data>
   <data name="ErrorLogsWarnigMSG" xml:space="preserve">
-    <value>¡Recuerde enviar registros y luego eliminar este archivo!</value>
+    <value>Recuerde enviar registros y luego eliminar este archivo!</value>
   </data>
   <data name="ErrorWrongTypeOfIMG" xml:space="preserve">
-    <value>¡Tipo de imagen incorrecto! Tipo de imagen permitido:</value>
+    <value>Tipo de imagen incorrecto! Tipo de imagen permitido:</value>
   </data>
   <data name="ExitLogoWasntSave1" xml:space="preserve">
     <value>Hay un proyecto actual abierto:</value>
   </data>
   <data name="ExitLogoWasntSave2" xml:space="preserve">
-    <value>y no guardaste el logo! Estás seguro de que quieres salir?</value>
+    <value>y no guardaste el logotipo! Estás seguro de que quieres salir?</value>
   </data>
   <data name="ExtractLogoError" xml:space="preserve">
-    <value>No se puede extraer la imagen del logotipo de arranque</value>
+    <value>No se puede extraer la imagen del logo de arranque</value>
   </data>
   <data name="FileLoadOk" xml:space="preserve">
-    <value>Archivo cargado correctamente :)</value>
+    <value>logo.bin cargado correctamente :)</value>
   </data>
   <data name="FileOpenError" xml:space="preserve">
     <value>Error al abrir el archivo: &lt;FN&gt;</value>
@@ -325,10 +310,10 @@
     <value>Archivo</value>
   </data>
   <data name="groupBox1" xml:space="preserve">
-    <value>Opción de logotipo</value>
+    <value>Opción del logotipo</value>
   </data>
   <data name="groupBox2" xml:space="preserve">
-    <value>formato de logo.bin</value>
+    <value>formato del logo.bin</value>
   </data>
   <data name="groupBox3" xml:space="preserve">
     <value>Resolución</value>
@@ -337,10 +322,10 @@
     <value>Opciones de relleno de imagen</value>
   </data>
   <data name="groupBox5" xml:space="preserve">
-    <value>Opciones de orientación de imagen</value>
+    <value>Opciones de orientación de la imagen</value>
   </data>
   <data name="groupBox6" xml:space="preserve">
-    <value>Seleccione su memoria de logotipo</value>
+    <value>Seleccione la memoria de su logotipo</value>
   </data>
   <data name="groupBox7" xml:space="preserve">
     <value>Seleccione su extensión</value>
@@ -349,7 +334,7 @@
     <value>Ayuda</value>
   </data>
   <data name="ImageLoadFail" xml:space="preserve">
-    <value>Al menos una imagen no se pudo cargar, estás seguro de que deseas continuar?</value>
+    <value>No se pudo cargar al menos una imagen, está seguro de que desea continuar?</value>
   </data>
   <data name="ImageSaveOk" xml:space="preserve">
     <value>Imagen guardada como</value>
@@ -358,13 +343,10 @@
     <value>Exitosamente</value>
   </data>
   <data name="InternetCheck" xml:space="preserve">
-    <value>Comprueba tu conexión a Internet y vuelve a intentarlo!</value>
-  </data>
-  <data name="joinTelegramBootLogosToolStripMenuItem" xml:space="preserve">
-    <value>Canal de Telegram: Moto boot logos</value>
+    <value>Comprueba tu conexión a Internet y vuelve a intentarlo.</value>
   </data>
   <data name="JPGimgIsToBig" xml:space="preserve">
-    <value>La imagen &lt;IMGExtension&gt; es demasiado grande y no es recomendable! por favor reducir a un tamaño inferior a 2.6MB</value>
+    <value>La imagen &lt;IMGExtension&gt; es demasiado grande! Reduzca su tamaño a menos de 5.6 MB</value>
   </data>
   <data name="labelBuildPath" xml:space="preserve">
     <value>Ruta del logotipo</value>
@@ -379,7 +361,7 @@
     <value>* Estado de la imagen: Bloqueado</value>
   </data>
   <data name="labelImageStatusUnlocked" xml:space="preserve">
-    <value>* Estado de la imagen: Desbloqueada</value>
+    <value>* Estado de la imagen: Desbloqueado</value>
   </data>
   <data name="labelReloadTool" xml:space="preserve">
     <value>Recargar</value>
@@ -387,17 +369,11 @@
   <data name="labelSearchDevice" xml:space="preserve">
     <value>Buscar Dispositivo</value>
   </data>
-  <data name="languageToolStripMenuItem" xml:space="preserve">
-    <value>Idioma</value>
-  </data>
-  <data name="lighttoolStripMenuItem" xml:space="preserve">
-    <value>Claro</value>
-  </data>
   <data name="LoadPreviousLogo" xml:space="preserve">
-    <value>Había un logo cargado anteriormente, ¿Quieres volver a cargarlo? NOTA: Esto llevará un tiempo...</value>
+    <value>Había un logo cargado anteriormente, quieres volver a cargarlo? NOTA: Esto tomará un segundo...</value>
   </data>
   <data name="LogoBinInvalid" xml:space="preserve">
-    <value>Archivo logo.bin no válido</value>
+    <value>Se cargó un archivo logo.bin no válido</value>
   </data>
   <data name="LogoBinProccesing" xml:space="preserve">
     <value>Procesando</value>
@@ -412,7 +388,7 @@
     <value>Estado:</value>
   </data>
   <data name="LogoBrowserErrorBinFile" xml:space="preserve">
-    <value>no es un archivo .bin ... ¡Seleccione solo archivos .bin!</value>
+    <value>no es un archivo .bin... Seleccione solo archivos .bin!</value>
   </data>
   <data name="LogoBrowserIsADir" xml:space="preserve">
     <value>es un directorio...</value>
@@ -421,73 +397,34 @@
     <value>Seleccionar</value>
   </data>
   <data name="LogoBuildCancel" xml:space="preserve">
-    <value>Compilar logo: ¡El proceso fue cancelado!</value>
+    <value>Compilación del logotipo: El proceso fue cancelado!</value>
   </data>
   <data name="LogoBuildError" xml:space="preserve">
-    <value>Compilar logo: se produjo un error al ejecutar el proceso. Se canceló la compilación del logo</value>
+    <value>Compilación del logotipo: Hubo un error al ejecutar el proceso. El hilo ha abortado</value>
   </data>
   <data name="LogoBuildFolderError" xml:space="preserve">
-    <value>¡No se puede abrir una ruta de carpeta que no existe!</value>
+    <value>No se puede abrir una ruta de carpeta que no existe!</value>
   </data>
   <data name="LogoBuildOK" xml:space="preserve">
-    <value>Compilar logo: ¡El proceso se completó!</value>
+    <value>Compilación del logotipo: El proceso se completó!</value>
   </data>
   <data name="LogoBuildZipFileM" xml:space="preserve">
-    <value>Falta el archivo Zip, por lo que el logotipo no podrá ser compilado como zip</value>
+    <value>Falta el archivo Zip, por lo que el logotipo no se podrá hacer flashable!</value>
   </data>
   <data name="LogoBuildZipFileMTitle" xml:space="preserve">
-    <value>Faltan archivos script</value>
+    <value>Faltan archivos de script</value>
   </data>
   <data name="LogoName" xml:space="preserve">
     <value>Nombre del logotipo</value>
   </data>
-  <data name="LogoTestADBstart" xml:space="preserve">
-    <value>Iniciando adb... Por favor espere!</value>
-  </data>
-  <data name="LogoTestDeviceConnected" xml:space="preserve">
-    <value>Dispositivo conectado:</value>
-  </data>
-  <data name="LogoTestDeviceError" xml:space="preserve">
-    <value>Conecte su dispositivo en modo fastboot!</value>
-  </data>
-  <data name="LogoTestLogoB" xml:space="preserve">
-    <value>Ahora seleccione su logo_b por favor!</value>
-  </data>
-  <data name="LogoTestMoveThis" xml:space="preserve">
-    <value>Mueva su logo.bin a esta carpeta!</value>
-  </data>
-  <data name="LogoTestRO" xml:space="preserve">
-    <value>Opción de reinicio</value>
-  </data>
-  <data name="LogoTestSaveLogsBTN" xml:space="preserve">
-    <value>Guardar registros de la consola</value>
-  </data>
-  <data name="LogoTestSelectedA" xml:space="preserve">
-    <value>Partición A seleccionada</value>
-  </data>
-  <data name="LogoTestSelectedAB" xml:space="preserve">
-    <value>Partición A/B seleccionada</value>
-  </data>
-  <data name="LogoTestSelectedRBL" xml:space="preserve">
-    <value>Seleccionado reboot bootloader</value>
-  </data>
-  <data name="LogoTestSelectUDP" xml:space="preserve">
-    <value>Seleccione la partición de su dispositivo</value>
-  </data>
-  <data name="LogoTestSelectYourDP" xml:space="preserve">
-    <value>Seleccione la partición de su dispositivo antes de continuar.</value>
-  </data>
-  <data name="LogoTestTitle" xml:space="preserve">
-    <value>Prueba su logo bin!</value>
-  </data>
   <data name="logo_battery_ToolTipText" xml:space="preserve">
-    <value>Visible cuando su teléfono tiene la batería completamente descargada, y usted</value>
+    <value>Visible cuando su teléfono tiene la batería completamente descargada y usted</value>
   </data>
   <data name="logo_battery_ToolTipText2" xml:space="preserve">
-    <value>conecta su teléfono para cargar</value>
+    <value>conecta su teléfono a la corriente</value>
   </data>
   <data name="logo_boot_ToolTipText" xml:space="preserve">
-    <value>Solo visible con el teléfono con el bootloader bloqueado. Se sugiere que elimines</value>
+    <value>Visible solo con el teléfono bloqueado con el cargador de arranque. Se sugiere que elimines</value>
   </data>
   <data name="logo_boot_ToolTipText2" xml:space="preserve">
     <value>la imagen que está en esta entrada, para guardar bytes en su logo.bin</value>
@@ -496,16 +433,16 @@
     <value>Visible cuando su teléfono está enchufado mientras está completamente apagado, y el teléfono tiene más</value>
   </data>
   <data name="logo_charge_ToolTipText2" xml:space="preserve">
-    <value>de 3% de carga. logo_battery se muestra en su lugar si tiene 0-3% de carga.</value>
+    <value>más del 3% de carga. En su lugar, se muestra logo_battery si tiene 0-3% de carga.</value>
   </data>
   <data name="logo_lowpower_ToolTipText" xml:space="preserve">
-    <value>Visible cuando el teléfono tiene más del 3% de energía mientras está completamente apagado.</value>
+    <value>Visible cuando el teléfono tiene más del 3% de energía mientras está completamente apagado. Nada más.</value>
   </data>
   <data name="logo_lowpower_ToolTipText2" xml:space="preserve">
-    <value>Esta característica solo está presente en el Moto E</value>
+    <value>Esta función solo está presente en el Moto E</value>
   </data>
   <data name="logo_orange_ToolTipText" xml:space="preserve">
-    <value>Visible en los nuevos teléfonos con el bootloader desbloqueado. Lo que pones aquí es probable que se vea</value>
+    <value>Visible en teléfonos desbloqueados con el nuevo cargador de arranque Moto. Lo que pones aquí probablemente parezca</value>
   </data>
   <data name="logo_orange_ToolTipText2" xml:space="preserve">
     <value>mucho mejor que la advertencia de dispositivo desbloqueado. :)</value>
@@ -514,7 +451,7 @@
     <value>Visible cuando su teléfono falló la verificación del sistema operativo</value>
   </data>
   <data name="logo_unlocked_ToolTipText" xml:space="preserve">
-    <value>Visible en los teléfonos con el bootloader desbloqueados. Lo que pones aquí es probable que se vea</value>
+    <value>Visible en teléfonos desbloqueados con cargador de arranque. Lo que pones aquí probablemente parezca</value>
   </data>
   <data name="logo_unlocked_ToolTipText2" xml:space="preserve">
     <value>mucho mejor que la advertencia de dispositivo desbloqueado. :)</value>
@@ -523,25 +460,25 @@
     <value>Visible cuando el teléfono está completamente cargado mientras está enchufado y completamente apagado.</value>
   </data>
   <data name="logo_unplug_ToolTipText2" xml:space="preserve">
-    <value>Esta característica solo está presente en el Moto E</value>
+    <value>Esta función solo está presente en el Moto E</value>
   </data>
   <data name="logo_yellow_ToolTipText" xml:space="preserve">
     <value>Visible cuando su teléfono carga un sistema operativo diferente</value>
   </data>
   <data name="LogsErrorOpenFolder" xml:space="preserve">
-    <value>¿Quieres abrir la carpeta Registros?</value>
+    <value>Quieres abrir la carpeta Registros?</value>
   </data>
   <data name="LogsErrorSend" xml:space="preserve">
-    <value>¿Quieres enviar registros ahora?</value>
+    <value>Quieres enviar registros ahora?</value>
   </data>
   <data name="LogTestWrongBin" xml:space="preserve">
-    <value>Seleccione un archivo logo.bin correcto! este es un archivo incorrecto:</value>
+    <value>Seleccione un archivo logo.bin correcto. Este es un archivo incorrecto:</value>
   </data>
   <data name="materialButtonResetAllProfiles" xml:space="preserve">
-    <value>Restablecer los perfiles</value>
+    <value>Restablecer todos los perfiles</value>
   </data>
   <data name="materialButtonResetToolSettings" xml:space="preserve">
-    <value>Restablecer los ajsutes del tool</value>
+    <value>Restablecer la configuración de la herramienta</value>
   </data>
   <data name="materialLabel10" xml:space="preserve">
     <value>* Haga clic en la imagen y se bloqueará</value>
@@ -550,16 +487,16 @@
     <value>* Haga doble clic y se desbloqueará</value>
   </data>
   <data name="MaxLogoBinSize" xml:space="preserve">
-    <value>Tamaño máximo del logotipo</value>
+    <value>Tamaño máximo de logo.bin</value>
   </data>
   <data name="NETFRAMEWORKERROR" xml:space="preserve">
-    <value>.NET Framework: No se puede acceder a la versión de .NET Framework ...</value>
+    <value>.NET Framework: no se puede acceder a la versión de .NET Framework ...</value>
   </data>
   <data name="newToolStripMenuItem" xml:space="preserve">
     <value>Nuevo</value>
   </data>
   <data name="NoImageLoad" xml:space="preserve">
-    <value>No se cargaron imágenes, ¿está seguro de que desea continuar con las imágenes en blanco?</value>
+    <value>No se cargaron imágenes, ¿está seguro de continuar con las imágenes en blanco?</value>
   </data>
   <data name="OpenCustomLogoNoAdminTool" xml:space="preserve">
     <value>Si desea abrir un logotipo personalizado, simplemente arrastre y suelte el archivo en la herramienta.</value>
@@ -586,7 +523,7 @@
     <value>Parece haber otra instancia de la herramienta en ejecución. Asegúrese de que no se esté ejecutando en segundo plano.</value>
   </data>
   <data name="ProgramCheckBackRun2" xml:space="preserve">
-    <value>Se está ejecutando otra instancia de herramienta</value>
+    <value>Se está ejecutando otra instancia de la herramienta</value>
   </data>
   <data name="ProgramCheckFolderWrong" xml:space="preserve">
     <value>La carpeta es incorrecta, verifíquela, debería ser así:</value>
@@ -604,7 +541,7 @@
     <value>No se puede iniciar la herramienta, error: compatibilidad con Windows</value>
   </data>
   <data name="rdoAndroid43" xml:space="preserve">
-    <value>Paquete de 540x540</value>
+    <value>Paquete 540x540</value>
   </data>
   <data name="rdoAndroid44" xml:space="preserve">
     <value>Predeterminado</value>
@@ -613,7 +550,7 @@
     <value>Centrar</value>
   </data>
   <data name="rdoImageFill" xml:space="preserve">
-    <value>Llenar</value>
+    <value>Rellenar</value>
   </data>
   <data name="rdoImageStretchAspect" xml:space="preserve">
     <value>Estirar proporcionalmente</value>
@@ -646,31 +583,28 @@
     <value>no se encontró, ingrese así: moto g6 plus</value>
   </data>
   <data name="SearchDevicePleaseInputDevice" xml:space="preserve">
-    <value>Introduzca un dispositivo.</value>
+    <value>Introduzca un dispositivo!</value>
   </data>
   <data name="SelectLogoSizeWarn" xml:space="preserve">
     <value>Seleccione el tamaño de la memoria de su logotipo antes de abrir un archivo!</value>
-  </data>
-  <data name="SettingCLoading" xml:space="preserve">
-    <value>Cargando la configuración de la herramienta ...</value>
   </data>
   <data name="SettingGS" xml:space="preserve">
     <value>Configuración general</value>
   </data>
   <data name="SettingRT" xml:space="preserve">
-    <value>Reinicio de la herramienta</value>
+    <value>Reiniciar Herramienta</value>
   </data>
   <data name="SettingsbuttonOpenToolFolder" xml:space="preserve">
-    <value>Abrir carpeta de la herramienta</value>
+    <value>Abrir carepta de la herramienta</value>
   </data>
   <data name="SettingsGroupBox1" xml:space="preserve">
-    <value>Habilitar el auto guardado de perfiles</value>
+    <value>Habilitar autoguardado de perfiles automático</value>
   </data>
   <data name="SettingsGroupBox2" xml:space="preserve">
-    <value>Habilitar el auto guardado de los logotipo en memoria</value>
+    <value>Habilitar el logotipo de guardado automático en la memoria</value>
   </data>
   <data name="SettingsGroupBox3" xml:space="preserve">
-    <value>Habilitar la comprobación automática de actualizaciones</value>
+    <value>Habilitar la búsqueda automática de actualizaciones</value>
   </data>
   <data name="SettingsNo" xml:space="preserve">
     <value>NO</value>
@@ -681,26 +615,11 @@
   <data name="SettingsYes" xml:space="preserve">
     <value>SI</value>
   </data>
-  <data name="SignYourLogo" xml:space="preserve">
-    <value>Comentarios del logo</value>
-  </data>
   <data name="sourceToolStripMenuItem" xml:space="preserve">
     <value>Fuente</value>
   </data>
-  <data name="TabHome" xml:space="preserve">
-    <value>Inicio</value>
-  </data>
-  <data name="testToolStripMenuItem" xml:space="preserve">
-    <value>Prueba</value>
-  </data>
-  <data name="testYourNewLogoToolStripMenuItem" xml:space="preserve">
-    <value>Prueba su nuevo logo</value>
-  </data>
   <data name="textBoxSearchDeviceToolTipText" xml:space="preserve">
     <value>Ingresa el modelo de tu dispositivo de esta manera: "moto g8 power"</value>
-  </data>
-  <data name="themetoolStripMenuItem" xml:space="preserve">
-    <value>Tema</value>
   </data>
   <data name="ToolErrorShow" xml:space="preserve">
     <value>Se ha producido un error, vaya a la carpeta y envíeme los registros.</value>
@@ -709,31 +628,28 @@
     <value>Ir al archivo</value>
   </data>
   <data name="ToolErrorUpdate" xml:space="preserve">
-    <value>Hay un problema para comunicarse con el servidor de actualización. Compruebe su conexión a Internet y vuelva a intentarlo más tarde.</value>
+    <value>Hay un problema para llegar al servidor de actualización, verifique su conexión a Internet e intente nuevamente más tarde.</value>
   </data>
   <data name="ToolErrorUpdateTitle" xml:space="preserve">
-    <value>La verificación de actualización falló</value>
+    <value>Error al comprobar la actualización</value>
   </data>
   <data name="ToolInternetErrorUpdate" xml:space="preserve">
-    <value>No se pueden verificar las actualizaciones de herramientas, verifique su conexión a Internet.</value>
-  </data>
-  <data name="ToolLangPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>No se pudo comprobar la actualización de la herramienta, compruebe su conexión a Internet.</value>
   </data>
   <data name="ToolNewUpdateText" xml:space="preserve">
-    <value>Hay una nueva versión</value>
+    <value>Hay nueva versión</value>
   </data>
   <data name="ToolNewUpdateText2" xml:space="preserve">
     <value>disponible. Estás usando la versión</value>
   </data>
   <data name="ToolNewUpdateText3" xml:space="preserve">
-    <value>Esta es una actualización requerida. Presione Ok para comenzar a actualizar la aplicación.</value>
+    <value>Esta es una actualización necesaria. Presione Ok para comenzar a actualizar la aplicación.</value>
   </data>
   <data name="ToolNewUpdateTitle" xml:space="preserve">
     <value>Actualización disponible</value>
   </data>
   <data name="ToolNoUpdate" xml:space="preserve">
-    <value>No hay actualizaciones disponibles. Inténtalo de nuevo más tarde.</value>
+    <value>No hay ninguna actualización disponible, inténtelo de nuevo más tarde.</value>
   </data>
   <data name="ToolNoUpdateTitle" xml:space="preserve">
     <value>Actualización no disponible</value>
@@ -751,18 +667,18 @@
     <value>Herramienta</value>
   </data>
   <data name="ToolUpdating" xml:space="preserve">
-    <value>Cerrando aplicación para actualizar...</value>
+    <value>Cerrando la aplicación para actualizar ...</value>
   </data>
   <data name="UpdateStatus" xml:space="preserve">
     <value>Estado:</value>
   </data>
   <data name="UpdateStatusOffline" xml:space="preserve">
-    <value>En línea</value>
+    <value>Offline</value>
   </data>
   <data name="UpdateStatusOnline" xml:space="preserve">
-    <value>Desconectado</value>
+    <value>Online</value>
   </data>
   <data name="Zipfile_logo_bin_error" xml:space="preserve">
-    <value>Error: el archivo Zip &lt;ZFN&gt; no contiene logo.bin</value>
+    <value>Error: el archivo zip &lt;ZFN&gt; no contiene logo.bin</value>
   </data>
 </root>
