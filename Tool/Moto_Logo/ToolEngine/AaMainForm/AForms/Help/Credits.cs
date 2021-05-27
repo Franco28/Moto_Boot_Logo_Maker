@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Credits.cs                                               #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -33,7 +33,7 @@ namespace Moto_Logo
 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-            this.Text = res_man.GetString("CreditsFormTitle", cul);
+            this.Text = res_man.GetString("CreditsForm_Title", cul);
         }
 
         public void cAppend(string message)
@@ -65,7 +65,7 @@ namespace Moto_Logo
             }
             else
             {
-                cAppend(res_man.GetString("CreditsFormError", cul));
+                cAppend(res_man.GetString("CreditsForm_Error", cul));
                 return;
             }
         }

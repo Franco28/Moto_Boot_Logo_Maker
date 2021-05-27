@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.LogoTree.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 24-04-2021                                              #
+#    Date: 27-05-2021                                              #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -164,38 +164,38 @@ namespace Moto_Logo
                 switch (node.Text)
                 {
                     case "logo_boot":
-                        node.ToolTipText = res_man.GetString("logo_boot_ToolTipText", cul) + " " +
-                                           res_man.GetString("logo_boot_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_boot_ToolTipText", cul) + " " +
+                                           res_man.GetString("MainForm_TVLogo_logo_boot_ToolTipText2", cul);
                         break;
                     case "logo_battery":
-                        node.ToolTipText = res_man.GetString("logo_battery_ToolTipText", cul) + " " +
-                                           res_man.GetString("logo_battery_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_battery_ToolTipText", cul) + " " +
+                                           res_man.GetString("MainForm_TVLogo_logo_battery_ToolTipText2", cul);
                         break;
                     case "logo_unlocked":
-                        node.ToolTipText = res_man.GetString("logo_unlocked_ToolTipText", cul) + " " +
-                                           res_man.GetString("logo_unlocked_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_unlocked_ToolTipText", cul) + " " +
+                                           res_man.GetString("MainForm_TVLogo_logo_unlocked_ToolTipText2", cul);
                         break;
                     case "logo_lowpower":
-                        node.ToolTipText = res_man.GetString("logo_lowpower_ToolTipText", cul) + " \n" +
-                                           res_man.GetString("logo_lowpower_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_lowpower_ToolTipText", cul) + " \n" +
+                                           res_man.GetString("MainForm_TVLogo_logo_lowpower_ToolTipText2", cul);
                         break;
                     case "logo_unplug":
-                        node.ToolTipText = res_man.GetString("logo_unplug_ToolTipText", cul) + " \n" +
-                                           res_man.GetString("logo_unplug_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_unplug_ToolTipText", cul) + " \n" +
+                                           res_man.GetString("MainForm_TVLogo_logo_unplug_ToolTipText2", cul);
                         break;
                     case "logo_charge":
-                        node.ToolTipText = res_man.GetString("logo_charge_ToolTipText", cul) + " " +
-                                           res_man.GetString("logo_charge_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_charge_ToolTipText", cul) + " " +
+                                           res_man.GetString("MainForm_TVLogo_logo_charge_ToolTipText2", cul);
                         break;
                     case "logo_red":
-                        node.ToolTipText = res_man.GetString("logo_red_ToolTipText", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_red_ToolTipText", cul);
                         break;
                     case "logo_yellow":
-                        node.ToolTipText = res_man.GetString("logo_yellow_ToolTipText", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_yellow_ToolTipText", cul);
                         break;
                     case "logo_orange":
-                        node.ToolTipText = res_man.GetString("logo_orange_ToolTipText", cul) + " " +
-                                           res_man.GetString("logo_orange_ToolTipText2", cul);
+                        node.ToolTipText = res_man.GetString("MainForm_TVLogo_logo_orange_ToolTipText", cul) + " " +
+                                           res_man.GetString("MainForm_TVLogo_logo_orange_ToolTipText2", cul);
                         break;
                 }
             }

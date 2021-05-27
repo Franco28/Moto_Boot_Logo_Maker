@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.ImageEngine.cs                                  #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -41,7 +41,7 @@ namespace Moto_Logo
             pictureBox1.MouseMove -= pictureBox1_MouseMove;
             labelIconLUImage.Image = Resources.lock_x20;
             ImageStatusBox.Clear();
-            ImageStatusBoxMSG(res_man.GetString("labelImageStatusLocked", cul));
+            ImageStatusBoxMSG(res_man.GetString("MainForm_label_ImageStatusLocked", cul));
         }
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace Moto_Logo
             pictureBox1.MouseMove += pictureBox1_MouseMove;
             labelIconLUImage.Image = Resources.unlock_x20;
             ImageStatusBox.Clear();
-            ImageStatusBoxMSG(res_man.GetString("labelImageStatusUnlocked", cul));
+            ImageStatusBoxMSG(res_man.GetString("MainForm_label_ImageStatusUnlocked", cul));
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
@@ -60,8 +60,8 @@ namespace Moto_Logo
                 {
                     labelIconLUImage.Image = null;
                     ImageStatusBox.Clear();
-                    ImageStatusBoxMSG(res_man.GetString("materialLabel10", cul));
-                    ImageStatusBoxMSG(res_man.GetString("materialLabel11", cul));
+                    ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextLocked", cul));
+                    ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextUnlocked", cul));
                     return;
                 }
                 else

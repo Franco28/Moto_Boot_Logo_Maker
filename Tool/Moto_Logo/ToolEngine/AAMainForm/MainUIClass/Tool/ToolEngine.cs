@@ -87,70 +87,16 @@ namespace Moto_Logo
             ResizeAndDisplayImage();
         }
 
-        public void FileSystemWatcherFilesFolder()
-        {
-            CallFilesFolderError();
-        }
-
         public void FileSystemWatcherErrorLogs()
         {
             CallLogError();
         }
 
-        #region FileSystemWatcher
-
-        FileSystemWatcher watchFilesFolder = new FileSystemWatcher(exePath + @"\Files");
-     
-        private void CallFilesFolderError()
-        {
-            watchFilesFolder.IncludeSubdirectories = true; 
-            watchFilesFolder.NotifyFilter = NotifyFilters.DirectoryName;
-            watchFilesFolder.Changed += new FileSystemEventHandler(watchFilesFolder_Changed);
-            watchFilesFolder.Created += watchFilesFolder_Created;
-            watchFilesFolder.Deleted += watchFilesFolder_Deleted;
-            watchFilesFolder.EnableRaisingEvents = true;
-        }
-
-        private void watchFilesFolder_Deleted(object sender, FileSystemEventArgs e)
-        {
-            MessageBox.Show("Se elimino la carpeta... " + e.Name);
-            return;
-        }
-
-        private void watchFilesFolder_Created(object sender, FileSystemEventArgs e)
-        {
-            MessageBox.Show("Se creo una nueva carpeta... " + e.Name);
-            return;
-        }
-
-        private void watchFilesFolder_Changed(object sender, FileSystemEventArgs e)
-        {
-            if (e.Name == "Bin")
-            {
-                MessageBox.Show("Se renombro la carpeta... " + e.Name);
-                Directory.Move(exePath + @"\Files\Bin", exePath + @"\Files\Bin");
-            }
-            if (e.Name == "Images")
-            {
-                MessageBox.Show("Se renombro la carpeta... " + e.Name);
-                Directory.Move(exePath + @"\Files\Images", exePath + @"\Files\Images");
-            }
-            if (e.Name == "LogoZip")
-            {
-                MessageBox.Show("Se renombro la carpeta... " + e.Name);
-                Directory.Move(exePath + @"\Files\LogoZip", exePath + @"\Files\LogoZip");
-            }
-            return;
-        }
-
+        #region FileSystemWatcher          
         FileSystemWatcher watchererrorlogs = new FileSystemWatcher();
 
         private void CallLogError()
         {
-            //var logpath = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath.ToString();
-            //var newlogpath = logpath.Replace(@"\user.config", "").Trim();
-            //string fileLogPath = newlogpath + @"\DebugLogs\";
-
             string fileLogPath = exePath + @"\Logs\";
 
             watchererrorlogs.Path = fileLogPath;
@@ -378,7 +324,7 @@ namespace Moto_Logo
             _logosize = size;
             cboMoto.Items.Clear();
             _deviceLogoBinSize.Clear();
-            Init_cboMoto(res_man.GetString("DevicesCustom", cul) + mb, 720, 1080, _logosize, 0x3FFFFFFF);
+            Init_cboMoto(res_man.GetString("MainForm_Logo_Custom", cul) + mb, 720, 1080, _logosize, 0x3FFFFFFF);
             toolStripStatusLabel1.Text = res_man.GetString("MaxLogoBinSize", cul) + @" = " + (_maxFileSize / 1024 / 1024) + @"MiB";
             cboMoto.SelectedIndex = 0;
         }
@@ -392,37 +338,14 @@ namespace Moto_Logo
             _deviceLogoBinContents.Add(logoContents);
         }
 
-        public void OpenTelegramChannel(string url)
-        {
-            if (InternetCheck.ConnectToInternet() == true)
-            {
-                Process.Start(url);
-            }
-            else
-            {
-                MessageBox.Show(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-        }
-
         public void KillTool()
         {
-            string closeadb = "adb";
-            string closefastboot = "fastboot";
             string closetool = "Moto_Boot_Logo_Maker";
 
             timerupdates.Stop();
             if (Properties.Settings.Default.SaveProfiles == true)
             {
                 SaveProfiles();
-            }
-            foreach (var process in Process.GetProcessesByName(closeadb))
-            {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName(closefastboot))
-            {
-                process.Kill();
             }
             foreach (var process in Process.GetProcessesByName(closetool))
             {
@@ -512,7 +435,7 @@ namespace Moto_Logo
                 _deviceLogoBinSize.Clear();
                 _deviceLogoBinContents.Clear();
                 cboMoto.Items.Clear();
-                Init_cboMoto(res_man.GetString("DevicesCustom", cul), 720, 1080, 4194304, 0x3FFFFFFF);
+                Init_cboMoto(res_man.GetString("MainForm_Logo_Custom", cul), 720, 1080, 4194304, 0x3FFFFFFF);
                 cboMoto.SelectedIndex = 0;
                 //cboMoto_SelectedIndexChanged(null, null);
                 textBoxSearchDevice.Text = "";

@@ -839,7 +839,7 @@ namespace Moto_Logo
             this.darkSectionPanelMainBTNS.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.darkSectionPanelMainBTNS.Location = new System.Drawing.Point(6, 652);
             this.darkSectionPanelMainBTNS.Name = "darkSectionPanelMainBTNS";
-            this.darkSectionPanelMainBTNS.SectionHeader = "Controls of Logo list";
+            this.darkSectionPanelMainBTNS.SectionHeader = "Logo List Controls";
             this.darkSectionPanelMainBTNS.Size = new System.Drawing.Size(347, 97);
             this.darkSectionPanelMainBTNS.TabIndex = 215;
             // 
@@ -1114,7 +1114,7 @@ namespace Moto_Logo
             this.settingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.settingsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.settingsToolStripMenuItem.Text = "&Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -1123,7 +1123,7 @@ namespace Moto_Logo
             this.checkForUpdatesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.checkForUpdatesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.checkForUpdatesToolStripMenuItem.Text = "&Check Updates";
             this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
@@ -1132,7 +1132,7 @@ namespace Moto_Logo
             this.downloadSiteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.downloadSiteToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.downloadSiteToolStripMenuItem.Name = "downloadSiteToolStripMenuItem";
-            this.downloadSiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.downloadSiteToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.downloadSiteToolStripMenuItem.Text = "&Download Site";
             this.downloadSiteToolStripMenuItem.Click += new System.EventHandler(this.downloadSiteToolStripMenuItem_Click);
             // 
@@ -1141,7 +1141,7 @@ namespace Moto_Logo
             this.changelogToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.changelogToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.changelogToolStripMenuItem.Name = "changelogToolStripMenuItem";
-            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.changelogToolStripMenuItem.Text = "&Changelog";
             this.changelogToolStripMenuItem.Click += new System.EventHandler(this.changelogToolStripMenuItem_Click);
             // 
@@ -1150,7 +1150,7 @@ namespace Moto_Logo
             this.sourceToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.sourceToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.sourceToolStripMenuItem.Name = "sourceToolStripMenuItem";
-            this.sourceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sourceToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.sourceToolStripMenuItem.Text = "&Source";
             this.sourceToolStripMenuItem.Click += new System.EventHandler(this.sourceToolStripMenuItem_Click);
             // 
@@ -1194,7 +1194,7 @@ namespace Moto_Logo
             // ProgressBar
             // 
             this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.Size = new System.Drawing.Size(325, 15);
+            this.ProgressBar.Size = new System.Drawing.Size(353, 15);
             // 
             // toolStripStatusLabel1
             // 

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 14-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -14,13 +14,13 @@
 using AutoUpdaterDotNET;
 using Microsoft.Win32;
 using System;
-using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
 using DarkUI.Forms;
+using System.Diagnostics;
 
 namespace Moto_Logo
 {
@@ -38,20 +38,20 @@ namespace Moto_Logo
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
             button1.Hide();
-            labelTITLEMAINTEINERS.Text = res_man.GetString("AboutMainteiners", cul);
+            labelTITLEMAINTEINERS.Text = res_man.GetString("AboutForm_Mainteiners", cul);
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                this.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - PORTABLE - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
+                this.Text = String.Format(res_man.GetString("AboutForm_Title", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - PORTABLE - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
             }
             else
             {
-                this.Text = String.Format(res_man.GetString("aboutToolStripMenuItem1", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
+                this.Text = String.Format(res_man.GetString("AboutForm_Title", cul), AssemblyTitle) + " Moto_Boot_Logo_Maker - Build: " + Utils.GetLinkerDateTime(Assembly.GetEntryAssembly(), null).ToString();
             }
 
-            button2.Text = res_man.GetString("AboutBTNContributors", cul);
-            button1.Text = res_man.GetString("AboutBTNDownloadUpdate", cul);
-            label12.Text = res_man.GetString("AboutDonationMSG", cul);
+            button2.Text = res_man.GetString("AboutForm_BTN_Contributors", cul);
+            button1.Text = res_man.GetString("AboutForm_BTN_DownloadUpdate", cul);
+            label12.Text = res_man.GetString("AboutForm_DonationMSG", cul);
         }
 
         public void cAppend(string message)
@@ -66,11 +66,11 @@ namespace Moto_Logo
         private void AboutBox_Load(object sender, EventArgs e)
         {
             cAppend("------------------------------------------ Tool Info ------------------------------------------");
-            cAppend(res_man.GetString("AboutBoxToolName", cul) + " " + AssemblyProduct);
-            cAppend(res_man.GetString("AboutBoxToolVer", cul) + " v" + Application.ProductVersion);
-            cAppend(res_man.GetString("AboutBoxToolPath", cul) + " " + exePath);
-            cAppend(res_man.GetString("AboutBoxToolCul", cul) + " " + ci.Name.ToString());
-            cAppend(res_man.GetString("AboutBoxOS", cul) + " " + OSVersionInfo.Name.ToString());
+            cAppend(res_man.GetString("AboutForm_Box_ToolName", cul) + " " + AssemblyProduct);
+            cAppend(res_man.GetString("AboutForm_Box_ToolVer", cul) + " v" + Application.ProductVersion);
+            cAppend(res_man.GetString("AboutForm_Box_ToolPath", cul) + " " + exePath);
+            cAppend(res_man.GetString("AboutForm_Box_ToolCul", cul) + " " + ci.Name.ToString());
+            cAppend(res_man.GetString("AboutForm_Box_OS", cul) + " " + OSVersionInfo.Name.ToString());
 
             try
             {
@@ -93,13 +93,13 @@ namespace Moto_Logo
                 Logs.DebugWindwosInfo(res_man.GetString("NETFRAMEWORKERROR", cul) + " \n" + er.ToString(), "OS: " + OSVersionInfo.Name.ToString());
             }
 
-            cAppend(res_man.GetString("AboutBoxImageRunTime", cul) + " " + typeof(string).Assembly.ImageRuntimeVersion);
-            cAppend(res_man.GetString("AboutBoxAppTrusted", cul) +  " " + typeof(string).Assembly.IsFullyTrusted);
+            cAppend(res_man.GetString("AboutForm_Box_ImageRunTime", cul) + " " + typeof(string).Assembly.ImageRuntimeVersion);
+            cAppend(res_man.GetString("AboutForm_Box_AppTrusted", cul) +  " " + typeof(string).Assembly.IsFullyTrusted);
 
             cAppend("---------------------------------------- End Tool Info ----------------------------------------");
 
             cAppend(" ");
-            cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutCheckinf4Updates", cul));
+            cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_Checkinf4Updates", cul));
             CheckForUpdates();
         }
 
@@ -115,7 +115,7 @@ namespace Moto_Logo
             {
                 if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml") == true)
                 {
-                    cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutDownloadUpdateServerDown", cul));
+                    cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_DownloadUpdate_ServerDown", cul));
                     return;
                 }
                 else
@@ -131,7 +131,7 @@ namespace Moto_Logo
             {
                 AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                 timer1.Stop();
-                cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutNoInternet", cul));
+                cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_DownloadUpdate_NetLost", cul));
                 return;
             }
         }
@@ -146,7 +146,7 @@ namespace Moto_Logo
             {
                 AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                 timer1.Stop();
-                cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutDownloadUpdateNetLost", cul));
+                cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_DownloadUpdate_NetLost", cul));
                 return;
             }
         }
@@ -161,7 +161,7 @@ namespace Moto_Logo
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timer1.Stop();
                     timer1.Dispose();
-                    cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul));
+                    cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("MainForm_Update_NewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("MainForm_Update_NewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("MainForm_Update_NewUpdateText3", cul));
                     return;
                 }
                 else
@@ -170,7 +170,7 @@ namespace Moto_Logo
                     timer1.Stop();
                     timer1.Dispose();
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
-                    cAppend(res_man.GetString("AboutUpdates", cul) + " " + res_man.GetString("AboutUpdates2", cul));
+                    cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_Updates2", cul));
                     return;
                 }
             }
@@ -206,11 +206,18 @@ namespace Moto_Logo
         }
         #endregion AssemblyInfo
 
+
         public void OpenTelegram(string url)
         {
-            var main = new MainForm();
-            main.OpenTelegramChannel(url);
-            return;
+            if (InternetCheck.ConnectToInternet() == true)
+            {
+                Process.Start(url);
+            }
+            else
+            {
+                MessageBox.Show(res_man.GetString("MainForm_InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -229,7 +236,7 @@ namespace Moto_Logo
             MessageBoxManager.No = "SF";
             MessageBoxManager.Cancel = "Cancel";
             MessageBoxManager.Register();
-            DialogResult answer = MessageBox.Show(res_man.GetString("AboutDownloadUpdateServer", cul) + " \n*Android File Host (AFH) \n*SourceForge (SF)",
+            DialogResult answer = MessageBox.Show(res_man.GetString("AboutForm_DownloadUpdate_Server", cul) + " \n*Android File Host (AFH) \n*SourceForge (SF)",
             "Moto_Boot_Logo_Maker " + res_man.GetString("AboutDownloadUpdateServerTitle", cul), MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
             switch (answer)
             {

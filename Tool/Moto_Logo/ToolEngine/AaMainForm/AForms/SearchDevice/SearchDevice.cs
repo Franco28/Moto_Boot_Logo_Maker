@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.SearchDevice.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -27,7 +27,7 @@ namespace Moto_Logo
             Form fc = Application.OpenForms["DeviceInfo"];
             if (fc != null)
             {
-                MessageBox.Show(res_man.GetString("SearchDeviceAlreadyOpened", cul) + " " + fc.Text + ", " + res_man.GetString("SearchDeviceAlreadyOpened2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(res_man.GetString("SearchDeviceForm_AlreadyOpened", cul) + " " + fc.Text + ", " + res_man.GetString("SearchDeviceForm_AlreadyOpened2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 fc.BringToFront();
             }
             else
@@ -67,10 +67,10 @@ namespace Moto_Logo
                             case -2:
                                 {
                                     temp = reader.ReadInt32();
-                                    searchdevice.labelLogoComment.Text = "Logo Comment: " + Encoding.ASCII.GetString(reader.ReadBytes(temp)).Replace("@TeamDeluxe", "@Franco28").Trim().ToString();
+                                    searchdevice.labelLogoComment.Text = "Logo " + res_man.GetString("DeviceInfoForm_LabelLogoComment", cul) + " " + Encoding.ASCII.GetString(reader.ReadBytes(temp)).Trim().ToString();
                                     temp = reader.ReadInt32();
                                     comment = Encoding.UTF8.GetString(reader.ReadBytes(temp));
-                                    searchdevice.labelLogoComment.Text = "Logo Comment: "+ comment.Replace("@TeamDeluxe", "@Franco28").Trim().ToString();
+                                    searchdevice.labelLogoComment.Text = "Logo " + res_man.GetString("DeviceInfoForm_LabelLogoComment", cul) + " " + Encoding.ASCII.GetString(reader.ReadBytes(temp)).Trim().ToString();
                                     Application.DoEvents();
                                 }
                                 break;
@@ -80,21 +80,21 @@ namespace Moto_Logo
                 }
                 catch
                 {
-                    searchdevice.labelLogoComment.Text = "Logo Comment: Can´t read comments...";
+                    searchdevice.labelLogoComment.Text = "Logo " + res_man.GetString("DeviceInfoForm_LabelLogoComment", cul) + " " + res_man.GetString("DeviceInfoForm_LabelLogoComment_Error", cul); 
                 }
 
                 DateTime creation = File.GetCreationTime(logopath);
                 DateTime modification = File.GetLastWriteTime(logopath);
 
                 searchdevice.Show();
-                searchdevice.Text = "Motorola device: " + title;
-                searchdevice.labelDName.Text = "Name: " + dname;
-                searchdevice.labelCodeName.Text = "Code Name: " + dcn;
-                searchdevice.labelResolution.Text = "Resolution: " + reso;
-                searchdevice.labelLMemory.Text = "Memory: " + mem + "MIB";
-                searchdevice.labelLogoCreateDate.Text = "Logo Create Date: " + creation;
-                searchdevice.labelLogoModifyDate.Text = "Logo Modify Date: " + modification;
-                searchdevice.labelLogoSize.Text = "Logo Size: " + logosize.ToString() + " bytes";
+                searchdevice.Text = "Motorola " + res_man.GetString("DeviceInfoForm_Label_Device", cul) + " " + title;
+                searchdevice.labelDName.Text = res_man.GetString("DeviceInfoForm_LabelName", cul) + " " + dname;
+                searchdevice.labelCodeName.Text = res_man.GetString("DeviceInfoForm_LabelCodeName", cul) + " " + dcn;
+                searchdevice.labelResolution.Text = res_man.GetString("DeviceInfoForm_LabelResolution", cul) + " " + reso;
+                searchdevice.labelLMemory.Text = res_man.GetString("DeviceInfoForm_LabelMemory", cul) + " " + mem + "MB";
+                searchdevice.labelLogoCreateDate.Text = res_man.GetString("DeviceInfoForm_LabelLogoCreateDate", cul) + " " + creation;
+                searchdevice.labelLogoModifyDate.Text = res_man.GetString("DeviceInfoForm_LabelLogoModifyDate", cul) + " " + modification;
+                searchdevice.labelLogoSize.Text = res_man.GetString("DeviceInfoForm_LabelLogoSize", cul) + " " + logosize.ToString() + " bytes";
                 searchdevice.labelLogoPath.Text = logopath;
                 searchdevice.labelLogoPath2.Text = logopath2;
                 searchdevice.pictureBoxDevice.Image = picture;
@@ -160,7 +160,7 @@ namespace Moto_Logo
 
             if (textBoxSearchDevice.Text == string.Empty)
             {
-                MessageBox.Show(res_man.GetString("SearchDevicePleaseInputDevice", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(res_man.GetString("SearchDeviceForm_PleaseInputDevice", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -1292,7 +1292,7 @@ namespace Moto_Logo
                 }
                 #endregion 4MIB Devices
 
-                MessageBox.Show(textBoxSearchDevice.Text + ", " + res_man.GetString("SearchDeviceNotFound", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(textBoxSearchDevice.Text + ", " + res_man.GetString("SearchDeviceForm_NotFound", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

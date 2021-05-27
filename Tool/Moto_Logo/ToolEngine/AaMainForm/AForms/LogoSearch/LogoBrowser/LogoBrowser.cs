@@ -2,7 +2,7 @@
 #####################################################################
 #    File: LogoBrowser.cs                                           #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -34,7 +34,7 @@ namespace Moto_Logo
             InitializeComponent(); 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-            buttonSelect.Text = res_man.GetString("LogoBrowserSelectButton", cul);
+            buttonSelect.Text = res_man.GetString("LogoBrowserForm_BTN_Select", cul);
         }
 
 
@@ -111,8 +111,8 @@ namespace Moto_Logo
             {
                 if (Properties.Profiles.Default.LogoMemory4MB == true)
                 {
-                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
-                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 4MB logo.bin...";
+                    this.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 4MB logo.bin...";
+                    label1.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 4MB logo.bin...";
 
                     CheckDeviceAndFolder("MotoDroid", @"4MB\MotoDroid\");
                     CheckDeviceAndFolder("MotoG", @"4MB\MotoG\");
@@ -122,8 +122,8 @@ namespace Moto_Logo
 
                 if (Properties.Profiles.Default.LogoMemory6MB == true)
                 {
-                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
-                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 6MB logo.bin...";
+                    this.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 6MB logo.bin...";
+                    label1.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 6MB logo.bin...";
 
                     CheckDeviceAndFolder("MotoDroid", @"6MB\MotoDroid\");
                     CheckDeviceAndFolder("MotoX", @"6MB\MotoX\");
@@ -131,8 +131,8 @@ namespace Moto_Logo
 
                 if (Properties.Profiles.Default.LogoMemory8MB == true)
                 {
-                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
-                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 8MB logo.bin...";
+                    this.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 8MB logo.bin...";
+                    label1.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 8MB logo.bin...";
 
                     CheckDeviceAndFolder("MotoDroid", @"8MB\MotoDroid\");
                     CheckDeviceAndFolder("MotoX", @"8MB\MotoX\");
@@ -141,8 +141,8 @@ namespace Moto_Logo
 
                 if (Properties.Profiles.Default.LogoMemory16MB == true)
                 {
-                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
-                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 16MB logo.bin...";
+                    this.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 16MB logo.bin...";
+                    label1.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 16MB logo.bin...";
 
                     CheckDeviceAndFolder("MotoE", @"16MB\MotoE\");
                     CheckDeviceAndFolder("MotoEdge", @"16MB\MotoEdge\");
@@ -154,8 +154,8 @@ namespace Moto_Logo
 
                 if (Properties.Profiles.Default.LogoMemory32MB == true)
                 {
-                    this.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
-                    label1.Text = res_man.GetString("savefiledialog1Title", cul) + " 32MB logo.bin...";
+                    this.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 32MB logo.bin...";
+                    label1.Text = res_man.GetString("MainForm_savefiledialog_Title", cul) + " 32MB logo.bin...";
 
                     CheckDeviceAndFolder("MotoEdge", @"32MB\MotoEdge\");
                     CheckDeviceAndFolder("MotoG", @"32MB\MotoG\");
@@ -167,7 +167,9 @@ namespace Moto_Logo
             } 
             catch (Exception ex)
             {
+                Logs.DebugErrorLogs(ex);
                 MessageBox.Show(ex.Message.ToString(), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
@@ -198,20 +200,20 @@ namespace Moto_Logo
                     mainform.labelbtnBuild.Enabled = true;
                     mainform.btnBuild.Enabled = true;
                     Properties.Settings.Default.LogoBinOpen = sN.ToString();
-                    mainform.toolStripStatusLabel3.Text = @"\ Current project: " + sN.ToString();
+                    mainform.toolStripStatusLabel3.Text = @"\ " + res_man.GetString("MainForm_CurrentProjectText", cul) + " " + sN.ToString();
                     Properties.Settings.Default.Save();
                     this.Close();
                     return;
                 }
                 else
                 {
-                    MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserErrorBinFile", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserForm_ErrorBinFile", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
             else
             {
-                MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserIsADir", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+                MessageBox.Show(sN + " " + res_man.GetString("LogoBrowserForm_IsADir", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
                 return;
             }
         }

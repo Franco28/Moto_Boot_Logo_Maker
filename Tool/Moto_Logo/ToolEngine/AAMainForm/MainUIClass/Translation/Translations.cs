@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.Translations.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 23-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -20,99 +20,105 @@ namespace Moto_Logo
     {
         public void CreateCulture(string lang)
         {
-            if (ci.Name.Contains(lang))
-            {
-                Properties.Settings.Default.ToolLang = ci.Name.ToString();
-             
-                cul = CultureInfo.CreateSpecificCulture(lang);
+            Properties.Settings.Default.ToolLang = lang;
 
-                NumberFormatInfo numberInfo = CultureInfo.CreateSpecificCulture(lang).NumberFormat;
+            cul = CultureInfo.CreateSpecificCulture(lang);
 
-                CultureInfo info = new CultureInfo(lang);
-                info.NumberFormat = numberInfo;
-                info.DateTimeFormat.DateSeparator = "/";
-                info.DateTimeFormat.ShortDatePattern = "dd/MM/yyyy";
+            NumberFormatInfo numberInfo = CultureInfo.CreateSpecificCulture(lang).NumberFormat;
 
-                CultureInfo ui_culture = new CultureInfo(lang);
-                CultureInfo culture = new CultureInfo(lang);
+            CultureInfo info = new CultureInfo(lang);
+            info.NumberFormat = numberInfo;
+            info.DateTimeFormat.DateSeparator = "/";
+            info.DateTimeFormat.ShortDatePattern = "dd/MM/yyyy";
 
-                Thread.CurrentThread.CurrentUICulture = ui_culture;
-                Thread.CurrentThread.CurrentCulture = culture;
+            CultureInfo ui_culture = new CultureInfo(lang);
+            CultureInfo culture = new CultureInfo(lang);
 
-                Properties.Settings.Default.Save();
-            }
+            Thread.CurrentThread.CurrentUICulture = ui_culture;
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            Properties.Settings.Default.Save();
+
+            Translate();
+        }
+
+        public void Translate()
+        {
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            // Tool Strip Menu Item
+            fileToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_file", cul);
+            newToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_new", cul);
+            openToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_open", cul);
+            checkForUpdatesToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_checkForUpdates", cul);
+            sourceToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_source", cul);
+            aboutToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_about", cul);
+            helpToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_help", cul);
+            downloadSiteToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_downloadSite", cul);
+            toolStripMenuItemOpenCustomLogo.Text = res_man.GetString("MainForm_ToolStripMenu_OpenCustomLogo", cul);
+            toolToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_tool", cul);
+            settingsToolStripMenuItem.Text = res_man.GetString("MainForm_ToolStripMenu_settings", cul);
+
+            // Main TVLogo Buttons 
+            darkSectionPanelMainBTNS.SectionHeader = res_man.GetString("MainForm_PanelMainBTNS", cul);
+            buttonAppend.Text = res_man.GetString("MainForm_BTN_Append", cul);
+            buttonDelete.Text = res_man.GetString("MainForm_BTN_Delete", cul);
+            buttonExtract.Text = res_man.GetString("MainForm_BTN_Extract", cul);
+
+            // GroupBox & RadioButtons
+            groupBoxLogoFormat.Text = res_man.GetString("MainForm_GB_LogoFormat", cul);
+            groupBoxLogoResolution.Text = res_man.GetString("MainForm_GB_LogoResolution", cul);
+            groupBoxLogoImageOption.Text = res_man.GetString("MainForm_GB_LogoImageFillOptions", cul);
+            groupBoxLogoImageOrientation.Text = res_man.GetString("MainForm_GB_LogoImageOrientationOptions", cul);
+            groupBoxLogoMemory.Text = res_man.GetString("MainForm_GB_SelectLogoMemory", cul);
+            groupBoxLogoExtension.Text = res_man.GetString("MainForm_GB_SelectExtension", cul);
+            rdoAndroid44.Text = res_man.GetString("MainForm_RDO_rdoAndroid44", cul);
+            rdoAndroid43.Text = res_man.GetString("MainForm_RDO_rdoAndroid43", cul);
+            rdoLayoutPortrait.Text = res_man.GetString("MainForm_RDO_rdoLayoutPortrait", cul);
+            rdoLayoutLandscape.Text = res_man.GetString("MainForm_RDO_rdoLayoutLandscape", cul);
+            rdoImageCenter.Text = res_man.GetString("MainForm_RDO_rdoImageCenter", cul);
+            rdoImageStretchAspect.Text = res_man.GetString("MainForm_RDO_rdoImageStretchAspect", cul);
+            rdoImageFill.Text = res_man.GetString("MainForm_RDO_rdoImageFill", cul);
+
+            // Main Labels and BTNS
+            labelLogoName.Text = res_man.GetString("MainForm_Logo_Name", cul);
+            labelBuildPath.Text = res_man.GetString("MainForm_label_BuildPath", cul);
+            labelbtnBuild.Text = res_man.GetString("MainForm_BTN_Build", cul);
+            labelbtnStop.Text = res_man.GetString("MainForm_BTN_Stop", cul);
+            labelbtnOpenLogoFile.Text = res_man.GetString("MainForm_BTN_OpenLogoFile", cul);
+            labelSearchDevice.Text = res_man.GetString("MainForm_label_SearchDevice", cul);
+            labelReload.Text = res_man.GetString("MainForm_label_ReloadTool", cul);
+            labelErrorGoToFileInfo.Text = res_man.GetString("MainForm_label_ErrorGoToFileInfo", cul);
+
+            // Status Panel BTNS ToolTipText
+            labelGoToError.ToolTipText = res_man.GetString("MainForm_label_GoToErrorToolTipText", cul);
+            btnBuild.ToolTipText = res_man.GetString("MainForm_BTN_BuildToolTipText", cul);
+            btnStop.ToolTipText = res_man.GetString("MainForm_BTN_StopToolTipText", cul);
+            btnAttachPath.ToolTipText = res_man.GetString("MainForm_BTN_AttachPathToolTipText", cul);
+            btnOpenLogoFile.ToolTipText = res_man.GetString("MainForm_BTN_OpenLogoFileToolTipText", cul);
+            btnReload.ToolTipText = res_man.GetString("MainForm_BTN_ReloadToolTipText", cul);
+            btnSearchDevice.ToolTipText = res_man.GetString("MainForm_BTN_SearchDeviceToolTipText", cul);
+            textBoxSearchDevice.ToolTipText = res_man.GetString("MainForm_ToolTip_SearchDevice", cul);
         }
 
         public void Translations()
         {
-            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            if (ci.Name == string.Empty)
+            {
+                CreateCulture("en");
+                return;
+            }
 
-            if (ci.Name.Contains("en") || 
-                ci.Name.Contains("es") || 
-                ci.Name.Contains("pt") || 
-                ci.Name.Contains("it") || 
-                ci.Name.Contains("fr") || 
-                ci.Name.Contains("pl") ||
-                ci.Name.Contains("ru") || 
-                ci.Name.Contains("ga") || 
-                ci.Name.Contains("de") ||
-                ci.Name.Contains("tr") ||
-                ci.Name.Contains("ja") || 
-                ci.Name.Contains("zh-Hans") ||
-                ci.Name.Contains("zh-Hant") ||
-                ci.Name.Contains("zh-CN"))
+            if (ci.Name.Contains("en"))
             {
                 CreateCulture(ci.Name.ToString());
+                return;
             }
             else
             {
                 CreateCulture("en");
+                return;
             }
-
-            fileToolStripMenuItem.Text = res_man.GetString("fileToolStripMenuItem", cul);
-            newToolStripMenuItem.Text = res_man.GetString("newToolStripMenuItem", cul);
-            openToolStripMenuItem.Text = res_man.GetString("openToolStripMenuItem", cul);
-            checkForUpdatesToolStripMenuItem.Text = res_man.GetString("checkForUpdatesToolStripMenuItem", cul);
-            sourceToolStripMenuItem.Text = res_man.GetString("sourceToolStripMenuItem", cul);
-            aboutToolStripMenuItem.Text = res_man.GetString("aboutToolStripMenuItem1", cul);
-            aboutToolStripMenuItem.Text = res_man.GetString("aboutToolStripMenuItem1", cul);
-            helpToolStripMenuItem.Text = res_man.GetString("helpToolStripMenuItem", cul);
-            downloadSiteToolStripMenuItem.Text = res_man.GetString("downloadSiteToolStripMenuItem", cul);
-            groupBoxLogoFormat.Text = res_man.GetString("groupBox2", cul);
-            groupBoxLogoResolution.Text = res_man.GetString("groupBox3", cul);
-            groupBoxLogoImageOption.Text = res_man.GetString("groupBox4", cul);
-            groupBoxLogoImageOrientation.Text = res_man.GetString("groupBox5", cul);
-            groupBoxLogoMemory.Text = res_man.GetString("groupBox6", cul);
-            groupBoxLogoExtension.Text = res_man.GetString("groupBox7", cul);
-            labelLogoName.Text = res_man.GetString("LogoName", cul);
-            buttonAppend.Text = res_man.GetString("button1", cul);
-            buttonDelete.Text = res_man.GetString("button2", cul);
-            buttonExtract.Text = res_man.GetString("button3", cul);
-            rdoAndroid44.Text = res_man.GetString("rdoAndroid44", cul);
-            rdoAndroid43.Text = res_man.GetString("rdoAndroid43", cul);
-            rdoLayoutPortrait.Text = res_man.GetString("rdoLayoutPortrait", cul);
-            rdoLayoutLandscape.Text = res_man.GetString("rdoLayoutLandscape", cul);
-            rdoImageCenter.Text = res_man.GetString("rdoImageCenter", cul);
-            rdoImageStretchAspect.Text = res_man.GetString("rdoImageStretchAspect", cul);
-            rdoImageFill.Text = res_man.GetString("rdoImageFill", cul);
-            settingsToolStripMenuItem.Text = res_man.GetString("settingsToolStripMenuItem", cul);
-            labelBuildPath.Text = res_man.GetString("labelBuildPath", cul);
-            labelbtnBuild.Text = res_man.GetString("btnBuild", cul);
-            labelbtnStop.Text = res_man.GetString("btnStop", cul);
-            labelbtnOpenLogoFile.Text = res_man.GetString("btnOpenLogoFile", cul);
-            labelSearchDevice.Text = res_man.GetString("labelSearchDevice", cul);
-            labelReload.Text = res_man.GetString("labelReloadTool", cul);
-            btnBuild.ToolTipText = res_man.GetString("btnBuildToolTipText", cul);
-            btnStop.ToolTipText = res_man.GetString("btnStopToolTipText", cul);
-            btnAttachPath.ToolTipText = res_man.GetString("btnAttachPathToolTipText", cul);
-            btnOpenLogoFile.ToolTipText = res_man.GetString("btnOpenLogoFileToolTipText", cul);
-            btnReload.ToolTipText = res_man.GetString("btnReloadToolTipText", cul);
-            labelGoToError.ToolTipText = res_man.GetString("labelGoToErrorToolTipText", cul);
-            textBoxSearchDevice.ToolTipText = res_man.GetString("textBoxSearchDeviceToolTipText", cul);
-            btnSearchDevice.ToolTipText = res_man.GetString("btnSearchDeviceToolTipText", cul);
-            toolStripMenuItemOpenCustomLogo.Text = res_man.GetString("toolStripMenuItemOpenCustomLogo", cul);
-            toolToolStripMenuItem.Text = res_man.GetString("toolToolStripMenuItem", cul);
-            labelErrorGoToFileInfo.Text = res_man.GetString("labelErrorGoToFileInfo", cul);
         }
     }
 }

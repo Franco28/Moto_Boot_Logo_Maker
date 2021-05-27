@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.OpenLogo.cs                                     #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -81,8 +81,8 @@ namespace Moto_Logo
                     zipFile = true;
                     if ((logobin = ExtractLogoBin(filename)) == null)
                     {
-                        toolStripStatusLabel1.Text = res_man.GetString("Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename);
-                        Logs.LogoOpenError(res_man.GetString("Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename));
+                        toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename);
+                        Logs.LogoOpenError(res_man.GetString("MainForm_LogoOpen_Zipfile_logo_bin_error", cul).Replace("<ZFN>", filename));
                         Application.DoEvents();
                         return;
                     }
@@ -103,8 +103,8 @@ namespace Moto_Logo
                 {
                     Logs.DebugErrorLogs(ex);
                     ProgressBar.Visible = false;
-                    toolStripStatusLabel1.Text = res_man.GetString("FileOpenError", cul).Replace("<FN>", filename);
-                    Logs.LogoOpenError(res_man.GetString("FileOpenError", cul).Replace("<FN>", filename) + " Error: " + ex.ToString());
+                    toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_FileOpenError", cul).Replace("<FN>", filename);
+                    Logs.LogoOpenError(res_man.GetString("MainForm_LogoOpen_FileOpenError", cul).Replace("<FN>", filename) + " Error: " + ex.ToString());
                     return;
                 }
 
@@ -126,7 +126,7 @@ namespace Moto_Logo
                     {
                         if (reader.BaseStream.Length != 0xD5930)
                         {
-                            toolStripStatusLabel1.Text = res_man.GetString("LogoBinInvalid", cul);
+                            toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_BinInvalid", cul);
                             return;
                         }
                         reader.BaseStream.Position = 0;
@@ -138,7 +138,7 @@ namespace Moto_Logo
                                 ? @"\logo.bin\logo_unlocked"
                                 : @"\logo_unlocked"),
                             "logo_unlocked");
-                        toolStripStatusLabel1.Text = res_man.GetString("LogoBinProcessOk", cul);
+                        toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_BinProcessOk", cul);
                         return;
                     }
                     var count = (reader.ReadInt32() - 0x0D) / 0x20;
@@ -168,7 +168,7 @@ namespace Moto_Logo
                                 }
 
                                 temp = reader.ReadInt32();
-                                txtComments.Text = Encoding.ASCII.GetString(reader.ReadBytes(temp)).Replace("@TeamDeluxe", "@Franco28").Trim();
+                                txtComments.Text = Encoding.ASCII.GetString(reader.ReadBytes(temp)).Trim();
                                 temp = reader.ReadInt32();
                                 comment = Encoding.UTF8.GetString(reader.ReadBytes(temp));
                                 Properties.Settings.Default.LogoMessage = txtComments.Text.ToString();
@@ -198,7 +198,7 @@ namespace Moto_Logo
                     }
                     for (var i = 0; i < count; i++)
                     {
-                        toolStripStatusLabel1.Text = res_man.GetString("LogoBinProccesing", cul) + ": " + name[i];
+                        toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_BinProccesing", cul) + ": " + name[i];
                         ProgressBar.Value = 0;
                         Application.DoEvents();
 
@@ -293,7 +293,7 @@ namespace Moto_Logo
                 return;
             }
 
-            toolStripStatusLabel1.Text = res_man.GetString("FileLoadOk", cul);
+            toolStripStatusLabel1.Text = res_man.GetString("MainForm_LogoOpen_FileLoadOk", cul);
         }
     }
 }

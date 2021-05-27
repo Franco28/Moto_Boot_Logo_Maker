@@ -2,7 +2,7 @@
 #####################################################################
 #    File: SelectDevice.cs                                          #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -30,7 +30,7 @@ namespace Moto_Logo
         public SelectDevice()
         {
             InitializeComponent();
-            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));           
+            res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         }
 
         public void Round(Panel panel) 
@@ -183,8 +183,8 @@ namespace Moto_Logo
             if (mainform.radioButton4mib.Checked == true)
             {
                 this.CenterToScreen();
-                labelLogoMemory.Text = @"Logo Memory: 4MB";
-                this.Text = @"Select your device - Logo Memory: 4MB";
+                labelLogoMemory.Text = res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 4MB";
+                this.Text = res_man.GetString("SelectDeviceForm_SD_Text", cul) + " - " + res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 4MB";
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -218,8 +218,8 @@ namespace Moto_Logo
             if (mainform.radioButton6MIB.Checked == true)
             {
                 this.CenterToScreen();
-                labelLogoMemory.Text = @"Logo Memory: 6MB";
-                this.Text = @"Select your device - Logo Memory: 6MB";
+                labelLogoMemory.Text = res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 6MB";
+                this.Text = res_man.GetString("SelectDeviceForm_SD_Text", cul) + " - " + res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 6MB";
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -239,8 +239,8 @@ namespace Moto_Logo
             if (mainform.radioButton8MIB.Checked == true)
             {
                 this.CenterToScreen();
-                labelLogoMemory.Text = @"Logo Memory: 8MB";
-                this.Text = @"Select your device - Logo Memory: 8MB";
+                labelLogoMemory.Text = res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 8MB";
+                this.Text = res_man.GetString("SelectDeviceForm_SD_Text", cul) + " - " + res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 8MB";
 
                 panelMotoDroid.Show();
                 labelMotoDroi.Show();
@@ -260,8 +260,8 @@ namespace Moto_Logo
             if (mainform.radioButton16MIB.Checked == true)
             {
                 this.CenterToScreen();
-                labelLogoMemory.Text = @"Logo Memory: 16MB";
-                this.Text = @"Select your device - Logo Memory: 16MB";
+                labelLogoMemory.Text = res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 16MB";
+                this.Text = res_man.GetString("SelectDeviceForm_SD_Text", cul) + " - " + res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 16MB";
 
                 panelMotoE.Show();
                 labelMotoE.Show();
@@ -309,8 +309,8 @@ namespace Moto_Logo
             if (mainform.radioButton32MIB.Checked == true)
             {
                 this.CenterToScreen();
-                labelLogoMemory.Text = "Logo Memory: 32MB";
-                this.Text = @"Select your device - Logo Memory: 32MB";
+                labelLogoMemory.Text = res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 32MB";
+                this.Text = res_man.GetString("SelectDeviceForm_SD_Text", cul) + " - " + res_man.GetString("SelectDeviceForm_LM_Text", cul) + " 32MB";
 
                 panelMotoG.Show();
                 labelMotoG.Show();
@@ -434,7 +434,7 @@ namespace Moto_Logo
             Form fc = Application.OpenForms["LogoBrowser"];
             if (fc != null)
             {
-                MessageBox.Show("Already opened: " + fc.Text + ", close it to open a new one!", "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(res_man.GetString("SelectDeviceForm_Opened1", cul) + " " + fc.Text + ", " + res_man.GetString("SelectDeviceForm_Opened2", cul), "Logo " + fc.Text + " already opened", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 fc.BringToFront();
             } 
             else

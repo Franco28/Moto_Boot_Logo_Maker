@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.UpdateEngine.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -22,7 +22,7 @@ namespace Moto_Logo
     {
         private void AutoUpdater_ApplicationExitEvent()
         {
-            this.Text = res_man.GetString("ToolUpdating", cul);
+            this.Text = res_man.GetString("MainForm_ToolUpdating", cul);
             timerupdates.Stop();
             Application.Exit();
         }
@@ -43,7 +43,7 @@ namespace Moto_Logo
             {
                 if (InternetCheck.CheckServerRed("https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates.xml") == true)
                 {
-                    MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(res_man.GetString("MainForm_Update_Server_Error", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
                     return;
@@ -56,7 +56,7 @@ namespace Moto_Logo
             }
             else
             {
-                MessageBox.Show(res_man.GetString("ToolInternetErrorUpdate", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(res_man.GetString("MainForm_Update_ErrorUpdate", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                 timerupdates.Stop();
                 return;
@@ -73,7 +73,7 @@ namespace Moto_Logo
                 {
                     DialogResult dialogResult;
 
-                    dialogResult = MessageBox.Show(res_man.GetString("ToolNewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("ToolNewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("ToolNewUpdateText3", cul), res_man.GetString("ToolNewUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dialogResult = MessageBox.Show(res_man.GetString("MainForm_Update_NewUpdateText", cul) + $@" {args.CurrentVersion} " + res_man.GetString("MainForm_Update_NewUpdateText2", cul) + $@" {args.InstalledVersion}. " + res_man.GetString("MainForm_Update_NewUpdateText3", cul), res_man.GetString("MainForm_Update_NewUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     try
                     {
@@ -93,7 +93,7 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    MessageBox.Show(res_man.GetString("ToolNoUpdate", cul), res_man.GetString("ToolNoUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(res_man.GetString("MainForm_Update_NoUpdate", cul), res_man.GetString("MainForm_Update_NoUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
@@ -104,7 +104,7 @@ namespace Moto_Logo
             {
                 if (args.Error is WebException)
                 {
-                    MessageBox.Show(res_man.GetString("ToolErrorUpdate", cul), res_man.GetString("ToolErrorUpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(res_man.GetString("MainForm_Update_ErrorUpdate", cul), res_man.GetString("MainForm_Update_Error_UpdateTitle", cul), MessageBoxButtons.OK, MessageBoxIcon.Error);
                     AutoUpdater.CheckForUpdateEvent -= AutoUpdaterOnCheckForUpdateEvent;
                     timerupdates.Stop();
                     return;

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: DeviceInfo.cs                                            #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -30,9 +30,20 @@ namespace Moto_Logo
 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-            LabelDeviceTitle.Text = res_man.GetString("DeviceInfoLabelDeviceTitle", cul);
-            LabelDisplayTitle.Text = res_man.GetString("DeviceInfoLabelDisplayTitle", cul);
-            LabelLogoInfoTitle.Text = res_man.GetString("DeviceInfoLabelLogoInfoTitle", cul);
+            LabelDeviceTitle.Text = res_man.GetString("DeviceInfoForm_LabelDeviceTitle", cul);
+            LabelDisplayTitle.Text = res_man.GetString("DeviceInfoForm_LabelDisplayTitle", cul);
+            LabelLogoInfoTitle.Text = res_man.GetString("DeviceInfoForm_LabelLogoInfoTitle", cul);
+            label1.Text = res_man.GetString("DeviceInfoForm_LabelPath", cul);
+            labelDName.Text = res_man.GetString("DeviceInfoForm_LabelName", cul);
+            labelCodeName.Text = res_man.GetString("DeviceInfoForm_LabelCodeName", cul);
+            labelResolution.Text = res_man.GetString("DeviceInfoForm_LabelResolution", cul);
+            labelLMemory.Text = res_man.GetString("DeviceInfoForm_LabelMemory", cul);
+            labelLogoSize.Text = res_man.GetString("DeviceInfoForm_LabelLogoSize", cul);
+            labelLogoCreateDate.Text = res_man.GetString("DeviceInfoForm_LabelLogoCreateDate", cul);
+            labelLogoModifyDate.Text = res_man.GetString("DeviceInfoForm_LabelLogoModifyDate", cul);
+            labelLogoComment.Text = res_man.GetString("DeviceInfoForm_LabelLogoComment", cul);
+            labelbtnOpenLogoFile.Text = res_man.GetString("DeviceInfoForm_LabelOpenLogo", cul);
+            labelbtnOpenLogoFile2.Text = res_man.GetString("DeviceInfoForm_LabelOpenLogo2", cul);
         }
 
         private void btnOpenLogoFile_Click(object sender, System.EventArgs e)

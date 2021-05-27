@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckInternet.cs                                         #
 #    Author: Franco28                                               # 
-#    Date: 28-04-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -44,7 +44,7 @@ namespace Moto_Logo
             }
             else
             {
-                MessageBox.Show(res_man.GetString("InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(res_man.GetString("MainForm_InternetCheck", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
         }

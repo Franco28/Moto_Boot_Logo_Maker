@@ -2,7 +2,7 @@
 #####################################################################
 #    File: ReadChangelog.cs                                         #
 #    Author: Franco28                                               # 
-#    Date: 10-04-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -51,7 +51,7 @@ namespace Moto_Logo
             }
             else
             {
-                richTextBox1.Text = res_man.GetString("ChangelogFormError", cul);
+                richTextBox1.Text = res_man.GetString("ChangelogForm_Error", cul);
                 return;
             }
         }

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: Settings.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -13,7 +13,6 @@
 
 using System;
 using System.Diagnostics;
-using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Resources;
@@ -34,17 +33,17 @@ namespace Moto_Logo
 
             res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
-            this.Text = res_man.GetString("settingsToolStripMenuItem", cul);  
-            groupBoxEASP.Text = res_man.GetString("SettingsGroupBox1", cul);
-            groupBoxEASLIM.Text = res_man.GetString("SettingsGroupBox2", cul);
-            groupBoxEU.Text = res_man.GetString("SettingsGroupBox3", cul);
-            radioButtonYESUpdates.Text = radioButtonYESLogo.Text = radioButtonYES.Text = res_man.GetString("SettingsYes", cul);
-            radioButtonNOUpdates.Text = radioButtonNO.Text = radioButtonNOLogo.Text = res_man.GetString("SettingsNo", cul);
-            buttonRTP.Text = res_man.GetString("materialButtonResetAllProfiles", cul);
-            buttonRTS.Text = res_man.GetString("materialButtonResetToolSettings", cul);
-            labelResetTool.Text = res_man.GetString("SettingRT", cul);
-            labelGeneralSettings.Text = res_man.GetString("SettingGS", cul);
-            buttonOpenToolFolder.Text = res_man.GetString("SettingsbuttonOpenToolFolder", cul);
+            this.Text = res_man.GetString("MainForm_ToolStripMenu_settings", cul);  
+            groupBoxEASP.Text = res_man.GetString("SettingsForm_GroupBox1", cul);
+            groupBoxEASLIM.Text = res_man.GetString("SettingsForm_GroupBox2", cul);
+            groupBoxEU.Text = res_man.GetString("SettingsForm_GroupBox3", cul);
+            radioButtonYESUpdates.Text = radioButtonYESLogo.Text = radioButtonYES.Text = res_man.GetString("SettingsForm_Yes_Text", cul);
+            radioButtonNOUpdates.Text = radioButtonNO.Text = radioButtonNOLogo.Text = res_man.GetString("SettingsForm_No_Text", cul);
+            buttonRTP.Text = res_man.GetString("SettingsForm_BTN_ResetAllProfiles", cul);
+            buttonRTS.Text = res_man.GetString("SettingsForm_BTN_ResetToolSettings", cul);
+            labelResetTool.Text = res_man.GetString("SettingsForm_ResetTool_Text", cul);
+            labelGeneralSettings.Text = res_man.GetString("SettingsForm_GeneralSettings_Text", cul);
+            buttonOpenToolFolder.Text = res_man.GetString("SettingsForm_BTN_OpenToolFolder", cul);
         }
 
         private void Settings_Load(object sender, EventArgs e)
@@ -71,7 +70,7 @@ namespace Moto_Logo
 
             if (exePath != @"C:\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files (x86)\Moto_Boot_Logo_Maker" && exePath != @"C:\Program Files\Moto_Boot_Logo_Maker")
             {
-                this.Text = res_man.GetString("settingsToolStripMenuItem", cul) + " - PORTABLE";
+                this.Text = res_man.GetString("MainForm_ToolStripMenu_settings", cul) + " - PORTABLE";
 
                 groupBoxEU.Enabled = false;
                 label4.Enabled = false;
