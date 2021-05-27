@@ -795,4 +795,49 @@
   <data name="SelectDeviceForm_SD_Text" xml:space="preserve">
     <value>Select your device</value>
   </data>
+  <data name="ToolDownloadsForm_Exit" xml:space="preserve">
+    <value>Do you want to exit download? This will kill Tool and downloaded files will be damaged...</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Corrupt" xml:space="preserve">
+    <value>is corrupted, downloading again...</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Extract" xml:space="preserve">
+    <value>Extracting</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_Download" xml:space="preserve">
+    <value>Downloading</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_Download_Retry" xml:space="preserve">
+    <value>Can´t acces to internet connection, do you want to retry?</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_Download_Retry_Title" xml:space="preserve">
+    <value>Lost internet connection</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_Download_Uknown_Error" xml:space="preserve">
+    <value>Unknown error has occurred, do you want to retry?</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Error" xml:space="preserve">
+    <value>Something went wrong with sizes of folder:</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Error2" xml:space="preserve">
+    <value>downloading again files...</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Missing" xml:space="preserve">
+    <value>is missing, downloading...</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Missing2" xml:space="preserve">
+    <value>Files from:</value>
+  </data>
+  <data name="ToolDownloadsForm_File_Missing3" xml:space="preserve">
+    <value>are missing, downloading files again...</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_DownloadFile" xml:space="preserve">
+    <value>Downloading File...</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_DSpeed" xml:space="preserve">
+    <value>Speed:</value>
+  </data>
+  <data name="ToolDownloadsForm_Label_FileSize" xml:space="preserve">
+    <value>File Size:</value>
+  </data>
 </root>

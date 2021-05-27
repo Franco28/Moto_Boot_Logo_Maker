@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckDLL.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 23-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,6 +11,7 @@
 #####################################################################
  */
 
+using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
 
@@ -19,10 +20,13 @@ namespace Moto_Logo
     public class CheckDLL
     {
         public static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+        public static CultureInfo cul = null;
 
         public static void openform(string filemissing)
         {
-            MessageBox.Show(@"DLL: " + filemissing + " is missing, downloading...", "Moto_Boot_Logo_Maker dll " + filemissing + " missing...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            MessageBox.Show(@"DLL: " + filemissing + " " + res_man.GetString("ToolDownloadsForm_File_Missing", cul), "Moto_Boot_Logo_Maker - DLL: " + filemissing, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             var form = new ToolLibsDownload();
             form.ShowDialog();

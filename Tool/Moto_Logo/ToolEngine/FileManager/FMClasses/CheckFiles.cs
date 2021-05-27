@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFiles.cs                                            #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -11,6 +11,7 @@
 #####################################################################
  */
 
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -20,7 +21,8 @@ namespace Moto_Logo
     public class CheckFiles
     {
         public static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-        
+        public static CultureInfo cul = null;
+
         public static bool IsDirectoryEmpty(string path)
         {
             return !Directory.EnumerateFileSystemEntries(path).Any();
@@ -28,7 +30,9 @@ namespace Moto_Logo
 
         public static void openform(string filemissing)
         {
-            MessageBox.Show(@"Files from: " + filemissing + " are missing, downloading files again...", "Moto_Boot_Logo_Maker files from: " + filemissing + " missing...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            MessageBox.Show(res_man.GetString("ToolDownloadsForm_File_Missing2", cul) + " " + filemissing + " " + res_man.GetString("ToolDownloadsForm_File_Missing3", cul), "Moto_Boot_Logo_Maker" , MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             var form = new CheckFilesDownload();
             form.ShowDialog();
@@ -52,9 +56,11 @@ namespace Moto_Logo
 
         public static void CheckFSize(string dirpath, int size, string foldername)
         {
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             if (DirSize(new DirectoryInfo(dirpath)) != size)
             {
-                MessageBox.Show(@"Something went wrong with sizes of folder: " + dirpath + ", downloading again files...", "Moto_Boot_Logo_Maker files size error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(res_man.GetString("ToolDownloadsForm_File_Error", cul) + " " + dirpath + ", " + res_man.GetString("ToolDownloadsForm_File_Error2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 openform(foldername);
             }

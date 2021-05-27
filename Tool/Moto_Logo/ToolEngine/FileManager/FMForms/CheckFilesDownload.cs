@@ -2,7 +2,7 @@
 #####################################################################
 #    File: CheckFilesDownload.cs                                    #
 #    Author: Franco28                                               # 
-#    Date: 22-05-2021                                               #
+#    Date: 27-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -16,6 +16,7 @@ using Ionic.Zip;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -30,6 +31,7 @@ namespace Moto_Logo
 
         public string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
         public FilesMng oConfigMng = new FilesMng();
+        public static CultureInfo cul = null;
 
         public string xmlUrl = "https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Windows/OTAS/updates_files.xml";
         public string filever = "";
@@ -46,6 +48,8 @@ namespace Moto_Logo
         #region XML
         public void ReadXMLFile()
         {
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             try
             {
                 if (InternetCheck.ConnectToInternet() == true)
@@ -90,7 +94,7 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    MessageBox.Show("Check your internet connection...", "Error Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(res_man.GetString("AboutForm_DownloadUpdate_NetLost", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -111,6 +115,12 @@ namespace Moto_Logo
         {
             this.Hide();
 
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            labelInformation.Text = res_man.GetString("ToolDownloadsForm_Label_DownloadFile", cul);
+            labelfilesize.Text = res_man.GetString("ToolDownloadsForm_Label_FileSize", cul);
+            labelspeed.Text = res_man.GetString("ToolDownloadsForm_Label_DSpeed", cul);
+
             oConfigMng.LoadConfig();
             ReadXMLFile();
             oConfigMng.LoadConfig();
@@ -123,14 +133,14 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(oConfigMng.Config.FileName + " " + res_man.GetString("ToolDownloadsForm_File_Corrupt", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     CallDownload();
                     return;
                 }
                 else
                 {
                     progressBar.Cursor = Cursors.WaitCursor;
-                    labelInformation.Text = "Extracting " + oConfigMng.Config.FileName + "...";
+                    labelInformation.Text = res_man.GetString("ToolDownloadsForm_File_Extract", cul) + " " + oConfigMng.Config.FileName + "...";
                     this.Text = labelInformation.Text;
 
                     if (File.Exists(exePath + @"\Files\" + oConfigMng.Config.FileName))
@@ -160,8 +170,7 @@ namespace Moto_Logo
         public void CallDownload()
         {
             this.Show();
-            labelInformation.Text = "Starting download... please wait";
-            this.Text = labelInformation.Text;
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 
             string urlAddress = oConfigMng.Config.FileURL;
             string location = exePath + @"\Files\" + oConfigMng.Config.FileName;
@@ -174,12 +183,12 @@ namespace Moto_Logo
                 {
                     if (InternetCheck.CheckServerRed(oConfigMng.Config.FileURL) == true)
                     {
-                        MessageBox.Show(@"Server is down :\", "Moto_Boot_Logo_Maker - file updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(res_man.GetString("AboutForm_DownloadUpdate_ServerDown", cul), "Moto_Boot_Logo_Maker - file updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         this.Close();
                     }
                     else
                     {
-                        labelInformation.Text = "Downloading " + oConfigMng.Config.FileName + "...";
+                        labelInformation.Text = res_man.GetString("ToolDownloadsForm_Label_Download", cul) + " " + oConfigMng.Config.FileName + "...";
                         this.Text = labelInformation.Text;
                         sw.Start();
                         webClient.DownloadFileAsync(URL, location);
@@ -187,8 +196,8 @@ namespace Moto_Logo
                 }
                 else
                 {
-                    DialogResult answer = MessageBox.Show("Can´t acces to internet connection, do you want to retry?",
-                    "Lost internet connection", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult answer = MessageBox.Show(res_man.GetString("ToolDownloadsForm_Label_Download_Retry", cul),
+                    res_man.GetString("ToolDownloadsForm_Label_Download_Retry_Title", cul), MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     switch (answer)
                     {
                         case DialogResult.Yes:
@@ -205,7 +214,7 @@ namespace Moto_Logo
             }
             catch (Exception er)
             {
-                DialogResult answer = MessageBox.Show("Unknown error has occurred, do you want to retry?",
+                DialogResult answer = MessageBox.Show(res_man.GetString("ToolDownloadsForm_Label_Download_Uknown_Error", cul),
                 er.Source, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 switch (answer)
                 {
@@ -238,6 +247,8 @@ namespace Moto_Logo
 
         public void Completed(object sender, AsyncCompletedEventArgs e)
         {
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             webClient.CancelAsync();
             webClient.Dispose();
             try
@@ -248,14 +259,14 @@ namespace Moto_Logo
 
                 if (length != vOut)
                 {
-                    MessageBox.Show(oConfigMng.Config.FileName + " is corrupted, downloading again...", "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(oConfigMng.Config.FileName + " " + res_man.GetString("ToolDownloadsForm_File_Corrupt", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     CallDownload();
                     return;
                 }
                 else
                 {
                     progressBar.Cursor = Cursors.Default;
-                    labelInformation.Text = "Extracting " + oConfigMng.Config.FileName + "...";
+                    labelInformation.Text = res_man.GetString("ToolDownloadsForm_File_Extract", cul) + " " + oConfigMng.Config.FileName + "...";
                     this.Text = labelInformation.Text;
                     if (File.Exists(exePath + @"\Files\" + oConfigMng.Config.FileName))
                     {
@@ -278,7 +289,7 @@ namespace Moto_Logo
             {
                 sw.Stop();
                 Logs.DebugErrorLogs(ex);
-                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: File Extraction Error: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
             return;
@@ -286,11 +297,13 @@ namespace Moto_Logo
 
         private void CheckFilesDownload_FormClosing(object sender, FormClosingEventArgs e)
         {
+            var res_man = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
             string closetool = "Moto_Boot_Logo_Maker";
 
             if (webClient != null && webClient.IsBusy == true)
             {
-                DialogResult answer = MessageBox.Show("Do you want to exit download? This will kill Tool and downloaded files will be damaged...", "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult answer = MessageBox.Show(res_man.GetString("ToolDownloadsForm_Exit", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 switch (answer)
                 {
                     case DialogResult.Yes:
