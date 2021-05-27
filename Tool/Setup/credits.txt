@@ -1,16 +1,27 @@
 ----------------------------------------------
-Moto_Boot_Logo_Maker: Credits - Contributors
+Moto_Boot_Logo_Maker: Contributors - Credits
 ----------------------------------------------
 
-Translators Contributors:
-- @LuisFernando - Portuguese translator
-- @nift4 - German translator
+----------------------------------------------
 
-Image Design Credits:
+#####################
+# Tool Contributors #
+#####################
+
+Translators:
+- @
+
+Image Design:
 - @GarfieldArbuckle - Logos and main Tool icon
 
-Tool Credits:
+----------------------------------------------
+
+################
+# Tool Credits #
+################
+
 - @CaitSith2 (Main Creator)
 - @ravibpatel (Updater lib)
 - @Robin Perris (DarkUI lib)
-- @Dan Wager (Android lib)
+
+----------------------------------------------

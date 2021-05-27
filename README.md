@@ -10,7 +10,8 @@
 
 ### Support only Qualcomm devices not MediaTek not Exynos.
 
-### Support 10+ languages! (English (United States), Spanish (Mexico), Turkish, German (Germany), Portuguese (Brazil), Japanese, Polish, Russian, Italian (Italy), French (France), Irish
+### Contribute Tool Translation - For now Tool is in English
+#### Contact me: [Telegram](https://t.me/francom28) 
 
 #
 

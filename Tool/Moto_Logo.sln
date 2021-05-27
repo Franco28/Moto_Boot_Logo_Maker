@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
-MinimumVisualStudioVersion = 10.0.40219.1
+MinimumVisualStudioVersion = 16.0.31205.134
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moto_Logo", "Moto_Logo\Moto_Logo.csproj", "{F84B6626-4F4C-41B6-8ADC-17EA68A81042}"
 EndProject
 Global
