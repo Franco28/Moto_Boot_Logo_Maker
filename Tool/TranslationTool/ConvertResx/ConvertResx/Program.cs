@@ -1,8 +1,10 @@
 ﻿
 using Bluegrams.Application;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -11,6 +13,7 @@ namespace ConvertResx
     static class Program
     {
         public static string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+        static FileController file;
 
         [STAThread]
         static void Main()
@@ -28,6 +31,12 @@ namespace ConvertResx
             PortableSettingsProvider.SettingsFileName = "Settings.config";
             PortableSettingsProvider.SettingsDirectory = exePath;
             PortableSettingsProvider.ApplyProvider(Properties.Settings.Default);
+
+            if (!File.Exists(exePath + "\\ResGen.exe"))
+            {
+                file = FileController.Instance;
+                file.Dispose();
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
