@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
@@ -117,10 +118,32 @@ namespace ConvertResx
             }
         }
 
+        public void SearchChar(string pathToFile)
+        {
+            List<List<string>> groups = new List<List<string>>();
+            List<string> current = null;
+            foreach (var line in File.ReadAllLines(pathToFile))
+            {
+                if (line.Contains("<>") && current == null)
+                    current = new List<string>();
+                else if (line.Contains("<>") && current != null)
+                {
+                    groups.Add(current);
+                    current = null;
+                }
+                if (current != null)
+                    current.Add(line);
+            }
+
+            cAppend("");
+            cAppend("NOTE: In this case this File to translate, uses this type of strings --> for ex: <example> so you should keep that format and not replace what is inside of <>. Tool will crash if you change that values...");
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.Text = "resx <--> txt file converter by Franco28 - " + "v" + Application.ProductVersion;
             cAppend("resx <--> txt file converter by Franco28");
+            cAppend("");
             cAppend("\nTo start: \nDrag and drop the .resx or .txt file to convert into this Page!");
             cAppend("");
 
@@ -143,11 +166,18 @@ namespace ConvertResx
                         textBoxLang.Text = Properties.Settings.Default.LangCul;
                     }
                 }
-            }     
+            }
+
+            var file = Directory.GetFiles(exePath, "*.txt", SearchOption.TopDirectoryOnly)
+                    .FirstOrDefault();
+            if (file != null)
+            {
+                SearchChar(file);
+            }
         }
 
         private void buttonResx_Click(object sender, EventArgs e)
-        {         
+        {
             if (Properties.Settings.Default.FileName == string.Empty)
             {
                 return;
@@ -168,6 +198,8 @@ namespace ConvertResx
 
             // Start
             ExecuteCommandSync("resgen.exe " + Properties.Settings.Default.FilePath + " " + textBoxLang.Text + ".txt");
+
+            SearchChar(Properties.Settings.Default.FilePath);
         }
 
         private void buttonTXT_Click(object sender, EventArgs e)
