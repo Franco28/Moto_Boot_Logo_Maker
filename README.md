@@ -14,8 +14,7 @@
 
 ## Contribute Tool Translation - For now Tool is in English
 - Please read all info inside en.txt file!
-
-####- Download english file to translate: [File To Translate EN](https://sourceforge.net/projects/motobootlogomaker/files/TRANSLATIONS/en.txt/download) 
+- Download english file to translate: [File To Translate EN](https://sourceforge.net/projects/motobootlogomaker/files/TRANSLATIONS/en.txt/download) 
 
 #
 
