@@ -13,8 +13,16 @@
 #
 
 ## Contribute Tool Translation - For now Tool is in English
+
+### How to request a new language?
+- Just read info below...
+
 - Please read all info inside en.txt file!
 - Download english file to translate: [File To Translate EN](https://sourceforge.net/projects/motobootlogomaker/files/TRANSLATIONS/en.txt/download) 
+- You will see your language in future updates
+- Remember to send me this file translated to my [Telegram](https://t.me/francom28) account
+
+- If you have any doubt, ask me!
 
 #
 
