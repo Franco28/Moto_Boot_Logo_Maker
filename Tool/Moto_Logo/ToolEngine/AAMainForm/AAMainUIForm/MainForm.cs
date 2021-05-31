@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 27-05-2021                                               #
+#    Date: 31-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -190,122 +190,7 @@ namespace Moto_Logo
                 }
             }
             #endregion LoadSettings 
-        }
-
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            #region OpenNewLogo
-            var openfilename = Properties.Settings.Default.LogoBinOpen;
-            if (Properties.Settings.Default.LogoBinOpen.EndsWith(".bin") && Properties.Settings.Default.LogoWasSaved == false)
-            {
-                DialogResult dialogResult = MessageBox.Show(res_man.GetString("MainForm_ExitLogoWasntSave1", cul) + "\n\n" + openfilename + "\n\n" + res_man.GetString("MainForm_ExitLogoWasntSave2", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    ImageStatusBox.Clear();
-                    ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextLocked", cul));
-                    ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextUnlocked", cul));
-                    Properties.Settings.Default.LogoBinOpen = "";
-                    Properties.Settings.Default.Save();
-                    buttonAppend.Enabled = true;
-                    buttonDelete.Enabled = true;
-                    buttonExtract.Enabled = true;
-                    IniUITool();
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-                    try
-                    {
-                        return;
-                    }
-                    catch (Exception ex)
-                    {
-                        Logs.DebugErrorLogs(ex);
-                        MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            } 
-            else
-            {
-                ImageStatusBox.Clear();
-                ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextLocked", cul));
-                ImageStatusBoxMSG(res_man.GetString("MainForm_ImageStatus_TextUnlocked", cul));
-                Properties.Settings.Default.LogoBinOpen = "";
-                Properties.Settings.Default.Save();
-                buttonAppend.Enabled = true;
-                buttonDelete.Enabled = true;
-                buttonExtract.Enabled = true;
-                IniUITool();
-            }
-            #endregion OpenNewLogo
-        }
-
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            #region OpenLogoFile
-            if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
-            {
-                MessageBox.Show(res_man.GetString("MainForm_SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            else
-            {
-                var selectdevicetest = new SelectDevice();
-                selectdevicetest.Show();
-                return;
-            }
-            #endregion OpenLogoFile
-        }
-
-        private void toolStripMenuItemOpenCustomLogo_Click(object sender, EventArgs e)
-        {
-            #region OpenLogoFileAdmin
-            if (CheckAdmin.IsUserAdministrator() == true)
-            {
-                if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
-                {
-                    MessageBox.Show(res_man.GetString("MainForm_SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                else
-                {
-                    MainOpenFileDialog.Filter = @"BIN file|*.bin|ZIP file|*.zip";
-                    MainOpenFileDialog.InitialDirectory = userdesktoppath;
-                    if (MainOpenFileDialog.ShowDialog() != DialogResult.OK) return;
-                    OpenFile(MainOpenFileDialog.FileName);
-                    Properties.Settings.Default.LogoBinOpen = MainOpenFileDialog.FileName.ToString();
-                    Properties.Settings.Default.Save();
-                    toolStripStatusLabel3.Text = @"\ " + res_man.GetString("MainForm_CurrentProjectText", cul) + Properties.Settings.Default.LogoBinOpen;
-                    EnableControlsWhenLoadLogo();
-                }
-            }
-            else
-            {
-                MessageBox.Show(res_man.GetString("MainForm_OpenCustomLogoNoAdminTool", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Information);                
-                return;
-            }
-            #endregion OpenLogoFileAdmin
-        }
-
-        private void sourceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker#readme");
-        }
-
-        private void downloadSiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (InternetCheck.ConnectToInternet() == true)
-            {
-                var s = new DownloadS();
-                if (s.IsDisposed == false)
-                {
-                    s.Show();
-                }
-                else
-                {
-                    s.Dispose();
-                }
-            }
-        }
+        }      
 
         private void buttonAppend_Click(object sender, EventArgs e)
         {
@@ -645,119 +530,7 @@ namespace Moto_Logo
             buttonAppend.Text = tvLogo.Nodes.Cast<TreeNode>().Any(node => node.Text == txtLogoInternalFile.Text)
                 ? res_man.GetString("MainForm_BTN_Replace", cul)
                 : res_man.GetString("MainForm_BTN_Append", cul);
-        }
-
-        #region LogoSettings
-        private void radioButton4mib_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton4mib.Checked == true)
-            {
-                LogoMaxMIB(4194304, " 4MB");
-                Properties.Profiles.Default.LogoMemory4MB = true;
-            }
-            else
-            {
-                Properties.Profiles.Default.LogoMemory4MB = false;
-            }
-            Properties.Profiles.Default.Save();
-        }
-
-        private void radioButton6MIB_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton6MIB.Checked == true)
-            {
-                LogoMaxMIB(6291456, " 6MB");
-                Properties.Profiles.Default.LogoMemory6MB = true;
-            }
-            else
-            {
-                Properties.Profiles.Default.LogoMemory6MB = false;
-            }
-            Properties.Profiles.Default.Save();
-        }
-
-        private void radioButton8MIB_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton8MIB.Checked == true)
-            {
-                LogoMaxMIB(8388608, " 8MB");
-                Properties.Profiles.Default.LogoMemory8MB = true;
-            }
-            else
-            {
-                Properties.Profiles.Default.LogoMemory8MB = false;
-            }
-            Properties.Profiles.Default.Save();
-        }
-
-        private void radioButton16MIB_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton16MIB.Checked == true)
-            {
-                LogoMaxMIB(16777216, " 16MB");
-                Properties.Profiles.Default.LogoMemory16MB = true;
-            }
-            else
-            {
-                Properties.Profiles.Default.LogoMemory16MB = false;
-            }
-            Properties.Profiles.Default.Save();
-        }
-
-        private void radioButton32MIB_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton32MIB.Checked == true)
-            {
-                LogoMaxMIB(34226176, " 32MB");
-                Properties.Profiles.Default.LogoMemory32MB = true;
-            }
-            else
-            {
-                Properties.Profiles.Default.LogoMemory32MB = false;
-            }
-            Properties.Profiles.Default.Save();
-        }
-        #endregion LogoSettings
-
-        private void MainForm_DragEnter(object sender, DragEventArgs e)
-        {
-            try
-            {
-                e.Effect = DragDropEffects.None;
-                if (!e.Data.GetDataPresent(DataFormats.FileDrop)) return;
-                var files = (string[])e.Data.GetData(DataFormats.FileDrop);
-                if ((files.Count() == 1) && ((Path.GetExtension(files[0]) == ".bin") ||
-                                            (Path.GetExtension(files[0]) == ".zip")))
-                    e.Effect = DragDropEffects.Copy;
-            } 
-            catch (Exception ex)
-            {
-                Logs.DebugErrorLogs(ex);
-                MessageBox.Show(ex.ToString(), @"Moto_Boot_Logo_Maker: " + Logs.GetClassName(ex) + " " + Logs.GetLineNumber(ex), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void MainForm_DragDrop(object sender, DragEventArgs e)
-        {
-            var files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            if ((files.Count() == 1) && ((Path.GetExtension(files[0]) == ".bin") ||
-                                         (Path.GetExtension(files[0]) == ".zip")))
-            {
-                if (radioButton4mib.Checked == false && radioButton6MIB.Checked == false && radioButton8MIB.Checked == false && radioButton16MIB.Checked == false && radioButton32MIB.Checked == false)
-                {
-                    MessageBox.Show(res_man.GetString("MainForm_SelectLogoSizeWarn", cul), "Moto_Boot_Logo_Maker", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                else
-                {
-                    OpenFile(files[0]);
-                    Properties.Settings.Default.LogoBinOpen = files[0].ToString();
-                    Properties.Settings.Default.Save();
-                    toolStripStatusLabel3.Text = @"\ " + res_man.GetString("MainForm_CurrentProjectText", cul) + Properties.Settings.Default.LogoBinOpen;
-                    EnableControlsWhenLoadLogo();
-                }
-            }
-        }
+        } 
 
         private void MainForm_Resize(object sender, EventArgs e)
         {
@@ -778,6 +551,7 @@ namespace Moto_Logo
                 pictureBox1.Update();
                 ResizeAndDisplayImage();
             }
+            AvoidFlick();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)

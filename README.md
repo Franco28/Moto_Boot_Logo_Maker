@@ -11,6 +11,8 @@
 ### Support only Qualcomm devices not MediaTek not Exynos.
 
 ### Contribute Tool Translation - For now Tool is in English
+#### Please read all info inside en.txt file!
+### Download english file to translate: [File To Translate EN](https://sourceforge.net/projects/motobootlogomaker/files/TRANSLATIONS/en.txt/download) 
 #### Contact me: [Telegram](https://t.me/francom28) 
 
 #

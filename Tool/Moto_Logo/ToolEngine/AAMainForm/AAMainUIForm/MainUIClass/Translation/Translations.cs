@@ -2,7 +2,7 @@
 #####################################################################
 #    File: MainForm.Translations.cs                                 #
 #    Author: Franco28                                               # 
-#    Date: 27-05-2021                                               #
+#    Date: 31-05-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -99,6 +99,8 @@ namespace Moto_Logo
             btnReload.ToolTipText = res_man.GetString("MainForm_BTN_ReloadToolTipText", cul);
             btnSearchDevice.ToolTipText = res_man.GetString("MainForm_BTN_SearchDeviceToolTipText", cul);
             textBoxSearchDevice.ToolTipText = res_man.GetString("MainForm_ToolTip_SearchDevice", cul);
+
+            AvoidFlick();
         }
 
         public void Translations()
@@ -109,7 +111,8 @@ namespace Moto_Logo
                 return;
             }
 
-            if (ci.Name.Contains("en"))
+            if (ci.Name.Contains("en") ||
+                ci.Name.Contains("es"))
             {
                 CreateCulture(ci.Name.ToString());
                 return;

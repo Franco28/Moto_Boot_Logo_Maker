@@ -100,6 +100,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Logo\LogoMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Tool\ToolStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Tool\DragDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ToolEngine\DarkUI\Collections\ObservableList.cs" />
     <Compile Include="ToolEngine\DarkUI\Collections\ObservableListModified.cs" />
     <Compile Include="ToolEngine\DarkUI\Config\Colors.cs" />
@@ -335,7 +344,7 @@
     <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\LogoBrowser\LogoBrowser.Designer.cs">
       <DependentUpon>LogoBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OpenForms\OpenForms.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\OpenForms\OpenForms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\AAMainForm\AForms\Help\DownloadS.cs">
@@ -359,22 +368,22 @@
     <Compile Include="ToolEngine\AAMainForm\AForms\LogoSearch\SelectDevice\SelectDevice.Designer.cs">
       <DependentUpon>SelectDevice.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Image\ImageEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Image\ImageEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Tool\ToolEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Tool\ToolEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Profile\ProfilesEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Profile\ProfilesEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\OTA\UpdateEngine.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\OTA\UpdateEngine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Translation\Translations.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Translation\Translations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\LogoTree.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Logo\LogoTree.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\AAMainForm\AForms\Help\ReadChangelog.cs">
@@ -393,7 +402,7 @@
     <Compile Include="ToolEngine\Classes\Others\MessageBoxManager.cs" />
     <Compile Include="ToolEngine\Classes\OS\OSArchitecture.cs" />
     <Compile Include="ToolEngine\Classes\OS\OSVersionInfoClass.cs" />
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\OpenLogo.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Logo\OpenLogo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\Classes\PortableSettingsProvider\PortableSettingsProvider.cs" />
@@ -406,7 +415,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ToolEngine\AAMainForm\MainUIClass\Logo\BuildLogo.cs">
+    <Compile Include="ToolEngine\AAMainForm\AAMainUIForm\MainUIClass\Logo\BuildLogo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ToolEngine\Classes\OS\CheckInternet.cs" />
@@ -551,6 +560,9 @@
     <None Include="Resources\bin\motorun.bin" />
     <None Include="Properties\app.manifest" />
     <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolEngine\AAMainForm\AAMainUIForm\Resources.es.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -739,7 +751,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

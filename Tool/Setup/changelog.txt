@@ -5,8 +5,11 @@
 ---------------------------------------
 v4.4.4.5 - Released XXX XX, 2021 - WIP
 ---------------------------------------
+NOTE: Some translations are missing, for now still in english
+
+- [improve] Internal Code
 - [improve] Translation Engine
-- [removed] All translations, so Tool default lang in English (If you want to translate contact me!)
+- [removed] All translations, so Tool default lang is in English (If you want to translate contact me!)
 ----------- Contact: https://t.me/francom28
 
 ---------------------------------------
