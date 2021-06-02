@@ -51,10 +51,10 @@ namespace Moto_Logo
             // 
             // console
             // 
-            this.console.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.console.BackColor = System.Drawing.Color.Black;
             this.console.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.console.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.console.ForeColor = System.Drawing.Color.White;
+            this.console.ForeColor = System.Drawing.Color.Red;
             this.console.Location = new System.Drawing.Point(0, 32);
             this.console.Name = "console";
             this.console.ReadOnly = true;
@@ -87,6 +87,7 @@ namespace Moto_Logo
             // labelIconRGB
             // 
             this.labelIconRGB.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelIconRGB.BackColor = System.Drawing.Color.Black;
             this.labelIconRGB.Image = global::Moto_Logo.Properties.Resources.server_x24;
             this.labelIconRGB.Location = new System.Drawing.Point(316, 341);
             this.labelIconRGB.Name = "labelIconRGB";
@@ -97,7 +98,7 @@ namespace Moto_Logo
             // 
             this.labelGetting.AutoSize = true;
             this.labelGetting.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGetting.Location = new System.Drawing.Point(8, 9);
+            this.labelGetting.Location = new System.Drawing.Point(5, 5);
             this.labelGetting.Name = "labelGetting";
             this.labelGetting.Size = new System.Drawing.Size(27, 20);
             this.labelGetting.TabIndex = 208;
@@ -108,7 +109,7 @@ namespace Moto_Logo
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(665, 380);
             this.Controls.Add(this.labelGetting);
             this.Controls.Add(this.labelIconRGB);

@@ -2,7 +2,7 @@
 #####################################################################
 #    File: AboutBox.cs                                              #
 #    Author: Franco28                                               # 
-#    Date: 27-05-2021                                               #
+#    Date: 02-06-2021                                               #
 #    Note: If you are someone that extracted the assemblie,         #
 #          please if you want something ask me,                     #
 #          don´t try to corrupt or break Tool!                      #
@@ -21,6 +21,7 @@ using System.Resources;
 using System.Windows.Forms;
 using DarkUI.Forms;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace Moto_Logo
 {
@@ -52,6 +53,9 @@ namespace Moto_Logo
             button2.Text = res_man.GetString("AboutForm_BTN_Contributors", cul);
             button1.Text = res_man.GetString("AboutForm_BTN_DownloadUpdate", cul);
             label12.Text = res_man.GetString("AboutForm_DonationMSG", cul);
+
+            console.BackColor = Properties.Settings.Default.ConsoleBGColor;
+            console.ForeColor = Properties.Settings.Default.ConsoleFColor;
         }
 
         public void cAppend(string message)
@@ -65,7 +69,6 @@ namespace Moto_Logo
 
         private void AboutBox_Load(object sender, EventArgs e)
         {
-            cAppend("------------------------------------------ Tool Info ------------------------------------------");
             cAppend(res_man.GetString("AboutForm_Box_ToolName", cul) + " " + AssemblyProduct);
             cAppend(res_man.GetString("AboutForm_Box_ToolVer", cul) + " v" + Application.ProductVersion);
             cAppend(res_man.GetString("AboutForm_Box_ToolPath", cul) + " " + exePath);
@@ -96,19 +99,12 @@ namespace Moto_Logo
             cAppend(res_man.GetString("AboutForm_Box_ImageRunTime", cul) + " " + typeof(string).Assembly.ImageRuntimeVersion);
             cAppend(res_man.GetString("AboutForm_Box_AppTrusted", cul) +  " " + typeof(string).Assembly.IsFullyTrusted);
 
-            cAppend("---------------------------------------- End Tool Info ----------------------------------------");
-
             cAppend(" ");
             cAppend(res_man.GetString("AboutForm_Updates", cul) + " " + res_man.GetString("AboutForm_Checkinf4Updates", cul));
             CheckForUpdates();
         }
 
         #region updatesinfo
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //CheckForUpdates();
-        }
-
         public void CheckForUpdates()
         {
             if (InternetCheck.ConnectToInternet() == true)
@@ -260,19 +256,51 @@ namespace Moto_Logo
         private void label7_Click(object sender, EventArgs e)
         {
             OpenTelegram("https://t.me/francom28");
-            this.Close();
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
             OpenTelegram("https://t.me/Deivid_21");
-            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             InternetCheck.CheckInternetProcessStart("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RPY4ZNYX2VA4G&source=url");
-            this.Close();
+        }
+
+        private void linkLabelFileToTrasnlate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            InternetCheck.CheckInternetProcessStart("https://sourceforge.net/projects/motobootlogomaker/files/TRANSLATIONS/en.txt/download");
+        }
+
+        private void linkLabelMoreInfoTranslate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            InternetCheck.CheckInternetProcessStart("https://github.com/Franco28/Moto_Boot_Logo_Maker#contribute-tool-translation---for-now-tool-is-in-english");
+        }
+
+        private void changeBackgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            console.BackColor = colorDialog1.Color;
+            Properties.Settings.Default.ConsoleBGColor = colorDialog1.Color;
+            Properties.Settings.Default.Save();
+        }
+
+        private void changeFontColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            console.ForeColor = colorDialog1.Color;
+            Properties.Settings.Default.ConsoleFColor = colorDialog1.Color;
+            Properties.Settings.Default.Save();
+        }
+
+        private void resetToDefaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            console.BackColor = Color.Black;
+            console.ForeColor = Color.Red;
+            Properties.Settings.Default.ConsoleFColor = Color.Red;
+            Properties.Settings.Default.ConsoleBGColor = Color.Black;
+            Properties.Settings.Default.Save();
         }
 
         private void AboutBox_FormClosing(object sender, FormClosingEventArgs e)

@@ -3,7 +3,7 @@
 #####################
 
 ---------------------------------------
-v4.4.4.5 - Released XXX XX, 2021 - WIP
+v4.4.4.5 - Released June XX, 2021 - WIP
 ---------------------------------------
 NOTE: Some translations are missing, for now still in english
 
@@ -11,6 +11,7 @@ NOTE: Some translations are missing, for now still in english
 - [improve] Translation Engine
 - [removed] All translations, so Tool default lang is in English (If you want to translate contact me!)
 ----------- Contact: https://t.me/francom28
+- [new] Let user change About box console background and font color
 
 ---------------------------------------
 v4.4.4.4 - Released May 22, 2021
