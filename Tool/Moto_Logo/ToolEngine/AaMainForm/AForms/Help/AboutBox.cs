@@ -56,6 +56,9 @@ namespace Moto_Logo
 
             console.BackColor = Properties.Settings.Default.ConsoleBGColor;
             console.ForeColor = Properties.Settings.Default.ConsoleFColor;
+
+            this.menuStrip1.RenderMode = ToolStripRenderMode.Professional;
+            this.menuStrip1.Renderer = new ToolStripProfessionalRenderer(new cols());
         }
 
         public void cAppend(string message)
@@ -280,18 +283,51 @@ namespace Moto_Logo
 
         private void changeBackgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            colorDialog1.ShowDialog();
-            console.BackColor = colorDialog1.Color;
-            Properties.Settings.Default.ConsoleBGColor = colorDialog1.Color;
-            Properties.Settings.Default.Save();
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                console.BackColor = colorDialog1.Color;
+                Properties.Settings.Default.ConsoleBGColor = colorDialog1.Color;
+                Properties.Settings.Default.Save();
+            } 
+            else
+            {
+                return;
+            }
+        }
+
+        private class renderer : ToolStripProfessionalRenderer
+        {
+            public renderer() : base(new cols()) { }
+        }
+
+        private class cols : ProfessionalColorTable
+        {
+            public override Color MenuItemSelected
+            {
+                get { return Color.Black; }
+            }
+            public override Color MenuItemSelectedGradientBegin
+            {
+                get { return Color.FromArgb(36, 38, 36); }
+            }
+            public override Color MenuItemSelectedGradientEnd
+            {
+                get { return Color.FromArgb(36, 38, 36); }
+            }
         }
 
         private void changeFontColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            colorDialog1.ShowDialog();
-            console.ForeColor = colorDialog1.Color;
-            Properties.Settings.Default.ConsoleFColor = colorDialog1.Color;
-            Properties.Settings.Default.Save();
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                console.ForeColor = colorDialog1.Color;
+                Properties.Settings.Default.ConsoleFColor = colorDialog1.Color;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void resetToDefaultToolStripMenuItem_Click(object sender, EventArgs e)
