@@ -133,6 +133,16 @@ namespace Moto_Logo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap console_x16 {
+            get {
+                object obj = ResourceManager.GetObject("console_x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap delete_x16 {
             get {
                 object obj = ResourceManager.GetObject("delete_x16", resourceCulture);

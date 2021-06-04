@@ -81,62 +81,12 @@ ru.RemoveToolSettings=Вы хотите удалить все настройки
 tr.RemoveToolSettings=Tüm Moto_Boot_Logo_Maker ayarlarını kaldırmak istiyor musunuz?
 de.RemoveToolSettings=Möchten Sie alle Moto_Boot_Logo_Maker-Einstellungen entfernen?     
 ja.RemoveToolSettings=Moto_Boot_Logo_Maker設定をすべて削除しますか？
-// Portable
-en.PortableOptionTitle=Installation Type
-en.PortableOptionSubTitle=Select Installation Option
-en.PortableOptionAsk=Where would you like to install this program?
-en.PortableOptionC=Normal C:\ Installation
-en.PortableOptionPortable=Portable Edition (This will be extracted in Desktop)
-es.PortableOptionTitle=Tipo de instalación
-es.PortableOptionSubTitle=Seleccione la opción de instalación
-es.PortableOptionAsk=¿Dónde le gustaría instalar este programa?
-es.PortableOptionC=Instalación Normal en carpeta C:\
-es.PortableOptionPortable=Edición portátil (esto se extraerá en el escritorio)      
-pt.PortableOptionTitle=Tipo de Instalação
-pt.PortableOptionSubTitle=Selecione a opção de instalação
-pt.PortableOptionAsk=Onde você gostaria de instalar este programa?
-pt.PortableOptionC=Normal C:\ Instalação
-pt.PortableOptionPortable=Edição portátil (será extraído no desktop)
-pl.PortableOptionTitle=Typ instalacji
-pl.PortableOptionSubTitle=Wybierz opcję instalacji
-pl.PortableOptionAsk=Gdzie chcesz zainstalować ten program?
-pl.PortableOptionC=Normalny C:\ Instalacja
-pl.PortableOptionPortable=Wersja przenośna (zostanie wyodrębniona na pulpicie)
-it.PortableOptionTitle=Tipo di installazione
-it.PortableOptionSubTitle=Seleziona l'opzione di installazione
-it.PortableOptionAsk=Dove vorresti installare questo programma?
-it.PortableOptionC=C:\ Installazione normale
-it.PortableOptionPortable=Edizione portatile (verrà estratta nel desktop)
-fr.PortableOptionTitle=Type d'installation
-fr.PortableOptionSubTitle=Sélectionnez l'option d'installation
-fr.PortableOptionAsk=Où souhaitez-vous installer ce programme?
-fr.PortableOptionC=Normal C:\ Installation
-fr.PortableOptionPortable=Édition portable (cela sera extrait dans le bureau)
-ru.PortableOptionTitle=Тип установки
-ru.PortableOptionSubTitle=Выберите вариант установки
-ru.PortableOptionAsk=Куда бы вы хотели установить эту программу?
-ru.PortableOptionC=Обычный C:\ Установка
-ru.PortableOptionPortable=Portable Edition (будет извлечен в Desktop)
-tr.PortableOptionTitle=Kurulum Türü
-tr.PortableOptionSubTitle=Kurulum Seçeneğini Seçin
-tr.PortableOptionAsk=Bu programı nereye kurmak istersiniz?
-tr.PortableOptionC=Normal C:\ Kurulum
-tr.PortableOptionPortable=Portable Edition (Bu, Masaüstünde çıkarılacaktır)
-de.PortableOptionTitle=Installationstyp
-de.PortableOptionSubTitle=Wählen Sie Installationsoption
-de.PortableOptionAsk=Wo möchten Sie dieses Programm installieren?
-de.PortableOptionC=Normal C:\ Installation
-de.PortableOptionPortable=Portable Edition (Dies wird in Desktop extrahiert)
-ja.PortableOptionTitle=インストールタイプ
-ja.PortableOptionSubTitle=インストールオプションを選択します
-ja.PortableOptionAsk=このプログラムをどこにインストールしますか？
-ja.PortableOptionC=通常のC:\インストール
-ja.PortableOptionPortable=Portable Edition（これはデスクトップで抽出されます）
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
 
-#define VCLStylesSkinPath "{localappdata}\VCLStylesSkin"
+#define VCLStylesSkinPath "{app}\SetupTheme"
+
 [Files]     
 Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
@@ -167,6 +117,7 @@ Type: files; Name: "{app}\License";
 Type: files; Name: "{app}\*.dll"; 
 Type: files; Name: "{app}\*.txt";
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
+Name: ExpandConstant('{localappdata}\VCLStylesSkin'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28\*'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Franco28'; Type: filesandordirs;  
@@ -193,6 +144,7 @@ begin
             DelTree(ExpandConstant('{app}'), True, True, True);
             DelTree(ExpandConstant('C:\adb'), True, True, True);  
             DelTree(ExpandConstant('C:\NewMotoLogo'), True, True, True);
+            DelTree(ExpandConstant('{localappdata}\VCLStylesSkin'), True, True, True);   
         end;
   end;
 end;   

@@ -68,6 +68,7 @@ namespace Moto_Logo
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consoleChangeFontColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -352,7 +353,8 @@ namespace Moto_Logo
             this.menuStrip1.BackColor = System.Drawing.Color.Black;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consoleToolStripMenuItem,
-            this.consoleChangeFontColorToolStripMenuItem});
+            this.consoleChangeFontColorToolStripMenuItem,
+            this.resetToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(9, 9);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(627, 24);
@@ -363,7 +365,7 @@ namespace Moto_Logo
             // 
             this.consoleToolStripMenuItem.BackColor = System.Drawing.Color.Black;
             this.consoleToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.consoleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("consoleToolStripMenuItem.Image")));
+            this.consoleToolStripMenuItem.Image = global::Moto_Logo.Properties.Resources.console_x16;
             this.consoleToolStripMenuItem.Name = "consoleToolStripMenuItem";
             this.consoleToolStripMenuItem.Size = new System.Drawing.Size(229, 20);
             this.consoleToolStripMenuItem.Text = "Console - Change Background Color";
@@ -372,11 +374,22 @@ namespace Moto_Logo
             // consoleChangeFontColorToolStripMenuItem
             // 
             this.consoleChangeFontColorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.consoleChangeFontColorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("consoleChangeFontColorToolStripMenuItem.Image")));
+            this.consoleChangeFontColorToolStripMenuItem.Image = global::Moto_Logo.Properties.Resources.console_x16;
+            this.consoleChangeFontColorToolStripMenuItem.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.consoleChangeFontColorToolStripMenuItem.Name = "consoleChangeFontColorToolStripMenuItem";
             this.consoleChangeFontColorToolStripMenuItem.Size = new System.Drawing.Size(189, 20);
             this.consoleChangeFontColorToolStripMenuItem.Text = "Console - Change Font Color";
             this.consoleChangeFontColorToolStripMenuItem.Click += new System.EventHandler(this.changeFontColorToolStripMenuItem_Click);
+            // 
+            // resetToolStripMenuItem
+            // 
+            this.resetToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.resetToolStripMenuItem.Image = global::Moto_Logo.Properties.Resources.Reload_x16;
+            this.resetToolStripMenuItem.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.resetToolStripMenuItem.Text = "Reset Console";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
             // AboutBox
             // 
@@ -455,5 +468,6 @@ namespace Moto_Logo
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem consoleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consoleChangeFontColorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
     }
 }

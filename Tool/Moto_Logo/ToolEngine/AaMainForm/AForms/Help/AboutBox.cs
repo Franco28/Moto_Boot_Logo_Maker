@@ -330,7 +330,7 @@ namespace Moto_Logo
             }
         }
 
-        private void resetToDefaultToolStripMenuItem_Click(object sender, EventArgs e)
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             console.BackColor = Color.Black;
             console.ForeColor = Color.Red;

@@ -578,6 +578,7 @@
     <Content Include="Resources\devicesSearch\MotoX.png" />
     <Content Include="Resources\devicesSearch\MotoZ.png" />
     <Content Include="Resources\ToolUI\binIcon_x32.png" />
+    <Content Include="Resources\ToolUI\console_x16.png" />
     <Content Include="Resources\ToolUI\downloadgif.gif" />
     <Content Include="Resources\ToolUI\download_32.png" />
     <Content Include="Resources\ToolUI\toolUIIcon_x32.png" />
@@ -751,7 +752,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" />
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.MonthAndDayStamp.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_StartDate="2014/8/25" BuildVersion_UseGlobalSettings="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

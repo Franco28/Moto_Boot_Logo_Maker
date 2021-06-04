@@ -85,7 +85,8 @@ ja.RemoveToolSettings=Moto_Boot_Logo_Maker設定をすべて削除しますか�
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}";
     
-#define VCLStylesSkinPath "{localappdata}\VCLStylesSkin"
+#define VCLStylesSkinPath "{app}\SetupTheme"
+
 [Files]
 Source: "..\SetupTheme\VclStylesinno.dll"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall
 Source: "..\SetupTheme\Glossy.vsf"; DestDir: {#VCLStylesSkinPath}; Flags: uninsneveruninstall 
@@ -106,6 +107,8 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 Type: filesandordirs; Name: "|{app}\Files"; 
 Type: files; Name: "{app}\Moto_Boot_Logo_Maker.exe.config";
 Type: files; Name: "{app}\AndroidLib.dll";
+Name: ExpandConstant('{localappdata}\VCLStylesSkin'; Type: filesandordirs; 
+Name: ExpandConstant('{app}\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 Name: ExpandConstant('{localappdata}\Temp\{#MyAppName2}{#MyAppVersion}{#MyInstallerSuffix}'; Type: filesandordirs;  
 
 [UninstallDelete]
@@ -130,6 +133,7 @@ begin
             DelTree(ExpandConstant('{app}'), True, True, True);
             DelTree(ExpandConstant('C:\adb'), True, True, True);  
             DelTree(ExpandConstant('C:\NewMotoLogo'), True, True, True);
+            DelTree(ExpandConstant('{localappdata}\VCLStylesSkin'), True, True, True);   
         end;
   end;
 end;   
