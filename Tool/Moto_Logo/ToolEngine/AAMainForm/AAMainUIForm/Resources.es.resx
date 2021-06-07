@@ -241,603 +241,603 @@
     <value>Reemplazar</value>
   </data>
   <data name="MainForm_BTN_SearchDeviceToolTipText" xml:space="preserve">
-    <value>Search Device</value>
+    <value>Buscar Dispositivo</value>
   </data>
   <data name="MainForm_BTN_Stop" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="MainForm_BTN_StopToolTipText" xml:space="preserve">
-    <value>Stop logo build process</value>
+    <value>Parar proceso de construcción del logotipo</value>
   </data>
   <data name="MainForm_CantSaveEmptyFiles" xml:space="preserve">
-    <value>Make or load a Logo first! Then you will be able to save it!</value>
+    <value>Cree o cargue un logotipo primero! Así, luego podrás guardarlo!</value>
   </data>
   <data name="MainForm_CurrentProjectText" xml:space="preserve">
-    <value>Current project:</value>
+    <value>Proyecto actual:</value>
   </data>
   <data name="MainForm_ErrorWrongTypeOfIMG" xml:space="preserve">
-    <value>Wrong image type! Image type allowed:</value>
+    <value>Tipo de imagen incorrecto! Tipo de imagen permitido:</value>
   </data>
   <data name="MainForm_ExitLogoOpen" xml:space="preserve">
-    <value>Tool is loading a logo.bin, are you sure to exit?</value>
+    <value>La herramienta está cargando un logo.bin, está seguro de salir?</value>
   </data>
   <data name="MainForm_ExitLogoWasntSave1" xml:space="preserve">
-    <value>There is a current project opened:</value>
+    <value>Hay un proyecto actual abierto:</value>
   </data>
   <data name="MainForm_ExitLogoWasntSave2" xml:space="preserve">
-    <value>and you didn't save the Logo! Are you sure that you want to exit?</value>
+    <value>y no guardaste el logotipo! Estás seguro de que quieres salir?</value>
   </data>
   <data name="MainForm_ExitLogoWasntSave3" xml:space="preserve">
-    <value>Are you sure about to Reload Tool?</value>
+    <value>Estás seguro de recargar la herramienta?</value>
   </data>
   <data name="MainForm_ExtractLogoError" xml:space="preserve">
-    <value>Unable to extract image from bootlogo</value>
+    <value>No se puede extraer la imagen del logo de arranque</value>
   </data>
   <data name="MainForm_GB_LogoFormat" xml:space="preserve">
-    <value>logo.bin format</value>
+    <value>formato logo.bin</value>
   </data>
   <data name="MainForm_GB_LogoImageFillOptions" xml:space="preserve">
-    <value>Image Fill Options</value>
+    <value>Opciones de relleno de imagen</value>
   </data>
   <data name="MainForm_GB_LogoImageOrientationOptions" xml:space="preserve">
-    <value>Image Orientation Options</value>
+    <value>Opciones de orientación de la imagen</value>
   </data>
   <data name="MainForm_GB_LogoOption" xml:space="preserve">
-    <value>Logo Option</value>
+    <value>Opción del logotipo</value>
   </data>
   <data name="MainForm_GB_LogoResolution" xml:space="preserve">
-    <value>Resolution</value>
+    <value>Resolución</value>
   </data>
   <data name="MainForm_GB_SelectExtension" xml:space="preserve">
-    <value>Select your extension</value>
+    <value>Seleccione su extensión</value>
   </data>
   <data name="MainForm_GB_SelectLogoMemory" xml:space="preserve">
-    <value>Select your logo memory</value>
+    <value>Seleccione la memoria de su logotipo</value>
   </data>
   <data name="MainForm_ImageSaveOk" xml:space="preserve">
-    <value>Image saved as</value>
+    <value>Imagen guardada como</value>
   </data>
   <data name="MainForm_ImageSaveOk2" xml:space="preserve">
-    <value>Successfully</value>
+    <value>Exitosamente</value>
   </data>
   <data name="MainForm_ImageStatus_TextLocked" xml:space="preserve">
-    <value>* Click on image and will be locked</value>
+    <value>* Haga clic en la imagen y se bloqueará</value>
   </data>
   <data name="MainForm_ImageStatus_TextUnlocked" xml:space="preserve">
-    <value>* Double click and will be unlocked</value>
+    <value>* Haga doble clic y se desbloqueará</value>
   </data>
   <data name="MainForm_InternetCheck" xml:space="preserve">
-    <value>Please check your internet connection and try again!</value>
+    <value>Comprueba tu conexión a Internet y vuelve a intentarlo.</value>
   </data>
   <data name="MainForm_JPGimgIsToBig" xml:space="preserve">
-    <value>Image &lt;IMGExtension&gt; is too big! Please reduce it size lower than 5.6MB</value>
+    <value>La imagen &lt;IMGExtension&gt; es demasiado grande! Por favor, reduzca su tamaño a menos de 5.6MB</value>
   </data>
   <data name="MainForm_label_BuildPath" xml:space="preserve">
-    <value>Logo Build Path</value>
+    <value>Ruta de compilación del logotipo</value>
   </data>
   <data name="MainForm_label_ErrorGoToFileInfo" xml:space="preserve">
-    <value>Open Logs:</value>
+    <value>Abrir registros:</value>
   </data>
   <data name="MainForm_label_GoToErrorToolTipText" xml:space="preserve">
-    <value>Open logs folder</value>
+    <value>Abrir carpeta de registros</value>
   </data>
   <data name="MainForm_label_ImageStatusLocked" xml:space="preserve">
-    <value>* Image Status: Locked</value>
+    <value>* Estado de la imagen: bloqueado</value>
   </data>
   <data name="MainForm_label_ImageStatusUnlocked" xml:space="preserve">
-    <value>* Image Status: Unlocked</value>
+    <value>* Estado de la imagen: Desbloqueado</value>
   </data>
   <data name="MainForm_label_ReloadTool" xml:space="preserve">
-    <value>Reload</value>
+    <value>Recargar</value>
   </data>
   <data name="MainForm_label_SearchDevice" xml:space="preserve">
-    <value>Search Device</value>
+    <value>Buscar Dispositivo</value>
   </data>
   <data name="MainForm_LoadPreviousLogo" xml:space="preserve">
-    <value>There was a previous loaded logo, do you want to load it again? NOTE: This will take a second...</value>
+    <value>Había un logo cargado anteriormente, quieres volver a cargarlo? NOTA: Esto tomará un segundo...</value>
   </data>
   <data name="MainForm_LogoBuild_AllImageFailed" xml:space="preserve">
-    <value>Every single image selected failed to load - Status: Processing Aborted :(</value>
+    <value>Las imagenes seleccionadas no se pudieron cargar - Estado: Procesamiento cancelado :(</value>
   </data>
   <data name="MainForm_LogoBuild_Cancel" xml:space="preserve">
-    <value>Logo Build: Process was cancelled!</value>
+    <value>Compilación del logotipo: El proceso fue cancelado!</value>
   </data>
   <data name="MainForm_LogoBuild_CompilePathISWrong" xml:space="preserve">
-    <value>Path &lt;pathbuild&gt; must end with \</value>
+    <value>La ruta &lt;pathbuild&gt; debe terminar con \</value>
   </data>
   <data name="MainForm_LogoBuild_CompileRadioBTNEmpty" xml:space="preserve">
-    <value>Select an extension before build...</value>
+    <value>Seleccione una extensión antes de compilar...</value>
   </data>
   <data name="MainForm_LogoBuild_ComplieLNandPNEmpty" xml:space="preserve">
-    <value>Logo name box and logo path box can´t be empty! So please enter a logo name and path to compile!</value>
+    <value>El cuadro de nombre del logotipo y el cuadro de ruta del logotipo no pueden estar vacíos! Por lo tanto, ingrese un nombre de logotipo y una ruta para compilar.</value>
   </data>
   <data name="MainForm_LogoBuild_ContinueWithBlankImge" xml:space="preserve">
-    <value>Are you sure to proceed with a blank image?</value>
+    <value>Está seguro de continuar con una imagen en blanco?</value>
   </data>
   <data name="MainForm_LogoBuild_Error" xml:space="preserve">
-    <value>Logo Build: There was an error running the process. The thread aborted</value>
+    <value>Compilación del logotipo: Se produjo un error al ejecutar el proceso. El hilo ha abortado</value>
   </data>
   <data name="MainForm_LogoBuild_ErrorLoadImage" xml:space="preserve">
-    <value>Error loading image - Status: Processing Aborted :(</value>
+    <value>Error al cargar la imagen - Estado: Proceso cancelado :(</value>
   </data>
   <data name="MainForm_LogoBuild_ErrorLogoFitImage" xml:space="preserve">
-    <value>Error: Images/Options selected will not fit in logo.bin, Failed at</value>
+    <value>Error: Las imágenes/opciones seleccionadas no encajarán en logo.bin, falló en</value>
   </data>
   <data name="MainForm_LogoBuild_ErrorLogoFitImage2" xml:space="preserve">
-    <value>Produced file is</value>
+    <value>El archivo producido es</value>
   </data>
   <data name="MainForm_LogoBuild_ErrorLogoFitImage3" xml:space="preserve">
-    <value>Bytes too large</value>
+    <value>Bytes demasiado grandes</value>
   </data>
   <data name="MainForm_LogoBuild_FileSaveError" xml:space="preserve">
-    <value>Exception during processing:</value>
+    <value>Excepción durante el procesamiento:</value>
   </data>
   <data name="MainForm_LogoBuild_FolderError" xml:space="preserve">
-    <value>Can't open a non existing folder path!</value>
+    <value>No se puede abrir una ruta de carpeta que no existe!</value>
   </data>
   <data name="MainForm_LogoBuild_ImageLoadFail" xml:space="preserve">
-    <value>At least one image failed to load, are you sure you wish to proceed?</value>
+    <value>No se pudo cargar al menos una imagen, está seguro de que desea continuar?</value>
   </data>
   <data name="MainForm_LogoBuild_NoImageLoad" xml:space="preserve">
-    <value>No images were loaded, are you sure to proceed with blank images?</value>
+    <value>No se cargaron imágenes, está seguro de continuar con las imágenes en blanco?</value>
   </data>
   <data name="MainForm_LogoBuild_OK" xml:space="preserve">
-    <value>Logo Build: Process was completed!</value>
+    <value>Compilación de logotipo: El proceso se completó!</value>
   </data>
   <data name="MainForm_LogoBuild_ZipFileM" xml:space="preserve">
-    <value>File Zip are missing, so logo won't be flashable!</value>
+    <value>Falta el archivo Zip, por lo que el logotipo no puede ser flashable.</value>
   </data>
   <data name="MainForm_LogoBuild_ZipFileMTitle" xml:space="preserve">
-    <value>Missing Script Files</value>
+    <value>Faltan archivos de script</value>
   </data>
   <data name="MainForm_LogoOpen_BinInvalid" xml:space="preserve">
-    <value>Invalid logo.bin file loaded</value>
+    <value>Se cargó un archivo logo.bin no válido</value>
   </data>
   <data name="MainForm_LogoOpen_BinProccesing" xml:space="preserve">
-    <value>Processing</value>
+    <value>Procesando</value>
   </data>
   <data name="MainForm_LogoOpen_BinProcessAborted" xml:space="preserve">
-    <value>Processing Aborted</value>
+    <value>Proceso cancelado</value>
   </data>
   <data name="MainForm_LogoOpen_BinProcessOk" xml:space="preserve">
-    <value>Processing Complete :)</value>
+    <value>Proceso completo :)</value>
   </data>
   <data name="MainForm_LogoOpen_BinStatus" xml:space="preserve">
-    <value>Status:</value>
+    <value>Estado:</value>
   </data>
   <data name="MainForm_LogoOpen_FileLoadOk" xml:space="preserve">
-    <value>File load complete :)</value>
+    <value>Carga de archivo completa :)</value>
   </data>
   <data name="MainForm_LogoOpen_FileOpenError" xml:space="preserve">
-    <value>Error opening file: &lt;FN&gt;</value>
+    <value>Error al abrir el archivo: &lt;FN&gt;</value>
   </data>
   <data name="MainForm_Logo_Name" xml:space="preserve">
-    <value>Logo Name</value>
+    <value>Nombre del logotipo</value>
   </data>
   <data name="MainForm_Logs_ErrorLogsWarnigMSG" xml:space="preserve">
-    <value>Remember to send logs, then remove this file!</value>
+    <value>Recuerde enviar registros y luego eliminar este archivo!</value>
   </data>
   <data name="MainForm_Logs_ErrorOpenFolder" xml:space="preserve">
-    <value>Do you want to open Logs folder?</value>
+    <value>Quieres abrir la carpeta de Registros?</value>
   </data>
   <data name="MainForm_Logs_ErrorSend" xml:space="preserve">
-    <value>Do you want to send Logs now?</value>
+    <value>Quieres enviar los registros ahora?</value>
   </data>
   <data name="MainForm_Logo_MaxBinSize" xml:space="preserve">
-    <value>Max logo.bin size</value>
+    <value>Tamaño máximo de logo.bin</value>
   </data>
   <data name="MainForm_OpenCustomLogoNoAdminTool" xml:space="preserve">
-    <value>If you want to open a custom logo, just drag and drop the file into Tool!</value>
+    <value>Si desea abrir un logotipo personalizado, simplemente arrastre y suelte el archivo en la herramienta.</value>
   </data>
   <data name="MainForm_OpenLogoMemoryTitle" xml:space="preserve">
-    <value>Loading logo:</value>
+    <value>Cargando logo:</value>
   </data>
   <data name="MainForm_OpenLogoMemoryTitle2" xml:space="preserve">
-    <value>Please wait...</value>
+    <value>Espere por favor...</value>
   </data>
   <data name="MainForm_RDO_rdoAndroid43" xml:space="preserve">
-    <value>540x540 Bundle</value>
+    <value>Paquete 540x540</value>
   </data>
   <data name="MainForm_RDO_rdoAndroid44" xml:space="preserve">
-    <value>Default</value>
+    <value>Predeterminado</value>
   </data>
   <data name="MainForm_RDO_rdoImageCenter" xml:space="preserve">
-    <value>Center</value>
+    <value>Centrar</value>
   </data>
   <data name="MainForm_RDO_rdoImageFill" xml:space="preserve">
-    <value>Fill</value>
+    <value>Llenar</value>
   </data>
   <data name="MainForm_RDO_rdoImageStretchAspect" xml:space="preserve">
-    <value>Stretch Proportionally</value>
+    <value>Estirar proporcionalmente</value>
   </data>
   <data name="MainForm_RDO_rdoLayoutLandscape" xml:space="preserve">
-    <value>Landscape</value>
+    <value>Paisaje</value>
   </data>
   <data name="MainForm_RDO_rdoLayoutPortrait" xml:space="preserve">
-    <value>Portrait</value>
+    <value>Retrato</value>
   </data>
   <data name="MainForm_savefiledialog_Title" xml:space="preserve">
-    <value>Please select your device</value>
+    <value>Por favor seleccione su dispositivo</value>
   </data>
   <data name="MainForm_SelectLogoSizeWarn" xml:space="preserve">
-    <value>Please select your logo memory size before opening a file!</value>
+    <value>Seleccione el tamaño de memoria de su logotipo antes de abrir un archivo.</value>
   </data>
   <data name="MainForm_ToolStripMenu_about" xml:space="preserve">
-    <value>About</value>
+    <value>Acerca de</value>
   </data>
   <data name="MainForm_ToolStripMenu_checkForUpdates" xml:space="preserve">
-    <value>Check for updates</value>
+    <value>Buscar actualizaciones</value>
   </data>
   <data name="MainForm_ToolStripMenu_downloadSite" xml:space="preserve">
-    <value>Downloads</value>
+    <value>Descargas</value>
   </data>
   <data name="MainForm_ToolStripMenu_file" xml:space="preserve">
-    <value>File</value>
+    <value>Archivo</value>
   </data>
   <data name="MainForm_ToolStripMenu_help" xml:space="preserve">
-    <value>Help</value>
+    <value>Ayuda</value>
   </data>
   <data name="MainForm_ToolStripMenu_new" xml:space="preserve">
-    <value>New</value>
+    <value>Nuevo</value>
   </data>
   <data name="MainForm_ToolStripMenu_open" xml:space="preserve">
-    <value>Open</value>
+    <value>Abrir</value>
   </data>
   <data name="MainForm_ToolStripMenu_OpenCustomLogo" xml:space="preserve">
-    <value>Open Custom Logo</value>
+    <value>Abrir logotipo personalizado</value>
   </data>
   <data name="MainForm_ToolStripMenu_others" xml:space="preserve">
-    <value>Others</value>
+    <value>Otros</value>
   </data>
   <data name="MainForm_ToolStripMenu_save" xml:space="preserve">
-    <value>Save</value>
+    <value>Guardar</value>
   </data>
   <data name="MainForm_ToolStripMenu_saveAs" xml:space="preserve">
-    <value>Save As</value>
+    <value>Guardar como</value>
   </data>
   <data name="MainForm_ToolStripMenu_settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ajustes</value>
   </data>
   <data name="MainForm_ToolStripMenu_source" xml:space="preserve">
-    <value>Source</value>
+    <value>Fuente</value>
   </data>
   <data name="MainForm_ToolStripMenu_tool" xml:space="preserve">
     <value>Tool</value>
   </data>
   <data name="MainForm_ToolTip_RGBCOLOUR" xml:space="preserve">
-    <value>RGB colour</value>
+    <value>Color RGB</value>
   </data>
   <data name="MainForm_ToolTip_RGBCOLOURCOPIED" xml:space="preserve">
-    <value>copied to clipboard!</value>
+    <value>copiado al portapapeles!</value>
   </data>
   <data name="MainForm_ToolTip_SearchDevice" xml:space="preserve">
-    <value>Input your device model like this: "moto g8 power"</value>
+    <value>Ingrese el modelo de su dispositivo de esta manera: "moto g8 power"</value>
   </data>
   <data name="MainForm_ToolUpdating" xml:space="preserve">
-    <value>Closing application to update...</value>
+    <value>Cerrando la aplicación para actualizar ...</value>
   </data>
   <data name="MainForm_TVLogo_logo_battery_ToolTipText" xml:space="preserve">
-    <value>Visible when your phone has had its battery fully discharged, and you</value>
+    <value>Visible cuando su teléfono tiene la batería completamente descargada y </value>
   </data>
   <data name="MainForm_TVLogo_logo_battery_ToolTipText2" xml:space="preserve">
-    <value>plug your phone into charge</value>
+    <value>conecte su teléfono a cargar</value>
   </data>
   <data name="MainForm_TVLogo_logo_boot_ToolTipText" xml:space="preserve">
-    <value>Visible only with bootloader locked phone. It is suggested you remove</value>
+    <value>Visible solo con el teléfono con el bootloader bloqueado. Se sugiere que elimines</value>
   </data>
   <data name="MainForm_TVLogo_logo_boot_ToolTipText2" xml:space="preserve">
-    <value>the picture that is in this entry, to save bytes in your logo.bin</value>
+    <value>la imagen que está en esta entrada, para guardar bytes en su logo.bin</value>
   </data>
   <data name="MainForm_TVLogo_logo_charge_ToolTipText" xml:space="preserve">
-    <value>Visible when your phone is plugged in while fully powered off, and the phone has more</value>
+    <value>Visible cuando su teléfono está enchufado mientras está completamente apagado, y el teléfono tiene más</value>
   </data>
   <data name="MainForm_TVLogo_logo_charge_ToolTipText2" xml:space="preserve">
-    <value>than 3% charge.  logo_battery is shown instead if it has 0-3% charge.</value>
+    <value>más del 3% de carga. En su lugar, se muestra logo_battery si tiene 0-3% de carga.</value>
   </data>
   <data name="MainForm_TVLogo_logo_lowpower_ToolTipText" xml:space="preserve">
-    <value>Visible when the phone has more than 3% power while fully powered off. Not much more is known.</value>
+    <value>Visible cuando el teléfono tiene más del 3% de energía mientras está completamente apagado. No se sabe mucho más.</value>
   </data>
   <data name="MainForm_TVLogo_logo_lowpower_ToolTipText2" xml:space="preserve">
-    <value>This feature is only present on the Moto E</value>
+    <value>Esta función solo está presente en el Moto E</value>
   </data>
   <data name="MainForm_TVLogo_logo_orange_ToolTipText" xml:space="preserve">
-    <value>Visible on new Moto bootloader unlocked phones. What you put here is likely to look</value>
+    <value>Visible en teléfonos con el bootloader bloqueado. Lo que pones aquí probablemente parezca</value>
   </data>
   <data name="MainForm_TVLogo_logo_orange_ToolTipText2" xml:space="preserve">
-    <value>much better than the unlocked device warning. :)</value>
+    <value>mucho mejor que la advertencia de dispositivo desbloqueado. :)</value>
   </data>
   <data name="MainForm_TVLogo_logo_red_ToolTipText" xml:space="preserve">
-    <value>Visible when your phone failed OS verification</value>
+    <value>Visible cuando su teléfono falló la verificación del sistema operativo</value>
   </data>
   <data name="MainForm_TVLogo_logo_unlocked_ToolTipText" xml:space="preserve">
-    <value>Visible on bootloader unlocked phones. What you put here is likely to look</value>
+    <value>Visible en teléfonos con el bootloader bloqueado. Lo que pones aquí probablemente parezca</value>
   </data>
   <data name="MainForm_TVLogo_logo_unlocked_ToolTipText2" xml:space="preserve">
-    <value>much better than the unlocked device warning. :)</value>
+    <value>mucho mejor que la advertencia de dispositivo desbloqueado. :)</value>
   </data>
   <data name="MainForm_TVLogo_logo_unplug_ToolTipText" xml:space="preserve">
-    <value>Visible when the phone is fully charged while plugged in and fully powered off.</value>
+    <value>Visible cuando el teléfono está completamente cargado mientras está enchufado y completamente apagado.</value>
   </data>
   <data name="MainForm_TVLogo_logo_unplug_ToolTipText2" xml:space="preserve">
-    <value>This feature is only present on the Moto E</value>
+    <value>Esta función solo está presente en el Moto E</value>
   </data>
   <data name="MainForm_TVLogo_logo_yellow_ToolTipText" xml:space="preserve">
-    <value>Visible when your phone load a different OS</value>
+    <value>Visible cuando su teléfono carga un sistema operativo diferente</value>
   </data>
   <data name="NETFRAMEWORKERROR" xml:space="preserve">
-    <value>.NET Framework: Unable to reach out .NET Framework version...</value>
+    <value>.NET Framework: no se puede acceder a la versión de .NET Framework...</value>
   </data>
   <data name="ProgramCheckAssembliesError" xml:space="preserve">
-    <value>Moto_Boot_Logo_Maker can't match with original assemblies:</value>
+    <value>Moto_Boot_Logo_Maker no puede coincidir con ensamblajes originales:</value>
   </data>
   <data name="ProgramCheckAssembliesErrorVer" xml:space="preserve">
-    <value>Version:</value>
+    <value>Versión:</value>
   </data>
   <data name="ProgramCheckBackRun" xml:space="preserve">
-    <value>There seems to be another instance of the Tool running. Please make sure it is not running in the background.</value>
+    <value>Parece haber otra instancia de la herramienta en ejecución. Asegúrese de que no se esté ejecutando en segundo plano.</value>
   </data>
   <data name="ProgramCheckBackRun2" xml:space="preserve">
-    <value>Another Tool instance is running</value>
+    <value>Se está ejecutando otra instancia de herramienta</value>
   </data>
   <data name="ProgramCheckFolderWrong" xml:space="preserve">
-    <value>Folder is wrong, please check it, should be like this:</value>
+    <value>La carpeta es incorrecta, verifíquela, debería ser así:</value>
   </data>
   <data name="ProgramCheckPrivileges" xml:space="preserve">
-    <value>Tool must run as administrator</value>
+    <value>La herramienta debe ejecutarse como administrador</value>
   </data>
   <data name="ProgramCheckPrivileges2" xml:space="preserve">
-    <value>Tool needs privileges</value>
+    <value>La herramienta necesita privilegios</value>
   </data>
   <data name="ProgramCheckWindows" xml:space="preserve">
-    <value>This tool is compatible with Windows 7, Windows 8, Windows 8.1 and Windows 10, you have:</value>
+    <value>Esta herramienta es compatible con Windows 7, Windows 8, Windows 8.1 y Windows 10, tienes:</value>
   </data>
   <data name="ProgramCheckWindows2" xml:space="preserve">
-    <value>Can't start Tool, error: Windows compatibility</value>
+    <value>No se puede iniciar la herramienta, error: compatibilidad con Windows</value>
   </data>
   <data name="SearchDeviceForm_AlreadyOpened" xml:space="preserve">
-    <value>Device already opened:</value>
+    <value>Dispositivo ya abierto:</value>
   </data>
   <data name="SearchDeviceForm_AlreadyOpened2" xml:space="preserve">
-    <value>close it to search new devices!</value>
+    <value>Ciérralo para buscar nuevos dispositivos!</value>
   </data>
   <data name="SearchDeviceForm_NotFound" xml:space="preserve">
-    <value>was not found, please input like this: moto g6 plus</value>
+    <value>no se encontró, ingrese así: moto g6 plus</value>
   </data>
   <data name="SearchDeviceForm_PleaseInputDevice" xml:space="preserve">
-    <value>Please input a device!</value>
+    <value>Introduzca un dispositivo.</value>
   </data>
   <data name="SettingsForm_BTN_OpenToolFolder" xml:space="preserve">
-    <value>Open Tool Folder</value>
+    <value>Abrir carpeta del Tool</value>
   </data>
   <data name="SettingsForm_BTN_ResetAllProfiles" xml:space="preserve">
-    <value>Reset All Profiles</value>
+    <value>Restablecer todos los perfiles</value>
   </data>
   <data name="SettingsForm_BTN_ResetToolSettings" xml:space="preserve">
-    <value>Reset Tool Settings</value>
+    <value>Restablecer la configuración de la herramienta</value>
   </data>
   <data name="SettingsForm_GeneralSettings_Text" xml:space="preserve">
-    <value>General Settings</value>
+    <value>Configuración general</value>
   </data>
   <data name="SettingsForm_GroupBox1" xml:space="preserve">
-    <value>Enable auto save profiles</value>
+    <value>Habilitar auto guardado de los perfiles</value>
   </data>
   <data name="SettingsForm_GroupBox2" xml:space="preserve">
-    <value>Enable auto save logo in memory</value>
+    <value>Habilitar auto guardado del logo en la memoria</value>
   </data>
   <data name="SettingsForm_GroupBox3" xml:space="preserve">
-    <value>Enable auto check for updates</value>
+    <value>Habilitar la búsqueda automática de actualizaciones</value>
   </data>
   <data name="SettingsForm_No_Text" xml:space="preserve">
     <value>NO</value>
   </data>
   <data name="SettingsForm_ResetTool_Text" xml:space="preserve">
-    <value>Reset Tool</value>
+    <value>Restablecer Tool</value>
   </data>
   <data name="SettingsForm_Yes_Text" xml:space="preserve">
-    <value>YES</value>
+    <value>SI</value>
   </data>
   <data name="MainForm_Tool_Error_Show" xml:space="preserve">
-    <value>An error has occurred, please go to folder and send me logs!</value>
+    <value>Se ha producido un error, vaya a la carpeta y envíeme los registros.</value>
   </data>
   <data name="MainForm_Tool_Error_ShowBTN" xml:space="preserve">
-    <value>Go to file</value>
+    <value>Ir al archivo</value>
   </data>
   <data name="MainForm_Tool_Error_Update" xml:space="preserve">
-    <value>There is a problem reaching update server please check your internet connection and try again later.</value>
+    <value>Hay un problema para llegar al servidor de actualización, verifique su conexión a Internet y vuelva a intentarlo más tarde.</value>
   </data>
   <data name="MainForm_Tool_Error_UpdateTitle" xml:space="preserve">
-    <value>Update check failed</value>
+    <value>Error al comprobar la actualización</value>
   </data>
   <data name="MainForm_Crash_ErrorShow" xml:space="preserve">
-    <value>An error has occurred, please go to folder and send me logs!</value>
+    <value>Se ha producido un error, vaya a la carpeta y envíeme los registros.</value>
   </data>
   <data name="MainForm_Crash_ErrorShowBTN" xml:space="preserve">
-    <value>Go to file</value>
+    <value>Ir al archivo</value>
   </data>
   <data name="MainForm_Update_ErrorUpdate" xml:space="preserve">
-    <value>There is a problem reaching update server please check your internet connection and try again later.</value>
+    <value>Hay un problema para llegar al servidor de actualización, verifique su conexión a Internet y vuelva a intentarlo más tarde.</value>
   </data>
   <data name="MainForm_Update_Error_UpdateTitle" xml:space="preserve">
-    <value>Update check failed</value>
+    <value>Error al comprobar la actualización</value>
   </data>
   <data name="MainForm_Update_InternetErrorUpdate" xml:space="preserve">
-    <value>Can't check Tool updates, check your internet connection!</value>
+    <value>No puedo comprobar las actualizaciones de la herramienta, compruebe su conexión a Internet.</value>
   </data>
   <data name="MainForm_Update_NewUpdateText" xml:space="preserve">
-    <value>There is new version</value>
+    <value>Hay nueva versión</value>
   </data>
   <data name="MainForm_Update_NewUpdateText2" xml:space="preserve">
-    <value>available. You are using version</value>
+    <value>disponible. Estás usando la versión</value>
   </data>
   <data name="MainForm_Update_NewUpdateText3" xml:space="preserve">
-    <value>This is required update. Press Ok to begin updating the application.</value>
+    <value>Esta es una actualización necesaria. Presione Ok para comenzar a actualizar la aplicación.</value>
   </data>
   <data name="MainForm_Update_NewUpdateTitle" xml:space="preserve">
-    <value>New update available</value>
+    <value>Nueva actualización disponible</value>
   </data>
   <data name="MainForm_Update_NoUpdate" xml:space="preserve">
-    <value>There is no update available please try again later.</value>
+    <value>No hay ninguna actualización disponible, inténtelo de nuevo más tarde.</value>
   </data>
   <data name="MainForm_Update_NoUpdateTitle" xml:space="preserve">
-    <value>No update available</value>
+    <value>Actualización no disponible</value>
   </data>
   <data name="MainForm_Update_Status" xml:space="preserve">
-    <value>Status:</value>
+    <value>Estado:</value>
   </data>
   <data name="MainForm_Update_StatusOffline" xml:space="preserve">
-    <value>Offline</value>
+    <value>Desconectado</value>
   </data>
   <data name="MainForm_Update_StatusOnline" xml:space="preserve">
-    <value>Online</value>
+    <value>En línea</value>
   </data>
   <data name="MainForm_LogoOpen_Zipfile_logo_bin_error" xml:space="preserve">
-    <value>Error: Zip file &lt;ZFN&gt; Doesn't contain logo.bin</value>
+    <value>Error: el archivo zip &lt;ZFN&gt; no contiene logo.bin</value>
   </data>
   <data name="MainForm_Logo_Custom" xml:space="preserve">
-    <value>Custom</value>
+    <value>Personalizado</value>
   </data>
   <data name="MainForm_Crash_ErrorBTNLabel" xml:space="preserve">
-    <value>Go to file</value>
+    <value>Ir al archivo</value>
   </data>
   <data name="MainForm_LogoList_Controls" xml:space="preserve">
-    <value>Logo List Controls</value>
+    <value>Controles de la lista de logotipos</value>
   </data>
   <data name="MainForm_TVLogo_ReloadList" xml:space="preserve">
-    <value>Please reload in File/New to see again logos</value>
+    <value>Vuelva a cargar en Archivo/Nuevo para volver a ver los logotipos</value>
   </data>
   <data name="ProgramIsAdmin" xml:space="preserve">
-    <value>Administrator</value>
+    <value>Administrador</value>
   </data>
   <data name="MainForm_PanelMainBTNS" xml:space="preserve">
-    <value>Logo List Controls</value>
+    <value>Controles de la lista de logotipos</value>
   </data>
   <data name="AboutForm_Title" xml:space="preserve">
-    <value>About</value>
+    <value>Acerca de</value>
   </data>
   <data name="DeviceInfoForm_LabelCodeName" xml:space="preserve">
-    <value>Code Name:</value>
+    <value>Nombre clave:</value>
   </data>
   <data name="DeviceInfoForm_LabelLogoComment" xml:space="preserve">
-    <value>Comment:</value>
+    <value>Comentario:</value>
   </data>
   <data name="DeviceInfoForm_LabelLogoComment_Error" xml:space="preserve">
-    <value>Can´t read comments...</value>
+    <value>No puedo leer los comentarios...</value>
   </data>
   <data name="DeviceInfoForm_LabelLogoCreateDate" xml:space="preserve">
-    <value>Logo Create Date:</value>
+    <value>Fecha de creación del logotipo:</value>
   </data>
   <data name="DeviceInfoForm_LabelLogoModifyDate" xml:space="preserve">
-    <value>Logo Modify Date:</value>
+    <value>Fecha de modificación del logotipo:</value>
   </data>
   <data name="DeviceInfoForm_LabelLogoSize" xml:space="preserve">
-    <value>Logo Size:</value>
+    <value>Tamaño del logotipo:</value>
   </data>
   <data name="DeviceInfoForm_LabelMemory" xml:space="preserve">
-    <value>Memory:</value>
+    <value>Memoria:</value>
   </data>
   <data name="DeviceInfoForm_LabelName" xml:space="preserve">
-    <value>Name:</value>
+    <value>Nombre:</value>
   </data>
   <data name="DeviceInfoForm_LabelOpenLogo" xml:space="preserve">
-    <value>Open File Path</value>
+    <value>Abrir ruta de archivo</value>
   </data>
   <data name="DeviceInfoForm_LabelOpenLogo2" xml:space="preserve">
-    <value>Open File Path 2</value>
+    <value>Abrir ruta de archivo 2</value>
   </data>
   <data name="DeviceInfoForm_LabelPath" xml:space="preserve">
-    <value>Logo Path:</value>
+    <value>Ruta del logotipo:</value>
   </data>
   <data name="DeviceInfoForm_LabelResolution" xml:space="preserve">
-    <value>Resolution:</value>
+    <value>Resolución:</value>
   </data>
   <data name="DeviceInfoForm_Label_Device" xml:space="preserve">
-    <value>device:</value>
+    <value>dispositivo:</value>
   </data>
   <data name="DownloadSForm_BTN_Text" xml:space="preserve">
-    <value>Go to</value>
+    <value>Ir</value>
   </data>
   <data name="DownloadSForm_GettingServerData" xml:space="preserve">
-    <value>Getting server data... Please wait...</value>
+    <value>Obteniendo datos del servidor... Espere...</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Done" xml:space="preserve">
-    <value>Done!</value>
+    <value>Hecho!</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Error" xml:space="preserve">
-    <value>Getting server data... {ERROR} No internet connection...</value>
+    <value>Obteniendo datos del servidor... {ERROR} No hay conexión a Internet...</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Error_FH" xml:space="preserve">
-    <value>Error getting server data from Android File Host, retry later...</value>
+    <value>Error al obtener datos del servidor desde Android File Host, vuelva a intentarlo más tarde...</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Error_SF" xml:space="preserve">
-    <value>Error getting server data from SourceForge, retry later...</value>
+    <value>Error al obtener los datos del servidor de SourceForge, vuelva a intentarlo más tarde...</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Error_Uknown" xml:space="preserve">
-    <value>Getting server data... ERROR</value>
+    <value>Obteniendo datos del servidor... ERROR</value>
   </data>
   <data name="DownloadSForm_GettingServerData_Text" xml:space="preserve">
-    <value>Getting server data</value>
+    <value>Obteniendo datos del servidor</value>
   </data>
   <data name="DownloadSForm_Title" xml:space="preserve">
-    <value>Downloads</value>
+    <value>Descargas</value>
   </data>
   <data name="MainForm_Update_Server_Error" xml:space="preserve">
-    <value>Server is down :\</value>
+    <value>El servidor está caído :\</value>
   </data>
   <data name="SelectDeviceForm_LM_Text" xml:space="preserve">
-    <value>Logo Memory:</value>
+    <value>Memoria del logotipo:</value>
   </data>
   <data name="SelectDeviceForm_Opened1" xml:space="preserve">
-    <value>Already opened:</value>
+    <value>Ya abierto:</value>
   </data>
   <data name="SelectDeviceForm_Opened2" xml:space="preserve">
-    <value>close it to open a new one!</value>
+    <value>cierra para abrir uno nuevo!</value>
   </data>
   <data name="SelectDeviceForm_SD_Text" xml:space="preserve">
-    <value>Select your device</value>
+    <value>Seleccione su dispositivo</value>
   </data>
   <data name="ToolDownloadsForm_Exit" xml:space="preserve">
-    <value>Do you want to exit download? This will kill Tool and downloaded files will be damaged...</value>
+    <value>Quieres salir de la descarga? Esto matará la herramienta y los archivos descargados se dañarán...</value>
   </data>
   <data name="ToolDownloadsForm_File_Corrupt" xml:space="preserve">
-    <value>is corrupted, downloading again...</value>
+    <value>está dañado, descargando de nuevo...</value>
   </data>
   <data name="ToolDownloadsForm_File_Extract" xml:space="preserve">
-    <value>Extracting</value>
+    <value>Extrayendo</value>
   </data>
   <data name="ToolDownloadsForm_Label_Download" xml:space="preserve">
-    <value>Downloading</value>
+    <value>Descargando</value>
   </data>
   <data name="ToolDownloadsForm_Label_Download_Retry" xml:space="preserve">
-    <value>Can´t acces to internet connection, do you want to retry?</value>
+    <value>No se pudo acceder a la conexión a Internet, quieres volver a intentarlo?</value>
   </data>
   <data name="ToolDownloadsForm_Label_Download_Retry_Title" xml:space="preserve">
-    <value>Lost internet connection</value>
+    <value>Conexión a Internet perdida</value>
   </data>
   <data name="ToolDownloadsForm_Label_Download_Uknown_Error" xml:space="preserve">
-    <value>Unknown error has occurred, do you want to retry?</value>
+    <value>Se ha producido un error desconocido, quieres volver a intentarlo?</value>
   </data>
   <data name="ToolDownloadsForm_File_Error" xml:space="preserve">
-    <value>Something went wrong with sizes of folder:</value>
+    <value>Algo salió mal con el tamaño de la carpeta:</value>
   </data>
   <data name="ToolDownloadsForm_File_Error2" xml:space="preserve">
-    <value>downloading again files...</value>
+    <value>descargando archivos de nuevo...</value>
   </data>
   <data name="ToolDownloadsForm_File_Missing" xml:space="preserve">
-    <value>is missing, downloading...</value>
+    <value>falta, descargando...</value>
   </data>
   <data name="ToolDownloadsForm_File_Missing2" xml:space="preserve">
-    <value>Files from:</value>
+    <value>Archivos de:</value>
   </data>
   <data name="ToolDownloadsForm_File_Missing3" xml:space="preserve">
-    <value>are missing, downloading files again...</value>
+    <value>faltan, descargando archivos de nuevo...</value>
   </data>
   <data name="ToolDownloadsForm_Label_DownloadFile" xml:space="preserve">
-    <value>Downloading File...</value>
+    <value>Descargando archivo...</value>
   </data>
   <data name="ToolDownloadsForm_Label_DSpeed" xml:space="preserve">
-    <value>Speed:</value>
+    <value>Velocidad:</value>
   </data>
   <data name="ToolDownloadsForm_Label_FileSize" xml:space="preserve">
-    <value>File Size:</value>
+    <value>Tamaño del archivo:</value>
   </data>
 </root>
