@@ -1,4 +1,31 @@
-﻿AboutForm_Box_AppTrusted=Aplicación de confianza:
+﻿##
+# LEEME!!!!!
+#
+# Moto_Boot_Logo_Maker - IDIOMA ES
+#
+# Archivo: Resources.es.resx (reemplázame con tu cultura de idioma, por ejemplo: "Resources."es".resx")
+# 		Más información: https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes
+#
+# Idioma ha traducir: ---
+#
+# Ver: 1.0
+#
+# Autor: Franco28 (reemplázame con tu nombre)
+#
+# NOTA: En este caso este Archivo a traducir, usa este tipo de cadenas ->
+#       por ejemplo: <ejemplo>, por lo que debe mantener ese formato y no reemplazar lo que está dentro de <>.
+#       La herramienta tendrá errores si cambia esos valores...
+#       Utilice este archivo para traducir todas las cadenas a su idioma principal.
+#		Luego contáctame y envíame este archivo traducido!
+#
+# *Recuerde poner su nombre de usuario para estar en los créditos!
+#
+# *Intente enviarme todos los archivos traducidos! no solo una parte! Gracias por colaborar.
+#
+# Contacto: https://t.me/francom28
+##
+
+AboutForm_Box_AppTrusted=Aplicación de confianza:
 AboutForm_Box_ImageRunTime=Tiempo de ejecución de la imagen:
 AboutForm_Box_OS=SO:
 AboutForm_Box_ToolCul=Cultura principal de Windows:

@@ -61,17 +61,17 @@ NOTE: USERPORTABLEPATH = Wherever you unpack Tool
 
 [![Downloads SF](https://sourceforge.net/sflogo.php?type=16&group_id=3254118)](https://sourceforge.net/p/motobootlogomaker/)
 
-#### Download Moto_Boot_Logo_Maker Installer v4.4.4.4 (22-05-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/SETUP/Moto_Boot_Logo_Maker_v4.4.4.4_Setup.exe) 
+#### Download Moto_Boot_Logo_Maker Installer v4.4.4.5 (06-06-2021) from here * [Moto_Boot_Logo_Maker Installer](https://master.dl.sourceforge.net/project/motobootlogomaker/SETUP/Moto_Boot_Logo_Maker_v4.4.4.5_Setup.exe) 
 
-#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.4.4 (22-05-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.4.4_PORTABLE.zip) 
+#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.4.5 (06-06-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://master.dl.sourceforge.net/project/motobootlogomaker/PORTABLE/Moto_Boot_Logo_Maker_v4.4.4.5_PORTABLE.zip) 
 
 ## Downloads Mirror AFH
 
 [![Downloads AFH](https://androidfilehost.com/images/afh.png)](https://androidfilehost.com/?w=files&flid=323184)
 
-#### Download Moto_Boot_Logo_Maker Installer v4.4.4.4 (22-05-2021) from here * [Moto_Boot_Logo_Maker Installer](https://www.androidfilehost.com/?fid=14943124697586337367) 
+#### Download Moto_Boot_Logo_Maker Installer v4.4.4.5 (06-06-2021) from here * [Moto_Boot_Logo_Maker Installer](https://www.androidfilehost.com/?fid=14943124697586345215) 
 
-#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.4.4 (22-05-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://www.androidfilehost.com/?fid=14943124697586337365) 
+#### Download Moto_Boot_Logo_Maker PORTABLE v4.4.4.5 (06-06-2021) from here * [Moto_Boot_Logo_Maker PORTABLE](https://www.androidfilehost.com/?fid=14943124697586345213) 
 
 ### Changelog * [Changelog](https://raw.githubusercontent.com/Franco28/Moto_Boot_Logo_Maker/master/Tool/Setup/changelog.txt) 
 
