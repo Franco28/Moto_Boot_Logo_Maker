@@ -1,0 +1,270 @@
+﻿##
+# README!!!!!
+#
+# Moto_Boot_Logo_Maker - DE LANGUAGE
+#
+# File: Resources.de.resx (replace me with your language culture for ex: "Resources."es".resx")
+# 		More Info: https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes
+#
+# Language to translate: ---
+#
+# Ver: 1.0
+#
+# Author: Manfred Mueller
+#
+# NOTE: In this case this File to translate, uses this type of strings --> 
+#       for ex: <example> so you should keep that format and not replace what is inside of <>. 
+#       Tool will crash if you change that values...
+#       Use this file to translate all strings to your main language.
+#		Then contact me and send me this file translated!
+#
+# *Remember to put your user name to be on the credits then!
+#
+# *Please try to send me all file translated! not just a part! Thanks to collaborate.
+#
+# Contact: https://t.me/francom28
+##
+
+
+AboutForm_Box_AppTrusted=App Trusted:
+AboutForm_Box_ImageRunTime=Bildlaufzeit:
+AboutForm_Box_OS=OS:
+AboutForm_Box_ToolCul=Windows-Hauptsprache:
+AboutForm_Box_ToolName=Werkzeugname:
+AboutForm_Box_ToolPath=Werkzeugpfad:
+AboutForm_Box_ToolVer=Tool Version:
+AboutForm_BTN_Contributors=Siehe Helfer / Credits
+AboutForm_BTN_DownloadUpdate=Aktualisierung laden
+AboutForm_Checkinf4Updates=Prüfung auf Aktualisierungen...
+AboutForm_DonationMSG=Wenn Sie mir ein Bier oder eine Pizza spendieren wollen, scannen Sie diesen QR-Code oder klicken Sie ihn an!
+AboutForm_DownloadUpdate_NetLost=KEIN NETZWERK: Bitte überprüfen Sie Ihre Internetverbindung...
+AboutForm_DownloadUpdate_Server=Bitte wählen Sie Ihren Server für den Download aus:
+AboutForm_DownloadUpdate_ServerDown=Server ist ausgefallen :/
+AboutForm_DownloadUpdate_ServerTitle=Aktualisierung laden
+AboutForm_Mainteiners=Verwalter
+AboutForm_NoInternet=keine Internetverbindung...
+AboutForm_NoUpdatePortable=keine Aktualisierungen in der PORTABLE-Ausgabe.
+AboutForm_ThanksTo=Dank an
+AboutForm_Updates=Aktualisierungen:
+AboutForm_Updates2=Es ist keine Aktualisierung verfügbar.
+ChangelogForm_Error=Kann das Changelog nicht lesen, bitte überprüfen Sie Ihre Internetverbindung!
+CreditsForm_Error=Credits nicht lesbar... Datei fehlt!
+CreditsForm_Title=Credits
+DeviceInfoForm_LabelDeviceTitle=Gerät
+DeviceInfoForm_LabelDisplayTitle=Display
+DeviceInfoForm_LabelLogoInfoTitle=Logo Info
+DownloadSForm_InternetError=Kann die Download-Statistik nicht lesen, bitte überprüfen Sie Ihre Internetverbindung!
+LogoBrowserForm_BTN_Select=Wählen
+LogoBrowserForm_ErrorBinFile=ist keine .bin Datei... Nur .bin-Dateien auswählen!
+LogoBrowserForm_IsADir=ist ein Verzeichnis...
+MainForm_BTN_Append=Anhängen
+MainForm_BTN_AttachPathToolTipText=Wählen Sie den Logo-Erstellungspfad
+MainForm_BTN_Build=Build
+MainForm_BTN_BuildToolTipText=Erstellen und Speichern der Datei logo.bin
+MainForm_BTN_Delete=Löschen
+MainForm_BTN_Extract=Extrahieren
+MainForm_BTN_OpenLogoFile=Dateipfad öffnen
+MainForm_BTN_OpenLogoFileToolTipText=Logo-Ordner öffnen
+MainForm_BTN_ReloadToolTipText=Werkzeug wiederherstellen
+MainForm_BTN_Replace=Ersetzen
+MainForm_BTN_SearchDeviceToolTipText=Gerät suchen
+MainForm_BTN_Stop=Abbrechen
+MainForm_BTN_StopToolTipText=Logoerstellungsprozess anhalten
+MainForm_CantSaveEmptyFiles=Erstelle oder laden Sie zuerst ein Logo! Dann können Sie es speichern!
+MainForm_CurrentProjectText=Aktuelles Projekt:
+MainForm_ErrorWrongTypeOfIMG=Falscher Bildtyp! Bildtyp erlaubt:
+MainForm_ExitLogoOpen=Das Tool lädt eine logo.bin, sind Sie sicher, dass Sie es beenden wollen?
+MainForm_ExitLogoWasntSave1=Es ist ein aktuelles Projekt geöffnet:
+MainForm_ExitLogoWasntSave2=Sie haben das Logo nicht gespeichert! Sind Sie sicher, dass Sie das Formular beenden wollen?
+MainForm_ExitLogoWasntSave3=Sind Sie sicher, dass Sie das Tool neu laden wollen?
+MainForm_ExtractLogoError=Bild kann nicht aus Bootlogo extrahiert werden
+MainForm_GB_LogoFormat=Logo.bin-Format
+MainForm_GB_LogoImageFillOptions=Bildfüllungsoptionen
+MainForm_GB_LogoImageOrientationOptions=Bildausrichtungsoptionen
+MainForm_GB_LogoOption=Logo Option
+MainForm_GB_LogoResolution=Auflösung
+MainForm_GB_SelectExtension=Wählen Sie Ihre Erweiterung
+MainForm_GB_SelectLogoMemory=Wählen Sie Ihren Logospeicher
+MainForm_ImageSaveOk=Bild gespeichert als
+MainForm_ImageSaveOk2=Erfolgreich
+MainForm_ImageStatus_TextLocked=* Klicken Sie auf das Bild und es wird gesperrt
+MainForm_ImageStatus_TextUnlocked=* Durch Doppelklick wird die Sperre aufgehoben
+MainForm_InternetCheck=Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut!
+MainForm_JPGimgIsToBig=Bild <IMGExtension> ist zu groß! Bitte verkleinern Sie es auf weniger als 5.6MB
+MainForm_label_BuildPath=Logo-Erstellungspfad
+MainForm_label_ErrorGoToFileInfo=Protokolle öffnen:
+MainForm_label_GoToErrorToolTipText=Protokoll-Ordner öffnen
+MainForm_label_ImageStatusLocked=* Bildstatus: Gesperrt
+MainForm_label_ImageStatusUnlocked=* Bildstatus: Entsperrt
+MainForm_label_ReloadTool=Neu laden
+MainForm_label_SearchDevice=Gerät suchen
+MainForm_LoadPreviousLogo=Es gab ein zuvor geladenes Logo, möchten Sie es erneut laden? HINWEIS: Dies wird eine Sekunde dauern...
+MainForm_LogoBuild_AllImageFailed=Jedes einzelne ausgewählte Bild konnte nicht geladen werden - Status: Verarbeitung abgebrochen :(
+MainForm_LogoBuild_Cancel=Logo Build: Prozess wurde abgebrochen!
+MainForm_LogoBuild_CompilePathISWrong=Pfad <pathbuild> muss mit \\ enden
+MainForm_LogoBuild_CompileRadioBTNEmpty=Wählen Sie eine Erweiterung vor der Erstellung...
+MainForm_LogoBuild_ComplieLNandPNEmpty=Das Feld für den Logonamen und den Logopfad darf nicht leer sein! Bitte geben Sie daher einen Logonamen und einen Pfad zum Kompilieren ein!
+MainForm_LogoBuild_ContinueWithBlankImge=Sind Sie sicher, dass Sie mit einem leeren Bild fortfahren wollen?
+MainForm_LogoBuild_Error=Logo Build: Es gab einen Fehler bei der Ausführung des Prozesses. Der Thread wurde abgebrochen.
+MainForm_LogoBuild_ErrorLoadImage=Fehler beim Laden des Bildes - Status: Verarbeitung abgebrochen :(
+MainForm_LogoBuild_ErrorLogoFitImage=Fehler: Ausgewählte Bilder/Optionen passen nicht in logo.bin, gescheitert an
+MainForm_LogoBuild_ErrorLogoFitImage2=Produzierte Datei ist
+MainForm_LogoBuild_ErrorLogoFitImage3=Byte zu groß
+MainForm_LogoBuild_FileSaveError=Ausnahme während der Verarbeitung:
+MainForm_LogoBuild_FolderError=Kann einen nicht vorhandenen Ordnerpfad nicht öffnen!
+MainForm_LogoBuild_ImageLoadFail=Mindestens ein Bild konnte nicht geladen werden. Sind Sie sicher, dass Sie fortfahren möchten?
+MainForm_LogoBuild_NoImageLoad=Es wurden keine Bilder geladen, sind Sie sicher, dass Sie mit leeren Bildern fortfahren wollen?
+MainForm_LogoBuild_OK=Logo-Erstellung: Prozess wurde abgeschlossen!
+MainForm_LogoBuild_ZipFileM=Die Zip-Dateien fehlen, daher ist das Logo nicht flashbar!
+MainForm_LogoBuild_ZipFileMTitle=Fehlende Skript-Dateien
+MainForm_LogoOpen_BinInvalid=Ungültige logo.bin-Datei geladen
+MainForm_LogoOpen_BinProccesing=Verarbeitung
+MainForm_LogoOpen_BinProcessAborted=Verarbeitung abgebrochen
+MainForm_LogoOpen_BinProcessOk=Verarbeitung abgeschlossen :)
+MainForm_LogoOpen_BinStatus=Status:
+MainForm_LogoOpen_FileLoadOk=Datei vollständig geladen :)
+MainForm_LogoOpen_FileOpenError=Fehler beim Öffnen der Datei: <FN>
+MainForm_Logo_Name=Logo Name
+MainForm_Logs_ErrorLogsWarnigMSG=Denken Sie daran, Protokolle zu senden, dann entfernen Sie diese Datei!
+MainForm_Logs_ErrorOpenFolder=Möchten Sie den Ordner Logs öffnen?
+MainForm_Logs_ErrorSend=Möchten Sie die Protokolle jetzt senden?
+MainForm_Logo_MaxBinSize=Max logo.bin Größe
+MainForm_OpenCustomLogoNoAdminTool=Wenn Sie ein benutzerdefiniertes Logo öffnen möchten, ziehen Sie die Datei einfach per Drag & Drop in Tool!
+MainForm_OpenLogoMemoryTitle=Lade Logo:
+MainForm_OpenLogoMemoryTitle2=Bitte warten...
+MainForm_RDO_rdoAndroid43=540x540 Bündel
+MainForm_RDO_rdoAndroid44=Standard
+HauptForm_RDO_rdoImageCenter=Center
+MainForm_RDO_rdoImageFill=Fill
+MainForm_RDO_rdoImageStretchAspect=Proportional strecken
+MainForm_RDO_rdoLayoutLandscape=Landscape
+MainForm_RDO_rdoLayoutPortrait=Portrait
+MainForm_savefiledialog_Title=Bitte wählen Sie Ihr Gerät aus
+MainForm_SelectLogoSizeWarn=Bitte wählen Sie die Speichergröße Ihres Logos, bevor Sie eine Datei öffnen!
+MainForm_ToolStripMenu_about=Hinweis
+MainForm_ToolStripMenu_checkForUpdates=Prüfe auf Aktualisierungen
+MainForm_ToolStripMenu_downloadSite=Downloads
+MainForm_ToolStripMenu_file=Datei
+MainForm_ToolStripMenu_help=Hilfe
+MainForm_ToolStripMenu_new=Neu
+MainForm_ToolStripMenu_open=Öffnen
+MainForm_ToolStripMenu_OpenCustomLogo=Eigenes Logo öffnen
+MainForm_ToolStripMenu_others=Andere
+MainForm_ToolStripMenu_save=Speichern
+MainForm_ToolStripMenu_saveAs=Speichern unter
+MainForm_ToolStripMenu_settings=Einstellungen
+MainForm_ToolStripMenu_source=Quelle
+MainForm_ToolStripMenu_tool=Werkzeug
+MainForm_ToolTip_RGBCOLOUR=RGB-Farbe
+MainForm_ToolTip_RGBCOLOURCOPIED=in die Zwischenablage kopiert!
+MainForm_ToolTip_SearchDevice=Geben Sie Ihr Gerätemodell wie folgt ein: "moto g8 power"
+MainForm_ToolUpdating=Schließen der Anwendung zur Aktualisierung...
+MainForm_TVLogo_logo_battery_ToolTipText=Sichtbar, wenn der Akku Ihres Telefons vollständig entladen ist und Sie
+MainForm_TVLogo_logo_battery_ToolTipText2=Stecken Sie Ihr Handy in den Ladevorgang
+MainForm_TVLogo_logo_boot_ToolTipText=Nur bei einem Telefon mit gesperrtem Bootloader sichtbar. Es wird empfohlen, Folgendes zu entfernen
+MainForm_TVLogo_logo_boot_ToolTipText2=das Bild, das in diesem Eintrag steht, um Bytes in Ihrer logo.bin zu speichern
+MainForm_TVLogo_logo_charge_ToolTipText=Sichtbar, wenn das Telefon bei vollständig ausgeschaltetem Zustand eingesteckt ist und das Telefon mehr
+MainForm_TVLogo_logo_charge_ToolTipText2=als 3% Ladung. logo_battery wird stattdessen angezeigt, wenn es 0-3% Ladung hat.
+MainForm_TVLogo_logo_lowpower_ToolTipText=Sichtbar, wenn das Telefon im ausgeschalteten Zustand mehr als 3 % Energie hat. Viel mehr ist nicht bekannt.
+MainForm_TVLogo_logo_lowpower_ToolTipText2=Diese Funktion ist nur auf dem Moto E vorhanden
+MainForm_TVLogo_logo_orange_ToolTipText=Sichtbar auf neuen Moto-Handys mit entsperrtem Bootloader. Was Sie hier eingeben, wird wahrscheinlich so aussehen
+MainForm_TVLogo_logo_orange_ToolTipText2=viel besser als die Warnung vor dem nicht gesperrten Gerät :)
+MainForm_TVLogo_logo_red_ToolTipText=Sichtbar, wenn Ihr Telefon die OS-Verifizierung nicht bestanden hat
+MainForm_TVLogo_logo_unlocked_ToolTipText=Sichtbar auf Handys mit entsperrtem Bootloader. Was Sie hier eingeben, wird wahrscheinlich so aussehen
+MainForm_TVLogo_logo_unlocked_ToolTipText2=viel besser als die Warnung vor dem nicht gesperrten Gerät :)
+MainForm_TVLogo_logo_unplug_ToolTipText=Sichtbar, wenn das Telefon vollständig aufgeladen ist, während es eingesteckt und vollständig ausgeschaltet ist.
+MainForm_TVLogo_logo_unplug_ToolTipText2=Diese Funktion ist nur auf dem Moto E vorhanden
+MainForm_TVLogo_logo_yellow_ToolTipText=Sichtbar, wenn Ihr Telefon ein anderes Betriebssystem lädt
+NETFRAMEWORKERROR=.NET Framework: .NET Framework Version nicht gefunden...
+ProgramCheckAssembliesError=Moto_Boot_Logo_Maker kann nicht mit Original-Assemblies übereinstimmen:
+ProgramCheckAssembliesErrorVer=Version:
+ProgramCheckBackRun=Es scheint eine weitere Instanz des Tools zu laufen. Bitte stellen Sie sicher, dass es nicht im Hintergrund läuft.
+ProgramCheckBackRun2=Eine weitere Tool-Instanz wird ausgeführt
+ProgramCheckFolderWrong=Ordner ist falsch, bitte überprüfen Sie ihn, sollte so aussehen:
+ProgramCheckPrivileges=Tool muss als Administrator ausgeführt werden
+ProgramCheckPrivileges2=Werkzeug benötigt Berechtigungen
+ProgramCheckWindows=Dieses Tool ist kompatibel mit Windows 7, Windows 8, Windows 8.1 und Windows 10, Sie haben:
+ProgramCheckWindows2=Kann das Tool nicht starten, Fehler: Windows-Kompatibilität
+SearchDeviceForm_AlreadyOpened=Gerät bereits geöffnet:
+SearchDeviceForm_AlreadyOpened2=Schließen Sie es, um neue Geräte zu suchen!
+SearchDeviceForm_NotFound=wurde nicht gefunden, bitte wie folgt eingeben: moto g6 plus
+SearchDeviceForm_PleaseInputDevice=Bitte geben Sie ein Gerät ein!
+SettingsForm_BTN_OpenToolFolder=Werkzeugordner öffnen
+SettingsForm_BTN_ResetAllProfiles=Alle Profile zurücksetzen
+SettingsForm_BTN_ResetToolSettings=Werkzeugeinstellungen zurücksetzen
+SettingsForm_GeneralSettings_Text=Allgemeine Einstellungen
+SettingsForm_GroupBox1=Automatisches Speichern von Profilen aktivieren
+SettingsForm_GroupBox2=Automatisches Speichern des Logos im Speicher aktivieren
+SettingsForm_GroupBox3=Automatische Prüfung auf Updates aktivieren
+EinstellungenFormular_No_Text=NEIN
+SettingsForm_ResetTool_Text=Werkzeug zurücksetzen
+SettingsForm_Yes_Text=Ja
+MainForm_Tool_Error_Show=Ein Fehler ist aufgetreten, bitte gehen Sie zum Ordner und senden Sie mir die Protokolle!
+MainForm_Tool_Error_ShowBTN=Zur Datei gehen
+MainForm_Tool_Error_Update=Es gibt ein Problem beim Erreichen des Update-Servers. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es später erneut.
+MainForm_Tool_Error_UpdateTitle=Update-Prüfung fehlgeschlagen
+MainForm_Crash_ErrorShow=Ein Fehler ist aufgetreten, bitte gehen Sie zum Ordner und senden Sie mir die Protokolle!
+MainForm_Crash_ErrorShowBTN=Zur Datei gehen
+MainForm_Update_ErrorUpdate=Es gibt ein Problem beim Erreichen des Update-Servers. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es später erneut.
+MainForm_Update_Error_UpdateTitle=Update-Prüfung fehlgeschlagen
+MainForm_Update_InternetErrorUpdate=Update-Prüfung fehlgeschlagen, bitte überprüfen Sie Ihre Internetverbindung!
+MainForm_Update_NewUpdateText=Es gibt eine neue Version
+MainForm_Update_NewUpdateText2=Sie verwenden die Version
+MainForm_Update_NewUpdateText3=Dies ist eine erforderliche Aktualisierung. Drücken Sie Ok, um die Aktualisierung der Anwendung zu beginnen.
+MainForm_Update_NewUpdateTitle=Neue Aktualisierung verfügbar
+MainForm_Update_NoUpdate=Es ist kein Update verfügbar, bitte versuchen Sie es später erneut.
+MainForm_Update_NoUpdateTitle=Keine Aktualisierung verfügbar
+MainForm_Update_Status=Status:
+MainForm_Update_StatusOffline=Offline
+MainForm_Update_StatusOnline=Online
+MainForm_LogoOpen_Zipfile_logo_bin_error=Fehler: Die Zip-Datei <ZFN> enthält nicht logo.bin
+MainForm_Logo_Custom=Custom
+MainForm_Crash_ErrorBTNLabel=Zur Datei gehen
+MainForm_LogoList_Controls=Logo-Listen-Steuerelemente
+MainForm_TVLogo_ReloadList=Bitte laden Sie in Datei/Neu, um wieder Logos zu sehen
+ProgrammIsAdmin=Administrator
+MainForm_PanelMainBTNS=Logo-Listen-Steuerelemente
+AboutForm_Title=Über
+DeviceInfoForm_LabelCodeName=Code Name:
+DeviceInfoForm_LabelLogoComment=Bemerkung:
+DeviceInfoForm_LabelLogoComment_Error=Kommentare können nicht gelesen werden...
+DeviceInfoForm_LabelLogoCreateDate=Erstellungsdatum des Logos:
+DeviceInfoForm_LabelLogoModifyDate=Änderungsdatum des Logos:
+DeviceInfoForm_LabelLogoSize=Logo-Größe:
+DeviceInfoForm_LabelMemory=Speicher:
+DeviceInfoForm_LabelName=Name:
+DeviceInfoForm_LabelOpenLogo=Dateipfad öffnen
+DeviceInfoForm_LabelOpenLogo2=Dateipfad 2 öffnen
+DeviceInfoForm_LabelPath=Logo-Pfad:
+DeviceInfoForm_LabelResolution=Auflösung:
+DeviceInfoForm_Label_Device=Gerät:
+DownloadSForm_BTN_Text=Gehen Sie zu
+DownloadSForm_GettingServerData=Serverdaten abrufen... Bitte warten...
+DownloadSForm_GettingServerData_Done=Erledigt!
+DownloadSForm_GettingServerData_Error=Serverdaten abrufen... {ERROR} Keine Internetverbindung...
+DownloadSForm_GettingServerData_Error_FH=Fehler beim Abrufen von Serverdaten vom Android File Host, später erneut versuchen...
+DownloadSForm_GettingServerData_Error_SF=Fehler beim Abrufen von Serverdaten von SourceForge, später erneut versuchen...
+DownloadSForm_GettingServerData_Error_Uknown=Serverdaten abrufen... ERROR
+DownloadSForm_GettingServerData_Text=Serverdaten abrufen
+DownloadSForm_Title=Downloads
+MainForm_Update_Server_Error=Server ist ausgefallen :\\
+SelectDeviceForm_LM_Text=Logo Speicher:
+SelectDeviceForm_Opened1=Bereits geöffnet:
+SelectDeviceForm_Opened2=Schließen Sie es, um ein neues zu öffnen!
+SelectDeviceForm_SD_Text=Wählen Sie Ihr Gerät
+ToolDownloadsForm_Exit=Möchten Sie den Download beenden? Dadurch wird das Tool beendet und die heruntergeladenen Dateien werden beschädigt...
+ToolDownloadsForm_File_Corrupt=ist beschädigt, erneutes Herunterladen...
+ToolDownloadsForm_File_Extract=Extrahieren
+ToolDownloadsForm_Label_Download=Herunterladen
+ToolDownloadsForm_Label_Download_Retry=Kann nicht auf die Internetverbindung zugreifen, möchten Sie es erneut versuchen?
+ToolDownloadsForm_Label_Download_Retry_Title=Internetverbindung verloren
+ToolDownloadsForm_Label_Download_Uknown_Error=Ein unbekannter Fehler ist aufgetreten, möchten Sie es erneut versuchen?
+ToolDownloadsForm_File_Error=Etwas ist mit der Größe des Ordners schief gelaufen:
+ToolDownloadsForm_File_Error2=das erneute Herunterladen von Dateien...
+ToolDownloadsForm_File_Missing=fehlt, das Herunterladen...
+ToolDownloadsForm_File_Missing2=Dateien von:
+ToolDownloadsForm_File_Missing3=fehlen, Dateien erneut herunterladen...
+ToolDownloadsForm_Label_DownloadFile=Downloading File...
+ToolDownloadsForm_Label_DSpeed=Geschwindigkeit:
+ToolDownloadsForm_Label_FileSize=Dateigröße:
+
